@@ -12,7 +12,7 @@ const social:Record<string, {name: string, icon: string}> = {
     icon: 'linkedin-logo',
   },
   website: {
-    name: 'Site internet',
+    name: 'Website',
     icon: 'globe',
   },
 }

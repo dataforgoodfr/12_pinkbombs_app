@@ -126,8 +126,8 @@ const Navbar = () => {
           />
         </Link>
         <div className='flex gap-4 lg:gap-16'>
-          <Link className="uppercase font-bold hover:underline focus:underline lg:text-[1.4rem]" href="/">L'histoire</Link>
-          <Link className="uppercase font-bold hover:underline focus:underline lg:text-[1.4rem]" href="/">Les chiffres</Link>
+          <Link className="uppercase font-bold hover:underline focus:underline lg:text-[1.4rem]" href="/">The story</Link>
+          <Link className="uppercase font-bold hover:underline focus:underline lg:text-[1.4rem]" href="/">The figures</Link>
         </div>
       </nav>
     </header>
