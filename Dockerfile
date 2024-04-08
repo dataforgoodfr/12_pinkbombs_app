@@ -1,4 +1,4 @@
-FROM arm64v8/node:20-alpine3.19
+FROM --platform=linux/amd64 node:alpine
 
 ENV PORT 3000
 ENV YARN_CACHE_FOLDER=/dev/shm/yarn_cache
@@ -18,4 +18,4 @@ COPY . /usr/src/app
 RUN yarn build
 
 EXPOSE 3000
-ENTRYPOINT [ "yarn", "start" ]
+CMD [ "yarn", "start" ]
