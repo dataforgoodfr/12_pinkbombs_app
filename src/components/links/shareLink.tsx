@@ -41,7 +41,7 @@ const ShareLink = ({
       href={href}
       target='_blank'
       rel='noopener noreferrer'
-      title={`${social[type].name} ${name} (nouvel onglet)`}
+      title={`${social[type].name} ${name} (new tab)`}
       {...rest}
     >
       <img src={`/svg/${social[type].icon}.svg`} alt='' className='w-4' />
