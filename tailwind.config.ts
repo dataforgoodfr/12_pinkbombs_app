@@ -14,7 +14,7 @@ export default {
         red1: "#F34620",
         yellow1: "#EBF97B",
         pink1: "#FEEAE9",
-        brown1: "##F3E8D8",
+        brown1: "#F3E8D8",
         darkblue1: "#13176F",
         lightblue1: "#A7F6F6",
         lightblue2: "#D6E0EA",

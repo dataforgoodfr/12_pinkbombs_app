@@ -29,7 +29,7 @@ const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <header className="bg-pink1 absolute left-0 top-0 z-10 w-full">
+    <header className="absolute left-0 top-0 z-10 w-full">
       <div className="flex flex-wrap items-center justify-between px-6 lg:px-9 py-3 lg:py-6">
         <Link href="/">
           <Image
