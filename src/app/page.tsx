@@ -10,6 +10,7 @@ import "../styles/page.css";
 
 import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
+import IntroBlock from "@/components/IntroBlock";
 
 /**
  * SVGR Support
@@ -26,7 +27,7 @@ import IconCard from "@/components/IconCard";
 const HomePage = () => {
   return (
     <>
-      <IntroSection />
+      <IntroBlock title="The salmon you eat, sell, produce" image="/images/salmon.svg" />
       <BombSection />
       <ExplodeSection />
       <BioSection />
@@ -41,29 +42,9 @@ const HomePage = () => {
 
 export default HomePage;
 
-const IntroSection = () => {
-  return (
-    <section className="grid grid-rows-[1fr, auto, 1fr] px-6 lg:px-12 py-3 lg:py-7 h-screen min-h-96 text-orange2 bg-rose2">
-      <Image
-        src="/svg/fish.svg"
-        alt=""
-        width={490}
-        height={203}
-        className="row-start-2 self-center justify-self-center w-24 sm:w-60 md:w-72 lg:w-[490px]"
-      />
-      <h1 className={clsx("h1", "row-start-3 self-end items-left")}>
-        The salmon you eat, sell, produce...
-        <span className="sr-only">
-          kills wild salmon, starves people, contaminates food.
-        </span>
-      </h1>
-    </section>
-  );
-};
-
 const BombSection = () => {
   return (
-    <section className="grid grid-rows-[1fr, auto, 1fr] px-6 lg:px-12 py-3 lg:py-7 h-screen min-h-96 text-orange1 bg-darkblue1">
+    <section className="grid grid-rows-[1fr, auto, 1fr] px-6 lg:px-12 py-3 lg:py-7 h-screen min-h-96 text-red1 bg-darkblue1">
       <Image
         src="/svg/bomb.svg"
         alt=""
@@ -83,7 +64,7 @@ const BombSection = () => {
 
 const ExplodeSection = () => {
   return (
-    <section className="flex items-center justify-center p-6 lg:p-12 text-orange1 bg-darkblue1 min-h-screen">
+    <section className="flex items-center justify-center p-6 lg:p-12 text-red1 bg-darkblue1 min-h-screen">
       <ul
         className="
         relative grid grid-cols-1 xs:grid-cols-2 gap-8 list-none bg-no-repeat bg-center
@@ -202,9 +183,9 @@ const BeTheChangeSection = () => {
 
 const ActionSection = () => {
   return (
-    <div className="relative z-10 bg-orange2 px-6 md:px-12 py-6 md:py-7">
+    <div className="relative z-10 bg-red1 px-6 md:px-12 py-6 md:py-7">
       <div>
-        <h2 className="flex justify-center md:justify-start bg-orange2 text-darkblue1 text-4xl md:text-6xl uppercase font-bold mb-10">
+        <h2 className="flex justify-center md:justify-start bg-red1 text-darkblue1 text-4xl md:text-6xl uppercase font-bold mb-10">
           Let's talk!
         </h2>
       </div>

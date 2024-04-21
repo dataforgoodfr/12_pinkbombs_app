@@ -26,10 +26,10 @@ const IconCard = ({
       )}
     >
       <div className="max-w-[560px]">
-        <h2 className={clsx("h2", "text-orange1")}>{title}</h2>
+        <h2 className={clsx("h2", "text-red1")}>{title}</h2>
         <p className="mt-3 lg:mt-6 2xl:text-xl font-secondary">{content}</p>
         <Link
-          className="inline-flex px-5 py-4 mt-3 border-solid border border-orange1 uppercase text-orange1 hover:bg-orange1 hover:text-white transition duration-100"
+          className="inline-flex px-5 py-4 mt-3 border-solid border border-red1 uppercase text-red1 hover:bg-red1 hover:text-white transition duration-100"
           href="/"
         >
           Learn more
