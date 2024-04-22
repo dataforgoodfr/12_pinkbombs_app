@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
@@ -10,12 +11,14 @@ import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
-import clsx from "clsx";
 
 const HomePage = () => {
   return (
     <>
-      <IntroBlock title="The salmon you eat, sell, produce" image="/images/salmon.svg" />
+      <IntroBlock
+        title="The salmon you eat, sell, produce"
+        image="/images/salmon.svg"
+      />
 
       <BombSection />
       <ExplodeSection />
@@ -23,6 +26,7 @@ const HomePage = () => {
       <HealthSection />
       <ClimateSection />
       <SocialSection />
+      <BusinessSection />
 
       <JoinBlock />
     </>
@@ -43,14 +47,8 @@ const BombSection = () => {
           className="row-start-2 self-center justify-self-center w-24 md:w-36 lg:w-[450px] 2xl:w-[590px] max-h-full object-contain"
         />
         <div className="row-start-3 self-end items-left flex gap-2 items-end">
-          <p className={clsx("h1", "w-full")}>
-            kills, starves, contaminates.
-          </p>
-          <Image
-            src="/images/bottom.svg"
-            alt=""
-            width="50" height="37"
-          />
+          <p className={clsx("h1", "w-full")}>kills, starves, contaminates.</p>
+          <Image src="/images/bottom.svg" alt="" width="50" height="37" />
         </div>
       </div>
     </section>
@@ -90,7 +88,7 @@ const ExplodeSection = () => {
             content="Raises concerns about human health due to diseases requiring medication and microplastics"
           />
         </li>
-        <li className="lg:absolute lg:right-[20px] lg:bottom-[60px] 2xl:right-[140px] 2xl:bottom-[120px]">
+        <li className="lg:absolute lg:right-[20px] lg:bottom-0 2xl:right-[140px] 2xl:bottom-[120px]">
           <IconCard
             icon={{ src: "/svg/butterfly.svg", width: 120, height: 116 }}
             title="Biodiversity"
@@ -145,5 +143,27 @@ const SocialSection = () => {
       link="/"
       image="/images/mosaic-social.jpg"
     />
+  );
+};
+
+const BusinessSection = () => {
+  return (
+    <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red1 bg-darkblue1">
+      <div className="max-w-[1500px] mx-auto">
+        <h3
+          className={clsx("h3", "mb-6 lg:mb-14 max-w-5xl m-auto text-center")}
+        >
+          And all this with the impunity of an exponentially growing industry.
+        </h3>
+        <Image
+          src="/images/saumon.jpg"
+          alt=""
+          className="w-full h-96 xl:h-[690px] object-cover"
+          width={1000}
+          height={600}
+          loading="lazy"
+        />
+      </div>
+    </section>
   );
 };

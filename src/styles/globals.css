@@ -43,11 +43,11 @@
 
   /* #region  /**=========== Typography =========== */
   .h1 {
-    @apply font-secondary text-2xl md:text-4xl lg:text-7xl xl:text-[6.375rem]/none font-extrabold uppercase;
+    @apply font-secondary text-4xl md:text-6xl lg:text-7xl xl:text-[6.375rem]/none font-extrabold uppercase;
   }
 
   .h2 {
-    @apply font-secondary text-2xl md:text-4xl lg:text-7xl/tight font-bold uppercase;
+    @apply font-secondary text-4xl md:text-6xl lg:text-7xl/tight font-bold uppercase;
   }
 
   .h3 {

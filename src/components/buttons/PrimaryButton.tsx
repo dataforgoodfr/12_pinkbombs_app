@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 const PrimaryButton = ({
   className,
@@ -12,10 +12,16 @@ const PrimaryButton = ({
   content: JSX.Element | string;
 }) => {
   if (!content) {
-    return <></>
+    return <></>;
   }
   return (
-    <Link className={clsx(className, "inline-block p-4 lg:px-10 text-xl xl:text-[2.5rem] rounded-md tracking-widest font-black text-yellow1 bg-red1 hover:text-red1 hover:bg-yellow1")} href={href}>
+    <Link
+      className={clsx(
+        className,
+        "inline-block p-4 lg:px-10 text-xl xl:text-[2.5rem] border-2 border-red1 rounded-md tracking-widest font-black text-yellow1 bg-red1 hover:text-red1 hover:bg-yellow1",
+      )}
+      href={href}
+    >
       {content}
     </Link>
   );
