@@ -24,7 +24,7 @@ const IntroBlock = ({
         <h2
           className={clsx(
             "h1",
-            "p-6 lg:px-12 lg:pt-[120px] lg:pb-12 max-w-[1500px] mx-auto lg:bg-clip-text lg:text-transparent bg-no-repeat bg-center bg-[length:3200px_275px]",
+            "p-6 lg:px-12 lg:pt-[120px] lg:pb-12 max-w-[1596px] mx-auto lg:bg-clip-text lg:text-transparent bg-no-repeat bg-center bg-[length:3200px_275px]",
             headDark
               ? "lg:bg-[url('/images/wave-text.svg')]"
               : "lg:bg-[url('/images/wave-text-light.svg')]",
@@ -71,8 +71,8 @@ const IntroBlock = ({
           </p>
 
           <PrimaryButton
-            href="/"
-            content="Sign the pledge"
+            href="/to-act"
+            content="I act"
             className="mt-6 xl:mt-10"
           />
         </div>
