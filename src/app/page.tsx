@@ -194,7 +194,7 @@ const BusinessSection = () => {
 
   useEffect(() => {
     const fetchGraphData = async () => {
-      const response = await fetchData("hyper-growth-grouped");
+      const response = await fetchData("graphs", "hyper-growth-grouped");
       setPlot(response);
     };
     fetchGraphData();

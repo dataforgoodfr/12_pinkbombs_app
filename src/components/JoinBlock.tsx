@@ -25,7 +25,7 @@ const IntroBlock = ({
 
   useEffect(() => {
     const fetchGraphData = async () => {
-      const response = await fetchData("alternatives");
+      const response = await fetchData("graphs", "alternatives");
       setPlot(response);
     };
     fetchGraphData();

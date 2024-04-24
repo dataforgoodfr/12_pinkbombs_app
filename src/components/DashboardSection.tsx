@@ -28,7 +28,7 @@ const DashboardSection = ({
   useEffect(() => {
     const fetchGraphData = async () => {
       if (id.length > 0) {
-        const response = await fetchData(id);
+        const response = await fetchData("graphs", id);
         setChartData(response);
         setIsLoading(false);
       }

@@ -172,7 +172,7 @@ const TopCountriesSection = () => {
   });
   useEffect(() => {
     const fetchGraphData = async () => {
-      const mapResponse = await fetchData("evolution-map");
+      const mapResponse = await fetchData("graphs", "evolution-map");
       setMapData(mapResponse);
     };
     fetchGraphData();
