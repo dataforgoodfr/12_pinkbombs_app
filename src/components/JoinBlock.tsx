@@ -1,7 +1,9 @@
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
-import Plot from "react-plotly.js";
+// import Plot from "react-plotly.js";
+import dynamic from "next/dynamic";
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false, })
 
 import { useState, useEffect } from "react";
 import { fetchData } from "@/pages/api/chart";

@@ -4,7 +4,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
-import Plot from "react-plotly.js";
+import dynamic from "next/dynamic";
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false, })
 
 import "../styles/page.css";
 
