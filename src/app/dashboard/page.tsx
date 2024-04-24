@@ -331,6 +331,7 @@ const DeforestationSection = () => {
   return (
     <CustomDashboardSection
       title="Deforestation"
+      src="/images/deforestation.webp"
       id="deforestation"
       content="The ambition of the Norwegian government was to increase salmon production by 500% by 2050. This will require the importation of 11,000 km2 of soybean production from Brazil. This is equivalent to the legal deforestation of the Amazon in 2022."
     />
