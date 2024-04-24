@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import "@/lib/env";
 
+import CustomDashboardSection from "@/components/CustomDashboardSection";
 import DashboardSection from "@/components/DashboardSection";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
@@ -39,15 +40,15 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Main producers of open-net salmon",
-        targetId: "salmon-collapse",
+        targetId: "top-comp",
       },
       {
         label: "The new threat: on land-based aquaculture farms",
-        targetId: "hyper-growth",
+        targetId: "top-land",
       },
       {
         label: "The future of land-based aquaculture farms",
-        targetId: "top-10",
+        targetId: "future-land-based",
       },
     ],
   },
@@ -56,11 +57,11 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Deforestation",
-        targetId: "salmon-collapse",
+        targetId: "deforestation",
       },
       {
         label: "Escapes",
-        targetId: "hyper-growth",
+        targetId: "escapes-rates",
       },
     ],
   },
@@ -206,13 +207,11 @@ const TopCountriesSection = () => {
 
 const SalmonConsumptionSection = () => {
   return (
-    <>
-      <DashboardSection
-        id=""
-        title="Salmon Consumption"
-        content="The United States is the largest consumer of salmon, followed by Japan and Russia. European countries are also significant consumers of salmon, with France leading the pack with a high consumption rate of 4.4kg per person per year."
-      />
-    </>
+    <DashboardSection
+      id=""
+      title="Salmon Consumption"
+      content="The United States is the largest consumer of salmon, followed by Japan and Russia. European countries are also significant consumers of salmon, with France leading the pack with a high consumption rate of 4.4kg per person per year."
+    />
   );
 };
 
@@ -250,7 +249,10 @@ const LandPlantsSection = () => {
           of accidents where large number of fish died as a result of inadequate
           water conditions and a fire at a plant in Denmark."
       />
-      <div className="p-6 md:p-12 max-w-[1500px] mx-auto">
+      <div
+        id="future-land-based"
+        className="p-6 md:p-12 max-w-[1500px] mx-auto"
+      >
         <div className="lg:w-2/4">
           <h3 className="h3 text-red1">
             The future of land-based aquaculture farms
@@ -327,9 +329,9 @@ const SalmonConsumptionBisSection = () => {
 
 const DeforestationSection = () => {
   return (
-    <DashboardSection
+    <CustomDashboardSection
       title="Deforestation"
-      id=""
+      id="deforestation"
       content="The ambition of the Norwegian government was to increase salmon production by 500% by 2050. This will require the importation of 11,000 km2 of soybean production from Brazil. This is equivalent to the legal deforestation of the Amazon in 2022."
     />
   );
@@ -339,7 +341,7 @@ const EscapeSection = () => {
   return (
     <DashboardSection
       title="Escapes"
-      id=""
+      id="escapes-rates"
       content="From 2018 to 2022, over 4,000,000 salmon escaped from the farms of the 11 largest producers. These escaped salmon pose a threat to wildlife as they... [source]. *No data from Cooke was found."
     />
   );
