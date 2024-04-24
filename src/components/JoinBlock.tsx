@@ -22,14 +22,13 @@ const IntroBlock = ({
     data: [],
     layout: {},
   });
-
+  const fetchGraphData = async () => {
+    const response = await fetchData("graphs", "alternatives");
+    setPlot(response);
+  };
   useEffect(() => {
-    const fetchGraphData = async () => {
-      const response = await fetchData("graphs", "alternatives");
-      setPlot(response);
-    };
     fetchGraphData();
-  }, [plot]);
+  }, []);
 
   if (!plot) {
     return <></>;

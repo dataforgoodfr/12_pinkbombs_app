@@ -1,3 +1,4 @@
+"use server";
 export const fetchData = async (apiPath: string, chartName: string) => {
 
   const dataUrl = process.env.PINKBOMBS_DATA_URL;

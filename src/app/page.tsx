@@ -191,14 +191,13 @@ const BusinessSection = () => {
     data: [],
     layout: {},
   });
-
+  const fetchGraphData = async () => {
+    const response = await fetchData("graphs", "hyper-growth-grouped");
+    setPlot(response);
+  };
   useEffect(() => {
-    const fetchGraphData = async () => {
-      const response = await fetchData("graphs", "hyper-growth-grouped");
-      setPlot(response);
-    };
     fetchGraphData();
-  }, [plot]);
+  }, []);
 
   if (!plot) {
     return <></>;

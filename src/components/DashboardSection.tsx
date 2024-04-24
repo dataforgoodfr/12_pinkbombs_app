@@ -24,6 +24,7 @@ const DashboardSection = ({
     data: [],
     layout: {},
   });
+  
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const fetchGraphData = async () => {
@@ -34,7 +35,7 @@ const DashboardSection = ({
       }
     };
     fetchGraphData();
-  }, [chartData, id]);
+  }, [id]);
 
   if (!chartData) {
     return <></>;
