@@ -170,13 +170,13 @@ const TopCountriesSection = () => {
     data: [],
     layout: {},
   });
+  const fetchGraphData = async () => {
+    const mapResponse = await fetchData("graphs", "evolution-map");
+    setMapData(mapResponse);
+  };
   useEffect(() => {
-    const fetchGraphData = async () => {
-      const mapResponse = await fetchData("graphs", "evolution-map");
-      setMapData(mapResponse);
-    };
     fetchGraphData();
-  }, [mapData]);
+  }, []);
 
   if (!mapData) {
     return <></>;
