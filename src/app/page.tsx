@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
+import Plot from "react-plotly.js";
 
 import "../styles/page.css";
 
@@ -11,6 +12,9 @@ import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
+import { useState, useEffect } from "react";
+import { fetchData } from "@/pages/api/chart";
+
 
 const HomePage = () => {
   return (
@@ -182,6 +186,23 @@ const EditoSection = () => {
 };
 
 const BusinessSection = () => {
+  const [plot, setPlot] = useState({
+    data: [],
+    layout: {},
+  });
+
+  useEffect(() => {
+    const fetchGraphData = async () => {
+      const response = await fetchData("hyper-growth-grouped");
+      setPlot(response);
+    };
+    fetchGraphData();
+  }, [plot]);
+
+  if (!plot) {
+    return <></>;
+  }
+
   return (
     <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red1 bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
@@ -192,15 +213,9 @@ const BusinessSection = () => {
           Salmon production, dominated by a handful of multinationals, has
           experienced hyper-growth on a global scale for several decades.
         </p>
-
-        <Image
-          src="/images/storytelling/business-full.jpg"
-          alt=""
-          className="w-full h-96 xl:h-[690px] object-contain"
-          width={1000}
-          height={600}
-          loading="lazy"
-        />
+        <div className="flex justify-center">
+          <Plot data={plot.data} layout={plot.layout} />
+        </div>
       </div>
     </section>
   );

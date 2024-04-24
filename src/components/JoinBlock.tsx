@@ -1,6 +1,10 @@
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
+import Plot from "react-plotly.js";
+
+import { useState, useEffect } from "react";
+import { fetchData } from "@/pages/api/chart";
 
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 
@@ -11,6 +15,23 @@ const IntroBlock = ({
   className?: string;
   headDark?: boolean;
 }) => {
+
+  const [plot, setPlot] = useState({
+    data: [],
+    layout: {},
+  });
+
+  useEffect(() => {
+    const fetchGraphData = async () => {
+      const response = await fetchData("alternatives");
+      setPlot(response);
+    };
+    fetchGraphData();
+  }, [plot]);
+
+  if (!plot) {
+    return <></>;
+  }
   return (
     <div className={className}>
       <div
@@ -43,14 +64,9 @@ const IntroBlock = ({
             France, located in the top 3 of the largest consumers of salmon in
             the world, bears a particular responsibility in guiding practices.
           </p>
-          <Image
-            src="/images/bethechange.svg"
-            alt=""
-            className="w-full h-96 xl:h-[690px] object-contain"
-            width={1000}
-            height={600}
-            loading="lazy"
-          />
+          <div className="flex justify-center">
+            <Plot data={plot.data} layout={plot.layout}/>
+          </div>
         </div>
       </div>
 
