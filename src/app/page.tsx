@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
-const Plot = dynamic(() => import("react-plotly.js"), { ssr: false, })
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 import "../styles/page.css";
 
@@ -17,7 +17,6 @@ import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
 
 import { fetchData } from "@/pages/api/chart";
-
 
 const HomePage = () => {
   return (
@@ -210,11 +209,13 @@ const BusinessSection = () => {
     <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red1 bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
         <h3 className={clsx("h3", "mb-4 lg:mb-6 max-w-5xl m-auto text-center")}>
-          Et tout ça dans l’impunité d’une industrie en croissance exponentielle.
+          Et tout ça dans l’impunité d’une industrie en croissance
+          exponentielle.
         </h3>
         <p className="mb-6 lg:mb-14 max-w-xl text-xl text-white m-auto text-center">
-          La production de saumons, dominée par une poignée de multinationales, 
-          connaît depuis quelques décennies une hyper-croissance à l’échelle globale.
+          La production de saumons, dominée par une poignée de multinationales,
+          connaît depuis quelques décennies une hyper-croissance à l’échelle
+          globale.
         </p>
         <div className="flex justify-center">
           <Plot data={plot.data} layout={plot.layout} />

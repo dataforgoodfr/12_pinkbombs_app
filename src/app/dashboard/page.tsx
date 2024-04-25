@@ -192,7 +192,7 @@ const TopCountriesSection = () => {
 
       <div className="p-6 md:p-12 max-w-[1500px] mx-auto text-center">
         <h3 className="h3 text-red1 text-center">
-        Evolution de l'élevage du saumon par pays
+          Evolution de l'élevage du saumon par pays
         </h3>
 
         <DashboardChart
@@ -256,52 +256,55 @@ const LandPlantsSection = () => {
       >
         <div className="lg:w-2/4">
           <h3 className="h3 text-red1">
-          Le futur des fermes aquacoles terrestres
+            Le futur des fermes aquacoles terrestres
           </h3>
           <p className="text-xl font-bold py-4">
-          Une ferme terrestre produisant 10 000 tonnes de saumon par an - si elle était construite - 
-          nécessiterait autant d'électricité qu'une ville de 39 215 habitant·e·s. 
-          Il existe actuellement plusieurs projets en Europe, dont des méga-fermes 
-          visant à produire 100 000 tonnes ou plus par an.
+            Une ferme terrestre produisant 10 000 tonnes de saumon par an - si
+            elle était construite - nécessiterait autant d'électricité qu'une
+            ville de 39 215 habitant·e·s. Il existe actuellement plusieurs
+            projets en Europe, dont des méga-fermes visant à produire 100 000
+            tonnes ou plus par an.
           </p>
           <p className="text-xl">
-          Malgré les défis technologiques et de rentabilité, l'industrie investit 
-          massivement dans les fermes terrestres, avec un grand nombre de projets 
-          annoncés au cours des 5 dernières années. De nombreuses fermes envisagent 
-          d'être construites ou sont déjà en cours de construction en Europe, en Asie,
-          au Moyen-Orient et aux États-Unis pour approvisionner leurs marchés locaux.
+            Malgré les défis technologiques et de rentabilité, l'industrie
+            investit massivement dans les fermes terrestres, avec un grand
+            nombre de projets annoncés au cours des 5 dernières années. De
+            nombreuses fermes envisagent d'être construites ou sont déjà en
+            cours de construction en Europe, en Asie, au Moyen-Orient et aux
+            États-Unis pour approvisionner leurs marchés locaux.
           </p>
         </div>
         <div className="flex flex-wrap gap-y-6 md:gap-y-12 py-20">
           <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
             <h3 className="h3 pb-4 text-red1">+91.1%</h3>
             <p className="text-xl">
-            Les projets combinés de fermes terrestres (RAS) pourraient représenter 
-            une augmentation de plus de 91 % de la production mondiale de saumon.
+              Les projets combinés de fermes terrestres (RAS) pourraient
+              représenter une augmentation de plus de 91 % de la production
+              mondiale de saumon.
             </p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
             <h3 className="h3 pb-4 text-red1">291 Milliards</h3>
             <p className="text-xl">
-            Plus de 290 milliards de poissons sauvages, appelés poissons fourrage, 
-            seront pêchés pour produire la farine nécessaire chaque année 
-            à nourrir ces nouveaux saumons.
+              Plus de 290 milliards de poissons sauvages, appelés poissons
+              fourrage, seront pêchés pour produire la farine nécessaire chaque
+              année à nourrir ces nouveaux saumons.
             </p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
             <h3 className="h3 pb-4 text-red1">1.4 Millions</h3>
             <p className="text-xl">
-            Ces mêmes farines contiennent du soja. 975 000 hectares seront nécessaires 
-            à la production de ce soja, l'équivalent d'environ 
-            1,4 millions de terrains de football.
+              Ces mêmes farines contiennent du soja. 975 000 hectares seront
+              nécessaires à la production de ce soja, l'équivalent d'environ 1,4
+              millions de terrains de football.
             </p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
             <h3 className="h3 pb-4 text-red1">15.8 Millions</h3>
             <p className="text-xl">
-              La consommation électrique nécessaire pour filtrer, 
-              refroidir et faire circuler l'eau des fermes RAS représente 
-              l'équivalent de la consommation annuelle de 15,8 millions d'européens.
+              La consommation électrique nécessaire pour filtrer, refroidir et
+              faire circuler l'eau des fermes RAS représente l'équivalent de la
+              consommation annuelle de 15,8 millions d'européens.
             </p>
           </div>
         </div>

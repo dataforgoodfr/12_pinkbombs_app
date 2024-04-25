@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 
