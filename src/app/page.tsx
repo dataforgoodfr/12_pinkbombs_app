@@ -5,7 +5,7 @@ import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
 import dynamic from "next/dynamic";
-const Plot = dynamic(() => import("react-plotly.js"), { ssr: false, })
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 import "../styles/page.css";
 
@@ -15,7 +15,6 @@ import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
 import { useState, useEffect } from "react";
 import { fetchData } from "@/pages/api/chart";
-
 
 const HomePage = () => {
   return (
@@ -61,7 +60,7 @@ const ExplodeSection = () => {
   return (
     <section className="flex items-center justify-center p-6 lg:p-12 lg:pt-24 lg:pb-48 2xl:py-24 text-red1 bg-darkblue1 min-h-screen">
       <div className="relative">
-        <p className="mb-6 md:mb-12 mx-auto text-xl lg:absolute 2xl:left-[600px] 2xl:bottom-[260px] lg:max-w-96 text-center text-white">
+        <p className="mb-6 md:mb-12 mx-auto text-xl lg:absolute 2xl:left-[600px] 2xl:bottom-[200px] lg:max-w-96 text-center text-white">
           The salmon industry is a bomb with multiple impacts
         </p>
         <ul
