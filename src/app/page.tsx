@@ -15,6 +15,7 @@ import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
+
 import { fetchData } from "@/pages/api/chart";
 
 const HomePage = () => {

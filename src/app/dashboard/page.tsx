@@ -269,7 +269,7 @@ const LandPlantsSection = () => {
   useEffect(() => {
     fetchGraphData();
   }, []);
-  console.log(mapData);
+
   if (!mapData) {
     return <></>;
   }
