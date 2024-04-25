@@ -35,7 +35,7 @@ const DashboardSection = ({
       }
     };
     fetchGraphData();
-  }, [id, chartData]);
+  }, [id]);
 
   if (!chartData) {
     return <></>;

@@ -261,6 +261,18 @@ const MainProductionSection = () => {
 };
 
 const LandPlantsSection = () => {
+  const [mapData, setMapData] = useState("");
+  const fetchGraphData = async () => {
+    const mapResponse = await fetchData("maps", "ras-map", false);
+    setMapData(mapResponse);
+  };
+  useEffect(() => {
+    fetchGraphData();
+  }, []);
+
+  if (!mapData) {
+    return <></>;
+  }
   return (
     <>
       <DashboardSection
@@ -342,7 +354,7 @@ const LandPlantsSection = () => {
         </div>
         <iframe
           title="Land plants map"
-          src="/iframes/map-land-plan.html"
+          src={mapData}
           width={1000}
           height={900}
           className="w-full"
