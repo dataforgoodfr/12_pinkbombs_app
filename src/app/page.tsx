@@ -1,11 +1,13 @@
 "use client";
 
 import clsx from "clsx";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
-import dynamic from "next/dynamic";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false, })
+
+import { useEffect,useState } from "react";
 
 import "../styles/page.css";
 
@@ -13,7 +15,7 @@ import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
-import { useState, useEffect } from "react";
+
 import { fetchData } from "@/pages/api/chart";
 
 
