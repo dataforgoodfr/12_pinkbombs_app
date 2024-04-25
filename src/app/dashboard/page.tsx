@@ -66,15 +66,28 @@ const summary: SummaryLinksProps = [
     ],
   },
   {
+    title: "Human health",
+    sublinks: [
+      {
+        label: "Antibiotic consumption",
+        targetId: "antibiotic-conso",
+      },
+      {
+        label: "Microplastics",
+        targetId: "microplastics",
+      },
+    ],
+  },
+  {
     title: "Animal welfare",
     sublinks: [
       {
-        label: "Stress in land-based facilities",
-        targetId: "salmon-collapse",
+        label: "Density / stress in onshore factory",
+        targetId: "stress-onshore",
       },
       {
         label: "Mortality rate",
-        targetId: "hyper-growth",
+        targetId: "mortality-rates",
       },
     ],
   },
@@ -83,7 +96,7 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Carbon",
-        targetId: "salmon-collapse",
+        targetId: "carbon-bomb",
       },
     ],
   },
@@ -91,8 +104,8 @@ const summary: SummaryLinksProps = [
     title: "Social",
     sublinks: [
       {
-        label: "/",
-        targetId: "salmon-collapse",
+        label: "Carbon",
+        targetId: "social-carbon",
       },
     ],
   },
@@ -101,7 +114,7 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Nutrition matrix",
-        targetId: "salmon-collapse",
+        targetId: "alternatives",
       },
     ],
   },
@@ -136,6 +149,28 @@ const DashboardPage = () => {
       <section>
         <TitleBlock id="human-health" title="Human health" />
         <AntibioticSection />
+        <MicroplasticSection />
+      </section>
+
+      <section>
+        <TitleBlock id="animal-welfare" title="Animal welfare" />
+        <StressOnshoreSection />
+        <MortalityRateSection />
+      </section>
+
+      <section>
+        <TitleBlock id="climate" title="Climate" />
+        <CarbonSection />
+      </section>
+
+      <section>
+        <TitleBlock id="social" title="Social" />
+        <SocialCarbonSection />
+      </section>
+
+      <section>
+        <TitleBlock id="alternatives" title="Alternatives" />
+        <NutritionMatrixSection />
       </section>
 
       <JoinBlock headDark={false} />
@@ -354,6 +389,85 @@ const AntibioticSection = () => {
       title="Antibiotic consumption"
       id="antibiotic-conso"
       content="If Norway is claiming to have less than 99% of its aquaculture antibiotics-free, other countries are not as vertuous. In Chile, the use of antibiotics has increased by 1/3 since covid-crisis.  In Chile: 421 tonnes of atb used for the 17 major producers, i.e. 0.04% (tonnes of atb /tonne of fish produced) on average. Rates diminished in 2018, but because of the covid crisis, they have risen again in 2021 to reach a rate of tonnes atb/tonnes fish i.e., 1/3 higher than in 2018."
+    />
+  );
+};
+
+const MicroplasticSection = () => {
+  return (
+    <CustomDashboardSection
+      title="Microplastics"
+      src="/images/microplastics.webp"
+      id="microplastics"
+      content="A 5 kg salmon contains approximately 575 microplastics.
+      An average French person consuming 4.4 kg of salmon per year will ingest around 575 microplastics per year out of a total of 97,500 from various sources.
+      Microplastics are particularly prevalent in salmon due to bioaccumulation in the food chain and the affinity of plastics for fats.
+      This affects mainly farmed salmon, which are significantly fattier and live in environments rich in plastics."
+    />
+  );
+};
+
+const StressOnshoreSection = () => {
+  return (
+    <CustomDashboardSection
+      title="Density / stress in onshore factory"
+      src="/images/stress.webp"
+      id="stress-onshore"
+      content="The density of salmon is three times higher in onshore factories compared to already dense sea farms, for reasons of profitability.
+      The consequences can be numerous:
+      mass mortality linked to pathogens, higher levels of stress."
+    />
+  );
+};
+
+const MortalityRateSection = () => {
+  return (
+    <DashboardSection
+      title="Mortality Rate"
+      id="mortality-rates"
+      mainContent="Mortality rates vary considerably from one producer to another and from year to year. Exceptionally high rates are observed, reaching 20% in some years."
+      content="If Norway is claiming to have less than 99% of its aquaculture antibiotics-free, other countries are not as vertuous. In Chile, the use of antibiotics has increased by 1/3 since covid-crisis.  In Chile: 421 tonnes of atb used for the 17 major producers, i.e. 0.04% (tonnes of atb /tonne of fish produced) on average. Rates diminished in 2018, but because of the covid crisis, they have risen again in 2021 to reach a rate of tonnes atb/tonnes fish i.e., 1/3 higher than in 2018."
+    />
+  );
+};
+
+const CarbonSection = () => {
+  return (
+    <DashboardSection
+      title="Carbon"
+      id="carbon-bomb"
+      content="
+      The salmon industry emitted approximately 16 million tonnes of CO2 in 2021, similar to a country like Slovenia or the emissions target of 8 million humans by 2050.
+      About 90% of the total emissions come from the value chain, mainly from fish feed and transportation.
+      This figure is extrapolated from the emissions of 9 of the largest salmon producers."
+    />
+  );
+};
+
+const SocialCarbonSection = () => {
+  return (
+    <CustomDashboardSection
+      title="Carbon"
+      src="/images/social-carbon.webp"
+      id="social-carbon"
+      mainContent="In 2020, 3% of all fish caught worldwide were raised for Atlantic salmon (2.72 million tonnes)."
+      content="
+      As salmon are carnivorous, they need to be fed with fishmeal. On average, farmed salmon consume the equivalent of 5 times their own weight in fish sourced from industrial fishing. This kind of overfishing has had numerous negative social impacts, as seen in Mauritania and Gambia, where the quantity of fish in the sea has diminished, and the few fish caught are bought by industries for an insignificant price, limiting employment opportunities and the local community's access to one of their main sources of food.
+      [Article on the impact of industrial fishing] -> [here] (or another)
+      Global annual catches of fish, shellfish, and crustaceans are projected to reach around 90 million tonnes by 2020. The vast majority of this volume is intended for human consumption (about 70 million tonnes). Then, nearly half of what remains (42%) is used for global fishmeal production, supplying the aquaculture sector (for fish farming)."
+    />
+  );
+};
+
+const NutritionMatrixSection = () => {
+  return (
+    <DashboardSection
+      title="Nutrition matrix / ethical alternative"
+      id="alternatives"
+      mainContent="Despite some nutritional advantages, which are nonetheless replaceable, the negative environmental and social impacts of salmon should prompt us to consider alternatives in our diet."
+      content="As you can see, there are many reasons why salmon consumption is problematic. So why do we eat so much of it? Firstly, the storytelling surrounding salmon conveys a very positive image (for special occasions, desirable...), but we also hear a lot of good things about its nutritional benefits.
+      It seems interesting to put these nutritional benefits into perspective, taking into account the various impacts on health, the environment, and society. This will give us a comprehensive view of the consequences of salmon consumption, but will also help us discover alternatives to this product, 
+      which could be as good for us as they are for the environment and the rest of humanity."
     />
   );
 };
