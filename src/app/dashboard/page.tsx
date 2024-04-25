@@ -269,7 +269,7 @@ const LandPlantsSection = () => {
   useEffect(() => {
     fetchGraphData();
   }, []);
-
+  console.log(mapData);
   if (!mapData) {
     return <></>;
   }
@@ -354,11 +354,12 @@ const LandPlantsSection = () => {
         </div>
         <iframe
           title="Land plants map"
-          src={mapData}
+          id="ras-map"
+          srcDoc={mapData}
           width={1000}
           height={900}
           className="w-full"
-        ></iframe>
+        />
       </div>
     </>
   );
