@@ -21,7 +21,10 @@ const Summary = ({
   }
 
   return (
-    <div className={clsx(className, "bg-darkblue1 p-6 md:p-12 lg:py-20")}>
+    <nav
+      className={clsx(className, "bg-darkblue1 p-6 md:p-12 lg:py-20")}
+      aria-label="Navigation page"
+    >
       <div className="max-w-[1500px] mx-auto">
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 gap-y-8 lg:gap-y-14">
           {links.map((link, keyLink) => (
@@ -44,7 +47,7 @@ const Summary = ({
           ))}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Summary;
