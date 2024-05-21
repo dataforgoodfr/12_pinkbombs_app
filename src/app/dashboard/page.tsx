@@ -104,7 +104,7 @@ const summary: SummaryLinksProps = [
     title: "Climat",
     sublinks: [
       {
-        label: "Carbon",
+        label: "Impact carbone",
         targetId: "carbon-bomb",
       },
     ],
@@ -113,7 +113,7 @@ const summary: SummaryLinksProps = [
     title: "Social",
     sublinks: [
       {
-        label: "Carbon",
+        label: "Impact carbone",
         targetId: "social-carbon",
       },
     ],
@@ -179,24 +179,19 @@ const DashboardPage = () => {
       </section>
 
       <section>
-        <TitleBlock id="animal-welfare" title="Animal welfare" />
+        <TitleBlock id="animal-welfare" title="Santé animale" />
         <StressOnshoreSection />
         <MortalityRateSection />
       </section>
 
       <section>
-        <TitleBlock id="climate" title="Climate" />
+        <TitleBlock id="climate" title="Climat" />
         <CarbonSection />
       </section>
 
       <section>
         <TitleBlock id="social" title="Social" />
         <SocialCarbonSection />
-      </section>
-
-      <section>
-        <TitleBlock id="alternatives" title="Alternatives" />
-        <NutritionMatrixSection />
       </section>
 
       <JoinBlock headDark={false} />
@@ -269,6 +264,13 @@ const TopCountriesSection = () => {
 };
 
 const SalmonConsumptionSection = () => {
+
+  const [data, setData] = useState(false)
+
+  if (!data){
+    return <></>
+  }
+
   return (
     <CustomDashboardSection
       title="Consommation de saumon"
@@ -396,6 +398,13 @@ const LandPlantsSection = () => {
   );
 };
 const SalmonConsumptionBisSection = () => {
+
+  const [data, setData] = useState(false)
+
+  if (!data){
+    return <></>
+  }
+
   return (
     <CustomDashboardSection
       title="Consommation"
@@ -482,7 +491,7 @@ const MortalityRateSection = () => {
 const CarbonSection = () => {
   return (
     <DashboardSection
-      title="Carbon"
+      title="Impact carbone"
       id="carbon-bomb"
       content="
       L'industrie du saumon a émis environ 16 millions de tonnes de CO2 en 2021, tout comme un pays comme la Slovénie ou l'objectif d'émissions de 8 millions d'êtres humains en 2050.
@@ -495,7 +504,7 @@ Cette valeur est extrapolée à partir des émissions de 9 des plus grands produ
 const SocialCarbonSection = () => {
   return (
     <CustomDashboardSection
-      title="Carbon"
+      title="Impact carbone"
       src="/images/social-carbon.webp"
       id="social-carbon"
       mainContent="En 2020, 3 % de tous les poissons capturés dans le monde sont élevés pour le saumon de l'Atlantique (2,72 millions de tonnes)."
