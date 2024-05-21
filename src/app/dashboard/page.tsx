@@ -156,14 +156,14 @@ const DashboardPage = () => {
         <SalmonCollapseSection />
         <SalmonFarmingSection />
         <TopCountriesSection />
-        <SalmonConsumptionSection />
+        {/* <SalmonConsumptionSection /> */}
       </section>
 
       <section>
         <TitleBlock id="companies" title="Entreprises" />
         <MainProductionSection />
         <LandPlantsSection />
-        <SalmonConsumptionBisSection />
+        {/* <SalmonConsumptionBisSection /> */}
       </section>
 
       <section>
@@ -264,12 +264,6 @@ const TopCountriesSection = () => {
 };
 
 const SalmonConsumptionSection = () => {
-
-  const [data, setData] = useState(false)
-
-  if (!data){
-    return <></>
-  }
 
   return (
     <CustomDashboardSection
@@ -398,12 +392,6 @@ const LandPlantsSection = () => {
   );
 };
 const SalmonConsumptionBisSection = () => {
-
-  const [data, setData] = useState(false)
-
-  if (!data){
-    return <></>
-  }
 
   return (
     <CustomDashboardSection
