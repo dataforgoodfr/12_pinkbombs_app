@@ -515,15 +515,3 @@ const SocialCarbonSection = () => {
     />
   );
 };
-
-const NutritionMatrixSection = () => {
-  return (
-    <DashboardSection
-      title="Matrices de nutrition"
-      id="alternatives"
-      mainContent="Malgré certains avantages nutritionnels néanmoins remplaçables, les impacts environnementaux et sociaux négatifs du saumon devraient nous inciter à envisager des alternatives dans notre alimentation."
-      content="Comme vous pouvez le constater, il existe de nombreuses raisons pour lesquelles la consommation de saumon est problématique. Alors pourquoi en mangeons-nous autant ? Tout d’abord, le storytelling autour du saumon véhicule une image très positive (pour les grandes occasions, désirable…), mais on entend aussi beaucoup de bonnes choses sur ses bienfaits nutritionnels.
-      Il nous semble intéressant de relativiser ces bénéfices nutritionnels, en tenant compte des différents impacts sur la santé, l’environnement et la société. Cela nous donnera une vision globale des conséquences de la consommation de saumon, mais nous aidera également à découvrir des alternatives à ce produit, qui pourraient être aussi bonnes pour nous que pour l'environnement et le reste de l'humanité."
-    />
-  );
-};
