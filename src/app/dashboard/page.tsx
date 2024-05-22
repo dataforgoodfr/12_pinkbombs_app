@@ -264,7 +264,6 @@ const TopCountriesSection = () => {
 };
 
 // const SalmonConsumptionSection = () => {
-
 //   return (
 //     <CustomDashboardSection
 //       title="Consommation de saumon"
@@ -393,7 +392,6 @@ const LandPlantsSection = () => {
 };
 
 // const SalmonConsumptionBisSection = () => {
-
 //   return (
 //     <CustomDashboardSection
 //       title="Consommation"
