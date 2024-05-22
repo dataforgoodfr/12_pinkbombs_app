@@ -263,16 +263,16 @@ const TopCountriesSection = () => {
   );
 };
 
-const SalmonConsumptionSection = () => {
+// const SalmonConsumptionSection = () => {
 
-  return (
-    <CustomDashboardSection
-      title="Consommation de saumon"
-      id="intro-consumption"
-      content="Les États-Unis sont les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont aussi d’importants consommateurs saumon, la France étant en tête de proue avec une consommation élevée qui atteint 4,4kg/an/personne. "
-    />
-  );
-};
+//   return (
+//     <CustomDashboardSection
+//       title="Consommation de saumon"
+//       id="intro-consumption"
+//       content="Les États-Unis sont les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont aussi d’importants consommateurs saumon, la France étant en tête de proue avec une consommation élevée qui atteint 4,4kg/an/personne. "
+//     />
+//   );
+// };
 
 const MainProductionSection = () => {
   return (
@@ -391,18 +391,19 @@ const LandPlantsSection = () => {
     </>
   );
 };
-const SalmonConsumptionBisSection = () => {
 
-  return (
-    <CustomDashboardSection
-      title="Consommation"
-      id="companies-consumption"
-      mainContent="Les États-Unis sont de loin les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont également d’importants consommateurs de ce poisson. La consommation de saumon par habitant pour ces grands pays est d'environ 2 kg/personne/an et peut atteindre des valeurs supérieures à 5 kg/personne/an."
-      content="La consommation apparente de saumon (toutes espèces confondues) est calculée comme la production, y compris l'aquaculture et la capture, plus les importations moins les exportations. Toutes les données sont fournies par la FAO. Les facteurs de conversion entre le poids du produit et le poids vif sont approximés à l'aide de la documentation de la FAO : https://www.fao.org/3/bt963e/bt963e.pdf
-    Ces approximations peuvent conduire à des indicateurs erronés, surtout dans les pays peu peuplés et/ou à forte production. C’est pour cette raison que la consommation par habitant n’est pas incluse dans le graphique."
-    />
-  );
-};
+// const SalmonConsumptionBisSection = () => {
+
+//   return (
+//     <CustomDashboardSection
+//       title="Consommation"
+//       id="companies-consumption"
+//       mainContent="Les États-Unis sont de loin les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont également d’importants consommateurs de ce poisson. La consommation de saumon par habitant pour ces grands pays est d'environ 2 kg/personne/an et peut atteindre des valeurs supérieures à 5 kg/personne/an."
+//       content="La consommation apparente de saumon (toutes espèces confondues) est calculée comme la production, y compris l'aquaculture et la capture, plus les importations moins les exportations. Toutes les données sont fournies par la FAO. Les facteurs de conversion entre le poids du produit et le poids vif sont approximés à l'aide de la documentation de la FAO : https://www.fao.org/3/bt963e/bt963e.pdf
+//     Ces approximations peuvent conduire à des indicateurs erronés, surtout dans les pays peu peuplés et/ou à forte production. C’est pour cette raison que la consommation par habitant n’est pas incluse dans le graphique."
+//     />
+//   );
+// };
 
 const DeforestationSection = () => {
   return (
