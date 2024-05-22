@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import React, { useState } from "react";
 import Image from "next/image";
+import React, { useState } from "react";
 
 export type SummaryLinksProps = {
   id: string;
@@ -77,7 +77,7 @@ const Summary = ({
                     href={`#${sublink.targetId}`}
                     role="menuitem"
                     className="block p-2 hover:text-red1"
-                    onClick={(e) => {
+                    onClick={() => {
                       setOpenMenu("");
                     }}
                   >
