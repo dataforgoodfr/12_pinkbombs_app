@@ -1,11 +1,10 @@
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import { ReactNode } from "react";
+import Link from "next/link";
+import React, { ReactNode, useEffect, useState } from "react";
 
 import { fetchData } from "@/pages/api/chart";
-import Link from "next/link";
 const DashboardChart = dynamic(() => import("@/components/DashboardChart"), {
   ssr: false,
 });
