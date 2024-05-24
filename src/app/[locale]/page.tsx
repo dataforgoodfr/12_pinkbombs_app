@@ -5,12 +5,11 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import * as React from "react";
 import "@/lib/env";
+import { useTranslations } from "next-intl";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-import "../styles/page.css";
 
 import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
@@ -20,13 +19,11 @@ import JoinBlock from "@/components/JoinBlock";
 import { fetchData } from "@/pages/api/chart";
 
 const HomePage = () => {
+  const t = useTranslations("story");
+
   return (
     <>
-      <IntroBlock
-        title="Le saumon que vous
-        mangez, vendez, produisez..."
-        image="/images/salmon.svg"
-      />
+      <IntroBlock title={t("title")} image="/images/salmon.svg" />
 
       <BombSection />
       <ExplodeSection />

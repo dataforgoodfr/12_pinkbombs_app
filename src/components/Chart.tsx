@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 import { fetchData } from "@/pages/api/chart";
+import { useLocale } from "next-intl";
 
 type ChartProps = {
   id: string;
@@ -24,13 +25,17 @@ const Chart = ({
     data: [],
     layout: {},
   });
+  const locale = useLocale();
 
   useEffect(() => {
     if (!id) return;
 
     const fetchGraphData = async () => {
       if (id.length > 0) {
-        const response = await fetchData(type, id);
+        const response = await fetchData(
+          (locale === "fr" ? "fr/" : "") + type,
+          id,
+        );
         setChartData(response);
       }
     };

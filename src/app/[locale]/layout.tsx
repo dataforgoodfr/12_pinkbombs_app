@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { Barlow_Condensed, Montserrat } from "next/font/google";
 import Image from "next/image";
 import * as React from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
@@ -56,34 +58,39 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const messages = await getMessages();
   return (
     <html
-      lang="fr"
+      lang={locale}
       className={clsx(barlow.variable, montserrat.variable, "scroll-smooth")}
     >
       <body>
-        <Navbar />
-        <main>
-          {children}
-          <a
-            href="#"
-            className="hidden md:flex items-center justify-center bg-white hover:bg-black w-14 h-14 rounded-full fixed bottom-4 right-4 hover:-translate-y-1 transition-all ease-in duration-75"
-          >
-            <Image
-              src="/images/bottom.svg"
-              alt="Haut de page"
-              width="40"
-              height="20"
-              className="w-8 aspect-square rotate-180"
-            />
-          </a>
-        </main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main>
+            {children}
+            <a
+              href="#"
+              className="hidden md:flex items-center justify-center bg-white hover:bg-black w-14 h-14 rounded-full fixed bottom-4 right-4 hover:-translate-y-1 transition-all ease-in duration-75"
+            >
+              <Image
+                src="/images/bottom.svg"
+                alt="Haut de page"
+                width="40"
+                height="20"
+                className="w-8 aspect-square rotate-180"
+              />
+            </a>
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

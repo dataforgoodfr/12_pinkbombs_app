@@ -2,35 +2,37 @@
 
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import Link from "next/link";
+import { Link, basePathType, usePathname } from "../../navigation";
+import { useTranslations } from "next-intl";
 
 type NavItemsProps = {
   link: string;
   text: string;
 }[];
 
-const navItems: NavItemsProps = [
-  {
-    link: "/",
-    text: "Story",
-  },
-  {
-    link: "/dashboard",
-    text: "Dashboard",
-  },
-  {
-    link: "/to-act",
-    text: "agir",
-  },
-  {
-    link: "/about",
-    text: "à propos",
-  },
-];
-
 const Navbar = () => {
-  const pathName = usePathname();
+  const t = useTranslations("layout");
+  const pathname = usePathname();
+
+  const navItems: NavItemsProps = [
+    {
+      link: "/",
+      text: t("nav.story"),
+    },
+    {
+      link: "/dashboard",
+      text: t("nav.dashboard"),
+    },
+    {
+      link: "/to-act",
+      text: t("nav.act"),
+    },
+    {
+      link: "/about",
+      text: t("nav.about"),
+    },
+  ];
 
   return (
     <header className="absolute left-0 top-0 z-10 w-full">
@@ -50,15 +52,21 @@ const Navbar = () => {
             <Link
               className={clsx(
                 "font-secondary uppercase font-bold text-darkblue1 hover:text-red1 focus:text-red1 lg:text-2xl",
-                item.link === pathName ? "navbar-active" : "",
+                item.link === pathname ? "navbar-active" : "",
               )}
-              href={item.link}
-              aria-current={item.link === pathName ? "page" : undefined}
+              href={item.link as basePathType}
+              aria-current={item.link === pathname ? "page" : undefined}
               key={`nav-${key}`}
             >
               {item.text}
             </Link>
           ))}
+          <Link href={pathname} locale="fr">
+            FR
+          </Link>
+          <Link href={pathname} locale="en">
+            EN
+          </Link>
         </nav>
       </div>
     </header>

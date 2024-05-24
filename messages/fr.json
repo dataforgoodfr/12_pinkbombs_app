@@ -1,4 +1,12 @@
 {
+  "layout": {
+    "nav": {
+      "story": "Story",
+      "dashboard": "Dashboard",
+      "act": "Agir",
+      "about": "À propos"
+    }
+  },
   "story": {
     "title": "Le saumon que vous mangez, vendez, produisez..."
   }
