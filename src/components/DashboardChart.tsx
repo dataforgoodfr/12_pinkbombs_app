@@ -8,12 +8,18 @@ const DashboardChart = ({
   data,
   layout,
   id,
+  className,
 }: {
   data: Data[];
   layout: object;
   id: string;
+  className?: string;
 }) => {
-  return <Plot divId={id} data={data} layout={layout} />;
+  if (!id || !data || !layout) {
+    return <></>;
+  }
+
+  return <Plot divId={id} data={data} layout={layout} className={className} />;
 };
 
 export default DashboardChart;
