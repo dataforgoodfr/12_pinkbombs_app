@@ -35,7 +35,7 @@ const Chart = ({
       }
     };
     fetchGraphData();
-  }, [id]);
+  }, [id, type]);
 
   if (!chartData)
     return (
