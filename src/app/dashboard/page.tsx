@@ -13,7 +13,7 @@ import TitleBlock from "@/components/TitleBlock";
 
 import { fetchData } from "@/pages/api/chart";
 
-const DashboardChart = dynamic(() => import("@/components/DashboardChart"), {
+const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
 });
 
@@ -231,22 +231,6 @@ const SalmonFarmingSection = () => {
 };
 
 const TopCountriesSection = () => {
-  const [mapData, setMapData] = useState({
-    data: [],
-    layout: {},
-  });
-  const fetchGraphData = async () => {
-    const mapResponse = await fetchData("graphs", "evolution-map");
-    setMapData(mapResponse);
-  };
-  useEffect(() => {
-    fetchGraphData();
-  }, []);
-
-  if (!mapData) {
-    return <></>;
-  }
-
   return (
     <>
       <DashboardSection
@@ -262,11 +246,7 @@ const TopCountriesSection = () => {
         </h3>
 
         <div className="flex md:justify-center min-h-[450px] overflow-y-auto">
-          <DashboardChart
-            data={mapData.data}
-            layout={mapData.layout}
-            id="evolution-map"
-          />
+          <Chart id="evolution-map" />
         </div>
       </div>
     </>
@@ -311,7 +291,7 @@ const LandPlantsSection = () => {
   return (
     <>
       <DashboardSection
-        title="La nouvelle menace: Les fermes aquacoles terrestres"
+        title="La nouvelle menace : Les fermes aquacoles terrestres"
         id="top-land"
         mainContent="
     En 2021, la capacité de production théorique combinée des élevages terrestres

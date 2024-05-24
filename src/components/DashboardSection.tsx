@@ -2,10 +2,9 @@ import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode } from "react";
 
-import { fetchData } from "@/pages/api/chart";
-const DashboardChart = dynamic(() => import("@/components/DashboardChart"), {
+const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
 });
 
@@ -99,26 +98,6 @@ const DashboardSection = ({
   meta,
   ...rest
 }: DashboardSectionProps) => {
-  const [chartData, setChartData] = useState({
-    data: [],
-    layout: {},
-  });
-
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    if (!hasChart) return;
-
-    const fetchGraphData = async () => {
-      if (id.length > 0) {
-        const response = await fetchData("graphs", id);
-        setChartData(response);
-        setIsLoading(false);
-      }
-    };
-    fetchGraphData();
-  }, [id, hasChart]);
-
   return (
     <div
       className={clsx(className, "p-6 md:p-12 max-w-[1596px] mx-auto")}
@@ -143,30 +122,16 @@ const DashboardSection = ({
             />
           ) : null}
 
-          {hasChart ? (
-            <>
-              {isLoading || !chartData ? (
-                <p className="flex items-center justify-center text-md text-center bg-gray-50 min-h-[300px]">
-                  Chargement des données en cours...
-                </p>
-              ) : (
-                <DashboardChart
-                  data={chartData.data}
-                  layout={chartData.layout}
-                  id={id}
-                  className="min-h-[300px]"
-                />
-              )}
-              {meta ? (
-                <ul className="flex flex-wrap gap-4 mt-4 p-2 text-sm rounded-sm bg-gray-50">
-                  {Object.keys(meta).map((data, key) => (
-                    <li key={`meta-${key}`}>
-                      <MetaDataItem data={data} {...meta[data]} />
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </>
+          {hasChart ? <Chart id={id} className="min-h-[300px]" /> : null}
+
+          {meta ? (
+            <ul className="flex flex-wrap gap-4 mt-4 p-2 text-sm rounded-sm bg-gray-50">
+              {Object.keys(meta).map((data, key) => (
+                <li key={`meta-${key}`}>
+                  <MetaDataItem data={data} {...meta[data]} />
+                </li>
+              ))}
+            </ul>
           ) : null}
         </div>
       </div>
