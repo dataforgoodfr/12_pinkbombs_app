@@ -18,7 +18,7 @@ const Chart = ({
   className,
   type = "graphs",
   height = 450,
-  width = 700,
+  width,
 }: ChartProps) => {
   const [chartData, setChartData] = useState({
     data: [],
@@ -48,7 +48,7 @@ const Chart = ({
     <Plot
       divId={id}
       data={chartData.data}
-      layout={{ ...chartData.layout, height }}
+      layout={{ ...chartData.layout, ...(width ? { width } : null), height }}
       config={{ responsive: true }}
       className={clsx("!block min-h-[300px]", className)}
     />
