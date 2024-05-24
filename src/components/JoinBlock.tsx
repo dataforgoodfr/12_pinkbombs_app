@@ -18,7 +18,7 @@ const IntroBlock = ({
   headDark?: boolean;
 }) => {
   return (
-    <div className={className}>
+    <div id="alternatives-block" className={className}>
       <div
         className={clsx(
           "lg:bg-[url('/images/wave.svg')] bg-no-repeat bg-center bg-[length:3200px_275px]",
@@ -51,9 +51,7 @@ const IntroBlock = ({
             saumon au monde, porte une responsabilité particulière dans
             l'orientation des pratiques.
           </p>
-          <div className="flex lg:justify-center min-h-[300px] overflow-y-auto">
-            <Chart id="alternatives" />
-          </div>
+          <Chart id="alternatives" />
         </div>
       </div>
 

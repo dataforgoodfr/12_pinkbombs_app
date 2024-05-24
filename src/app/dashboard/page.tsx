@@ -8,7 +8,7 @@ import Calculator from "@/components/Calculator";
 import DashboardSection from "@/components/DashboardSection";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
-import Summary, { SummaryLinksProps } from "@/components/Summary";
+import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
 
 import { fetchData } from "@/pages/api/chart";
@@ -24,19 +24,19 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Effondrement du saumon sauvage de l'Atlantique",
-        targetId: "salmon-collapse",
+        targetId: "salmon-collapse-block",
       },
       {
         label: "Hyper-croissance de l’élevage du saumon",
-        targetId: "hyper-growth",
+        targetId: "hyper-growth-block",
       },
       {
         label: "Principaux pays producteurs de saumon d'élevage",
-        targetId: "top-10",
+        targetId: "top-10-block",
       },
       {
         label: "Consommation",
-        targetId: "intro-consumption",
+        targetId: "intro-consumption-block",
       },
     ],
   },
@@ -46,19 +46,19 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Principaux producteurs de saumon en filet ouvert",
-        targetId: "top-comp",
+        targetId: "top-comp-block",
       },
       {
         label: "La nouvelle menace: sur fermes aquacoles terrestres",
-        targetId: "top-land",
+        targetId: "top-land-block",
       },
       {
         label: "Le futur des fermes aquacoles terrestres",
-        targetId: "future-land-based",
+        targetId: "future-land-based-block",
       },
       {
         label: "Consommation",
-        targetId: "companies-consumption",
+        targetId: "companies-consumption-block",
       },
     ],
   },
@@ -68,11 +68,11 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Deforestation",
-        targetId: "deforestation",
+        targetId: "deforestation-block",
       },
       {
         label: "Les évasions",
-        targetId: "escapes-rates",
+        targetId: "escapes-rates-block",
       },
     ],
   },
@@ -82,11 +82,11 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Consommation d'antibiotiques",
-        targetId: "antibiotic-conso",
+        targetId: "antibiotic-conso-block",
       },
       {
         label: "Microplastique",
-        targetId: "microplastics",
+        targetId: "microplastics-block",
       },
     ],
   },
@@ -96,11 +96,11 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Densité / stress dans usine à terre",
-        targetId: "stress-onshore",
+        targetId: "stress-onshore-block",
       },
       {
         label: "Taux de mortalité",
-        targetId: "mortality-rates",
+        targetId: "mortality-rates-block",
       },
     ],
   },
@@ -110,7 +110,7 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Impact carbone",
-        targetId: "carbon-bomb",
+        targetId: "carbon-bomb-block",
       },
     ],
   },
@@ -120,7 +120,7 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Impact carbone",
-        targetId: "social-carbon",
+        targetId: "social-carbon-block",
       },
     ],
   },
@@ -130,7 +130,7 @@ const summary: SummaryLinksProps = [
     sublinks: [
       {
         label: "Matrice de nutrition",
-        targetId: "alternatives",
+        targetId: "alternatives-block",
       },
     ],
   },
@@ -139,8 +139,7 @@ const summary: SummaryLinksProps = [
 const DashboardPage = () => {
   return (
     <>
-      <IntroBlock title="Les chiffres derrière l’histoire" />
-      <Summary links={summary} />
+      <IntroBlock title="Les chiffres derrière l’histoire" summary={summary} />
 
       <Calculator
         data={[
@@ -315,7 +314,7 @@ const LandPlantsSection = () => {
       />
       <div
         id="future-land-based"
-        className="p-6 md:p-12 max-w-[1500px] mx-auto"
+        className="p-6 md:p-12 max-w-[1596px] mx-auto"
       >
         <div className="lg:w-2/4">
           <h3 className="h3 text-red1">
