@@ -218,7 +218,7 @@ const BusinessSection = () => {
           connaît depuis quelques décennies une hyper-croissance à l’échelle
           globale.
         </p>
-        <div className="flex md:justify-center min-h-[450px] overflow-y-auto bg-white">
+        <div className="flex md:justify-center min-h-[450px] overflow-y-auto">
           <Plot data={plot.data} layout={plot.layout} />
         </div>
         <div className="flex justify-center">
