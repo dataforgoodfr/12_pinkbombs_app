@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Edito = ({
+const IconCard = ({
   className,
   title,
   image,
@@ -32,14 +32,14 @@ const Edito = ({
           <h2 className={clsx("h1", "text-red1")}>{title}</h2>
           <p className="mt-3 lg:mt-6 lg:text-xl text-white">{content}</p>
           <Link
-            className="inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 bg-darkblue1 font-secondary uppercase rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100"
+            className="inline-flex gap-4 mt-6 lg:mt-12 p-4 lg:px-10 lg:text-xl text-red1 font-secondary uppercase rounded-md tracking-widest font-black border-2 border-red1 hover:bg-red1 hover:text-darkblue1"
             href={link}
           >
             <svg
               width="46"
               height="26"
               viewBox="0 0 46 26"
-              className="fill-transparent hidden lg:inline-block -scale-75"
+              className="fill-transparent hidden lg:inline-block"
               aria-hidden="true"
             >
               <path
@@ -101,4 +101,4 @@ const Edito = ({
     </div>
   );
 };
-export default Edito;
+export default IconCard;
