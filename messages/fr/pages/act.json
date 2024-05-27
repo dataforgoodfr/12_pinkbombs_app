@@ -1,6 +1,9 @@
 {
   "act": {
-    "title": "Agir",
+    "meta": {
+      "title": "Agir"
+    },
+    "title": "Bonne nouvelle : désamorcer les Pinkbombs est à portée de clic",
     "company": {
       "title": "J’interpelle les entreprises responsables",
       "content": "en partageant un post d’information pré-rédigé qui les identifie sur Linkedin.",

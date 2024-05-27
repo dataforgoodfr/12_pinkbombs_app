@@ -1,6 +1,9 @@
 {
   "act": {
-    "title": "To act",
+    "meta": {
+      "title": "To act"
+    },
+    "title": "Good news: defusing Pinkbombs is just a click away",
     "company": {
       "title": "I call on responsible companies",
       "content": "by sharing a pre-written information post that identifies them on Linkedin.",
