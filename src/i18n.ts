@@ -9,6 +9,13 @@ export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) notFound();
 
   return {
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: {
+      ...(await import(`../messages/${locale}/pages/about.json`)).default,
+      ...(await import(`../messages/${locale}/pages/act.json`)).default,
+      ...(await import(`../messages/${locale}/pages/dashboard.json`)).default,
+      ...(await import(`../messages/${locale}/pages/story.json`)).default,
+      ...(await import(`../messages/${locale}/components.json`)).default,
+      ...(await import(`../messages/${locale}/layout.json`)).default,
+    },
   };
 });

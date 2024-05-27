@@ -1,16 +1,23 @@
-"use client";
-
-import * as React from "react";
+import React from "react";
 import "@/lib/env";
+import About from "./about";
+import { getTranslations } from "next-intl/server";
+import { locales } from "@/navigation";
 
-import IntroBlock from "@/components/IntroBlock";
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: typeof locales };
+}) {
+  const t = await getTranslations({ locale, namespace: "about" });
 
-const AboutPage = () => {
-  return (
-    <>
-      <IntroBlock title="À propos" />
-    </>
-  );
+  return {
+    title: t("title"),
+  };
+}
+
+const Page = () => {
+  return <About />;
 };
 
-export default AboutPage;
+export default Page;

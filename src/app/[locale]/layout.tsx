@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import { Metadata } from "next";
 import { Barlow_Condensed, Montserrat } from "next/font/google";
 import Image from "next/image";
 import * as React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
@@ -24,39 +24,46 @@ import "@/styles/globals.css";
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { locales } from "@/navigation";
 
-import { siteConfig } from "@/constant/config";
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: typeof locales };
+}) {
+  const t = await getTranslations({ locale, namespace: "siteConfig" });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.title,
-    template: `%s | ${siteConfig.title}`,
-  },
-  description: siteConfig.description,
-  robots: { index: true, follow: true },
-  icons: {
-    icon: "/favicon/favicon.ico",
-    shortcut: "/favicon/favicon.ico",
-    apple: "/favicon/apple-touch-icon.png",
-  },
-  manifest: `/favicon/site.webmanifest`,
-  openGraph: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    description: siteConfig.description,
-    siteName: siteConfig.title,
-    images: [`${siteConfig.url}/images/og.jpg`],
-    type: "website",
-    locale: "fr",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.title,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/images/og.jpg`],
-  },
-};
+  return {
+    metadataBase: new URL(t("url")),
+    title: {
+      default: t("title"),
+      template: `%s | ${t("title")}`,
+    },
+    description: t("description"),
+    robots: { index: true, follow: true },
+    icons: {
+      icon: "/favicon/favicon.ico",
+      shortcut: "/favicon/favicon.ico",
+      apple: "/favicon/apple-touch-icon.png",
+    },
+    manifest: `/favicon/site.webmanifest`,
+    openGraph: {
+      url: t("url"),
+      title: t("title"),
+      description: t("description"),
+      siteName: t("title"),
+      images: [`${t("url")}/images/og.jpg`],
+      type: "website",
+      locale: "fr",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [`${t("url")}/images/og.jpg`],
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,

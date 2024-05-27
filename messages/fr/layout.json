@@ -1,0 +1,15 @@
+{
+  "layout": {
+    "nav": {
+      "story": "Story",
+      "dashboard": "Dashboard",
+      "act": "Agir",
+      "about": "À propos"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analyser l'impact du saumon sur l'environnement, l'écosystème, la santé et les communautés.",
+    "url": "https://pinkbombs-app.vercel.app"
+  }
+}

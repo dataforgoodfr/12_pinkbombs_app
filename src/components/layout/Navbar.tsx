@@ -3,8 +3,8 @@
 import clsx from "clsx";
 import Image from "next/image";
 // import Link from "next/link";
-import { Link, basePathType, usePathname } from "../../navigation";
-import { useTranslations } from "next-intl";
+import { locales, Link, basePathType, usePathname } from "../../navigation";
+import { useTranslations, useLocale } from "next-intl";
 
 type NavItemsProps = {
   link: string;
@@ -14,6 +14,7 @@ type NavItemsProps = {
 const Navbar = () => {
   const t = useTranslations("layout");
   const pathname = usePathname();
+  const locale = useLocale();
 
   const navItems: NavItemsProps = [
     {
@@ -51,7 +52,7 @@ const Navbar = () => {
           {navItems.map((item, key) => (
             <Link
               className={clsx(
-                "font-secondary uppercase font-bold text-darkblue1 hover:text-red1 focus:text-red1 lg:text-2xl",
+                "font-secondary uppercase font-bold text-darkblue1 hover:text-red1 focus:text-red1 lg:text-2xl transition-colors ease-in-out duration-200",
                 item.link === pathname ? "navbar-active" : "",
               )}
               href={item.link as basePathType}
@@ -61,12 +62,25 @@ const Navbar = () => {
               {item.text}
             </Link>
           ))}
-          <Link href={pathname} locale="fr">
-            FR
-          </Link>
-          <Link href={pathname} locale="en">
-            EN
-          </Link>
+
+          <div className="flex gap-1 items-center">
+            {locales.map((lang, keyLang) => (
+              <Link
+                className={clsx(
+                  "px-2 py-1 rounded-md uppercase hover:text-white hover:bg-red1 transition-colors ease-in-out duration-200",
+                  lang === locale
+                    ? "font-bold text-white bg-darkblue1"
+                    : "text-darkblue1 bg-transparent",
+                )}
+                href={pathname}
+                key={`lang-${keyLang}`}
+                aria-current={lang === locale ? "page" : undefined}
+                locale={lang}
+              >
+                {lang}
+              </Link>
+            ))}
+          </div>
         </nav>
       </div>
     </header>
