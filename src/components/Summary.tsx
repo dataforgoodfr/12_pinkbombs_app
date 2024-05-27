@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export type SummaryLinksProps = {
   id: string;
@@ -19,6 +20,7 @@ const Summary = ({
   links: SummaryLinksProps;
 }) => {
   const [openMenu, setOpenMenu] = useState("");
+  const t = useTranslations("components");
   const handleClickLink = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     id: string,
@@ -34,7 +36,7 @@ const Summary = ({
   return (
     <nav
       className={clsx(className, "pt-6 lg:pt-12 text-red1 bg-pink1")}
-      aria-label="page"
+      aria-label={t("summary.title")}
     >
       <ul
         role="menubar"

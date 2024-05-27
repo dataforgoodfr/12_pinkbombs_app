@@ -1,10 +1,15 @@
 {
   "layout": {
     "nav": {
+      "title": "main",
       "story": "Story",
       "dashboard": "Dashboard",
       "act": "To act",
       "about": "About"
+    },
+    "footer": {
+      "allRight": "Tous droits réservé",
+      "and": "et"
     }
   },
   "siteConfig": {

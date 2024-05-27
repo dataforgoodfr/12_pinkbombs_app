@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,6 +24,8 @@ const Edito = ({
   link: string;
   imagePosition?: "left" | "right";
 }) => {
+  const t = useTranslations("components");
+
   return (
     <div
       className={clsx("p-6 pb-14 lg:p-12 text-white bg-darkblue1", className)}
@@ -30,7 +33,7 @@ const Edito = ({
       <div className="flex flex-col md:flex-row md:items-center gap-6 lg:gap-14 2xl:gap-32 max-w-[1500px] mx-auto">
         <div className="flex-1">
           <h2 className={clsx("h1", "text-red1")}>{title}</h2>
-          <p className="mt-3 lg:mt-6 lg:text-xl text-white">{content}</p>
+          <p className="mt-3 lg:mt-6 text-white">{content}</p>
           <Link
             className="inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 bg-darkblue1 font-secondary uppercase rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100"
             href={link}
@@ -58,7 +61,7 @@ const Edito = ({
                 className="stroke-current"
               />
             </svg>
-            En savoir plus
+            {t("edito.link")}
           </Link>
         </div>
 
@@ -93,7 +96,9 @@ const Edito = ({
               />
             </picture>
             {image.caption && (
-              <figcaption className="mt-4 lg:mt-7">{image.caption}</figcaption>
+              <figcaption className="p-caption mt-4 lg:mt-7">
+                {image.caption}
+              </figcaption>
             )}
           </figure>
         ) : null}

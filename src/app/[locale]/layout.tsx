@@ -77,7 +77,11 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={clsx(barlow.variable, montserrat.variable, "scroll-smooth")}
+      className={clsx(
+        barlow.variable,
+        montserrat.variable,
+        "scroll-smooth overflow-x-hidden",
+      )}
     >
       <body>
         <NextIntlClientProvider messages={messages}>
@@ -86,7 +90,7 @@ export default async function LocaleLayout({
             {children}
             <a
               href="#"
-              className="hidden md:flex items-center justify-center bg-white hover:bg-black w-14 h-14 rounded-full fixed bottom-4 right-4 hover:-translate-y-1 transition-all ease-in duration-75"
+              className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
             >
               <Image
                 src="/images/bottom.svg"
