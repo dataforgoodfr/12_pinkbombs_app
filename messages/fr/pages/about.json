@@ -1,0 +1,154 @@
+{
+  "about": {
+    "title": "A propos",
+    "why": {
+      "title": "Pourquoi Pink Bombs ?",
+      "content": "Nous sommes face à une urgence océanique. L'océan, principale source de vie sur Terre, est de plus en plus menacé par nos activités humaines. La surpêche est la principale cause de perte de biodiversité marine. Le saumon, emblématique de l'aquaculture intensive, génère des impacts multiples à l’échelle mondiale. Il est donc urgent de changer le système alimentaire pour protéger les écosystèmes marins, la santé animale et humaine. \n PinkBombs est là pour :",
+      "list": {
+        "01": "S'attaquer à l'une des plus grandes menaces pour les océans aujourd'hui : l'élevage de saumons.",
+        "02": "Déconstruire la perception populaire déformée autour du saumon.",
+        "03": "Orienter les professionnels et les consommateurs vers des alternatives."
+      }
+    },
+    "who": {
+      "title": "Qui sommes-nous ?",
+      "content": "PinkBombs est le fruit d'une collaboration entre deux organisations à but non lucratif, Seastemik et DataforGood.",
+      "list": {
+        "01": "Seastemik est une ONG fondée en 2023 par un collectif d'optimistes préoccupés par l'état des océans. En sensibilisant la société civile et en engageant la responsabilité des acteurs intermédiaires (grande distribution et restauration collective) et de l'État, notre mission est de favoriser une transition vers un système alimentaire sain, accessible et durable.",
+        "02": "Data For Good est une ONG française dont le but est d'aider les projets d'intérêt général à se développer. Grâce à une communauté de plus de 4 000 bénévoles compétents en technologie, une douzaine de projets sont soutenus et développés pendant plus de 3 mois."
+      }
+    },
+    "methods": {
+      "title": "Approche et méthodologies",
+      "content": {
+        "01": "PinkBombs a été créé pour analyser et transformer les données publiques en outils accessibles à tous.",
+        "02": "Notre approche repose sur trois valeurs :",
+        "03": "Notre démarche a suivi trois étapes :"
+      },
+      "list01": {
+        "01": "Open source : le code et la data sont disponibles ici.",
+        "02": "Collaboratif : contactez-nous pour contribuer ou suggérer des améliorations.",
+        "03": "Dynamique : Notre base de données est régulièrement mise à jour pour intégrer de nouvelles perspectives et améliorer sa précision."
+      },
+      "list02": {
+        "01": "Identifications des sujets prioritaires : L'objectif du site étant d'offrir une compilation des informations les plus frappantes sur le sujet, l'organisation a commencé par prioriser les sujets à aborder.",
+        "02": "Recherche approfondie : Une recherche documentaire a été menée sur Internet et en contactant des experts, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
+        "03": "Données évaluées par des pairs : Dans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’experts à permis la validation finale."
+      }
+    },
+    "sources": "Sources & méthodologies",
+    "macro": {
+      "title": "Tendances Macro",
+      "content01": "Les données présentées sur le Dashboard sont concentrées sur le saumon atlantique (Salmo salar) sauf indication contraire.",
+      "content02": "Les données sur la pêche du saumon sauvage dans l’Atlantique sont disponibles sur le site du Conseil international pour l'exploration de la mer (CIEM TO ADD - Gaelle). Les données sur la production de saumon d’élevage sont disponibles sur le site de l’Organisation des Nations Unies pour l’Alimentation et l’Agriculture (FAO - https://www.fao.org/fishery/en/collection/aquaculture?lang=en). Les graphes Discrease of wild salmon catch, Hyper-growth in salmon farming, Top 10 countries producing salmon et Evolution of salmon farming by country sont un direct visuel de ces 2 sources de données une fois filtré sur Salmo Salar.",
+      "content03": "Pour calculer le nombre de saumons produits ou convertir le nombre de tonnes en nombre de saumons, nous avons utilisé le poids moyen d’un saumon au terme de sa croissance en élevage industriel. 5kg est le poids standard utilisé dans l’industrie du saumon."
+    },
+    "alternatives": {
+      "title": "Alternatives",
+      "content": "La matrice des alternatives présente une comparaison de 8 produits (dont le saumon) sur 6 critères. Certains de ces critères reposent sur des données quantitatives, comme la part des apports en omégas 3 et l’empreinte carbone, alors que d’autres reposent sur des données qualitatives. La gamme de couleurs représente des degrés graduels d’impact; de vert foncé (impact positif) à rouge foncé (impact négatif).",
+      "link": "En savoir plus"
+    },
+    "companies": {
+      "title": "Producteurs",
+      "content": "Les données sur la production des 10 plus grands producteurs de saumons d'élevage sont directement tirés du rapport annuel de Mowi 2023 sans transformation de notre part.",
+      "farms_map": {
+        "title": "Les fermes aquacoles terrestres - la carte",
+        "data": {
+          "title": "Data",
+          "content01": "La liste des fermes d'élevage de saumon terrestres a été initialement établie en utilisant deux listes existantes publiquement disponibles :",
+          "list01": "Land-based salmon farming - Norne Securities (2023)",
+          "list02": "Cracking the hype of land-based salmon farming stocks - Tuva Einang Prestegard & Irem Havva Tekinöz - master thesis,  Norwegian School of Economics (2020)",
+          "content02": "L'ensemble de données a ensuite été enrichi par des recherches en ligne sur chaque projet, utilisant une variété de sources (iLaks, Undercurrent News, Akva Group, Salmonbusiness.com, Seafood.no, regjeringen.no, IntraFish, NorskFisk, SeafoodSource, FishFarmingExpert, FishFarmerMagazine, ScienceNorway, Global Seafood alliance, RASTech, sites internet de diverses entreprises, Andfjord Salmon, Atlantic Sapphire, Nordic Aqua Partners, Proximar Seafood, Salmon Evolution Group, Gigante Salmon, ...) pour identifier la technologie des projets, les espèces, le niveau de production, l’état d’avancement (voir ci-dessous), l’emplacement ou l’emplacement proposé. De nouveaux projets ont été ajoutés si nécessaire et la liste été restreinte aux projets produisant des espèces de saumon (exclusion des projets produisant des truites par exemple) et aux technologies terrestres suivantes: RAS (Recycled Aquaculture Systems), Hybrid RAS/FTS (Flow-Through systems) and SIFT (Super-Intensive Farming Technology). \n L'objectif de cette liste étant de capturer l'avenir de l'élevage de saumon sur terre, nous avons identifié la capacité de production à long terme de chaque projet. La liste et les ambitions globales des principales entreprises ont été validées avec d'autres sources, notamment iLaks and Salmon business industry report (2021) et A Partial List of Recent Land Based Salmonid Farms Globally de Newfoundland and Labrador Coalition for Aquaculture Reform (NLCAR), (2021). \n Les données incluent les fermes terrestres avec les états d’avancement suivants :",
+          "list03": "En fonctionnement: La ferme a été construite et est en fonctionnement à l'emplacement identifié. Le niveau de production actuel peut être inférieur aux ambitions à long terme de l'entreprise.",
+          "list04": "En construction: La ferme est en construction à l'emplacement identifié, selon les dernières informations disponibles en ligne. Le niveau de production initial peut être inférieur aux ambitions à long terme de l'entreprise.",
+          "list05": {
+            "title": "En projet: Un investissement pour construire une nouvelle ferme a été annoncé à l'emplacement identifié, selon les informations disponibles en ligne.",
+            "01": "Conceptuel: Aucune information supplémentaire disponible en ligne.",
+            "02": "Permis: L'entreprise a reçu le permis local.",
+            "03": "Blocage opposition: Le projet a rencontré une opposition locale, ce qui pourrait retarder la construction.",
+            "04": "Blocage financier: Selon les dernières informations disponibles en ligne, le projet nécessite un financement supplémentaire, ce qui pourrait retarder la construction."
+          },
+          "list06": "Pas encore de projet: L'entreprise a annoncé des ambitions de production mais aucun emplacement spécifique pour les projets n'a pu être identifié selon les dernières informations disponibles en ligne. Ces projets sont inclus dans les données mais pas sur la carte.",
+          "content03": "Les données excluent les fermes terrestres qui ont été arrêtées (par exemple, détruites après un incendie) ou les projets abandonnés. \n Les emplacements sont approximatifs, car les informations disponibles en ligne sur l'emplacement des projets/fermes terrestres sont généralement au niveau des villes/villages. Ces informations ont été associées aux données de Geonames - All Cities with a population > 1000 pour obtenir les coordonnées de latitude/longitude. Pour les projets situés dans des villages de moins de 1000 habitants ou avec des noms ambigus, nous avons utilisé Google Maps pour déterminer les coordonnées. Pour un petit nombre de projets, seule la région a pu être identifiée."
+        },
+        "carbon": {
+          "title": "Estimation de la consommation d'électricité et de l'empreinte carbone",
+          "content01": {
+            "title": "La technologie RAS (Recycled Aquaculture Systems, Systèmes d'Aquaculture Recyclée) dans des réservoirs entièrement fermés nécessite de grandes quantités d'eau douce et est très énergivore, car elle vise à recréer très précisément les conditions naturelles trouvées en mer. Afin d'estimer la consommation d'électricité à long terme de chaque projet, la capacité de production de la ferme en tonnes de saumon par an a été multipliée par la consommation d'électricité par poids de saumon produit. Étant donné le niveau d'incertitude lié à la mise en œuvre précise de la technologie RAS, nous avons opté pour une gamme de valeurs basée sur des publications scientifiques :",
+            "list01": "Estimation basse: 9.59 kWh/kg de saumon Ayuso-Virgili et al. 2023 ",
+            "list02": "Estimation haute: 22.6 kWh/kg de saumon Ayer et al. 2009"
+          },
+          "content02": "Cette fourchette englobe la consommation d'électricité par poids produit pour les fermes actuellement en fonctionnement, telles que celle d'Atlantic Sapphire (Rapport annuel, 2022).",
+          "content03": {
+            "title": "L'empreinte carbone annuelle de chaque ferme a été estimée sur la base de quatre composants:",
+            "list01": "Émissions liées aux aliments pour saumons: 2.64 kg CO2/kg de saumon, calculées à partir des émissions de carbone des aliments - Sustainability report Biomar (2022) - et d'un ratio de conversion alimentaire (Feed Convertion Ratio, FCR) de 1,27 - eFCR data (IFFO)",
+            "list02": "Émissions liées à la phase de construction: 0.39 kg CO2/kg de saumon - Liu et al. 2016",
+            "list03": "Émissions liées à l'oxygénation : 0.44 kg CO/kg de saumon - Liu et al. 2016",
+            "list04": "Émissions liées au cycle de vie du saumon dans les fermes terrestres, en utilisant les émissions de la consommation d'électricité dans le pays où la ferme est située, basées sur le “Carbon intensity of electricity generation” dataset (2023)"
+          }
+        },
+        "limits": {
+          "title": "Limitations potentielles de notre méthodologie",
+          "list01": "Certains projets peuvent être manquants ou obsolètes. Si un investissement a été annoncé mais n'a pas abouti, le projet pourrait avoir été abandonné. L'emplacement peut être inexact si un autre site de construction a été identifié mais non annoncé. Nous indiquons l'année des dernières informations identifiées pour une transparence totale.",
+          "list02": "La capacité de production capturée peut varier d'une ferme à l'autre. Selon les informations disponibles, elle peut refléter ce que l'entreprise a obtenu la permission de produire ou les plans à long terme de l'entreprise.",
+          "list03": "La consommation d'électricité par tonne de saumon produite est basée sur la technologie RAS et devrait représenter une moyenne. Un petit nombre de projets utilisent la technologie SIFT avec une consommation d'électricité probablement plus élevée, et la technologie Hybrid RAS/FTS avec une consommation d'électricité probablement plus faible.",
+          "list04": "L'empreinte carbone des fermes terrestres peut être surestimée ou sous-estimée au cas par cas, en fonction des arrangements spécifiques que l'entreprise a localement pour augmenter la durabilité et/ou l'utilisation d'énergies renouvelables locales (par exemple, la géothermie)."
+        }
+      },
+      "farms_companies": {
+        "title": "Les fermes aquacoles terrestres - les principaux producteurs",
+        "content": "À partir des données décrites ci-dessus, nous présentons un résumé de la production annuelle en tonnes pour les principaux producteurs, en incluant les ambitions déclarées des entreprises, même sans localisation précise pour le moment. Le nombre de projets et les pays des projets sont également inclus. Lorsque ces informations étaient disponibles, nous avons inclus le siège social de l'entreprise, le site web et le financement."
+      },
+      "farms_figures": {
+        "title": "Les fermes aquacoles terrestres - chiffres clés",
+        "content": ""
+      }
+    },
+    "biodiversity": {
+      "title": "Biodiversité",
+      "deforestation": {
+        "title": "Déforestation: Sources & méthodologie (calculs effectués)",
+        "content": "Remonter la chaîne du saumon produit vers l’impact sur la déforestation n’est pas aisé, ici nous ne nous concentrerons uniquement sur les terres nécessaires à la production de saumon en Norvège d’un aliment phare de leur alimentation, le soja brésilien. Nous ne donnerons pas de chiffres exact sur la déforestation légale au profit de l’industrie du saumon Norvègien, en effet depuis 2016 le Soy Moratorium protège en théorie de la déforestation légale de l’Amazonie pour la culture du soja. Néanmoins, la déforestation légale s'est étendue à d’autres parties du Brésil moins protégées comme le Cerrado et la production intensive de soja au Brésil est très présente sur les zones déboisées avant 2008. \n Nous sommes partis du rapport de 2017 From Brazilian farms to Norwegian tables de Framtiden i våre hender (FIVH) et de Rainforest Foundation Norway (RFN) pour obtenir le cheminement entre la production de soja brésilien et la production de saumon en Norvège. Nous y apprenons qu’en 2015, 3 tonnes de graines de soja sont cultivées en moyenne par hectare et qu’il faut 0,57 kg de graines de soja pour  créer 1kg de CPS (Concentré de Protéines de Soja). Mais aussi que les autorités norvégiennes souhaiteraient que l'industrie aquacole atteigne cinq fois sa taille actuelle d'ici 2050."
+      },
+      "evasion": {
+        "title": "Evasions: Sources",
+        "content": ""
+      }
+    },
+    "human_health": {
+      "title": "Santé humaine",
+      "antibiotics": {
+        "title": "Consommation d'antibiotiques",
+        "content": "Les données sur l'utilisation des antibiotiques dans l'industrie de l'élevage de saumons sont difficiles à obtenir. Au Chili, le Service National de la Pêche et de l'Aquaculture (Sernapesca) a publié un rapport en 2021 sur l'utilisation des antimicrobiens dans la salmoniculture nationale. Nous avons utilisé les données sur la quantité d'antimicrobiens en 2021 (463 tonnes) et sur la biomasse récoltée (0,99 millions de tonnes), avec un ratio de 0,047 %. La grande majorité des antimicrobiens est appliquée à l'aquaculture en eau de mer (98,7 %) et aux espèces de saumon (97,9 %). Les antimicrobiens comprennent les antibiotiques, ainsi que les médicaments antifongiques et antiseptiques, cependant le rapport montre que la substance la plus couramment utilisée dans l'aquaculture en eau de mer est le Florfenicol (97,1 %), un antibiotique couramment utilisé en médecine vétérinaire. \n Pour produire l'image infographique, nous avons converti la quantité d'antibiotiques administrés aux saumons produits en 2021 à un équivalent humain, en utilisant le poids moyen d'une personne française (hommes et femmes confondus - 74,1 kg (Source). La dose d'antibiotiques que cela représente pour un humain (35 g) équivaut à 139 comprimés d'antibiotiques (1 comprimé de 250 mg d'antibiotiques typiques pour la consommation humaine)."
+      },
+      "microplastics": {
+        "title": "Microplastique: Sources & méthodologie (calculs effectués)",
+        "content": ""
+      }
+    },
+    "animal_welfare": {
+      "title": "Bien-être animal",
+      "density": {
+        "title": "Densité: Sources & méthodologie (calculs effectués)",
+        "content": ""
+      },
+      "mortality": {
+        "title": "Taux de mortalité: Sources",
+        "content": ""
+      }
+    },
+    "climate": {
+      "title": "Climat",
+      "content": ""
+    },
+    "social": {
+      "title": "Social",
+      "content01": "Afin d’estimer la part de la pêche minotière qui est utilisée pour nourrir les saumons d’élevage, nous avons utilisé les sources suivantes:",
+      "list01": "Le quotient “Fish In : Fish Out”(FIFO) pour le saumon est de 1:1 - il faut en moyenne un kg de poisson sauvage pour la production d’un kg de poisson d’élevage (Source: Kok et al. 2020).",
+      "list02": "La production de saumons de l’Atlantique en élevage en 2020 est de 2.72 millions de tonnes (Source: FAO, code SAL pour saumon de l’Atlantique). ",
+      "list03": "La pêche mondiale (marine et continentale) est de ~90 millions de tonnes en 2020 (Source: FAO), dont 70 millions de tonnes pour la consommation humaine et 15 millions de tonnes sont acheminées vers la production de farine et d'huile de poisson. Le reste est principalement utilisé à des fins ornementales, pour les alevins, comme appât, dans des usages pharmaceutiques, et comme matière première pour l'alimentation directe en aquaculture. (Source: EUMOFA, 2018).",
+      "list04": "La production mondiale de farine de poisson approvisionne le secteur de l'aquaculture (57%), le secteur porcin (22%) et le secteur avicole (14%) (Source: Bloom, chiffres de 2008).",
+      "content02": "En utilisant le quotient FIFO, nous estimons la quantité de poissons pêchés pour nourrir les saumons d’élevage à 2.72 millions de tonnes, ce qui représente 3% de la pêche mondiale (2020). Comme des chiffres plus récents n'étaient pas disponibles, nous avons calculé le volume de la production mondiale de pêche destinée à différents secteurs, parmi les 20 millions de tonnes (~23%) qui ne sont pas destinés à la consommation humaine, on trouve l’aquaculture (8.5 millions de tonnes)."
+    }
+  }
+}
