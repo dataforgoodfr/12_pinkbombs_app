@@ -1,5 +1,10 @@
 {
   "act": {
-    "title": ""
+    "title": "Agir",
+    "company": {
+      "title": "J’interpelle les entreprises responsables",
+      "content": "en partageant un post d’information pré-rédigé qui les identifie sur Linkedin.",
+      "link": "Poster sur Linkedin"
+    }
   }
 }

@@ -13,6 +13,9 @@
       "website": "Website",
       "email": "Email"
     },
+    "chart": {
+      "loading": "Loading data.."
+    },
     "join": {
       "title": "Be the change.",
       "intro": "Il existe des alternatives au saumon dans notre manière de manger, de vendre et de produire.",

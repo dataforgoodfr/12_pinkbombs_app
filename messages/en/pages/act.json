@@ -1,5 +1,10 @@
 {
   "act": {
-    "title": ""
+    "title": "To act",
+    "company": {
+      "title": "I call on responsible companies",
+      "content": "by sharing a pre-written information post that identifies them on Linkedin.",
+      "link": "Post on Linkedin"
+    }
   }
 }

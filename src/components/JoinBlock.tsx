@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import React from "react";
 import { useTranslations } from "next-intl";
+import React from "react";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,

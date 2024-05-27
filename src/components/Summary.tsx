@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
-import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import React, { useState } from "react";
 
 export type SummaryLinksProps = {
   id: string;

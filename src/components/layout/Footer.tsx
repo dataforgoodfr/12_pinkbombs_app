@@ -1,5 +1,6 @@
-import ShareLink from "@/components/links/shareLink";
 import { useTranslations } from "next-intl";
+
+import ShareLink from "@/components/links/shareLink";
 
 const currentYear = new Date().getFullYear();
 

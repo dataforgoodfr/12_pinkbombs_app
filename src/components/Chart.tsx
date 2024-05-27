@@ -3,7 +3,7 @@ import clsx from "clsx";
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { fetchData } from "@/pages/api/chart";
 
@@ -27,6 +27,7 @@ const Chart = ({
     layout: {},
   });
   const locale = useLocale();
+  const t = useTranslations("components");
 
   useEffect(() => {
     if (!id) return;
@@ -46,7 +47,7 @@ const Chart = ({
   if (!chartData)
     return (
       <p className="flex items-center justify-center text-md text-center bg-gray-50 min-h-[300px]">
-        Chargement des données en cours...
+        {t("chart.loading")}
       </p>
     );
 

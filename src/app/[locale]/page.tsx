@@ -2,18 +2,16 @@
 
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import Link from "next/link";
-
+import Chart from "@/components/Chart";
 import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
-
-import Chart from "@/components/Chart";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -172,7 +170,7 @@ const EditoSection = () => {
         <Edito
           key={`edito-${key}`}
           {...edito}
-          imagePosition={key % 2 ? "left" : "right"}
+          contentPosition={key % 2 ? "left" : "right"}
         />
       ))}
     </>
