@@ -1,8 +1,10 @@
+import { getTranslations } from "next-intl/server";
 import React from "react";
 import "@/lib/env";
-import About from "./about";
-import { getTranslations } from "next-intl/server";
+
 import { locales } from "@/navigation";
+
+import About from "./about";
 
 export async function generateMetadata({
   params: { locale },

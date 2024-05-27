@@ -3,9 +3,9 @@
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
-import { useTranslations } from "next-intl";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 import Link from "next/link";

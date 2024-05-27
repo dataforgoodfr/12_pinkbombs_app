@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import { Barlow_Condensed, Montserrat } from "next/font/google";
 import Image from "next/image";
-import * as React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import * as React from "react";
 
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
@@ -24,6 +24,7 @@ import "@/styles/globals.css";
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+
 import { locales } from "@/navigation";
 
 export async function generateMetadata({

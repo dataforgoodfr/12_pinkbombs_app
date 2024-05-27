@@ -2,9 +2,10 @@
 
 import clsx from "clsx";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+
 // import Link from "next/link";
-import { locales, Link, basePathType, usePathname } from "../../navigation";
-import { useTranslations, useLocale } from "next-intl";
+import { basePathType, Link, locales, usePathname } from "../../navigation";
 
 type NavItemsProps = {
   link: string;

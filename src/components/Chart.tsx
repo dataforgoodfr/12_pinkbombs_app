@@ -3,8 +3,9 @@ import clsx from "clsx";
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
-import { fetchData } from "@/pages/api/chart";
 import { useLocale } from "next-intl";
+
+import { fetchData } from "@/pages/api/chart";
 
 type ChartProps = {
   id: string;
@@ -40,7 +41,7 @@ const Chart = ({
       }
     };
     fetchGraphData();
-  }, [id, type]);
+  }, [id, type, locale]);
 
   if (!chartData)
     return (

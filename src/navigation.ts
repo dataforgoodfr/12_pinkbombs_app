@@ -4,6 +4,7 @@ import {
 } from "next-intl/navigation";
 
 export const locales = ["fr", "en"] as const;
+export const localesValues = ["fr", "en"];
 export const localePrefix = "as-needed";
 export type basePathType = "/" | "/dashboard" | "/to-act" | "/about";
 

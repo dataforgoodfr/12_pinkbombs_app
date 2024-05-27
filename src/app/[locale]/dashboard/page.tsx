@@ -1,8 +1,10 @@
+import { getTranslations } from "next-intl/server";
 import React from "react";
 import "@/lib/env";
-import Dashboard from "./dashboard";
-import { getTranslations } from "next-intl/server";
+
 import { locales } from "@/navigation";
+
+import Dashboard from "./dashboard";
 
 export async function generateMetadata({
   params: { locale },
