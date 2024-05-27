@@ -1,5 +1,154 @@
 {
   "about": {
-    "title": ""
+    "title": "About",
+    "why": {
+      "title": "Why Pinkbombs ?",
+      "content": "We are in a state of ocean emergency. The ocean, being Earth's primary life source, is under growing threat due to our human activities. Overfishing stands as the leading cause of biodiversity loss. Salmon, emblematic of intensive farming, is particularly affected. There is therefore an urgent need to change the food system to protect marine ecosystems, animal and human health. PinkBombs is there to:",
+      "list": {
+        "01": "Address one of the biggest threats to the oceans today: Salmon farming.",
+        "02": "Deconstruct the distorted popular perception of salmon.",
+        "03": "Provide guidance to professionals and consumers towards alternatives."
+      }
+    },
+    "who": {
+      "title": "Who we are",
+      "content": "PinkBombs is the result of a collaboration between two non-profit organizations, Seastemik and DataforGood.",
+      "list": {
+        "01": "Seastemik is an NGO founded in 2023 by a collective of optimists concerned about the state of the oceans, the primary source of life on Earth. By raising awareness among civil society and engaging the responsibility of intermediary actors (large-scale retail and collective catering) and the State, our mission is to drive a transition towards a healthy, accessible, and sustainable food system that respects the oceans, human societies, and animals.",
+        "02": "Data For Good is a French NGO whose aim is to help projects of general interest to develop. Thanks to a community of over 4,000 tech-savvy volunteers, a dozen projects a year are supported and developed for over 3 months."
+      }
+    },
+    "methods": {
+      "title": "Approach & methodologies",
+      "content": {
+        "01": "PinkBombs was created by a consortium of non-profit organizations that analyze and transform public data into accessible tools to raise awareness of the key levers for halting the ocean emergency.",
+        "02": "Our approach is based on three pillars:",
+        "03": "Our approach followed three steps:"
+      },
+      "list01": {
+        "01": "Open source: the code is available here.",
+        "02": "Collaborative: Reach out to contribute or suggest improvements.",
+        "03": "Dynamic: Our database is regularly updated to incorporate new insights and to enhance its accuracy."
+      },
+      "list02": {
+        "01": "Prioritized topics: The aim of the website being to offer a compilation of the most striking information on the subject, the organization set out to prioritize the subjects to be tackled. Then each volunteer chose the subjects they wanted to tackle alone or in groups.",
+        "02": "In-depth research: Research is carried out on the internet and by contacting experts, taking care to use only scientific sources and not to use information from unreliable sources or without sourced or scientific support.",
+        "03": "Peer reviewed data: In the interest of data quality, all information is double-checked by another volunteer or member of the Seastemik organization (source and formulation)."
+      }
+    },
+    "sources": "Sources & Methodology",
+    "macro": {
+      "title": "Macro Trends",
+      "content01": "Data presented on the Dashboard is focused on Atlantic Salmon species (Salmo salar) unless otherwise stated.",
+      "content02": "Data on wild salmon catch in Atlantic waters is available on the website of the International Council for the Exploration of the Sea (ICES - TO ADD - Gaelle). Data on the production of farmed salmon is available on the website of the Food and Agriculture Organization of the United Nations (FAO -  https://www.fao.org/fishery/en/collection/aquaculture?lang=en).",
+      "content03": "To calculate the number of salmons produced or convert the number of tonnes into the number of salmons, we used the average weight of a salmon at the end of its growth in industrial farming. 5kg is the standard weight used in the salmon industry."
+    },
+    "alternatives": {
+      "title": "Alternatives",
+      "content": "The alternatives matrix presents a comparison of 8 products (including salmon) based on 6 criteria….",
+      "link": "Learn more"
+    },
+    "companies": {
+      "title": "Producteurs",
+      "content": "Data on the top 10 farmed salmon productors …",
+      "farms_map": {
+        "title": "Land-based farms - the map",
+        "data": {
+          "title": "Data",
+          "content01": "The list of land-based salmon farms was initially put together using two existing lists publicly available:",
+          "list01": "Land-based salmon farming - Norne Securities (2023)",
+          "list02": "Cracking the hype of land-based salmon farming stocks - Tuva Einang Prestegard & Irem Havva Tekinöz - master thesis,  Norwegian School of Economics (2020)",
+          "content02": "The dataset was then enriched by researching individual projects online, using a range of sources (iLaks, Undercurrent News, Akva Group, Salmonbusiness.com, Seafood.no, regjeringen.no, IntraFish, NorskFisk, SeafoodSource, FishFarmingExpert, FishFarmerMagazine, ScienceNorway, Global Seafood alliance, RASTech, websites of various land-based companies, Andfjord Salmon, Atlantic Sapphire, Nordic Aqua Partners, Proximar Seafood, Salmon Evolution Group, Gigante Salmon, …) to identify the project’s technology, species, level of production, status (see below), location or proposed location. New projects were added if necessary and the dataset was restricted to projets producing salmon species (excluding projects producing trouts for instance) and to the following land-based technologies: RAS (Recycled Aquaculture Systems), Hybrid RAS/FTS (Flow-Through systems) and SIFT (Super-Intensive Farming Technology). \n As the goal of the dataset is to capture the future of salmon farming on land, we identified the long-term production capacity of individual projects. The list and overall ambitions of top companies were validated with other sources, iLaks and Salmon business industry report (2021) and A Partial List of Recent Land Based Salmonid Farms Globally from the Newfoundland and Labrador Coalition for Aquaculture Reform (NLCAR), (2021).  \n The dataset includes land-based farms with the following statuses:",
+          "list03": "Operating: The farm has been built and is operating at the identified location. The current production level may be lower than the company’s long term ambitions.",
+          "list04": "In construction: The farm is under construction at the identified location, based on the latest information available online. The initial production level may be lower than the company’s long term ambitions.",
+          "list05": {
+            "title": "Project: Investment to build a new farm has been announced at the identified location, based on information available online.",
+            "01": "Conceptual: No further information available online.",
+            "02": "Permit: The company has received the local permit.",
+            "03": "Local opposition: The project has received local opposition, potentially delaying construction.",
+            "04": "Financial block: Based on the latest information available online, the project requires further funding, potentially delaying construction."
+          },
+          "list06": "No project yet: The company has announced ambitions of production but no specific location for the projects could be identified based on the latest information available online. These are included in the dataset but not on the map.",
+          "content03": "The dataset excludes land-based farms that have been stopped (eg. destroyed after a fire) or projects abandoned. \n Locations are approximate, as the information available on the location of land-based projects/farms online is generally at the level of towns/villages. This information was matched to the dataset of Geonames - All Cities with a population > 1000 to obtain Latitude / Longitude coordinates. For projects in villages smaller than 1000 inhabitants or with ambiguous names, we used Google maps to determine the coordinates. For a small number of projects, only the region could be identified."
+        },
+        "carbon": {
+          "title": "Estimation of electricity consumption and carbon footprint",
+          "content01": {
+            "title": "RAS technology (Recycled Aquaculture Systems) in fully enclosed tanks requires large amounts of freshwater and is very energy-intensive, as it aims to recreate very precisely the natural conditions found in the sea. In order to estimate the long-term electricity consumption of individual land-based projects, the production capacity of the farm in tonnes of salmon per year was multiplied by the electricity usage per weight of salmon produced. Given the level of uncertainty related to the precise implementation of RAS technology, we opted for a range of values based on scientific publications:",
+            "list01": "Lower estimate: 9.59 kWh/kg salmon Ayuso-Virgili et al. 2023",
+            "list02": "Upper estimate: 22.6 kWh/kg salmon Ayer et al. 2009"
+          },
+          "content02": "This range encompasses the electricity consumption per weight produced for farms currently in operation, such as Atlantic Sapphire (Annual report, 2022).",
+          "content03": {
+            "title": "The annual carbon footprint of individual farms was estimated based on four components:",
+            "list01": "Emissions from salmon feeds: 2.64 kg CO2/kg salmon, calculated from the carbon emissions of feed - Sustainability report Biomar (2022) - and a Feed Conversion Ratio (FCR) of 1.27 - eFCR data (IFFO)",
+            "list02": "Emissions from the construction phase: 0.39 kg CO2/kg salmon - Liu et al. 2016",
+            "list03": "Emissions from oxygenation : 0.44 kg CO/kg salmon - Liu et al. 2016",
+            "list04": "Emissions from the salmon life cycle in land-based farms, using the emissions from electricity consumption in the country where the farm is located, based on the “Carbon intensity of electricity generation” dataset (2023)"
+          }
+        },
+        "limits": {
+          "title": "Potential limitations to our methodology",
+          "list01": "Land-based projects in the dataset may be missing or out-of-date. If investment was announced but fell through, the project might have been abandoned. The location may be inaccurate, if a different construction site has been identified but not announced. We report the year of the latest information identified for full transparency.",
+          "list02": "The production capacity captured may not be consistent from farm to farm. Depending on the information available, it may reflect what the company has received permission to produce or what the company’s long-term plans are.",
+          "list03": "The electricity consumption per tonnes of salmon produced is based on RAS technology and should represent an average. A small number of projects use SIFT technology with a likely higher electricity consumption, and Hybrid RAS/FTS technology with a likely lower electricity consumption.",
+          "list04": "The carbon footprint for land-based farms may be overestimated or underestimated on a case by case basis depending on the specific arrangements that the company has locally to increase sustainability and/or the use of local renewable energy (eg. geothermal)."
+        }
+      },
+      "farms_companies": {
+        "title": "Land-based farms - main producers",
+        "content": "From the dataset described above, we summarize the yearly production in tonnes for the top producers, including companies stated ambitions but with no location yet. The number of projects and the countries of the projects are included. Where information could be found, the data is supplemented with the company headquarters, website and funding. "
+      },
+      "farms_figures": {
+        "title": "Land-based farms - top figures",
+        "content": ""
+      }
+    },
+    "biodiversity": {
+      "title": "Biodiversity",
+      "deforestation": {
+        "title": "Deforestation: Sources & methodology (calculs effectués)",
+        "content": ""
+      },
+      "evasion": {
+        "title": "Evasions: Sources",
+        "content": ""
+      }
+    },
+    "human_health": {
+      "title": "Human health",
+      "antibiotics": {
+        "title": "Consumption of antibiotics",
+        "content": "Data on the use of antibiotics in the salmon farming industry is difficult to obtain. In Chile, the National Fisheries and Aquaculture Service (Sernapesca) published a report in 2021 on the Use of antimicrobials in national salmoniculture. We use the data on the amount of antimicrobials for 2021 (463 tonnes), reported against the harvested biomass (0.99 millions of tonnes), with a ratio of 0.047%. The large majority of antimicrobials are applied to aquaculture in sea water (98.7%) and to Salmon species (97.9%). Antimicrobials include antibiotics, as well as antifungal and antiseptic medicine, however the report shows that the substance the most commonly used in sea water  aquaculture is Florenicol (97.1%), an antibiotic commonly used in veterinary medicine. \n To produce the infographic image, we converted the amount of antibiotics administered to salmon fish produced in 2021 to a human, using the average weight of a French person (women and men combined - 74.1kg (Source). The dose of antibiotics this would represent for a human (35g) is equivalent to 139 tablets of antibiotics (1 tablet of 250mg of typical antibiotics for human consumption). "
+      },
+      "microplastics": {
+        "title": "Microplastique: Sources & méthodologie (calculs effectués)",
+        "content": ""
+      }
+    },
+    "animal_welfare": {
+      "title": "Animal welfare",
+      "density": {
+        "title": "Densité: Sources & méthodologie (calculs effectués)",
+        "content": ""
+      },
+      "mortality": {
+        "title": "Taux de mortalité: Sources",
+        "content": ""
+      }
+    },
+    "climate": {
+      "title": "Climate",
+      "content": ""
+    },
+    "social": {
+      "title": "Social",
+      "content01": "Afin d’estimer la part de la pêche minotière qui est utilisée pour nourrir les saumons d’élevage, nous avons utilisé les sources suivantes:",
+      "list01": "Le quotient “Fish In : Fish Out”(FIFO) pour le saumon est de 1:1 - il faut en moyenne un kg de poisson sauvage pour la production d’un kg de poisson d’élevage (Source: Kok et al. 2020).",
+      "list02": "La production de saumons de l’Atlantique en élevage en 2020 est de 2.72 millions de tonnes (Source: FAO, code SAL pour saumon de l’Atlantique). ",
+      "list03": "La pêche mondiale (marine et continentale) est de ~90 millions de tonnes en 2020 (Source: FAO), dont 70 millions de tonnes pour la consommation humaine et 15 millions de tonnes sont acheminées vers la production de farine et d'huile de poisson. Le reste est principalement utilisé à des fins ornementales, pour les alevins, comme appât, dans des usages pharmaceutiques, et comme matière première pour l'alimentation directe en aquaculture. (Source: EUMOFA, 2018).",
+      "list04": "La production mondiale de farine de poisson approvisionne le secteur de l'aquaculture (57%), le secteur porcin (22%) et le secteur avicole (14%) (Source: Bloom, chiffres de 2008).",
+      "content02": "En utilisant le quotient FIFO, nous estimons la quantité de poissons pêchés pour nourrir les saumons d’élevage à 2.72 millions de tonnes, ce qui représente 3% de la pêche mondiale (2020). Comme des chiffres plus récents n'étaient pas disponibles, nous avons calculé le volume de la production mondiale de pêche destinée à différents secteurs, parmi les 20 millions de tonnes (~23%) qui ne sont pas destinés à la consommation humaine, on trouve l’aquaculture (8.5 millions de tonnes)."
+    }
   }
 }
