@@ -7,6 +7,7 @@ import React from "react";
 const Edito = ({
   className,
   title,
+  titleLevel = "h1",
   image,
   content,
   mode = "dark",
@@ -16,6 +17,7 @@ const Edito = ({
 }: {
   className?: string;
   title: string;
+  titleLevel?: "h1" | "h2" | "h3";
   mode?: "dark" | "light";
   image?: {
     small?: string;
@@ -40,8 +42,11 @@ const Edito = ({
     >
       <div className="flex flex-col md:flex-row md:items-center gap-6 lg:gap-14 2xl:gap-32 max-w-[1500px] mx-auto">
         <div className="flex-1">
-          <h2 className={clsx("h1", "text-red1")}>{title}</h2>
-          <p className="mt-3 lg:mt-6">{content}</p>
+          <h2 className={clsx(titleLevel, "text-red1")}>{title}</h2>
+          <p
+            className="mt-3 lg:mt-6"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
           {link ? (
             <Link
               className={clsx(
