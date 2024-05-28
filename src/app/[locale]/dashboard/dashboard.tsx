@@ -12,153 +12,152 @@ import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
 
 import { fetchData } from "@/pages/api/chart";
+import { useTranslations } from "next-intl";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
 });
 
-const summary: SummaryLinksProps = [
-  {
-    id: "intro",
-    title: "Intro",
-    sublinks: [
-      {
-        label: "Effondrement du saumon sauvage de l'Atlantique",
-        targetId: "salmon-collapse-block",
-      },
-      {
-        label: "Hyper-croissance de l’élevage du saumon",
-        targetId: "hyper-growth-block",
-      },
-      {
-        label: "Principaux pays producteurs de saumon d'élevage",
-        targetId: "top-10-block",
-      },
-      {
-        label: "Consommation",
-        targetId: "intro-consumption-block",
-      },
-    ],
-  },
-  {
-    id: "company",
-    title: "Entreprises",
-    sublinks: [
-      {
-        label: "Principaux producteurs de saumon en filet ouvert",
-        targetId: "top-comp-block",
-      },
-      {
-        label: "La nouvelle menace: sur fermes aquacoles terrestres",
-        targetId: "top-land-block",
-      },
-      {
-        label: "Le futur des fermes aquacoles terrestres",
-        targetId: "future-land-based-block",
-      },
-      {
-        label: "Consommation",
-        targetId: "companies-consumption-block",
-      },
-    ],
-  },
-  {
-    id: "biondiversity",
-    title: "Biodiversité",
-    sublinks: [
-      {
-        label: "Deforestation",
-        targetId: "deforestation-block",
-      },
-      {
-        label: "Les évasions",
-        targetId: "escapes-rates-block",
-      },
-    ],
-  },
-  {
-    id: "health",
-    title: "Human health",
-    sublinks: [
-      {
-        label: "Consommation d'antibiotiques",
-        targetId: "antibiotic-conso-block",
-      },
-      {
-        label: "Microplastique",
-        targetId: "microplastics-block",
-      },
-    ],
-  },
-  {
-    id: "animals",
-    title: "Bien être animal",
-    sublinks: [
-      {
-        label: "Densité / stress dans usine à terre",
-        targetId: "stress-onshore-block",
-      },
-      {
-        label: "Taux de mortalité",
-        targetId: "mortality-rates-block",
-      },
-    ],
-  },
-  {
-    id: "climate",
-    title: "Climat",
-    sublinks: [
-      {
-        label: "Impact carbone",
-        targetId: "carbon-bomb-block",
-      },
-    ],
-  },
-  {
-    id: "social",
-    title: "Social",
-    sublinks: [
-      {
-        label: "Impact carbone",
-        targetId: "social-carbon-block",
-      },
-    ],
-  },
-  {
-    id: "alternative",
-    title: "Alternatives",
-    sublinks: [
-      {
-        label: "Matrice de nutrition",
-        targetId: "alternatives-block",
-      },
-    ],
-  },
-];
-
 const Dashboard = () => {
+  const t = useTranslations("dashboard");
+  const summary: SummaryLinksProps = [
+    {
+      id: "intro",
+      title: t("summary.intro.title"),
+      sublinks: [
+        {
+          label: t("summary.intro.sublinks.salmon-collapse-block"),
+          targetId: "salmon-collapse-block",
+        },
+        {
+          label: t("summary.intro.sublinks.hyper-growth-block"),
+          targetId: "hyper-growth-block",
+        },
+        {
+          label: t("summary.intro.sublinks.top-10-block"),
+          targetId: "top-10-block",
+        },
+        /*{
+          label: t("summary.intro.sublinks.intro-consumption-block"),
+          targetId: "intro-consumption-block",
+        },*/
+      ],
+    },
+    {
+      id: "company",
+      title: t("summary.company.title"),
+      sublinks: [
+        {
+          label: t("summary.company.sublinks.top-comp-block"),
+          targetId: "top-comp-block",
+        },
+        {
+          label: t("summary.company.sublinks.top-land-block"),
+          targetId: "top-land-block",
+        },
+        {
+          label: t("summary.company.sublinks.future-land-based-block"),
+          targetId: "future-land-based-block",
+        },
+        /*{
+          label: t("summary.company.sublinks.companies-consumption-block"),
+          targetId: "companies-consumption-block",
+        },*/
+      ],
+    },
+    {
+      id: "biodiversity",
+      title: t("summary.biodiversity.title"),
+      sublinks: [
+        {
+          label: t("summary.biodiversity.sublinks.deforestation-block"),
+          targetId: "deforestation-block",
+        },
+        {
+          label: t("summary.biodiversity.sublinks.escapes-rates-block"),
+          targetId: "escapes-rates-block",
+        },
+      ],
+    },
+    {
+      id: "health",
+      title: t("summary.health.title"),
+      sublinks: [
+        {
+          label: t("summary.health.sublinks.antibiotic-conso-block"),
+          targetId: "antibiotic-conso-block",
+        },
+        {
+          label: t("summary.health.sublinks.microplastics-block"),
+          targetId: "microplastics-block",
+        },
+      ],
+    },
+    {
+      id: "animals",
+      title: t("summary.animals.title"),
+      sublinks: [
+        {
+          label: t("summary.animals.sublinks.stress-onshore-block"),
+          targetId: "stress-onshore-block",
+        },
+        {
+          label: t("summary.animals.sublinks.mortality-rates-block"),
+          targetId: "mortality-rates-block",
+        },
+      ],
+    },
+    {
+      id: "climate",
+      title: t("summary.climate.title"),
+      sublinks: [
+        {
+          label: t("summary.climate.sublinks.carbon-bomb-block"),
+          targetId: "carbon-bomb-block",
+        },
+      ],
+    },
+    {
+      id: "social",
+      title: t("summary.social.title"),
+      sublinks: [
+        {
+          label: t("summary.social.sublinks.social-carbon-block"),
+          targetId: "social-carbon-block",
+        },
+      ],
+    },
+    {
+      id: "alternative",
+      title: t("summary.alternative.title"),
+      sublinks: [
+        {
+          label: t("summary.alternative.sublinks.alternatives-block"),
+          targetId: "alternatives-block",
+        },
+      ],
+    },
+  ];
+
   return (
     <>
-      <IntroBlock title="Les chiffres derrière l’histoire" summary={summary} />
+      <IntroBlock title={t("title")} summary={summary} />
 
       <Calculator
         data={[
-          { multiplicator: 18, label: "saumons abattus" },
+          { multiplicator: 18, label: t("calculator.salmon") },
           {
-            multiplicator: 8107,
-            label: "poissons fourrages pêchés pour alimenter les saumons",
+            multiplicator: 8107, label: t("calculator.fish"),
           },
-          { multiplicator: 0.5, label: "tonnes de CO2 émis par l'industrie" },
+          { multiplicator: 0.5, label: t("calculator.companies") },
           {
-            multiplicator: 618,
-            label:
-              "Euros de chiffre d'affaire pour les entreprises leadeurs du marché",
+            multiplicator: 618, label: t("calculator.money")
           },
         ]}
       />
 
       <section>
-        <TitleBlock id="intro" title="Intro" />
+        <TitleBlock title="Intro" />
         <SalmonCollapseSection />
         <SalmonFarmingSection />
         <TopCountriesSection />
@@ -166,37 +165,37 @@ const Dashboard = () => {
       </section>
 
       <section>
-        <TitleBlock id="companies" title="Entreprises" />
+        <TitleBlock title="Entreprises" />
         <MainProductionSection />
         <LandPlantsSection />
         {/* <SalmonConsumptionBisSection /> */}
       </section>
 
       <section>
-        <TitleBlock id="biodiversity" title="Biodiversité" />
+        <TitleBlock title="Biodiversité" />
         <DeforestationSection />
         <EscapeSection />
       </section>
 
       <section>
-        <TitleBlock id="human-health" title="Santé humaine" />
+        <TitleBlock title="Santé humaine" />
         <AntibioticSection />
         <MicroplasticSection />
       </section>
 
       <section>
-        <TitleBlock id="animal-welfare" title="Santé animale" />
+        <TitleBlock title="Santé animale" />
         <StressOnshoreSection />
         <MortalityRateSection />
       </section>
 
       <section>
-        <TitleBlock id="climate" title="Climat" />
+        <TitleBlock title="Climat" />
         <CarbonSection />
       </section>
 
       <section>
-        <TitleBlock id="social" title="Social" />
+        <TitleBlock title="Social" />
         <SocialCarbonSection />
       </section>
 
@@ -252,16 +251,18 @@ const TopCountriesSection = () => {
   );
 };
 
-// const SalmonConsumptionSection = () => {
-//   return (
-//     <DashboardSection
-//       title="Consommation de saumon"
-//       id="intro-consumption"
-//       content="Les États-Unis sont les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont aussi d’importants consommateurs saumon, la France étant en tête de proue avec une consommation élevée qui atteint 4,4kg/an/personne. "
-//       hasChart
-//     />
-//   );
-// };
+/*
+const SalmonConsumptionSection = () => {
+  return (
+    <DashboardSection
+      title="Consommation de saumon"
+      id="intro-consumption"
+      content="Les États-Unis sont les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont aussi d’importants consommateurs saumon, la France étant en tête de proue avec une consommation élevée qui atteint 4,4kg/an/personne. "
+      hasChart
+    />
+  );
+};
+*/
 
 const MainProductionSection = () => {
   return (
@@ -313,7 +314,7 @@ const LandPlantsSection = () => {
         hasChart
       />
       <div
-        id="future-land-based"
+        id="future-land-based-block"
         className="p-6 md:p-12 max-w-[1596px] mx-auto"
       >
         <div className="lg:w-2/4">
@@ -383,18 +384,20 @@ const LandPlantsSection = () => {
   );
 };
 
-// const SalmonConsumptionBisSection = () => {
-//   return (
-//     <DashboardSection
-//       title="Consommation"
-//       hasChart
-//       id="companies-consumption"
-//       mainContent="Les États-Unis sont de loin les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont également d’importants consommateurs de ce poisson. La consommation de saumon par habitant pour ces grands pays est d'environ 2 kg/personne/an et peut atteindre des valeurs supérieures à 5 kg/personne/an."
-//       content="La consommation apparente de saumon (toutes espèces confondues) est calculée comme la production, y compris l'aquaculture et la capture, plus les importations moins les exportations. Toutes les données sont fournies par la FAO. Les facteurs de conversion entre le poids du produit et le poids vif sont approximés à l'aide de la documentation de la FAO : https://www.fao.org/3/bt963e/bt963e.pdf
-//     Ces approximations peuvent conduire à des indicateurs erronés, surtout dans les pays peu peuplés et/ou à forte production. C’est pour cette raison que la consommation par habitant n’est pas incluse dans le graphique."
-//     />
-//   );
-// };
+/*
+const SalmonConsumptionBisSection = () => {
+  return (
+    <DashboardSection
+      title="Consommation"
+      hasChart
+      id="companies-consumption"
+      mainContent="Les États-Unis sont de loin les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont également d’importants consommateurs de ce poisson. La consommation de saumon par habitant pour ces grands pays est d'environ 2 kg/personne/an et peut atteindre des valeurs supérieures à 5 kg/personne/an."
+      content="La consommation apparente de saumon (toutes espèces confondues) est calculée comme la production, y compris l'aquaculture et la capture, plus les importations moins les exportations. Toutes les données sont fournies par la FAO. Les facteurs de conversion entre le poids du produit et le poids vif sont approximés à l'aide de la documentation de la FAO : https://www.fao.org/3/bt963e/bt963e.pdf
+    Ces approximations peuvent conduire à des indicateurs erronés, surtout dans les pays peu peuplés et/ou à forte production. C’est pour cette raison que la consommation par habitant n’est pas incluse dans le graphique."
+    />
+  );
+};
+*/
 
 const DeforestationSection = () => {
   return (

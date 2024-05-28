@@ -1,5 +1,73 @@
 {
   "dashboard": {
-    "title": "Dashboard"
+    "meta": {
+      "title": "Dashboard"
+    },
+    "title": "Les chiffres derrière l’histoire",
+    "summary": {
+      "intro": {
+        "title": "Intro",
+        "sublinks": {
+          "salmon-collapse-block": "Effondrement du saumon sauvage de l'Atlantique",
+          "hyper-growth-block": "Hyper-croissance de l’élevage du saumon",
+          "top-10-block": "Principaux pays producteurs de saumon d'élevage",
+          "intro-consumption-block": "Consommation"
+        }
+      },
+      "company": {
+        "title": "Entreprises",
+        "sublinks": {
+          "top-comp-block": "Principaux producteurs de saumon en filet ouvert",
+          "top-land-block": "La nouvelle menace : sur fermes aquacoles terrestres",
+          "future-land-based-block": "Le futur des fermes aquacoles terrestres",
+          "companies-consumption-block": "Consommation"
+        }
+      },
+      "biodiversity": {
+        "title": "Biodiversité",
+        "sublinks": {
+          "deforestation-block": "Déforestation",
+          "escapes-rates-block": "Les évasions"
+        }
+      },
+      "health": {
+        "title": "Human health",
+        "sublinks": {
+          "antibiotic-conso-block": "Consommation d'antibiotiques",
+          "microplastics-block": "Microplastique"
+        }
+      },
+      "animals": {
+        "title": "Bien être animal",
+        "sublinks": {
+          "stress-onshore-block": "Densité / stress dans usine à terre",
+          "mortality-rates-block": "Taux de mortalité"
+        }
+      },
+      "climate": {
+        "title": "Climat",
+        "sublinks": {
+          "carbon-bomb-block": "Impact carbone"
+        }
+      },
+      "social": {
+        "title": "Social",
+        "sublinks": {
+          "social-carbon-block": "Impact carbone"
+        }
+      },
+      "alternative": {
+        "title": "Alternatives",
+        "sublinks": {
+          "alternatives-block": "Matrice de nutrition"
+        }
+      }
+    },
+    "calculator": {
+      "salmon": "saumons abattus",
+      "fish": "poissons fourrages pêchés pour alimenter les saumons",
+      "companies": "tonnes de CO2 émis par l'industrie",
+      "money": "Euros de chiffre d'affaire pour les entreprises leadeurs du marché"
+    }
   }
 }

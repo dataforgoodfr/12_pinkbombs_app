@@ -19,10 +19,7 @@ const TitleBlock = ({
     <div
       {...rest}
       id={id}
-      className={clsx(
-        className,
-        "flex items-end p-6 md:p-12 xl:p-[60px] text-red1 bg-pink1",
-      )}
+      className={clsx(className, "p-6 md:p-12 text-red1 bg-pink1")}
     >
       <h2 className="h2 max-w-[1500px] mx-auto w-full">{title}</h2>
     </div>

@@ -1,5 +1,73 @@
 {
   "dashboard": {
-    "title": "Dashboard"
+    "meta": {
+      "title": "Dashboard"
+    },
+    "title": "The numbers behind the story",
+    "summary": {
+      "intro": {
+        "title": "Intro",
+        "sublinks": {
+          "salmon-collapse-block": "Wild Altantic salmon collapse",
+          "hyper-growth-block": "Hyper-growth in salmon farming",
+          "top-10-block": "Main countries producing farmed salmon",
+          "intro-consumption-block": "Consumption"
+        }
+      },
+      "company": {
+        "title": "Companies",
+        "sublinks": {
+          "top-comp-block": "Main producers of open-net salmon",
+          "top-land-block": "The new threat: on land-based aquaculture farms",
+          "future-land-based-block": "The future of land-based aquaculture farms",
+          "companies-consumption-block": "Consumption"
+        }
+      },
+      "biodiversity": {
+        "title": "Biodiversity",
+        "sublinks": {
+          "deforestation-block": "Deforestation",
+          "escapes-rates-block": "Escapes"
+        }
+      },
+      "health": {
+        "title": "Human health",
+        "sublinks": {
+          "antibiotic-conso-block": "Antibiotic consumption",
+          "microplastics-block": "Microplastic"
+        }
+      },
+      "animals": {
+        "title": "Animal welfare",
+        "sublinks": {
+          "stress-onshore-block": "Stress in land-based facilities",
+          "mortality-rates-block": "Mortality rate"
+        }
+      },
+      "climate": {
+        "title": "Climate",
+        "sublinks": {
+          "carbon-bomb-block": "Carbon impact"
+        }
+      },
+      "social": {
+        "title": "Social",
+        "sublinks": {
+          "social-carbon-block": "Carbon impact"
+        }
+      },
+      "alternative": {
+        "title": "Alternatives",
+        "sublinks": {
+          "alternatives-block": "Nutrition matrix"
+        }
+      }
+    },
+    "calculator": {
+      "salmon": "slaughtered salmon",
+      "fish": "forage fish caught to feed salmon",
+      "companies": "tonnes of CO2 emitted by industry",
+      "money": "Euros of turnover for market leading companies"
+    }
   }
 }

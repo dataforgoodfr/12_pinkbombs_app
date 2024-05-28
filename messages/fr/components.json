@@ -16,6 +16,11 @@
     "chart": {
       "loading": "Chargement des données en cours..."
     },
+    "calculator": {
+      "intro": "Voici les impacts de l'industrie du saumon dans le monde depuis que vous avez ouvert cette page web.",
+      "seconds": "secondes",
+      "second": "seconde"
+    },
     "join": {
       "title": "Be the change.",
       "intro": "Il existe des alternatives au saumon dans notre manière de manger, de vendre et de produire.",

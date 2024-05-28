@@ -14,7 +14,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "dashboard" });
 
   return {
-    title: t("title"),
+    title: t("meta.title"),
   };
 }
 
