@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 import React from "react";
 import "@/lib/env";
 
@@ -10,8 +11,6 @@ import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
 import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
-
-import { useTranslations } from "next-intl";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
