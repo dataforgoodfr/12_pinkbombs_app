@@ -11,6 +11,7 @@ import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
 import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
+import MetaItem from "@/components/MetaItem";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
@@ -214,6 +215,17 @@ const SalmonCollapseSection = () => {
       title={t("sections.intro.blocks.salmon-collapse.title")}
       id="salmon-collapse"
       content={t.raw("sections.intro.blocks.salmon-collapse.content")}
+      meta={{
+        source: {
+          link: "https://nasco.int/ices-2/statistics/",
+          moreInfo: t("sections.intro.blocks.salmon-collapse.source"),
+        },
+        methodology: { link: "/to-act#" },
+        data: {
+          link: t("sections.intro.blocks.salmon-collapse.data"),
+          artifact: t("sections.intro.blocks.salmon-collapse.artifact"),
+        },
+      }}
       hasChart
     />
   );
@@ -227,6 +239,17 @@ const SalmonFarmingSection = () => {
       title={t("sections.intro.blocks.hyper-growth.title")}
       id="hyper-growth"
       content={t.raw("sections.intro.blocks.hyper-growth.content")}
+      meta={{
+        source: {
+          link: "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+          moreInfo: t("sections.intro.blocks.hyper-growth.source"),
+        },
+        methodology: { link: "/to-act#" },
+        data: {
+          link: t("sections.intro.blocks.hyper-growth.data"),
+          artifact: t("sections.intro.blocks.hyper-growth.artifact"),
+        },
+      }}
       hasChart
     />
   );
@@ -241,6 +264,17 @@ const TopCountriesSection = () => {
         title={t("sections.intro.blocks.top-10.title")}
         id="top-10"
         content={t.raw("sections.intro.blocks.top-10.content")}
+        meta={{
+          source: {
+            link: "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+            moreInfo: t("sections.intro.blocks.top-10.source"),
+          },
+          methodology: { link: "/to-act#" },
+          data: {
+            link: t("sections.intro.blocks.top-10.data"),
+            artifact: t("sections.intro.blocks.top-10.artifact"),
+          },
+        }}
         hasChart
       />
 
@@ -250,6 +284,25 @@ const TopCountriesSection = () => {
         </h3>
 
         <Chart id="evolution-map" type="maps" className="min-h-[700px]" />
+        <ul className="flex flex-wrap gap-4 mt-4 p-2 p-caption rounded-sm bg-gray-50">
+          <li>
+            <MetaItem
+              data="source"
+              link="https://www.fao.org/fishery/en/collection/aquaculture?lang=en"
+              moreInfo={t("sections.intro.blocks.top-10.subblock.source")}
+            />
+          </li>
+          <li>
+            <MetaItem data="methodology" link="/to-act#tendances" />
+          </li>
+          <li>
+            <MetaItem
+              data="data"
+              link={t("sections.intro.blocks.top-10.subblock.data")}
+              artifact={t("sections.intro.blocks.top-10.subblock.artifact")}
+            />
+          </li>
+        </ul>
       </div>
     </>
   );
@@ -278,6 +331,17 @@ const MainProductionSection = () => {
       title={t("sections.company.blocks.top-comp.title")}
       id="top-comp"
       content={t.raw("sections.company.blocks.top-comp.content")}
+      meta={{
+        source: {
+          link: "https://mowi.com/wp-content/uploads/2023/06/2023-Salmon-Farming-Industry-Handbook-2023.pdf",
+          moreInfo: t("sections.company.blocks.top-comp.source"),
+        },
+        methodology: { link: "/to-act#" },
+        data: {
+          link: t("sections.company.blocks.top-comp.data"),
+          artifact: t("sections.company.blocks.top-comp.artifact"),
+        },
+      }}
       hasChart
     />
   );
@@ -300,6 +364,13 @@ const LandPlantsSection = () => {
         id="top-land"
         mainContent={t.raw("sections.company.blocks.top-land.mainContent")}
         content={t.raw("sections.company.blocks.top-land.content")}
+        meta={{
+          methodology: { link: "/to-act#" },
+          data: {
+            link: t("sections.company.blocks.top-comp.data"),
+            artifact: t("sections.company.blocks.top-comp.artifact"),
+          },
+        }}
         hasChart
       />
 
@@ -328,7 +399,7 @@ const LandPlantsSection = () => {
             }}
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mt-20">
           {data.map((d, key) => (
             <div key={`data-${key}`}>
               <h4 className="h4 pb-4 text-red1">{d.title}</h4>
@@ -336,6 +407,11 @@ const LandPlantsSection = () => {
             </div>
           ))}
         </div>
+        <ul className="flex flex-wrap gap-4 mt-4 mb-20 p-2 p-caption rounded-sm bg-gray-50">
+          <li>
+            <MetaItem data="methodology" link="/to-act#tendances" />
+          </li>
+        </ul>
         <Chart id="ras-map" type="maps" className="min-h-[900px]" />
       </div>
     </>
