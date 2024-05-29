@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 export const chartMeta = ["source", "methodology", "image", "data", "document"];
 

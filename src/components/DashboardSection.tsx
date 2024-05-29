@@ -1,8 +1,9 @@
-import MetaItem, { chartMeta } from "@/components/MetaItem";
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { ReactNode } from "react";
+
+import MetaItem, { chartMeta } from "@/components/MetaItem";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
