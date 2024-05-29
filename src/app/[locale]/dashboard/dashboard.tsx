@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "@/lib/env";
 
 import Calculator from "@/components/Calculator";
@@ -11,7 +11,6 @@ import JoinBlock from "@/components/JoinBlock";
 import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
 
-import { fetchData } from "@/pages/api/chart";
 import { useTranslations } from "next-intl";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
@@ -23,116 +22,116 @@ const Dashboard = () => {
   const summary: SummaryLinksProps = [
     {
       id: "intro",
-      title: t("summary.intro.title"),
+      title: t("sections.intro.title"),
       sublinks: [
         {
-          label: t("summary.intro.sublinks.salmon-collapse-block"),
+          label: t("sections.intro.blocks.salmon-collapse.title"),
           targetId: "salmon-collapse-block",
         },
         {
-          label: t("summary.intro.sublinks.hyper-growth-block"),
+          label: t("sections.intro.blocks.hyper-growth.title"),
           targetId: "hyper-growth-block",
         },
         {
-          label: t("summary.intro.sublinks.top-10-block"),
+          label: t("sections.intro.blocks.top-10.title"),
           targetId: "top-10-block",
         },
         /*{
-          label: t("summary.intro.sublinks.intro-consumption-block"),
+          label: t("sections.intro.blocks.intro-consumption.title"),
           targetId: "intro-consumption-block",
         },*/
       ],
     },
     {
       id: "company",
-      title: t("summary.company.title"),
+      title: t("sections.company.title"),
       sublinks: [
         {
-          label: t("summary.company.sublinks.top-comp-block"),
+          label: t("sections.company.blocks.top-comp.title"),
           targetId: "top-comp-block",
         },
         {
-          label: t("summary.company.sublinks.top-land-block"),
+          label: t("sections.company.blocks.top-land.title"),
           targetId: "top-land-block",
         },
         {
-          label: t("summary.company.sublinks.future-land-based-block"),
+          label: t("sections.company.blocks.future-land-based.title"),
           targetId: "future-land-based-block",
         },
         /*{
-          label: t("summary.company.sublinks.companies-consumption-block"),
+          label: t("sections.company.blocks.companies-consumption.title"),
           targetId: "companies-consumption-block",
         },*/
       ],
     },
     {
       id: "biodiversity",
-      title: t("summary.biodiversity.title"),
+      title: t("sections.biodiversity.title"),
       sublinks: [
         {
-          label: t("summary.biodiversity.sublinks.deforestation-block"),
+          label: t("sections.biodiversity.blocks.deforestation.title"),
           targetId: "deforestation-block",
         },
         {
-          label: t("summary.biodiversity.sublinks.escapes-rates-block"),
+          label: t("sections.biodiversity.blocks.escapes-rates.title"),
           targetId: "escapes-rates-block",
         },
       ],
     },
     {
       id: "health",
-      title: t("summary.health.title"),
+      title: t("sections.health.title"),
       sublinks: [
         {
-          label: t("summary.health.sublinks.antibiotic-conso-block"),
+          label: t("sections.health.blocks.antibiotic-conso.title"),
           targetId: "antibiotic-conso-block",
         },
         {
-          label: t("summary.health.sublinks.microplastics-block"),
+          label: t("sections.health.blocks.microplastics.title"),
           targetId: "microplastics-block",
         },
       ],
     },
     {
       id: "animals",
-      title: t("summary.animals.title"),
+      title: t("sections.animals.title"),
       sublinks: [
         {
-          label: t("summary.animals.sublinks.stress-onshore-block"),
+          label: t("sections.animals.blocks.stress-onshore.title"),
           targetId: "stress-onshore-block",
         },
         {
-          label: t("summary.animals.sublinks.mortality-rates-block"),
+          label: t("sections.animals.blocks.mortality-rates.title"),
           targetId: "mortality-rates-block",
         },
       ],
     },
     {
       id: "climate",
-      title: t("summary.climate.title"),
+      title: t("sections.climate.title"),
       sublinks: [
         {
-          label: t("summary.climate.sublinks.carbon-bomb-block"),
+          label: t("sections.climate.blocks.carbon-bomb.title"),
           targetId: "carbon-bomb-block",
         },
       ],
     },
     {
       id: "social",
-      title: t("summary.social.title"),
+      title: t("sections.social.title"),
       sublinks: [
         {
-          label: t("summary.social.sublinks.social-carbon-block"),
+          label: t("sections.social.blocks.social-carbon.title"),
           targetId: "social-carbon-block",
         },
       ],
     },
     {
       id: "alternative",
-      title: t("summary.alternative.title"),
+      title: t("sections.alternative.title"),
       sublinks: [
         {
-          label: t("summary.alternative.sublinks.alternatives-block"),
+          label: t("sections.alternative.blocks.alternatives.title"),
           targetId: "alternatives-block",
         },
       ],
@@ -147,17 +146,19 @@ const Dashboard = () => {
         data={[
           { multiplicator: 18, label: t("calculator.salmon") },
           {
-            multiplicator: 8107, label: t("calculator.fish"),
+            multiplicator: 8107,
+            label: t("calculator.fish"),
           },
           { multiplicator: 0.5, label: t("calculator.companies") },
           {
-            multiplicator: 618, label: t("calculator.money")
+            multiplicator: 618,
+            label: t("calculator.money"),
           },
         ]}
       />
 
       <section>
-        <TitleBlock title="Intro" />
+        <TitleBlock title={t("sections.intro.title")} />
         <SalmonCollapseSection />
         <SalmonFarmingSection />
         <TopCountriesSection />
@@ -165,37 +166,37 @@ const Dashboard = () => {
       </section>
 
       <section>
-        <TitleBlock title="Entreprises" />
+        <TitleBlock title={t("sections.company.title")} />
         <MainProductionSection />
         <LandPlantsSection />
         {/* <SalmonConsumptionBisSection /> */}
       </section>
 
       <section>
-        <TitleBlock title="Biodiversité" />
+        <TitleBlock title={t("sections.biodiversity.title")} />
         <DeforestationSection />
         <EscapeSection />
       </section>
 
       <section>
-        <TitleBlock title="Santé humaine" />
+        <TitleBlock title={t("sections.health.title")} />
         <AntibioticSection />
         <MicroplasticSection />
       </section>
 
       <section>
-        <TitleBlock title="Santé animale" />
+        <TitleBlock title={t("sections.animals.title")} />
         <StressOnshoreSection />
         <MortalityRateSection />
       </section>
 
       <section>
-        <TitleBlock title="Climat" />
+        <TitleBlock title={t("sections.climate.title")} />
         <CarbonSection />
       </section>
 
       <section>
-        <TitleBlock title="Social" />
+        <TitleBlock title={t("sections.social.title")} />
         <SocialCarbonSection />
       </section>
 
@@ -207,45 +208,49 @@ const Dashboard = () => {
 export default Dashboard;
 
 const SalmonCollapseSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <DashboardSection
-      title="Effondrement du saumon sauvage de l'Atlantique"
+      title={t("sections.intro.blocks.salmon-collapse.title")}
       id="salmon-collapse"
-      content="Le saumon atlantique est inscrit sur la Liste rouge de l'UICN des espèces menacées en décembre 2023 . Cela est dû en grande partie à la surpêche, à la dégradation de l'habitat, notamment due aux barrages bloquant les routes migratoires, mais aussi au changement climatique qui modifie leurs environnements, impactant leurs taux de croissance et de survie."
+      content={t.raw("sections.intro.blocks.salmon-collapse.content")}
       hasChart
     />
   );
 };
 
 const SalmonFarmingSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <DashboardSection
-      title="Hyper-croissance de l’élevage du saumon"
+      title={t("sections.intro.blocks.hyper-growth.title")}
       id="hyper-growth"
-      content="La production de saumon a connu une croissance sans précédent. Quasi inexistante il y a 30 ans, elle a bondi à trois millions de tonnes de saumon en 2021, soit l’équivalent de l’élevage et de l’abattage d’un milliard de saumons."
+      content={t.raw("sections.intro.blocks.hyper-growth.content")}
       hasChart
     />
   );
 };
 
 const TopCountriesSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <>
       <DashboardSection
-        title="Principaux pays producteurs de saumon d'élevage"
+        title={t("sections.intro.blocks.top-10.title")}
         id="top-10"
-        content="Le saumon a besoin d'eaux froides pour croître et la production est donc concentrée dans quelques pays situés loin au nord ou au sud. Aujourd'hui, quatre pays représentent à eux seuls 90 % de la production mondiale de saumon."
+        content={t.raw("sections.intro.blocks.top-10.content")}
         hasChart
       />
 
       <div className="p-6 md:p-12 max-w-[1500px] mx-auto text-center">
-        <h3 className="h3 text-red1 text-center">
-          Evolution de l'élevage du saumon par pays
+        <h3 className="h3 mb-4 lg:mb-8 text-red1 text-center">
+          {t("sections.intro.blocks.top-10.subblock.title")}
         </h3>
 
-        <div className="flex md:justify-center min-h-[450px] overflow-y-auto">
-          <Chart id="evolution-map" />
-        </div>
+        <Chart id="evolution-map" type="maps" className="min-h-[700px]" />
       </div>
     </>
   );
@@ -253,11 +258,13 @@ const TopCountriesSection = () => {
 
 /*
 const SalmonConsumptionSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <DashboardSection
-      title="Consommation de saumon"
+      title={t("sections.intro.blocks.intro-consumption.title")}
       id="intro-consumption"
-      content="Les États-Unis sont les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont aussi d’importants consommateurs saumon, la France étant en tête de proue avec une consommation élevée qui atteint 4,4kg/an/personne. "
+      content={t("sections.intro.blocks.intro-consumption.content")}
       hasChart
     />
   );
@@ -265,120 +272,72 @@ const SalmonConsumptionSection = () => {
 */
 
 const MainProductionSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <DashboardSection
-      title="Principaux producteurs de saumon en CAGES MARINES"
+      title={t("sections.company.blocks.top-comp.title")}
       id="top-comp"
-      content="Les petites fermes salmonicoles artisanales ont cédé la place à l’aquaculture industrielle. En quelques décennies, le marché est devenu dominé par une poignée de multinationales. Mowi, anciennement Marine Harvest, est leader du secteur. L'entreprise est présente dans 25 pays."
+      content={t.raw("sections.company.blocks.top-comp.content")}
       hasChart
     />
   );
 };
 
 const LandPlantsSection = () => {
-  const [mapData, setMapData] = useState("");
-  const fetchGraphData = async () => {
-    const mapResponse = await fetchData("maps", "ras-map", false);
-    setMapData(mapResponse);
-  };
-  useEffect(() => {
-    fetchGraphData();
-  }, []);
-
-  if (!mapData) {
-    return <></>;
+  const t = useTranslations("dashboard");
+  const data = [];
+  for (let i = 0; i < 4; i++) {
+    data.push({
+      title: t(`sections.company.blocks.future-land-based.data.${i}.title`),
+      content: t(`sections.company.blocks.future-land-based.data.${i}.content`),
+    });
   }
+
   return (
     <>
       <DashboardSection
-        title="La nouvelle menace : Les fermes aquacoles terrestres"
+        title={t("sections.company.blocks.top-land.title")}
         id="top-land"
-        mainContent="
-    En 2021, la capacité de production théorique combinée des élevages terrestres
-    de saumon s’élève à 2,5 millions de tonnes, soit presque autant que la production
-    mondiale de saumon dans les élevages marins (2,7 millions de tonnes)."
-        content="
-    Les fermes terrestres utilisent la technologie RAS (Recycled Aquaculture Systems)
-    dans des réservoirs entièrement fermés. Si cette approche de l'élevage du saumon permet de
-    limiter l'impact sur la biodiversité et l'environnement local (contamination limitée par les maladies,
-    rejet des excréments et des évasions de saumons), elle nécessite également de grandes quantités
-    d'eau douce et est très gourmande en énergie, car elle vise à recréer très précisément
-    les conditions de l’habitat naturel des saumons.
-    En conséquence, l’empreinte carbone du saumon produit sur terre est plus élevée que celle
-    du saumon produit dans les fermes marines. Afin de rentabiliser de telles fermes,
-    la densité de poissons peut être 3 fois plus élevée que dans les fermes marines.
-    La technologie n’est pas encore totalement maîtrisée : actuellement, aucune usine en
-    fonctionnement ne produit plus de 5 000 tonnes et les incidents techniques sont fréquents.
-    Une usine au Danemark en a subi cinq, résultant de défaillances techniques
-    (pollution au chlorure de fer dans le fjord, incendie complet de son usine, engendrant pollution de l’air et de l’eau)."
+        mainContent={t.raw("sections.company.blocks.top-land.mainContent")}
+        content={t.raw("sections.company.blocks.top-land.content")}
         hasChart
       />
+
       <div
         id="future-land-based-block"
         className="p-6 md:p-12 max-w-[1596px] mx-auto"
       >
         <div className="lg:w-2/4">
-          <h3 className="h3 text-red1">
-            Le futur des fermes aquacoles terrestres
+          <h3 className="h3 mb-4 lg:mb-8 text-red1">
+            {t("sections.company.blocks.future-land-based.title")}
           </h3>
-          <p className="text-xl font-bold py-4">
-            Une ferme terrestre produisant 10 000 tonnes de saumon par an - si
-            elle était construite - nécessiterait autant d'électricité qu'une
-            ville de 39 215 habitant·e·s. Il existe actuellement plusieurs
-            projets en Europe, dont des méga-fermes visant à produire 100 000
-            tonnes ou plus par an.
-          </p>
-          <p className="text-xl">
-            Malgré les défis technologiques et de rentabilité, l'industrie
-            investit massivement dans les fermes terrestres, avec un grand
-            nombre de projets annoncés au cours des 5 dernières années. De
-            nombreuses fermes envisagent d'être construites ou sont déjà en
-            cours de construction en Europe, en Asie, au Moyen-Orient et aux
-            États-Unis pour approvisionner leurs marchés locaux.
-          </p>
+          <div
+            className="p-leavy prose mb-4"
+            dangerouslySetInnerHTML={{
+              __html: t.raw(
+                "sections.company.blocks.future-land-based.mainContent",
+              ),
+            }}
+          />
+          <div
+            className="prose mb-4"
+            dangerouslySetInnerHTML={{
+              __html: t.raw(
+                "sections.company.blocks.future-land-based.content",
+              ),
+            }}
+          />
         </div>
-        <div className="flex flex-wrap gap-y-6 md:gap-y-12 py-20">
-          <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
-            <h3 className="h3 pb-4 text-red1">+91.1%</h3>
-            <p className="text-xl">
-              Les projets combinés de fermes terrestres (RAS) pourraient
-              représenter une augmentation de plus de 91 % de la production
-              mondiale de saumon.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
-            <h3 className="h3 pb-4 text-red1">291 Milliards</h3>
-            <p className="text-xl">
-              Plus de 290 milliards de poissons sauvages, appelés poissons
-              fourrage, seront pêchés pour produire la farine nécessaire chaque
-              année à nourrir ces nouveaux saumons.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
-            <h3 className="h3 pb-4 text-red1">1.4 Millions</h3>
-            <p className="text-xl">
-              Ces mêmes farines contiennent du soja. 975 000 hectares seront
-              nécessaires à la production de ce soja, l'équivalent d'environ 1,4
-              millions de terrains de football.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 md:pr-10">
-            <h3 className="h3 pb-4 text-red1">15.8 Millions</h3>
-            <p className="text-xl">
-              La consommation électrique nécessaire pour filtrer, refroidir et
-              faire circuler l'eau des fermes RAS représente l'équivalent de la
-              consommation annuelle de 15,8 millions d'européens.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 py-20">
+          {data.map((d, key) => (
+            <div key={`data-${key}`}>
+              <h4 className="h4 pb-4 text-red1">{d.title}</h4>
+              <p>{d.content}</p>
+            </div>
+          ))}
         </div>
-        <iframe
-          title="Carte des fermes terrestres"
-          id="ras-map"
-          srcDoc={mapData}
-          width={1000}
-          height={900}
-          className="w-full"
-        />
+        <Chart id="ras-map" type="maps" className="min-h-[900px]" />
       </div>
     </>
   );
@@ -386,14 +345,15 @@ const LandPlantsSection = () => {
 
 /*
 const SalmonConsumptionBisSection = () => {
+  const t = useTranslations("dashboard");
+
   return (
     <DashboardSection
-      title="Consommation"
+      title={t("sections.company.blocks.companies-consumption.title")}
       hasChart
       id="companies-consumption"
-      mainContent="Les États-Unis sont de loin les plus gros consommateurs de saumon, suivis par le Japon et la Russie. Les pays européens sont également d’importants consommateurs de ce poisson. La consommation de saumon par habitant pour ces grands pays est d'environ 2 kg/personne/an et peut atteindre des valeurs supérieures à 5 kg/personne/an."
-      content="La consommation apparente de saumon (toutes espèces confondues) est calculée comme la production, y compris l'aquaculture et la capture, plus les importations moins les exportations. Toutes les données sont fournies par la FAO. Les facteurs de conversion entre le poids du produit et le poids vif sont approximés à l'aide de la documentation de la FAO : https://www.fao.org/3/bt963e/bt963e.pdf
-    Ces approximations peuvent conduire à des indicateurs erronés, surtout dans les pays peu peuplés et/ou à forte production. C’est pour cette raison que la consommation par habitant n’est pas incluse dans le graphique."
+      mainContent={t("sections.company.blocks.companies-consumption.mainContent")}
+      content={t("sections.company.blocks.companies-consumption.content")}
     />
   );
 };

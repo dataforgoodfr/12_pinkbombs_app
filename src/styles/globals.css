@@ -70,6 +70,13 @@
   .p-caption {
     @apply font-primary text-sm md:text-base;
   }
+
+  .prose p {
+    @apply mb-2;
+  }
+  .prose a {
+    @apply underline;
+  }
   /* #endregion  /**======== Typography =========== */
 
   /* #region  /**=========== HEADER =========== */

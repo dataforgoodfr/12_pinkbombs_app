@@ -4,7 +4,6 @@ import Image from "next/image";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
 import * as React from "react";
 
 const barlow = Barlow_Condensed({

@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import React, { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import React, { useEffect, useState } from "react";
 
 type CalculatorProps = {
   data: {
