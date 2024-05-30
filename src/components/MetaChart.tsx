@@ -39,7 +39,7 @@ const MetaChart = ({
     window.URL.revokeObjectURL(url);
   };
 
-  if (!data.length) return;
+  if (!data.length) return <></>;
 
   return (
     <ul
