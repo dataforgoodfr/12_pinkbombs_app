@@ -9,9 +9,9 @@ import Calculator from "@/components/Calculator";
 import DashboardSection from "@/components/DashboardSection";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
+import MetaChart from "@/components/MetaChart";
 import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
-import MetaChart from "@/components/MetaChart";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,

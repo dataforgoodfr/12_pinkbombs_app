@@ -59,7 +59,7 @@ const MetaChart = ({
                 ? (e) => handleClick(e, d.link, d.artifact || d.link)
                 : undefined
             }
-            className={"underline hover:no-underline"}
+            className="underline hover:no-underline"
             target={d.isBlank ? "_blank" : undefined}
             rel={d.isBlank ? "noopener" : undefined}
             download={d.artifact}
