@@ -62,39 +62,39 @@
     "biodiversity": {
       "title": "Biodiversité",
       "deforestation": {
-        "title": "Déforestation: Sources & méthodologie (calculs effectués)",
-        "content": "Remonter la chaîne du saumon produit vers l’impact sur la déforestation n’est pas aisé, ici nous ne nous concentrerons uniquement sur les terres nécessaires à la production de saumon en Norvège d’un aliment phare de leur alimentation, le soja brésilien. Nous ne donnerons pas de chiffres exact sur la déforestation légale au profit de l’industrie du saumon Norvègien, en effet depuis 2016 le Soy Moratorium protège en théorie de la déforestation légale de l’Amazonie pour la culture du soja. Néanmoins, la déforestation légale s'est étendue à d’autres parties du Brésil moins protégées comme le Cerrado et la production intensive de soja au Brésil est très présente sur les zones déboisées avant 2008. \n Nous sommes partis du rapport de 2017 From Brazilian farms to Norwegian tables de Framtiden i våre hender (FIVH) et de Rainforest Foundation Norway (RFN) pour obtenir le cheminement entre la production de soja brésilien et la production de saumon en Norvège. Nous y apprenons qu’en 2015, 3 tonnes de graines de soja sont cultivées en moyenne par hectare et qu’il faut 0,57 kg de graines de soja pour  créer 1kg de CPS (Concentré de Protéines de Soja). Mais aussi que les autorités norvégiennes souhaiteraient que l'industrie aquacole atteigne cinq fois sa taille actuelle d'ici 2050."
+        "title": "Déforestation<br/><br/>",
+        "content": "Remonter la chaîne du saumon produit vers l’impact sur la déforestation n’est pas aisé, ici nous ne nous concentrerons uniquement sur les terres nécessaires à la production de saumon en Norvège d’un aliment phare de leur alimentation, le soja brésilien. Nous ne donnerons pas de chiffres exact sur la déforestation légale au profit de l’industrie du saumon Norvègien, en effet depuis 2016 le Soy Moratorium protège en théorie de la déforestation légale de l’Amazonie pour la culture du soja. Néanmoins, la déforestation légale s'est étendue à d’autres parties du Brésil moins protégées comme le Cerrado et la production intensive de soja au Brésil est très présente sur les zones déboisées avant 2008. \n Nous sommes partis du rapport de 2017 From Brazilian farms to Norwegian tables de Framtiden i våre hender (FIVH) et de Rainforest Foundation Norway (RFN) pour obtenir le cheminement entre la production de soja brésilien et la production de saumon en Norvège. Nous y apprenons qu’en 2015, 3 tonnes de graines de soja sont cultivées en moyenne par hectare et qu’il faut 0,57 kg de graines de soja pour  créer 1kg de CPS (Concentré de Protéines de Soja). Mais aussi que les autorités norvégiennes souhaiteraient que l'industrie aquacole atteigne cinq fois sa taille actuelle d'ici 2050.<br/><br/><br/>"
       },
       "evasion": {
-        "title": "Evasions: Sources",
-        "content": ""
+        "title": "Evasions <br/><br/>",
+        "content": "Les données d'échappées de saumons sont issues des rapports annuels des producteurs (Source: rapports intégrés et/ou rapports de durabilité, voir la section Producteurs). Les données recueillies pour chaque producteur sont compilées sur l’ensemble des années rapportées puis comparées. Le taux d’échappée (escape rate) correspond au ratio entre le nombre de poissons échappés et le nombre de poissons produits sur la période considérée. Un poids moyen de saumon lors de la récolte est estiméfixé à 5 kg (Sources: Knockaert, C. 2006, Mood et al. 2023, Scottish fish farm production survey 2020, Fishcount).<br/><br/><br/>"
       }
     },
     "human_health": {
       "title": "Santé humaine",
       "antibiotics": {
-        "title": "Consommation d'antibiotiques",
-        "content": "Les données sur l'utilisation des antibiotiques dans l'industrie de l'élevage de saumons sont difficiles à obtenir. Au Chili, le Service National de la Pêche et de l'Aquaculture (Sernapesca) a publié un rapport en 2021 sur l'utilisation des antimicrobiens dans la salmoniculture nationale. Nous avons utilisé les données sur la quantité d'antimicrobiens en 2021 (463 tonnes) et sur la biomasse récoltée (0,99 millions de tonnes), avec un ratio de 0,047 %. La grande majorité des antimicrobiens est appliquée à l'aquaculture en eau de mer (98,7 %) et aux espèces de saumon (97,9 %). Les antimicrobiens comprennent les antibiotiques, ainsi que les médicaments antifongiques et antiseptiques, cependant le rapport montre que la substance la plus couramment utilisée dans l'aquaculture en eau de mer est le Florfenicol (97,1 %), un antibiotique couramment utilisé en médecine vétérinaire. \n Pour produire l'image infographique, nous avons converti la quantité d'antibiotiques administrés aux saumons produits en 2021 à un équivalent humain, en utilisant le poids moyen d'une personne française (hommes et femmes confondus - 74,1 kg (Source). La dose d'antibiotiques que cela représente pour un humain (35 g) équivaut à 139 comprimés d'antibiotiques (1 comprimé de 250 mg d'antibiotiques typiques pour la consommation humaine)."
+        "title": "Consommation d'antibiotiques<br/><br/>",
+        "content": "Les données sur l'utilisation des antibiotiques dans l'industrie de l'élevage de saumons sont difficiles à obtenir. Au Chili, le Service National de la Pêche et de l'Aquaculture (Sernapesca) a publié un rapport en 2021 sur l'utilisation des antimicrobiens dans la salmoniculture nationale. Nous avons utilisé les données sur la quantité d'antimicrobiens en 2021 (463 tonnes) et sur la biomasse récoltée (0,99 millions de tonnes), avec un ratio de 0,047 %. La grande majorité des antimicrobiens est appliquée à l'aquaculture en eau de mer (98,7 %) et aux espèces de saumon (97,9 %). Les antimicrobiens comprennent les antibiotiques, ainsi que les médicaments antifongiques et antiseptiques, cependant le rapport montre que la substance la plus couramment utilisée dans l'aquaculture en eau de mer est le Florfenicol (97,1 %), un antibiotique couramment utilisé en médecine vétérinaire. \n Pour produire l'image infographique, nous avons converti la quantité d'antibiotiques administrés aux saumons produits en 2021 à un équivalent humain, en utilisant le poids moyen d'une personne française (hommes et femmes confondus - 74,1 kg (Source). La dose d'antibiotiques que cela représente pour un humain (35 g) équivaut à 139 comprimés d'antibiotiques (1 comprimé de 250 mg d'antibiotiques typiques pour la consommation humaine).<br/><br/><br/>"
       },
       "microplastics": {
-        "title": "Microplastique: Sources & méthodologie (calculs effectués)",
+        "title": "Microplastique<br/><br/>",
         "content": ""
       }
     },
     "animal_welfare": {
       "title": "Condition animale",
       "density": {
-        "title": "Densité: Sources & méthodologie (calculs effectués)",
+        "title": "Densité <br/><br/>",
         "content": ""
       },
       "mortality": {
-        "title": "Taux de mortalité: Sources",
-        "content": ""
+        "title": "Taux de mortalité <br/><br/>",
+        "content": "Les données de taux de mortalité des saumons sont issues des rapports annuels des producteurs (Source: rapports intégrés et/ou rapports de durabilité, voir la section Producteurs). Les taux de mortalités recueillis pour chaque producteur sont détaillés année par année, et si possible pays par pays si la donnée est disponible. Les taux de mortalité correspondent à la mortalité en mer, durant la phase de maturation des saumons. Les taux de mortalité lors de la phase de croissance pre-smolt.<br/><br/><br/>"
       }
     },
     "climate": {
       "title": "Climat",
-      "content": ""
+      "content": "La quantité d’émissions de gaz à effet de serre issues de l’élevage des saumons ainsi que leur répartition entre les scopes 1, 2 et 3 sont issus des rapports annuels 2021 de 9 des plus gros producteurs, lesquels représentent environ 50% de la production mondiale (Source: rapports intégrés et/ou rapports de durabilité, voir la section Producteurs). Les émissions scope 2 considérées sont celles estimées selon la méthodologie de calcul “location based”.<br/><br/>Ces émissions sont ensuite extrapolées à l’ensemble de la production de saumon mondiale, prenant ainsi l’hypothèse de l’homogénéité des pratiques et sources d’alimentation sur l’ensemble des producteurs restants. La feuille de calcul permettant d’aboutir à notre estimation des émissions issues de l’élevage du saumon est disponible ici.<br/><br/><br/>"
     },
     "social": {
       "title": "Social",
