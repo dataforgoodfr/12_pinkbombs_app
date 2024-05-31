@@ -1,15 +1,13 @@
 "use client";
 
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
+import AboutSection from "@/components/AboutSection";
 import IntroBlock from "@/components/IntroBlock";
 import TitleBlock from "@/components/TitleBlock";
-import AboutSection from "@/components/AboutSection";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-
-import "@/styles/globals.css";
 
 const About = () => {
   const t = useTranslations("about");
