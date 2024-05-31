@@ -75,7 +75,7 @@ const Chart = ({
           className="w-full"
         />
       ) : (
-        <div className="overflow-auto">
+        <div className="overflow-x-auto">
           <Plot
             divId={id}
             data={chartData.data}
