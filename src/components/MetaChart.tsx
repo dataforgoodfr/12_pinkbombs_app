@@ -23,7 +23,7 @@ const MetaChart = ({
 }: MetaChartProps) => {
   const t = useTranslations("components");
 
-  const handleClick = (
+  /*const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     link: string,
     artifact: string,
@@ -37,7 +37,7 @@ const MetaChart = ({
     a.setAttribute("download", artifact);
     a.click();
     window.URL.revokeObjectURL(url);
-  };
+  };*/
 
   /*const handleClick = async (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
