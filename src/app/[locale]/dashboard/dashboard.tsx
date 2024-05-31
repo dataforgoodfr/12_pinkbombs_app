@@ -12,6 +12,7 @@ import { SummaryLinksProps } from "@/components/Summary";
 import TitleBlock from "@/components/TitleBlock";
 
 import { fetchData } from "@/pages/api/chart";
+import MetaChart from "@/components/MetaChart";
 
 const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
