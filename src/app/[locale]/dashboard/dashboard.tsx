@@ -370,13 +370,32 @@ const LandPlantsSection = () => {
             </p>
           </div>
         </div>
-        <iframe
-          title="Carte des fermes terrestres"
-          id="ras-map"
-          srcDoc={mapData}
-          width={1000}
-          height={900}
-          className="w-full"
+        <Chart id="ras-map" type="maps" className="min-h-[900px]" />
+
+        <MetaChart
+          data={[
+            {
+              type: "methodology",
+              link: "/to-act#tendances",
+            },
+            {
+              type: "image",
+              link: t("sections.company.blocks.future-land-based.meta.image1"),
+              moreInfo: t("sections.company.blocks.future-land-based.meta.infoImage1"),
+              isBlank: true,
+            },
+            {
+              type: "image",
+              link: t("sections.company.blocks.future-land-based.meta.image2"),
+              moreInfo: t("sections.company.blocks.future-land-based.meta.infoImage2"),
+              isBlank: true,
+            },
+            {
+              type: "data",
+              link: t("sections.company.blocks.future-land-based.meta.data"),
+              artifact: t("sections.company.blocks.future-land-based.meta.dataArtifact")
+            },
+          ]}
         />
       </div>
     </>
@@ -399,8 +418,30 @@ const LandPlantsSection = () => {
 const DeforestationSection = () => {
   return (
     <DashboardSection
-      title="Déforestation"
-      src="/images/deforestation.webp"
+       title={t("sections.biodiversity.blocks.deforestation.title")}
+      image={{
+        src: `/dashboard/images/${t("sections.biodiversity.blocks.deforestation.image")}`,
+        alt: t("sections.biodiversity.blocks.deforestation.altImage"),
+      }}
+      meta={{
+        data: [
+          {
+            type: "source",
+            link: t("sections.biodiversity.blocks.deforestation.meta.source"),
+            moreInfo: t("sections.biodiversity.blocks.deforestation.meta.infoSource"),
+            isBlank: true,
+          },
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.biodiversity.blocks.deforestation.meta.image"),
+          },
+        ],
+      }}
       id="deforestation"
       content="L'ambition du gouvernement norvégien prévoyait d'augmenter la production de 500 % d'ici 2050. Cela nécessitera l'importation de 11 000 km2 de production de soja du Brésil. Cela équivaut à la déforestation légale de l’Amazonie en 2022."
     />
@@ -412,10 +453,29 @@ const EscapeSection = () => {
     <DashboardSection
       title="Les évasions"
       id="escapes-rates"
-      content="De 2018 à 2022, plus de 4 000 000 de saumons se sont échappés des élevages des 11 plus grands producteurs*. Ces saumons menacent la faune car ils... [source].
-
-      *Aucune donnée de Cooke n’a été trouvée."
-      hasChart
+      content={t.raw("sections.biodiversity.blocks.escapes-rates.content")}
+      image={{
+        src: `/dashboard/images/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
+        alt: t("sections.biodiversity.blocks.escapes-rates.altImage"),
+      }}
+      meta={{
+        data: [
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.biodiversity.blocks.escapes-rates.meta.image"),
+          },
+          {
+            type: "data",
+            artifact: t("sections.biodiversity.blocks.escapes-rates.meta.data"),
+            link: t("sections.biodiversity.blocks.escapes-rates.meta.dataArtifact"),
+          }
+        ],
+      }}
     />
   );
 };
@@ -425,9 +485,31 @@ const AntibioticSection = () => {
     <DashboardSection
       title="Consommation d'antibiotiques"
       id="antibiotic-conso"
-      mainContent="Si la Norvège prétend que moins de 99 % de son aquaculture est exempte d'antibiotiques, d'autres pays ne sont pas aussi vertueux. Au Chili, l'utilisation d'antibiotiques a augmenté d'un tiers depuis la crise du covid."
-      content="Au Chili : 421 tonnes d'atb utilisées pour les 17 principaux producteurs, soit 0,04% (tonnes d'atb/tonne de poisson produit) en moyenne. Les taux ont diminué en 2018, mais du fait de la crise covid, ils ont de nouveau augmenté en 2021 pour atteindre un taux en tonnes atb/tonne de poisson soit 1/3 supérieur à celui de 2018."
-      hasChart
+      mainContent={t.raw("sections.health.blocks.antibiotic-conso.mainContent")}
+      content={t.raw("sections.health.blocks.antibiotic-conso.content")}
+      image={{
+        src: `/dashboard/images/${t("sections.health.blocks.antibiotic-conso.image")}`,
+        alt: t("sections.health.blocks.antibiotic-conso.altImage"),
+      }}
+      meta={{
+        data: [
+          {
+            type: "source",
+            link: t("sections.health.blocks.antibiotic-conso.meta.source"),
+            moreInfo: t("sections.health.blocks.antibiotic-conso.meta.infoSource"),
+            isBlank: true,
+          },
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.health.blocks.antibiotic-conso.meta.image"),
+          },
+        ],
+      }}
     />
   );
 };
@@ -435,13 +517,31 @@ const AntibioticSection = () => {
 const MicroplasticSection = () => {
   return (
     <DashboardSection
-      title="Microplastique"
-      src="/images/microplastics.webp"
+      title={t("sections.health.blocks.microplastics.title")}
+      image={{
+        src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
+      }}
       id="microplastics"
-      content="Un saumon de 5 kg contient environ 575 microplastiques.
-      Une personne française moyenne consommant 4,4 kg de saumon par an ingérera environ 575 microplastiques par an sur un total de 97.500 provenant de différentes sources.
-      Les microplastiques sont particulièrement présents dans le saumon en raison de la bioaccumulation dans la chaîne alimentaire et de l'affinité des plastiques pour les graisses.
-      Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques."
+      content={t.raw("sections.health.blocks.microplastics.content")}
+      meta={{
+        data: [
+          {
+            type: "source",
+            link: t("sections.health.blocks.microplastics.meta.source"),
+            moreInfo: t("sections.health.blocks.microplastics.meta.infoSource"),
+            isBlank: true,
+          },
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.health.blocks.microplastics.meta.image"),
+          },
+        ],
+      }}
     />
   );
 };
@@ -449,12 +549,32 @@ const MicroplasticSection = () => {
 const StressOnshoreSection = () => {
   return (
     <DashboardSection
-      title="Densité / stress dans usine à terre"
-      src="/images/stress.webp"
+      title={t("sections.animals.blocks.stress-onshore.title")}
+      image={{
+        src: `/dashboard/images/${t("sections.animals.blocks.stress-onshore.image")}`,
+        alt: t("sections.animals.blocks.stress-onshore.altImage"),
+      }}
       id="stress-onshore"
-      content="La densité de saumons est trois fois plus élevée dans des usines à terre par rapport à des élevages en mer déjà trop denses, pour des raisons de rentabilité.
-      Les conséquences peuvent être nombreuses :
-      mortalité de masse liées à des pathogènes, plus hauts niveaux de stress."
+      content={t.raw("sections.animals.blocks.stress-onshore.content")}
+      meta={{
+        data: [
+          {
+            type: "source",
+            link: t("sections.animals.blocks.stress-onshore.meta.source"),
+            moreInfo: t("sections.animals.blocks.stress-onshore.meta.infoSource"),
+            isBlank: true,
+          },
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.animals.blocks.stress-onshore.meta.image"),
+          },
+        ],
+      }}
     />
   );
 };
@@ -467,6 +587,19 @@ const MortalityRateSection = () => {
       mainContent="Les taux de mortalité varient considérablement d'un producteur à l'autre et d'une année à l'autre. Des taux exceptionnellement élevés sont observés, atteignant 20 % certaines années."
       content="Certains producteurs atteignent des taux de mortalité bien inférieurs grâce à de meilleures pratiques mais aussi à la législation locale. Attention : ces chiffres ne prennent en compte que la mortalité en mer. La mortalité dans les plans d'eau douce est proche de 30% (rapports Multiexport)"
       hasChart
+      meta={{
+        data: [
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "data",
+            link: t("sections.animals.blocks.mortality-rates.meta.data"),
+            artifact: t("sections.animals.blocks.mortality-rates.meta.dataArtifact"),
+          },
+        ],
+      }}
     />
   );
 };
@@ -476,11 +609,21 @@ const CarbonSection = () => {
     <DashboardSection
       title="Impact carbone"
       id="carbon-bomb"
-      content="
-      L'industrie du saumon a émis environ 16 millions de tonnes de CO2 en 2021, tout comme un pays comme la Slovénie ou l'objectif d'émissions de 8 millions d'êtres humains en 2050.
-Environ 90 % des émissions totales proviennent de la chaîne de valeur, principalement de l'alimentation du poisson et du transport.
-Cette valeur est extrapolée à partir des émissions de 9 des plus grands producteurs de saumon."
-      hasChart
+      image={{ src: "/images/social-carbon.webp" }}
+      content={t.raw("sections.climate.blocks.carbon-bomb.content")}
+      meta={{
+        data: [
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.climate.blocks.carbon-bomb.meta.image"),
+          },
+        ],
+      }}
     />
   );
 };
@@ -488,14 +631,35 @@ Cette valeur est extrapolée à partir des émissions de 9 des plus grands produ
 const SocialCarbonSection = () => {
   return (
     <DashboardSection
-      title="Impact carbone"
-      src="/images/social-carbon.webp"
+      title={t("sections.social.blocks.social-carbon.title")}
+      image={{ src: "/images/social-carbon.webp" }}
       id="social-carbon"
-      mainContent="En 2020, 3 % de tous les poissons capturés dans le monde sont élevés pour le saumon de l'Atlantique (2,72 millions de tonnes)."
-      content="Le saumon étant carnivore, il est nécessaire de le nourrir avec des farines à base de poissons. Le saumon d'élevage moyen consomme l'équivalent de 5 fois son propre poids en poisson, issu de la pêche industrielle.
-      Et ce type de surpêche a eu de nombreux impacts sociaux négatifs, comme en Mauritanie et en Gambie, où la quantité de poisson dans la mer a été réduite et où les quelques poissons pêchés sont achetés par les industriels pour un prix insignifiant, limitant l'emploi et la vie de la communauté locale. accès à l’une des principales sources de leur approvisionnement alimentaire.
-      [Article sur l'impact de la pêche industrielle] -> ici (ou un autre)
-      Les captures annuelles mondiales de poissons, coquillages et crustacés devraient atteindre environ 90 millions de tonnes d'ici 2020. La grande majorité de ce volume est destinée à la consommation humaine (environ 70 millions). Et puis, près de la moitié de ce qui reste (42 %) est utilisée pour la production mondiale de farine de poisson, approvisionnant le secteur aquacole (pour la pisciculture)."
+      mainContent={t.raw("sections.social.blocks.social-carbon.mainContent")}
+      content={t.raw("sections.social.blocks.social-carbon.content")}
+      meta={{
+        data: [
+          {
+            type: "source",
+            link: t("sections.social.blocks.social-carbon.meta.source"),
+            moreInfo: t("sections.social.blocks.social-carbon.meta.infoSource"),
+            isBlank: true,
+          },
+          {
+            type: "methodology",
+            link: "/to-act#",
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.social.blocks.social-carbon.meta.image"),
+          },
+          {
+            type: "data",
+            link: t("sections.social.blocks.social-carbon.meta.data"),
+            artifact: t("sections.social.blocks.social-carbon.meta.dataArtifact"),
+          },
+        ],
+      }}
     />
   );
 };
