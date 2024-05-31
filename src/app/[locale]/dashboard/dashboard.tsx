@@ -485,7 +485,7 @@ const DeforestationSection = () => {
     <DashboardSection
       title={t("sections.biodiversity.blocks.deforestation.title")}
       image={{
-        src: `/images/dashboard/${t("sections.biodiversity.blocks.deforestation.image")}`,
+        src: `/dashboard/images/${t("sections.biodiversity.blocks.deforestation.image")}`,
         alt: t("sections.biodiversity.blocks.deforestation.altImage"),
       }}
       id="deforestation"
@@ -503,7 +503,7 @@ const EscapeSection = () => {
       id="escapes-rates"
       content={t.raw("sections.biodiversity.blocks.escapes-rates.content")}
       image={{
-        src: `/images/dashboard/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
+        src: `/dashboard/images/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
         alt: t("sections.biodiversity.blocks.escapes-rates.altImage"),
       }}
     />
@@ -520,7 +520,7 @@ const AntibioticSection = () => {
       mainContent={t.raw("sections.health.blocks.antibiotic-conso.mainContent")}
       content={t.raw("sections.health.blocks.antibiotic-conso.content")}
       image={{
-        src: `/images/dashboard/${t("sections.health.blocks.antibiotic-conso.image")}`,
+        src: `/dashboard/images/${t("sections.health.blocks.antibiotic-conso.image")}`,
         alt: t("sections.health.blocks.antibiotic-conso.altImage"),
       }}
     />
@@ -534,7 +534,7 @@ const MicroplasticSection = () => {
     <DashboardSection
       title={t("sections.health.blocks.microplastics.title")}
       image={{
-        src: `/images/dashboard/${t("sections.health.blocks.microplastics.image")}`,
+        src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
       }}
       id="microplastics"
       content={t.raw("sections.health.blocks.microplastics.content")}
@@ -549,7 +549,7 @@ const StressOnshoreSection = () => {
     <DashboardSection
       title={t("sections.animals.blocks.stress-onshore.title")}
       image={{
-        src: `/images/dashboard/${t("sections.animals.blocks.stress-onshore.image")}`,
+        src: `/dashboard/images/${t("sections.animals.blocks.stress-onshore.image")}`,
         alt: t("sections.animals.blocks.stress-onshore.altImage"),
       }}
       id="stress-onshore"
