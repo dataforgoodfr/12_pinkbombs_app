@@ -26,39 +26,72 @@ const Chart = ({
     data: [],
     layout: {},
   });
+  const [mapData, setMapData] = useState("");
   const locale = useLocale();
   const t = useTranslations("components");
 
   useEffect(() => {
     if (!id) return;
 
-    const fetchGraphData = async () => {
+    (async () => {
       if (id.length > 0) {
         const response = await fetchData(
           (locale === "fr" ? "fr/" : "") + type,
           id,
+          type === "graphs",
         );
-        setChartData(response);
+
+        if (!response) {
+          return;
+        }
+
+        if (type === "maps") {
+          setMapData(response);
+        } else {
+          setChartData(response);
+        }
       }
-    };
-    fetchGraphData();
+    })();
   }, [id, type, locale]);
 
-  if (!chartData)
+  if (!chartData.data?.length && !mapData) {
     return (
-      <p className="flex items-center justify-center text-md text-center bg-gray-50 min-h-[300px]">
+      <p
+        className={clsx(
+          "flex items-center justify-center p-caption text-center bg-gray-50 min-h-[450px]",
+          className,
+        )}
+      >
         {t("chart.loading")}
       </p>
     );
+  }
 
   return (
-    <Plot
-      divId={id}
-      data={chartData.data}
-      layout={{ ...chartData.layout, ...(width ? { width } : null), height }}
-      config={{ responsive: true }}
-      className={clsx("!block min-h-[300px]", className)}
-    />
+    <>
+      {type === "maps" ? (
+        <iframe
+          title="Carte des fermes terrestres"
+          id="ras-map"
+          srcDoc={mapData}
+          width={1000}
+          height={900}
+          className="w-full"
+        />
+      ) : (
+        <Plot
+          divId={id}
+          data={chartData.data}
+          layout={{
+            ...chartData.layout,
+            ...(width ? { width } : null),
+            height,
+          }}
+          config={{ responsive: true }}
+          className={clsx("!block min-h-[450px]", className)}
+        />
+      )}
+    </>
   );
 };
 

@@ -74,6 +74,7 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: "layout" });
   return (
     <html
       lang={locale}
@@ -94,7 +95,7 @@ export default async function LocaleLayout({
             >
               <Image
                 src="/images/bottom.svg"
-                alt="Haut de page"
+                alt={t("top")}
                 width="40"
                 height="20"
                 className="w-8 aspect-square rotate-180"

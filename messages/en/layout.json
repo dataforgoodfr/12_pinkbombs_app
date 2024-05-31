@@ -1,5 +1,6 @@
 {
   "layout": {
+    "top": "Back to top",
     "nav": {
       "title": "main",
       "story": "Story",
@@ -8,8 +9,8 @@
       "about": "About"
     },
     "footer": {
-      "allRight": "Tous droits réservé",
-      "and": "et"
+      "allRight": "All rights reserved",
+      "and": "and"
     }
   },
   "siteConfig": {

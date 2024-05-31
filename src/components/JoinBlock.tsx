@@ -9,6 +9,7 @@ const Chart = dynamic(() => import("@/components/Chart"), {
 });
 
 import PrimaryButton from "@/components/buttons/PrimaryButton";
+import MetaChart from "@/components/MetaChart";
 
 const IntroBlock = ({
   className,
@@ -49,6 +50,25 @@ const IntroBlock = ({
           </p>
           <p className="pb-4 md:pb-16 max-w-3xl">{t("join.content")}</p>
           <Chart id="alternatives" height={700} />
+          <MetaChart
+            hasBackground={false}
+            data={[
+              {
+                type: "source",
+                link: t("join.source"),
+                isBlank: true,
+              },
+              {
+                type: "methodology",
+                link: "/to-act#tendances",
+              },
+              {
+                type: "data",
+                link: t("join.data"),
+                artifact: t("join.artifact"),
+              },
+            ]}
+          />
         </div>
       </div>
 

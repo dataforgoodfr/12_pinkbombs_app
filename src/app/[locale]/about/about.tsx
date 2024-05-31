@@ -1,28 +1,32 @@
 "use client";
 
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
+import AboutSection from "@/components/AboutSection";
 import IntroBlock from "@/components/IntroBlock";
 import TitleBlock from "@/components/TitleBlock";
-import AboutSection from "@/components/AboutSection";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-
-import "@/styles/globals.css";
 
 const About = () => {
   const t = useTranslations("about");
 
   return (
     <>
-      <IntroBlock title={t("title")} className="flex p-6 lg:p-12 text-red1 bg-pink1 min-h-[40px] lg:min-h-[300px]"/>
+      <IntroBlock
+        title={t("title")}
+        className="flex p-6 lg:p-12 text-red1 bg-pink1 min-h-[40px] lg:min-h-[300px]"
+      />
 
       <WhySection />
       <WhoSection />
       <MethodsSection />
 
-      <IntroBlock title={t("sources")} className="flex p-6 lg:p-12 text-red1 bg-pink1 min-h-[40px] lg:min-h-[300px]"/>
+      <IntroBlock
+        title={t("sources")}
+        className="flex p-6 lg:p-12 text-red1 bg-pink1 min-h-[40px] lg:min-h-[300px]"
+      />
 
       <MacroSection />
       <AlternativesSection />

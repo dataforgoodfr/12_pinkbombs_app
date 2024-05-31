@@ -1,57 +1,57 @@
 {
   "story": {
     "title": "The salmon you eat, sell, produce...",
-    "bomb": "Tue, affame et contamine.",
+    "bomb": "kills, starves, contaminates.",
     "explode": {
-      "intro": "L’industrie du saumon est une bombe écologique et sociale",
+      "intro": "The salmon industry is a bomb with multiple impacts",
       "social": {
         "title": "Social",
-        "content": "Détourne la nourriture des communautés d'Afrique de l'Ouest."
+        "content": "Diverts food from West African communities."
       },
       "climat": {
-        "title": "Climat",
-        "content": "Génère une empreinte carbone collossale."
+        "title": "Climate",
+        "content": "Generates a carbon footprint equivalent to that of 10,000 inhabitants."
       },
       "health": {
-        "title": "Santé",
-        "content": "Impacte la santé humaine à cause des polluants éternels et des microplastiques."
+        "title": "Health",
+        "content": "Raises concerns about human health due to diseases requiring medication and microplastics."
       },
       "biodiversity": {
-        "title": "Biodiversité",
-        "content": "Dégrade la biodiversité marine (échappées de saumons d’élevage, pollutions, parasites et déclin des espèces sauvages) et terrestre (déforestation)"
+        "title": "Biodiversity",
+        "content": "Degrades marine biodiversity, including escapees, pollution, parasites, and overexploitation of wild stocks."
       },
       "animals": {
-        "title": "Condition animale",
-        "content": "Provoque stress, maladies et mortalités de masse dans les élevages intensifs."
+        "title": "Animal condition",
+        "content": "Stress, diseases, excess mortality as consequences of intensive breeding."
       }
     },
     "edito": {
       "social": {
-        "title": "justice Sociale",
-        "content": "Chaque année 500 000+ tonnes de poissons sauvages sont prélevés aux larges des côtes de l’Afrique de l’Ouest pour nourrir des poissons d'élevage mettant en péril la sécurité alimentaire des communautés locales."
+        "title": "Social",
+        "content": "Each year, over 500,000 tonnes of wild fish are harvested off the coast of West Africa to feed farmed fish, jeopardizing the food security of local communities."
       },
       "climat": {
-        "title": "Climat",
-        "content": "L'élevage intensif de saumons génère des émissions de gaz à effet de serre, principalement du dioxyde de carbone (CO2) provenant de l'énergie utilisée dans les installations, de la production d'aliments et du transport, ainsi que du méthane résultant de la décomposition des déchets organiques."
+        "title": "Climate",
+        "content": "Intensive salmon farming generates greenhouse gas emissions, primarily carbon dioxide (CO2) from energy used in facilities, feed production, and transportation, as well as methane resulting from the decomposition of organic waste."
       },
       "health": {
-        "title": "Santé",
-        "content": "La présence dans la chair des saumons de polluants organiques persistants (POP) et de microplastiques soulève des préoccupations pour la santé humaine.La concentration élevée de poissons dans les fermes aquacoles favorise la propagation de maladies, nécessitant l'utilisation d'agents pathogènes ou de médicaments.",
+        "title": "Health",
+        "content": "The high concentration of fish in aquaculture farms promotes the spread of diseases, necessitating the use of pathogens or medications, which can have consequences for human health. Additionally, the increasing presence of microplastics in salmon raises concerns for human health.",
         "credit": "Photo credit: Ramji / Bob Brown Foundation"
       },
       "biodiversity": {
-        "title": "Biodiversité",
-        "content": "L'élevage intensif de saumons a des répercussions significatives sur la biodiversité marine et les ressources planétaires : pollutions diverses, parasites affectant les espèces locales, pression accrue sur les populations de poissons sauvages, exploitation du krill d’Antarctique, déforestation, etc."
+        "title": "Biodiversity",
+        "content": "Intensive salmon farming has significant impacts on marine biodiversity, including escapees, water pollution from waste discharge, parasites affecting wild populations, and increased pressure on wild fish stocks due to the demand for fishmeal, thereby contributing to overexploitation and declining biodiversity."
       },
       "animals": {
-        "title": "Condition animale",
-        "content": "La très forte densité des saumons en cages entraine maladies et stress. Les poux de mer rongent la chair des poissons défigurés. Les taux de mortalité au sein des cages sont très anormalement élevés."
+        "title": "Animal condition",
+        "content": "The very high density of salmon in cages leads to illness and stress. Sea lice eat the flesh of disfigured fish. Mortality rates within cages are very abnormally high."
       }
     },
     "industry": {
-      "title": "Et tout ça dans l’impunité d’une industrie en croissance exponentielle.",
-      "content": "La production de saumons, dominée par une poignée de multinationales, connaît depuis quelques décennies une hyper-croissance à l’échelle globale.",
-      "link": "On agit"
+      "title": "And all this with the impunity of an exponentially growing industry.",
+      "content": "Salmon production, dominated by a handful of multinationals, has experienced hyper-growth on a global scale for several dec",
+      "link": "We act"
     }
   }
 }

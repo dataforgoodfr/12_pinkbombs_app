@@ -4,7 +4,7 @@
       "title": "page"
     },
     "edito": {
-      "link": "En savoir plus"
+      "link": "See more"
     },
     "shareLink": {
       "blank": "new tab",
@@ -16,12 +16,27 @@
     "chart": {
       "loading": "Loading data.."
     },
+    "calculator": {
+      "intro": "Here are the impacts of the salmon industry around the world since you opened this web page.",
+      "seconds": "seconds",
+      "second": "second"
+    },
     "join": {
       "title": "Be the change.",
-      "intro": "Il existe des alternatives au saumon dans notre manière de manger, de vendre et de produire.",
-      "content": "La France, située dans le top 3 des plus gros consommateurs de saumon au monde, porte une responsabilité particulière dans l'orientation des pratiques.",
-      "act": "Pour inverser la tendance et stopper le désastre, il est urgent d’agir. On a des leviers d’action !",
-      "link": "On agit"
+      "intro": "There are alternatives to salmon in our way of eating, selling, and producing.",
+      "content": "France, located in the top 3 of the largest consumers of salmon in the world, bears a particular responsibility in guiding practices.",
+      "act": "To reverse the trend and stop the disaster, urgent action is needed. We have levers for action!",
+      "link": "We act",
+      "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+      "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/data/numbers_salmons_farmed_1.0.csv",
+      "artifact": "numbers_salmons_farmed_1.0.csv"
+    },
+    "metaItem": {
+      "source": "Main source",
+      "methodology": "Methodology",
+      "image": "Image",
+      "data": "Data",
+      "document": "PDF"
     }
   }
 }
