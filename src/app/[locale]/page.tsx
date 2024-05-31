@@ -12,6 +12,7 @@ import Edito from "@/components/Edito";
 import IconCard from "@/components/IconCard";
 import IntroBlock from "@/components/IntroBlock";
 import JoinBlock from "@/components/JoinBlock";
+import MetaChart from "@/components/MetaChart";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -192,6 +193,25 @@ const BusinessSection = () => {
           {t("industry.content")}
         </p>
         <Chart id="hyper-growth-grouped" />
+        <MetaChart
+          hasBackground={false}
+          data={[
+            {
+              type: "source",
+              link: t("industry.source"),
+              isBlank: true,
+            },
+            {
+              type: "methodology",
+              link: "/to-act#tendances",
+            },
+            {
+              type: "data",
+              link: t("industry.data"),
+              artifact: t("industry.artifact"),
+            },
+          ]}
+        />
         <div className="flex justify-center">
           <Link
             className="inline-flex justify-center gap-4 mt-6 lg:mt-12 p-4 min-w-40 lg:text-2xl text-red1 bg-darkblue1 font-secondary uppercase rounded-xl tracking-widest border-2 font-bold border-red1 hover:bg-red1 hover:text-darkblue1 transition-all ease-in-out duration-100"

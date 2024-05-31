@@ -54,8 +54,8 @@ const IntroBlock = ({
             hasBackground={false}
             data={[
               {
-                type: "source",
-                link: t("join.source"),
+                type: "document",
+                link: t("join.pdf"),
                 isBlank: true,
               },
               {
