@@ -42,7 +42,9 @@ const BombSection = () => {
           <Image src="/images/bombs.svg" alt="" width={766} height={616} />
         </div>
         <div className="row-start-3 self-end items-left flex gap-2 items-end">
-          <p className={clsx("h1", "w-full")}>{t("bomb")}</p>
+          <p className={clsx("h1", "max-w-[1500px] mx-auto w-full")}>
+            {t("bomb")}
+          </p>
         </div>
       </div>
     </section>
