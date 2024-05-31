@@ -579,8 +579,8 @@ const CarbonSection = () => {
     <DashboardSection
       title={t("sections.climate.blocks.carbon-bomb.title")}
       id="carbon-bomb"
+      image={{ src: "/images/social-carbon.webp" }}
       content={t.raw("sections.climate.blocks.carbon-bomb.content")}
-      hasChart
     />
   );
 };
