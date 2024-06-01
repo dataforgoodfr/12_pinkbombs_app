@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
 import AboutSection from "@/components/AboutSection";
-import TitleBlock from "@/components/TitleBlock";
 import IntroBlock from "@/components/IntroBlock";
+import TitleBlock from "@/components/TitleBlock";
 
 const About = () => {
   const t = useTranslations("about");
