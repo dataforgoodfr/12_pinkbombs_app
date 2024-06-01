@@ -87,6 +87,10 @@
     @apply underline;
   }
 
+  .prose a:hover {
+    @apply no-underline;
+  }
+
   .prose em {
     @apply italic;
   }

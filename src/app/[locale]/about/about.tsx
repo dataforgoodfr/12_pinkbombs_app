@@ -7,13 +7,14 @@ import "@/lib/env";
 
 import AboutSection from "@/components/AboutSection";
 import TitleBlock from "@/components/TitleBlock";
+import IntroBlock from "@/components/IntroBlock";
 
 const About = () => {
   const t = useTranslations("about");
 
   return (
     <>
-      <TitleBlock title={t("title")} />
+      <IntroBlock title={t("title")} />
 
       <WhySection />
       <WhoSection />
@@ -40,11 +41,8 @@ const WhySection = () => {
 
   return (
     <>
-      <AboutSection
-        content={t("why.content")}
-        title={t("why.title")}
-        id="why-section-title"
-      />
+      <TitleBlock id="why-section-title" title={t("why.title")} />
+      <AboutSection content={t("why.content")} />
     </>
   );
 };
@@ -54,11 +52,8 @@ const WhoSection = () => {
 
   return (
     <>
-      <AboutSection
-        content={t("who.content")}
-        title={t("who.title")}
-        id="who-section-title"
-      />
+      <TitleBlock id="who-section-title" title={t("who.title")} />
+      <AboutSection content={t("who.content")} />
     </>
   );
 };
@@ -68,11 +63,8 @@ const MethodsSection = () => {
 
   return (
     <>
-      <AboutSection
-        content={t("methods.content")}
-        title={t("methods.title")}
-        id="methods-section-title"
-      />
+      <TitleBlock id="methods-section-title" title={t("methods.title")} />
+      <AboutSection content={t("methods.content")} />
     </>
   );
 };
@@ -101,12 +93,6 @@ const AlternativesSection = () => {
         title={t("alternatives.title")}
         id="alternatives-section-title"
       />
-      <Link
-        className="inline-flex justify-center mx-6 md:mx-12 xl:mx-[60px] mb-10 p-4 min-w-40 lg:text-2xl text-red1 bg-tranparent font-secondary uppercase rounded-xl tracking-widest border-2 font-bold border-red1 hover:bg-red1 hover:text-white transition-all ease-in-out duration-100"
-        href={t("alternatives.link")}
-      >
-        {t("alternatives.button")}
-      </Link>
     </>
   );
 };

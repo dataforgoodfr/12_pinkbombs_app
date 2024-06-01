@@ -20,9 +20,7 @@
     },
     "alternatives": {
       "title": "Alternatives",
-      "content": "La matrice des alternatives présente une comparaison de 8 produits (dont le saumon) sur 6 critères. Certains de ces critères reposent sur des données quantitatives, comme la part des apports en omégas 3 et l’empreinte carbone, alors que d’autres reposent sur des données qualitatives. La gamme de couleurs représente des degrés graduels d’impact; de vert foncé (impact positif) à rouge foncé (impact négatif). <br/><br/>Pour une description détaillée de la méthodologie et des sources utilisées pour générer cette matrice, téléchargez le document PDF.",
-      "button": "En savoir plus",
-      "link": ""
+      "content": "<p>La matrice des alternatives présente une comparaison de 8 produits (dont le saumon) sur 6 critères. Certains de ces critères reposent sur des données quantitatives, comme la part des apports en omégas 3 et l’empreinte carbone, alors que d’autres reposent sur des données qualitatives. La gamme de couleurs représente des degrés graduels d’impact; de vert foncé (impact positif) à rouge foncé (impact négatif).</p><p>Pour une description détaillée de la méthodologie et des sources utilisées pour générer cette matrice, <a href=\"https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Alternatives_Methodogie_fr.pdf\">téléchargez le document PDF.</a></p>"
     },
     "companies": {
       "title": "Producteurs",
@@ -38,7 +36,7 @@
     },
     "animal_welfare": {
       "title": "Condition animale",
-        "content": "<h4>Densité</h4><h4>Taux de mortalité</h4>Les données de taux de mortalité des saumons sont issues des rapports annuels des producteurs (Source: rapports intégrés et/ou rapports de durabilité, voir la section Producteurs). Les taux de mortalités recueillis pour chaque producteur sont détaillés année par année, et si possible pays par pays si la donnée est disponible. Les taux de mortalité correspondent à la mortalité en mer, durant la phase de maturation des saumons. Les taux de mortalité lors de la phase de croissance pre-smolt."
+      "content": "<h4>Densité</h4><h4>Taux de mortalité</h4>Les données de taux de mortalité des saumons sont issues des rapports annuels des producteurs (Source: rapports intégrés et/ou rapports de durabilité, voir la section Producteurs). Les taux de mortalités recueillis pour chaque producteur sont détaillés année par année, et si possible pays par pays si la donnée est disponible. Les taux de mortalité correspondent à la mortalité en mer, durant la phase de maturation des saumons. Les taux de mortalité lors de la phase de croissance pre-smolt."
     },
     "climate": {
       "title": "Climat",
