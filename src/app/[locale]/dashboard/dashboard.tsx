@@ -340,7 +340,7 @@ const SalmonConsumptionSection = () => {
   return (
     <DashboardSection
       title={t("sections.intro.blocks.intro-consumption.title")}
-      id="intro-consumption"
+      id="top-conso"
       content={t.raw("sections.intro.blocks.intro-consumption.content")}
       meta={{
         data: [
