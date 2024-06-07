@@ -37,7 +37,7 @@
           },
           "intro-consumption": {
             "title": "Main countries consuming salmon",
-            "content": "<p>The increase in salmon production results from an increase in the consumption of this fish, whose flesh is highly valued. In 2019, the United States were the largest consumers of salmon, with an <a href=\"/about#macro-consumption-section\">apparent consumption approaching one million tons</a>, followed by Russia and Japan, with consumption around 460,000 tons. European countries follow, with France being the 4th largest consumer of salmon in 2019. Consumption in Western countries is around 3 kilos per capita, while emerging countries such as Brazil and China have very low per capita consumption.<p>",
+            "content": "<p>The increase in salmon production results from an increase in the consumption of this fish, whose flesh is highly valued. In 2021, the United States were the largest consumers of salmon, with an <a href=\"/about#macro-consumption-section\">apparent consumption</a> approaching one million tons, followed by Russia and Japan, with consumption around 500,000 tons. European countries follow this podium, with France, the UK, Germany and Italy being large consumers of salmon in 2021. Consumption in Western countries is around 3 to 4 kilos per capita, while emerging countries such as Brazil have very low per capita consumption.<p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5.csv.zip",
             "artifact": "top_15_countries_consuming_1.5.csv.zip"
           }
@@ -66,20 +66,24 @@
             "content": "<p>Despite technological and profitability challenges, the industry is investing heavily in land-based farms, with a large number of projects announced over the past 5 years. Many farms are being planned or are under construction in Europe, Asia, the Middle East, and the United States to supply their local markets.</p>",
             "data": [
               {
-                "title": "+91.1",
-                "content": "Combined land-based farm (RAS) projects could represent an increase of over 91% in global salmon production."
+                "title": "+91.1% IN PRODUCTION",
+                "content": "Combined land-based farm projects could represent an increase of more than 91% in global salmon production."
               },
               {
-                "title": "291 Billion",
-                "content": "More than 290 billion wild fish, known as forage fish, will be harvested annually to produce the necessary meal to feed these new salmon."
+                "title": "233 BILLION FISHES",
+                "content": "Up to 233 billion wild fish, known as forage fish, will need to be captured each year to produce the flour and oil needed to feed these new salmon."
               },
               {
-                "title": "1.4 Million",
-                "content": "These same meals contain soy. 975,000 hectares will be required for soy production, equivalent to approximately 1.4 million football fields."
+                "title": "436 THOUSAND TONS OF SOY",
+                "content": "These same feeds contain soy. More than 1,000,000 hectares will be necessary for the production of this soya, the equivalent of 1.5 million football fields, or an area larger than that of Corsica, France."
               },
               {
-                "title": "15.8 Million",
-                "content": "The electricity consumption required for filtering, cooling, and circulating water in RAS farms is equivalent to the annual consumption of 15.8 million Europeans."
+                "title": "59.78 TWH OF ELECTRICITY",
+                "content": "The electricity consumption necessary to filter, cool and circulate water from RAS farms represents the equivalent of the annual consumption of 16 to 38 million European people."
+              },
+              {
+                "title": "16.9 MILLION TONS OF CO<sub>2</sub>",
+                "content": "The emissions corresponding to the farming of these new salmon could amount to more than 16.9 million tons of CO<sub>2</sub>, or more than 7kg of CO<sub>2</sub> per kg of salmon produced."
               }
             ],
             "meta": {
@@ -114,7 +118,7 @@
           },
           "escapes-rates": {
             "title": "Escapes",
-            "content": "<p>From 2018 to 2022, over 4,000,000 salmon escaped from the farms of the 11 largest producers. These escaped salmon pose a threat to wildlife as they... [source].</p><p><em>*No data from Cooke was found.</em></p>",
+            "content": "<p>From 2018 to 2022, more than 4 million salmon escaped from the farms of the 11 largest producers*. These escaped farmed salmon pose numerous ecological problems, including competition for resources with wild populations, the introduction of diseases and parasites, and the risk of hybridizing with wild salmon, which threatens their genetic resilience.</p><p><em>*No data were found for Cooke company.</em></p>",
             "image": "en/escape.svg",
             "altImage": "More than 4 million fish have escaped from sea cages (SalMar, Mowi, Bakkarfrost and others) since 2018",
             "meta": {
