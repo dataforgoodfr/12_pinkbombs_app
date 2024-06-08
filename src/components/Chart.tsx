@@ -12,6 +12,7 @@ type ChartProps = {
   className?: string;
   height?: number;
   width?: number;
+  changeFrameHeight?: boolean;
   type?: "graphs" | "maps";
 };
 
@@ -20,6 +21,7 @@ const Chart = ({
   className,
   type = "graphs",
   height = 450,
+  changeFrameHeight = false,
   width,
 }: ChartProps) => {
   const [chartData, setChartData] = useState({
@@ -72,7 +74,10 @@ const Chart = ({
           src={mapData}
           width={1000}
           height={900}
-          className="w-full"
+          className={clsx(
+            "w-full",
+            changeFrameHeight ? "!h-[300px] sm:!h-[500px] xl:!h-[900px]" : "",
+          )}
         />
       ) : (
         <div className="overflow-x-auto">
