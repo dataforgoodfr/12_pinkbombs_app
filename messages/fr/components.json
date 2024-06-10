@@ -26,10 +26,7 @@
       "intro": "Vous ne voulez pas participer à cette bombe écologique et sociale ? Bonne nouvelle, les solutions existent !",
       "content": "<p><strong>L’État, les entreprises et les citoyen·nes peuvent - ensemble - faire partie de ces solutions.</strong></p><ul><li><strong>L'État</strong> peut réguler pour abandonner l'élevage intensif de poissons carnivores - tels que les saumons et les thons - et pour arrêter la surpêche dans le monde.</li> <li>Les <strong>entreprises</strong> doivent s'engager pour plus végétaliser les assiettes et développer une aquaculture de faible niveau trophique, comme les algues et les coquillages.</li><li> <strong>Individuellement</strong> faisons le choix simple d'exclure le saumon industriel de nos assiettes afin d'accélérer collectivement la révolution vers un système alimentaire plus végétal qui répond aux impératifs de santé, de durabilité et de justice sociale.</li></ul>",
       "act": "Pour inverser la tendance et stopper le désastre, il est urgent d’agir. On a des leviers d’action ! ",
-      "link": "On agit",
-      "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Alternatives_Methodogie_fr.pdf",
-      "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/alternatives_text_7_fr.csv.zip",
-      "artifact": "alternatives_text_7_fr.csv.zip"
+      "link": "On agit"
     },
     "metaChart": {
       "source": "Source principale",
