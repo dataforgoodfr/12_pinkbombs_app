@@ -48,7 +48,8 @@ const IntroBlock = ({
           <p className={clsx("h3", "pb-4 md:pb-8 max-w-3xl")}>
             {t("join.intro")}
           </p>
-          <p className="pb-4 md:pb-16 max-w-3xl">{t("join.content")}</p>
+          {/* <div className="pb-4 md:pb-16 max-w-3xl">{t.raw("join.content")}</div> */}
+          <div className="pb-4 md:pb-16 max-w-3xl prose" dangerouslySetInnerHTML={{ __html: t.raw("join.content") }} />
           <Chart id="alternatives" height={700} />
           <MetaChart
             hasBackground={false}
