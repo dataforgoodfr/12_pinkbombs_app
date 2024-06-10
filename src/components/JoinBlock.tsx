@@ -1,15 +1,9 @@
 import clsx from "clsx";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const Chart = dynamic(() => import("@/components/Chart"), {
-  ssr: false,
-});
-
 import PrimaryButton from "@/components/buttons/PrimaryButton";
-import MetaChart from "@/components/MetaChart";
 
 const IntroBlock = ({
   className,
