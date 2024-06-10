@@ -43,7 +43,10 @@ const IntroBlock = ({
             {t("join.intro")}
           </p>
           {/* <div className="pb-4 md:pb-16 max-w-3xl">{t.raw("join.content")}</div> */}
-          <div className="pb-4 md:pb-16 max-w-3xl prose" dangerouslySetInnerHTML={{ __html: t.raw("join.content") }} />
+          <div
+            className="pb-4 md:pb-16 max-w-3xl prose"
+            dangerouslySetInnerHTML={{ __html: t.raw("join.content") }}
+          />
         </div>
       </div>
 
