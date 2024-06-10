@@ -50,26 +50,6 @@ const IntroBlock = ({
           </p>
           {/* <div className="pb-4 md:pb-16 max-w-3xl">{t.raw("join.content")}</div> */}
           <div className="pb-4 md:pb-16 max-w-3xl prose" dangerouslySetInnerHTML={{ __html: t.raw("join.content") }} />
-          <Chart id="alternatives" height={700} />
-          <MetaChart
-            hasBackground={false}
-            data={[
-              {
-                type: "document",
-                link: t("join.pdf"),
-                isBlank: true,
-              },
-              {
-                type: "methodology",
-                link: "/about#alternatives-section",
-              },
-              {
-                type: "data",
-                link: t("join.data"),
-                artifact: t("join.artifact"),
-              },
-            ]}
-          />
         </div>
       </div>
 
