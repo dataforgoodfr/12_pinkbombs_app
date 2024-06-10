@@ -1,15 +1,9 @@
 import clsx from "clsx";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const Chart = dynamic(() => import("@/components/Chart"), {
-  ssr: false,
-});
-
 import PrimaryButton from "@/components/buttons/PrimaryButton";
-import MetaChart from "@/components/MetaChart";
 
 const IntroBlock = ({
   className,
@@ -48,26 +42,10 @@ const IntroBlock = ({
           <p className={clsx("h3", "pb-4 md:pb-8 max-w-3xl")}>
             {t("join.intro")}
           </p>
-          <p className="pb-4 md:pb-16 max-w-3xl">{t("join.content")}</p>
-          <Chart id="alternatives" height={700} />
-          <MetaChart
-            hasBackground={false}
-            data={[
-              {
-                type: "document",
-                link: t("join.pdf"),
-                isBlank: true,
-              },
-              {
-                type: "methodology",
-                link: "/about#alternatives-section",
-              },
-              {
-                type: "data",
-                link: t("join.data"),
-                artifact: t("join.artifact"),
-              },
-            ]}
+          {/* <div className="pb-4 md:pb-16 max-w-3xl">{t.raw("join.content")}</div> */}
+          <div
+            className="pb-4 md:pb-16 max-w-3xl prose"
+            dangerouslySetInnerHTML={{ __html: t.raw("join.content") }}
           />
         </div>
       </div>

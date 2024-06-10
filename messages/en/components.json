@@ -23,13 +23,10 @@
     },
     "join": {
       "title": "Be the change.",
-      "intro": "There are alternatives to salmon in our way of eating, selling, and producing.",
-      "content": "France, located in the top 3 of the largest consumers of salmon in the world, bears a particular responsibility in guiding practices.",
+      "intro": "Don't want to be part of this ecological and social disaster? Good news, solutions exist!",
+      "content": "<p><strong>Governments, businesses, and citizens can work together to be part of these solutions.</strong></p><ul><li><strong>Governments</strong> an regulate to abandon intensive farming of carnivorous fish - such as salmon and tuna - and to stop overfishing worldwide.</li> <li><strong>Businesses</strong> must commit to increasing plant-based options and developing low-trophic level aquaculture, such as algae and shellfish.</li><li> <strong>Individually,</strong> let's make the simple choice to exclude industrial salmon from our plates, in order to collectively accelerate the revolution towards a more plant-based food system that meets health, sustainability, and social justice imperatives.</li></ul>",
       "act": "To reverse the trend and stop the disaster, urgent action is needed. We have levers for action!",
-      "link": "We act",
-      "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Alternatives_Methodogy_en.pdf",
-      "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/alternatives_text_7.csv.zip",
-      "artifact": "alternatives_text_7.csv.zip"
+      "link": "We act"
     },
     "metaChart": {
       "source": "Main source",
