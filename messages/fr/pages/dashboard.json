@@ -37,7 +37,7 @@
           },
           "intro-consumption": {
             "title": "Les plus gros consommateurs de saumon",
-            "content": "<p>La hausse de la production de saumons résulte d’une augmentation de la consommation de ce poisson, dont la chair est très appréciée. En 2019, les États-unis étaient les plus gros consommateurs de saumon, avec une <a href=\"/about#macro-consumption-section\">consommation apparente s’approchant du million de tonnes</a>, suivis par la Russie et le Japon dont la consommation est d’environ 460,000 tonnes. Les pays européens suivent ensuite, la France étant en 2019 le 4ème pays le plus consommateur de saumon. La consommation des pays occidentaux se situe aux alentours de 3 kilos par habitant, tandis que des pays émergents comme le Brésil ou la Chine présentent des consommations par habitant très faibles.<p>",
+            "content": "<p>La hausse de la production de saumons résulte d’une augmentation de la consommation de ce poisson, dont la chair est très appréciée. En 2021, les États-unis étaient les plus gros consommateurs de saumon, avec une <a href=\"/about#macro-consumption-section\">consommation apparente</a> s’approchant du million de tonnes, suivis par la Russie et le Japon dont la consommation est d’environ 500,000 tonnes. Les pays européens suivent ensuite, la France étant en 2021 le 4ème pays le plus consommateur de saumon au monde. La consommation des pays occidentaux se situe aux alentours de 3 à 4 kilos de saumon par habitant, tandis que des pays émergents comme le Brésil présentent des consommations par habitant très faibles.<p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5_fr.csv.zip",
             "artifact": "top_15_countries_consuming_1.5_fr.csv.zip"
           }
@@ -114,7 +114,7 @@
           },
           "escapes-rates": {
             "title": "Les évasions",
-            "content": "<p>De 2018 à 2022, plus de 4 000 000 de saumons se sont échappés des élevages des 11 plus grands producteurs*. Ces saumons menacent la faune car ils... [source].</p><p><em>*Aucune donnée de Cooke n’a été trouvée.</em></p>",
+            "content": "<p>De 2018 à 2022, ce sont plus de 4 millions de saumons qui se sont échappés des élevages des 11 plus grands producteurs*.</p><p>Ces saumons échappés d'élevages posent de nombreux problèmes écologiques, notamment par la compétition qu'ils induisent sur les ressources avec les populations sauvages, par l'introduction de maladies et des parasites, et par le risque d'hybrider avec les saumons sauvages qu'ils représentent, menaçant leur résilience génétique.</p><p><em>* Aucune données n'ont été trouvées pour l'entreprise Cooke.</em></p>",
             "image": "fr/escape.svg",
             "altImage": "Plus de 4 millions de poissons se sont échapés des cages marines (SalMar, Mowi, Bakkarfrost et autres) depuis 2018",
             "meta": {

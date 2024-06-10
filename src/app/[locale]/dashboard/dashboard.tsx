@@ -395,7 +395,7 @@ const MainProductionSection = () => {
 const LandPlantsSection = () => {
   const t = useTranslations("dashboard");
   const data = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     data.push({
       title: t(`sections.company.blocks.future-land-based.data.${i}.title`),
       content: t(`sections.company.blocks.future-land-based.data.${i}.content`),
@@ -450,7 +450,7 @@ const LandPlantsSection = () => {
             }}
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-12 mt-20">
           {data.map((d, key) => (
             <div key={`data-${key}`}>
               <h4 className="h4 pb-4 text-red1">{d.title}</h4>
