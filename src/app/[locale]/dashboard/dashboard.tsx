@@ -702,6 +702,11 @@ const MortalityRateSection = () => {
             link: t("sections.animals.blocks.mortality-rates.meta.data"),
             artifact: t("sections.animals.blocks.mortality-rates.meta.dataArtifact"),
           },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.animals.blocks.mortality-rates.meta.image"),
+          },
         ],
       }}
     />

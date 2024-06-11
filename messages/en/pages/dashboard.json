@@ -176,7 +176,8 @@
             "content": "<p>Some producers achieve much lower mortality rates thanks to better practices but also local legislation. Please note: these figures only take into account mortality at sea. Mortality in fresh water bodies is close to 30% (Multiexport reports)</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4.csv.zip",
-              "dataArtifact": "mortality_rates_4.4.csv.zip"
+              "dataArtifact": "mortality_rates_4.4.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4_fr.png"
             }
           }
         }
