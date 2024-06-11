@@ -217,6 +217,7 @@ const SalmonCollapseSection = () => {
     <DashboardSection
       title={t("sections.intro.blocks.salmon-collapse.title")}
       id="salmon-collapse"
+      mainContent={t.raw("sections.intro.blocks.salmon-collapse.mainContent")}
       content={t.raw("sections.intro.blocks.salmon-collapse.content")}
       meta={{
         data: [
@@ -254,14 +255,14 @@ const SalmonFarmingSection = () => {
     <DashboardSection
       title={t("sections.intro.blocks.hyper-growth.title")}
       id="hyper-growth"
+      mainContent={t.raw("sections.intro.blocks.hyper-growth.mainContent")}
       content={t.raw("sections.intro.blocks.hyper-growth.content")}
       meta={{
         data: [
           {
             type: "source",
             isBlank: true,
-            link: "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
-            moreInfo: t("sections.intro.blocks.hyper-growth.source"),
+            link: t("sections.intro.blocks.hyper-growth.source"),
           },
           {
             type: "methodology",
@@ -292,14 +293,14 @@ const TopCountriesSection = () => {
       <DashboardSection
         title={t("sections.intro.blocks.top-10.title")}
         id="top-10"
+        mainContent={t.raw("sections.intro.blocks.top-10.mainContent")}
         content={t.raw("sections.intro.blocks.top-10.content")}
         meta={{
           data: [
             {
               type: "source",
               isBlank: true,
-              link: "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
-              moreInfo: t("sections.intro.blocks.top-10.source"),
+              link: t("sections.intro.blocks.top-10.source"),
             },
             {
               type: "methodology",
@@ -361,6 +362,7 @@ const SalmonConsumptionSection = () => {
     <DashboardSection
       title={t("sections.intro.blocks.intro-consumption.title")}
       id="top-conso"
+      mainContent={t.raw("sections.intro.blocks.intro-consumption.mainContent")}
       content={t.raw("sections.intro.blocks.intro-consumption.content")}
       meta={{
         data: [
@@ -392,6 +394,7 @@ const MainProductionSection = () => {
     <DashboardSection
       title={t("sections.company.blocks.top-comp.title")}
       id="top-comp"
+      mainContent={t.raw("sections.company.blocks.top-comp.mainContent")}
       content={t.raw("sections.company.blocks.top-comp.content")}
       meta={{
         data: [
@@ -572,6 +575,7 @@ const DeforestationSection = () => {
         ],
       }}
       id="deforestation"
+      mainContent={t.raw("sections.biodiversity.blocks.deforestation.mainContent")}
       content={t.raw("sections.biodiversity.blocks.deforestation.content")}
     />
   );
@@ -584,6 +588,7 @@ const EscapeSection = () => {
     <DashboardSection
       title={t("sections.biodiversity.blocks.escapes-rates.title")}
       id="escapes-rates"
+      mainContent={t.raw("sections.biodiversity.blocks.escapes-rates.mainContent")}
       content={t.raw("sections.biodiversity.blocks.escapes-rates.content")}
       image={{
         src: `/dashboard/images/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
@@ -628,8 +633,8 @@ const AntibioticSection = () => {
         data: [
           {
             type: "source",
-            link: t("sections.health.blocks.antibiotic-conso.meta.source"),
-            moreInfo: t("sections.health.blocks.antibiotic-conso.meta.infoSource"),
+            link: "https://www.sernapesca.cl/app/uploads/2023/11/informe_sobre_uso_de_antimicrobianos_en_la_salmonicultura_nacional_ano_2021.pdf",
+            moreInfo: t("sections.health.blocks.antibiotic-conso.meta.source"),
             isBlank: true,
           },
           {
@@ -657,13 +662,14 @@ const MicroplasticSection = () => {
         src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
       }}
       id="microplastics"
+      mainContent={t.raw("sections.health.blocks.microplastics.mainContent")}
       content={t.raw("sections.health.blocks.microplastics.content")}
       meta={{
         data: [
           {
             type: "source",
-            link: t("sections.health.blocks.microplastics.meta.source"),
-            moreInfo: t("sections.health.blocks.microplastics.meta.infoSource"),
+            link: "https://norceresearch.brage.unit.no/norceresearch-xmlui/bitstream/handle/11250/2687619/NORCE%20Report%208_2020%20SalmoDetect%20project.pdf?sequence=1&isAllowed=y",
+            moreInfo: t("sections.health.blocks.microplastics.meta.source"),
             isBlank: true,
           },
           {
@@ -692,13 +698,14 @@ const StressOnshoreSection = () => {
         alt: t("sections.animals.blocks.stress-onshore.altImage"),
       }}
       id="stress-onshore"
+      mainContent={t.raw("sections.animals.blocks.stress-onshore.mainContent")}
       content={t.raw("sections.animals.blocks.stress-onshore.content")}
       meta={{
         data: [
           {
             type: "source",
-            link: t("sections.animals.blocks.stress-onshore.meta.source"),
-            moreInfo: t("sections.animals.blocks.stress-onshore.meta.infoSource"),
+            link: "https://static1.squarespace.com/static/56c20b66e707eb013dc65bab/t/582cf4ee29687f90c2f3c500/1479341303532/ISFA_LandFarmingreport_web.pdf",
+            moreInfo: t("sections.animals.blocks.stress-onshore.meta.source"),
             isBlank: true,
           },
           {
@@ -756,6 +763,7 @@ const CarbonSection = () => {
       title={t("sections.climate.blocks.carbon-bomb.title")}
       id="carbon-bomb"
       image={{ src: "/images/social-carbon.webp" }}
+      mainContent={t.raw("sections.climate.blocks.carbon-bomb.mainContent")}
       content={t.raw("sections.climate.blocks.carbon-bomb.content")}
       meta={{
         data: [
@@ -767,6 +775,11 @@ const CarbonSection = () => {
             type: "image",
             isBlank: true,
             link: t("sections.climate.blocks.carbon-bomb.meta.image"),
+          },
+          {
+            type: "data",
+            link: t("sections.animals.blocks.carbon-bomb.meta.data"),
+            artifact: t("sections.animals.blocks.carbon-bomb.meta.dataArtifact"),
           },
         ],
       }}
@@ -788,8 +801,8 @@ const SocialCarbonSection = () => {
         data: [
           {
             type: "source",
-            link: t("sections.social.blocks.social-carbon.meta.source"),
-            moreInfo: t("sections.social.blocks.social-carbon.meta.infoSource"),
+            link: "https://eumofa.eu/documents/20178/432372/Fishmeal+and+fish+oil.pdf",
+            moreInfo: t("sections.social.blocks.social-carbon.meta.source"),
             isBlank: true,
           },
           {
