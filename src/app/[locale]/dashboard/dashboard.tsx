@@ -272,6 +272,11 @@ const SalmonFarmingSection = () => {
             link: t("sections.intro.blocks.hyper-growth.data"),
             artifact: t("sections.intro.blocks.hyper-growth.artifact"),
           },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.hyper-growth.image"),
+          },
         ],
       }}
       hasChart
@@ -305,6 +310,11 @@ const TopCountriesSection = () => {
               link: t("sections.intro.blocks.top-10.data"),
               artifact: t("sections.intro.blocks.top-10.artifact"),
             },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.intro.blocks.top-10.image"),
+            },
           ],
         }}
         hasChart
@@ -332,6 +342,11 @@ const TopCountriesSection = () => {
               link: t("sections.intro.blocks.top-10.subblock.data"),
               artifact: t("sections.intro.blocks.top-10.subblock.artifact"),
             },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.intro.blocks.top-10.subblock.image"),
+            },
           ]}
         />
       </div>
@@ -357,6 +372,11 @@ const SalmonConsumptionSection = () => {
             type: "data",
             link: t("sections.intro.blocks.intro-consumption.data"),
             artifact: t("sections.intro.blocks.intro-consumption.artifact"),
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.intro-consumption.image"),
           },
         ],
       }}
@@ -389,6 +409,11 @@ const MainProductionSection = () => {
             type: "data",
             link: t("sections.company.blocks.top-comp.data"),
             artifact: t("sections.company.blocks.top-comp.artifact"),
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.company.blocks.top-comp.image"),
           },
         ],
       }}
@@ -423,7 +448,12 @@ const LandPlantsSection = () => {
             {
               type: "data",
               link: t("sections.company.blocks.top-comp.data"),
-              artifact: t("sections.company.blocks.top-comp.artifact"),
+              artifact: t("sections.company.blocks.top-land.artifact"),
+            },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.company.blocks.top-land.image"),
             },
           ],
         }}
