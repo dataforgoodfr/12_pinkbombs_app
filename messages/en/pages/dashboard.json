@@ -10,26 +10,29 @@
         "blocks": {
           "salmon-collapse": {
             "title": "Wild Altantic salmon collapse",
-            "content": "<p>The Atlantic salmon was added to the IUCN Red List of Threatened Species in December 2023.</p><p>This is largely due to overfishing, habitat degradation, particularly caused by dams blocking migratory routes, as well as climate change altering their environments, impacting their growth and survival rates.</p>",
+            "mainContent": "<p>The Atlantic salmon was added to the IUCN Red List of Threatened Species in December 2023, its status changed from 'Least Concern' to 'Near Threatened'.</p>",
+            "content": "<p>The causes of the species' decline are multiple: overfishing at sea, degradation of freshwater habitats, construction of numerous migration barriers, and the effects of climate change that alter their environments, impacting their growth and survival rates.</p><p>Farming activities are also identified as one of the most significant threats to wild populations (marine pollution, spread of diseases, and escapes of farmed salmon resulting in genetic cross-breeding that disrupts the ability of wild salmon to survive in their natural habitat).</p>",
             "source": "",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/discrease_wild_salmon_1.1.csv.zip",
             "artifact": "discrease_wild_salmon_1.1.csv.zip"
           },
           "hyper-growth": {
-            "title": "Hyper-growth in salmon farming",
-            "content": "<p>Salmon production has experienced unprecedented growth.</p><p>Nearly nonexistent 30 years ago, it surged to three million tons of salmon in 2021, equivalent to the farming and slaughtering of one billion salmon.</p>",
-            "source": "",
+            "title": "Hyper-growth of Atlantic Salmon farming",
+            "mainContent": "<p>Salmon production has experienced unprecedented growth.</p>",
+            "content": "<p>Nearly nonexistent 30 years ago, it surged to three million tonnes of salmon in 2021, equivalent to the farming and slaughtering of 600 million salmon.</p><p>Current farmed salmon production is 115 times greater than the largest quantity of salmon ever caught in a single year.</p>",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/hyper_growth_salmon_farming_1.2.csv.zip",
             "artifact": "hyper_growth_salmon_farming_1.2.csv.zip"
           },
           "top-10": {
             "title": "Main countries producing farmed salmon",
-            "content": "<p>Salmon require cold waters to grow, and thus production is concentrated in a few countries located far to the North or far to the South. Today, four countries alone account for 90% of the world's salmon production.</p>",
-            "source": "",
+            "mainContent": "<p>Salmons need cold waters to grow. Therefore, production is concentrated in certain countries located near the North and South Poles.</p>",
+            "content": "<p>Four countries alone account for 90% of the world's salmon production.</p>",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3.csv.zip",
             "artifact": "top_10_countries_producing_1.3.csv.zip",
             "subblock": {
-              "title": "Salmon farming evolution by country",
+              "title": "Evolution of salmon farming by country",
               "source": "https://www.fao.org/fisheryen/collection/aquaculture?lang=en",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/evolution_salmon_farming_country_iso_1.4.csv.zip",
               "artifact": "evolution_salmon_farming_country_iso_1.4.csv.zip"
@@ -37,17 +40,19 @@
           },
           "intro-consumption": {
             "title": "Main countries consuming salmon",
-            "content": "<p>The increase in salmon production results from an increase in the consumption of this fish, whose flesh is highly valued. In 2021, the United States were the largest consumers of salmon, with an <a href=\"/about#macro-consumption-section\">apparent consumption</a> approaching one million tons, followed by Russia and Japan, with consumption around 500,000 tons. European countries follow this podium, with France, the UK, Germany and Italy being large consumers of salmon in 2021. Consumption in Western countries is around 3 to 4 kilos per capita, while emerging countries such as Brazil have very low per capita consumption.<p>",
+            "mainContent": "<p>The rise in salmon production results from an increase in the consumption of this fish, whose flesh is highly valued.</p>",
+            "content": "<p>In 2021, the United States was the largest consumer of salmon, with a consumption approaching one million tons, followed by Russia and Japan, with consumption around 500,000 tons. European countries follow, with France being the fourth largest consumer of salmon in 2021. Western countries have a per capita consumption of around 3 to 4 kilograms of salmon, while emerging countries such as Brazil have very low per capita consumption.<p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5.csv.zip",
             "artifact": "top_15_countries_consuming_1.5.csv.zip"
           }
         }
       },
       "company": {
-        "title": "Entreprises",
+        "title": "Producers",
         "blocks": {
           "top-comp": {
-            "title": "Main producers of open-net salmon",
+            "title": "Main producers of salmon in marine cages",
+            "mainContent": "",
             "content": "<p>Small artisanal salmon farms have given way to industrial aquaculture.</p><p>In a few decades, the market has become dominated by a handful of multinational corporations.</p><p>Mowi, formerly known as Marine Harvest, is the leader in the sector. The company operates in 25 countries.</p>",
             "source": "",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_companies_producing_2.1.csv.zip",
