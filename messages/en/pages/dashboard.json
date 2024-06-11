@@ -52,7 +52,7 @@
         "blocks": {
           "top-comp": {
             "title": "Main producers of salmon in marine cages",
-            "mainContent":
+            "mainContent": "",
             "content": "<p>Small artisanal salmon farms have given way to industrial aquaculture.</p><p>In a few decades, the market has become dominated by a handful of multinational corporations.</p><p>Mowi, formerly known as Marine Harvest, is the leader in the sector. The company operates in 25 countries.</p>",
             "source": "",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_companies_producing_2.1.csv.zip",
