@@ -235,6 +235,11 @@ const SalmonCollapseSection = () => {
             link: t("sections.intro.blocks.salmon-collapse.data"),
             artifact: t("sections.intro.blocks.salmon-collapse.artifact"),
           },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.salmon-collapse.image"),
+          },
         ],
       }}
       hasChart

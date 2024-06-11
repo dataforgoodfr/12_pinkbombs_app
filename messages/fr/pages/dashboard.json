@@ -13,7 +13,8 @@
             "content": "<p>Le saumon atlantique est inscrit sur la Liste rouge de l'UICN des espèces menacées en décembre 2023.</p><p>Cela est dû en grande partie à la surpêche, à la dégradation de l'habitat, notamment due aux barrages bloquant les routes migratoires, mais aussi au changement climatique qui modifie leurs environnements, impactant leurs taux de croissance et de survie.</p>",
             "source": "anglais",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/discrease_wild_salmon_1.1_fr.csv.zip",
-            "artifact": "discrease_wild_salmon_1.1_fr.csv.zip"
+            "artifact": "discrease_wild_salmon_1.1_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/discrease_wild_salmon_1.1_fr.png"
           },
           "hyper-growth": {
             "title": "Hyper-croissance de l’élevage du saumon",
@@ -172,7 +173,8 @@
             "content": "<p>Certains producteurs atteignent des taux de mortalité bien inférieurs grâce à de meilleures pratiques mais aussi à la législation locale. Attention : ces chiffres ne prennent en compte que la mortalité en mer. La mortalité dans les plans d'eau douce est proche de 30% (rapports Multiexport)</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4_fr.csv.zip",
-              "dataArtifact": "mortality_rates_4.4_fr.csv.zip"
+              "dataArtifact": "mortality_rates_4.4_fr.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4_fr.png"
             }
           }
         }
