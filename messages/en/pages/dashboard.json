@@ -18,14 +18,14 @@
           "hyper-growth": {
             "title": "Hyper-growth in salmon farming",
             "content": "<p>Salmon production has experienced unprecedented growth.</p><p>Nearly nonexistent 30 years ago, it surged to three million tons of salmon in 2021, equivalent to the farming and slaughtering of one billion salmon.</p>",
-            "source": "",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/hyper_growth_salmon_farming_1.2.csv.zip",
             "artifact": "hyper_growth_salmon_farming_1.2.csv.zip"
           },
           "top-10": {
             "title": "Main countries producing farmed salmon",
             "content": "<p>Salmon require cold waters to grow, and thus production is concentrated in a few countries located far to the North or far to the South. Today, four countries alone account for 90% of the world's salmon production.</p>",
-            "source": "",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3.csv.zip",
             "artifact": "top_10_countries_producing_1.3.csv.zip",
             "subblock": {
