@@ -652,6 +652,7 @@ const MicroplasticSection = () => {
       title={t("sections.health.blocks.microplastics.title")}
       image={{
         src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
+        alt: t("sections.health.blocks.microplastics.altImage"),
       }}
       id="microplastics"
       mainContent={t.raw("sections.health.blocks.microplastics.mainContent")}
@@ -754,7 +755,10 @@ const CarbonSection = () => {
     <DashboardSection
       title={t("sections.climate.blocks.carbon-bomb.title")}
       id="carbon-bomb"
-      image={{ src: "/images/social-carbon.webp" }}
+      image={{ 
+        src: `/dashboard/images/${t("sections.climate.blocks.carbon-bomb.image")}`,
+        alt: t("sections.climate.blocks.carbon-bomb.altImage"),  
+      }}
       mainContent={t.raw("sections.climate.blocks.carbon-bomb.mainContent")}
       content={t.raw("sections.climate.blocks.carbon-bomb.content")}
       meta={{
@@ -770,8 +774,8 @@ const CarbonSection = () => {
           },
           {
             type: "data",
-            link: t("sections.animals.blocks.carbon-bomb.meta.data"),
-            artifact: t("sections.animals.blocks.carbon-bomb.meta.dataArtifact"),
+            link: t("sections.climate.blocks.carbon-bomb.meta.data"),
+            artifact: t("sections.climate.blocks.carbon-bomb.meta.dataArtifact"),
           },
         ],
       }}
@@ -785,7 +789,10 @@ const SocialCarbonSection = () => {
   return (
     <DashboardSection
       title={t("sections.social.blocks.social-carbon.title")}
-      image={{ src: "/images/social-carbon.webp" }}
+      image={{ 
+        src: `/dashboard/images/${t("sections.social.blocks.social-carbon.image")}`,
+        alt: t("sections.social.blocks.social-carbon.altImage"), 
+      }}
       id="social-carbon"
       mainContent={t.raw("sections.social.blocks.social-carbon.mainContent")}
       content={t.raw("sections.social.blocks.social-carbon.content")}
