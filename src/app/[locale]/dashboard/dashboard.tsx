@@ -126,16 +126,6 @@ const Dashboard = () => {
         },
       ],
     },
-    {
-      id: "alternative",
-      title: t("sections.alternative.title"),
-      sublinks: [
-        {
-          label: t("sections.alternative.blocks.alternatives.title"),
-          targetId: "alternatives-block",
-        },
-      ],
-    },
   ];
 
   return (
