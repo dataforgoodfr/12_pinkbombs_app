@@ -40,7 +40,7 @@ const Summary = ({
     >
       <ul
         role="menubar"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8 max-w-[1500px] mx-auto bg-white text-darkblue1 rounded-md"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 2xl:grid-cols-7 max-w-[1500px] mx-auto bg-white text-darkblue1 rounded-md"
       >
         {links.map((link, keyLink) => (
           <li role="none" className="flex-1 relative" key={`link-${keyLink}`}>
