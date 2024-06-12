@@ -29,7 +29,7 @@
           "top-10": {
             "title": "Principaux pays producteurs de saumons d'élevage",
             "mainContent": "<p>Les saumons ont besoin d’eaux froides pour croître. La production est donc concentrée dans certains pays situés proche des pôles Nord et Sud.</p>",
-            "content": "<p>Quatre pays représentent à eux seuls 90 % de la production mondiale de saumons.</p>",
+            "content": "<p>Quatre pays représentent à eux seuls 90% de la production mondiale de saumons.</p>",
             "source": "https://www.fao.org/fishery/fr/collection/aquaculture",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3_fr.csv.zip",
             "artifact": "top_10_countries_producing_1.3_fr.csv.zip",
@@ -67,7 +67,7 @@
           "top-land": {
             "title": "La nouvelle menace: les fermes-usines de saumons à terre",
             "mainContent": "<p>En 2021, la capacité de production théorique combinée des élevages de saumons en cages terrestres s’élève à 2,2 millions de tonnes, soit presque autant que la production mondiale de saumons dans les élevages en cages marines (2,7 millions de tonnes).</p>",
-            "content": "<p>Malgré les défis technologiques et de rentabilité, l'industrie investit massivement dans les fermes-usines terrestres, avec un grand nombre de projets annoncés au cours des 5 dernières années. Le plus grand producteur est Pure Salmon avec une ambition de production de 260,000 tonnes par an et des projets dans au moins huit pays, dont la France.</p>",
+            "content": "<p>Malgré les défis technologiques et de rentabilité, l'industrie investit massivement dans les fermes-usines terrestres, avec un grand nombre de projets annoncés au cours des 5 dernières années. Le plus grand producteur est Pure Salmon, basé aux Émirats Arabes Unis, avec une ambition de production de 260,000 tonnes par an et des projets dans au moins huit pays, dont la France.</p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_ras_companies_2.3_fr.csv.zip",
             "artifact": "top_10_ras_companies_2.3_fr.csv.zip",
             "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_ras_companies_2.3_fr.png"
@@ -78,8 +78,8 @@
             "content": "<p>Ces systèmes sont ultra-énergivores (environ 100 GWh/an pour une ferme-usine produisant 10 000 tonnes par an, soit l’équivalent de la consommation d’environ 43 000 français⸱e⸱s) et donc à forte empreinte carbone (entre 2 et 14 kg CO2 par kg de saumon produit).</p><p>Pour une question de rentabilité, des densités excessives sont prévues dans les cages terrestres : entre 50 et 150 kg de saumons par mètre cube, soit une densité jusqu’à 5 fois plus élevée que dans les élevages en cages marines.</p><p>La technologie n’est pas encore totalement maîtrisée : actuellement, aucune usine en fonctionnement ne produit plus de 5 000 tonnes et les incidents techniques sont fréquents. Une usine au Danemark en a subi cinq, résultant de défaillances techniques (pollution au chlorure de fer dans le fjord, incendie complet de son usine, engendrant pollution de l’air et de l’eau).</p>",
             "data": [
               {
-                "title": "+91.1 % de production",
-                "content": "L’ensemble des fermes-usines à terre pourraient représenter une augmentation de plus de 91 % de la production mondiale de saumons"
+                "title": "+91.1% de production",
+                "content": "L’ensemble des fermes-usines à terre pourraient représenter une augmentation de plus de 91% de la production mondiale de saumons"
               },
               {
                 "title": "233 milliards de poissons",
@@ -91,7 +91,7 @@
               },
               {
                 "title": "59.78 TWh d'électricité",
-                "content": "L'énergie nécessaire pour filtrer, refroidir et faire circuler l’eau de ces futures fermes-usines à terre représente la production de près de 10 réacteurs nucléaires ou la consommation de 26 millions de Français⸱e⸱s"
+                "content": "L'énergie nécessaire pour filtrer, refroidir et faire circuler l’eau de ces futures fermes-usines à terre représentera la production de jusqu'à 10 réacteurs nucléaires ou la consommation de 26 millions de Français⸱e⸱s"
               },
               {
                 "title": "16.9 millions de tonnes de CO2",
@@ -115,25 +115,24 @@
           "deforestation": {
             "title": "Déforestation",
             "mainContent": "<p>La volonté du gouvernement norvégien était d'augmenter la production de saumons d’élevage de 500% d'ici 2050.</p>",
-            "content": "<p>Cela nécessiterait l'utilisation de 11 000 km2 pour la production de soja au Brésil. Cela équivaut à la déforestation totale légale de l’Amazonie en 2022.</p>",
+            "content": "<p>Cela nécessiterait l'utilisation de 11 000 km² pour la production de soja au Brésil. Cela équivaut à la déforestation totale légale de l’Amazonie en 2022.</p>",
             "image": "fr/deforestation.svg",
-            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km2 de plantation de Soja, soit 20 fois Paris pour produire 1562415 tonnes de saumon",
+            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km² de plantation de Soja, soit 20 fois Paris pour produire 156,2415 tonnes de saumon",
             "meta": {
               "image": "/dashboard/images/fr/deforestation.png",
-              "source": "https://dv719tqmsuwvb.cloudfront.net/documents/Publikasjoner/Andre-rapporter/Rapport_Soya_eng.pdf",
-              "infoSource": "anglais"
+              "source": "anglais"
             }
           },
           "escapes-rates": {
             "title": "Évasions",
             "mainContent": "<p>De 2018 à 2022, plus de 4 millions de saumons se sont échappés des élevages des 11 plus grands producteurs.</p>",
-            "content": "<p>Ces saumons échappés d'élevages posent de nombreux problèmes écologiques, notamment par la compétition qu'ils induisent sur les ressources avec les populations sauvages, par l'introduction de maladies et de parasites, et par le risque d'hybrider avec les saumons sauvages, menaçant leur résilience génétique.</p>",
+            "content": "<p>Ces saumons échappés d'élevages posent de nombreux problèmes écologiques, notamment par la compétition qu'ils induisent sur les ressources avec les populations sauvages, par l'introduction de maladies et de parasites, et par le risque d'hybrider avec les saumons sauvages, menaçant leur résilience génétique.</p><p>SalMar et Bakkafrost présentent des taux d'évasion élevés, avec respectivement 4.1% et 2.7% de leurs saumons qui se sont enfuis des cages marines.</p>",
             "image": "fr/escape.svg",
             "altImage": "Plus de 4 millions de poissons se sont échapés des cages marines (SalMar, Mowi, Bakkarfrost et autres) depuis 2018",
             "meta": {
               "image": "/dashboard/images/fr/evasions.png",
-              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/dowload/csv/escapes_marine_cages_3.5_fr.csv.zip",
-              "dataArtifact": "escapes_marine_cages_3.5_fr.csv.zip"
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/escapes_marine_cages_3.5.csv.zip",
+              "dataArtifact": "escapes_marine_cages_3.5.csv.zip"
             }
           }
         }
@@ -143,7 +142,7 @@
         "blocks": {
           "antibiotic-conso": {
             "title": "Consommation d'antibiotiques",
-            "mainContent": "<p>Si la Norvège prétend que 99 % de son aquaculture est exempte d’antibiotiques, d'autres pays ne sont pas aussi vertueux.</p>",
+            "mainContent": "<p>Si la Norvège prétend que 99% de son aquaculture est exempte d’antibiotiques, d'autres pays ne sont pas aussi vertueux.</p>",
             "content": "<p>Au Chili, l'utilisation d'antibiotiques des 17 principaux producteurs a augmenté d'un tiers depuis la crise du covid pour atteindre plus de 460 tonnes en 2021. Cette quantité d'antibiotiques utilisés correspondrait à une dose de 35 g, soit 140 pilules pour une personne.</p>",
             "image": "fr/microplastic-1.svg",
             "altImage": "Les principaux producteurs du Chili ont utilisé 460 tonnes d’antibiotiques dans les cages marines en 2021 soit l’équivalent de 35g pour un humain de 74kg",
@@ -180,7 +179,7 @@
           },
           "mortality-rates": {
             "title": "Taux de mortalité",
-            "mainContent": "<p>Les taux de mortalité varient considérablement d'un producteur à l'autre et d'une année à l'autre. Des taux exceptionnellement élevés sont observés, atteignant 20 % certaines années.</p>",
+            "mainContent": "<p>Les taux de mortalité varient considérablement d'un producteur à l'autre et d'une année à l'autre. Des taux exceptionnellement élevés sont observés, atteignant 20% certaines années.</p>",
             "content": "<p>MOWI, le plus grand producteur de saumons d’élevage, présente un taux moyen de mortalité de 13.4% entre 2012 et 2022. A titre de comparaison, les élevages intensifs de bovins, porcins et de poulets affichent des taux de mortalité généralement situés entre 1% et 5%.</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4_fr.csv.zip",
@@ -196,7 +195,7 @@
           "carbon-bomb": {
             "title": "Émissions de CO2",
             "mainContent": "<p>L'industrie du saumon a émis en 2021 environ 16 millions de tonnes de C02 équivalent, soit autant qu'un pays comme la Slovénie.</p>",
-            "content": "<p>Cela représente également l'équivalent des émissions maximales que pourront émettre 8 millions de personnes à l’horizon 2050 afin de limiter l’augmentation des températures mondiales à 2°C.</p><p>Environ 90% de ces émissions sont émises en amont et en aval de la phase de production à proprement parler, et en particulier par l'alimentation des poissons et par leur transport.</p>",
+            "content": "<p>Cela représente également l'équivalent des émissions maximales que pourront émettre 8 millions de personnes à l’horizon 2050 afin de limiter l’augmentation des températures mondiales à 2°C.</p><p>Environ 90%% de ces émissions sont émises en amont et en aval de la phase de production à proprement parler, et en particulier par l'alimentation des poissons et par leur transport.</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
               "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
