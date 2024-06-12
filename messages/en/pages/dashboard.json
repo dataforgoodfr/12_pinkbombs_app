@@ -14,7 +14,8 @@
             "content": "<p>The causes of the species' decline are multiple: overfishing at sea, degradation of freshwater habitats, construction of numerous migration barriers, and the effects of climate change that alter their environments, impacting their growth and survival rates.</p><p>Farming activities are also identified as one of the most significant threats to wild populations (marine pollution, spread of diseases, and escapes of farmed salmon resulting in genetic cross-breeding that disrupts the ability of wild salmon to survive in their natural habitat).</p>",
             "source": "",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/discrease_wild_salmon_1.1.csv.zip",
-            "artifact": "discrease_wild_salmon_1.1.csv.zip"
+            "artifact": "discrease_wild_salmon_1.1.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/discrease_wild_salmon_1.1.png"
           },
           "hyper-growth": {
             "title": "Hyper-growth of Atlantic Salmon farming",
@@ -22,7 +23,8 @@
             "content": "<p>Nearly nonexistent 30 years ago, it surged to three million tonnes of salmon in 2021, equivalent to the farming and slaughtering of 600 million salmon.</p><p>Current farmed salmon production is 115 times greater than the largest quantity of salmon ever caught in a single year.</p>",
             "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/hyper_growth_salmon_farming_1.2.csv.zip",
-            "artifact": "hyper_growth_salmon_farming_1.2.csv.zip"
+            "artifact": "hyper_growth_salmon_farming_1.2.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/hyper_growth_salmon_farming_1.2.png"
           },
           "top-10": {
             "title": "Main countries producing farmed salmon",
@@ -31,11 +33,13 @@
             "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3.csv.zip",
             "artifact": "top_10_countries_producing_1.3.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_countries_producing_1.3.png",
             "subblock": {
               "title": "Evolution of salmon farming by country",
               "source": "https://www.fao.org/fisheryen/collection/aquaculture?lang=en",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/evolution_salmon_farming_country_iso_1.4.csv.zip",
-              "artifact": "evolution_salmon_farming_country_iso_1.4.csv.zip"
+              "artifact": "evolution_salmon_farming_country_iso_1.4.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/tevolution_salmon_farming_country_iso_1.4.png"
             }
           },
           "intro-consumption": {
@@ -43,7 +47,8 @@
             "mainContent": "<p>The rise in salmon production results from an increase in the consumption of this fish, whose flesh is highly valued.</p>",
             "content": "<p>In 2021, the United States was the largest consumer of salmon, with a consumption approaching one million tons, followed by Russia and Japan, with consumption around 500,000 tons. European countries follow, with France being the fourth largest consumer of salmon in 2021. Western countries have a per capita consumption of around 3 to 4 kilograms of salmon, while emerging countries such as Brazil have very low per capita consumption.<p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5.csv.zip",
-            "artifact": "top_15_countries_consuming_1.5.csv.zip"
+            "artifact": "top_15_countries_consuming_1.5.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_15_countries_consuming_1.5.png"
           }
         }
       },
@@ -56,14 +61,16 @@
             "content": "<p>Small artisanal salmon farms have given way to industrial aquaculture.</p><p>In a few decades, the market has become dominated by a handful of multinational corporations.</p><p>Mowi, formerly known as Marine Harvest, is the leader in the sector. The company operates in 25 countries.</p>",
             "source": "",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_companies_producing_2.1.csv.zip",
-            "artifact": "top_10_companies_producing_2.1.csv.zip"
+            "artifact": "top_10_companies_producing_2.1.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_companies_producing_2.1.png"
           },
           "top-land": {
             "title": "The new threat: on land plants",
             "mainContent": "<p>In 2021, the theoretical combined production capacity of land-based salmon farms amounted to 2.5 million tons, nearly equaling the global production of salmon in marine farms (2.7 million tons).</p>",
             "content": "<p>Land-based farms use RAS technology (Recirculating Aquaculture Systems) in fully enclosed tanks. Whilst, this approach to salmon farming gives control over the impact on biodiversity and the local environment (limited disease contamination, rejection of feces and salmon escapes), it also requires large amount of fresh water and is very energy-hungry, as it aims to recreate very precisely the natural conditions found in the sea.</p><p>As a result, the carbon footprint of salmon produced on land is higher than salmon produced in marine farms.</p><p>In order to make such farms profitable, the fish density can be 3 times higher than in marine farms. And there has been a small number of accidents where large number of fish died as a result of inadequate water conditions and a fire at a plant in Denmark.</p>",
             "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_ras_companies_2.3.csv.zip",
-            "artifact": "top_10_ras_companies_2.3.csv.zip"
+            "artifact": "top_10_ras_companies_2.3.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_ras_companies_2.3.png"
           },
           "future-land-based": {
             "title": "The future of land-based aquaculture farms",
@@ -181,7 +188,8 @@
             "content": "<p>Some producers achieve much lower mortality rates thanks to better practices but also local legislation. Please note: these figures only take into account mortality at sea. Mortality in fresh water bodies is close to 30% (Multiexport reports)</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4.csv.zip",
-              "dataArtifact": "mortality_rates_4.4.csv.zip"
+              "dataArtifact": "mortality_rates_4.4.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4.png"
             }
           }
         }
