@@ -183,7 +183,7 @@
             "content": "<p>MOWI, le plus grand producteur de saumons d’élevage, présente un taux moyen de mortalité de 13.4% entre 2012 et 2022. A titre de comparaison, les élevages intensifs de bovins, porcins et de poulets affichent des taux de mortalité généralement situés entre 1% et 5%.</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4_fr.csv.zip",
-              "dataArtifact": "mortality_rates_4.4_fr.csv.zip"
+              "dataArtifact": "mortality_rates_4.4_fr.csv.zip",
               "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4_fr.png"
             }
           }
