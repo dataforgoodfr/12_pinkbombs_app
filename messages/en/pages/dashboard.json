@@ -117,11 +117,7 @@
             "mainContent": "<p>The Norwegian government's goal was to increase farmed salmon production by 500% by 2050.</p>",
             "content": "<p>This would require the expansion of 11,000 km² for soybean production in Brazil, which is equivalent to the legal deforestation of the Amazon in 2022.</p>",
             "image": "en/deforestation.svg",
-<<<<<<< update-images
-            "altImage": "In 2020 in Norway, the equivalent of 2154km2 of soybean plantations, or 20 times the size of Paris, is needed to produce 1562415 tonnes of salmon.",
-=======
-            "altImage": "In 2020 in Norway, the equivalent of 2154km² of soya plantation is needed, or 20 times Paris, to produce 156,2415 tonnes of salmon.",
->>>>>>> dev
+            "altImage": "In 2020 in Norway, the equivalent of 2154km² of soybean plantations, or 20 times the size of Paris, is needed to produce 1562415 tonnes of salmon.",
             "meta": {
               "image": "/dashboard/images/en/deforestation.png",
               "source": ""
@@ -198,24 +194,15 @@
         "title": "Climate",
         "blocks": {
           "carbon-bomb": {
-<<<<<<< update-images
-            "title": "Carbon impact",
-            "content": "<p>The salmon industry emitted around 16 million tonnes of CO2 in 2021, just like a country like Slovenia or the emissions target of 8 million humans in 2050.</p><p>About 90 % of total emissions come from the value chain, mainly from fish feed and transport.</p><p>This value is extrapolated from the emissions of 9 of the largest salmon producers.</p>",
+            "title": "CO2 emissions",
+            "mainContent": "<p>The salmon industry emitted approximately 16 million tonnes of CO2e in 2021. This is very close to the global CO<sub>2</sub> emissions of a country like Croatia.</p>",
+            "content": "<p>This also represents the maximum emissions that could be emitted by 8 million people by 2050 in order to limit the global temperature increase to 2°C.</p><p>About 90% of these emissions occur upstream and downstream of production, particularly from fish feed and transportation.</p>",
             "image": "en/carbon_emissions.svg",
             "altImage": "Distribution of emissions: 90.2% indirect emissions, 7.4% direct emissions, 2.39% electricity.",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
               "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
-              "image": "/dashboard/images/en/carbon_emissions.png"
-=======
-            "title": "CO2 emissions",
-            "mainContent": "<p>The salmon industry emitted approximately 16 million tonnes of CO2e in 2021. This is very close to the global CO<sub>2</sub> emissions of a country like Croatia.</p>",
-            "content": "<p>This also represents the maximum emissions that could be emitted by 8 million people by 2050 in order to limit the global temperature increase to 2°C.</p><p>About 90% of these emissions occur upstream and downstream of production, particularly from fish feed and transportation.</p>",
-            "meta": {
-              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
-              "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
               "image": "/dashboard/images/fr/carbon_emissions.png"
->>>>>>> dev
             }
           }
         }
@@ -224,17 +211,11 @@
         "title": "Social",
         "blocks": {
           "social-carbon": {
-<<<<<<< update-images
-            "title": "Carbon impact",
-            "mainContent": "<p>In 2020, 3% of all fish caught worldwide are farmed for Atlantic salmon (2.72 million tonnes).</p>",
-            "content": "<p>Salmon being carnivorous, it is necessary to feed it with fish-based meals. The average farmed salmon consumes the equivalent of 5 times its own weight in fish, from industrial fishing.</p><p>And this type of overfishing has had many negative social impacts, as in Mauritania and in Gambia, where the quantity of fish in the sea has been reduced and where the few fish caught are bought by industrialists for an insignificant price, limiting employment and the life of the local community. access to one of the main sources of their food supply.</p><p>[Article on the impact of industrial fishing] -> here (or another)</p><p>World annual catches of fish, shellfish and crustaceans are expected to reach around 90 million tonnes by 2020. The vast majority of this volume is intended for human consumption (around 70 million). And then, almost half of what remains (42%) is used for the global production of fishmeal, supplying the aquaculture sector (for fish farming).</p>",
-            "image": "en/social_fishing.svg",
-            "altImage": "Approximately 10% of global fishing is used for the production of fish meal and oil to feed farmed fish (aquaculture). Fish meal and oils for other sectors and other uses (20%). Human consumption (70%).",
-=======
             "title": "Diversion of resources and food injustice",
             "mainContent": "<p>In 2020, approximately 4% of all fish caught worldwide were used to feed farmed Atlantic salmon. Since salmon are carnivorous, they require fishmeal for their diet.</p>",
             "content": "<p>This type of overfishing has had numerous negative social impacts, such as in Mauritania and Gambia, where the quantity of wild fish has been reduced. Norway annually fishes or imports 2 million tons of wild fish, including 123,000 to 144,000 tons from West African waters. This volume could satisfy the annual nutritional needs of 2.5 to 4 million people in the region, more than the population of Gambia (2.7 million) and nearly the total population of Mauritania (4.7 million).</p><p>Global annual fish catches reached 90 million tons in 2020, with the vast majority intended for human consumption. Approximately 10% is used for global fishmeal production, feeding the aquaculture sector.</p>",
->>>>>>> dev
+            "image": "en/social_fishing.svg",
+            "altImage": "Approximately 10% of global fishing is used for the production of fish meal and oil to feed farmed fish (aquaculture). Fish meal and oils for other sectors and other uses (20%). Human consumption (70%).",
             "meta": {
               "source": "",
               "image": "/dashboard/images/en/social_fishing.png",

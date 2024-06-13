@@ -117,11 +117,7 @@
             "mainContent": "<p>La volonté du gouvernement norvégien était d'augmenter la production de saumons d’élevage de 500% d'ici 2050.</p>",
             "content": "<p>Cela nécessiterait l'utilisation de 11 000 km² pour la production de soja au Brésil. Cela équivaut à la déforestation totale légale de l’Amazonie en 2022.</p>",
             "image": "fr/deforestation.svg",
-<<<<<<< update-images
-            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km2 de plantation de Soja, soit 20 fois Paris pour produire 1562415 tonnes de saumons.",
-=======
-            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km² de plantation de Soja, soit 20 fois Paris pour produire 156,2415 tonnes de saumon",
->>>>>>> dev
+            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km² de plantation de Soja, soit 20 fois Paris pour produire 1562415 tonnes de saumons.",
             "meta": {
               "image": "/dashboard/images/fr/deforestation.png",
               "source": "anglais"
@@ -199,15 +195,10 @@
         "blocks": {
           "carbon-bomb": {
             "title": "Émissions de CO2",
-<<<<<<< update-images
-            "mainContent": "<p>L'industrie du saumon a émis en 2021 environ 16 millions de tonnes de C02 équivalent, soit autant qu'un pays comme la Slovénie.</p>",
-            "content": "<p>Cela représente également l'équivalent des émissions maximales que pourront émettre 8 millions de personnes à l’horizon 2050 afin de limiter l’augmentation des températures mondiales à 2°C.</p><p>Environ 90% de ces émissions sont émises en amont et en aval de la phase de production à proprement parler, et en particulier par l'alimentation des poissons et par leur transport.</p>",
-            "image": "fr/carbon_emissions.svg",
-            "altImage": "Distribution des émissions: 90.2% émissions indirectes, 7.4% émissions directes, 2.39% électricité.",
-=======
             "mainContent": "<p>L'industrie du saumon a émis en 2021 environ 16 millions de tonnes de C02 équivalent, soit près de l'ensemble des émissions de CO<sub>2</sub> d'un pays comme la Croatie.</p>",
             "content": "<p>Cela représente également l'équivalent des émissions maximales que pourront émettre 8 millions de personnes à l’horizon 2050 afin de limiter l’augmentation des températures mondiales à 2°C.</p><p>Environ 90%% de ces émissions sont émises en amont et en aval de la phase de production à proprement parler, et en particulier par l'alimentation des poissons et par leur transport.</p>",
->>>>>>> dev
+            "image": "fr/carbon_emissions.svg",
+            "altImage": "Distribution des émissions: 90.2% émissions indirectes, 7.4% émissions directes, 2.39% électricité.",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
               "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
