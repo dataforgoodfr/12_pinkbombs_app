@@ -194,7 +194,7 @@
         "blocks": {
           "carbon-bomb": {
             "title": "CO2 emissions",
-            "mainContent": "<p>The salmon industry emitted approximately 16 million tonnes of CO2e in 2021. This is equivalent to the emissions of a country like Slovenia.</p>",
+            "mainContent": "<p>The salmon industry emitted approximately 16 million tonnes of CO2e in 2021. This is very close to the global CO<sub>2</sub> emissions of a country like Croatia.</p>",
             "content": "<p>This also represents the maximum emissions that could be emitted by 8 million people by 2050 in order to limit the global temperature increase to 2°C.</p><p>About 90% of these emissions occur upstream and downstream of production, particularly from fish feed and transportation.</p>",
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
