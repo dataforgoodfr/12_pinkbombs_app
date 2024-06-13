@@ -39,7 +39,7 @@
               "source": "https://www.fao.org/fishery/fr/collection/aquaculture",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/evolution_salmon_farming_country_iso_1.4_fr.csv.zip",
               "artifact": "evolution_salmon_farming_country_iso_1.4_fr.csv.zip",
-              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/tevolution_salmon_farming_country_iso_1.4_fr.png"
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/evolution_salmon_farming_country_iso_1.4_fr.png"
             }
           },
           "intro-consumption": {
