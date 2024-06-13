@@ -328,7 +328,7 @@ const TopCountriesSection = () => {
             },
             {
               type: "methodology",
-              link: "/about#macro-consumption-section",
+              link: "/about#macro-hyper-growth-section",
             },
             {
               type: "data",
