@@ -211,6 +211,11 @@ const BusinessSection = () => {
               link: t("industry.data"),
               artifact: t("industry.artifact"),
             },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("industry.image"),
+            },
           ]}
         />
         <div className="flex justify-center">

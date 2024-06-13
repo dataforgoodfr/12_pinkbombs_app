@@ -126,16 +126,6 @@ const Dashboard = () => {
         },
       ],
     },
-    {
-      id: "alternative",
-      title: t("sections.alternative.title"),
-      sublinks: [
-        {
-          label: t("sections.alternative.blocks.alternatives.title"),
-          targetId: "alternatives-block",
-        },
-      ],
-    },
   ];
 
   return (
@@ -238,6 +228,11 @@ const SalmonCollapseSection = () => {
             link: t("sections.intro.blocks.salmon-collapse.data"),
             artifact: t("sections.intro.blocks.salmon-collapse.artifact"),
           },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.salmon-collapse.image"),
+          },
         ],
       }}
       hasChart
@@ -269,6 +264,11 @@ const SalmonFarmingSection = () => {
             type: "data",
             link: t("sections.intro.blocks.hyper-growth.data"),
             artifact: t("sections.intro.blocks.hyper-growth.artifact"),
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.hyper-growth.image"),
           },
         ],
       }}
@@ -303,6 +303,11 @@ const TopCountriesSection = () => {
               link: t("sections.intro.blocks.top-10.data"),
               artifact: t("sections.intro.blocks.top-10.artifact"),
             },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.intro.blocks.top-10.image"),
+            },
           ],
         }}
         hasChart
@@ -313,7 +318,7 @@ const TopCountriesSection = () => {
           {t("sections.intro.blocks.top-10.subblock.title")}
         </h3>
 
-        <Chart id="evolution-map" type="maps" className="min-h-[700px]" />
+        <Chart id="evolution-map" type="maps" changeFrameHeight className="min-h-[700px]" />
         <MetaChart
           data={[
             {
@@ -329,6 +334,11 @@ const TopCountriesSection = () => {
               type: "data",
               link: t("sections.intro.blocks.top-10.subblock.data"),
               artifact: t("sections.intro.blocks.top-10.subblock.artifact"),
+            },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.intro.blocks.top-10.subblock.image"),
             },
           ]}
         />
@@ -356,6 +366,11 @@ const SalmonConsumptionSection = () => {
             type: "data",
             link: t("sections.intro.blocks.intro-consumption.data"),
             artifact: t("sections.intro.blocks.intro-consumption.artifact"),
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.intro.blocks.intro-consumption.image"),
           },
         ],
       }}
@@ -390,6 +405,11 @@ const MainProductionSection = () => {
             link: t("sections.company.blocks.top-comp.data"),
             artifact: t("sections.company.blocks.top-comp.artifact"),
           },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.company.blocks.top-comp.image"),
+          },
         ],
       }}
       hasChart
@@ -423,7 +443,12 @@ const LandPlantsSection = () => {
             {
               type: "data",
               link: t("sections.company.blocks.top-comp.data"),
-              artifact: t("sections.company.blocks.top-comp.artifact"),
+              artifact: t("sections.company.blocks.top-land.artifact"),
+            },
+            {
+              type: "image",
+              isBlank: true,
+              link: t("sections.company.blocks.top-land.image"),
             },
           ],
         }}
@@ -710,6 +735,11 @@ const MortalityRateSection = () => {
             type: "data",
             link: t("sections.animals.blocks.mortality-rates.meta.data"),
             artifact: t("sections.animals.blocks.mortality-rates.meta.dataArtifact"),
+          },
+          {
+            type: "image",
+            isBlank: true,
+            link: t("sections.animals.blocks.mortality-rates.meta.image"),
           },
         ],
       }}

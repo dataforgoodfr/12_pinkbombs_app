@@ -107,9 +107,9 @@ const CompaniesSection = () => {
         content={t.raw("companies.top-comp.content")}
       />
       <AboutSection
-        id="companies-top-land-section"
-        subtitle={t("companies.top-land.title")}
-        content={t.raw("companies.top-land.content")}
+        id="companies-land-based-section"
+        subtitle={t("companies.land-based.title")}
+        content={t.raw("companies.land-based.content")}
       />
       <AboutSection
         id="companies-future-land-based-section"
