@@ -68,7 +68,7 @@ const JoinBlock = ({
                 data={[
                   {
                     type: "document",
-                    link: t("join.pdf"),
+                    link: t(`join.${baseText}.pdf`),
                     isBlank: true,
                   },
                   {
@@ -77,8 +77,13 @@ const JoinBlock = ({
                   },
                   {
                     type: "data",
-                    link: t("join.data"),
+                    link: t(`join.${baseText}.data`),
                     artifact: t("join.artifact"),
+                  },
+                  {
+                    type: "image",
+                    isBlank: true,
+                    link: t(`join.${baseText}.image`),
                   },
                 ]}
               />

@@ -33,9 +33,10 @@
         "title": "Choix alimentaires et leurs impacts",
         "intro": "Ce que nous choisissons de manger, de vendre et de produire à des impacts différents sur la planète, les gens et les animaux.",
         "content": "<p>La France, située dans le top 4 des plus grands consommateurs de saumons au monde, porte une responsabilité particulière dans l'orientation de ces choix.</p>",
-        "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Alternatives_Methodogie_fr.pdf",
+        "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Tableau_des_choix_alimentaires_simplifiee.pdf",
         "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/alternatives_text_7_fr.csv.zip",
-        "artifact": "alternatives_text_7.csv.zip"
+        "artifact": "alternatives_text_7.csv.zip",
+        "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/alternatives_7_fr.png"
       }
     },
     "metaChart": {
