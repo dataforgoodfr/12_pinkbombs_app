@@ -158,7 +158,9 @@ const Dashboard = () => {
       />
 
       <section>
-        <TitleBlock title={t("sections.intro.title")} />
+        <TitleBlock
+            id="intro-section"
+            title={t("sections.intro.title")} />
         <SalmonCollapseSection />
         <SalmonFarmingSection />
         <TopCountriesSection />

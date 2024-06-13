@@ -18,13 +18,13 @@ const About = () => {
 
       <TitleBlock title={t("sources")} />
       <MacroSection />
-      <AlternativesSection />
       <CompaniesSection />
       <BiodiversitySection />
       <HumanSection />
       <AnimalSection />
       <ClimateSection />
       <SocialSection />
+      <AlternativesSection />
     </>
   );
 };
@@ -65,10 +65,11 @@ const MacroSection = () => {
   return (
     <>
       <AboutSection
-        title={t("macro.title")}
-        content={t.raw("macro.content")}
-        id="macro-section"
+        title={t("statement.title")}
+        content={t.raw("statement.content")}
+        id="statement-section"
       />
+      <AboutSection title={t("macro.title")} id="macro-section" />
       <AboutSection
         subtitle={t("macro.calculator.title")}
         content={t.raw("macro.calculator.content")}
@@ -94,18 +95,6 @@ const MacroSection = () => {
   );
 };
 
-const AlternativesSection = () => {
-  const t = useTranslations("about");
-
-  return (
-    <AboutSection
-      id="alternatives-section"
-      title={t("alternatives.title")}
-      content={t.raw("alternatives.content")}
-    />
-  );
-};
-
 const CompaniesSection = () => {
   const t = useTranslations("about");
 
@@ -126,6 +115,11 @@ const CompaniesSection = () => {
         id="companies-future-land-based-section"
         subtitle={t("companies.future-land-based.title")}
         content={t.raw("companies.future-land-based.content")}
+      />
+      <AboutSection
+        id="companies-land-based-map-section"
+        subtitle={t("companies.land-based-map.title")}
+        content={t.raw("companies.land-based-map.content")}
       />
       <AboutSection
         id="companies-future-land-keys-section"
@@ -227,5 +221,17 @@ const SocialSection = () => {
         content={t.raw("social.resources.content")}
       />
     </>
+  );
+};
+
+const AlternativesSection = () => {
+  const t = useTranslations("about");
+
+  return (
+    <AboutSection
+      id="alternatives-section"
+      title={t("alternatives.title")}
+      content={t.raw("alternatives.content")}
+    />
   );
 };
