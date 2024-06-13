@@ -36,21 +36,25 @@ const ExplainSection = () => {
 
   return (
     <>
-      <AboutSection
-        title={t("why.title")}
-        content={t.raw("why.content")}
+      <TitleBlock
+        spaceY="mb-4 lg:mb-8"
         id="why-section-title"
+        title={t("why.title")}
       />
-      <AboutSection
-        title={t("who.title")}
-        content={t.raw("who.content")}
+      <AboutSection content={t.raw("why.content")} />
+      <TitleBlock
+        spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
         id="who-section-title"
+        title={t("who.title")}
       />
-      <AboutSection
-        title={t("methods.title")}
-        content={t.raw("methods.content")}
+      <AboutSection content={t.raw("who.content")} />
+
+      <TitleBlock
+        spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
         id="methods-section-title"
+        title={t("methods.title")}
       />
+      <AboutSection content={t.raw("methods.content")} />
     </>
   );
 };
