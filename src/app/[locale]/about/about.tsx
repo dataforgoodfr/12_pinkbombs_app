@@ -65,8 +65,9 @@ const MacroSection = () => {
   return (
     <>
       <AboutSection
-        title={t.raw("disclaimer.title")}
-        content={t.raw("disclaimer.content")}
+        title={t("statement.title")}
+        content={t.raw("statement.content")}
+        id="statement-section"
       />
       <AboutSection title={t("macro.title")} id="macro-section" />
       <AboutSection
@@ -116,9 +117,9 @@ const CompaniesSection = () => {
         content={t.raw("companies.future-land-based.content")}
       />
       <AboutSection
-        id="companies-top-land-section"
-        subtitle={t("companies.top-land.title")}
-        content={t.raw("companies.top-land.content")}
+        id="companies-land-based-map-section"
+        subtitle={t("companies.land-based-map.title")}
+        content={t.raw("companies.land-based-map.content")}
       />
       <AboutSection
         id="companies-future-land-keys-section"
