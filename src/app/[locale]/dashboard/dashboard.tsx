@@ -395,6 +395,7 @@ const MainProductionSection = () => {
             artifact: "2023-Salmon-Farming-Industry-Handbook-2023.pdf",
             link: "https://mowi.com/wp-content/uploads/2023/06/2023-Salmon-Farming-Industry-Handbook-2023.pdf",
             moreInfo: t("sections.company.blocks.top-comp.source"),
+            isBlank: true,
           },
           {
             type: "methodology",
@@ -429,6 +430,7 @@ const LandPlantsSection = () => {
 
   return (
     <>
+
       <DashboardSection
         title={t("sections.company.blocks.top-land.title")}
         id="top-land"
@@ -442,7 +444,7 @@ const LandPlantsSection = () => {
             },
             {
               type: "data",
-              link: t("sections.company.blocks.top-comp.data"),
+              link: t("sections.company.blocks.top-land.data"),
               artifact: t("sections.company.blocks.top-land.artifact"),
             },
             {
@@ -454,7 +456,6 @@ const LandPlantsSection = () => {
         }}
         hasChart
       />
-
       <div
         id="future-land-based-block"
         className="p-6 md:p-12 max-w-[1596px] mx-auto"
@@ -551,8 +552,8 @@ const DeforestationSection = () => {
         data: [
           {
             type: "source",
-            link: t("sections.biodiversity.blocks.deforestation.meta.source"),
-            moreInfo: t("sections.biodiversity.blocks.deforestation.meta.infoSource"),
+            link: "https://dv719tqmsuwvb.cloudfront.net/documents/Publikasjoner/Andre-rapporter/Rapport_Soya_eng.pdf",
+            moreInfo: t("sections.biodiversity.blocks.deforestation.meta.source"),
             isBlank: true,
           },
           {
@@ -599,8 +600,8 @@ const EscapeSection = () => {
           },
           {
             type: "data",
-            artifact: t("sections.biodiversity.blocks.escapes-rates.meta.data"),
-            link: t("sections.biodiversity.blocks.escapes-rates.meta.dataArtifact"),
+            artifact: t("sections.biodiversity.blocks.escapes-rates.meta.dataArtifact"),
+            link: t("sections.biodiversity.blocks.escapes-rates.meta.data"),
           }
         ],
       }}
