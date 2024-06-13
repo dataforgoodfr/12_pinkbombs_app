@@ -5,6 +5,7 @@ import * as React from "react";
 import "@/lib/env";
 
 import AboutSection from "@/components/AboutSection";
+import AboutSectionCTA from "@/components/AboutSectionCTA";
 import IntroBlock from "@/components/IntroBlock";
 import TitleBlock from "@/components/TitleBlock";
 
@@ -54,7 +55,11 @@ const ExplainSection = () => {
         id="methods-section-title"
         title={t("methods.title")}
       />
-      <AboutSection content={t.raw("methods.content")} />
+      <AboutSectionCTA 
+        content={t.raw("methods.content")} 
+        linkLabel={t("methods.link")}
+        link={t("methods.target")}
+      />
     </>
   );
 };
