@@ -316,7 +316,7 @@ const TopCountriesSection = () => {
           {t("sections.intro.blocks.top-10.subblock.title")}
         </h3>
 
-        <Chart id="evolution-map" type="maps" className="min-h-[700px]" />
+        <Chart id="evolution-map" type="maps" changeFrameHeight className="min-h-[700px]" />
         <MetaChart
           data={[
             {
