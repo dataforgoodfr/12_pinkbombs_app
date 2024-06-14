@@ -6,6 +6,7 @@ import "@/lib/env";
 
 import Edito from "@/components/Edito";
 import IntroBlock from "@/components/IntroBlock";
+import JoinBlock from "@/components/JoinBlock";
 
 const Act = () => {
   const t = useTranslations("act");
@@ -66,6 +67,11 @@ const Act = () => {
         image={{
           large: "/images/act/no-eat-salmon.jpeg",
         }}
+      />
+
+      <JoinBlock
+        isAlternative
+        className="pt-6 lg:pt-24 bg-brown1 lg:bg-darkblue1"
       />
     </>
   );
