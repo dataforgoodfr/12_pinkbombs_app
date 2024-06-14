@@ -21,7 +21,7 @@
         "content": "Degrades marine biodiversity, including escapees, pollution, parasites, and overexploitation of wild stocks."
       },
       "animals": {
-        "title": "Animal condition",
+        "title": "Animal welfare",
         "content": "Stress, diseases, excess mortality as consequences of intensive breeding."
       }
     },
@@ -44,13 +44,13 @@
         "content": "Intensive salmon farming has significant impacts on marine biodiversity, including escapees, water pollution from waste discharge, parasites affecting wild populations, and increased pressure on wild fish stocks due to the demand for fishmeal, thereby contributing to overexploitation and declining biodiversity."
       },
       "animals": {
-        "title": "Animal condition",
+        "title": "Animal welfare",
         "content": "The very high density of salmon in cages leads to illness and stress. Sea lice eat the flesh of disfigured fish. Mortality rates within cages are abnormally high."
       }
     },
     "industry": {
       "title": "And all this with the impunity of an exponentially growing industry.",
-      "content": "Salmon production, dominated by a handful of multinationals, has experienced hyper-growth on a global scale for several dec",
+      "content": "Salmon production, dominated by a handful of multinationals, has experienced hyper-growth on a global scale for several decades.",
       "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
       "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/final-changes/download/csv/numbers_salmons_farmed_1.0.csv.zip",
       "artifact": "numbers_salmons_farmed_1.0_fr.csv.zip",
