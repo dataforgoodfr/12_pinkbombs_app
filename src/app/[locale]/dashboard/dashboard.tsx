@@ -148,7 +148,9 @@ const Dashboard = () => {
       />
 
       <section>
-        <TitleBlock title={t("sections.intro.title")} />
+        <TitleBlock
+            id="intro-section"
+            title={t("sections.intro.title")} />
         <SalmonCollapseSection />
         <SalmonFarmingSection />
         <TopCountriesSection />
@@ -316,7 +318,7 @@ const TopCountriesSection = () => {
           {t("sections.intro.blocks.top-10.subblock.title")}
         </h3>
 
-        <Chart id="evolution-map" type="maps" className="min-h-[700px]" />
+        <Chart id="evolution-map" type="maps" changeFrameHeight className="min-h-[700px]" />
         <MetaChart
           data={[
             {
@@ -326,7 +328,7 @@ const TopCountriesSection = () => {
             },
             {
               type: "methodology",
-              link: "/about#macro-consumption-section",
+              link: "/about#macro-hyper-growth-section",
             },
             {
               type: "data",
@@ -393,6 +395,7 @@ const MainProductionSection = () => {
             artifact: "2023-Salmon-Farming-Industry-Handbook-2023.pdf",
             link: "https://mowi.com/wp-content/uploads/2023/06/2023-Salmon-Farming-Industry-Handbook-2023.pdf",
             moreInfo: t("sections.company.blocks.top-comp.source"),
+            isBlank: true,
           },
           {
             type: "methodology",
@@ -427,6 +430,7 @@ const LandPlantsSection = () => {
 
   return (
     <>
+
       <DashboardSection
         title={t("sections.company.blocks.top-land.title")}
         id="top-land"
@@ -440,7 +444,7 @@ const LandPlantsSection = () => {
             },
             {
               type: "data",
-              link: t("sections.company.blocks.top-comp.data"),
+              link: t("sections.company.blocks.top-land.data"),
               artifact: t("sections.company.blocks.top-land.artifact"),
             },
             {
@@ -452,7 +456,6 @@ const LandPlantsSection = () => {
         }}
         hasChart
       />
-
       <div
         id="future-land-based-block"
         className="p-6 md:p-12 max-w-[1596px] mx-auto"
@@ -549,8 +552,8 @@ const DeforestationSection = () => {
         data: [
           {
             type: "source",
-            link: t("sections.biodiversity.blocks.deforestation.meta.source"),
-            moreInfo: t("sections.biodiversity.blocks.deforestation.meta.infoSource"),
+            link: "https://dv719tqmsuwvb.cloudfront.net/documents/Publikasjoner/Andre-rapporter/Rapport_Soya_eng.pdf",
+            moreInfo: t("sections.biodiversity.blocks.deforestation.meta.source"),
             isBlank: true,
           },
           {
@@ -597,8 +600,8 @@ const EscapeSection = () => {
           },
           {
             type: "data",
-            artifact: t("sections.biodiversity.blocks.escapes-rates.meta.data"),
-            link: t("sections.biodiversity.blocks.escapes-rates.meta.dataArtifact"),
+            artifact: t("sections.biodiversity.blocks.escapes-rates.meta.dataArtifact"),
+            link: t("sections.biodiversity.blocks.escapes-rates.meta.data"),
           }
         ],
       }}
@@ -650,6 +653,7 @@ const MicroplasticSection = () => {
       title={t("sections.health.blocks.microplastics.title")}
       image={{
         src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
+        alt: t("sections.health.blocks.microplastics.altImage"),
       }}
       id="microplastics"
       mainContent={t.raw("sections.health.blocks.microplastics.mainContent")}
@@ -752,7 +756,10 @@ const CarbonSection = () => {
     <DashboardSection
       title={t("sections.climate.blocks.carbon-bomb.title")}
       id="carbon-bomb"
-      image={{ src: "/images/social-carbon.webp" }}
+      image={{ 
+        src: `/dashboard/images/${t("sections.climate.blocks.carbon-bomb.image")}`,
+        alt: t("sections.climate.blocks.carbon-bomb.altImage"),  
+      }}
       mainContent={t.raw("sections.climate.blocks.carbon-bomb.mainContent")}
       content={t.raw("sections.climate.blocks.carbon-bomb.content")}
       meta={{
@@ -768,8 +775,8 @@ const CarbonSection = () => {
           },
           {
             type: "data",
-            link: t("sections.animals.blocks.carbon-bomb.meta.data"),
-            artifact: t("sections.animals.blocks.carbon-bomb.meta.dataArtifact"),
+            link: t("sections.climate.blocks.carbon-bomb.meta.data"),
+            artifact: t("sections.climate.blocks.carbon-bomb.meta.dataArtifact"),
           },
         ],
       }}
@@ -783,7 +790,10 @@ const SocialCarbonSection = () => {
   return (
     <DashboardSection
       title={t("sections.social.blocks.social-carbon.title")}
-      image={{ src: "/images/social-carbon.webp" }}
+      image={{ 
+        src: `/dashboard/images/${t("sections.social.blocks.social-carbon.image")}`,
+        alt: t("sections.social.blocks.social-carbon.altImage"), 
+      }}
       id="social-carbon"
       mainContent={t.raw("sections.social.blocks.social-carbon.mainContent")}
       content={t.raw("sections.social.blocks.social-carbon.content")}

@@ -11,8 +11,8 @@ export default {
       },
       colors: {
         purple1: "#3b0764",
-        red1: "#F34620",
-        red2: "#E13212",
+        red2: "#F34620",
+        red1: "#E13212",
         yellow1: "#EBF97B",
         pink1: "#FEEAE9",
         brown1: "#F3E8D8",
