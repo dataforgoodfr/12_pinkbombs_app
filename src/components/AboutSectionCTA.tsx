@@ -40,6 +40,8 @@ const AboutSectionCTA = ({
             mode === "dark" ? "bg-darkblue1" : "bg-transparent",
           )}
           href={link}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <svg
             width="46"
