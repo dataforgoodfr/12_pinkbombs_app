@@ -55,8 +55,8 @@ const ExplainSection = () => {
         id="methods-section-title"
         title={t("methods.title")}
       />
-      <AboutSectionCTA 
-        content={t.raw("methods.content")} 
+      <AboutSectionCTA
+        content={t.raw("methods.content")}
         linkLabel={t("methods.link")}
         link={t("methods.target")}
       />
