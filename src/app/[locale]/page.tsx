@@ -204,7 +204,7 @@ const BusinessSection = () => {
             },
             {
               type: "methodology",
-              link: "/about#macro-section",
+              link: "/about#macro-hyper-growth-section",
             },
             {
               type: "data",
