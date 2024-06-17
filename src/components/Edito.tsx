@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import React from "react";
+
 import MainLink from "@/components/links/MainLink";
 
 type EditoProps = {
