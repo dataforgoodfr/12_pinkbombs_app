@@ -15,7 +15,7 @@ const Act = () => {
     <>
       <IntroBlock title={t("title")} className="bg-yellow1" />
 
-      <Edito
+      {/* <Edito
         title={t("company.title")}
         titleLevel="h2"
         content={t("company.content")}
@@ -27,7 +27,7 @@ const Act = () => {
         image={{
           large: "/images/act/call-companies.jpg",
         }}
-      />
+      /> */}
 
       <Edito
         title={t("territory.title")}
