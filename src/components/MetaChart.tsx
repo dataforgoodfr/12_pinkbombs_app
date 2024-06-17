@@ -23,58 +23,13 @@ const MetaChart = ({
 }: MetaChartProps) => {
   const t = useTranslations("components");
 
-  /*const handleClick = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    link: string,
-    artifact: string,
-  ) => {
-    e.preventDefault();
-
-    const url = URL.createObjectURL(new Blob([link]));
-    const a = document.createElement("a");
-    document.body.appendChild(a);
-    a.href = url;
-    a.setAttribute("download", artifact);
-    a.click();
-    window.URL.revokeObjectURL(url);
-  };*/
-
-  /*const handleClick = async (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    link: string,
-    artifact: string,
-  ) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch(link, {
-        method: "GET",
-      });
-
-      if (!response) {
-        return null;
-      }
-      console.log(response.text());
-
-      const url = URL.createObjectURL(new Blob([response.text()], { type: "text/csv" }));
-      const a = document.createElement("a");
-      document.body.appendChild(a);
-      a.href = url;
-      a.setAttribute("download", artifact);
-      a.click();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.log("err", error);
-    }
-  };*/
-
   if (!data.length) return <></>;
 
   return (
     <ul
       className={clsx(
         className,
-        "flex flex-wrap gap-4 mt-4 p-caption",
+        "flex flex-wrap justify-center gap-4 mt-4 p-caption",
         hasBackground ? "p-2 rounded-sm text-black bg-gray-50" : "",
       )}
       {...rest}
@@ -83,11 +38,6 @@ const MetaChart = ({
         <li key={key}>
           <Link
             href={d.link}
-            /*onClick={
-              d.artifact
-                ? (e) => handleClick(e, d.link, d.artifact || d.link)
-                : undefined
-            }*/
             className="underline hover:no-underline"
             target={d.isBlank ? "_blank" : undefined}
             rel={d.isBlank ? "noopener" : undefined}
