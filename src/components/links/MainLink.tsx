@@ -27,7 +27,7 @@ const MainLink = ({
   return (
     <Link
       className={clsx(
-        "inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100",
+        "group inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100",
         mode === "dark" ? "bg-darkblue1" : "bg-transparent",
         className,
       )}
@@ -62,6 +62,17 @@ const MainLink = ({
         </svg>
       )}
       {label}
+      {isBlank && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="16"
+          className="inline-block ml-2 align-baseline fill-red1 group-hover:fill-darkblue1"
+          viewBox="0 -960 960 960"
+          width="16"
+        >
+          <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+        </svg>
+      )}
     </Link>
   );
 };
