@@ -71,7 +71,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/no-eat-salmon.jpeg",
+          large: "/images/act/no-eat-salmon.jpg",
         }}
       />
 
