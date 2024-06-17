@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
 import React from "react";
 
 type MainLinkProps = {
@@ -21,8 +20,6 @@ const MainLink = ({
   hasIcon = false,
   ...rest
 }: MainLinkProps) => {
-  const t = useTranslations("components");
-
   if (!href || !label) {
     return <></>;
   }
@@ -32,6 +29,7 @@ const MainLink = ({
       className={clsx(
         "inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100",
         mode === "dark" ? "bg-darkblue1" : "bg-transparent",
+        className,
       )}
       href={href}
       rel={isBlank ? "noopener noreferrer" : undefined}
