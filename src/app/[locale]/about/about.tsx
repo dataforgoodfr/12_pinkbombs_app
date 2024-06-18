@@ -54,7 +54,11 @@ const ExplainSection = () => {
         id="methods-section-title"
         title={t("methods.title")}
       />
-      <AboutSection content={t.raw("methods.content")} />
+      <AboutSection
+        content={t.raw("methods.content")}
+        linkLabel={t("methods.link")}
+        link={t("methods.target")}
+      />
     </>
   );
 };

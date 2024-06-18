@@ -15,19 +15,21 @@ const Act = () => {
     <>
       <IntroBlock title={t("title")} className="bg-yellow1" />
 
-      <Edito
+      {/* <Edito
         title={t("company.title")}
         titleLevel="h2"
         content={t("company.content")}
         linkLabel={t("company.link")}
         link={t("company.target")}
+        linkBlank
+        linkIcon={false}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
         image={{
           large: "/images/act/call-companies.jpg",
         }}
-      />
+      /> */}
 
       <Edito
         title={t("territory.title")}
@@ -35,6 +37,8 @@ const Act = () => {
         content={t("territory.content")}
         linkLabel={t("territory.link")}
         link={t("territory.target")}
+        linkBlank
+        linkIcon={false}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
@@ -49,6 +53,8 @@ const Act = () => {
         content={t("seastemik.content")}
         linkLabel={t("seastemik.link")}
         link={t("seastemik.target")}
+        linkBlank
+        linkIcon={false}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
@@ -65,7 +71,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/no-eat-salmon.jpeg",
+          large: "/images/act/no-eat-salmon.jpg",
         }}
       />
 
