@@ -38,7 +38,7 @@ const Dashboard = () => {
         },
         {
           label: t("sections.intro.blocks.intro-consumption.title"),
-          targetId: "intro-consumption-block",
+          targetId: "top-conso-block",
         },
       ],
     },
