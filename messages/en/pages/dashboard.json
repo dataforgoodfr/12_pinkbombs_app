@@ -130,7 +130,7 @@
             "image": "en/escape.svg",
             "altImage": "More than 4 million fish have escaped from marine cages (SalMar, Mowi, Bakkarfrost and others) since 2018.",
             "meta": {
-              "image": "/dashboard/images/en/evasions.png",
+              "image": "/dashboard/images/en/escape.png",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/escapes_marine_cages_3.5.csv.zip",
               "dataArtifact": "escapes_marine_cages_3.5.csv.zip"
             }
