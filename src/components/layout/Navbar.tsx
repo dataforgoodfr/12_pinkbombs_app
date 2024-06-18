@@ -12,20 +12,20 @@ type NavItemsProps = {
 
 const navItems: NavItemsProps = [
   {
-    link: "/",
-    text: "Story",
+    link: "",
+    text: "",
   },
   {
-    link: "/dashboard",
-    text: "Dashboard",
+    link: "",
+    text: "",
   },
   {
-    link: "/to-act",
-    text: "agir",
+    link: "",
+    text: "",
   },
   {
-    link: "/about",
-    text: "à propos",
+    link: "",
+    text: "",
   },
 ];
 
