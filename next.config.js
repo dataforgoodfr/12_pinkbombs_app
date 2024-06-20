@@ -8,6 +8,10 @@ const nextConfig = {
     dirs: ["src"],
   },
 
+  images: {
+    formats: ["image/webp"],
+  },
+
   reactStrictMode: true,
   swcMinify: true,
 

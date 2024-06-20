@@ -27,7 +27,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/call-companies.jpg",
+          src: "/images/act/call-companies.jpg",
         }}
       /> */}
 
@@ -43,7 +43,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/stop-industry.jpg",
+          src: "/images/act/stop-industry.jpg",
         }}
       />
 
@@ -59,7 +59,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/support-seastemik.jpg",
+          src: "/images/act/support-seastemik.jpg",
         }}
       />
 
@@ -71,7 +71,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          large: "/images/act/no-eat-salmon.jpg",
+          src: "/images/act/no-eat-salmon.jpg",
         }}
       />
 
