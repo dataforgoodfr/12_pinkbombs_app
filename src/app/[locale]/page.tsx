@@ -120,9 +120,7 @@ const EditoSection = () => {
       content: t("edito.biodiversity.content"),
       link: "/dashboard#biodiversity-section",
       image: {
-        small: "/images/storytelling/biodiversity-hd.webp",
-        medium: "/images/storytelling/biodiversity-hd.webp",
-        large: "/images/storytelling/biodiversity-hd.webp",
+        src: "/images/storytelling/biodiversity-hd.webp",
       },
     },
     {
@@ -130,9 +128,7 @@ const EditoSection = () => {
       content: t("edito.health.content"),
       link: "/dashboard#health-section",
       image: {
-        small: "/images/storytelling/health-hd.webp",
-        medium: "/images/storytelling/health-hd.webp",
-        large: "/images/storytelling/health-hd.webp",
+        src: "/images/storytelling/health.jpg",
         caption: t("edito.health.credit"),
       },
     },
@@ -141,9 +137,7 @@ const EditoSection = () => {
       content: t("edito.climat.content"),
       link: "/dashboard#climate-section",
       image: {
-        small: "/images/storytelling/climat-400.jpg",
-        medium: "/images/storytelling/climat-600.jpg",
-        large: "/images/storytelling/climat-1200.jpg",
+        src: "/images/storytelling/climate.jpg",
       },
     },
     {
@@ -151,9 +145,7 @@ const EditoSection = () => {
       content: t("edito.social.content"),
       link: "/dashboard#social-section",
       image: {
-        small: "/images/storytelling/social-400.jpg",
-        medium: "/images/storytelling/social-600.jpg",
-        large: "/images/storytelling/social-1200.jpg",
+        src: "/images/storytelling/social.jpg",
       },
     },
     {
@@ -161,9 +153,7 @@ const EditoSection = () => {
       content: t("edito.animals.content"),
       link: "/dashboard#animals-section",
       image: {
-        small: "/images/storytelling/animals-hd.webp",
-        medium: "/images/storytelling/animals-hd.webp",
-        large: "/images/storytelling/animals-hd.webp",
+        src: "/images/storytelling/animals.jpg",
       },
     },
   ];

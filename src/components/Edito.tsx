@@ -11,9 +11,8 @@ type EditoProps = {
   titleLevel?: "h1" | "h2" | "h3";
   mode?: "dark" | "light";
   image?: {
-    small?: string;
-    medium?: string;
-    large: string;
+    src: string;
+    alt?: string;
     caption?: string;
   };
   content: string;
@@ -65,7 +64,7 @@ const Edito = ({
           ) : null}
         </div>
 
-        {image ? (
+        {image && image.src ? (
           <figure
             className={clsx(
               contentPosition === "right" ? "md:-order-1" : "",
@@ -82,7 +81,7 @@ const Edito = ({
             >
               <Image
                 loading="lazy"
-                src={image.large}
+                src={image.src}
                 width={600}
                 height={600}
                 alt=""
