@@ -6,14 +6,10 @@ import "../styles/page.css";
 
 import IntroBlock from "@/components/IntroBlock";
 
-
 const HomePage = () => {
   return (
     <>
-      <IntroBlock
-        title="Coming Soon..."
-        image="/images/salmon.svg"
-      />
+      <IntroBlock title="Coming Soon..." image="/images/salmon.svg" />
     </>
   );
 };
