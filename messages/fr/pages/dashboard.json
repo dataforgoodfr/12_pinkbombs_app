@@ -114,7 +114,7 @@
         "blocks": {
           "deforestation": {
             "title": "Déforestation",
-            "mainContent": "<p>La volonté du gouvernement norvégien était d'augmenter la production de saumons d’élevage de 500% d'ici 2050.</p>",
+            "mainContent": "<p>La volonté du gouvernement norvégien était d'augmenter la production de saumons d’élevage de 400% d'ici 2050.</p>",
             "content": "<p>Cela nécessiterait l'utilisation de 11 000 km² pour la production de soja au Brésil. Cela équivaut à la déforestation totale légale de l’Amazonie en 2022.</p>",
             "image": "fr/deforestation.svg",
             "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km² de plantation de Soja, soit 20 fois Paris pour produire 1562415 tonnes de saumons.",
@@ -154,9 +154,9 @@
           "microplastics": {
             "title": "Microplastiques",
             "mainContent": "<p>Les microplastiques sont particulièrement présents dans le saumon en raison de la bioaccumulation dans la chaîne alimentaire et de l'affinité des plastiques pour les graisses.</p>",
-            "content": "<p>Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques.</p><p>Un saumon de 5 kg contient environ 575 microplastiques. Une personne française consommant 4.4 kg de saumon par an ingère environ 544 microplastiques par an sur un total de 97,500 provenant de différentes sources.</p>",
+            "content": "<p>Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques.</p><p>Un saumon de 5 kg contient environ 532 microplastiques. Une personne française consommant 4.4 kg de saumon par an ingère environ 568 microplastiques par an sur un total de 97,500 provenant de différentes sources.</p>",
             "image": "fr/microplastic.svg",
-            "altImage": "575 microplastiques par saumon (sorry on n'en a mis que 30).",
+            "altImage": "532 microplastiques par saumon (sorry on n'en a mis que 30).",
             "meta": {
               "image": "/dashboard/images/fr/microplastic.png",
               "source": "anglais"
