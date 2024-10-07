@@ -34,9 +34,9 @@
         "intro": "What we choose to eat, sell, and produce has different impacts on the planet, people, and animals.",
         "content": "<p>France, being among the top 4 largest consumers of salmon in the world, bears a particular responsibility in influencing these choices.</p>",
         "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Table_food_choices_simplified_en.pdf",
-        "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/alternatives_text_7.csv.zip",
-        "artifact": "alternatives_text_7.csv.zip",
-        "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/alternatives_7.png"
+        "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/foodchoices_text_7.csv.zip",
+        "artifact": "foodchoices_text_7.csv.zip",
+        "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/foodchoices_7.png"
       }
     },
     "metaChart": {
