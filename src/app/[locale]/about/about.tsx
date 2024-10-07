@@ -8,6 +8,7 @@ import "@/lib/env";
 import AboutSection from "@/components/AboutSection";
 import IntroBlock from "@/components/IntroBlock";
 import TitleBlock from "@/components/TitleBlock";
+import Image from "next/image";
 
 const About = () => {
   const t = useTranslations("about");
