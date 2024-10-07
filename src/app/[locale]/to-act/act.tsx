@@ -48,6 +48,18 @@ const Act = () => {
       />
 
       <Edito
+        title={t("eat.title")}
+        titleLevel="h2"
+        content={t("eat.content")}
+        className="bg-pink1"
+        contentPosition="right"
+        mode="light"
+        image={{
+          src: "/images/act/no-eat-salmon.jpeg",
+        }}
+      />
+
+      <Edito
         title={t("seastemik.title")}
         titleLevel="h2"
         content={t("seastemik.content")}
@@ -60,18 +72,6 @@ const Act = () => {
         mode="light"
         image={{
           src: "/images/act/support-seastemik.jpg",
-        }}
-      />
-
-      <Edito
-        title={t("eat.title")}
-        titleLevel="h2"
-        content={t("eat.content")}
-        className="bg-pink1"
-        contentPosition="right"
-        mode="light"
-        image={{
-          src: "/images/act/no-eat-salmon.jpg",
         }}
       />
 
