@@ -36,7 +36,9 @@
     },
     "eat": {
       "title": "Je laisse les saumons en dehors de mon assiette",
-      "content": "Prêt·e·s à se mettre en chemin pour laisser les saumons dans les océans et les rivières ? Quel objectif vous semble atteignable ? Laissez-le nous dans notre boîte à intentions pour faire grandir la communauté !"
+      "content": "Prêt·e·s à se mettre en chemin pour laisser les saumons dans les océans et les rivières ? Quel objectif vous semble atteignable ? Laissez-le nous dans notre boîte à intentions pour faire grandir la communauté !",
+      "link": "Je participe",
+      "target": "https://forms.gle/c6fGdknx8jr4rmq96"
     },
     "report": {
       "title": "S'éduquer et transmettre pour mieux agir",

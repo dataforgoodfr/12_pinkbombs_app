@@ -51,6 +51,8 @@ const Act = () => {
         title={t("eat.title")}
         titleLevel="h2"
         content={t("eat.content")}
+        linkLabel={t("eat.link")}
+        link={t("eat.target")}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
