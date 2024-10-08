@@ -57,7 +57,7 @@ const Edito = ({
             <MainLink
               label={linkLabel || t("edito.link")}
               href={link}
-              mode="light"
+              mode="base"
               isBlank={linkBlank}
               hasIcon={linkIcon}
             />

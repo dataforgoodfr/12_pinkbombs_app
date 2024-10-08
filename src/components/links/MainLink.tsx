@@ -6,7 +6,7 @@ type MainLinkProps = {
   className?: string;
   href: string;
   label: string;
-  mode?: "dark" | "light";
+  mode?: "dark" | "base" | "light";
   isBlank?: boolean;
   hasIcon?: boolean;
 };
@@ -27,8 +27,11 @@ const MainLink = ({
   return (
     <Link
       className={clsx(
-        "group inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 hover:bg-red1 hover:text-darkblue1 transition-colors ease-in-out duration-100",
-        mode === "dark" ? "bg-darkblue1" : "bg-transparent",
+        "group inline-flex items-center gap-2 mt-6 lg:mt-12 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 transition-colors ease-in-out duration-100",
+        mode === "dark" &&
+          "bg-darkblue1 text-red1 hover:bg-red1 hover:text-darkblue1",
+        mode === "base" && "bg-red1 text-white hover:bg-darkblue1",
+        mode === "light" && "text-red1 hover:bg-red1 hover:text-darkblue1",
         className,
       )}
       href={href}
@@ -66,7 +69,12 @@ const MainLink = ({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="16"
-          className="inline-block ml-2 align-baseline fill-red1 group-hover:fill-darkblue1"
+          className={clsx(
+            "inline-block ml-2 align-baseline",
+            mode === "base"
+              ? "fill-white"
+              : "fill-red1 group-hover:fill-darkblue1",
+          )}
           viewBox="0 -960 960 960"
           width="16"
         >
