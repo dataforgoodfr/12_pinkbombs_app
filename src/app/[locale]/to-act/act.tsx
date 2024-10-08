@@ -55,7 +55,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/no-eat-salmon.jpeg",
+          src: "/images/act/citizens.jpg",
         }}
       />
 
