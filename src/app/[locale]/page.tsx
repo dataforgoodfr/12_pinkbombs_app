@@ -22,6 +22,7 @@ const HomePage = () => {
       <IntroBlock title={t("title")} image="/images/salmon.svg" />
 
       <BombSection />
+      <VideoSection />
       <ExplodeSection />
       <EditoSection />
       <BusinessSection />
@@ -108,6 +109,24 @@ const ExplodeSection = () => {
         </ul>
       </div>
     </section>
+  );
+};
+
+const VideoSection = () => {
+  return (
+    <div className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red1 bg-pink1">
+      <div className="max-w-[1500px] mx-auto">
+        <div className="pt-[56.25%] relative">
+          <iframe
+            src="https://player.vimeo.com/video/1016205305?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            className="absolute top-0 left-0 w-full h-full"
+            title="Pinkbombs"
+          />
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
   );
 };
 
