@@ -10,7 +10,8 @@
     },
     "footer": {
       "allRight": "All rights reserved",
-      "and": "and"
+      "and": "and",
+      "donation": "Make a donation"
     }
   },
   "siteConfig": {

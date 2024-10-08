@@ -10,7 +10,8 @@
     },
     "footer": {
       "allRight": "Tous droits réservés",
-      "and": "et"
+      "and": "et",
+      "donation": "Faire un don"
     }
   },
   "siteConfig": {
