@@ -37,6 +37,12 @@
     "eat": {
       "title": "I leave salmon off my plate",
       "content": "Ready to set out to leave salmon in the oceans and rivers? “Together, we are an immense force”.<br />What objective seems achievable to you? Leave it in our intention box to help the community grow!"
+    },
+    "report": {
+      "title": "Educate yourself and share to act better",
+      "content": "Reading and sharing Seastemik's report on the salmon industry helps deconstruct the distorted popular perception of salmon consumption. Enjoy reading!",
+      "link": "Read our report",
+      "target": "https://seastemik.org/publications"
     }
   }
 }

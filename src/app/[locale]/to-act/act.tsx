@@ -88,6 +88,22 @@ const Act = () => {
         }}
       />
 
+      <Edito
+        title={t("report.title")}
+        titleLevel="h2"
+        content={t("report.content")}
+        linkLabel={t("report.link")}
+        link={t("report.target")}
+        linkBlank
+        linkIcon={false}
+        className="bg-pink1"
+        contentPosition="right"
+        mode="light"
+        image={{
+          src: "/images/act/seastemik-report.png",
+        }}
+      />
+
       <JoinBlock
         isAlternative
         className="pt-6 lg:pt-24 bg-brown1 lg:bg-darkblue1"
