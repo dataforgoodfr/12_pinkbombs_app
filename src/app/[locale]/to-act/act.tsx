@@ -51,8 +51,13 @@ const Act = () => {
         title={t("eat.title")}
         titleLevel="h2"
         content={t("eat.content")}
-        linkLabel={t("eat.link")}
-        link={t("eat.target")}
+        ctas={[
+          {
+            label: t("eat.link"),
+            target: t("eat.target"),
+            isBlank: true,
+          },
+        ]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
@@ -94,10 +99,13 @@ const Act = () => {
         title={t("report.title")}
         titleLevel="h2"
         content={t("report.content")}
-        linkLabel={t("report.link")}
-        link={t("report.target")}
-        linkBlank
-        linkIcon={false}
+        ctas={[
+          {
+            label: t("report.link"),
+            target: t("report.target"),
+            isBlank: true,
+          },
+        ]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
