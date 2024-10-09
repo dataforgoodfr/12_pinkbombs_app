@@ -78,7 +78,7 @@ const JoinBlock = ({
                   {
                     type: "data",
                     link: t(`join.${baseText}.data`),
-                    artifact: t("join.artifact"),
+                    artifact: t(`join.${baseText}.artifact`),
                   },
                   {
                     type: "image",

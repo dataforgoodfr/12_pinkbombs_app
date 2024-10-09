@@ -37,7 +37,12 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="lg:absolute left-0 top-0 z-10 w-full text-darkblue1 bg-pink1 lg:bg-transparent">
+    <header
+      className={clsx(
+        "lg:fixed left-0 top-0 z-10 w-full text-darkblue1",
+        /to-act/.test(pathname) ? "bg-yellow1" : "bg-pink1",
+      )}
+    >
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6">
         <Link href="/">
           <Image

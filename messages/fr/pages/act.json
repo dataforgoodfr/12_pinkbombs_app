@@ -18,9 +18,21 @@
     },
     "seastemik": {
       "title": "Je soutiens Seastemik",
-      "content": "Seastemik est une association créée en 2023 avec l’objectif d’accélérer notre transition vers un Océan en bonne santé.<br /> Elle sensibilise sur les impacts d'un système alimentaire qui exploite l'Océan, soutient les mobilisations citoyennes, appelle les politiques à s'engager et accompagne la révolution iodée des entreprises en proposant des solutions positives.",
-      "link": "Contribuer sur HelloAsso",
-      "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+      "content": "Seastemik est une association créée en 2023 avec l’objectif d’accélérer notre transition vers un Océan en bonne santé. Elle sensibilise sur les impacts d'un système alimentaire qui exploite l'Océan, soutient les mobilisations citoyennes, appelle les politiques à s'engager et accompagne la révolution iodée des entreprises en proposant des solutions positives.<br />Chaque action compte ! Rejoignez la vague du changement et aidez Seastemik à changer de courant, pour un Océan <em>vraiment</em> vivant :",
+      "ctas": [
+        {
+          "label": "Faire un don sur HelloAsso",
+          "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+        },
+        {
+          "label": "S’inscrire à la newsletter",
+          "target": "https://seastemik.org/newsletter"
+        },
+        {
+          "label": "Suivre Seastemik",
+          "target": "https://seastemik.org/"
+        }
+      ]
     },
     "eat": {
       "title": "Je laisse les saumons en dehors de mon assiette",

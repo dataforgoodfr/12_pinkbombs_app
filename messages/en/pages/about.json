@@ -10,7 +10,22 @@
     },
     "who": {
       "title": "Who are we?",
-      "content": "<p>PinkBombs is the result of a collaboration between two non-profit organizations, Seastemik and DataforGood .</p><ul><li><strong>Seastemik</strong> is an NGO founded in 2023 by a collective of optimists concerned about the state of the oceans, the primary source of life on Earth. By raising awareness among civil society and engaging the responsibility of intermediary actors (large-scale retail and collective catering) and the State, our mission is to drive a transition towards a healthy, accessible, and sustainable food system that respects the oceans, human societies, and animals.</li><li><b>Data For Good</b> is a French NGO whose aim is to help projects of general interest to develop. Thanks to a community of over 4,000 tech-savvy volunteers, a dozen projects a year are supported and developed for over 3 months.</li></ul><p><b>Thank you!</b> We would like to express our deep gratitude to each of these individuals who gave their time and expertise to enable the creation of the project, from its conception to its implementation: Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin.</p>"
+      "content": {
+        "first": "PinkBombs is the result of a collaboration between two non-profit organizations, Seastemik and DataforGood.",
+        "parts": {
+          "seastemik": {
+            "title": "Seastemik",
+            "content": "<p><strong>Seastemik</strong> is an NGO founded in 2023 that is committed to a living Ocean through a systemic revolution in our food. We are working to end unsustainable aquaculture practices, particularly intensive salmon farming, for better protection of humans, animals and ecosystems.",
+            "link": "See the Seastemik website"
+          },
+          "dataforgood": {
+            "title": "Data for Good",
+            "content": "<strong>Data for Good</strong> is a French NGO whose goal is to help projects of general interest to develop. Thanks to a community of more than 4,000 volunteers skilled in technology, a dozen projects are supported and developed for more than 3 months.",
+            "link": "See the Data for Good website"
+          }
+        },
+        "last": "<strong>A huge thank you</strong> to the volunteers who put their talents and time to make this project possible: Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin. Eternal gratitude."
+      }
     },
     "methods": {
       "title": "Approach",

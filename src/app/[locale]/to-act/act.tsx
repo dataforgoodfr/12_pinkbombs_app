@@ -19,10 +19,7 @@ const Act = () => {
         title={t("company.title")}
         titleLevel="h2"
         content={t("company.content")}
-        linkLabel={t("company.link")}
-        link={t("company.target")}
-        linkBlank
-        linkIcon={false}
+        ctas={[{label: t("company.link"), target:t("company.target"), isBlank: true}]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
@@ -35,10 +32,13 @@ const Act = () => {
         title={t("territory.title")}
         titleLevel="h2"
         content={t("territory.content")}
-        linkLabel={t("territory.link")}
-        link={t("territory.target")}
-        linkBlank
-        linkIcon={false}
+        ctas={[
+          {
+            label: t("territory.link"),
+            target: t("territory.target"),
+            isBlank: true,
+          },
+        ]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
@@ -62,11 +62,24 @@ const Act = () => {
       <Edito
         title={t("seastemik.title")}
         titleLevel="h2"
-        content={t("seastemik.content")}
-        linkLabel={t("seastemik.link")}
-        link={t("seastemik.target")}
-        linkBlank
-        linkIcon={false}
+        content={t.raw("seastemik.content")}
+        ctas={[
+          {
+            label: t("seastemik.ctas.0.label"),
+            target: t("seastemik.ctas.0.target"),
+            isBlank: true,
+          },
+          {
+            label: t("seastemik.ctas.1.label"),
+            target: t("seastemik.ctas.1.target"),
+            isBlank: true,
+          },
+          {
+            label: t("seastemik.ctas.2.label"),
+            target: t("seastemik.ctas.2.target"),
+            isBlank: true,
+          },
+        ]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"

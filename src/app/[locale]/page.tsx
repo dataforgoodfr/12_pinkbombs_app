@@ -118,7 +118,7 @@ const EditoSection = () => {
     {
       title: t("edito.biodiversity.title"),
       content: t("edito.biodiversity.content"),
-      link: "/dashboard#biodiversity-section",
+      ctas: [{ target: "/dashboard#biodiversity-section", hasIcon: true }],
       image: {
         src: "/images/storytelling/biodiversity-hd.webp",
       },
@@ -126,7 +126,7 @@ const EditoSection = () => {
     {
       title: t("edito.health.title"),
       content: t("edito.health.content"),
-      link: "/dashboard#health-section",
+      ctas: [{ target: "/dashboard#health-section", hasIcon: true }],
       image: {
         src: "/images/storytelling/health.jpg",
         caption: t("edito.health.credit"),
@@ -135,7 +135,7 @@ const EditoSection = () => {
     {
       title: t("edito.climat.title"),
       content: t("edito.climat.content"),
-      link: "/dashboard#climate-section",
+      ctas: [{ target: "/dashboard#climate-section", hasIcon: true }],
       image: {
         src: "/images/storytelling/climate.jpg",
       },
@@ -143,7 +143,7 @@ const EditoSection = () => {
     {
       title: t("edito.social.title"),
       content: t("edito.social.content"),
-      link: "/dashboard#social-section",
+      ctas: [{ target: "/dashboard#social-section", hasIcon: true }],
       image: {
         src: "/images/storytelling/social.jpg",
       },
@@ -151,7 +151,7 @@ const EditoSection = () => {
     {
       title: t("edito.animals.title"),
       content: t("edito.animals.content"),
-      link: "/dashboard#animals-section",
+      ctas: [{ target: "/dashboard#animals-section", hasIcon: true }],
       image: {
         src: "/images/storytelling/animals.jpg",
       },

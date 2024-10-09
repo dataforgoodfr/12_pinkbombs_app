@@ -18,9 +18,21 @@
     },
     "seastemik": {
       "title": "I support Seastemik",
-      "content": "Seastemik is an association created in 2023 with the objective of accelerating our transition to a healthy ocean.<br />To mobilize on the ground, it works to raise community awareness, accessibility of information and proposal of solutions.",
-      "link": "Contribute on HelloAsso",
-      "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+      "content": "Seastemik is an association poum created in 2023 with the objective of accelerating our transition to a healthy Ocean. It raises awareness of the impacts of a food system that exploits the Ocean, supports citizen mobilizations, calls on politicians to get involved and supports the iodine revolution of companies by proposing positive solutions.<br />Every action counts! Join the wave of change and help Seastemik change the tide, for a <em>truly</em> living Ocean:",
+      "ctas": [
+        {
+          "label": "Donate on HelloAsso",
+          "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+        },
+        {
+          "label": "Subscribe to the newsletter",
+          "target": "https://seastemik.org/newsletter"
+        },
+        {
+          "label": "Follow Seastemik",
+          "target": "https://seastemik.org/"
+        }
+      ]
     },
     "eat": {
       "title": "I leave salmon off my plate",
