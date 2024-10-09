@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import ShareLink from "@/components/links/shareLink";
 import MainLink from "@/components/links/MainLink";
+import ShareLink from "@/components/links/shareLink";
 
 const currentYear = new Date().getFullYear();
 
