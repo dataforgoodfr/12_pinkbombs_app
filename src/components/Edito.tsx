@@ -16,10 +16,12 @@ type EditoProps = {
     caption?: string;
   };
   content: string;
-  link?: string;
-  linkLabel?: string;
-  linkBlank?: boolean;
-  linkIcon?: boolean;
+  ctas?: {
+    target: string;
+    label?: string;
+    isBlank?: boolean;
+    hasIcon?: boolean;
+  }[];
   contentPosition?: "left" | "right";
 };
 
@@ -30,10 +32,7 @@ const Edito = ({
   image,
   content,
   mode = "dark",
-  link,
-  linkLabel,
-  linkBlank = false,
-  linkIcon = true,
+  ctas,
   contentPosition = "left",
 }: EditoProps) => {
   const t = useTranslations("components");
@@ -53,14 +52,19 @@ const Edito = ({
             className="mt-3 lg:mt-6"
             dangerouslySetInnerHTML={{ __html: content }}
           />
-          {link ? (
-            <MainLink
-              label={linkLabel || t("edito.link")}
-              href={link}
-              mode="base"
-              isBlank={linkBlank}
-              hasIcon={linkIcon}
-            />
+          {ctas?.length ? (
+            <div className="flex flex-wrap gap-4 mt-4 lg:mt-8">
+              {ctas.map((cta, key) => (
+                <MainLink
+                  label={cta.label || t("edito.link")}
+                  href={cta.target}
+                  key={`edito-cta-${key}`}
+                  mode="base"
+                  isBlank={cta.isBlank}
+                  hasIcon={cta.hasIcon}
+                />
+              ))}
+            </div>
           ) : null}
         </div>
 

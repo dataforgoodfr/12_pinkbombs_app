@@ -4,7 +4,13 @@ import React from "react";
 
 type ShareLinkProps = {
   className?: string;
-  type?: "twitter" | "linkedin" | "website" | "email";
+  type?:
+    | "twitter"
+    | "linkedin"
+    | "website"
+    | "email"
+    | "newsletter"
+    | "instagram";
   href: string;
   name: string;
 };

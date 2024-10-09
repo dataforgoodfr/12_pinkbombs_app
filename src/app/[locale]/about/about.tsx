@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
@@ -38,16 +39,98 @@ const ExplainSection = () => {
     <>
       <TitleBlock
         spaceY="mb-4 lg:mb-8"
+        id="who-section-title"
+        title={t("who.title")}
+      />
+      {/*<AboutSection content={t.raw("who.content")} />*/}
+      <div className="px-6 md:px-12 max-w-[1000px] mx-auto">
+        <p dangerouslySetInnerHTML={{ __html: t.raw("who.content.first") }} />
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="h3 text-red1 mt-8 mb-4">
+              {t("who.content.parts.seastemik.title")}
+            </h3>
+            <Image
+              loading="lazy"
+              src="/images/seastemik.avif"
+              width={200}
+              height={100}
+              alt=""
+              className="object-contain"
+            />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw("who.content.parts.seastemik.content"),
+              }}
+              className="my-4"
+            />
+            <a
+              href="https://seastemik.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-red1 underline hover:no-underline"
+            >
+              {t("who.content.parts.seastemik.link")}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                className="inline-block ml-2 align-baseline fill-red1 group-hover:fill-darkblue1"
+                viewBox="0 -960 960 960"
+                width="16"
+              >
+                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <h3 className="h3 text-red1 mt-8 mb-4">
+              {t("who.content.parts.dataforgood.title")}
+            </h3>
+            <Image
+              loading="lazy"
+              src="/images/dataforgood.svg"
+              width={200}
+              height={100}
+              alt=""
+              className="object-contain"
+            />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw("who.content.parts.dataforgood.content"),
+              }}
+              className="my-4"
+            />
+            <a
+              href="https://seastemik.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-red1 underline hover:no-underline"
+            >
+              {t("who.content.parts.dataforgood.link")}
+              <svg
+                xmlns="https://dataforgood.fr/"
+                height="16"
+                className="inline-block ml-2 align-baseline fill-red1 group-hover:fill-darkblue1"
+                viewBox="0 -960 960 960"
+                width="16"
+              >
+                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p
+          className="mt-16 lg:mt-20"
+          dangerouslySetInnerHTML={{ __html: t.raw("who.content.last") }}
+        />
+      </div>
+
+      <TitleBlock
+        spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
         id="why-section-title"
         title={t("why.title")}
       />
       <AboutSection content={t.raw("why.content")} />
-      <TitleBlock
-        spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
-        id="who-section-title"
-        title={t("who.title")}
-      />
-      <AboutSection content={t.raw("who.content")} />
 
       <TitleBlock
         spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"

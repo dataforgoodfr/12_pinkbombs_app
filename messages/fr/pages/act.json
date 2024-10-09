@@ -12,19 +12,31 @@
     },
     "territory": {
       "title": "Je dis non au projet d’usine à saumons sur mon territoire",
-      "content": "Le projet d’usine à saumons à terre dénommé « Pure Salmon », initiative du fonds d’investissement Singapourien 8F Asset Management, est en discussion près de Bordeaux. Grâce aux pétitions signées par les citoyen.ne.s, il a notamment été retoqué au Pas-de-Calais et en Bretagne. Continuons !",
+      "content": "Le projet de ferme-usine de saumons à terre dénommé « Pure Salmon », initiative du fonds d’investissement singapourien 8F Asset Management, est en discussion près de Bordeaux. Grâce aux pétitions signées par les citoyen·ne·s, il a notamment été retoqué au Pas-de-Calais et en Bretagne. Continuons !",
       "link": "Signer la pétition",
       "target": "https://www.change.org/p/pour-l-abandon-du-projet-d-%C3%A9levage-intensif-terrestre-de-saumons-par-pure-salmon?recruiter=1321544874&recruited_by_id=817c01c0-813d-11ee-b093-0193942f59ac&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_medium=copylink&utm_content=cl_sharecopy_35465639_fr-FR%3A5"
     },
     "seastemik": {
       "title": "Je soutiens Seastemik",
-      "content": "Seastemik est une association créée en 2023 avec l’objectif d’accélérer notre transition vers un océan en bonne santé.<br />Pour mobiliser sur le terrain, elle travaille à la sensibilisation des communautés, l’accessibilité de l’information et la proposition de solutions.",
-      "link": "Contribuer sur HelloAsso",
-      "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+      "content": "Seastemik est une association créée en 2023 avec l’objectif d’accélérer notre transition vers un Océan en bonne santé. Elle sensibilise sur les impacts d'un système alimentaire qui exploite l'Océan, soutient les mobilisations citoyennes, appelle les politiques à s'engager et accompagne la révolution iodée des entreprises en proposant des solutions positives.<br />Chaque action compte ! Rejoignez la vague du changement et aidez Seastemik à changer de courant, pour un Océan <em>vraiment</em> vivant :",
+      "ctas": [
+        {
+          "label": "Faire un don sur HelloAsso",
+          "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+        },
+        {
+          "label": "S’inscrire à la newsletter",
+          "target": "https://seastemik.org/newsletter"
+        },
+        {
+          "label": "Suivre Seastemik",
+          "target": "https://seastemik.org/"
+        }
+      ]
     },
     "eat": {
       "title": "Je laisse les saumons en dehors de mon assiette",
-      "content": "Prêt.e.s à se mettre en chemin pour laisser les saumons dans les océans et les rivières? « Ensemble, on est une force immense ».<br />Quel objectif vous semble atteignable? Laissez-le nous dans notre boîte à intentions pour faire grandir la communauté !"
+      "content": "Prêt·e·s à se mettre en chemin pour laisser les saumons dans les océans et les rivières ? Quel objectif vous semble atteignable ? Laissez-le nous dans notre boîte à intentions pour faire grandir la communauté !"
     }
   }
 }
