@@ -51,11 +51,18 @@ const Act = () => {
         title={t("eat.title")}
         titleLevel="h2"
         content={t("eat.content")}
+        ctas={[
+          {
+            label: t("eat.link"),
+            target: t("eat.target"),
+            isBlank: true,
+          },
+        ]}
         className="bg-pink1"
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/no-eat-salmon.jpeg",
+          src: "/images/act/citizens.jpg",
         }}
       />
 
@@ -85,6 +92,25 @@ const Act = () => {
         mode="light"
         image={{
           src: "/images/act/support-seastemik.jpg",
+        }}
+      />
+
+      <Edito
+        title={t("report.title")}
+        titleLevel="h2"
+        content={t("report.content")}
+        ctas={[
+          {
+            label: t("report.link"),
+            target: t("report.target"),
+            isBlank: true,
+          },
+        ]}
+        className="bg-pink1"
+        contentPosition="right"
+        mode="light"
+        image={{
+          src: "/images/act/seastemik-report.png",
         }}
       />
 

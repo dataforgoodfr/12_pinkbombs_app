@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import MainLink from "@/components/links/MainLink";
 import ShareLink from "@/components/links/shareLink";
 
 const currentYear = new Date().getFullYear();
@@ -73,6 +74,24 @@ const Footer = () => {
               type="email"
               href="hellodataforgood@gmail.com"
               name="Data for Good"
+            />
+          </div>
+
+          <div className="self-end lg:ml-auto w-full md:w-auto">
+            <MainLink
+              label={t("footer.donation")}
+              href="https://www.helloasso.com/associations/seastemik/formulaires/1"
+              mode="base"
+              className="mb-4"
+              isBlank
+            />
+            <Image
+              loading="lazy"
+              src="/images/pinkbomb-seastemik-dataforgood.svg"
+              width={400}
+              height={100}
+              alt=""
+              className="object-contain"
             />
           </div>
         </div>
