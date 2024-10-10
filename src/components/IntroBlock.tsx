@@ -7,12 +7,14 @@ import Summary, { SummaryLinksProps } from "@/components/Summary";
 const IntroBlock = ({
   className,
   title,
+  baseline,
   image,
   summary,
 }: {
   className?: string;
   title: string;
   image?: string;
+  baseline?: string;
   summary?: SummaryLinksProps;
 }) => {
   if (!title) {
@@ -35,6 +37,9 @@ const IntroBlock = ({
         )}
         <div className="row-start-3 self-end items-left flex flex-wrap gap-2 items-end">
           <h1 className={clsx("h1", "flex-1")}>{title}</h1>
+          {baseline ? (
+            <p className="mt-2 w-full text-black">{baseline}</p>
+          ) : null}
 
           {summary ? <Summary className="w-full" links={summary} /> : null}
         </div>
