@@ -4,9 +4,7 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import Edito from "@/components/Edito";
 import IntroBlock from "@/components/IntroBlock";
-import JoinBlock from "@/components/JoinBlock";
 
 const LegalNotice = () => {
   const t = useTranslations("legal");
