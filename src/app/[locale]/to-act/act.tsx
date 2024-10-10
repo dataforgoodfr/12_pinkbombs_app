@@ -62,7 +62,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/citizens.jpg",
+          src: t("eat.image"),
         }}
       />
 
