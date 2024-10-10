@@ -11,7 +11,8 @@
     "footer": {
       "allRight": "All rights reserved",
       "and": "and",
-      "donation": "Make a donation"
+      "donation": "Make a donation",
+      "legalNotice": "Legal notices"
     }
   },
   "siteConfig": {
