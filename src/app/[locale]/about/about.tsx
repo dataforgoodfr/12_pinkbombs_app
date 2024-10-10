@@ -50,14 +50,6 @@ const ExplainSection = () => {
             <h3 className="h3 text-red1 mt-8 mb-4">
               {t("who.content.parts.seastemik.title")}
             </h3>
-            <Image
-              loading="lazy"
-              src="/images/seastemik.avif"
-              width={200}
-              height={100}
-              alt=""
-              className="object-contain"
-            />
             <p
               dangerouslySetInnerHTML={{
                 __html: t.raw("who.content.parts.seastemik.content"),
@@ -86,14 +78,6 @@ const ExplainSection = () => {
             <h3 className="h3 text-red1 mt-8 mb-4">
               {t("who.content.parts.dataforgood.title")}
             </h3>
-            <Image
-              loading="lazy"
-              src="/images/dataforgood.svg"
-              width={200}
-              height={100}
-              alt=""
-              className="object-contain"
-            />
             <p
               dangerouslySetInnerHTML={{
                 __html: t.raw("who.content.parts.dataforgood.content"),
