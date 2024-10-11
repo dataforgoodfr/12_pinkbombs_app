@@ -99,10 +99,10 @@ const Footer = () => {
         <p className="p-caption mt-6 lg:mt-12">
           {t("footer.allRight")} - © {currentYear} Seastemik {t("footer.and")}{" "}
           Data for Good
-          <br />
+          {/*<br />
           <a href="/legal-notice" className="underline hover:no-underline">
             {t("footer.legalNotice")}
-          </a>
+          </a>*/}
         </p>
       </div>
     </footer>

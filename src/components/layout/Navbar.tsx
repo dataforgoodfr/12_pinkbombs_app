@@ -53,7 +53,7 @@ const Navbar = () => {
             className="w-24 md:w-36 lg:w-44 object-contain"
           />
         </Link>
-
+        {/*
         <nav
           className="flex flex-wrap gap-4 lg:gap-16 ml-auto"
           aria-label={t("nav.title")}
@@ -91,6 +91,7 @@ const Navbar = () => {
             ))}
           </div>
         </nav>
+        */}
       </div>
     </header>
   );
