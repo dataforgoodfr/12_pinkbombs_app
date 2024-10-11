@@ -154,7 +154,7 @@
           "microplastics": {
             "title": "Microplastiques",
             "mainContent": "<p>Les microplastiques sont particulièrement présents dans le saumon en raison de la bioaccumulation dans la chaîne alimentaire et de l'affinité des plastiques pour les graisses.</p>",
-            "content": "<p>Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques.</p><p>Un saumon de 5 kg contient environ 532 microplastiques. Une personne française consommant 4.4 kg de saumon par an ingère environ 468 microplastiques par an sur un total de 97,500 provenant de différentes sources.</p>",
+            "content": "<p>Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques.</p><p>Un saumon de 5 kg contient environ 532 microplastiques. Une personne française consommant 4,2 kg de saumon par an ingère environ 468 microplastiques par an sur un total de 97,500 provenant de différentes sources.</p>",
             "image": "fr/microplastic.svg",
             "altImage": "532 microplastiques par saumon (sorry on n'en a mis que 30).",
             "meta": {
@@ -208,7 +208,7 @@
         }
       },
       "social": {
-        "title": "Justice social",
+        "title": "Justice sociale",
         "blocks": {
           "social-carbon": {
             "title": "Détournement des ressources et injustice alimentaire",
