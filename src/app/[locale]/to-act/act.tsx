@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
@@ -10,6 +10,7 @@ import JoinBlock from "@/components/JoinBlock";
 
 const Act = () => {
   const t = useTranslations("act");
+  const locale = useLocale();
 
   return (
     <>
@@ -110,7 +111,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/seastemik-report.png",
+          src: `/images/act/seastemik-report-${locale}.png`,
         }}
       />
 
