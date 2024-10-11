@@ -1,0 +1,242 @@
+{
+  "dashboard": {
+    "meta": {
+      "title": "Dashboard"
+    },
+    "title": "The numbers behind the story",
+    "sections": {
+      "intro": {
+        "title": "Macro trends",
+        "blocks": {
+          "salmon-collapse": {
+            "title": "Wild Altantic salmon collapse",
+            "mainContent": "<p>The Atlantic salmon was added to the IUCN Red List of Threatened Species in December 2023, its status changed from 'Least Concern' to 'Near Threatened'.</p>",
+            "content": "<p>The causes of the species' decline are multiple: overfishing at sea, degradation of freshwater habitats, construction of numerous migration barriers, and the effects of climate change that alter their environments, impacting their growth and survival rates.</p><p>Farming activities are also identified as one of the most significant threats to wild populations (marine pollution, spread of diseases, and escapes of farmed salmon resulting in genetic cross-breeding that disrupts the ability of wild salmon to survive in their natural habitat).</p>",
+            "source": "",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/discrease_wild_salmon_1.1.csv.zip",
+            "artifact": "discrease_wild_salmon_1.1.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/discrease_wild_salmon_1.1.png"
+          },
+          "hyper-growth": {
+            "title": "Hyper-growth of Atlantic Salmon farming",
+            "mainContent": "<p>Salmon production has experienced unprecedented growth.</p>",
+            "content": "<p>Nearly nonexistent 30 years ago, it surged to three million tonnes of salmon in 2021, equivalent to the farming and slaughtering of 600 million salmon.</p><p>Current farmed salmon production is 115 times greater than the largest quantity of salmon ever caught in a single year.</p>",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/hyper_growth_salmon_farming_1.2.csv.zip",
+            "artifact": "hyper_growth_salmon_farming_1.2.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/hyper_growth_salmon_farming_1.2.png"
+          },
+          "top-10": {
+            "title": "Main countries producing farmed salmon",
+            "mainContent": "<p>Salmons need cold water to grow. Therefore, production is concentrated in certain countries located near the North and South Poles.</p>",
+            "content": "<p>Four countries alone account for 90% of the world's salmon production.</p>",
+            "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3.csv.zip",
+            "artifact": "top_10_countries_producing_1.3.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_countries_producing_1.3.png",
+            "subblock": {
+              "title": "Evolution of salmon farming by country",
+              "source": "https://www.fao.org/fishery/en/collection/aquaculture?lang=en",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/evolution_salmon_farming_country_iso_1.4.csv.zip",
+              "artifact": "evolution_salmon_farming_country_iso_1.4.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/evolution_salmon_farming_country_iso_1.4.png"
+            }
+          },
+          "intro-consumption": {
+            "title": "Main countries consuming salmon",
+            "mainContent": "<p>The rise in salmon production results from an increase in the consumption of this fish.</p>",
+            "content": "<p>In 2021, the United States was the largest consumer of salmon, with a consumption approaching one million tons, followed by Russia and Japan, with consumption around 500,000 tons. European countries follow, with France being the fourth largest consumer of salmon in 2021. Western countries have a per capita consumption of around 3 to 4 kilograms of salmon, while countries of the South such as Brazil have very low per capita consumption.<p>",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5.csv.zip",
+            "artifact": "top_15_countries_consuming_1.5.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_15_countries_consuming_1.5.png"
+          }
+        }
+      },
+      "company": {
+        "title": "Producers",
+        "blocks": {
+          "top-comp": {
+            "title": "Main producers of salmon in marine cages",
+            "mainContent": "<p>Small artisanal salmon farms have given way to industrial aquaculture.</p>",
+            "content": "<p>In a few decades, the market has become dominated by a handful of multinationals.</p><p>MOWI, formerly Marine Harvest, is the leader in the sector. The company operates in 25 countries.</p>",
+            "source": "",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_companies_producing_2.1.csv.zip",
+            "artifact": "top_10_companies_producing_2.1.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_companies_producing_2.1.png"
+          },
+          "top-land": {
+            "title": "The new threat: land-based salmon farms",
+            "mainContent": "<p>In 2021, the combined projected production capacity of land-based salmon farms amounted to 2.2 million tonnes, nearly equaling the global production of salmon in marine farms (2.7 million tonnes).</p>",
+            "content": "<p>Despite technological and profitability challenges, the industry has been investing heavily in land-based farms, with numerous projects announced over the past five years. The largest producer is Pure Salmon, based in the United Arab Emirates, with an ambition to produce 260,000 tonnes per year and projects in at least eight countries, including France.</p>",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_ras_companies_2.3.csv.zip",
+            "artifact": "top_10_ras_companies_2.3.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_ras_companies_2.3.png"
+          },
+          "future-land-based": {
+            "title": "The future of land-based salmon farms",
+            "mainContent": "<p>Land-based salmon farms use Recirculating Aquaculture Systems (RAS), a new technology aimed at raising salmon throughout their life cycle in closed tanks built on land.</p>",
+            "content": "<p>These systems are highly energy-intensive (around 100 GWh/year for a factory farm producing 10,000 tonnes per year, equivalent to the consumption of about 43,000 French people) and therefore have a high carbon footprint (between 2 and 14 kg CO2 per kg of salmon produced).</p><p>For profitability reasons, excessive densities are planned in land-based cages: between 50 and 150 kg of salmon per cubic meter, a density up to 5 times higher than in marine cage farms.</p><p>The technology is not yet fully mastered: currently, no operating plant produces more than 5,000 tonnes, and technical incidents are frequent. A plant in Denmark experienced five such incidents, resulting from technical failures (pollution with iron chloride in the fjord, complete factory fire, leading to air and water pollution).</p>",
+            "data": [
+              {
+                "title": "+91.1% in production",
+                "content": "Combined land-based farm projects could represent an increase of more than 91% in global salmon production."
+              },
+              {
+                "title": "233 billion fishes",
+                "content": "Up to 233 billion wild fish, known as forage fish, will need to be captured each year to produce the flour and oil needed to feed these new salmon."
+              },
+              {
+                "title": "436,000 tons of soy",
+                "content": "These same feeds contain soy. More than 1,000,000 hectares will be necessary for the production of this soya, the equivalent of 1.5 million football fields, or an area larger than that of Corsica, France."
+              },
+              {
+                "title": "59.78 TWh of electricity",
+                "content": "The energy necessary to filter, cool, and circulate the water in these future land-based farms represents the production of up to 10 nuclear reactors or the consumption of 38 million European people."
+              },
+              {
+                "title": "16.9 million tons of CO2",
+                "content": "The emissions corresponding to the farming of these new salmon could amount to more than 16.9 million tons of CO2 per year, or more than 7 kg of CO2 per kg of salmon produced."
+              }
+            ],
+            "meta": {
+              "image1": "/dashboard/images/en/land_based_farms_electricity.png",
+              "infoImage1": "consumption of electricity",
+              "image2": "/dashboard/images/en/land_based_farms_carbon.png",
+              "infoImage2": "carbon footprint",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/ras_projects_for_map_2.4.csv.zip",
+              "dataArtifact": "ras_projects_for_map_2.4.csv.zip"
+            }
+          }
+        }
+      },
+      "biodiversity": {
+        "title": "Biodiversity",
+        "blocks": {
+          "deforestation": {
+            "title": "Deforestation",
+            "mainContent": "<p>The Norwegian government's goal was to increase farmed salmon production by 400% by 2050.</p>",
+            "content": "<p>This would require the expansion of 11,000 km² for soybean production in Brazil, which is equivalent to the legal deforestation of the Amazon in 2022.</p>",
+            "image": "en/deforestation.svg",
+            "altImage": "In 2020 in Norway, the equivalent of 2154km² of soybean plantations, or 20 times the size of Paris, is needed to produce 1562415 tonnes of salmon.",
+            "meta": {
+              "image": "/dashboard/images/en/deforestation.png",
+              "source": ""
+            }
+          },
+          "escapes-rates": {
+            "title": "Escapes",
+            "mainContent": "<p>From 2018 to 2022, over 4 million salmon escaped from the farms of the 11 largest producers.</p>",
+            "content": "<p>These escaped farmed salmon pose numerous ecological problems, including competition for resources with wild populations, introduction of diseases and parasites, and the risk of hybridizing with wild salmon, threatening their genetic resilience.</p><p>SalMar and Bakkafrost present elevated escape rates, with respectively 4.1% and 2.7% of their salmons that fled out of the marine cages.</p>",
+            "image": "en/escape.svg",
+            "altImage": "More than 4 million fish have escaped from marine cages (SalMar, Mowi, Bakkarfrost and others) since 2018.",
+            "meta": {
+              "image": "/dashboard/images/en/escape.png",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/escapes_marine_cages_3.5.csv.zip",
+              "dataArtifact": "escapes_marine_cages_3.5.csv.zip"
+            }
+          }
+        }
+      },
+      "health": {
+        "title": "Human health",
+        "blocks": {
+          "antibiotic-conso": {
+            "title": "Antibiotics consumption",
+            "mainContent": "<p>While Norway claims that 99% of its aquaculture is antibiotic-free, other countries are not so virtuous.</p>",
+            "content": "<p>In Chile, the use of antibiotics by the 17 largest producers has increased by one-third since the COVID-19 crisis, reaching over 460 tonnes in 2021. This amount of antibiotics used corresponds to a dose of 35 grams, or 140 pills, per person.</p>",
+            "image": "en/microplastic-1.svg",
+            "altImage": "The main producers of Chile used 460 tonnes of antibiotics in marine cages in 2021, the equivalent of 35g for a 74kg human.",
+            "meta": {
+              "image": "/dashboard/images/en/antibiotics.png",
+              "source": "spanish"
+            }
+          },
+          "microplastics": {
+            "title": "Microplastic",
+            "mainContent": "<p>Microplastics are particularly prevalent in salmon due to bioaccumulation in the food chain and the affinity of plastics for fats.</p>",
+            "content": "<p>This issue is especially significant for farmed salmon, which are considerably fattier and live in plastic-rich environments.</p><p>A 5 kg salmon contains approximately 532 microplastics. A French person consuming 4.2 kg of salmon annually ingests about 468 microplastics per year, out of a total of 97,500 from various sources.</p>",
+            "image": "en/microplastic.svg",
+            "altImage": "532 microplastics per salmon (sorry, we only put 30).",
+            "meta": {
+              "image": "/dashboard/images/en/microplastic.png",
+              "source": ""
+            }
+          }
+        }
+      },
+      "animals": {
+        "title": "Animal welfare",
+        "blocks": {
+          "stress-onshore": {
+            "title": "Density / stress in land-based farms",
+            "mainContent": "<p>The density of salmon is up to five times higher in land-based factory farms compared to farms in marine cages, already overcrowded.</p>",
+            "content": "<p>This is for profitability reasons and has disastrous consequences: mass mortality due to pathogens and higher stress levels.</p>",
+            "image": "en/density.svg",
+            "altImage": "4 salmon in the equivalent of a bathtub of water. This is the density required for land-based factories to be profitable.",
+            "meta": {
+              "image": "/dashboard/images/en/density.png",
+              "source": "anglais"
+            }
+          },
+          "mortality-rates": {
+            "title": "Mortality rates",
+            "mainContent": "<p>Mortality rates vary significantly between producers and from year to year, with exceptionally high rates reaching up to 20% in some years. </p>",
+            "content": "<p>MOWI, the largest producer of farmed salmon, had an average mortality rate of 13.4% between 2012 and 2022. By comparison, intensive farming of cattle, pigs, and chickens typically shows mortality rates between 1% and 5%.</p>",
+            "meta": {
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4.csv.zip",
+              "dataArtifact": "mortality_rates_4.4.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4.png"
+            }
+          }
+        }
+      },
+      "climate": {
+        "title": "Climate",
+        "blocks": {
+          "carbon-bomb": {
+            "title": "CO2 emissions",
+            "mainContent": "<p>The salmon industry emitted approximately 16 million tonnes of CO2e in 2021. This is very close to the global CO<sub>2</sub> emissions of a country like Croatia.</p>",
+            "content": "<p>This also represents the maximum emissions that could be emitted by 8 million people by 2050 in order to limit the global temperature increase to 2°C.</p><p>About 90% of these emissions occur upstream and downstream of production, particularly from fish feed and transportation.</p>",
+            "image": "en/carbon_emissions.svg",
+            "altImage": "Distribution of emissions: 90.2% indirect emissions, 7.4% direct emissions, 2.39% electricity.",
+            "meta": {
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
+              "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
+              "image": "/dashboard/images/fr/carbon_emissions.png"
+            }
+          }
+        }
+      },
+      "social": {
+        "title": "Social Justice",
+        "blocks": {
+          "social-carbon": {
+            "title": "Diversion of resources and food injustice",
+            "mainContent": "<p>In 2020, approximately 4% of all fish caught worldwide were used to feed farmed Atlantic salmon. Since salmon are carnivorous, they require fishmeal for their diet.</p>",
+            "content": "<p>This type of overfishing has had numerous negative social impacts, such as in Mauritania and Gambia, where the quantity of wild fish has been reduced. Norway annually fishes or imports 2 million tons of wild fish, including 123,000 to 144,000 tons from West African waters. This volume could satisfy the annual nutritional needs of 2.5 to 4 million people in the region, more than the population of Gambia (2.7 million) and nearly the total population of Mauritania (4.7 million).</p><p>Global annual fish catches reached 90 million tons in 2020, with the vast majority intended for human consumption. Approximately 10% is used for global fishmeal production, feeding the aquaculture sector.</p><p> Insect flours, considered as a potential replacement for fish meal, have yet to demonstrate their environmental relevance.</p>",
+            "image": "en/social_fishing.svg",
+            "altImage": "Approximately 10% of global fishing is used for the production of fish meal and oil to feed farmed fish (aquaculture). Fish meal and oils for other sectors and other uses (20%). Human consumption (70%).",
+            "meta": {
+              "source": "",
+              "image": "/dashboard/images/en/social_fishing.png",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/social_mill_fishing_6.csv.zip",
+              "dataArtifact": "social_mill_fishing_6.csv.zip"
+            }
+          }
+        }
+      },
+      "alternative": {
+        "title": "Alternatives",
+        "blocks": {
+          "alternatives": { "title": "Nutrition matrix" }
+        }
+      }
+    },
+    "calculator": {
+      "salmon": "slaughtered salmon",
+      "fish": "forage fish caught to feed salmon",
+      "companies": "tonnes of CO2 emitted by industry",
+      "money": "euros of turnover for market leading companies"
+    }
+  }
+}

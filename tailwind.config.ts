@@ -11,7 +11,8 @@ export default {
       },
       colors: {
         purple1: "#3b0764",
-        red1: "#F34620",
+        red2: "#F34620",
+        red1: "#E13212",
         yellow1: "#EBF97B",
         pink1: "#FEEAE9",
         brown1: "#F3E8D8",
@@ -36,8 +37,7 @@ export default {
       },
       screens: {
         xs: "500px",
-        "2xl": "1530px",
-        "3xl": "2000px",
+        "3xl": "1736px",
       },
       keyframes: {
         flicker: {

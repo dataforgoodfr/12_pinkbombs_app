@@ -1,0 +1,242 @@
+{
+  "dashboard": {
+    "meta": {
+      "title": "Dashboard"
+    },
+    "title": "Les chiffres derrière l’histoire",
+    "sections": {
+      "intro": {
+        "title": "Tendances macro",
+        "blocks": {
+          "salmon-collapse": {
+            "title": "Effondrement des saumons atlantiques",
+            "mainContent": "<p>Le saumon atlantique est inscrit sur la liste rouge de l’UICN : depuis décembre 2023, son statut est passé de “préoccupation mineure” à “quasi-menacé”.</p>",
+            "content": "<p>Les causes du déclin de l’espèce sont multiples : la surpêche en mer, la dégradation des habitats d’eau douce et la construction de nombreux obstacles à la migration, les effets du réchauffement climatique qui modifie leurs environnements, impactant leurs taux de croissance et de survie.</p><p>Les activités d’élevage sont également identifiées comme une des menace parmi les plus importantes pesant sur les populations sauvages (pollution marine, diffusion de maladies, et évasions de saumons d’élevage entraînant des croisements “génétiques” perturbant la capacité des saumons sauvages à survivre dans leur habitat naturel).</p>",
+            "source": "anglais",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/discrease_wild_salmon_1.1_fr.csv.zip",
+            "artifact": "discrease_wild_salmon_1.1_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/discrease_wild_salmon_1.1_fr.png"
+          },
+          "hyper-growth": {
+            "title": "Hyper-croissance de l’élevage du saumon atlantique",
+            "mainContent": "<p>La production de saumon a connu une croissance sans précédent.</p>",
+            "content": "<p>Quasi inexistante il y a 30 ans, elle a bondi à trois millions de tonnes de saumons en 2021, soit l’équivalent de l’élevage et de l’abattage de 600 millions de saumons. La production actuelle de saumon d’élevage est 115 fois supérieure à la plus grande quantité de saumons jamais pêchée en une année.</p>",
+            "source": "https://www.fao.org/fishery/fr/collection/aquaculture",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/hyper_growth_salmon_farming_1.2_fr.csv.zip",
+            "artifact": "hyper_growth_salmon_farming_1.2_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/hyper_growth_salmon_farming_1.2_fr.png"
+          },
+          "top-10": {
+            "title": "Principaux pays producteurs de saumons d'élevage",
+            "mainContent": "<p>Les saumons ont besoin d’eaux froides pour croître. La production est donc concentrée dans certains pays situés proche des pôles Nord et Sud.</p>",
+            "content": "<p>Quatre pays représentent à eux seuls 90% de la production mondiale de saumons.</p>",
+            "source": "https://www.fao.org/fishery/fr/collection/aquaculture",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_countries_producing_1.3_fr.csv.zip",
+            "artifact": "top_10_countries_producing_1.3_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_countries_producing_1.3_fr.png",
+            "subblock": {
+              "title": "Evolution de l'élevage de saumons par pays",
+              "source": "https://www.fao.org/fishery/fr/collection/aquaculture",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/evolution_salmon_farming_country_iso_1.4_fr.csv.zip",
+              "artifact": "evolution_salmon_farming_country_iso_1.4_fr.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/evolution_salmon_farming_country_iso_1.4_fr.png"
+            }
+          },
+          "intro-consumption": {
+            "title": "Les principaux consommateurs de saumons",
+            "mainContent": "<p>La hausse de la production de saumons résulte d’une augmentation de la consommation de ces poissons.</p>",
+            "content": "<p>En 2021, les États-Unis étaient les plus grands consommateurs de saumons, avec une consommation annuelle s’approchant du million de tonnes, suivis par la Russie et le Japon avec environ  500,000 tonnes consommées par an. Les pays européens arrivent  ensuite, avec la France au premier rang : en 2021, elle est le premier consommateur de saumons en Europe, et le quatrième pays le plus consommateur de saumons au monde.La consommation des pays occidentaux se situe aux alentours de 3 à 4 kilos de saumons par an et par habitant·e, tandis que des pays des Suds comme le Brésil présentent des consommations par habitant·e très faibles.<p>",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_15_countries_consuming_1.5_fr.csv.zip",
+            "artifact": "top_15_countries_consuming_1.5_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_15_countries_consuming_1.5_fr.png"
+          }
+        }
+      },
+      "company": {
+        "title": "Producteurs",
+        "blocks": {
+          "top-comp": {
+            "title": "Principaux producteurs de saumons en cages marines",
+            "mainContent": "<p>Les petites fermes salmonicoles artisanales ont cédé la place à l’aquaculture industrielle.</p>",
+            "content": "<p>En quelques décennies, le marché est devenu dominé par une poignée de multinationales.</p><p>Mowi, anciennement Marine Harvest, est leader du secteur. L'entreprise est présente dans 25 pays.</p>",
+            "source": "anglais",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_companies_producing_2.1_fr.csv.zip",
+            "artifact": "top_10_companies_producing_2.1_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_companies_producing_2.1_fr.png"
+          },
+          "top-land": {
+            "title": "La nouvelle menace: les fermes-usines de saumons à terre",
+            "mainContent": "<p>En 2021, la capacité de production théorique combinée des élevages de saumons en cages terrestres s’élève à 2,2 millions de tonnes, soit presque autant que la production mondiale de saumons dans les élevages en cages marines (2,7 millions de tonnes).</p>",
+            "content": "<p>Malgré les défis technologiques et de rentabilité, l'industrie investit massivement dans les fermes-usines terrestres, avec un grand nombre de projets annoncés au cours des 5 dernières années. Le plus grand producteur est Pure Salmon, basé aux Émirats Arabes Unis, avec une ambition de production de 260,000 tonnes par an et des projets dans au moins huit pays, dont la France.</p>",
+            "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/top_10_ras_companies_2.3_fr.csv.zip",
+            "artifact": "top_10_ras_companies_2.3_fr.csv.zip",
+            "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/top_10_ras_companies_2.3_fr.png"
+          },
+          "future-land-based": {
+            "title": "Le futur des fermes-usines de saumons à terre",
+            "mainContent": "<p>Les fermes-usines à terre utilisent la technologie RAS (Recycled Aquaculture Systems), une nouvelle technologie qui a pour but d’élever des saumons sur l’ensemble de leur cycle de vie dans des bassins fermés construits à terre.</p>",
+            "content": "<p>Ces systèmes sont ultra-énergivores (environ 100 GWh/an pour une ferme-usine produisant 10 000 tonnes par an, soit l’équivalent de la consommation d’environ 43 000 français⸱e⸱s) et donc à forte empreinte carbone (entre 2 et 14 kg CO2 par kg de saumon produit).</p><p>Pour une question de rentabilité, des densités excessives sont prévues dans les cages terrestres : entre 50 et 150 kg de saumons par mètre cube, soit une densité jusqu’à 5 fois plus élevée que dans les élevages en cages marines.</p><p>La technologie n’est pas encore totalement maîtrisée : actuellement, aucune usine en fonctionnement ne produit plus de 5 000 tonnes et les incidents techniques sont fréquents. Une usine au Danemark en a subi cinq, résultant de défaillances techniques (pollution au chlorure de fer dans le fjord, incendie complet de son usine, engendrant pollution de l’air et de l’eau).</p>",
+            "data": [
+              {
+                "title": "+91.1% de production",
+                "content": "L’ensemble des fermes-usines à terre pourraient représenter une augmentation de plus de 91% de la production mondiale de saumons"
+              },
+              {
+                "title": "233 milliards de poissons",
+                "content": "Jusqu’à 233 milliards de poissons sauvages, dits poissons fourrage, devront être pêchés chaque année pour produire la farine et l’huile nécessaires pour nourrir ces nouveaux saumons"
+              },
+              {
+                "title": "436 000 tonnes de soja",
+                "content": "Ces mêmes aliments contiennent du soja. Plus de 1,000,000 d’hectares seront nécessaires à la production de ce soja, soit l’équivalent de 1.5 millions de terrains de football"
+              },
+              {
+                "title": "59.78 TWh d'électricité",
+                "content": "L'énergie nécessaire pour filtrer, refroidir et faire circuler l’eau de ces futures fermes-usines à terre représentera la production de jusqu'à 10 réacteurs nucléaires ou la consommation de 26 millions de Français⸱e⸱s"
+              },
+              {
+                "title": "16.9 millions de tonnes de CO2",
+                "content": "L’élevage de ces nouveaux saumons pourrait émettre jusqu’à 16.9 millions de tonnes de CO2 par an, soit plus de 7 kg de CO2 par kg de saumon produit en moyenne"
+              }
+            ],
+            "meta": {
+              "image1": "/dashboard/images/fr/fermes_usines_terrestres_electricite.png",
+              "infoImage1": "consommation d’électricité",
+              "image2": "/dashboard/images/fr/fermes_usines_terrestres_carbon.png",
+              "infoImage2": "empreinte carbone",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/data/ras_projects_for_map_2.4_fr.csv",
+              "dataArtifact": "ras_projects_for_map_2.4_fr.csv.zip"
+            }
+          }
+        }
+      },
+      "biodiversity": {
+        "title": "Biodiversité",
+        "blocks": {
+          "deforestation": {
+            "title": "Déforestation",
+            "mainContent": "<p>La volonté du gouvernement norvégien était d'augmenter la production de saumons d’élevage de 400% d'ici 2050.</p>",
+            "content": "<p>Cela nécessiterait l'utilisation de 11 000 km² pour la production de soja au Brésil. Cela équivaut à la déforestation totale légale de l’Amazonie en 2022.</p>",
+            "image": "fr/deforestation.svg",
+            "altImage": "En 2020 en Norvège, il faut l’équivalent de 2154km² de plantation de Soja, soit 20 fois Paris pour produire 1562415 tonnes de saumons.",
+            "meta": {
+              "image": "/dashboard/images/fr/deforestation.png",
+              "source": "anglais"
+            }
+          },
+          "escapes-rates": {
+            "title": "Évasions",
+            "mainContent": "<p>De 2018 à 2022, plus de 4 millions de saumons se sont échappés des élevages des 11 plus grands producteurs.</p>",
+            "content": "<p>Ces saumons échappés d'élevages posent de nombreux problèmes écologiques, notamment par la compétition qu'ils induisent sur les ressources avec les populations sauvages, par l'introduction de maladies et de parasites, et par le risque d'hybrider avec les saumons sauvages, menaçant leur résilience génétique.</p><p>SalMar et Bakkafrost présentent des taux d'évasion élevés, avec respectivement 4.1% et 2.7% de leurs saumons qui se sont enfuis des cages marines.</p>",
+            "image": "fr/escape.svg",
+            "altImage": "Plus de 4 millions de poissons se sont échappés des cages marines (SalMar, Mowi, Bakkarfrost et autres) depuis 2018.",
+            "meta": {
+              "image": "/dashboard/images/fr/evasions.png",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/escapes_marine_cages_3.5.csv.zip",
+              "dataArtifact": "escapes_marine_cages_3.5.csv.zip"
+            }
+          }
+        }
+      },
+      "health": {
+        "title": "Santé humaine",
+        "blocks": {
+          "antibiotic-conso": {
+            "title": "Consommation d'antibiotiques",
+            "mainContent": "<p>Si la Norvège prétend que 99% de son aquaculture est exempte d’antibiotiques, d'autres pays ne sont pas aussi vertueux.</p>",
+            "content": "<p>Au Chili, l'utilisation d'antibiotiques des 17 principaux producteurs a augmenté d'un tiers depuis la crise du covid pour atteindre plus de 460 tonnes en 2021. Cette quantité d'antibiotiques utilisés correspondrait à une dose de 35 g, soit 140 pilules pour une personne.</p>",
+            "image": "fr/microplastic-1.svg",
+            "altImage": "Les principaux producteurs du Chili ont utilisé 460 tonnes d’antibiotiques dans les cages marines en 2021 soit l’équivalent de 35g pour une personne de 74kg.",
+            "meta": {
+              "image": "/dashboard/images/fr/antibiotics.png",
+              "source": "espagnol"
+            }
+          },
+          "microplastics": {
+            "title": "Microplastiques",
+            "mainContent": "<p>Les microplastiques sont particulièrement présents dans le saumon en raison de la bioaccumulation dans la chaîne alimentaire et de l'affinité des plastiques pour les graisses.</p>",
+            "content": "<p>Cela affecte surtout les saumons d'élevage, qui sont nettement plus gras et vivent dans des environnements riches en plastiques.</p><p>Un saumon de 5 kg contient environ 532 microplastiques. Une personne française consommant 4,2 kg de saumon par an ingère environ 468 microplastiques par an sur un total de 97,500 provenant de différentes sources.</p>",
+            "image": "fr/microplastic.svg",
+            "altImage": "532 microplastiques par saumon (sorry on n'en a mis que 30).",
+            "meta": {
+              "image": "/dashboard/images/fr/microplastic.png",
+              "source": "anglais"
+            }
+          }
+        }
+      },
+      "animals": {
+        "title": "Condition animale",
+        "blocks": {
+          "stress-onshore": {
+            "title": "Densité / stress dans une ferme-usine à terre",
+            "mainContent": "<p>La densité de saumons est jusqu’à cinq fois plus élevée dans les fermes-usines à terre par rapport aux élevages en mer déjà trop denses.</p>",
+            "content": "<p>Ceci pour des raisons de rentabilité et avec des conséquences désastreuses : mortalité de masse liée à des pathogènes, plus hauts niveaux de stress.</p>",
+            "image": "fr/density.svg",
+            "altImage": "4 saumons dans l’équivalent d’une baignoire d’eau. C’est la densité requise pour que les usines à terre soient rentables.",
+            "meta": {
+              "image": "/dashboard/images/fr/density.png",
+              "source": "anglais"
+            }
+          },
+          "mortality-rates": {
+            "title": "Taux de mortalité",
+            "mainContent": "<p>Les taux de mortalité varient considérablement d'un producteur à l'autre et d'une année à l'autre. Des taux exceptionnellement élevés sont observés, atteignant 20% certaines années.</p>",
+            "content": "<p>MOWI, le plus grand producteur de saumons d’élevage, présente un taux moyen de mortalité de 13.4% entre 2012 et 2022. A titre de comparaison, les élevages intensifs de bovins, porcins et de poulets affichent des taux de mortalité généralement situés entre 1% et 5%.</p>",
+            "meta": {
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/mortality_rates_4.4_fr.csv.zip",
+              "dataArtifact": "mortality_rates_4.4_fr.csv.zip",
+              "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/mortality_rates_4.4_fr.png"
+            }
+          }
+        }
+      },
+      "climate": {
+        "title": "Climat",
+        "blocks": {
+          "carbon-bomb": {
+            "title": "Émissions de CO2",
+            "mainContent": "<p>L'industrie du saumon a émis en 2021 environ 16 millions de tonnes de C02 équivalent, soit près de l'ensemble des émissions de CO<sub>2</sub> d'un pays comme la Croatie.</p>",
+            "content": "<p>Cela représente également l'équivalent des émissions maximales que pourront émettre 8 millions de personnes à l’horizon 2050 afin de limiter l’augmentation des températures mondiales à 2°C.</p><p>Environ 90% de ces émissions sont émises en amont et en aval de la phase de production à proprement parler, et en particulier par l'alimentation des poissons et par leur transport.</p>",
+            "image": "fr/carbon_emissions.svg",
+            "altImage": "Distribution des émissions: 90.2% émissions indirectes, 7.4% émissions directes, 2.39% électricité.",
+            "meta": {
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
+              "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
+              "image": "/dashboard/images/fr/carbon_emissions.png"
+            }
+          }
+        }
+      },
+      "social": {
+        "title": "Justice sociale",
+        "blocks": {
+          "social-carbon": {
+            "title": "Détournement des ressources et injustice alimentaire",
+            "mainContent": "<p>En 2020, environ 4% de tous les poissons capturés dans le monde sont utilisés pour nourrir le saumon atlantique d’élevage. Le saumon étant carnivore, il est nécessaire de le nourrir avec des farines à base de poissons.</p>",
+            "content": "<p>Ce type de surpêche a eu de nombreux impacts sociaux négatifs, comme en Mauritanie et en Gambie, où la quantité de poissons sauvages a été réduite. La Norvège pêche ou importe chaque année 2 millions de tonnes de poissons sauvages, dont 123 000 à 144 000 tonnes depuis les eaux d’Afrique de l’Ouest. Ce volume permettrait de satisfaire les besoins nutritionnels annuels de 2,5 à 4 millions de personnes dans la région, soit plus que la population de la Gambie (2,7 millions) et près de la population totale de la Mauritanie (4,7 millions).</p><p>Les captures annuelles mondiales de poissons ont atteint 90 millions de tonnes en 2020, la grande majorité étant destinée à la consommation humaine. Environ 10% est utilisé pour la production mondiale de farine de poissons, alimentant le secteur de l'aquaculture.</p><p> Les farines d'insectes, préssenties pour remplacer les farines de poissons, n'ont pas encore prouvé leur pertinence sur le plan environnemental.</p>",
+            "image": "fr/social_fishing.svg",
+            "altImage": "Environ 10% de la pêche mondiale est utilisée pour la production de farines et huiles de poissons pour nourrir les poissons d'élevage (aquaculture). Farines pour autres secteurs et autres usages (20%), consommation humaine (70%).",
+            "meta": {
+              "source": "anglais",
+              "image": "/dashboard/images/fr/social_fishing.png",
+              "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/social_mill_fishing_6_fr.csv.zip",
+              "dataArtifact": "social_mill_fishing_6_fr.csv.zip"
+            }
+          }
+        }
+      },
+      "alternative": {
+        "title": "Alternatives",
+        "blocks": {
+          "alternatives": { "title": "Matrice de nutrition" }
+        }
+      }
+    },
+    "calculator": {
+      "salmon": "saumons abattus",
+      "fish": "poissons fourrages pêchés pour alimenter les saumons",
+      "companies": "tonnes de CO2 émises par l'industrie",
+      "money": "euros de chiffre d’affaires pour les entreprises leadeurs du marché"
+    }
+  }
+}

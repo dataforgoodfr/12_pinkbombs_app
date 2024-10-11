@@ -1,0 +1,51 @@
+{
+  "act": {
+    "meta": {
+      "title": "To act"
+    },
+    "title": "Good news: defusing the Pinkbombs is just a click away",
+    "company": {
+      "title": "I call on the responsible companies",
+      "content": "by sharing a pre-written information post that identifies them on Linkedin.",
+      "link": "Post on Linkedin",
+      "target": "https://www.linkedin.com/sharing/share-offsite/?url=https://pinkbombs.org/&text=Hey%20%40pure-salmon%2C%20en%20tant%20qu%27acteur%20majeur%20de%20l%27industrie%20du%20saumon%2C%20vous%20avez%20le%20pouvoir%20de%20changer%20vos%20pratiques%20et%20vous%20orienter%20vers%20proc%C3%A9d%C3%A9s%20plus%20%C3%A9thiques%20et%20respectueux%20de%20l%27environnement%20comme%20du%20saumon%20lui-m%C3%AAme.%0ASi%20vous%20voulez%20d%C3%A9couvrir%20la%20r%C3%A9alit%C3%A9%20de%20l%27industrie%20du%20saumon%2C%20allez%20visiter%20notre%20site%20%3A"
+    },
+    "territory": {
+      "title": "I say no to the salmon factory project on my territory",
+      "content": "The onshore salmon factory project called “Pure Salmon”, an initiative of the Singaporean investment fund 8F Asset Management, is under discussion near Bordeaux. Thanks to petitions signed by citizens, it was notably rejected in Pas-de-Calais and Brittany. Let's keep going!",
+      "link": "Sign the petition",
+      "target": "https://www.wesign.it/fr/environnement/non-a-lelevage-intensif-de-saumons-au-verdon-sur-mer"
+    },
+    "seastemik": {
+      "title": "I support Seastemik",
+      "content": "Seastemik is an association poum created in 2023 with the objective of accelerating our transition to a healthy Ocean. It raises awareness of the impacts of a food system that exploits the Ocean, supports citizen mobilizations, calls on politicians to get involved and supports the iodine revolution of companies by proposing positive solutions.<br />Every action counts! Join the wave of change and help Seastemik change the tide, for a <em>truly</em> living Ocean:",
+      "ctas": [
+        {
+          "label": "Donate on HelloAsso",
+          "target": "https://www.helloasso.com/associations/seastemik/formulaires/1"
+        },
+        {
+          "label": "Subscribe to the newsletter",
+          "target": "https://seastemik.org/newsletter"
+        },
+        {
+          "label": "Follow Seastemik",
+          "target": "https://seastemik.org/"
+        }
+      ]
+    },
+    "eat": {
+      "title": "I leave salmon off my plate",
+      "content": "Ready to set out to leave salmon in the oceans and rivers? <br />What objective seems achievable to you? Leave it in our intention box to help the community grow!",
+      "link": "I'm participating",
+      "target": "https://forms.gle/5kNG7BDeZBQmq6vY9",
+      "image": "/images/act/no-eat-salmon.jpeg"
+    },
+    "report": {
+      "title": "Educate yourself and share to act better",
+      "content": "Reading and sharing Seastemik's report on the salmon industry helps deconstruct the distorted popular perception of salmon consumption. Enjoy reading!",
+      "link": "Read our report",
+      "target": "https://seastemik.org/publications"
+    }
+  }
+}
