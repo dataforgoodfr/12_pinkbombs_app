@@ -119,13 +119,14 @@ const VideoSection = () => {
       <div className="max-w-[1500px] mx-auto">
         <div className="pt-[56.25%] relative">
           <iframe
-            src="https://player.vimeo.com/video/1016205305?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
             className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/YPVHTczRyuU?si=BZA4TaWW86aayGRp&rel=0"
             title="Pinkbombs"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           />
         </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
     </div>
   );
