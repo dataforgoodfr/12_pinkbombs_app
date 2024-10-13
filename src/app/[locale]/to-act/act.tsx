@@ -44,7 +44,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/stop-industry.jpg",
+          src: `/images/act/stop-industry-${locale}.jpg`,
         }}
       />
 
@@ -63,7 +63,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: t("eat.image"),
+          src: `/images/act/citizens-${locale}.jpg`,
         }}
       />
 
@@ -92,7 +92,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/support-seastemik.jpg",
+          src: `/images/act/support-seastemik-${locale}.jpg`,
         }}
       />
 
