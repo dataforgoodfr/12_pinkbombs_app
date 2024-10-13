@@ -19,16 +19,14 @@ const HomePage = () => {
 
   return (
     <>
-      <IntroBlock title="Coming soon" className="h-screen" />
-      {/*<IntroBlock title={t("title")} image="/images/salmon.svg" />
-
+      <IntroBlock title={t("title")} image="/images/salmon.svg" />
       <BombSection />
       <VideoSection />
       <ExplodeSection />
       <EditoSection />
       <BusinessSection />
 
-      <JoinBlock />*/}
+      <JoinBlock />
     </>
   );
 };
