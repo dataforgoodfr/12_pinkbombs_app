@@ -29,9 +29,9 @@ const MainLink = ({
       className={clsx(
         "group inline-flex items-center gap-2 p-4 lg:text-xl text-red1 font-secondary uppercase !no-underline rounded-xl tracking-widest border-2 border-red1 transition-colors ease-in-out duration-100",
         mode === "dark" &&
-          "bg-darkblue1 text-red1 hover:bg-red1 hover:text-darkblue1",
+          "bg-darkblue1 text-red2 hover:bg-red2 hover:text-darkblue1",
         mode === "base" && "bg-red1 text-white hover:bg-darkblue1",
-        mode === "light" && "text-red1 hover:bg-red1 hover:text-darkblue1",
+        mode === "light" && "text-red1 hover:bg-red2 hover:text-darkblue1",
         className,
       )}
       href={href}

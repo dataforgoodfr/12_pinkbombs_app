@@ -44,7 +44,7 @@
   /* #region  /**=========== Typography =========== */
   .h1,
   .prose h1 {
-    @apply font-secondary text-4xl md:text-6xl/none lg:text-[5.625rem]/none font-extrabold uppercase;
+    @apply font-secondary text-5xl md:text-6xl/none lg:text-[5.625rem]/none font-extrabold uppercase;
   }
 
   .h2,

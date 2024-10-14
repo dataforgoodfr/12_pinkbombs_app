@@ -13,17 +13,14 @@ const Footer = () => {
       <div className="max-w-[1500px] mx-auto">
         <div className="flex flex-wrap gap-6 lg:gap-12 lg:pt-12">
           <div className="flex flex-col w-full max-w-72">
-            <div className="flex place-items-center h-[100px]">
-              <Image
-                loading="lazy"
-                src="/images/seastemik.avif"
-                width={100}
-                height={100}
-                alt=""
-                className="object-contain"
-              />
-            </div>
-            <p className="h4 md:mb-4">Seastemik</p>
+            <Image
+              loading="lazy"
+              src="/images/seastemik.svg"
+              width={170}
+              height={100}
+              alt="Seastemik"
+              className="object-contain md:mb-4"
+            />
             <ShareLink href="https://seastemik.org/" name="Seastemik" />
             <ShareLink
               type="linkedin"
@@ -48,17 +45,14 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col w-full max-w-72">
-            <div className="h-[100px]">
-              <Image
-                loading="lazy"
-                src="/images/dataforgood.svg"
-                width={100}
-                height={100}
-                alt=""
-                className="object-contain"
-              />
-            </div>
-            <p className="h4 md:mb-4">Data for Good</p>
+            <Image
+              loading="lazy"
+              src="/images/dataforgood.svg"
+              width={150}
+              height={100}
+              alt="Data for Good"
+              className="object-contain md:mb-4"
+            />
             <ShareLink href="https://dataforgood.fr/" name="Data for Good" />
             <ShareLink
               type="twitter"
@@ -77,21 +71,20 @@ const Footer = () => {
             />
           </div>
 
-          <div className="self-end lg:ml-auto w-full md:w-auto">
+          <div className="self-top lg:ml-auto w-full md:w-auto">
+            <Image
+              loading="lazy"
+              src="/images/pinkbomb-seastemik-dataforgood.svg"
+              width={300}
+              height={100}
+              alt=""
+              className="object-contain mb-4"
+            />
             <MainLink
               label={t("footer.donation")}
               href="https://www.helloasso.com/associations/seastemik/formulaires/1"
               mode="base"
-              className="mb-4"
               isBlank
-            />
-            <Image
-              loading="lazy"
-              src="/images/pinkbomb-seastemik-dataforgood.svg"
-              width={400}
-              height={100}
-              alt=""
-              className="object-contain"
             />
           </div>
         </div>
