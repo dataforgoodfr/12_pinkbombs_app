@@ -38,11 +38,8 @@ const BombSection = () => {
   const t = useTranslations("story");
 
   return (
-    <section className="flex p-6 lg:p-12 min-h-[300px] h-screen text-red2 bg-darkblue1">
+    <section className="flex p-6 lg:p-12 min-h-[300px] h-screen text-red2 bg-darkblue1 bg-[url('/images/background-bombs.svg')] bg-[length:800px_400px] sm:bg-[length:1000px_500px] lg:bg-cover bg-no-repeat bg-center">
       <div className="grid grid-rows-[1fr, auto, 1fr] w-full">
-        <div className="row-start-2 self-center justify-self-center  px-6 max-w-[766px] max-h-full object-contain">
-          <Image src="/images/bombs.svg" alt="" width={766} height={616} />
-        </div>
         <div className="row-start-3 self-end items-left flex gap-2 items-end">
           <p className={clsx("h1", "max-w-[1500px] mx-auto w-full")}>
             {t("bomb")}
@@ -58,7 +55,7 @@ const ExplodeSection = () => {
 
   return (
     <section className="flex flex-col items-center justify-center p-6 lg:p-12 lg:pt-24 lg:pb-48 2xl:py-24 text-red2 bg-darkblue1 min-h-screen">
-      <h2 className="h1 mb-6 lg:mb-12 max-w-[1500px] mx-auto">
+      <h2 className="h1 mb-12 lg:mb-24 max-w-[1500px] mx-auto">
         {t("explode.intro")}
       </h2>
       <ul
