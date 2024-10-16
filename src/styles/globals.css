@@ -101,27 +101,31 @@
   }
 
   .prose h2 {
-    @apply text-red1 mt-16 lg:mt-20 mb-8;
+    @apply text-red1 pt-20 lg:pt-32;
   }
 
   .prose h3 {
-    @apply text-red1 mt-16 lg:mt-20 mb-8;
+    @apply text-red1 pt-16 lg:pt-28;
   }
 
   .prose h4 {
-    @apply text-red1 mt-12 lg:mt-16 mb-6;
+    @apply text-red1 pt-12 lg:pt-24;
   }
 
   .prose h5 {
-    @apply mt-8 lg:mt-10 mb-4 lg:mb-6;
+    @apply pt-8 lg:pt-10;
+  }
+
+  .prose p {
+    @apply pt-6;
   }
 
   .prose ul {
-    @apply list-disc mb-6;
+    @apply list-disc pt-6;
   }
 
   .prose ol {
-    @apply list-decimal mb-6;
+    @apply list-decimal pt-6;
   }
 
   .prose li {

@@ -189,7 +189,7 @@ const BusinessSection = () => {
   const t = useTranslations("story");
 
   return (
-    <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red2 bg-darkblue1">
+    <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-white bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
         <h3 className={clsx("h3", "mb-4 lg:mb-6 max-w-5xl m-auto text-center")}>
           {t("industry.title")}
