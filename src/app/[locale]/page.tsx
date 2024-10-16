@@ -228,7 +228,7 @@ const BusinessSection = () => {
         />
         <div className="flex justify-center">
           <Link
-            className="inline-flex justify-center gap-4 mt-6 lg:mt-12 p-4 min-w-40 lg:text-2xl text-red1 bg-darkblue1 font-secondary uppercase rounded-xl tracking-widest border-2 font-bold border-red1 hover:bg-red1 hover:text-darkblue1 transition-all ease-in-out duration-100"
+            className="inline-flex justify-center mt-6 lg:mt-12 p-4 lg:text-xl text-white bg-red1 font-secondary uppercase rounded-xl tracking-widest border-2 border-red1 hover:bg-darkblue1 hover:text-red1 transition-all ease-in-out duration-100"
             href="/to-act"
           >
             {t("industry.link")}
