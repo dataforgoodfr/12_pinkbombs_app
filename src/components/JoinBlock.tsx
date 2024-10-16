@@ -8,8 +8,8 @@ const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
 });
 
-import MetaChart from "@/components/MetaChart";
 import MainLink from "@/components/links/MainLink";
+import MetaChart from "@/components/MetaChart";
 
 type JoinBlockProps = {
   className?: string;
