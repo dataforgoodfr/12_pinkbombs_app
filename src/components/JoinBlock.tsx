@@ -8,7 +8,7 @@ const Chart = dynamic(() => import("@/components/Chart"), {
   ssr: false,
 });
 
-import PrimaryButton from "@/components/buttons/PrimaryButton";
+import MainLink from "@/components/links/MainLink";
 import MetaChart from "@/components/MetaChart";
 
 type JoinBlockProps = {
@@ -106,9 +106,10 @@ const JoinBlock = ({
 
             <p className="h3 mt-6 xl:mt-10">{t(`join.${baseText}.act`)}</p>
 
-            <PrimaryButton
+            <MainLink
               href="/to-act"
-              content={t(`join.${baseText}.link`)}
+              mode="base"
+              label={t(`join.${baseText}.link`)}
               className="mt-6 xl:mt-10"
             />
           </div>
