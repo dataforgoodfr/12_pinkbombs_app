@@ -43,7 +43,7 @@ const Navbar = () => {
         /to-act/.test(pathname) ? "bg-yellow1" : "bg-pink1",
       )}
     >
-      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6">
+      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
         <Link href="/">
           <Image
             src="/images/pinkbombs.svg"
