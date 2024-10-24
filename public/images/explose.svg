@@ -1,25 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: $$$/GeneralStr/196=Adobe Illustrator 27.6.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 859.4 756.1" style="enable-background:new 0 0 859.4 756.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#F34620;stroke-width:2;stroke-dasharray:4,8,12,16;}
-	.st1{fill:none;stroke:#F34620;stroke-width:2;stroke-dasharray:22,22;}
-	.st2{fill:none;stroke:#F34620;stroke-width:11;stroke-miterlimit:16;}
-	.st3{fill:#EBF97B;}
-	.st4{fill:#F34620;}
-</style>
-<g>
-	<path class="st0" d="M428.4,427c-0.8-66.1-32.7-353-178.5-364.5s-231,75.2-249,110"/>
-	<path class="st0" d="M428.4,427c-0.8-53.5-32.5-204-135.5-149c-129,68.9-173,177.8-191,206"/>
-	<path class="st1" d="M460.4,372C465.2,245.6,535,25.4,668.4,3.8C821-21,847.5,127.1,859.4,127.1"/>
-	<path class="st1" d="M461.4,360c4.8-126.4,107.8-283.9,236-241c142,47.5,130.1,197,142,197"/>
-	<path class="st1" d="M464.9,384.5c84.5-164,63.5-155.1,130.5-144S739.1,677.3,733.9,756"/>
-	<path class="st2" d="M289,618l73.4-24.9l-94-76.8l109.5,29.2l-48.7-131.2l97.2,94L457.9,358l32.4,147l95-85.9l-44.2,121.3
-		l97.2-18.7l-77.6,71.5l64.5,24.9"/>
-	<path class="st3" d="M516.3,603.2l47.4,14.7H357.8l46-14.7l-46-38l58.4,12.6l-21.7-61.6l48.5,45.2l17.4-65.3l15,65.3l48.5-45.2
-		l-20.3,61.6l57.3-12.6L516.3,603.2z"/>
-	<path class="st4" d="M479.3,611l16.1,7h-70l15.7-7l-15.7-18.1l19.8,6l-7.4-29.3l16.5,21.5l5.9-31.1l5.1,31.1l16.5-21.5l-6.9,29.3
-		l19.5-6L479.3,611z"/>
+<svg width="860" height="757" viewBox="0 0 860 757" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3394_45)">
+<path d="M428.4 427C427.6 360.9 395.7 74.0002 249.9 62.5002C104.1 51.0002 0.899994 172.5 0.899994 172.5" stroke="#F34620" stroke-width="2" stroke-dasharray="20 20"/>
+<path d="M401 484C401 484 382.5 272.5 299 255.5C165.107 228.241 101.9 484 101.9 484" stroke="#F34620" stroke-width="2" stroke-dasharray="20 20"/>
+<path d="M460.4 372C465.2 245.6 535 25.4 668.4 3.8C821 -21 859.4 127.1 859.4 127.1" stroke="#F34620" stroke-width="2" stroke-dasharray="20 20"/>
+<path d="M468.5 427C473.046 300.703 583.096 76.331 704.513 119.196C807.367 146.674 839 316.036 839 316.036" stroke="#F34620" stroke-width="2" stroke-dasharray="20 20"/>
+<path d="M486.5 488C486.5 488 511 226.517 595.4 240.5C717 260.646 733.9 756 733.9 756" stroke="#F34620" stroke-width="2" stroke-dasharray="20 20"/>
+<path d="M289 618L362.4 593.1L268.4 516.3L377.9 545.5L329.2 414.3L426.4 508.3L457.9 358L490.3 505L585.3 419.1L541.1 540.4L638.3 521.7L560.7 593.2L625.2 618.1" stroke="#F34620" stroke-width="11" stroke-miterlimit="16"/>
+<path d="M516.3 603.2L563.7 617.9H357.8L403.8 603.2L357.8 565.2L416.2 577.8L394.5 516.2L443 561.4L460.4 496.1L475.4 561.4L523.9 516.2L503.6 577.8L560.9 565.2L516.3 603.2Z" fill="#EBF97B"/>
+<path d="M479.3 611L495.4 618H425.4L441.1 611L425.4 592.9L445.2 598.9L437.8 569.6L454.3 591.1L460.2 560L465.3 591.1L481.8 569.6L474.9 598.9L494.4 592.9L479.3 611Z" fill="#F34620"/>
 </g>
+<defs>
+<clipPath id="clip0_3394_45">
+<rect width="859.4" height="756.1" fill="white"/>
+</clipPath>
+</defs>
 </svg>

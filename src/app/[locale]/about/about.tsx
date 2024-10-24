@@ -107,13 +107,29 @@ const ExplainSection = () => {
           dangerouslySetInnerHTML={{ __html: t.raw("who.content.last") }}
         />
       </div>
-
       <TitleBlock
         spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
         id="why-section-title"
         title={t("why.title")}
       />
-      <AboutSection content={t.raw("why.content")} />
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 px-6 md:px-12 max-w-[1580px] mx-auto">
+        <p
+          className="flex-1"
+          dangerouslySetInnerHTML={{ __html: t.raw("why.content") }}
+        />
+        <figure className="w-full lg:w-1/2">
+          <iframe
+            className="aspect-video w-full"
+            src="https://www.youtube.com/embed/YPVHTczRyuU?si=BZA4TaWW86aayGRp&rel=0"
+            title="Pinkbombs"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+          <figcaption className="italic text-sm">{t("why.video")}</figcaption>
+        </figure>
+      </div>
+      {/*<AboutSection content={t.raw("why.content")} />*/}
 
       <TitleBlock
         spaceY="mt-12 lg:mt-24 mb-4 lg:mb-8"
