@@ -20,7 +20,6 @@ const HomePage = () => {
     <>
       <IntroBlock title={t("title")} image="/images/salmon.svg" />
       <BombSection />
-      <VideoSection />
       <ExplodeSection />
       <EditoSection />
       <BusinessSection />
@@ -52,10 +51,7 @@ const ExplodeSection = () => {
   const t = useTranslations("story");
 
   return (
-    <section className="flex flex-col items-center justify-center p-6 lg:p-12 lg:pt-24 lg:pb-48 2xl:py-24 text-red2 bg-darkblue1 min-h-screen">
-      <h2 className="h1 mb-12 lg:mb-24 max-w-[1500px] mx-auto">
-        {t("explode.intro")}
-      </h2>
+    <section className="flex flex-col items-center justify-center px-6 pb-24 lg:px-12 lg:pb-48 text-red2 bg-darkblue1 min-h-screen">
       <ul
         className="
         grid grid-cols-1 xs:grid-cols-2 gap-8 list-none bg-no-repeat bg-center relative
@@ -102,25 +98,6 @@ const ExplodeSection = () => {
         </li>
       </ul>
     </section>
-  );
-};
-
-const VideoSection = () => {
-  return (
-    <div className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-red1 bg-pink1">
-      <div className="max-w-[1500px] mx-auto">
-        <div className="pt-[56.25%] relative">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/YPVHTczRyuU?si=BZA4TaWW86aayGRp&rel=0"
-            title="Pinkbombs"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-        </div>
-      </div>
-    </div>
   );
 };
 
@@ -190,9 +167,9 @@ const BusinessSection = () => {
   return (
     <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-white bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
-        <h3 className={clsx("h3", "mb-4 lg:mb-6 max-w-5xl m-auto text-center")}>
+        <h2 className={clsx("h3", "mb-4 lg:mb-6 max-w-5xl m-auto text-center")}>
           {t("industry.title")}
-        </h3>
+        </h2>
         <p className="mb-6 lg:mb-14 max-w-xl text-white m-auto text-center">
           {t("industry.content")}
         </p>
