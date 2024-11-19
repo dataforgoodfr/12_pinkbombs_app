@@ -84,7 +84,7 @@ const ExplainSection = () => {
               className="my-4"
             />
             <a
-              href="https://seastemik.org/"
+              href="https://dataforgood.fr/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-red1 underline hover:no-underline"
