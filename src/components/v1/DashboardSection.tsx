@@ -3,9 +3,9 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 
-import MetaChart, { MetaChartProps } from "@/components/MetaChart";
+import MetaChart, { MetaChartProps } from "@/components/v1/MetaChart";
 
-const Chart = dynamic(() => import("@/components/Chart"), {
+const Chart = dynamic(() => import("@/components/v1/Chart"), {
   ssr: false,
 });
 

@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import AboutSection from "@/components/AboutSection";
-import IntroBlock from "@/components/IntroBlock";
-import TitleBlock from "@/components/TitleBlock";
+import AboutSection from "@/components/v1/AboutSection";
+import IntroBlock from "@/components/v1/IntroBlock";
+import TitleBlock from "@/components/v1/TitleBlock";
 
 const About = () => {
   const t = useTranslations("about");

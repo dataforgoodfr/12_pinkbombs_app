@@ -5,15 +5,15 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import "@/lib/env";
 
-import Calculator from "@/components/Calculator";
-import DashboardSection from "@/components/DashboardSection";
-import IntroBlock from "@/components/IntroBlock";
-import JoinBlock from "@/components/JoinBlock";
-import MetaChart from "@/components/MetaChart";
-import { SummaryLinksProps } from "@/components/Summary";
-import TitleBlock from "@/components/TitleBlock";
+import Calculator from "@/components/v1/Calculator";
+import DashboardSection from "@/components/v1/DashboardSection";
+import IntroBlock from "@/components/v1/IntroBlock";
+import JoinBlock from "@/components/v1/JoinBlock";
+import MetaChart from "@/components/v1/MetaChart";
+import { SummaryLinksProps } from "@/components/v1/Summary";
+import TitleBlock from "@/components/v1/TitleBlock";
 
-const Chart = dynamic(() => import("@/components/Chart"), {
+const Chart = dynamic(() => import("@/components/v1/Chart"), {
   ssr: false,
 });
 

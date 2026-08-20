@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import MainLink from "@/components/links/MainLink";
+import MainLink from "@/components/v1/links/MainLink";
 
 type AboutSectionProps = {
   content?: string;

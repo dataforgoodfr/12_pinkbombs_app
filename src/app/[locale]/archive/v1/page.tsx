@@ -6,12 +6,12 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import Chart from "@/components/Chart";
-import Edito from "@/components/Edito";
-import IconCard from "@/components/IconCard";
-import IntroBlock from "@/components/IntroBlock";
-import JoinBlock from "@/components/JoinBlock";
-import MetaChart from "@/components/MetaChart";
+import Chart from "@/components/v1/Chart";
+import Edito from "@/components/v1/Edito";
+import IconCard from "@/components/v1/IconCard";
+import IntroBlock from "@/components/v1/IntroBlock";
+import JoinBlock from "@/components/v1/JoinBlock";
+import MetaChart from "@/components/v1/MetaChart";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -202,7 +202,7 @@ const BusinessSection = () => {
         <div className="flex justify-center">
           <Link
             className="inline-flex justify-center mt-6 lg:mt-12 p-4 lg:text-xl text-white bg-red1 font-secondary uppercase rounded-xl tracking-widest border-2 border-red1 hover:bg-darkblue1 hover:text-red1 transition-all ease-in-out duration-100"
-            href="/to-act"
+            href="/archive/v1/to-act"
           >
             {t("industry.link")}
           </Link>

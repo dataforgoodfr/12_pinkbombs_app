@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import MainLink from "@/components/links/MainLink";
+import MainLink from "@/components/v1/links/MainLink";
 
 type EditoProps = {
   className?: string;

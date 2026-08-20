@@ -26,6 +26,7 @@ import Footer from "@/components/v1/layout/Footer";
 import Navbar from "@/components/v1/layout/Navbar";
 
 import { locales } from "@/navigation";
+import GlobalLayout from "@/app/[locale]/layout";
 
 export async function generateMetadata({
   params: { locale },
@@ -66,7 +67,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function GlobalLayout({
+export default async function V1Layout({
   children,
   params: { locale },
 }: {
@@ -76,19 +77,24 @@ export default async function GlobalLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "layout" });
   return (
-    <html
-      lang={locale}
-      className={clsx(
-        barlow.variable,
-        montserrat.variable,
-        "scroll-smooth overflow-x-hidden",
-      )}
-    >
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <GlobalLayout params={{ locale }}>
+      <Navbar />
+      <main>
+        {children}
+        <a
+          href="#"
+          className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
+        >
+          <Image
+            src="/images/bottom.svg"
+            alt={t("top")}
+            width="40"
+            height="20"
+            className="w-8 aspect-square rotate-180"
+          />
+        </a>
+      </main>
+      <Footer />
+    </GlobalLayout>
   );
 }

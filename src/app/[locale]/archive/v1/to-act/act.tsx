@@ -4,9 +4,9 @@ import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import Edito from "@/components/Edito";
-import IntroBlock from "@/components/IntroBlock";
-import JoinBlock from "@/components/JoinBlock";
+import Edito from "@/components/v1/Edito";
+import IntroBlock from "@/components/v1/IntroBlock";
+import JoinBlock from "@/components/v1/JoinBlock";
 
 const Act = () => {
   const t = useTranslations("act");

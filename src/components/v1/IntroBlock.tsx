@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
-import Summary, { SummaryLinksProps } from "@/components/Summary";
+import Summary, { SummaryLinksProps } from "@/components/v1/Summary";
 
 const IntroBlock = ({
   className,

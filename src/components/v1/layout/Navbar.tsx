@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 // import Link from "next/link";
-import { basePathType, Link, locales, usePathname } from "../../navigation";
+import { basePathType, Link, locales, usePathname } from "@/navigation";
 
 type NavItemsProps = {
   link: string;
@@ -19,19 +19,19 @@ const Navbar = () => {
 
   const navItems: NavItemsProps = [
     {
-      link: "/",
+      link: "/archive/v1",
       text: t("nav.story"),
     },
     {
-      link: "/dashboard",
+      link: "/archive/v1/dashboard",
       text: t("nav.dashboard"),
     },
     {
-      link: "/to-act",
+      link: "/archive/v1/to-act",
       text: t("nav.act"),
     },
     {
-      link: "/about",
+      link: "/archive/v1/about",
       text: t("nav.about"),
     },
   ];
@@ -44,7 +44,7 @@ const Navbar = () => {
       )}
     >
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
-        <Link href="/">
+        <Link href="/archive/v1">
           <Image
             src="/images/pinkbombs.svg"
             alt="PinkBombs"

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import MainLink from "@/components/links/MainLink";
-import ShareLink from "@/components/links/shareLink";
+import MainLink from "@/components/v1/links/MainLink";
+import ShareLink from "@/components/v1/links/shareLink";
 
 const currentYear = new Date().getFullYear();
 
@@ -93,7 +93,7 @@ const Footer = () => {
           {t("footer.allRight")} - © {currentYear} Seastemik {t("footer.and")}{" "}
           Data for Good
           <br />
-          <a href="/legal-notice" className="underline hover:no-underline">
+          <a href="/archive/v1/legal-notice" className="underline hover:no-underline">
             {t("footer.legalNotice")}
           </a>
         </p>

@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const Chart = dynamic(() => import("@/components/Chart"), {
+const Chart = dynamic(() => import("@/components/v1/Chart"), {
   ssr: false,
 });
 
-import MainLink from "@/components/links/MainLink";
-import MetaChart from "@/components/MetaChart";
+import MainLink from "@/components/v1/links/MainLink";
+import MetaChart from "@/components/v1/MetaChart";
 
 type JoinBlockProps = {
   className?: string;
@@ -107,7 +107,7 @@ const JoinBlock = ({
             <p className="h3 mt-6 xl:mt-10">{t(`join.${baseText}.act`)}</p>
 
             <MainLink
-              href="/to-act"
+              href="/archive/v1/to-act"
               mode="base"
               label={t(`join.${baseText}.link`)}
               className="mt-6 xl:mt-10"
