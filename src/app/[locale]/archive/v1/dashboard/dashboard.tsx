@@ -221,7 +221,7 @@ const SalmonCollapseSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#macro-salmon-collapse-section",
+            link: "/archive/v1/about#macro-salmon-collapse-section",
           },
           {
             type: "data",
@@ -258,7 +258,7 @@ const SalmonFarmingSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#macro-hyper-growth-section",
+            link: "/archive/v1/about#macro-hyper-growth-section",
           },
           {
             type: "data",
@@ -296,7 +296,7 @@ const TopCountriesSection = () => {
             },
             {
               type: "methodology",
-              link: "/about#macro-hyper-growth-section",
+              link: "/archive/v1/about#macro-hyper-growth-section",
             },
             {
               type: "data",
@@ -328,7 +328,7 @@ const TopCountriesSection = () => {
             },
             {
               type: "methodology",
-              link: "/about#macro-hyper-growth-section",
+              link: "/archive/v1/about#macro-hyper-growth-section",
             },
             {
               type: "data",
@@ -360,7 +360,7 @@ const SalmonConsumptionSection = () => {
         data: [
           {
             type: "methodology",
-            link: "/about#macro-consumption-section",
+            link: "/archive/v1/about#macro-consumption-section",
           },
           {
             type: "data",
@@ -399,7 +399,7 @@ const MainProductionSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#companies-top-comp-section",
+            link: "/archive/v1/about#companies-top-comp-section",
           },
           {
             type: "data",
@@ -440,7 +440,7 @@ const LandPlantsSection = () => {
           data: [
             {
               type: "methodology",
-              link: "/about#companies-top-land-section",
+              link: "/archive/v1/about#companies-top-land-section",
             },
             {
               type: "data",
@@ -496,7 +496,7 @@ const LandPlantsSection = () => {
           data={[
             {
               type: "methodology",
-              link: "/about#companies-future-land-based-section",
+              link: "/archive/v1/about#companies-future-land-based-section",
             },
             {
               type: "image",
@@ -558,7 +558,7 @@ const DeforestationSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#biodiversity-deforestation-section",
+            link: "/archive/v1/about#biodiversity-deforestation-section",
           },
           {
             type: "image",
@@ -591,7 +591,7 @@ const EscapeSection = () => {
         data: [
           {
             type: "methodology",
-            link: "/about#biodiversity-escapes-section",
+            link: "/archive/v1/about#biodiversity-escapes-section",
           },
           {
             type: "image",
@@ -632,7 +632,7 @@ const AntibioticSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#human-health-antibiotic-section",
+            link: "/archive/v1/about#human-health-antibiotic-section",
           },
           {
             type: "image",
@@ -668,7 +668,7 @@ const MicroplasticSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#human-health-microplastics-section",
+            link: "/archive/v1/about#human-health-microplastics-section",
           },
           {
             type: "image",
@@ -704,7 +704,7 @@ const StressOnshoreSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#animal-welfare-density-section",
+            link: "/archive/v1/about#animal-welfare-density-section",
           },
           {
             type: "image",
@@ -731,7 +731,7 @@ const MortalityRateSection = () => {
         data: [
           {
             type: "methodology",
-            link: "/about#animal-welfare-mortality-section",
+            link: "/archive/v1/about#animal-welfare-mortality-section",
           },
           {
             type: "data",
@@ -766,7 +766,7 @@ const CarbonSection = () => {
         data: [
           {
             type: "methodology",
-            link: "/about#climat-emissions-section",
+            link: "/archive/v1/about#climat-emissions-section",
           },
           {
             type: "image",
@@ -807,7 +807,7 @@ const SocialCarbonSection = () => {
           },
           {
             type: "methodology",
-            link: "/about#social-resources-section",
+            link: "/archive/v1/about#social-resources-section",
           },
           {
             type: "image",
