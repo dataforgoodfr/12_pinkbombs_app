@@ -2,6 +2,8 @@
   "layout": {
     "top": "Haut de page",
     "nav": {
+      "archiveHeadline": "Cette page est conservée à titre d'archive. Son contenu fait partie de la V1 de PinkBombs et peut être obsolète. Consultez la",
+      "archiveCTA": "version actuelle du site",
       "title": "principale",
       "story": "Story",
       "dashboard": "Dashboard",

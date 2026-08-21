@@ -43,6 +43,13 @@ const Navbar = () => {
         /to-act/.test(pathname) ? "bg-yellow1" : "bg-pink1",
       )}
     >
+      <div className="bg-yellow1 py-4 text-sm text-center">
+        {t("nav.archiveHeadline")}{" "}
+        <Link href="/" className="underline">
+          {t("nav.archiveCTA")}
+        </Link>
+        .
+      </div>
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
         <Link href="/archive/v1">
           <Image

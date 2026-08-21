@@ -2,6 +2,8 @@
   "layout": {
     "top": "Back to top",
     "nav": {
+      "archiveHeadline": "This page is kept for archival purposes. Its content is part of the V1 of PinkBombs and may be outdated. Check out the ",
+      "archiveCTA": "current version of the site",
       "title": "main",
       "story": "Story",
       "dashboard": "Dashboard",
