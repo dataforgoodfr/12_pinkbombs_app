@@ -26,7 +26,7 @@ const IconCard = ({
           />
           <Image
             loading="lazy"
-            src="/images/explose-icon.svg"
+            src="/archive/v1/images/explose-icon.svg"
             width={100}
             height={100}
             alt=""

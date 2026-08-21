@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return (
     <>
-      <IntroBlock title={t("title")} image="/images/salmon.svg" />
+      <IntroBlock title={t("title")} image="/archive/v1/images/salmon.svg" />
 
       <BombSection />
       <ExplodeSection />
@@ -36,7 +36,7 @@ const BombSection = () => {
   const t = useTranslations("story");
 
   return (
-    <section className="flex p-6 lg:p-12 min-h-[300px] h-screen text-red2 bg-darkblue1 bg-[url('/images/background-bombs.svg')] bg-[length:800px_400px] sm:bg-[length:1000px_500px] lg:bg-cover bg-no-repeat bg-center">
+    <section className="flex p-6 lg:p-12 min-h-[300px] h-screen text-red2 bg-darkblue1 bg-[url('/archive/v1/images/background-bombs.svg')] bg-[length:800px_400px] sm:bg-[length:1000px_500px] lg:bg-cover bg-no-repeat bg-center">
       <div className="grid grid-rows-[1fr, auto, 1fr] w-full">
         <div className="row-start-3 self-end items-left flex gap-2 items-end">
           <p className={clsx("h1", "max-w-[1500px] mx-auto w-full")}>
@@ -56,43 +56,43 @@ const ExplodeSection = () => {
       <ul
         className="
         grid grid-cols-1 xs:grid-cols-2 gap-8 list-none bg-no-repeat bg-center relative
-        xs:bg-[url(/images/explose-small.svg)] xs:bg-[length:438px_320px]
-        xl:bg-[url(/images/explose.svg)]
+        xs:bg-[url(/archive/v1/images/explose-small.svg)] xs:bg-[length:438px_320px]
+        xl:bg-[url(/archive/v1/images/explose.svg)]
         xl:w-[969px] xl:h-[829px] xl:bg-[length:727px_662px]
         3xl:w-[1515px] 3xl:h-[1190px] 3xl:bg-[length:969px_829px]
       "
       >
         <li className="xl:absolute xl:-left-[20px] xl:top-[180px] 3xl:left-[112px] 3xl:top-[330px]">
           <IconCard
-            icon="/images/storytelling/icon-social.svg"
+            icon="/archive/v1/images/storytelling/icon-social.svg"
             title={t("explode.social.title")}
             content={t("explode.social.content")}
           />
         </li>
         <li className="xl:absolute xl:left-[120px] xl:bottom-[20px] 3xl:left-[242px] 3xl:bottom-[180px]">
           <IconCard
-            icon="/images/storytelling/icon-climate.svg"
+            icon="/archive/v1/images/storytelling/icon-climate.svg"
             title={t("explode.climat.title")}
             content={t("explode.climat.content")}
           />
         </li>
         <li className="xl:absolute xl:-right-[150px] xl:top-[50px] 3xl:-right-[100px] 3xl:top-[160px]">
           <IconCard
-            icon="/images/storytelling/icon-health.svg"
+            icon="/archive/v1/images/storytelling/icon-health.svg"
             title={t("explode.health.title")}
             content={t("explode.health.content")}
           />
         </li>
         <li className="xl:absolute xl:-right-[140px] xl:bottom-[140px] 3xl:-right-[80px] 3xl:bottom-[360px]">
           <IconCard
-            icon="/images/storytelling/icon-biodiversity.svg"
+            icon="/archive/v1/images/storytelling/icon-biodiversity.svg"
             title={t("explode.biodiversity.title")}
             content={t("explode.biodiversity.content")}
           />
         </li>
         <li className="xl:absolute xl:right-[100px] xl:-bottom-[120px] 3xl:right-[340px] 3xl:bottom-[10px]">
           <IconCard
-            icon="/images/storytelling/icon-animals.svg"
+            icon="/archive/v1/images/storytelling/icon-animals.svg"
             title={t("explode.animals.title")}
             content={t("explode.animals.content")}
           />
@@ -111,7 +111,7 @@ const EditoSection = () => {
       content: t("edito.biodiversity.content"),
       ctas: [{ target: "/dashboard#biodiversity-section", hasIcon: true }],
       image: {
-        src: "/images/storytelling/biodiversity-hd.webp",
+        src: "/archive/v1/images/storytelling/biodiversity-hd.webp",
       },
     },
     {
@@ -119,7 +119,7 @@ const EditoSection = () => {
       content: t("edito.health.content"),
       ctas: [{ target: "/dashboard#health-section", hasIcon: true }],
       image: {
-        src: "/images/storytelling/health.jpg",
+        src: "/archive/v1/images/storytelling/health.jpg",
         caption: t("edito.health.credit"),
       },
     },
@@ -128,7 +128,7 @@ const EditoSection = () => {
       content: t("edito.climat.content"),
       ctas: [{ target: "/dashboard#climate-section", hasIcon: true }],
       image: {
-        src: "/images/storytelling/climate.jpg",
+        src: "/archive/v1/images/storytelling/climate.jpg",
       },
     },
     {
@@ -136,7 +136,7 @@ const EditoSection = () => {
       content: t("edito.social.content"),
       ctas: [{ target: "/dashboard#social-section", hasIcon: true }],
       image: {
-        src: "/images/storytelling/social.jpg",
+        src: "/archive/v1/images/storytelling/social.jpg",
       },
     },
     {
@@ -144,7 +144,7 @@ const EditoSection = () => {
       content: t("edito.animals.content"),
       ctas: [{ target: "/dashboard#animals-section", hasIcon: true }],
       image: {
-        src: "/images/storytelling/animals.jpg",
+        src: "/archive/v1/images/storytelling/animals.jpg",
       },
     },
   ];

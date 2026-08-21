@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
         <Link href="/archive/v1">
           <Image
-            src="/images/pinkbombs.svg"
+            src="/archive/v1/images/pinkbombs.svg"
             alt="PinkBombs"
             width={176}
             height={43}

@@ -99,9 +99,9 @@
               }
             ],
             "meta": {
-              "image1": "/dashboard/images/en/land_based_farms_electricity.png",
+              "image1": "/archive/v1/dashboard/images/en/land_based_farms_electricity.png",
               "infoImage1": "consumption of electricity",
-              "image2": "/dashboard/images/en/land_based_farms_carbon.png",
+              "image2": "/archive/v1/dashboard/images/en/land_based_farms_carbon.png",
               "infoImage2": "carbon footprint",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/ras_projects_for_map_2.4.csv.zip",
               "dataArtifact": "ras_projects_for_map_2.4.csv.zip"
@@ -119,7 +119,7 @@
             "image": "en/deforestation.svg",
             "altImage": "In 2020 in Norway, the equivalent of 2154km² of soybean plantations, or 20 times the size of Paris, is needed to produce 1562415 tonnes of salmon.",
             "meta": {
-              "image": "/dashboard/images/en/deforestation.png",
+              "image": "/archive/v1/dashboard/images/en/deforestation.png",
               "source": ""
             }
           },
@@ -130,7 +130,7 @@
             "image": "en/escape.svg",
             "altImage": "More than 4 million fish have escaped from marine cages (SalMar, Mowi, Bakkarfrost and others) since 2018.",
             "meta": {
-              "image": "/dashboard/images/en/escape.png",
+              "image": "/archive/v1/dashboard/images/en/escape.png",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/escapes_marine_cages_3.5.csv.zip",
               "dataArtifact": "escapes_marine_cages_3.5.csv.zip"
             }
@@ -147,7 +147,7 @@
             "image": "en/microplastic-1.svg",
             "altImage": "The main producers of Chile used 460 tonnes of antibiotics in marine cages in 2021, the equivalent of 35g for a 74kg human.",
             "meta": {
-              "image": "/dashboard/images/en/antibiotics.png",
+              "image": "/archive/v1/dashboard/images/en/antibiotics.png",
               "source": "spanish"
             }
           },
@@ -158,7 +158,7 @@
             "image": "en/microplastic.svg",
             "altImage": "532 microplastics per salmon (sorry, we only put 30).",
             "meta": {
-              "image": "/dashboard/images/en/microplastic.png",
+              "image": "/archive/v1/dashboard/images/en/microplastic.png",
               "source": ""
             }
           }
@@ -174,7 +174,7 @@
             "image": "en/density.svg",
             "altImage": "4 salmon in the equivalent of a bathtub of water. This is the density required for land-based factories to be profitable.",
             "meta": {
-              "image": "/dashboard/images/en/density.png",
+              "image": "/archive/v1/dashboard/images/en/density.png",
               "source": "anglais"
             }
           },
@@ -202,7 +202,7 @@
             "meta": {
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/cabon_emissions_productors_5.1.csv.zip",
               "dataArtifact": "cabon_emissions_productors_5.1.csv.zip",
-              "image": "/dashboard/images/fr/carbon_emissions.png"
+              "image": "/archive/v1/dashboard/images/fr/carbon_emissions.png"
             }
           }
         }
@@ -218,7 +218,7 @@
             "altImage": "Approximately 10% of global fishing is used for the production of fish meal and oil to feed farmed fish (aquaculture). Fish meal and oils for other sectors and other uses (20%). Human consumption (70%).",
             "meta": {
               "source": "",
-              "image": "/dashboard/images/en/social_fishing.png",
+              "image": "/archive/v1/dashboard/images/en/social_fishing.png",
               "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/social_mill_fishing_6.csv.zip",
               "dataArtifact": "social_mill_fishing_6.csv.zip"
             }

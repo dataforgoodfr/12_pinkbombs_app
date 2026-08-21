@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col w-full max-w-72">
             <Image
               loading="lazy"
-              src="/images/seastemik.svg"
+              src="/archive/v1/images/seastemik.svg"
               width={170}
               height={100}
               alt="Seastemik"
@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="flex flex-col w-full max-w-72">
             <Image
               loading="lazy"
-              src="/images/dataforgood.svg"
+              src="/archive/v1/images/dataforgood.svg"
               width={150}
               height={100}
               alt="Data for Good"
@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="self-top lg:ml-auto w-full md:w-auto">
             <Image
               loading="lazy"
-              src="/images/pinkbomb-seastemik-dataforgood.svg"
+              src="/archive/v1/images/pinkbomb-seastemik-dataforgood.svg"
               width={300}
               height={100}
               alt=""
@@ -93,7 +93,10 @@ const Footer = () => {
           {t("footer.allRight")} - © {currentYear} Seastemik {t("footer.and")}{" "}
           Data for Good
           <br />
-          <a href="/archive/v1/legal-notice" className="underline hover:no-underline">
+          <a
+            href="/archive/v1/legal-notice"
+            className="underline hover:no-underline"
+          >
             {t("footer.legalNotice")}
           </a>
         </p>

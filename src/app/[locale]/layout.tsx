@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { Barlow_Condensed, Montserrat } from "next/font/google";
-import Image from "next/image";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
@@ -21,9 +20,6 @@ const montserrat = Montserrat({
 });
 
 import "@/styles/globals.css";
-
-import Footer from "@/components/v1/layout/Footer";
-import Navbar from "@/components/v1/layout/Navbar";
 
 import { locales } from "@/navigation";
 
@@ -74,7 +70,6 @@ export default async function GlobalLayout({
   params: { locale: string };
 }) {
   const messages = await getMessages();
-  const t = await getTranslations({ locale, namespace: "layout" });
   return (
     <html
       lang={locale}

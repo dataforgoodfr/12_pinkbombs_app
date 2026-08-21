@@ -1,32 +1,15 @@
-import clsx from "clsx";
-import { Barlow_Condensed, Montserrat } from "next/font/google";
 import Image from "next/image";
-import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
-
-const barlow = Barlow_Condensed({
-  weight: ["700", "800", "900"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-barlow",
-});
-
-const montserrat = Montserrat({
-  weight: ["500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-montserrat",
-});
 
 import "@/styles/globals.css";
 
 import Footer from "@/components/v1/layout/Footer";
 import Navbar from "@/components/v1/layout/Navbar";
 
-import { locales } from "@/navigation";
 import GlobalLayout from "@/app/[locale]/layout";
+import { locales } from "@/navigation";
 
 export async function generateMetadata({
   params: { locale },
@@ -74,7 +57,6 @@ export default async function V1Layout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "layout" });
   return (
     <GlobalLayout params={{ locale }}>
@@ -86,7 +68,7 @@ export default async function V1Layout({
           className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
         >
           <Image
-            src="/images/bottom.svg"
+            src="/archive/v1/images/bottom.svg"
             alt={t("top")}
             width="40"
             height="20"

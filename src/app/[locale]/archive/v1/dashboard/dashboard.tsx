@@ -545,7 +545,7 @@ const DeforestationSection = () => {
     <DashboardSection
       title={t("sections.biodiversity.blocks.deforestation.title")}
       image={{
-        src: `/dashboard/images/${t("sections.biodiversity.blocks.deforestation.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.biodiversity.blocks.deforestation.image")}`,
         alt: t("sections.biodiversity.blocks.deforestation.altImage"),
       }}
       meta={{
@@ -584,7 +584,7 @@ const EscapeSection = () => {
       mainContent={t.raw("sections.biodiversity.blocks.escapes-rates.mainContent")}
       content={t.raw("sections.biodiversity.blocks.escapes-rates.content")}
       image={{
-        src: `/dashboard/images/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.biodiversity.blocks.escapes-rates.image")}`,
         alt: t("sections.biodiversity.blocks.escapes-rates.altImage"),
       }}
       meta={{
@@ -619,7 +619,7 @@ const AntibioticSection = () => {
       mainContent={t.raw("sections.health.blocks.antibiotic-conso.mainContent")}
       content={t.raw("sections.health.blocks.antibiotic-conso.content")}
       image={{
-        src: `/dashboard/images/${t("sections.health.blocks.antibiotic-conso.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.health.blocks.antibiotic-conso.image")}`,
         alt: t("sections.health.blocks.antibiotic-conso.altImage"),
       }}
       meta={{
@@ -652,7 +652,7 @@ const MicroplasticSection = () => {
     <DashboardSection
       title={t("sections.health.blocks.microplastics.title")}
       image={{
-        src: `/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.health.blocks.microplastics.image")}`,
         alt: t("sections.health.blocks.microplastics.altImage"),
       }}
       id="microplastics"
@@ -688,7 +688,7 @@ const StressOnshoreSection = () => {
     <DashboardSection
       title={t("sections.animals.blocks.stress-onshore.title")}
       image={{
-        src: `/dashboard/images/${t("sections.animals.blocks.stress-onshore.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.animals.blocks.stress-onshore.image")}`,
         alt: t("sections.animals.blocks.stress-onshore.altImage"),
       }}
       id="stress-onshore"
@@ -757,7 +757,7 @@ const CarbonSection = () => {
       title={t("sections.climate.blocks.carbon-bomb.title")}
       id="carbon-bomb"
       image={{ 
-        src: `/dashboard/images/${t("sections.climate.blocks.carbon-bomb.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.climate.blocks.carbon-bomb.image")}`,
         alt: t("sections.climate.blocks.carbon-bomb.altImage"),  
       }}
       mainContent={t.raw("sections.climate.blocks.carbon-bomb.mainContent")}
@@ -791,7 +791,7 @@ const SocialCarbonSection = () => {
     <DashboardSection
       title={t("sections.social.blocks.social-carbon.title")}
       image={{ 
-        src: `/dashboard/images/${t("sections.social.blocks.social-carbon.image")}`,
+        src: `/archive/v1/dashboard/images/${t("sections.social.blocks.social-carbon.image")}`,
         alt: t("sections.social.blocks.social-carbon.altImage"), 
       }}
       id="social-carbon"

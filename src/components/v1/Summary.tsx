@@ -57,7 +57,7 @@ const Summary = ({
             >
               {link.title}
               <Image
-                src="/images/bottom-dark.svg"
+                src="/archive/v1/images/bottom-dark.svg"
                 alt=""
                 width="10"
                 height="7"

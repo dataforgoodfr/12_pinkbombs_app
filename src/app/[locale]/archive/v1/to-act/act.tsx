@@ -25,7 +25,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: "/images/act/call-companies.jpg",
+          src: "/archive/v1/images/act/call-companies.jpg",
         }}
       /> */}
 
@@ -44,7 +44,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: `/images/act/stop-industry-${locale}.jpg`,
+          src: `/archive/v1/images/act/stop-industry-${locale}.jpg`,
         }}
       />
 
@@ -63,7 +63,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: `/images/act/citizens-${locale}.jpg`,
+          src: `/archive/v1/images/act/citizens-${locale}.jpg`,
         }}
       />
 
@@ -92,7 +92,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: `/images/act/support-seastemik-${locale}.jpg`,
+          src: `/archive/v1/images/act/support-seastemik-${locale}.jpg`,
         }}
       />
 
@@ -111,7 +111,7 @@ const Act = () => {
         contentPosition="right"
         mode="light"
         image={{
-          src: `/images/act/seastemik-report-${locale}.png`,
+          src: `/archive/v1/images/act/seastemik-report-${locale}.png`,
         }}
       />
 

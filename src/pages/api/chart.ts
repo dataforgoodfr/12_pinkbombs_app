@@ -3,7 +3,7 @@ export const fetchData = async (
   type: "graphs" | "maps",
   chartName: string,
 ) => {
-  const url = `/dashboard/${type}/${lang}/${chartName}.${type === "graphs" ? "json" : "html"}`;
+  const url = `/archive/v1/dashboard/${type}/${lang}/${chartName}.${type === "graphs" ? "json" : "html"}`;
 
   if (type === "maps") {
     return url;

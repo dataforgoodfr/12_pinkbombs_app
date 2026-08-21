@@ -30,7 +30,7 @@ const JoinBlock = ({
     <div id="alternatives-block" className={className} {...rest}>
       <div
         className={clsx(
-          "lg:bg-[url('/images/wave.svg')] bg-no-repeat bg-center bg-[length:3200px_272px]",
+          "lg:bg-[url('/archive/v1/images/wave.svg')] bg-no-repeat bg-center bg-[length:3200px_272px]",
           headDark
             ? "text-darkblue1 lg:text-brown1 bg-brown1 lg:bg-darkblue1"
             : "text-red1",
@@ -41,8 +41,8 @@ const JoinBlock = ({
             "h1",
             "p-6 lg:px-12 lg:pt-[130px] lg:pb-12 max-w-[1596px] mx-auto lg:bg-clip-text lg:text-transparent bg-no-repeat bg-center bg-[length:3200px_272px]",
             headDark
-              ? "lg:bg-[url('/images/wave-text.svg')]"
-              : "lg:bg-[url('/images/wave-text-light.svg')]",
+              ? "lg:bg-[url('/archive/v1/images/wave-text.svg')]"
+              : "lg:bg-[url('/archive/v1/images/wave-text-light.svg')]",
           )}
           lang="en"
         >
@@ -97,7 +97,7 @@ const JoinBlock = ({
           <div className="m-auto md:max-w-xl xl:max-w-4xl text-center font-secondary tracking-widest uppercase">
             <Image
               className="inline-block object-contain w-48 md:w-64 xl:w-[692px]"
-              src="/images/eyes.svg"
+              src="/archive/v1/images/eyes.svg"
               alt=""
               loading="lazy"
               width={692}
