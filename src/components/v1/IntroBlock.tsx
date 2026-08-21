@@ -32,7 +32,12 @@ const IntroBlock = ({
       <div className="grid grid-rows-[1fr, auto, 1fr] w-full max-w-[1500px] mx-auto">
         {image && (
           <div className="row-start-2 self-center justify-self-center px-6 max-w-[700px]">
-            <Image src="/archive/v1/images/salmon.svg" alt="" width={700} height={203} />
+            <Image
+              src="/archive/v1/images/salmon.svg"
+              alt=""
+              width={700}
+              height={203}
+            />
           </div>
         )}
         <div className="row-start-3 self-end items-left flex flex-wrap gap-2 items-end">

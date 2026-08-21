@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
@@ -8,7 +7,6 @@ import "@/styles/globals.css";
 import Footer from "@/components/v1/layout/Footer";
 import Navbar from "@/components/v1/layout/Navbar";
 
-import GlobalLayout from "@/app/[locale]/layout";
 import { locales } from "@/navigation";
 
 export async function generateMetadata({
@@ -59,7 +57,7 @@ export default async function V1Layout({
 }) {
   const t = await getTranslations({ locale, namespace: "layout" });
   return (
-    <GlobalLayout params={{ locale }}>
+    <>
       <Navbar />
       <main>
         {children}
@@ -77,6 +75,6 @@ export default async function V1Layout({
         </a>
       </main>
       <Footer />
-    </GlobalLayout>
+    </>
   );
 }

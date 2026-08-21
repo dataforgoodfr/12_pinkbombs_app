@@ -109,7 +109,9 @@ const EditoSection = () => {
     {
       title: t("edito.biodiversity.title"),
       content: t("edito.biodiversity.content"),
-      ctas: [{ target: "/archive/v1/dashboard#biodiversity-section", hasIcon: true }],
+      ctas: [
+        { target: "/archive/v1/dashboard#biodiversity-section", hasIcon: true },
+      ],
       image: {
         src: "/archive/v1/images/storytelling/biodiversity-hd.webp",
       },
@@ -126,7 +128,9 @@ const EditoSection = () => {
     {
       title: t("edito.climat.title"),
       content: t("edito.climat.content"),
-      ctas: [{ target: "/archive/v1/dashboard#climate-section", hasIcon: true }],
+      ctas: [
+        { target: "/archive/v1/dashboard#climate-section", hasIcon: true },
+      ],
       image: {
         src: "/archive/v1/images/storytelling/climate.jpg",
       },
@@ -142,7 +146,9 @@ const EditoSection = () => {
     {
       title: t("edito.animals.title"),
       content: t("edito.animals.content"),
-      ctas: [{ target: "/archive/v1/dashboard#animals-section", hasIcon: true }],
+      ctas: [
+        { target: "/archive/v1/dashboard#animals-section", hasIcon: true },
+      ],
       image: {
         src: "/archive/v1/images/storytelling/animals.jpg",
       },
