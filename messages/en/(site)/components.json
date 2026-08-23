@@ -1,0 +1,52 @@
+{
+  "components": {
+    "summary": {
+      "title": "page"
+    },
+    "edito": {
+      "link": "See more"
+    },
+    "shareLink": {
+      "blank": "new tab",
+      "twitter": "Twitter",
+      "linkedin": "Linkedin",
+      "website": "Website",
+      "email": "Email",
+      "newsletter": "Newsletter",
+      "instagram": "Instagram"
+    },
+    "chart": {
+      "loading": "Loading data.."
+    },
+    "calculator": {
+      "intro": "Here are the impacts of the salmon industry around the world since you opened this web page.",
+      "seconds": "seconds",
+      "second": "second"
+    },
+    "join": {
+      "main": {
+        "title": "Be the change.",
+        "intro": "Don't want to be part of this ecological and social disaster? Good news, solutions exist!",
+        "content": "<p><strong>Governments, businesses, and citizens can work together to be part of these solutions.</strong></p><ul><li><strong>Governments</strong> an regulate to abandon intensive farming of carnivorous fish - such as salmon and tuna - and to stop overfishing worldwide.</li> <li><strong>Businesses</strong> must commit to increasing plant-based options and developing low-trophic level aquaculture, such as algae and shellfish.</li><li> <strong>Individually,</strong> let's make the simple choice to exclude industrial salmon from our plates, in order to collectively accelerate the revolution towards a more plant-based food system that meets health, sustainability, and social justice imperatives.</li></ul>",
+        "act": "To reverse the trend and stop the disaster, urgent action is needed. We have levers for action!",
+        "link": "I act"
+      },
+      "alternatives": {
+        "title": "Food choices and their impact",
+        "intro": "What we choose to eat, sell, and produce has different impacts on the planet, people, and animals.",
+        "content": "<p>France, <strong>the largest European consumer</strong> and among the top 4 largest consumers of salmon in the world, bears a particular responsibility in shaping these choices.</p>",
+        "pdf": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/Table_food_choices_simplified_en.pdf",
+        "data": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/csv/foodchoices_text_7.csv.zip",
+        "artifact": "foodchoices_text_7.csv.zip",
+        "image": "https://raw.githubusercontent.com/dataforgoodfr/12_pinkbombs/main/download/graphs_image/foodchoices_7.png"
+      }
+    },
+    "metaChart": {
+      "source": "Main source",
+      "methodology": "Methodology",
+      "image": "Image",
+      "data": "Data",
+      "document": "PDF"
+    }
+  }
+}
