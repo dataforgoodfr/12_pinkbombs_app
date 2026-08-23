@@ -7,13 +7,12 @@ import "@/styles/globals.css";
 import Footer from "@/components/v1/layout/Footer";
 import Navbar from "@/components/v1/layout/Navbar";
 
-import { locales } from "@/navigation";
-
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: typeof locales };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "siteConfig" });
 
   return {
@@ -50,11 +49,12 @@ export async function generateMetadata({
 
 export default async function V1Layout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "layout" });
   return (
     <>

@@ -25,6 +25,6 @@ export const fetchData = async (
 
     return JSON.parse(data);
   } catch (error) {
-    return null;
+    return error;
   }
 };
