@@ -7,7 +7,6 @@ import { localesValues } from "@/navigation";
 export default getRequestConfig(async () => {
   // 1. Await the native Next.js headers object (required in Next 15+)
   const headersList = await headers();
-
   // 2. Extract the locale injected by your proxy.ts (middleware)
   const locale = headersList.get("x-next-intl-locale");
 
