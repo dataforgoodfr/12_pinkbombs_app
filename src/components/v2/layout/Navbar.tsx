@@ -41,7 +41,6 @@ const Navbar = () => {
       text: t("nav.about"),
     },
   ];
-  console.log({pathname})
   const getBackgroundColor = () => {
     if (/to-act/.test(pathname)) {
       return "bg-v2-green";

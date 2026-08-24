@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 
-import MainLink from "@/components/v1/links/MainLink";
 import ShareLink from "@/components/v2/links/shareLink";
 import { Link } from "@/navigation";
 import Button from "@/components/v2/buttons/Button";

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
-import "@/styles/globals.css";
+import "@/styles/archive/v1/styles.css";
 
 import Footer from "@/components/v1/layout/Footer";
 import Navbar from "@/components/v1/layout/Navbar";

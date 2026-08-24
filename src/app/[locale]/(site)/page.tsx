@@ -9,31 +9,39 @@ import "@/lib/env";
 import Chart from "@/components/v1/Chart";
 import Edito from "@/components/v1/Edito";
 import IconCard from "@/components/v1/IconCard";
-import IntroBlock from "@/components/v1/IntroBlock";
-import JoinBlock from "@/components/v1/JoinBlock";
 import MetaChart from "@/components/v1/MetaChart";
+import Image from "next/image";
 
 const HomePage = () => {
   const t = useTranslations("story");
 
   return (
     <>
-      <div>v2</div>
+      <HeroSection />
+      <ExplodeSection />
+      <ImpactSection />
     </>
   );
 };
 
 export default HomePage;
 
-const BombSection = () => {
-  const t = useTranslations("story");
-
+const HeroSection = () => {
+  const t = useTranslations("site.homepage");
   return (
-    <section className="flex p-6 lg:p-12 min-h-[300px] h-screen text-red2 bg-darkblue1 bg-[url('/archive/v1/images/background-bombs.svg')] bg-[length:800px_400px] sm:bg-[length:1000px_500px] lg:bg-cover bg-no-repeat bg-center">
+    <section className="flex mt-26 pt-40 px-10 min-h-[300px] h-screen text-v2-pink bg-v2-blue">
       <div className="grid grid-rows-[1fr, auto, 1fr] w-full">
-        <div className="row-start-3 self-end items-left flex gap-2 items-end">
+        <Image
+          loading="lazy"
+          src="/site/images/homepage/fish-plate.svg"
+          width={571}
+          height={425}
+          alt={t("hero.imageAlt")}
+          className="object-contain mx-auto"
+        />
+        <div className="row-start-3 items-left flex gap-2 max-w-[50%]">
           <p className={clsx("h1", "max-w-[1500px] mx-auto w-full")}>
-            {t("bomb")}
+            {t("hero.title")}
           </p>
         </div>
       </div>
@@ -42,122 +50,63 @@ const BombSection = () => {
 };
 
 const ExplodeSection = () => {
-  const t = useTranslations("story");
+  const t = useTranslations("site.homepage");
 
   return (
-    <section className="flex flex-col items-center justify-center px-6 pb-24 lg:px-12 lg:pb-48 text-red2 bg-darkblue1 min-h-screen">
-      <ul
-        className="
-        grid grid-cols-1 xs:grid-cols-2 gap-8 list-none bg-no-repeat bg-center relative
-        xs:bg-[url(/archive/v1/images/explose-small.svg)] xs:bg-[length:438px_320px]
-        xl:bg-[url(/archive/v1/images/explose.svg)]
-        xl:w-[969px] xl:h-[829px] xl:bg-[length:727px_662px]
-        3xl:w-[1515px] 3xl:h-[1190px] 3xl:bg-[length:969px_829px]
-      "
-      >
-        <li className="xl:absolute xl:-left-[20px] xl:top-[180px] 3xl:left-[112px] 3xl:top-[330px]">
-          <IconCard
-            icon="/archive/v1/images/storytelling/icon-social.svg"
-            title={t("explode.social.title")}
-            content={t("explode.social.content")}
-          />
-        </li>
-        <li className="xl:absolute xl:left-[120px] xl:bottom-[20px] 3xl:left-[242px] 3xl:bottom-[180px]">
-          <IconCard
-            icon="/archive/v1/images/storytelling/icon-climate.svg"
-            title={t("explode.climat.title")}
-            content={t("explode.climat.content")}
-          />
-        </li>
-        <li className="xl:absolute xl:-right-[150px] xl:top-[50px] 3xl:-right-[100px] 3xl:top-[160px]">
-          <IconCard
-            icon="/archive/v1/images/storytelling/icon-health.svg"
-            title={t("explode.health.title")}
-            content={t("explode.health.content")}
-          />
-        </li>
-        <li className="xl:absolute xl:-right-[140px] xl:bottom-[140px] 3xl:-right-[80px] 3xl:bottom-[360px]">
-          <IconCard
-            icon="/archive/v1/images/storytelling/icon-biodiversity.svg"
-            title={t("explode.biodiversity.title")}
-            content={t("explode.biodiversity.content")}
-          />
-        </li>
-        <li className="xl:absolute xl:right-[100px] xl:-bottom-[120px] 3xl:right-[340px] 3xl:bottom-[10px]">
-          <IconCard
-            icon="/archive/v1/images/storytelling/icon-animals.svg"
-            title={t("explode.animals.title")}
-            content={t("explode.animals.content")}
-          />
-        </li>
-      </ul>
+    <section className="relative flex flex-col text-black bg-v2-pink min-h-[760px]">
+      <svg width="1512" height="49" viewBox="0 0 1512 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1512" height="49" fill="#13176E"/>
+        <path d="M0.5 49L29.1364 1L137.773 49L166.409 1L275.045 49L303.682 1L412.318 49L440.955 1L549.591 49L578.227 1L686.864 49L715.5 1L824.136 49L852.773 1L961.409 49L990.046 1L1098.68 49L1127.32 1L1235.95 49L1264.59 1L1373.23 49L1401.86 1L1510.5 49H1373.23H1235.95H1098.68H961.409H824.136H686.864H549.591H412.318H275.045H137.773H0.5Z" fill="#FFD4D4"/>
+      </svg>
+      <Image
+        loading="lazy"
+        src="/site/images/homepage/fish-bomb.svg"
+        width={1130}
+        height={692}
+        alt={t("bomb.imageAlt")}
+        className="pt-24 object-contain mx-auto"
+      />
+      <div className="absolute px-10 bottom-6 flex row-start-3 items-left flex gap-2 max-w-[60%]">
+        <p className="h1">
+          {t("bomb.title")}
+        </p>
+      </div>
     </section>
   );
 };
 
-const EditoSection = () => {
-  const t = useTranslations("story");
+const ImpactSection = () => {
+  const t = useTranslations("site.homepage");
 
-  const editosContent = [
-    {
-      title: t("edito.biodiversity.title"),
-      content: t("edito.biodiversity.content"),
-      ctas: [
-        { target: "/archive/v1/dashboard#biodiversity-section", hasIcon: true },
-      ],
-      image: {
-        src: "/archive/v1/images/storytelling/biodiversity-hd.webp",
-      },
-    },
-    {
-      title: t("edito.health.title"),
-      content: t("edito.health.content"),
-      ctas: [{ target: "/archive/v1/dashboard#health-section", hasIcon: true }],
-      image: {
-        src: "/archive/v1/images/storytelling/health.jpg",
-        caption: t("edito.health.credit"),
-      },
-    },
-    {
-      title: t("edito.climat.title"),
-      content: t("edito.climat.content"),
-      ctas: [
-        { target: "/archive/v1/dashboard#climate-section", hasIcon: true },
-      ],
-      image: {
-        src: "/archive/v1/images/storytelling/climate.jpg",
-      },
-    },
-    {
-      title: t("edito.social.title"),
-      content: t("edito.social.content"),
-      ctas: [{ target: "/archive/v1/dashboard#social-section", hasIcon: true }],
-      image: {
-        src: "/archive/v1/images/storytelling/social.jpg",
-      },
-    },
-    {
-      title: t("edito.animals.title"),
-      content: t("edito.animals.content"),
-      ctas: [
-        { target: "/archive/v1/dashboard#animals-section", hasIcon: true },
-      ],
-      image: {
-        src: "/archive/v1/images/storytelling/animals.jpg",
-      },
-    },
-  ];
 
   return (
-    <>
-      {editosContent.map((edito, key) => (
-        <Edito
-          key={`edito-${key}`}
-          {...edito}
-          contentPosition={key % 2 ? "left" : "right"}
-        />
-      ))}
-    </>
+    <section className="relative flex flex-col text-black bg-v2-blue min-h-[760px] max-w-[1512px] mx-auto">
+      <Image
+        loading="lazy"
+        src="/site/images/homepage/divider-impact-section.svg"
+        width={1130}
+        height={692}
+        alt="Page divider"
+        className="object-cover mx-auto"
+      />
+      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 px-10">
+        <div className="flex flex-col text-v2-pink">
+          <p className="h1">
+            {t("impact.title")}
+          </p>
+          <p className="h1 text-v2-red">
+            {t("impact.titleHighlight")}
+          </p>
+          <p className="p-lead">
+            {t("impact.impact")}
+          </p>
+        </div>
+        <div className="flex flex-col gap-6">
+    
+        </div>
+
+      </div>
+    </section>
   );
 };
 
