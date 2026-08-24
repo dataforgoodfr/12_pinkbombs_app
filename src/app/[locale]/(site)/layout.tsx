@@ -55,7 +55,7 @@ export default async function V2Layout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "v2.layout" });
+  const t = await getTranslations({ locale, namespace: "site.layout" });
   return (
     <>
       <Navbar />

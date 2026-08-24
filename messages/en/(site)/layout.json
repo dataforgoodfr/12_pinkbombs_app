@@ -3,6 +3,7 @@
     "top": "Back to top",
     "nav": {
       "title": "main",
+      "home": "Home",
       "toUnderstand": "To understand",
       "toAct": "To act",
       "toBeInspired": "To be inspired",
@@ -10,6 +11,34 @@
       "about": "About"
     },
     "footer": {
+      "shareLink": {
+        "blank": "new tab",
+        "site": "Website",
+        "sources": "Sources and methodologies",
+        "legalNotice": "Legal notices",
+        "contactUs": "Contact us",
+        "design": "coucou.design"
+      },
+      "sections": {
+        "projectBy": {
+          "title": "A project by",
+          "site": "Pinkbombs"
+        },
+        "more": {
+          "title": "More information",
+          "sources": "Sources and methodologies",
+          "legalNotice": "Legal notices",
+          "contactUs": "Contact us"
+        },
+        "stayInformed": {
+          "title": "Stay informed",
+          "text": "Receive the latest information on new data centers, news and data published by Data Center Bombs.",
+          "newsletter": {
+            "placeholder": "Enter your email",
+            "button": "Subscribe"
+          }
+        }
+      },
       "allRight": "All rights reserved",
       "and": "and",
       "donation": "Donate",

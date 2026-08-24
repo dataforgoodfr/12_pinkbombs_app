@@ -139,10 +139,16 @@
   /* #endregion  /**======== Typography =========== */
 
   /* #region  /**=========== HEADER =========== */
-  .navbar-active {
+  .navbar-active-blue {
     @apply relative;
 
-    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-red1;
+    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-blue;
+  }
+
+  .navbar-active-pink {
+    @apply relative;
+
+    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-pink;
   }
   /* #endregion  /**======== HEADER =========== */
 }

@@ -6,15 +6,7 @@
     "edito": {
       "link": "En savoir plus"
     },
-    "shareLink": {
-      "blank": "nouvel onglet",
-      "twitter": "Twitter",
-      "linkedin": "Linkedin",
-      "website": "Site internet",
-      "email": "E-mail",
-      "newsletter": "Newsletter",
-      "instagram": "Instagram"
-    },
+
     "chart": {
       "loading": "Chargement des données en cours..."
     },

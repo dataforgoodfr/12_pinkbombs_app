@@ -4,13 +4,12 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
-// import Link from "next/link";
 import { basePathType, Link, locales, usePathname } from "@/navigation";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDown } from "lucide-react";
 
 
-type NavItemsProps = {
+export type NavItemsProps = {
   link: string;
   text: string;
 }[];
@@ -42,7 +41,7 @@ const Navbar = () => {
       text: t("nav.about"),
     },
   ];
-
+  console.log({pathname})
   const getBackgroundColor = () => {
     if (/to-act/.test(pathname)) {
       return "bg-v2-green";
@@ -68,7 +67,6 @@ const Navbar = () => {
       className={clsx(
         "lg:fixed left-0 top-0 z-10 w-full",
         getBackgroundColor(),
-        `text-v2-${getColor()}`
       )}
     >
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
@@ -90,8 +88,9 @@ const Navbar = () => {
             <Link
               className={clsx(
                 "flex transition-colors ease-in-out duration-200",
-                item.link === pathname ? "navbar-active" : "",
-                "hover:text-red1"
+                item.link === pathname ? (getColor() === "blue" ? "navbar-active-blue" : "navbar-active-pink") : "",
+                getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
+                "hover:text-v2-magenta"
               )}
               href={item.link as basePathType}
               aria-current={item.link === pathname ? "page" : undefined}
@@ -106,74 +105,52 @@ const Navbar = () => {
                     className="inline-block self-center mr-2"
                   />
               )}
-              <p className="font-secondary uppercase font-bold focus:text-red1 lg:text-2xl ">{item.text}</p>
+              <p className="font-secondary uppercase font-bold focus:text-v2-red lg:text-2xl">{item.text}</p>
               
             </Link>
           ))}
 
-          <div className="flex gap-1 items-center">
-            {locales.map((lang, keyLang) => (
-              <Link
-                className={clsx(
-                  "px-2 py-1 rounded-md uppercase text-sm md:text-base hover:text-white hover:bg-red1 transition-colors ease-in-out duration-200",
-                  lang === locale
-                    ? "font-bold text-white bg-darkblue1"
-                    : "text-darkblue1 bg-transparent",
-                )}
-                href={pathname}
-                key={`lang-${keyLang}`}
-                aria-current={lang === locale ? "page" : undefined}
-                locale={lang}
-              >
-                {lang}
-              </Link>
-            ))}
-          </div>
           <Menu as="div" className="relative inline-block">
-            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:shadow-none dark:inset-ring-white/5 dark:hover:bg-white/20">
-              Options
-              <ChevronDown aria-hidden="true" className="-mr-1 size-5 text-gray-400" />
+            <MenuButton 
+              className={clsx(
+                "flex justify-between items-center border border-1 px-3 rounded-md font-secondary uppercase font-bold focus:text-v2-red lg:text-2xl transition-colors ease-in-out duration-200",
+                `${getColor() === "blue" ? "border-v2-blue text-v2-blue" : "border-v2-pink text-v2-pink"}`,
+                "hover:text-red1"
+              )}
+            >
+              {locale.toUpperCase()}
+              <Image
+                src={`/site/images/chevron-down-${getColor()}.svg`}
+                alt="Chevron Down"
+                width={10}
+                height={10}
+                className="inline-block self-center ml-2"
+              />
             </MenuButton>
 
             <MenuItems
               transition
-              className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"
+              className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg outline-hidden transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"
             >
               <div className="py-1">
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-                  >
-                    Account settings
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-                  >
-                    Support
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
-                  >
-                    License
-                  </a>
-                </MenuItem>
-                <form action="#" method="POST">
+                {locales.map((lang, keyLang) => (
                   <MenuItem>
-                    <button
-                      type="submit"
-                      className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 dark:data-focus:bg-white/5 dark:data-focus:text-white"
+                    <Link
+                      className={clsx(
+                        "block px-4 py-2 text-md font-bold outline-hidden",
+                        lang === locale
+                          ? getColor() === "blue" ? "text-white bg-v2-blue" : "font-bold text-v2-blue bg-v2-pink"
+                          : "text-v2-blue",
+                      )}
+                      href={pathname}
+                      key={`lang-${keyLang}`}
+                      aria-current={lang === locale ? "page" : undefined}
+                      locale={lang}
                     >
-                      Sign out
-                    </button>
+                      {lang.toUpperCase()}
+                    </Link>
                   </MenuItem>
-                </form>
+                ))}
               </div>
             </MenuItems>
           </Menu>
