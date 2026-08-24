@@ -80,7 +80,7 @@ const ImpactSection = () => {
 
 
   return (
-    <section className="relative flex flex-col text-black bg-v2-blue min-h-[760px] max-w-[1512px] mx-auto">
+    <section className="relative flex flex-col px-16 text-black bg-v2-blue min-h-[760px] max-w-[1512px] mx-auto">
       <Image
         loading="lazy"
         src="/site/images/homepage/divider-impact-section.svg"
@@ -89,22 +89,49 @@ const ImpactSection = () => {
         alt="Page divider"
         className="object-cover mx-auto"
       />
-      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 px-10">
-        <div className="flex flex-col text-v2-pink">
-          <p className="h1">
-            {t("impact.title")}
-          </p>
-          <p className="h1 text-v2-red">
-            {t("impact.titleHighlight")}
-          </p>
-          <p className="p-lead">
-            {t("impact.impact")}
-          </p>
+      <div className="flex flex-col py-20 space-between gap-6 lg:gap-12">
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col flex-1 text-v2-pink max-w-[50%]">
+            <p className="h2">
+              {t("impact.title")}
+            </p>
+            <p className="h2 text-v2-red">
+              {t("impact.titleHighlight")}
+            </p>
+            <p className="p-lead pt-2">
+              {t("impact.impact")}
+            </p>
+          </div>
+          <Image
+            loading="lazy"
+            src="/site/images/homepage/eiffel-towers.svg"
+            width={611}
+            height={179}
+            alt={t("impact.imageAltTitle")}
+            className="block flex-1 object-contain max-w-[611px] mx-auto"
+          />
         </div>
-        <div className="flex flex-col gap-6">
-    
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col flex-1 text-v2-pink max-w-[48%]">
+            <p className="h2">
+              {t("impact.title2")}
+            </p>
+            <p className="h2 text-v2-red">
+              {t("impact.title2Highlight")}
+            </p>
+            <p className="p-lead pt-2">
+              {t("impact.description")}
+            </p>
+          </div>
+          <Image
+            loading="lazy"
+            src="/site/images/homepage/salmons.svg"
+            width={646}
+            height={59}
+            alt={t("impact.imageAltDescription")}
+            className="object-contain flex-1 max-w-[646px] mx-auto"
+          />
         </div>
-
       </div>
     </section>
   );

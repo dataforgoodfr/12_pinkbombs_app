@@ -1,0 +1,22 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "Les saumons que nous produisons et consommons",
+      "imageAlt": "Saumon sur une assiette"
+    },
+    "bomb" : {
+      "title": "SONT DES BOMBES ÉCOLOGIQUES, SOCIALES ET SANITAIRES",
+      "imageAlt": "Saumon qui explose"
+    },
+    "impact": {
+      "title": "Chaque année en France,",
+      "titleHighlight": "Nous consommons 37,6 millions de saumons",
+      "impact": "(soit l’équivalent en tonnes de 19 Tour Eiffel)",
+      "imageAltTitle": "Tour eiffel sur une assiette",
+      "title2": "de ces millions de saumons,",
+      "title2Highlight": "98% sont issus d’élevage",
+      "description": "Contrairement à une grande partie des poissons que nous consommons, 98% des saumons consommés en France sont issus d'élevage. On ne les pêche pas. On les nourrit, tous les jours, pendant deux ans, dans des cages.",
+      "imageAltDescription": "Saumons"
+    }
+  }
+}

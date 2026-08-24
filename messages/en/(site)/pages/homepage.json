@@ -1,0 +1,20 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "The salmon we produce and consume",
+      "imageAlt": "Salmon on a plate"
+    },
+    "bomb": {
+      "title": "ARE ECOLOGICAL, SOCIAL AND HEALTH BOMBS",
+      "imageAlt": "Salmon exploding"  
+    },
+    "impact": {
+      "title": "Every year in France, we consume 37.6 million salmon",
+      "impact": "(the equivalent in tons of 19 Eiffel Towers)",
+      "imageAltTitle": "Eiffel tower on a plate",
+      "title2": "of these millions of salmon, 98% are farmed",
+      "description": "Unlike a large part of the fish we consume, 98% of the salmon consumed in France are farmed. We do not catch them. We feed them, every day, for two years, in cages.",
+      "imageAltDescription": "Salmons"
+    }
+  }
+}
