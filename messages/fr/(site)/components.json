@@ -1,5 +1,12 @@
 {
   "components": {
-  
+    "calculatorBlock": {
+      "title": {
+        "part1": "Heureusement",
+        "part2": ", Il est encore temps de désamorcer la bombe!"
+      },
+      "caption": "Calcule ton empreinte saumon et découvre comment la réduire, avec une petite surprise pour te récompenser de ton engagement !",
+      "imageAlt": "Joyeux poisson qui saute de l'eau et passe devant un soleil brillant"
+    }
   }
 }

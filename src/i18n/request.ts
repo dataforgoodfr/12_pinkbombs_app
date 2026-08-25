@@ -33,6 +33,7 @@ export default getRequestConfig(async () => {
         .default,
       site: {
         ...(await import(`../../messages/${locale}/(site)/layout.json`)).default,
+        ...(await import(`../../messages/${locale}/(site)/components.json`)).default,
         ...(await import(`../../messages/${locale}/(site)/pages/homepage.json`)).default,
       }
     },

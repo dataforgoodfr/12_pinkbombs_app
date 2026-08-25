@@ -10,6 +10,8 @@ import "@/lib/env";
 import Image from "next/image";
 import MenuCard from "@/components/v2/cards/MenuCard";
 import JSXStyle from "styled-jsx/style";
+import { Calculator } from "lucide-react";
+import CalculatorBlock from "@/components/v2/CalculatorBlock";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -21,6 +23,7 @@ const HomePage = () => {
       <ImpactSection />
       <MenuSection />
       <AdditionSection />
+      <CalculatorBlock />
     </>
   );
 };
