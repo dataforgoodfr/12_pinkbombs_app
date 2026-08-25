@@ -61,23 +61,27 @@
         "part2": "the bill is steep:"
       },
       "results": {
-        "intro": "That will be",
+        "intro": "That will be:",
         "resultItems": {
           "item1": {
             "title": "1 ton",
-            "description": " of wild fish ground"
+            "description": " of wild fish ground",
+            "imageAlt": "Salmon and small fishes"
           },
           "item2": {
             "title": "54 kg",
-            "description": "of soy, an area larger than Paris + Hauts-de-Seine + Seine-Saint-Denis combined!"
+            "description": "of soy, an area larger than Paris + Hauts-de-Seine + Seine-Saint-Denis combined!",
+            "imageAlt": "Cereal"
           },
           "item3": {
             "title": "1.2 tons",
-            "description": " of carbon emissions"
+            "description": " of carbon emissions",
+            "imageAlt": "Carbon cloud"
           },
           "item4": {
             "title": "2 years",
-            "description": " confined and crowded, fed with pellets"
+            "description": " confined and crowded, fed with pellets",
+            "imageAlt": "Farmed salmon in cages"
           }
         }
       },
@@ -86,22 +90,27 @@
         "addOnItems": {
           "item1": {
             "title": "Wastewater from 2.9 million people:",
-            "description": "Everything given to farmed salmon does not become flesh. The rest comes out: excrement, uneaten feed, treatment residues. <strong>This activity represents up to the equivalent of the untreated wastewater produced by 2.9 million people.</strong>"
+            "description": "Everything given to farmed salmon does not become flesh. The rest comes out: excrement, uneaten feed, treatment residues. <strong>This activity represents up to the equivalent of the untreated wastewater produced by 2.9 million people.</strong>",
+            "imageAlt": "Pipe discharging wastewater"
+          
           },
           "item2": {
             "title": "Resources for 588 million people:",
-            "description": "The food fed to farmed salmon is sourced from waters off countries where fish are among the few accessible sources of protein.\n\nSardines, anchovies, sardinella... whole fish, caught specifically to be ground up. <strong>These diverted resources could meet the protein needs of 588 million people.</strong>"
+            "description": "The food fed to farmed salmon is sourced from waters off countries where fish are among the few accessible sources of protein.\n\nSardines, anchovies, sardinella... whole fish, caught specifically to be ground up. <strong>These diverted resources could meet the protein needs of 588 million people.</strong>",
+            "imageAlt": "Salmon and small fishes"
           },
           "item3": {
             "title": "398 microplastics:",
-            "description": "In France, each person consumes an average of <strong>3.8 kg of farmed salmon per year, which is equivalent to ingesting around 398 microplastics every year.</strong>"
+            "description": "In France, each person consumes an average of <strong>3.8 kg of farmed salmon per year, which is equivalent to ingesting around 398 microplastics every year.</strong>",
+            "imageAlt": "Plastic bottle deteriorating"
           },
           "item4": {
             "title": "Less omega-3:",
-            "description": "For your information: Omega-3s do not come from salmon. They come from the algae that fish used to consume.\n\nToday, salmon flesh contains significantly less omega-3.\n\nPollutants, however, accumulate."
+            "description": "For your information: Omega-3s do not come from salmon. They come from the algae that fish used to consume.\n\nToday, salmon flesh contains significantly less omega-3.\n\nPollutants, however, accumulate.",
+            "imageAlt": "Algae and a sign indicating a prohibition"
           }
         },
-        "total": "Total"
+        "total": "Total:"
       }
     }
   }

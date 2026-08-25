@@ -9,6 +9,7 @@ import "@/lib/env";
 
 import Image from "next/image";
 import MenuCard from "@/components/v2/cards/MenuCard";
+import JSXStyle from "styled-jsx/style";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -171,7 +172,7 @@ const MenuSection = () => {
 const AdditionSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="relative flex flex-col bg-[#FF5029] mx-auto">
+    <section className="relative flex flex-col bg-[#FF5029] mx-auto pb-32">
         <svg width="1512" height="40" viewBox="0 0 1512 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1567_12957)">
         <rect width="1512" height="40" fill="#FF5029"/>
@@ -183,17 +184,225 @@ const AdditionSection = () => {
         </clipPath>
         </defs>
       </svg>
-      <div className="flex flex-col py-8 space-between gap-6 lg:gap-12 max-w-[703px] mx-auto">
+      <div className="flex flex-col py-8 max-w-[703px] mx-auto">
         <p className="h2 text-center mt-4 text-black">
           {t("addition.title.part1")}{" "}
           <span className="text-white">{t("addition.title.part2")}{" "}</span>
         </p>
       </div>
-      <div className="flex flex-col rotate-[2.3deg] bg-v2-pink text-black py-8 px-12 space-between gap-6 lg:gap-12 max-w-[845px] mx-auto">
-        <p className="h3 italic">
-          {t("addition.results.intro")}
-        </p>
+      <div className="flex flex-col rotate-[3deg] bg-v2-pink text-black mt-8 pt-8 px-12 space-between gap-4 w-[60%] mx-auto rounded-lg">
+        <div className="flex flex-col gap-10">
+          <p className="h3 italic">
+            {t("addition.results.intro")}
+          </p>
+          <div className="grid grid-rows-4">
+            <div className="flex flex-row justify-start items-center gap-2">
+              <Image
+                loading="lazy"
+                src="/site/images/components/salmons.svg"
+                width={81}
+                height={81}
+                alt={t("addition.results.resultItems.item1.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h2">{t("addition.results.resultItems.item1.title")}</span>{" "}
+                <span className="p-lead">{t("addition.results.resultItems.item1.description")}</span>
+              </div>
+            </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-thin-divider.svg"
+              width={725}
+              height={0}
+              alt="Divider"
+              className="-rotate-[2.2deg] my-4"
+            />
+            <div className="flex flex-row justify-start items-center gap-2">
+              <Image
+                loading="lazy"
+                src="/site/images/components/cereal.svg"
+                width={81}
+                height={81}
+                alt={t("addition.results.resultItems.item2.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h2">{t("addition.results.resultItems.item2.title")}</span>{" "}
+                <span className="p-lead">{t("addition.results.resultItems.item2.description")}</span>
+              </div>
+              </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-thin-divider.svg"
+              width={725}
+              height={0}
+              alt="Divider"
+              className="-rotate-[2.2deg] my-4"
+            />
+            <div className="flex flex-row justify-start items-center gap-2">
+              <Image
+                loading="lazy"
+                src="/site/images/components/carbon.svg"
+                width={81}
+                height={81}
+                alt={t("addition.results.resultItems.item3.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h2">{t("addition.results.resultItems.item3.title")}</span>{" "}
+                <span className="p-lead">{t("addition.results.resultItems.item3.description")}</span>
+              </div>
+            </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-thin-divider.svg"
+              width={725}
+              height={0}
+              alt="divider"
+              className="-rotate-[2.2deg] my-4"
+            />
+            <div className="flex flex-row justify-start items-center gap-2">
+              <Image
+                loading="lazy"
+                src="/site/images/components/farmed-fishes.svg"
+                width={81}
+                height={81}
+                alt={t("addition.results.resultItems.item4.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h2">{t("addition.results.resultItems.item4.title")}</span>{" "}
+                <span className="p-lead">{t("addition.results.resultItems.item4.description")}</span>
+              </div>
+            </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-heavy-divider.svg"
+              width={725}
+              height={0}
+              alt="Divider"
+              className="-rotate-[2.2deg] mt-6"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col gap-10">
+          <p className="h3 italic">
+            {t("addition.addOns.intro")}
+          </p>
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+              <Image
+                loading="lazy"
+                src="/site/images/components/water.svg"
+                width={81}
+                height={81}
+                alt={t("addition.addOns.addOnItems.item1.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h4">
+                  {t("addition.addOns.addOnItems.item1.title")}
+                </span>{" "}
+                <span className="p">
+                  {t.rich("addition.addOns.addOnItems.item1.description", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+              <Image
+                loading="lazy"
+                src="/site/images/components/salmons.svg"
+                width={81}
+                height={81}
+                alt={t("addition.addOns.addOnItems.item2.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h4">
+                  {t("addition.addOns.addOnItems.item2.title")}
+                </span>{" "}
+                <span className="p preserve-lines">
+                  {t.rich("addition.addOns.addOnItems.item2.description", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+              <Image
+                loading="lazy"
+                src="/site/images/components/bottle.svg"
+                width={81}
+                height={81}
+                alt={t("addition.addOns.addOnItems.item3.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h4">
+                  {t("addition.addOns.addOnItems.item3.title")}
+                </span>{" "}
+                <span className="p">
+                  {t.rich("addition.addOns.addOnItems.item3.description", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+              <Image
+                loading="lazy"
+                src="/site/images/components/omega3.svg"
+                width={81}
+                height={81}
+                alt={t("addition.addOns.addOnItems.item4.imageAlt")}
+                className="mr-4"
+              />
+              <div>
+                <span className="h4">
+                  {t("addition.addOns.addOnItems.item4.title")}
+                </span>{" "}
+                <span className="p preserve-lines">
+                  {t.rich("addition.addOns.addOnItems.item4.description", {
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  })}
+                </span>
+              </div>
+            </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-heavy-divider.svg"
+              width={725}
+              height={0}
+              alt="Divider"
+              className="object-contain -rotate-[2.2deg]"
+            />
+          </div>
+        </div>
+        <div className="relative -mb-36">
+          <p className="h3 italic">
+            {t("addition.total")}
+          </p>
+          <Image
+            loading="lazy"
+            src="/site/images/homepage/boom.svg"
+            width={771}
+            height={380}
+            alt={t("bomb.imageAlt")}
+            className="relative -top-32 -rotate-[2.2deg] object-contain mx-auto"
+          />
+        </div>
       </div>
+      <Image
+        loading="lazy"
+        src="/site/images/homepage/calculator-divider.svg"
+        width={1512}
+        height={53}
+        alt="divider"
+        className="absolute bottom-0 object-contain mx-auto"
+      />
     </section>
   );
-};
+};  

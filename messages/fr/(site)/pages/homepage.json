@@ -63,23 +63,27 @@
         "part2": "l’addition est salée:"
       },
       "results": {
-        "intro": "Ça fera",
+        "intro": "Ça fera :",
         "resultItems": {
           "item1": {
             "title": "1 tonnes",
-            "description": " de poissons sauvages broyés"
+            "description": " de poissons sauvages broyés",
+            "imageAlt": "Saumon et petits poissons"
           },
           "item2": {
             "title": "54 kg",
-            "description": "de soja, une surface plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis !"
+            "description": "de soja, une surface plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis !",
+            "imageAlt": "Céréale"
           },
           "item3": {
             "title": "1,2 tonnes",
-            "description": " d'émissions carbone"
+            "description": " d'émissions carbone",
+            "imageAlt": "Nuage de C02"
           },
           "item4": {
             "title": "2 années",
-            "description": "enfermés et entassés, nourris aux croquettes"
+            "description": "enfermés et entassés, nourris aux croquettes",
+            "imageAlt": "Saumons élevés en cage"
           }
         }
       },
@@ -88,24 +92,27 @@
         "addOnItems": {
           "item1": {
             "title": "Eau usée de 2,9 millions de personnes :",
-            "description": " Tout ce qu'on donne aux saumons ne devient pas de la chair. Le reste ressort : déjections, aliment non consommé, résidus de traitements. <strong>Cette activité représente jusqu'à 2,9 millions de personnes en équivalent des eaux usées non traitées.</strong>"
+            "description": "Tout ce qu'on donne aux saumons ne devient pas de la chair. Le reste ressort : déjections, aliment non consommé, résidus de traitements. <strong>Cette activité représente jusqu'à 2,9 millions de personnes en équivalent des eaux usées non traitées.</strong>",
+            "imageAlt": "Tuyau rejetant des eaux usées"
           },
           "item2": {
             "title": "Ressource de 588 millions de personnes :",
-            "description": "La nourriture des saumons d'élevage est prélevée au large de pays où ils comptent parmi les rares sources de protéines accessibles à toustes.\n\nSardines, anchois, sardinelles... des poissons entiers, pêchés exprès pour être broyés. <strong>Ces ressources détournées couvriraient les besoins en protéines de 588 millions de personnes.</strong>"
+            "description": "La nourriture des saumons d'élevage est prélevée au large de pays où ils comptent parmi les rares sources de protéines accessibles à toustes.\n\nSardines, anchois, sardinelles... des poissons entiers, pêchés exprès pour être broyés. <strong>Ces ressources détournées couvriraient les besoins en protéines de 588 millions de personnes.</strong>",
+            "imageAlt": "Saumon et petits poissons"
           },
           "item3": {
             "title": "398 microplastiques :",
-            "description": "En France, chaque habitant consomme en moyenne <strong>3.8 kg de saumons d’élevage par an, ce qui équivaut à environ 398 microplastiques ingérés chaque année.</strong>"
+            "description": "En France, chaque habitant consomme en moyenne <strong>3.8 kg de saumons d’élevage par an, ce qui équivaut à environ 398 microplastiques ingérés chaque année.</strong>",
+            "imageAlt": "Bouteille en plastique qui se détériore"
           },
           "item4": {
             "title": "Moins d’oméga 3 :",
-            "description": "Pour information : Les oméga-3 ne viennent pas des saumons. Ils viennent des algues que pouvaient consommer les poissons.\n\nAujourd'hui, la chair des saumons contient nettement moins d'omega-3.\n\nLes polluants eux s'accumulent."
+            "description": "Pour information : Les oméga-3 ne viennent pas des saumons. Ils viennent des algues que pouvaient consommer les poissons.\n\nAujourd'hui, la chair des saumons contient nettement moins d'omega-3.\n\nLes polluants eux s'accumulent.",
+            "imageAlt": "Algues et panneau de signalisation indiquant une interdiction"
           }
-        },
-        "total": "Total"
-      }
-
+        }
+      },
+      "total": "Total :"
     }
   }
 }
