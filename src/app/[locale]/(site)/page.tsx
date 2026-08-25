@@ -1,16 +1,14 @@
 "use client";
 
+import React from "react";
 import clsx from "clsx";
-import Link from "next/link";
+
+import type { MenuCardProps } from "@/components/v2/cards/MenuCard";
 import { useTranslations } from "next-intl";
-import * as React from "react";
 import "@/lib/env";
 
-import Chart from "@/components/v1/Chart";
-import Edito from "@/components/v1/Edito";
-import IconCard from "@/components/v1/IconCard";
-import MetaChart from "@/components/v1/MetaChart";
 import Image from "next/image";
+import MenuCard from "@/components/v2/cards/MenuCard";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -20,6 +18,8 @@ const HomePage = () => {
       <HeroSection />
       <ExplodeSection />
       <ImpactSection />
+      <MenuSection />
+      <AdditionSection />
     </>
   );
 };
@@ -77,10 +77,8 @@ const ExplodeSection = () => {
 
 const ImpactSection = () => {
   const t = useTranslations("site.homepage");
-
-
   return (
-    <section className="relative flex flex-col px-16 text-black bg-v2-blue min-h-[760px] max-w-[1512px] mx-auto">
+    <section className="relative flex flex-col px-16 text-black bg-v2-blue max-w-[1512px] mx-auto">
       <Image
         loading="lazy"
         src="/site/images/homepage/divider-impact-section.svg"
@@ -137,51 +135,64 @@ const ImpactSection = () => {
   );
 };
 
-const BusinessSection = () => {
-  const t = useTranslations("story");
-
+const MenuSection = () => {
+  const t = useTranslations("site.homepage");
+  const menuCardItems = t.raw("menu.menuCards") as MenuCardProps[];
   return (
-    <section className="p-6 lg:px-12 lg:pt-36 lg:pb-64 text-white bg-darkblue1">
-      <div className="max-w-[1500px] mx-auto">
-        <h2 className={clsx("h3", "mb-4 lg:mb-6 max-w-5xl m-auto text-center")}>
-          {t("industry.title")}
-        </h2>
-        <p className="mb-6 lg:mb-14 max-w-xl text-white m-auto text-center">
-          {t("industry.content")}
+    <section className="relative flex flex-col bg-white mx-auto">
+      <svg width="1512" height="49" viewBox="0 0 1512 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1512" height="49" fill="#13176E"/>
+        <path d="M0.5 49L29.1364 1L137.773 49L166.409 1L275.045 49L303.682 1L412.318 49L440.955 1L549.591 49L578.227 1L686.864 49L715.5 1L824.136 49L852.773 1L961.409 49L990.046 1L1098.68 49L1127.32 1L1235.95 49L1264.59 1L1373.23 49L1401.86 1L1510.5 49H1373.23H1235.95H1098.68H961.409H824.136H686.864H549.591H412.318H275.045H137.773H0.5Z" fill="white"/>
+      </svg>
+
+      <div className="flex flex-col py-20 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
+        <p className="h2 text-center mt-4">
+          <span className="text-v2-red">{t("menu.title.part1")}{" "}</span>
+          <span className="text-v2-blue">{t("menu.title.part2")}{" "}</span>
+          <span className="text-v2-red">{t("menu.title.part3")}</span>
         </p>
-        <Chart id="hyper-growth-grouped" />
-        <MetaChart
-          hasBackground={false}
-          data={[
-            {
-              type: "source",
-              link: t("industry.source"),
-              isBlank: true,
-            },
-            {
-              type: "methodology",
-              link: "/about#macro-hyper-growth-section",
-            },
-            {
-              type: "data",
-              link: t("industry.data"),
-              artifact: t("industry.artifact"),
-            },
-            {
-              type: "image",
-              isBlank: true,
-              link: t("industry.image"),
-            },
-          ]}
-        />
-        <div className="flex justify-center">
-          <Link
-            className="inline-flex justify-center mt-6 lg:mt-12 p-4 lg:text-xl text-white bg-red1 font-secondary uppercase rounded-xl tracking-widest border-2 border-red1 hover:bg-darkblue1 hover:text-red1 transition-all ease-in-out duration-100"
-            href="/archive/v1/to-act"
-          >
-            {t("industry.link")}
-          </Link>
-        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-4 px-32 pb-20">
+        {menuCardItems.map((item, index) => (
+          <MenuCard
+            key={index}
+            className="mx-auto"
+            title={item.title}
+            content={<span dangerouslySetInnerHTML={{ __html: item.content }} />}
+            imageAlt={item.imageAlt}
+            index={index}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const AdditionSection = () => {
+  const t = useTranslations("site.homepage");
+  return (
+    <section className="relative flex flex-col bg-[#FF5029] mx-auto">
+        <svg width="1512" height="40" viewBox="0 0 1512 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1567_12957)">
+        <rect width="1512" height="40" fill="#FF5029"/>
+        <path d="M700.168 -15.832H811.832L756 40L700.168 -15.832Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1567_12957">
+        <rect width="1512" height="40" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+      <div className="flex flex-col py-8 space-between gap-6 lg:gap-12 max-w-[703px] mx-auto">
+        <p className="h2 text-center mt-4 text-black">
+          {t("addition.title.part1")}{" "}
+          <span className="text-white">{t("addition.title.part2")}{" "}</span>
+        </p>
+      </div>
+      <div className="flex flex-col rotate-[2.3deg] bg-v2-pink text-black py-8 px-12 space-between gap-6 lg:gap-12 max-w-[845px] mx-auto">
+        <p className="h3 italic">
+          {t("addition.results.intro")}
+        </p>
       </div>
     </section>
   );

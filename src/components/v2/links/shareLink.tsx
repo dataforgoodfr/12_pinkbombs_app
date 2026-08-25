@@ -6,7 +6,7 @@ type ShareLinkProps = {
   type?:
     | "site"
     | "sources"
-    | "legalNotice"
+    | "legalNotices"
     | "contactUs"
     | "email"
     | "design";

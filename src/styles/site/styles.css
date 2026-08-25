@@ -62,6 +62,11 @@
     @apply font-secondary text-2xl md:text-[1.625rem]/none font-bold uppercase;
   }
 
+  .h5,
+  .prose h5 {
+    @apply font-secondary text-lg md:text-xl/none lg:text-2xl/none font-bold;
+  }
+
   .p-lead {
     @apply font-primary text-sm md:text-base font-semibold;
   }
@@ -93,4 +98,7 @@
 }
 
 @layer utilities {
+  .preserve-lines {
+    white-space: pre-line;
+  }
 }
