@@ -9,9 +9,8 @@ import "@/lib/env";
 
 import Image from "next/image";
 import MenuCard from "@/components/v2/cards/MenuCard";
-import JSXStyle from "styled-jsx/style";
-import { Calculator } from "lucide-react";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ArticlesBlock from "@/components/v2/ArticlesBlock";
 
 const HomePage = () => {
   const t = useTranslations("story");
@@ -24,6 +23,7 @@ const HomePage = () => {
       <MenuSection />
       <AdditionSection />
       <CalculatorBlock />
+      <ArticlesBlock />
     </>
   );
 };

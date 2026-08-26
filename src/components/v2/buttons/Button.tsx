@@ -25,12 +25,12 @@ const Button = ({
   return (
     <Link
       className={clsx(
-        "inline-flex text-base uppercase h4 border-2 rounded-md tracking-widest font-black",
+        "inline-flex text-base uppercase h4 border-2 rounded-xl tracking-widest font-black",
         borderColor,
         className,
         textColor,
         backgroundColor,
-        type === "small" && "p-2 text-sm lg:text-base",
+        type === "small" && "px-4 py-2 text-sm lg:text-base w-fit",
         type === "regular" && "px-8 py-3 gap-5"
       )}
       href={href}
