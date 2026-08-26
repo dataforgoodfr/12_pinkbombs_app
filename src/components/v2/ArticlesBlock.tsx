@@ -16,7 +16,7 @@ const ArticlesBlock = () => {
         className="object-contain mx-auto"
       />
       <h2 className="h2 text-center text-v2-blue text-pretty">{t("articlesBlock.title")}</h2>
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 py-4">
+      <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row gap-10 lg:gap-4 py-4 max-w-[1592px] mx-auto">
         {articleCardItems.map((item, index) => (
           <ArticleCard
             key={index}

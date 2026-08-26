@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="p-6 lg:p-12 text-white bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
-        <div className="flex flex-wrap gap-6 lg:gap-12 lg:pt-12">
+        <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-6 lg:gap-4 lg:pt-12">
           <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
             <h5 className="h5 uppercase">{t("footer.sections.projectBy.title")}</h5>
             <Image
@@ -76,9 +76,9 @@ const Footer = () => {
             <ShareLink href="https://seastemik.org/" type="contactUs" name={t("footer.shareLink.contactUs")} />
           </div>
 
-          <div className="flex flex-col gap-4 self-top lg:ml-auto w-full md:w-auto">
+          <div className="flex flex-col col-span-3 gap-4 self-top lg:ml-auto w-full md:w-auto">
             <h5 className="h5 uppercase">{t("footer.sections.stayInformed.title")}</h5>
-            <p className="text-sm max-w-xs">{t("footer.sections.stayInformed.text")}</p>
+            <p className="text-sm sm:max-w-xs md:max-w-lg lg:max-w-xs ">{t("footer.sections.stayInformed.text")}</p>
             <form className="flex flex-col lg:flex-row gap-4 lg:gap-2 w-full max-w-xs">
               <input
                 id="email"

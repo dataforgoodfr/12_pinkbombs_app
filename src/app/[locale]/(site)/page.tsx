@@ -34,7 +34,7 @@ const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
     <section className="flex lg:mt-26 py-20 lg:pt-40 px-10 min-h-[300px] lg:h-screen text-v2-pink bg-v2-blue">
-      <div className="flex flex-col gap-24 lg:gap-8 lg:grid grid-rows-[1fr, auto, 1fr] w-full">
+      <div className="flex flex-col gap-24 lg:gap-8 lg:grid grid-rows-[1fr, auto, 1fr] w-full max-w-[1596px] mx-auto">
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-plate.svg"
@@ -57,16 +57,9 @@ const ExplodeSection = () => {
   const t = useTranslations("site.homepage");
 
   return (
-    <section className="relative">
-      <Image
-        loading="lazy"
-        src="/site/images/homepage/divider-explode-section.svg"
-        width={1512}
-        height={49}
-        alt={t("bomb.imageAlt")}
-        className="object-contain"
-      />
-      <div className="flex flex-col gap-20 lg:gap-0 pt-20 lg:pt-0 lg:flex-col-reverse text-black bg-v2-pink lg:min-h-[760px]">
+    <section className="relative bg-v2-pink">
+      <div className="bg-[url(/site/images/homepage/divider-explode-section.svg)] bg-center bg-repeat w-full h-[49px]" />
+      <div className="flex flex-col gap-20 lg:gap-0 pt-20 lg:pt-0 lg:flex-col-reverse text-black lg:min-h-[760px] max-w-[1596px] mx-auto">
         <div className="absolute px-10 lg:bottom-6 flex row-start-3 items-left flex gap-2 lg:max-w-[60%]">
           <p className="h1 text-pretty">
             {t("bomb.title")}
@@ -88,57 +81,52 @@ const ExplodeSection = () => {
 const ImpactSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue max-w-[1512px] mx-auto">
-      <Image
-        loading="lazy"
-        src="/site/images/homepage/divider-impact-section.svg"
-        width={1130}
-        height={692}
-        alt="Page divider"
-        className="object-cover mx-auto"
-      />
-      <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-        <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
-          <Image
-            loading="lazy"
-            src="/site/images/homepage/eiffel-towers.svg"
-            width={611}
-            height={179}
-            alt={t("impact.imageAltTitle")}
-            className="block flex-1 object-contain lg:max-w-[611px] mx-auto"
-          />
-          <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
-            <p className="h2">
-              {t("impact.title")}
-            </p>
-            <p className="h2 text-v2-red">
-              {t("impact.titleHighlight")}
-            </p>
-            <p className="p-lead pt-2">
-              {t("impact.impact")}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
+    <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto">
+      <div className="max-w-[1512px] mx-auto">
+        <div className="bg-[url(/site/images/homepage/divider-impact-section.svg)] bg-center bg-repeat w-full h-[48px]" />
+        <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
+          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between max-w-[1512px]">
             <Image
               loading="lazy"
-              src="/site/images/homepage/salmons.svg"
-              width={646}
-              height={59}
-              alt={t("impact.imageAltDescription")}
-              className="object-contain flex-1 lg:max-w-[646px] mx-auto"
+              src="/site/images/homepage/eiffel-towers.svg"
+              width={611}
+              height={179}
+              alt={t("impact.imageAltTitle")}
+              className="block flex-1 object-contain lg:max-w-[611px] mx-auto"
             />
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
-              <p className="h2 text-pretty">
-                {t("impact.title2")}
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
+              <p className="h2">
+                {t("impact.title")}
               </p>
               <p className="h2 text-v2-red">
-                {t("impact.title2Highlight")}
+                {t("impact.titleHighlight")}
               </p>
               <p className="p-lead pt-2">
-                {t("impact.description")}
+                {t("impact.impact")}
               </p>
             </div>
+          </div>
+          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
+              <Image
+                loading="lazy"
+                src="/site/images/homepage/salmons.svg"
+                width={646}
+                height={59}
+                alt={t("impact.imageAltDescription")}
+                className="object-contain flex-1 lg:max-w-[646px] mx-auto"
+              />
+              <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
+                <p className="h2 text-pretty">
+                  {t("impact.title2")}
+                </p>
+                <p className="h2 text-v2-red">
+                  {t("impact.title2Highlight")}
+                </p>
+                <p className="p-lead pt-2">
+                  {t("impact.description")}
+                </p>
+              </div>
+          </div>
         </div>
       </div>
     </section>
@@ -149,33 +137,28 @@ const MenuSection = () => {
   const t = useTranslations("site.homepage");
   const menuCardItems = t.raw("menu.menuCards") as MenuCardProps[];
   return (
-    <section className="relative flex flex-col bg-white mx-auto">
-      <Image
-        loading="lazy"
-        src="/site/images/homepage/divider-menu-section.svg"
-        width={1510}
-        height={48}
-        alt="Page divider"
-        className="object-cover mx-auto"
-      />
-      <div className="flex flex-col px-4 py-20 lg:px-0 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
-        <p className="h2 text-center mt-4 text-pretty">
-          <span className="text-v2-red">{t("menu.title.part1")}{" "}</span>
-          <span className="text-v2-blue">{t("menu.title.part2")}{" "}</span>
-          <span className="text-v2-red">{t("menu.title.part3")}</span>
-        </p>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6 lg:px-32 pb-20">
-        {menuCardItems.map((item, index) => (
-          <MenuCard
-            key={index}
-            className="mx-auto"
-            title={item.title}
-            content={<span dangerouslySetInnerHTML={{ __html: item.content }} />}
-            imageAlt={item.imageAlt}
-            index={index}
-          />
-        ))}
+    <section className="relative flex flex-col bg-white mx-auto ">
+      <div className="bg-[url(/site/images/homepage/divider-menu-section.svg)] bg-center bg-repeat w-full h-[48px]" />
+      <div className="max-w-[1512px] mx-auto">
+        <div className="flex flex-col px-4 py-20 lg:px-0 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
+          <p className="h2 text-center mt-4 text-pretty">
+            <span className="text-v2-red">{t("menu.title.part1")}{" "}</span>
+            <span className="text-v2-blue">{t("menu.title.part2")}{" "}</span>
+            <span className="text-v2-red">{t("menu.title.part3")}</span>
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 px-6 lg:px-32 pb-20">
+          {menuCardItems.map((item, index) => (
+            <MenuCard
+              key={index}
+              className="mx-auto"
+              title={item.title}
+              content={<span dangerouslySetInnerHTML={{ __html: item.content }} />}
+              imageAlt={item.imageAlt}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -410,7 +393,7 @@ const AdditionSection = () => {
         width={1512}
         height={53}
         alt="divider"
-        className="absolute bottom-0 object-contain mx-auto"
+        className="absolute bottom-0 object-contain xl:w-[2000px] mx-auto"
       />
     </section>
   );

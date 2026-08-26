@@ -7,9 +7,9 @@ import Button from "@/components/v2/buttons/Button";
 const CalculatorBlock = () => {
   const t = useTranslations("site.components");
   return (
-    <section>
-      <div className="flex flex-col lg:flex-row bg-v2-blue px-8 lg:px-16 py-20 gap-12 lg:gap-0">
-        <div className="w-full lg:w-[55%] flex flex-col items-start gap-6">
+    <section className="bg-v2-blue">
+      <div className="flex flex-col lg:flex-row px-8 lg:px-16 py-20 gap-12 lg:gap-0 max-w-[1592px] mx-auto">
+        <div className="w-full lg:w-[55%] xl:w-[40%] flex flex-col items-start gap-6">
           <Image
             loading="lazy"
             src="/site/images/components/calculator-block/sunny-fish.png"
@@ -36,7 +36,7 @@ const CalculatorBlock = () => {
             textColor="text-v2-blue"
             className="z-30 mt-10 mb-2"
           />
-          <p className="z-30 p-caption italic text-center text-v2-pink w-full lg:w-[90%] mx-auto">
+          <p className="z-30 p-caption italic text-center text-v2-pink w-full lg:w-[90%] xl:w-[60%] mx-auto">
             {t("calculatorBlock.companyHelp")} <a href="/contact" className="underline">{t("calculatorBlock.contactLink")}</a>
             .
           </p>
@@ -48,7 +48,7 @@ const CalculatorBlock = () => {
         width={1512}
         height={53}
         alt={t("calculatorBlock.imageAlt")}
-        className="object-cover"
+        className="object-cover xl:w-[2000px]"
       />
     </section>
     
