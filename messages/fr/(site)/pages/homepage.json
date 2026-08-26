@@ -32,7 +32,7 @@
         },
         {
           "title": "Du soja, du blé, du colza",
-          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourri au soja.</strong>\n\nLes cultures destinées à nourrir les saumons occupent une surface <strong>plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis !</strong>",
+          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourri au soja.</strong>\n\nLes cultures destinées à nourrir les saumons occupent une surface <strong>plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis\u00a0!</strong>",
           "imageAlt": "Céréale"
         },
         {
@@ -42,7 +42,7 @@
         },
         {
           "title": "Des traitements antiparasitaires",
-          "content": "Pour garder les saumons vivants et en bonne santé, <strong>on leur administre des traitements anti-parasites</strong> ; principalement contre les poux de mer, des petits crustacés qui prolifèrent dans les élevages.",
+          "content": "Pour garder les saumons vivants et en bonne santé, <strong>on leur administre des traitements anti-parasites</strong>\u00a0; principalement contre les poux de mer, des petits crustacés qui prolifèrent dans les élevages.",
           "imageAlt": "Pulvérisateur"
         },
         {
@@ -72,7 +72,7 @@
           },
           "item2": {
             "title": "54 kg",
-            "description": "de soja, une surface plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis !",
+            "description": "de soja, une surface plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis\u00a0!",
             "imageAlt": "Céréale"
           },
           "item3": {

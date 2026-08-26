@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import clsx from "clsx";
 
 import type { MenuCardProps } from "@/components/v2/cards/MenuCard";
