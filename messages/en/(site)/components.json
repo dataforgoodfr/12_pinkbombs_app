@@ -5,8 +5,20 @@
         "part1": "Happily",
         "part2": ", It's still time to defuse the bomb!"
       },
-      "content": "Calculate your salmon footprint and discover how to reduce it, with a little surprise to reward you for your commitment!",
-      "imageAlt": "Fish jumping out of the water in front of a bright sun"
+      "caption": "Calculate your salmon footprint and discover how to reduce it, with a little surprise to reward you for your commitment!",
+      "imageAlt": "Fish jumping out of the water in front of a bright sun",
+      "buttonCta": "Assess your impact",
+      "companyHelp": "For companies, we can support you in your impact reduction process. You can get in",
+      "contactLink": "contact here"
+    },
+    "calculator": {
+      "labels": {
+        "neutral": "Neutral",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "veryHigh": "Very High"
+      }
     }
   }
 }

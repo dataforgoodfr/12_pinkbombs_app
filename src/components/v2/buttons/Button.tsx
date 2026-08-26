@@ -13,7 +13,7 @@ const Button = ({
 }: {
   textColor?: "text-v2-blue" | "text-v2-pink";
   borderColor?: "border-white" | "border-black" | "border-v2-blue" | "border-v2-pink";
-  backgroundColor?: "bg-white" | "bg-black" | "bg-v2-blue";
+  backgroundColor?: "bg-white" | "bg-black" | "bg-v2-blue" | "bg-v2-pink";
   className?: string;
   href?: string;
   content: JSX.Element | string;
@@ -25,15 +25,23 @@ const Button = ({
   return (
     <Link
       className={clsx(
-        "text-base uppercase inline-block align-middle px-4 h4 border-2 rounded-md tracking-widest",
+        "inline-flex text-base uppercase h4 border-2 rounded-md tracking-widest font-black",
         borderColor,
         className,
         textColor,
         backgroundColor,
-        type === "small" && "py-2 text-sm lg:text-base",
+        type === "small" && "p-2 text-sm lg:text-base",
+        type === "regular" && "px-8 py-3 gap-5"
       )}
       href={href}
     >
+      {
+        type === "regular" && (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.9849 10.6445L19.5327 12L17.9849 13.3545L8.38525 21.7539L6.01416 19.0449L14.0659 11.999L6.01416 4.9541L8.38525 2.24512L17.9849 10.6445Z" fill="#E82D04"/>
+          </svg>
+        )
+      }
       {content}
     </Link>
   );

@@ -6,7 +6,19 @@
         "part2": ", Il est encore temps de désamorcer la bombe!"
       },
       "caption": "Calcule ton empreinte saumon et découvre comment la réduire, avec une petite surprise pour te récompenser de ton engagement !",
-      "imageAlt": "Joyeux poisson qui saute de l'eau et passe devant un soleil brillant"
+      "imageAlt": "Joyeux poisson qui saute de l'eau et passe devant un soleil brillant",
+      "buttonCta": "Calculer votre impact",
+      "companyHelp": "Pour les entreprises, nous pouvons vous accompagner dans votre processus de réduction d'impact. Vous pouvez prendre",
+      "contactLink": "contact ici"
+    },
+    "calculator": {
+      "labels": {
+        "neutral": "Neutre",
+        "low": "Léger",
+        "medium": "Moyen",
+        "high": "Fort",
+        "veryHigh": "Très fort"
+      }
     }
   }
 }

@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <header
       className={clsx(
-        "lg:fixed left-0 top-0 z-10 w-full",
+        "lg:fixed left-0 top-0 z-50 w-full",
         getBackgroundColor(),
       )}
     >
