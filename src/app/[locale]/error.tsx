@@ -3,7 +3,7 @@
 import * as React from "react";
 import { RiAlarmWarningFill } from "react-icons/ri";
 
-import TextButton from "@/components/buttons/TextButton";
+import TextButton from "@/components/v1/buttons/TextButton";
 
 export default function Error({
   error,

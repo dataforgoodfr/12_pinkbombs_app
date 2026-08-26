@@ -1,25 +1,11 @@
-import clsx from "clsx";
-import { Barlow_Condensed, Montserrat } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
-const barlow = Barlow_Condensed({
-  weight: ["700", "800", "900"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-barlow",
-});
-
-const montserrat = Montserrat({
-  weight: ["500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-montserrat",
-});
-
 import "@/styles/globals.css";
+
+import Footer from "@/components/v1/layout/Footer";
+import Navbar from "@/components/v1/layout/Navbar";
 
 export async function generateMetadata({
   params,
@@ -61,7 +47,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function GlobalLayout({
+export default async function V1Layout({
   children,
   params,
 }: {
@@ -69,21 +55,26 @@ export default async function GlobalLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages({ locale });
+  const t = await getTranslations({ locale, namespace: "layout" });
   return (
-    <html
-      lang={locale}
-      className={clsx(
-        barlow.variable,
-        montserrat.variable,
-        "scroll-smooth overflow-x-hidden",
-      )}
-    >
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <Navbar />
+      <main>
+        {children}
+        <a
+          href="#"
+          className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
+        >
+          <Image
+            src="/archive/v1/images/bottom.svg"
+            alt={t("top")}
+            width="40"
+            height="20"
+            className="w-8 aspect-square rotate-180"
+          />
+        </a>
+      </main>
+      <Footer />
+    </>
   );
 }

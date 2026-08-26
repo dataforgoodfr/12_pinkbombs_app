@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "top": "Back to top",
+    "nav": {
+      "archiveHeadline": "This page is kept for archival purposes. Its content is part of the V1 of PinkBombs and may be outdated. Check out the ",
+      "archiveCTA": "current version of the site",
+      "title": "main",
+      "story": "Story",
+      "dashboard": "Dashboard",
+      "act": "To act",
+      "about": "About"
+    },
+    "footer": {
+      "allRight": "All rights reserved",
+      "and": "and",
+      "donation": "Donate",
+      "legalNotice": "Legal notices"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analyzing the impact of Salmon on the Environment, Ecosystem, Health and Communities.",
+    "url": "https://pinkbombs-app.vercel.app"
+  }
+}
