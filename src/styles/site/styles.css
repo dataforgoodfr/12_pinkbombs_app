@@ -80,6 +80,10 @@
     @apply font-primary text-xs;
   }
 
+  .cta {
+    @apply font-secondary text-sm md:text-xl font-bold uppercase tracking-[18%];
+  }
+
   /* #endregion  /**======== Typography =========== */
 
   /* #region  /**=========== HEADER =========== */

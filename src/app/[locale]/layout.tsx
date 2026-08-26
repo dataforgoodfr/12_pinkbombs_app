@@ -78,8 +78,9 @@ export default async function GlobalLayout({
         montserrat.variable,
         "scroll-smooth overflow-x-hidden",
       )}
+      suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

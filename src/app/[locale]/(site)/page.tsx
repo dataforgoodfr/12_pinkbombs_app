@@ -33,8 +33,8 @@ export default HomePage;
 const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="flex mt-26 pt-40 px-10 min-h-[300px] h-screen text-v2-pink bg-v2-blue">
-      <div className="grid grid-rows-[1fr, auto, 1fr] w-full">
+    <section className="flex lg:mt-26 py-20 lg:pt-40 px-10 min-h-[300px] lg:h-screen text-v2-pink bg-v2-blue">
+      <div className="flex flex-col gap-24 lg:gap-8 lg:grid grid-rows-[1fr, auto, 1fr] w-full">
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-plate.svg"
@@ -43,8 +43,8 @@ const HeroSection = () => {
           alt={t("hero.imageAlt")}
           className="object-contain mx-auto"
         />
-        <div className="row-start-3 items-left flex gap-2 max-w-[50%]">
-          <p className={clsx("h1", "max-w-[1500px] mx-auto w-full")}>
+        <div className="row-start-3 items-left flex gap-2 lg:max-w-[48%]">
+          <p className={clsx("h1", "lg:max-w-[1500px] mx-auto w-full text-pretty")}>
             {t("hero.title")}
           </p>
         </div>
@@ -57,23 +57,29 @@ const ExplodeSection = () => {
   const t = useTranslations("site.homepage");
 
   return (
-    <section className="relative flex flex-col text-black bg-v2-pink min-h-[760px]">
-      <svg width="1512" height="49" viewBox="0 0 1512 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="1512" height="49" fill="#13176E"/>
-        <path d="M0.5 49L29.1364 1L137.773 49L166.409 1L275.045 49L303.682 1L412.318 49L440.955 1L549.591 49L578.227 1L686.864 49L715.5 1L824.136 49L852.773 1L961.409 49L990.046 1L1098.68 49L1127.32 1L1235.95 49L1264.59 1L1373.23 49L1401.86 1L1510.5 49H1373.23H1235.95H1098.68H961.409H824.136H686.864H549.591H412.318H275.045H137.773H0.5Z" fill="#FFD4D4"/>
-      </svg>
+    <section className="relative">
       <Image
         loading="lazy"
-        src="/site/images/homepage/fish-bomb.svg"
-        width={1130}
-        height={692}
+        src="/site/images/homepage/divider-explode-section.svg"
+        width={1512}
+        height={49}
         alt={t("bomb.imageAlt")}
-        className="pt-24 object-contain mx-auto"
+        className="object-contain"
       />
-      <div className="absolute px-10 bottom-6 flex row-start-3 items-left flex gap-2 max-w-[60%]">
-        <p className="h1">
-          {t("bomb.title")}
-        </p>
+      <div className="flex flex-col gap-20 lg:gap-0 pt-20 lg:pt-0 lg:flex-col-reverse text-black bg-v2-pink lg:min-h-[760px]">
+        <div className="absolute px-10 lg:bottom-6 flex row-start-3 items-left flex gap-2 lg:max-w-[60%]">
+          <p className="h1 text-pretty">
+            {t("bomb.title")}
+          </p>
+        </div>
+        <Image
+          loading="lazy"
+          src="/site/images/homepage/fish-bomb.svg"
+          width={1130}
+          height={692}
+          alt={t("bomb.imageAlt")}
+          className="pt-72 lg:pt-24 object-contain mx-auto"
+        />
       </div>
     </section>
   );
@@ -82,7 +88,7 @@ const ExplodeSection = () => {
 const ImpactSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="relative flex flex-col px-16 text-black bg-v2-blue max-w-[1512px] mx-auto">
+    <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue max-w-[1512px] mx-auto">
       <Image
         loading="lazy"
         src="/site/images/homepage/divider-impact-section.svg"
@@ -91,9 +97,17 @@ const ImpactSection = () => {
         alt="Page divider"
         className="object-cover mx-auto"
       />
-      <div className="flex flex-col py-20 space-between gap-6 lg:gap-12">
-        <div className="flex flex-row items-center justify-between">
-          <div className="flex flex-col flex-1 text-v2-pink max-w-[50%]">
+      <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
+        <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
+          <Image
+            loading="lazy"
+            src="/site/images/homepage/eiffel-towers.svg"
+            width={611}
+            height={179}
+            alt={t("impact.imageAltTitle")}
+            className="block flex-1 object-contain lg:max-w-[611px] mx-auto"
+          />
+          <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
             <p className="h2">
               {t("impact.title")}
             </p>
@@ -104,35 +118,27 @@ const ImpactSection = () => {
               {t("impact.impact")}
             </p>
           </div>
-          <Image
-            loading="lazy"
-            src="/site/images/homepage/eiffel-towers.svg"
-            width={611}
-            height={179}
-            alt={t("impact.imageAltTitle")}
-            className="block flex-1 object-contain max-w-[611px] mx-auto"
-          />
         </div>
-        <div className="flex flex-row items-center justify-between">
-          <div className="flex flex-col flex-1 text-v2-pink max-w-[48%]">
-            <p className="h2">
-              {t("impact.title2")}
-            </p>
-            <p className="h2 text-v2-red">
-              {t("impact.title2Highlight")}
-            </p>
-            <p className="p-lead pt-2">
-              {t("impact.description")}
-            </p>
-          </div>
-          <Image
-            loading="lazy"
-            src="/site/images/homepage/salmons.svg"
-            width={646}
-            height={59}
-            alt={t("impact.imageAltDescription")}
-            className="object-contain flex-1 max-w-[646px] mx-auto"
-          />
+        <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/salmons.svg"
+              width={646}
+              height={59}
+              alt={t("impact.imageAltDescription")}
+              className="object-contain flex-1 lg:max-w-[646px] mx-auto"
+            />
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
+              <p className="h2 text-pretty">
+                {t("impact.title2")}
+              </p>
+              <p className="h2 text-v2-red">
+                {t("impact.title2Highlight")}
+              </p>
+              <p className="p-lead pt-2">
+                {t("impact.description")}
+              </p>
+            </div>
         </div>
       </div>
     </section>
@@ -144,19 +150,22 @@ const MenuSection = () => {
   const menuCardItems = t.raw("menu.menuCards") as MenuCardProps[];
   return (
     <section className="relative flex flex-col bg-white mx-auto">
-      <svg width="1512" height="49" viewBox="0 0 1512 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="1512" height="49" fill="#13176E"/>
-        <path d="M0.5 49L29.1364 1L137.773 49L166.409 1L275.045 49L303.682 1L412.318 49L440.955 1L549.591 49L578.227 1L686.864 49L715.5 1L824.136 49L852.773 1L961.409 49L990.046 1L1098.68 49L1127.32 1L1235.95 49L1264.59 1L1373.23 49L1401.86 1L1510.5 49H1373.23H1235.95H1098.68H961.409H824.136H686.864H549.591H412.318H275.045H137.773H0.5Z" fill="white"/>
-      </svg>
-
-      <div className="flex flex-col py-20 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
-        <p className="h2 text-center mt-4">
+      <Image
+        loading="lazy"
+        src="/site/images/homepage/divider-menu-section.svg"
+        width={1510}
+        height={48}
+        alt="Page divider"
+        className="object-cover mx-auto"
+      />
+      <div className="flex flex-col px-4 py-20 lg:px-0 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
+        <p className="h2 text-center mt-4 text-pretty">
           <span className="text-v2-red">{t("menu.title.part1")}{" "}</span>
           <span className="text-v2-blue">{t("menu.title.part2")}{" "}</span>
           <span className="text-v2-red">{t("menu.title.part3")}</span>
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 px-32 pb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6 lg:px-32 pb-20">
         {menuCardItems.map((item, index) => (
           <MenuCard
             key={index}
@@ -175,31 +184,28 @@ const MenuSection = () => {
 const AdditionSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="relative flex flex-col bg-[#FF5029] mx-auto pb-32">
-        <svg width="1512" height="40" viewBox="0 0 1512 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_1567_12957)">
-        <rect width="1512" height="40" fill="#FF5029"/>
-        <path d="M700.168 -15.832H811.832L756 40L700.168 -15.832Z" fill="white"/>
-        </g>
-        <defs>
-        <clipPath id="clip0_1567_12957">
-        <rect width="1512" height="40" fill="white"/>
-        </clipPath>
-        </defs>
-      </svg>
-      <div className="flex flex-col py-8 max-w-[703px] mx-auto">
-        <p className="h2 text-center mt-4 text-black">
+    <section className="relative flex flex-col bg-[#FF5029] mx-auto pb-20 lg:pb-32">
+      <Image
+        loading="lazy"
+        src="/site/images/homepage/divider-addition-section.svg"
+        width={1512}
+        height={40}
+        alt="Page divider"
+        className="object-cover mx-auto"
+      />
+      <div className="flex flex-col py-8 max-w-[703px] mx-4 lg:mx-auto">
+        <p className="h2 text-center mt-4 text-black text-pretty">
           {t("addition.title.part1")}{" "}
           <span className="text-white">{t("addition.title.part2")}{" "}</span>
         </p>
       </div>
-      <div className="flex flex-col rotate-[3deg] bg-v2-pink text-black mt-8 pt-8 px-12 space-between gap-4 w-[60%] mx-auto rounded-lg">
-        <div className="flex flex-col gap-10">
+      <div className="flex flex-col lg:rotate-[3deg] bg-v2-pink text-black mt-8 pt-8 px-6 lg:px-12 space-between gap-4 lg:w-[60%] mx-4 lg:mx-auto rounded-lg">
+        <div className="flex flex-col gap-10 text-pretty">
           <p className="h3 italic">
             {t("addition.results.intro")}
           </p>
-          <div className="grid grid-rows-4">
-            <div className="flex flex-row justify-start items-center gap-2">
+          <div className="lg:grid grid-rows-4">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
                 src="/site/images/components/salmons.svg"
@@ -221,7 +227,7 @@ const AdditionSection = () => {
               alt="Divider"
               className="-rotate-[2.2deg] my-4"
             />
-            <div className="flex flex-row justify-start items-center gap-2">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
                 src="/site/images/components/cereal.svg"
@@ -243,7 +249,7 @@ const AdditionSection = () => {
               alt="Divider"
               className="-rotate-[2.2deg] my-4"
             />
-            <div className="flex flex-row justify-start items-center gap-2">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
                 src="/site/images/components/carbon.svg"
@@ -265,7 +271,7 @@ const AdditionSection = () => {
               alt="divider"
               className="-rotate-[2.2deg] my-4"
             />
-            <div className="flex flex-row justify-start items-center gap-2">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
                 src="/site/images/components/farmed-fishes.svg"
@@ -290,11 +296,11 @@ const AdditionSection = () => {
           </div>
         </div>
         <div className="flex flex-col gap-10">
-          <p className="h3 italic">
+          <p className="h3 italic text-pretty">
             {t("addition.addOns.intro")}
           </p>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
                 src="/site/images/components/water.svg"
@@ -314,7 +320,7 @@ const AdditionSection = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
                 src="/site/images/components/salmons.svg"
@@ -334,7 +340,7 @@ const AdditionSection = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
                 src="/site/images/components/bottle.svg"
@@ -354,7 +360,7 @@ const AdditionSection = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-start items-start gap-2 border-bottom">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
                 src="/site/images/components/omega3.svg"
@@ -384,8 +390,8 @@ const AdditionSection = () => {
             />
           </div>
         </div>
-        <div className="relative -mb-36">
-          <p className="h3 italic">
+        <div className="relative -mb-6 lg:-mb-36">
+          <p className="h3 italic text-pretty">
             {t("addition.total")}
           </p>
           <Image
@@ -394,7 +400,7 @@ const AdditionSection = () => {
             width={771}
             height={380}
             alt={t("bomb.imageAlt")}
-            className="relative -top-32 -rotate-[2.2deg] object-contain mx-auto"
+            className="relative -top-4 lg:-top-32 -rotate-[2.2deg] object-contain mx-auto"
           />
         </div>
       </div>

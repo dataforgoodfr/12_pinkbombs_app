@@ -12,13 +12,13 @@
       "contactLink": "contact ici"
     },
     "calculator": {
-      "labels": {
-        "neutral": "Neutre",
-        "low": "Léger",
-        "medium": "Moyen",
-        "high": "Fort",
-        "veryHigh": "Très fort"
-      }
+      "labels": [
+        { "label": "neutral", "text": "Neutre", "color": "green" },
+        { "label": "low", "text": "Léger", "color": "yellow" },
+        { "label": "medium", "text": "Moyen", "color": "magenta" },
+        { "label": "high", "text": "Fort", "color": "red" },
+        { "label": "veryHigh", "text": "Très fort", "color": "black" }
+      ]
     },
     "articlesBlock": {
       "title": "Pour nager plus loin !",

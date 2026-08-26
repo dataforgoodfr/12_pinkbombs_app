@@ -40,7 +40,7 @@ const ArticleCard = ({
         alt={imageAlt}
         className="object-cover mx-auto"
       />
-      <p className="h4 mt-4">{title}</p>
+      <p className="h4 mt-4 text-pretty">{title}</p>
       <p className="p-lead my-4 preserve-lines">
         {description}
       </p>

@@ -104,17 +104,17 @@ const Navbar = () => {
                     className="inline-block self-center mr-2"
                   />
               )}
-              <p className="font-secondary uppercase font-bold focus:text-v2-red lg:text-2xl">{item.text}</p>
+              <p className="cta focus:text-v2-red">{item.text}</p>
               
             </Link>
           ))}
 
-          <Menu as="div" className="relative inline-block">
+          <Menu as="div" className="relative block">
             <MenuButton 
               className={clsx(
-                "flex justify-between items-center border border-1 px-3 rounded-md font-secondary uppercase font-bold focus:text-v2-red lg:text-2xl transition-colors ease-in-out duration-200",
+                "flex justify-between items-center border border-1 px-3 rounded-md cta focus:text-v2-red transition-colors ease-in-out duration-200",
                 `${getColor() === "blue" ? "border-v2-blue text-v2-blue" : "border-v2-pink text-v2-pink"}`,
-                "hover:text-red1"
+                "hover:text-v2-magenta"
               )}
             >
               {locale.toUpperCase()}
@@ -136,9 +136,9 @@ const Navbar = () => {
                   <MenuItem key={`lang-${keyLang}`}>
                     <Link
                       className={clsx(
-                        "block px-4 py-2 text-md font-bold outline-hidden",
+                        "block px-4 py-2 cta outline-hidden",
                         lang === locale
-                          ? getColor() === "blue" ? "text-white bg-v2-blue" : "font-bold text-v2-blue bg-v2-pink"
+                          ? getColor() === "blue" ? "text-white bg-v2-blue" : "text-v2-blue bg-v2-pink"
                           : "text-v2-blue",
                       )}
                       href={pathname}

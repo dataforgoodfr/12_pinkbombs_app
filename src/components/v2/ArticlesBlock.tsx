@@ -6,7 +6,7 @@ const ArticlesBlock = () => {
   const t = useTranslations("site.components");
   const articleCardItems = t.raw("articlesBlock.articles.homepage") as ArticleCardProps[];
   return (
-    <section className="bg-white px-16 py-20">
+    <section className="bg-white px-10 lg:px-16 py-20">
       <Image
         loading="lazy"
         src="/site/images/components/articles-block/diving-fish.svg"
@@ -15,8 +15,8 @@ const ArticlesBlock = () => {
         alt={t("articlesBlock.imageAlt")}
         className="object-contain mx-auto"
       />
-      <h2 className="h2 text-center text-v2-blue">{t("articlesBlock.title")}</h2>
-      <div className="flex gap-4 py-4">
+      <h2 className="h2 text-center text-v2-blue text-pretty">{t("articlesBlock.title")}</h2>
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 py-4">
         {articleCardItems.map((item, index) => (
           <ArticleCard
             key={index}

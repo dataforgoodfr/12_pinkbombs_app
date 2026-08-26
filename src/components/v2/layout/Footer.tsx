@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="p-6 lg:p-12 text-white bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
         <div className="flex flex-wrap gap-6 lg:gap-12 lg:pt-12">
-          <div className="flex flex-col gap-6 w-full max-w-72">
+          <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
             <h5 className="h5 uppercase">{t("footer.sections.projectBy.title")}</h5>
             <Image
               loading="lazy"
@@ -85,7 +85,7 @@ const Footer = () => {
                 name="email"
                 type="email"
                 placeholder={t("footer.sections.stayInformed.newsletter.placeholder")}
-                className="inline-block w-full rounded-xl bg-white px-3 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs"
+                className="inline-block w-full rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs"
               />
               <Button
                 content={t("footer.sections.stayInformed.newsletter.button")}
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-4 items-center mt-6 lg:mt-12">
+        <div className="flex flex-row gap-4 items-center mt-6 lg:mt-12">
           <p className="text-xs">Seastemik - © {currentYear}</p>
           <br />
           <div className="flex gap-1 items-center justify-center">

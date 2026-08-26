@@ -25,7 +25,7 @@ const Button = ({
   return (
     <Link
       className={clsx(
-        "inline-flex text-base uppercase h4 border-2 rounded-xl tracking-widest font-black",
+        "inline-flex cta border-2 rounded-xl hover:scale-105",
         borderColor,
         className,
         textColor,
