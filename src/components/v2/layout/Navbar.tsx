@@ -133,7 +133,7 @@ const Navbar = () => {
             >
               <div className="py-1">
                 {locales.map((lang, keyLang) => (
-                  <MenuItem>
+                  <MenuItem key={`lang-${keyLang}`}>
                     <Link
                       className={clsx(
                         "block px-4 py-2 text-md font-bold outline-hidden",

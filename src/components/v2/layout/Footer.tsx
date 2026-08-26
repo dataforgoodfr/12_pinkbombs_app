@@ -85,7 +85,7 @@ const Footer = () => {
                 name="email"
                 type="email"
                 placeholder={t("footer.sections.stayInformed.newsletter.placeholder")}
-                className="inline-block w-full rounded-md bg-white px-3 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs"
+                className="inline-block w-full rounded-xl bg-white px-3 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs"
               />
               <Button
                 content={t("footer.sections.stayInformed.newsletter.button")}

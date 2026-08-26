@@ -2,8 +2,6 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
-import Summary, { SummaryLinksProps } from "@/components/v1/Summary";
-
 export interface MenuCardProps {
   className?: string;
   title: string;
@@ -24,7 +22,6 @@ const MenuCard = ({
   }
 
   const getImageSrc = (index: number) => {
-    console.log("getImageSrc index", index);
     switch (index) {
       case 0:
         return "/site/images/components/salmons.svg";
