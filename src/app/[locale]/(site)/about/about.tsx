@@ -40,10 +40,10 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-pink text-v2-blue">
-      <div className="py-12 flex flex-col lg:flex-row-reverse px-10 md:px-12 max-w-[1596px] mx-auto">
-        <div className="flex flex-col gap-4">
-          <h1 className="h1 text-pretty">{t("intro.title")}</h1>
-          <p className="p-lead text-pretty">{t("intro.caption")}</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 lg:py-0 px-10 md:px-12">
+        <div className="col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pt-52 xl:pt-152 xl:-ml-[250px]">
+          <h1 className="h1 text-pretty lg:max-w-[60%] xl:max-w-[80%]">{t("intro.title")}</h1>
+          <p className="p-lead text-pretty xl:max-w-[80%]">{t("intro.caption")}</p>
         </div>
       </div>
       <Image
@@ -52,7 +52,7 @@ const IntroSection = () => {
         width={1537}
         height={596}
         alt={t("intro.imageAlt")}
-        className="object-contain h-auto mx-auto"
+        className="object-contain h-auto mx-auto md:-mt-48 lg:-mt-70 xl:w-[2000px]"
       />
     </section>
   );
@@ -61,13 +61,15 @@ const IntroSection = () => {
 const AmbitionSection = () => {
   const t = useTranslations("site.about");
   return (
-    <section className="flex flex-col lg:flex-row gap-8 bg-white px-10 py-16 text-v2-blue">
-      <h3 className="h3 text-pretty">{t("ambition.origin")}</h3>
-      <p className="text-pretty preserve-lines">
-        {t.rich("ambition.paragraph", {
-          strong: (chunks) => <strong>{chunks}</strong>,
-        })}
-      </p>
+    <section className="bg-white px-10 py-16 text-v2-blue">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
+        <h3 className="h3 text-pretty">{t("ambition.origin")}</h3>
+        <p className="text-pretty preserve-lines">
+          {t.rich("ambition.paragraph", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+      </div>
     </section>
   );
 };
@@ -76,8 +78,8 @@ const ExplanationSection = () => {
   const t = useTranslations("site.about");
   return (
     <section className="bg-v2-blue px-10 py-16">
-      <h2 className="h2 text-pretty text-v2-pink mb-8">{t("why.title")}</h2>
-      <div className="flex flex-col lg:flex-row gap-8 ">
+      <h2 className="h2 text-pretty text-center text-v2-pink mb-8">{t("why.title")}</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col bg-v2-pink gap-8 p-6 lg:p-12 rounded-xl">
           <div className="flex flex-col items-start">
             <Image
@@ -126,7 +128,7 @@ const PresentationSection = () => {
   const t = useTranslations("site.about");
   return (
     <section className="bg-v2-white text-v2-blue px-10 pt-16">
-      <div className="flex flex-col gap-10 lg:flex-row">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col gap-8">
           <h2 className="h2 text-pretty">{t("seastemik.title")}</h2>
           <p className="p-body preserve-lines">{t("seastemik.paragraph")}</p>
@@ -147,9 +149,9 @@ const TeamSection = () => {
   const t = useTranslations("site.about");
   const teamMembers = t.raw("teamSection.members") as TeamMember[];
   return (
-    <section className="bg-v2-white text-v2-blue pt-14 px-10">
+    <section className="bg-v2-white text-v2-blue pt-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
       <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
-      <div className="flex flex-col gap-10 lg:flex-row">
+      <div className="flex flex-col gap-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8">
           {
             teamMembers.map((member, index) => (
@@ -170,7 +172,7 @@ const TeamSection = () => {
             ))
           }
         </div>
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-8 lg:max-w-[911px]">
           <p className="p-lead">{t("teamSection.greetings")}</p>
         </div>
       </div>
@@ -181,19 +183,19 @@ const TeamSection = () => {
 const PartnerSection = () => {
   const t = useTranslations("site.about");
   return (
-    <section className="bg-v2-white text-v2-blue pt-14 px-10">
+    <section className="bg-v2-white text-v2-blue pt-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
       <h2 className="h2 text-pretty mb-8">{t("partner.title")}</h2>
       <div className="flex flex-col gap-10 lg:flex-row">
-        <div className="flex flex-col items-center border border-1 border-v2-blue rounded-xl">
+        <div className="flex flex-col md:flex-row items-center md:items-start lg:items-center border border12 border-v2-blue md:border-none lg:border-solid lg:border-v2-blue rounded-xl">
           <Image
             loading="lazy"
             src="/site/images/about/kresk-4-oceans.jpg"
             width={297}
             height={178}
             alt={t("partner.imageAlt")}
-            className="rounded-t-lg"
+            className="rounded-t-lg md:rounded-l-lg md:rounded lg:rounded-tr-none object-cover"
           />
-          <p className="py-6 px-4 p-lead preserve-lines">{t("partner.paragraph")}</p>
+          <p className="py-6 md:py-0 px-4 p-lead preserve-lines">{t("partner.paragraph")}</p>
         </div>
       </div>
     </section>
@@ -253,9 +255,9 @@ const StorySection = () => {
     }
   ] 
   return (
-    <section className="bg-v2-white pt-14 px-10">
+    <section className="bg-v2-white py-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
       <h2 className="h2 text-v2-blue text-pretty mb-8">{t("story.title")}</h2>
-      <div className="flex flex-col px-4 gap-10 lg:flex-row bg-v2-blue rounded-xl">
+      <div className="flex flex-col px-4 lg:px-10 items-center gap-10 lg:flex-row bg-v2-blue rounded-xl">
         <p className="py-6 px-4 preserve-lines text-white ">
             {t.rich("story.paragraph", {
             strong: (chunks) => <strong>{chunks}</strong>,
@@ -267,10 +269,10 @@ const StorySection = () => {
           width={494}
           height={474}
           alt={t("story.imageAlt")}
-          className="rounded-t-lg"
+          className="rounded-t-lg mx-auto"
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row gap-8 mt-10 items-center justify-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row gap-8 mt-10 items-center justify-center">
         {
           logoItems.map((item, index) => (
             <div key={index} className="flex flex-col items-center gap-2 max-w-[132px]">
@@ -296,10 +298,10 @@ const ApproachAndMethodSection = () => {
   const stepItems = t.raw("method.steps.items") as string[];
   return (
     <section className="bg-v2-white text-v2-blue">
-      <div className="pt-14 px-10 max-w-[1596px] mx-auto">
+      <div className="pt-14 px-10 lg:px-0 lg:max-w-[642px] mx-auto">
         <h2 className="h2 text-v2-blue text-pretty mb-8">{t("method.title")}</h2>
         <p className="p-lead">{t("method.caption")}</p>
-        <div className="flex flex-col gap-8 lg:flex-row my-8">
+        <div className="flex flex-col gap-8 my-8">
           <h4 className="h4">{t("method.values.title")}</h4>
           <div className="flex flex-col gap-4">
             {
@@ -324,7 +326,7 @@ const ApproachAndMethodSection = () => {
           <ShareLink href="/" name="Download" customName={t("method.downloadCta")} iconFillColor="fill-v2-pink" className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide max-w-[95%]" />
         </div>
         <h2 className="h2 mt-20">{t("contact.title")}</h2>
-        <div className="flex flex-col gap-8 lg:flex-row mt-8 mb-20">
+        <div className="flex flex-col gap-8 mt-8 mb-20">
           <p className="p-lead">{t("contact.paragraph")}</p>
           <ShareLink href="mailto:info@seastemik.org" name="Seastemik Email" customName="info@seastemik.org" iconFillColor="fill-v2-pink" className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide" />
         </div>
