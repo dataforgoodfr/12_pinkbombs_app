@@ -82,17 +82,17 @@ const Footer = () => {
             <ShareLink
               href="https://seastemik.org/"
               type="sources"
-              name={t("footer.shareLink.sources")}
+              name={t("shareLink.sources")}
             />
             <ShareLink
               href="https://seastemik.org/"
               type="legalNotices"
-              name={t("footer.shareLink.legalNotices")}
+              name={t("shareLink.legalNotices")}
             />
             <ShareLink
               href="https://seastemik.org/"
               type="contactUs"
-              name={t("footer.shareLink.contactUs")}
+              name={t("shareLink.contactUs")}
             />
           </div>
 
@@ -134,7 +134,7 @@ const Footer = () => {
             <ShareLink
               href="https://coucou.design/"
               type="design"
-              name={t("footer.shareLink.design")}
+              name={t("shareLink.design")}
               className="text-xs"
             />
           </div>

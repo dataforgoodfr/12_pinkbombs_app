@@ -5,10 +5,15 @@ import React from "react";
 import ArticleCard, {
   ArticleCardProps,
 } from "@/components/v2/cards/ArticleCard";
-const ArticlesBlock = () => {
+
+interface ArticlesBlockProps {
+  page?: "homepage" | "about";
+}
+
+const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
   const t = useTranslations("site.components");
   const articleCardItems = t.raw(
-    "articlesBlock.articles.homepage",
+    `articlesBlock.articles.${page}`,
   ) as ArticleCardProps[];
   return (
     <section className="bg-white px-10 lg:px-16 py-20">

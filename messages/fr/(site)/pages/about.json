@@ -1,0 +1,127 @@
+{
+  "about": {
+    "meta": {
+      "title": "À propos"
+    },
+    "intro": {
+      "title": "REPEUPLER L'OCÉAN, NOURRIR LE FUTUR",
+      "caption": "Faire la lumière sur l'impact systémique de l'aquaculture intensive, et plus particulièrement sur la consommation de saumon.",
+      "imageAlt": "Banc de poissons qui surfent une vague"
+    },
+    "ambition": {
+      "origin": "PinkBombs est né d'une ambition simple\u00a0: faire la lumière sur l'impact systémique de l'aquaculture intensive, et plus particulièrement sur la consommation de saumon.",
+      "paragraph": "<strong>Porté par Seastemik en collaboration avec DataForGood, PinkBombs s'impose comme le baromètre de référence, offrant une vision transparente et documentée des enjeux écologiques, sanitaires et éthiques liés à la production et à la consommation de poissons.</strong>\n\nPlus qu'une plateforme d'alerte, c'est un véritable outil d'aide à la décision conçu pour les citoyens, les entreprises et les décideurs publics. Notre mission est claire\u00a0: accompagner la transition vers une alimentation respectueuse de l'Océan. Parce que « dépoissonner » nos assiettes, c'est repeupler l'Océan et nourrir le futur."
+    },
+    "why": {
+      "title": "Pourquoi PinkBombs ?",
+      "situation": {
+        "title": "Situation",
+        "imageAlt": "Poisson qui tombe",
+        "paragraph": "<strong>Nous sommes face à une urgence océanique. L'Océan, principale source de vie sur Terre, est de plus en plus menacé par nos activités humaines.</strong>\n\n<strong>La surpêche est la principale cause de perte de biodiversité marine.</strong> L'industrie du saumon, emblématique de l'aquaculture intensive, génère des impacts multiples à l’échelle mondiale.\n\nIl est donc urgent de changer le système alimentaire pour une meilleure protection des humains, des animaux et des écosystèmes."
+      },
+      "reaction": {
+        "title": "Réaction",
+        "imageAlt": "Poisson heureux qui regarde l'avenir",
+        "paragraph": "<strong>PinkBombs est là pour\u00a0:</strong><ul>\n<li>Alerter sur l'une des plus grandes menaces pour l'Océan aujourd'hui\u00a0: <strong>l'élevage de saumons.</strong></li>\n<li><strong>Déconstruire la perception populaire</strong> déformée autour de la consommation de saumons.</li>\n<li>Orienter les entreprises, les États et les consommateur·ices <strong>vers des solutions positives.</strong></li>\n</ul>"
+      }
+    },
+    "seastemik": {
+      "title": "Seastemik",
+      "paragraph": "Seastemik est une ONG fondée en 2023 qui s’engage pour un Océan vivant à travers une révolution systémique de notre alimentation. Nous travaillons à mettre fin aux pratiques d’aquaculture non durables, en particulier les élevages intensifs de saumons, pour une meilleure protection des humains, des animaux et des écosystèmes.",
+      "cta": "Voir le site de Seastemik"
+    },
+    "dataforgood": {
+      "title": "DataForGood",
+      "paragraph": "Data For Good est une association loi 1901 créée en 2014 qui rassemble une communauté de 7 000+ bénévoles tech (Data Scientists, Data Analysts, Data Engineers, Developers, UX/UI Designers, Product & Project Owners) souhaitant s'engager pour l'intérêt général.\n\nNous travaillons chaque année avec une quinzaine d’associations pour co-construire des projets qui œuvrent pour la justice sociale, la démocratie et l’environnement. Nous avons ainsi accompagné, accéléré et co-construit plus de 100 projets depuis 10 ans.\n\nNous sommes également fervents critiques des risques et des dérives de la technologie. Faire partie de la communauté est aussi s’engager pour une technologie sobre et respectueuse des enjeux sociaux et environnementaux, et accepter que la technologie n’est pas la solution à tous les problèmes.",
+      "cta": "Voir le site de Data For Good"
+    },
+    "teamSection": {
+      "title": "L'équipe du projet",
+      "members": [
+        {
+          "name": "Esther",
+          "role": "Co-fondatrice & co-capitaine",
+          "pictureUrl": "/site/images/about/team/esther.png",
+          "pictureAlt": "Esther, co-fondatrice et co-capitaine du projet PinkBombs"
+        },
+        {
+          "name": "Maxime",
+          "role": "Co-fondateur de Seastemik",
+          "pictureUrl": "/site/images/about/team/maxime.png",
+          "pictureAlt": "Maxime, co-fondateur de Seastemik"
+        },
+        {
+          "name": "Gaëlle",
+          "role": "Directrice technique",
+          "pictureUrl": "/site/images/about/team/gaelle.jpeg",
+          "pictureAlt": "Gaëlle, Directrice technique"
+        },
+        {
+          "name": "Paul",
+          "role": "Direction artistique et graphisme",
+          "pictureUrl": "/site/images/about/team/paul.png",
+          "pictureAlt": "Paul, Direction artistique et graphisme"
+        },
+        {
+          "name": "Brigitte",
+          "role": "Data Analyste",
+          "pictureUrl": "/site/images/about/team/brigitte.avif",
+          "pictureAlt": "Brigitte, Data Analyste"
+        },
+        {
+          "name": "Aurélie",
+          "role": "Développeuse web",
+          "pictureUrl": "/site/images/about/team/aurelie2.png",
+          "pictureAlt": "Aurélie, Développeuse web"
+        }
+      ],
+      "greetings": "Un immense merci aux volontaires qui ont mis leurs talents et leur temps pour permettre à ce projet de voir le jour\u00a0: Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin."
+    },
+    "partner": {
+      "title": "Partenaire",
+      "paragraph": "Ce projet a été réalisé grâce au soutien de KRESK 4 OCEANS.\n\nKRESK 4 OCEANS est un fonds de dotation créé par le Groupe KRESK et ses marques (SVR et Lazartigue) dont l’objectif est de créer des projets et financer des organismes à but non lucratif qui ont pour ambition de lutter activement contre la pollution marine.",
+      "imageAlt": "Logo KRESK 4 OCEANS"
+    },
+    "story": {
+      "title": "Histoire",
+      "paragraph": "<strong>En 2023, nous avons lancé la première version de Pinkbombs, qui a eu une grande retombée médiatique et fait avancé la cause.</strong>\n\nNos données ont été utilisées par le journal Le Monde pour publier un article des Décodeurs sur l’impact de l’élevage de saumons. Lien vers l'article ici. Depuis l'information à été relié par une série de média comme Les Bon Potes, Brut, France Inter et des plateformes TV comme le JT de 13h de TF1 élevant ainsi la conscience collective à propos des impacts de l'industrie du saumon.",
+      "imageAlt": "Image d'un téléphone avec des applications de médias"
+    },
+    "mediaLogosAlt": {
+      "tf1": "Logo TF1",
+      "brut": "Logo Brut",
+      "franceInter": "Logo France Inter",
+      "franceInfo": "Logo France Info",
+      "leMonde": "Logo Le Monde",
+      "leBonPote": "Logo Le Bon Pote",
+      "laCroix": "Logo La Croix",
+      "radioFrance": "Logo Radio France"
+    },
+    "method": {
+      "title": "Approche et méthodologie",
+      "caption": "PinkBombs a été créé pour analyser et transformer les données publiques en outils accessibles à tous·tes.",
+      "values": {
+        "title": "Notre approche repose sur trois valeurs\u00a0:",
+        "items": [
+          "<strong>Open source\u00a0:</strong>\nLes données sont disponibles sur la plateforme.",
+          "<strong>Collaboratif\u00a0:</strong>\nContactez-nous pour contribuer ou suggérer des améliorations.",
+          "<strong>Dynamique\u00a0:</strong>\nNotre base de données est régulièrement mise à jour pour intégrer de nouvelles perspectives et améliorer sa précision."
+        ]
+      },
+      "steps": {
+        "title": "Notre démarche a suivi trois étapes\u00a0:",
+        "items": [
+          "<strong>Identification des sujets prioritaires\u00a0:</strong>\nL'objectif du site étant d'offrir une compilation des informations les plus frappantes sur le sujet, l'organisation a commencé par prioriser les sujets à aborder.",
+          "<strong>Recherche approfondie\u00a0:</strong>\nUne recherche documentaire a été menée sur Internet et en contactant des expert·e·s, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
+          "<strong>Données évaluées par des pairs\u00a0:</strong>\nDans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’expert·e·s a permis la validation finale."
+        ]
+      },
+      "missingInfo": "Nous avons oublié des informations clés ? Vous avez une question ? Veuillez nous contacter.",
+      "downloadCta": "Télécharger la méthodologie complète (PDF)"
+    },
+    "contact": {
+      "title": "Contact",
+      "paragraph": "Seastemik rêve d’un Océan qui déborde de vie, préservé par une alimentation végétale, qui garantit l’habitabilité de notre planète\u00a0: la stabilité climatique, la santé humaine, la justice alimentaire et la condition animale."
+    }
+  }
+}
