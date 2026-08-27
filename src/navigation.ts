@@ -38,7 +38,7 @@ export const pathnames = {
   },
   "/about": {
     fr: "a-propos",
-    en: "about",    
+    en: "about",
   },
   "/archive/v1": "/archive/v1",
   "/archive/v1/dashboard": "/archive/v1/dashboard",
@@ -49,6 +49,10 @@ export const pathnames = {
   "/archive/v1/about": {
     fr: "/archive/v1/a-propos",
     en: "/archive/v1/about",
+  },
+  "/archive/v1/legal-notices": {
+    fr: "/archive/v1/mentions-legales",
+    en: "/archive/v1/legal-notices",
   },
 } as const;
 

@@ -3,13 +3,7 @@ import { useTranslations } from "next-intl";
 
 type ShareLinkProps = {
   className?: string;
-  type?:
-    | "site"
-    | "sources"
-    | "legalNotices"
-    | "contactUs"
-    | "email"
-    | "design";
+  type?: "site" | "sources" | "legalNotices" | "contactUs" | "email" | "design";
   href: string;
   name: string;
 };
@@ -29,7 +23,10 @@ const ShareLink = ({
 
   return (
     <a
-      className={clsx("text-base underline hover:text-v2-yellow group", className)}
+      className={clsx(
+        "text-base underline hover:text-v2-yellow group",
+        className,
+      )}
       href={href}
       target="_blank"
       rel="noopener noreferrer"

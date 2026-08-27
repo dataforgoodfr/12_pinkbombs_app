@@ -1,10 +1,10 @@
-import { useState } from "react";
-import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '../../../tailwind.config';
+import { clsx } from "clsx";
 import { ChevronUp } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useIsMobile } from '../../hooks/useIsMobile';
-import { clsx } from "clsx";
+import resolveConfig from "tailwindcss/resolveConfig";
+
+import { useIsMobile } from "../../hooks/useIsMobile";
+import tailwindConfig from "../../../tailwind.config";
 
 type LabelProps = {
   label: string;
@@ -15,21 +15,27 @@ type LabelProps = {
 const fullConfig = resolveConfig(tailwindConfig);
 const themeColors = fullConfig.theme.colors.v2;
 
-const Calculator = ({ className, label }: { className?: string; label?: string }) => {
+const Calculator = ({
+  className,
+  label,
+}: {
+  className?: string;
+  label?: string;
+}) => {
   const t = useTranslations("site.components.calculator");
   const isMobile = useIsMobile();
   const labels = t.raw("labels") as LabelProps[];
-  
+
   const segments = labels.map((l) => ({
     label: l.label,
     text: l.text,
-    color: `${themeColors[l.color as keyof typeof themeColors] ?? '#000'}`,
+    color: `${themeColors[l.color as keyof typeof themeColors] ?? "#000"}`,
   }));
-  const activeIndex = segments.findIndex(s => s.label === label);
+  const activeIndex = segments.findIndex((s) => s.label === label);
   const isDynamic = activeIndex !== -1;
-  
+
   // Default to 2 ("Medium") for the neutral/shaking state if no valid label is passed
-  const active = isDynamic ? activeIndex : 2; 
+  const active = isDynamic ? activeIndex : 2;
 
   const segmentAngle = 180 / segments.length;
 
@@ -49,7 +55,6 @@ const Calculator = ({ className, label }: { className?: string; label?: string }
       </style>
       {/* Removed overflow-hidden here so the labels don't get clipped */}
       <div className="relative h-[118.5px] w-[265px] lg:h-[237px] lg:w-[530px] border-b-2 border-black mx-auto">
-        
         {/* Labels */}
         {segments.map((segment, index) => {
           const theta = 180 - (segmentAngle / 2 + index * segmentAngle);
@@ -99,36 +104,47 @@ const Calculator = ({ className, label }: { className?: string; label?: string }
           }}
         >
           {/* Pointer Inner Wrapper (handles the shaking animation independently) */}
-          <div 
+          <div
             className="relative h-full w-full origin-bottom"
             style={{
-              animation: !isDynamic ? 'gaugeShake 0.4s infinite alternate ease-in-out' : 'none'
+              animation: !isDynamic
+                ? "gaugeShake 0.4s infinite alternate ease-in-out"
+                : "none",
             }}
           >
             {/* Arrow head */}
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-black" style={{ height: 'calc(100% + 28px)' }}>
-              <ChevronUp className={clsx("h-20 w-20", active === segments.length - 1 ? "text-v2-red" : "text-black")} strokeWidth={isMobile ? 1 : 2} />
+            <div
+              className="absolute bottom-2 left-1/2 -translate-x-1/2 text-black"
+              style={{ height: "calc(100% + 28px)" }}
+            >
+              <ChevronUp
+                className={clsx(
+                  "h-20 w-20",
+                  active === segments.length - 1 ? "text-v2-red" : "text-black",
+                )}
+                strokeWidth={isMobile ? 1 : 2}
+              />
             </div>
             {/* Arrow body */}
-            <div 
+            <div
               className={clsx(
                 "absolute bottom-1 lg:bottom-2 left-1/2 -translate-x-1/2 w-1 lg:w-[6px] h-full",
-                active === segments.length - 1 ? "bg-v2-red" : "bg-black"
-              )} 
+                active === segments.length - 1 ? "bg-v2-red" : "bg-black",
+              )}
             />
           </div>
         </div>
 
         {/* Pivot (Height halved and Y-translation removed to stay within the visible boundary) */}
-        <div className={
-          clsx(
+        <div
+          className={clsx(
             "absolute bottom-0 left-1/2 h-[18.75px] w-[37.5px] lg:h-[37.5px] lg:w-[75px] -translate-x-1/2 rounded-t-full z-20",
-            active === segments.length - 1 ? "bg-v2-red" : "bg-black"
-          )
-        } />
+            active === segments.length - 1 ? "bg-v2-red" : "bg-black",
+          )}
+        />
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;

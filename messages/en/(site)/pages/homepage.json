@@ -6,7 +6,7 @@
     },
     "bomb": {
       "title": "ARE ECOLOGICAL, SOCIAL AND HEALTH BOMBS",
-      "imageAlt": "Salmon exploding"  
+      "imageAlt": "Salmon exploding"
     },
     "impact": {
       "title": "Every year in France, we consume 37.6 million salmon",
@@ -94,7 +94,6 @@
             "title": "Wastewater from 2.9 million people:",
             "description": "Everything given to farmed salmon does not become flesh. The rest comes out: excrement, uneaten feed, treatment residues. <strong>This activity represents up to the equivalent of the untreated wastewater produced by 2.9 million people.</strong>",
             "imageAlt": "Pipe discharging wastewater"
-          
           },
           "item2": {
             "title": "Resources for 588 million people:",

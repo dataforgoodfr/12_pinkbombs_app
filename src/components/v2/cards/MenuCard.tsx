@@ -36,16 +36,18 @@ const MenuCard = ({
       case 5:
         return "/site/images/components/molecule.svg";
       default:
-        return ""; 
+        return "";
     }
   };
 
   return (
-    <div className={clsx(
-      "flex flex-col rounded-lg items-center justify-center py-10 px-4 max-h-[450px] max-w-[409px] text-black bg-v2-pink",
-      className,
-      index % 2 === 0 ? "rotate-1" : "-rotate-1",
-    )}>
+    <div
+      className={clsx(
+        "flex flex-col rounded-lg items-center justify-center py-10 px-4 max-h-[450px] max-w-[409px] text-black bg-v2-pink",
+        className,
+        index % 2 === 0 ? "rotate-1" : "-rotate-1",
+      )}
+    >
       <Image
         loading="lazy"
         src={getImageSrc(index)}
@@ -55,9 +57,7 @@ const MenuCard = ({
         className="object-cover mx-auto"
       />
       <p className="h4 text-center mt-4">{title}</p>
-      <p className="p-body text-center mt-4 preserve-lines">
-        {content}
-      </p>
+      <p className="p-body text-center mt-4 preserve-lines">{content}</p>
     </div>
   );
 };

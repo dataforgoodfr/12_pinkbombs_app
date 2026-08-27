@@ -19,7 +19,7 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-import "@/styles/globals.css";
+import "@/styles/archive/v1/styles.css";
 
 export async function generateMetadata({
   params,

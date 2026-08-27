@@ -12,19 +12,19 @@
       "contactLink": "contact here"
     },
     "calculator": {
-      "labels": {
-        "neutral": "Neutral",
-        "low": "Low",
-        "medium": "Medium",
-        "high": "High",
-        "veryHigh": "Very High"
-      }
+      "labels": [
+        { "label": "neutral", "text": "Neutral", "color": "green" },
+        { "label": "low", "text": "Low", "color": "yellow" },
+        { "label": "medium", "text": "Medium", "color": "magenta" },
+        { "label": "high", "text": "High", "color": "red" },
+        { "label": "veryHigh", "text": "Very High", "color": "black" }
+      ]
     },
     "articlesBlock": {
       "title": "To swim further!",
       "imageAlt": "Diving fish",
       "articles": {
-        "homepage" : [
+        "homepage": [
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
             "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",

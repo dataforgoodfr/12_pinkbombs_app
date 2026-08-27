@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,15 +15,9 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "~/*": [
-        "./public/*"
-      ],
-      "@/components/*": [
-        "./src/components/*"
-      ]
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"],
+      "@/components/*": ["./src/components/*"]
     },
     "incremental": true,
     "plugins": [

@@ -24,32 +24,32 @@
       "title": "Pour nager plus loin\u00a0!",
       "imageAlt": "Poisson qui plonge",
       "articles": {
-        "homepage" : [
-        {
-          "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
-          "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
-          "title": "Le debunk des lobbys industriels",
-          "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
-          "buttonUrl": "/to-understand",
-          "buttonCta": "Comprendre"
-        },
-        {
-          "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
-          "imageAlt": "Image illustrative représentant des solutions pour réduire son impact.",
-          "title": "Réduire son impact dès aujourd’hui",
-          "description": "Dans votre quotidien comme au travail, découvrez des actions simples et des leviers collectifs. ",
-          "buttonUrl": "/to-act",
-          "buttonCta": "Agir"
-        },
-        {
-          "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
-          "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
-          "title": "S’inspirer d’initiatives",
-          "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour etre égal.",
-          "buttonUrl": "/to-be-inspired",
-          "buttonCta": "S’inspirer"
-        }
-      ]
+        "homepage": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
+            "title": "Le debunk des lobbys industriels",
+            "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Comprendre"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Image illustrative représentant des solutions pour réduire son impact.",
+            "title": "Réduire son impact dès aujourd’hui",
+            "description": "Dans votre quotidien comme au travail, découvrez des actions simples et des leviers collectifs. ",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Agir"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
+            "title": "S’inspirer d’initiatives",
+            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour etre égal.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "S’inspirer"
+          }
+        ]
       }
     }
   }

@@ -1,13 +1,11 @@
 "use client";
 
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import clsx from "clsx";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 import { basePathType, Link, locales, usePathname } from "@/navigation";
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { ChevronDown } from "lucide-react";
-
 
 export type NavItemsProps = {
   link: string;
@@ -54,7 +52,12 @@ const Navbar = () => {
   };
 
   const getColor = () => {
-    if (/to-act/.test(pathname) || /to-be-inspired/.test(pathname) || /about/.test(pathname) || /calculator/.test(pathname)) {
+    if (
+      /to-act/.test(pathname) ||
+      /to-be-inspired/.test(pathname) ||
+      /about/.test(pathname) ||
+      /calculator/.test(pathname)
+    ) {
       return "blue";
     } else {
       return "pink";
@@ -75,7 +78,7 @@ const Navbar = () => {
             alt="PinkBombs"
             width={176}
             height={43}
-            className="w-24 md:w-36 lg:w-44 object-contain"
+            className="w-24 md:w-36 lg:w-44 h-auto object-contain"
           />
         </Link>
 
@@ -87,34 +90,37 @@ const Navbar = () => {
             <Link
               className={clsx(
                 "flex transition-colors ease-in-out duration-200",
-                item.link === pathname ? (getColor() === "blue" ? "navbar-active-blue" : "navbar-active-pink") : "",
+                item.link === pathname
+                  ? getColor() === "blue"
+                    ? "navbar-active-blue"
+                    : "navbar-active-pink"
+                  : "",
                 getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
-                "hover:text-v2-magenta"
+                "hover:text-v2-magenta",
               )}
               href={item.link as basePathType}
               aria-current={item.link === pathname ? "page" : undefined}
               key={`nav-${key}`}
             >
               {item.link === "/calculator" && (
-                  <Image
-                    src={`/site/images/calculator-${getColor()}.svg`}
-                    alt="Calculator"
-                    width={20}
-                    height={22}
-                    className="inline-block self-center mr-2"
-                  />
+                <Image
+                  src={`/site/images/calculator-${getColor()}.svg`}
+                  alt="Calculator"
+                  width={20}
+                  height={22}
+                  className="inline-block self-center mr-2"
+                />
               )}
               <p className="cta focus:text-v2-red">{item.text}</p>
-              
             </Link>
           ))}
 
           <Menu as="div" className="relative block">
-            <MenuButton 
+            <MenuButton
               className={clsx(
                 "flex justify-between items-center border border-1 px-3 rounded-md cta focus:text-v2-red transition-colors ease-in-out duration-200",
                 `${getColor() === "blue" ? "border-v2-blue text-v2-blue" : "border-v2-pink text-v2-pink"}`,
-                "hover:text-v2-magenta"
+                "hover:text-v2-magenta",
               )}
             >
               {locale.toUpperCase()}
@@ -138,7 +144,9 @@ const Navbar = () => {
                       className={clsx(
                         "block px-4 py-2 cta outline-hidden",
                         lang === locale
-                          ? getColor() === "blue" ? "text-white bg-v2-blue" : "text-v2-blue bg-v2-pink"
+                          ? getColor() === "blue"
+                            ? "text-white bg-v2-blue"
+                            : "text-v2-blue bg-v2-pink"
                           : "text-v2-blue",
                       )}
                       href={pathname}

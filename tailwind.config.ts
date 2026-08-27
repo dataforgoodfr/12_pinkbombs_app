@@ -41,8 +41,8 @@ export default {
           yellow: "#EBF97B",
           magenta: "#EB88DD",
           green: "#B2F8A7",
-          orange: "#FF967F"
-        }
+          orange: "#FF967F",
+        },
       },
       screens: {
         xs: "500px",

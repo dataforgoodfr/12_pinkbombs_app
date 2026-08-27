@@ -21,17 +21,19 @@ const ArticleCard = ({
   imageSrc,
   imageAlt,
   buttonCta,
-  buttonUrl
+  buttonUrl,
 }: ArticleCardProps) => {
   if (!title || !description || !imageAlt) {
     return <></>;
   }
 
   return (
-    <div className={clsx(
-      "flex flex-col rounded-lg max-w-[409px] text-v2-blue",
-      className
-    )}>
+    <div
+      className={clsx(
+        "flex flex-col rounded-lg max-w-[409px] text-v2-blue",
+        className,
+      )}
+    >
       <Image
         loading="lazy"
         src={imageSrc}
@@ -41,10 +43,15 @@ const ArticleCard = ({
         className="object-cover mx-auto"
       />
       <p className="h4 mt-4 text-pretty">{title}</p>
-      <p className="p-lead my-4 preserve-lines">
-        {description}
-      </p>
-      <Button type="small" content={buttonCta} href={buttonUrl} backgroundColor="bg-white" textColor="text-v2-blue" borderColor="border-v2-blue" />
+      <p className="p-lead my-4 preserve-lines">{description}</p>
+      <Button
+        type="small"
+        content={buttonCta}
+        href={buttonUrl}
+        backgroundColor="bg-white"
+        textColor="text-v2-blue"
+        borderColor="border-v2-blue"
+      />
     </div>
   );
 };

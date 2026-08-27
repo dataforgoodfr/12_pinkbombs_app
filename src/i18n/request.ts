@@ -32,10 +32,13 @@ export default getRequestConfig(async () => {
       ...(await import(`../../messages/${locale}/archive/v1/layout.json`))
         .default,
       site: {
-        ...(await import(`../../messages/${locale}/(site)/layout.json`)).default,
-        ...(await import(`../../messages/${locale}/(site)/components.json`)).default,
-        ...(await import(`../../messages/${locale}/(site)/pages/homepage.json`)).default,
-      }
+        ...(await import(`../../messages/${locale}/(site)/layout.json`))
+          .default,
+        ...(await import(`../../messages/${locale}/(site)/components.json`))
+          .default,
+        ...(await import(`../../messages/${locale}/(site)/pages/homepage.json`))
+          .default,
+      },
     },
   };
 });
