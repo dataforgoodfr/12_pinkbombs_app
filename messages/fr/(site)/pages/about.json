@@ -9,8 +9,8 @@
       "imageAlt": "Banc de poissons qui surfent une vague"
     },
     "ambition": {
-      "origin": "PinkBombs est né d'une ambition simple : faire la lumière sur l'impact systémique de l'aquaculture intensive, et plus particulièrement sur la consommation de saumon.",
-      "paragraph": "<strong>Porté par Seastemik en collaboration avec DataForGood, PinkBombs s'impose comme le baromètre de référence, offrant une vision transparente et documentée des enjeux écologiques, sanitaires et éthiques liés à la production et à la consommation de poissons.</strong>\n\nPlus qu'une plateforme d'alerte, c'est un véritable outil d'aide à la décision conçu pour les citoyens, les entreprises et les décideurs publics. Notre mission est claire : accompagner la transition vers une alimentation respectueuse de l'Océan. Parce que « dépoissonner » nos assiettes, c'est repeupler l'Océan et nourrir le futur."
+      "origin": "PinkBombs est né d'une ambition simple\u00a0: faire la lumière sur l'impact systémique de l'aquaculture intensive, et plus particulièrement sur la consommation de saumon.",
+      "paragraph": "<strong>Porté par Seastemik en collaboration avec DataForGood, PinkBombs s'impose comme le baromètre de référence, offrant une vision transparente et documentée des enjeux écologiques, sanitaires et éthiques liés à la production et à la consommation de poissons.</strong>\n\nPlus qu'une plateforme d'alerte, c'est un véritable outil d'aide à la décision conçu pour les citoyens, les entreprises et les décideurs publics. Notre mission est claire\u00a0: accompagner la transition vers une alimentation respectueuse de l'Océan. Parce que « dépoissonner » nos assiettes, c'est repeupler l'Océan et nourrir le futur."
     },
     "why": {
       "title": "Pourquoi PinkBombs ?",
@@ -22,7 +22,7 @@
       "reaction": {
         "title": "Réaction",
         "imageAlt": "Poisson heureux qui regarde l'avenir",
-        "paragraph": "<strong>PinkBombs est là pour :</strong><ul>\n<li>Alerter sur l'une des plus grandes menaces pour l'Océan aujourd'hui : <strong>l'élevage de saumons.</strong></li>\n<li><strong>Déconstruire la perception populaire</strong> déformée autour de la consommation de saumons.</li>\n<li>Orienter les entreprises, les États et les consommateur·ices <strong>vers des solutions positives.</strong></li>\n</ul>"
+        "paragraph": "<strong>PinkBombs est là pour\u00a0:</strong><ul>\n<li>Alerter sur l'une des plus grandes menaces pour l'Océan aujourd'hui\u00a0: <strong>l'élevage de saumons.</strong></li>\n<li><strong>Déconstruire la perception populaire</strong> déformée autour de la consommation de saumons.</li>\n<li>Orienter les entreprises, les États et les consommateur·ices <strong>vers des solutions positives.</strong></li>\n</ul>"
       }
     },
     "seastemik": {
@@ -75,7 +75,7 @@
           "pictureAlt": "Aurélie, Développeuse web"
         }
       ],
-      "greetings": "Un immense merci aux volontaires qui ont mis leurs talents et leur temps pour permettre à ce projet de voir le jour : Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin."
+      "greetings": "Un immense merci aux volontaires qui ont mis leurs talents et leur temps pour permettre à ce projet de voir le jour\u00a0: Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin."
     },
     "partner": {
       "title": "Partenaire",
@@ -101,19 +101,19 @@
       "title": "Approche et méthodologie",
       "caption": "PinkBombs a été créé pour analyser et transformer les données publiques en outils accessibles à tous·tes.",
       "values": {
-        "title": "Notre approche repose sur trois valeurs :",
+        "title": "Notre approche repose sur trois valeurs\u00a0:",
         "items": [
-          "<strong>Open source :</strong>\nLes données sont disponibles sur la plateforme.",
-          "<strong>Collaboratif :</strong>\nContactez-nous pour contribuer ou suggérer des améliorations.",
-          "<strong>Dynamique :</strong>\nNotre base de données est régulièrement mise à jour pour intégrer de nouvelles perspectives et améliorer sa précision."
+          "<strong>Open source\u00a0:</strong>\nLes données sont disponibles sur la plateforme.",
+          "<strong>Collaboratif\u00a0:</strong>\nContactez-nous pour contribuer ou suggérer des améliorations.",
+          "<strong>Dynamique\u00a0:</strong>\nNotre base de données est régulièrement mise à jour pour intégrer de nouvelles perspectives et améliorer sa précision."
         ]
       },
       "steps": {
-        "title": "Notre démarche a suivi trois étapes :",
+        "title": "Notre démarche a suivi trois étapes\u00a0:",
         "items": [
-          "<strong>Identifications des sujets prioritaires :</strong>\nL'objectif du site étant d'offrir une compilation des informations les plus frappantes sur le sujet, l'organisation a commencé par prioriser les sujets à aborder.",
-          "<strong>Recherche approfondie :</strong>\nUne recherche documentaire a été menée sur Internet et en contactant des expert·e·s, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
-          "<strong>Données évaluées par des pairs :</strong>\nDans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’expert·e·s a permis la validation finale."
+          "<strong>Identifications des sujets prioritaires\u00a0:</strong>\nL'objectif du site étant d'offrir une compilation des informations les plus frappantes sur le sujet, l'organisation a commencé par prioriser les sujets à aborder.",
+          "<strong>Recherche approfondie\u00a0:</strong>\nUne recherche documentaire a été menée sur Internet et en contactant des expert·e·s, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
+          "<strong>Données évaluées par des pairs\u00a0:</strong>\nDans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’expert·e·s a permis la validation finale."
         ]
       },
       "missingInfo": "Nous avons oublié des informations clés ? Vous avez une question ? Veuillez nous contacter.",
@@ -121,7 +121,7 @@
     },
     "contact": {
       "title": "Contact",
-      "paragraph": "Seastemik rêve d’un Océan qui déborde de vie, préservé par une alimentation végétale, qui garantit l’habitabilité de notre planète : la stabilité climatique, la santé humaine, la justice alimentaire et la condition animale."
+      "paragraph": "Seastemik rêve d’un Océan qui déborde de vie, préservé par une alimentation végétale, qui garantit l’habitabilité de notre planète\u00a0: la stabilité climatique, la santé humaine, la justice alimentaire et la condition animale."
     }
   }
 }

@@ -62,7 +62,7 @@
           "pictureUrl": "/site/images/about/team/paul.png",
           "pictureAlt": "Paul, Art Direction and Graphic Design"
         },
-                  {
+        {
           "name": "Brigitte",
           "role": "Data Analyst",
           "pictureUrl": "/site/images/about/team/brigitte.avif",
@@ -109,7 +109,7 @@
         ]
       },
       "steps": {
-        "title": "Our approach followed three steps :",
+        "title": "Our approach followed three steps:",
         "items": [
           "<strong>Identification of priority topics:</strong>\nSince the site's goal is to provide a compilation of the most striking information on the subject, the organization began by prioritizing the topics to be addressed.",
           "<strong>In-depth research:</strong>\nDocumentary research was conducted on the Internet and by contacting experts, taking care to use only scientific sources or those from renowned international organizations.",

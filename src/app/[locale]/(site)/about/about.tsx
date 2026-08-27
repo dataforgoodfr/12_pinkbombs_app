@@ -1,13 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import Image from "next/image";
-import ShareLink from "@/components/v2/links/shareLink";
 import ArticlesBlock from "@/components/v2/ArticlesBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ShareLink from "@/components/v2/links/shareLink";
 
 interface TeamMember {
   name: string;
@@ -42,8 +42,12 @@ const IntroSection = () => {
     <section className="bg-v2-pink text-v2-blue">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 lg:py-0 px-10 md:px-12">
         <div className="col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pt-52 xl:pt-152 xl:-ml-[250px]">
-          <h1 className="h1 text-pretty lg:max-w-[60%] xl:max-w-[80%]">{t("intro.title")}</h1>
-          <p className="p-lead text-pretty xl:max-w-[80%]">{t("intro.caption")}</p>
+          <h1 className="h1 text-pretty lg:max-w-[60%] xl:max-w-[80%]">
+            {t("intro.title")}
+          </h1>
+          <p className="p-lead text-pretty xl:max-w-[80%]">
+            {t("intro.caption")}
+          </p>
         </div>
       </div>
       <Image
@@ -78,7 +82,9 @@ const ExplanationSection = () => {
   const t = useTranslations("site.about");
   return (
     <section className="bg-v2-blue px-10 py-16">
-      <h2 className="h2 text-pretty text-center text-v2-pink mb-8">{t("why.title")}</h2>
+      <h2 className="h2 text-pretty text-center text-v2-pink mb-8">
+        {t("why.title")}
+      </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col bg-v2-pink gap-8 p-6 lg:p-12 rounded-xl">
           <div className="flex flex-col items-start">
@@ -90,7 +96,9 @@ const ExplanationSection = () => {
               alt={t("why.situation.imageAlt")}
               className="object-contain"
             />
-            <h2 className="h2 text-pretty text-v2-red">{t("why.situation.title")}</h2>
+            <h2 className="h2 text-pretty text-v2-red">
+              {t("why.situation.title")}
+            </h2>
           </div>
           <p className="text-pretty preserve-lines">
             {t.rich("why.situation.paragraph", {
@@ -108,7 +116,9 @@ const ExplanationSection = () => {
               alt={t("why.reaction.imageAlt")}
               className="object-contain"
             />
-            <h2 className="h2 text-pretty text-v2-blue">{t("why.reaction.title")}</h2>
+            <h2 className="h2 text-pretty text-v2-blue">
+              {t("why.reaction.title")}
+            </h2>
           </div>
           <p className="text-pretty preserve-lines">
             {t.rich("why.reaction.paragraph", {
@@ -119,7 +129,6 @@ const ExplanationSection = () => {
           </p>
         </div>
       </div>
-
     </section>
   );
 };
@@ -132,15 +141,26 @@ const PresentationSection = () => {
         <div className="flex flex-col gap-8">
           <h2 className="h2 text-pretty">{t("seastemik.title")}</h2>
           <p className="p-body preserve-lines">{t("seastemik.paragraph")}</p>
-          <ShareLink href="https://seastemik.org/"  name="Seastemik" customName={t("seastemik.cta")} iconFillColor="fill-v2-blue" className="font-secondary font-bold text-md uppercase tracking-wide" />
+          <ShareLink
+            href="https://seastemik.org/"
+            name="Seastemik"
+            customName={t("seastemik.cta")}
+            iconFillColor="fill-v2-blue"
+            className="font-secondary font-bold text-md uppercase tracking-wide"
+          />
         </div>
         <div className="flex flex-col gap-8">
           <h2 className="h2 text-pretty">{t("dataforgood.title")}</h2>
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
-          <ShareLink href="https://dataforgood.org/"  name="Data for Good" customName={t("dataforgood.cta")} iconFillColor="fill-v2-blue" className="font-secondary font-bold text-md uppercase tracking-wide" />
+          <ShareLink
+            href="https://dataforgood.org/"
+            name="Data for Good"
+            customName={t("dataforgood.cta")}
+            iconFillColor="fill-v2-blue"
+            className="font-secondary font-bold text-md uppercase tracking-wide"
+          />
         </div>
       </div>
-
     </section>
   );
 };
@@ -153,24 +173,25 @@ const TeamSection = () => {
       <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
       <div className="flex flex-col gap-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8">
-          {
-            teamMembers.map((member, index) => (
-              <div key={index} className="flex flex-col items-center gap-2 max-w-[132px]">
-                <Image
-                  loading="lazy"
-                  src={member.pictureUrl}
-                  width={131}
-                  height={131}
-                  alt={member.pictureAlt}
-                  className="object-contain rounded-full"
-                />
-                <div className="flex justify-center flex-col h-full items-center  text-center">
-                  <h3 className="p-lead">{member.name}</h3>
-                  <p className="p-caption preserve-lines">{member.role}</p>
-                </div>
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-2 max-w-[132px]"
+            >
+              <Image
+                loading="lazy"
+                src={member.pictureUrl}
+                width={131}
+                height={131}
+                alt={member.pictureAlt}
+                className="object-contain rounded-full"
+              />
+              <div className="flex justify-center flex-col h-full items-center  text-center">
+                <h3 className="p-lead">{member.name}</h3>
+                <p className="p-caption preserve-lines">{member.role}</p>
               </div>
-            ))
-          }
+            </div>
+          ))}
         </div>
         <div className="flex flex-col items-center gap-8 lg:max-w-[911px]">
           <p className="p-lead">{t("teamSection.greetings")}</p>
@@ -195,7 +216,9 @@ const PartnerSection = () => {
             alt={t("partner.imageAlt")}
             className="rounded-t-lg md:rounded-l-lg md:rounded lg:rounded-tr-none object-cover"
           />
-          <p className="py-6 md:py-0 px-4 p-lead preserve-lines">{t("partner.paragraph")}</p>
+          <p className="py-6 md:py-0 px-4 p-lead preserve-lines">
+            {t("partner.paragraph")}
+          </p>
         </div>
       </div>
     </section>
@@ -252,14 +275,14 @@ const StorySection = () => {
       alt: t("mediaLogosAlt.leMonde"),
       width: 134,
       height: 34,
-    }
-  ] 
+    },
+  ];
   return (
     <section className="bg-v2-white py-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
       <h2 className="h2 text-v2-blue text-pretty mb-8">{t("story.title")}</h2>
       <div className="flex flex-col px-4 lg:px-10 items-center gap-10 lg:flex-row bg-v2-blue rounded-xl">
         <p className="py-6 px-4 preserve-lines text-white ">
-            {t.rich("story.paragraph", {
+          {t.rich("story.paragraph", {
             strong: (chunks) => <strong>{chunks}</strong>,
           })}
         </p>
@@ -273,20 +296,21 @@ const StorySection = () => {
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row gap-8 mt-10 items-center justify-center">
-        {
-          logoItems.map((item, index) => (
-            <div key={index} className="flex flex-col items-center gap-2 max-w-[132px]">
-              <Image
-                loading="lazy"
-                src={item.imgSrc}
-                width={item.width}
-                height={item.height}
-                alt={item.alt}
-                className="object-contain"
-              />
-            </div>
-          ))
-        }
+        {logoItems.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center gap-2 max-w-[132px]"
+          >
+            <Image
+              loading="lazy"
+              src={item.imgSrc}
+              width={item.width}
+              height={item.height}
+              alt={item.alt}
+              className="object-contain"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
@@ -299,36 +323,50 @@ const ApproachAndMethodSection = () => {
   return (
     <section className="bg-v2-white text-v2-blue">
       <div className="pt-14 px-10 lg:px-0 lg:max-w-[642px] mx-auto">
-        <h2 className="h2 text-v2-blue text-pretty mb-8">{t("method.title")}</h2>
+        <h2 className="h2 text-v2-blue text-pretty mb-8">
+          {t("method.title")}
+        </h2>
         <p className="p-lead">{t("method.caption")}</p>
         <div className="flex flex-col gap-8 my-8">
           <h4 className="h4">{t("method.values.title")}</h4>
           <div className="flex flex-col gap-4">
-            {
-              valueItems.map((_, index) => (
-                <p key={index} className="preserve-lines">{t.rich(`method.values.items.${index}`, {
+            {valueItems.map((_, index) => (
+              <p key={index} className="preserve-lines">
+                {t.rich(`method.values.items.${index}`, {
                   strong: (chunks) => <strong>{chunks}</strong>,
-                })}</p>
-              ))
-            }
+                })}
+              </p>
+            ))}
           </div>
           <h4 className="h4">{t("method.steps.title")}</h4>
           <div className="flex flex-col gap-4">
-            {
-              stepItems.map((_, index) => (
-                <p key={index} className="preserve-lines">{t.rich(`method.steps.items.${index}`, {
+            {stepItems.map((_, index) => (
+              <p key={index} className="preserve-lines">
+                {t.rich(`method.steps.items.${index}`, {
                   strong: (chunks) => <strong>{chunks}</strong>,
-                })}</p>
-              ))
-            }
+                })}
+              </p>
+            ))}
           </div>
           <p className="p-lead">{t("method.missingInfo")}</p>
-          <ShareLink href="/" name="Download" customName={t("method.downloadCta")} iconFillColor="fill-v2-pink" className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide max-w-[95%]" />
+          <ShareLink
+            href="/"
+            name="Download"
+            customName={t("method.downloadCta")}
+            iconFillColor="fill-v2-pink"
+            className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide max-w-[95%]"
+          />
         </div>
         <h2 className="h2 mt-20">{t("contact.title")}</h2>
         <div className="flex flex-col gap-8 mt-8 mb-20">
           <p className="p-lead">{t("contact.paragraph")}</p>
-          <ShareLink href="mailto:info@seastemik.org" name="Seastemik Email" customName="info@seastemik.org" iconFillColor="fill-v2-pink" className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide" />
+          <ShareLink
+            href="mailto:info@seastemik.org"
+            name="Seastemik Email"
+            customName="info@seastemik.org"
+            iconFillColor="fill-v2-pink"
+            className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide"
+          />
         </div>
       </div>
       <Image
