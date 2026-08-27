@@ -1,0 +1,119 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "The salmon we produce and consume",
+      "imageAlt": "Salmon on a plate"
+    },
+    "bomb": {
+      "title": "ARE ECOLOGICAL, SOCIAL AND HEALTH BOMBS",
+      "imageAlt": "Salmon exploding"
+    },
+    "impact": {
+      "title": "Every year in France, we consume 37.6 million salmon",
+      "titleHighlight": "We consume 37.6 million salmon",
+      "impact": "(the equivalent in tons of 19 Eiffel Towers)",
+      "imageAltTitle": "Eiffel tower on a plate",
+      "title2": "of these millions of salmon, 98% are farmed",
+      "description": "Unlike a large part of the fish we consume, 98% of the salmon consumed in France are farmed. We do not catch them. We feed them, every day, for two years, in cages.",
+      "title2Highlight": "98% are farmed",
+      "imageAltDescription": "Salmons"
+    },
+    "menu": {
+      "title": {
+        "part1": "Here’s what’s hidden",
+        "part2": "behind the consumption",
+        "part3": "of a farmed salmon"
+      },
+      "menuCards": [
+        {
+          "title": "Wild fish, reduced to meal and oil",
+          "content": "<strong>Salmon is a carnivorous fish</strong>. In farming, they are small wild fish caught and processed into meal and oil to feed the salmon. <strong>This fishing causes accidental catches of sharks, turtles, whales...</strong>",
+          "imageAlt": "Salmon and small fish"
+        },
+        {
+          "title": "Soy, wheat, rapeseed",
+          "content": "Salmon are carnivorous fish, yes... <strong>but also fed with soy.</strong>\n\nThe crops used to feed salmon occupy a <strong>larger area than Paris + Hauts-de-Seine + Seine-Saint-Denis combined!</strong>",
+          "imageAlt": "Cereal"
+        },
+        {
+          "title": "Krill, fished in Antarctica",
+          "content": "<strong>To enhance its pink color, we also give it krill</strong>, this tiny shrimp that is the food of many animals in the Antarctic ecosystem.",
+          "imageAlt": "Krill, tiny shrimp"
+        },
+        {
+          "title": "Anti-parasitic treatments",
+          "content": "To keep salmon alive and healthy, <strong>we administer anti-parasite treatments</strong>; mainly against sea lice, small crustaceans that proliferate in farms.",
+          "imageAlt": "Sprayer"
+        },
+        {
+          "title": "Microplastics",
+          "content": "Farmed salmon <strong>can ingest microplastics</strong> present in their environment or their food.",
+          "imageAlt": "Plastic bottle deteriorating"
+        },
+        {
+          "title": "Eternal pollutants",
+          "content": "The food used in aquaculture can be a <strong>pathway for fish exposure to PFAS</strong>.",
+          "imageAlt": "Molecule"
+        }
+      ]
+    },
+    "addition": {
+      "title": {
+        "part1": "In France, each inhabitant consumes on average 3.8 kg of farmed salmon per year,",
+        "part2": "the bill is steep:"
+      },
+      "results": {
+        "intro": "That will be:",
+        "resultItems": {
+          "item1": {
+            "title": "1 ton",
+            "description": " of wild fish ground",
+            "imageAlt": "Salmon and small fishes"
+          },
+          "item2": {
+            "title": "54 kg",
+            "description": "of soy, an area larger than Paris + Hauts-de-Seine + Seine-Saint-Denis combined!",
+            "imageAlt": "Cereal"
+          },
+          "item3": {
+            "title": "1.2 tons",
+            "description": " of carbon emissions",
+            "imageAlt": "Carbon cloud"
+          },
+          "item4": {
+            "title": "2 years",
+            "description": " confined and crowded, fed with pellets",
+            "imageAlt": "Farmed salmon in cages"
+          }
+        }
+      },
+      "addOns": {
+        "intro": "In addition:",
+        "addOnItems": {
+          "item1": {
+            "title": "Wastewater from 2.9 million people:",
+            "description": "Everything given to farmed salmon does not become flesh. The rest comes out: excrement, uneaten feed, treatment residues. <strong>This activity represents up to the equivalent of the untreated wastewater produced by 2.9 million people.</strong>",
+            "imageAlt": "Pipe discharging wastewater"
+          },
+          "item2": {
+            "title": "Resources for 588 million people:",
+            "description": "The food fed to farmed salmon is sourced from waters off countries where fish are among the few accessible sources of protein.\n\nSardines, anchovies, sardinella... whole fish, caught specifically to be ground up. <strong>These diverted resources could meet the protein needs of 588 million people.</strong>",
+            "imageAlt": "Salmon and small fishes"
+          },
+          "item3": {
+            "title": "398 microplastics:",
+            "description": "In France, each person consumes an average of <strong>3.8 kg of farmed salmon per year, which is equivalent to ingesting around 398 microplastics every year.</strong>",
+            "imageAlt": "Plastic bottle deteriorating"
+          },
+          "item4": {
+            "title": "Less omega-3:",
+            "description": "For your information: Omega-3s do not come from salmon. They come from the algae that fish used to consume.\n\nToday, salmon flesh contains significantly less omega-3.\n\nPollutants, however, accumulate.",
+            "imageAlt": "Algae and a sign indicating a prohibition"
+          }
+        },
+        "total": "Total:"
+      },
+      "total": "Total :"
+    }
+  }
+}

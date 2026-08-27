@@ -57,7 +57,7 @@ const Navbar = () => {
             alt="PinkBombs"
             width={176}
             height={43}
-            className="w-24 md:w-36 lg:w-44 object-contain"
+            className="w-24 md:w-36 lg:w-44 h-auto object-contain"
           />
         </Link>
 

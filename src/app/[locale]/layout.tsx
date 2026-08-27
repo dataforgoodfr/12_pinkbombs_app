@@ -19,7 +19,7 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-import "@/styles/globals.css";
+import "@/styles/archive/v1/styles.css";
 
 export async function generateMetadata({
   params,
@@ -78,8 +78,9 @@ export default async function GlobalLayout({
         montserrat.variable,
         "scroll-smooth overflow-x-hidden",
       )}
+      suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

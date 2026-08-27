@@ -2,10 +2,10 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
-import "@/styles/globals.css";
+import "@/styles/site/styles.css";
 
-import Footer from "@/components/v1/layout/Footer";
-import Navbar from "@/components/v1/layout/Navbar";
+import Footer from "@/components/v2/layout/Footer";
+import Navbar from "@/components/v2/layout/Navbar";
 
 export async function generateMetadata({
   params,
@@ -55,7 +55,7 @@ export default async function V2Layout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "v2.layout" });
+  const t = await getTranslations({ locale, namespace: "site.layout" });
   return (
     <>
       <Navbar />

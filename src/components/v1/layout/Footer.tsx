@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import MainLink from "@/components/v1/links/MainLink";
 import ShareLink from "@/components/v1/links/shareLink";
 
+import { Link } from "@/navigation";
+
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
@@ -93,12 +95,12 @@ const Footer = () => {
           {t("footer.allRight")} - © {currentYear} Seastemik {t("footer.and")}{" "}
           Data for Good
           <br />
-          <a
-            href="/archive/v1/legal-notice"
+          <Link
+            href="/archive/v1/legal-notices"
             className="underline hover:no-underline"
           >
             {t("footer.legalNotice")}
-          </a>
+          </Link>
         </p>
       </div>
     </footer>

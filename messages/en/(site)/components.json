@@ -1,0 +1,56 @@
+{
+  "components": {
+    "calculatorBlock": {
+      "title": {
+        "part1": "Happily",
+        "part2": ", It's still time to defuse the bomb!"
+      },
+      "caption": "Calculate your salmon footprint and discover how to reduce it, with a little surprise to reward you for your commitment!",
+      "imageAlt": "Fish jumping out of the water in front of a bright sun",
+      "buttonCta": "Assess your impact",
+      "companyHelp": "For companies, we can support you in your impact reduction process. You can get in",
+      "contactLink": "contact here"
+    },
+    "calculator": {
+      "labels": [
+        { "label": "neutral", "text": "Neutral", "color": "green" },
+        { "label": "low", "text": "Low", "color": "yellow" },
+        { "label": "medium", "text": "Medium", "color": "magenta" },
+        { "label": "high", "text": "High", "color": "red" },
+        { "label": "veryHigh", "text": "Very High", "color": "black" }
+      ]
+    },
+    "articlesBlock": {
+      "title": "To swim further!",
+      "imageAlt": "Diving fish",
+      "articles": {
+        "homepage": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",
+            "title": "The debunking of industrial lobbies",
+            "description": "Discover who the salmon are, how they are produced and the impacts of their consumption.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Understand"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "title": "Reduce your impact today",
+            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Act"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Illustrative image representing a smile and happy fish.",
+            "title": "Get inspired by initiatives",
+            "description": "Emerging alternatives. Stories and ideas that make you want to do things differently.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "Get inspired"
+          }
+        ]
+      }
+    }
+  }
+}

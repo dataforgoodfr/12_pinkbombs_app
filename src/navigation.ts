@@ -8,6 +8,11 @@ export const localePrefix = "as-needed" as const;
 
 export type basePathType =
   | "/"
+  | "/to-understand"
+  | "/to-act"
+  | "/to-be-inspired"
+  | "/calculator"
+  | "/about"
   | "/archive/v1"
   | "/archive/v1/dashboard"
   | "/archive/v1/to-act"
@@ -15,6 +20,26 @@ export type basePathType =
 
 export const pathnames = {
   "/": "/",
+  "/to-understand": {
+    fr: "comprendre",
+    en: "to-understand",
+  },
+  "/to-act": {
+    fr: "agir",
+    en: "to-act",
+  },
+  "/to-be-inspired": {
+    fr: "s-inspirer",
+    en: "to-be-inspired",
+  },
+  "/calculator": {
+    fr: "calculateur",
+    en: "calculator",
+  },
+  "/about": {
+    fr: "a-propos",
+    en: "about",
+  },
   "/archive/v1": "/archive/v1",
   "/archive/v1/dashboard": "/archive/v1/dashboard",
   "/archive/v1/to-act": {
@@ -24,6 +49,10 @@ export const pathnames = {
   "/archive/v1/about": {
     fr: "/archive/v1/a-propos",
     en: "/archive/v1/about",
+  },
+  "/archive/v1/legal-notices": {
+    fr: "/archive/v1/mentions-legales",
+    en: "/archive/v1/legal-notices",
   },
 } as const;
 

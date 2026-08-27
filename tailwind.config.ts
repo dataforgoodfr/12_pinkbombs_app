@@ -34,6 +34,15 @@ export default {
           950: "rgb(var(--tw-color-primary-950) / <alpha-value>)",
         },
         dark: "#222222",
+        v2: {
+          blue: "#13176E",
+          pink: "#FFD4D4",
+          red: "#E82D04",
+          yellow: "#EBF97B",
+          magenta: "#EB88DD",
+          green: "#B2F8A7",
+          orange: "#FF967F",
+        },
       },
       screens: {
         xs: "500px",
