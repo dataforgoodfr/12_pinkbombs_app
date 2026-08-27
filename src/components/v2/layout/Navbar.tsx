@@ -83,7 +83,7 @@ const Navbar = () => {
         </Link>
 
         <nav
-          className="flex flex-wrap gap-4 lg:gap-16 ml-auto"
+          className="flex flex-wrap gap-4 lg:gap-10 ml-auto"
           aria-label={t("nav.title")}
         >
           {navItems.map((item, key) => (
@@ -111,7 +111,7 @@ const Navbar = () => {
                   className="inline-block self-center mr-2"
                 />
               )}
-              <p className="cta focus:text-v2-red">{item.text}</p>
+              <p className="cta tracking-wider focus:text-v2-red">{item.text}</p>
             </Link>
           ))}
 
