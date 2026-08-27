@@ -6,6 +6,8 @@ type ShareLinkProps = {
   type?: "site" | "sources" | "legalNotices" | "contactUs" | "email" | "design";
   href: string;
   name: string;
+  customName?: string;
+  iconFillColor?: "fill-white" | "fill-v2-blue" | "fill-v2-pink";
 };
 
 const ShareLink = ({
@@ -13,6 +15,8 @@ const ShareLink = ({
   type = "site",
   href,
   name,
+  customName,
+  iconFillColor = "fill-white",
   ...rest
 }: ShareLinkProps) => {
   const t = useTranslations("site.layout");
@@ -20,7 +24,6 @@ const ShareLink = ({
   if (!href || !name) {
     return <></>;
   }
-
   return (
     <a
       className={clsx(
@@ -30,15 +33,15 @@ const ShareLink = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      title={`${t(`footer.shareLink.${type}`)} ${name} (${t("footer.shareLink.blank")})`}
+      title={`${t(`shareLink.${type}`)} ${name} (${t("shareLink.blank")})`}
       {...rest}
     >
-      {t(`footer.shareLink.${type}`)}
-      <span className="sr-only">{name}</span>
+      {customName ?? t(`shareLink.${type}`)}
+      <span className="sr-only">{customName ?? name}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="16"
-        className="inline-block ml-2 align-middle fill-white group-hover:fill-v2-yellow"
+        className={`inline-block ml-2 align-middle ${iconFillColor} group-hover:fill-v2-yellow`}
         viewBox="0 -960 960 960"
         width="16"
       >
