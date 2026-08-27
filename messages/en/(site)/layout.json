@@ -10,15 +10,15 @@
       "calculator": "Calculator",
       "about": "About"
     },
+    "shareLink": {
+      "blank": "new tab",
+      "site": "Website",
+      "sources": "Sources and methodologies",
+      "legalNotices": "Legal notices",
+      "contactUs": "Contact us",
+      "design": "coucou.design"
+    },
     "footer": {
-      "shareLink": {
-        "blank": "new tab",
-        "site": "Website",
-        "sources": "Sources and methodologies",
-        "legalNotices": "Legal notices",
-        "contactUs": "Contact us",
-        "design": "coucou.design"
-      },
       "sections": {
         "projectBy": {
           "title": "A project by",

@@ -10,15 +10,15 @@
       "calculator": "Calculateur",
       "about": "À propos"
     },
+    "shareLink": {
+      "blank": "nouvel onglet",
+      "site": "Site internet",
+      "sources": "Sources et méthodologies",
+      "legalNotices": "Mentions légales",
+      "contactUs": "Contactez-nous",
+      "design": "coucou.design"
+    },
     "footer": {
-      "shareLink": {
-        "blank": "nouvel onglet",
-        "site": "Site internet",
-        "sources": "Sources et méthodologies",
-        "legalNotices": "Mentions légales",
-        "contactUs": "Contactez-nous",
-        "design": "coucou.design"
-      },
       "sections": {
         "projectBy": {
           "title": "Un projet de",

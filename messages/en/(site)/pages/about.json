@@ -1,0 +1,127 @@
+{
+  "about": {
+    "meta": {
+      "title": "About"
+    },
+    "intro": {
+      "title": "RESTOCK THE OCEAN, FEED THE FUTURE",
+      "caption": "Shedding light on the systemic impact of intensive aquaculture, and more specifically on salmon consumption.",
+      "imageAlt": "School of fish surfing a wave"
+    },
+    "ambition": {
+      "origin": "PinkBombs was born from a simple ambition: to shed light on the systemic impact of intensive aquaculture, and more specifically on salmon consumption.",
+      "paragraph": "<strong>Driven by Seastemik in collaboration with DataForGood, PinkBombs establishes itself as the reference barometer, offering a transparent and documented view of the ecological, health, and ethical issues related to fish production and consumption.</strong>\n\nMore than just an alert platform, it is a true decision-making tool designed for citizens, businesses, and public decision-makers. Our mission is clear: to support the transition towards ocean-friendly food. Because 'de-fishing' our plates means restocking the ocean and feeding the future."
+    },
+    "why": {
+      "title": "Why PinkBombs?",
+      "situation": {
+        "title": "Situation",
+        "imageAlt": "Falling fish",
+        "paragraph": "<strong>We are facing an ocean emergency. The ocean, the main source of life on Earth, is increasingly threatened by our human activities.</strong>\n\n<strong>Overfishing is the main cause of marine biodiversity loss.</strong> The salmon industry, emblematic of intensive aquaculture, generates multiple impacts on a global scale.\n\nIt is therefore urgent to change the food system for better protection of humans, animals, and ecosystems."
+      },
+      "reaction": {
+        "title": "Reaction",
+        "imageAlt": "Happy fish looking to the future",
+        "paragraph": "<strong>PinkBombs is here to:</strong><ul>\n<li>Alert about one of the greatest threats to the ocean today: <strong>salmon farming.</strong></li>\n<li><strong>Deconstruct the distorted popular perception</strong> around salmon consumption.</li>\n<li>Guide businesses, states, and consumers <strong>towards positive solutions.</strong></li>\n</ul>"
+      }
+    },
+    "seastemik": {
+      "title": "Seastemik",
+      "paragraph": "Seastemik is an NGO founded in 2023 that is committed to a living Ocean through a systemic revolution of our food. We work to end unsustainable aquaculture practices, particularly intensive salmon farming, for better protection of humans, animals, and ecosystems.",
+      "cta": "See Seastemik's website"
+    },
+    "dataforgood": {
+      "title": "DataForGood",
+      "paragraph": "Data For Good is a non-profit association created in 2014 that brings together a community of 7,000+ tech volunteers (Data Scientists, Data Analysts, Data Engineers, Developers, UX/UI Designers, Product & Project Owners) who want to engage for the public interest.\n\nEach year we work with about fifteen associations to co-construct projects that promote social justice, democracy, and the environment. We have thus supported, accelerated, and co-constructed more than 100 projects over the past 10 years.\n\nWe are also strong critics of the risks and abuses of technology. Being part of the community also means committing to sober technology that respects social and environmental issues and accepting that technology is not the solution to all problems.",
+      "cta": "See Data For Good's website"
+    },
+    "teamSection": {
+      "title": "The project team",
+      "members": [
+        {
+          "name": "Esther",
+          "role": "Co-founder & co-captain",
+          "pictureUrl": "/site/images/about/team/esther.png",
+          "pictureAlt": "Esther, co-founder and co-captain of the PinkBombs project"
+        },
+        {
+          "name": "Maxime",
+          "role": "Co-founder of Seastemik",
+          "pictureUrl": "/site/images/about/team/maxime.png",
+          "pictureAlt": "Maxime, co-founder of Seastemik"
+        },
+        {
+          "name": "Gaëlle",
+          "role": "Technical Director",
+          "pictureUrl": "/site/images/about/team/gaelle.jpeg",
+          "pictureAlt": "Gaëlle, Technical Director"
+        },
+        {
+          "name": "Paul",
+          "role": "Art Direction and Graphic Design",
+          "pictureUrl": "/site/images/about/team/paul.png",
+          "pictureAlt": "Paul, Art Direction and Graphic Design"
+        },
+                  {
+          "name": "Brigitte",
+          "role": "Data Analyst",
+          "pictureUrl": "/site/images/about/team/brigitte.avif",
+          "pictureAlt": "Brigitte, Data Analyst"
+        },
+        {
+          "name": "Aurélie",
+          "role": "Web Developer",
+          "pictureUrl": "/site/images/about/team/aurelie2.png",
+          "pictureAlt": "Aurélie, Web Developer"
+        }
+      ],
+      "greetings": "Huge thanks to the volunteers who contributed their talents and time to make this project possible: Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Gaëlle Nordström-Schüler, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Pajot, Paul Tenaillon, Quentin Deltour, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin."
+    },
+    "partner": {
+      "title": "Partner",
+      "paragraph": "This project was realized with the support of KRESK 4 OCEANS.\n\nKRESK 4 OCEANS is an endowment fund created by the KRESK Group and its brands (SVR and Lazartigue) with the aim of creating projects and financing non-profit organizations that actively fight against marine pollution.",
+      "imageAlt": "Logo KRESK 4 OCEANS"
+    },
+    "story": {
+      "title": "Story",
+      "paragraph": "<strong>In 2023, we launched the first version of Pinkbombs, which received significant media coverage and advanced the cause.</strong>\n\nOur data was used by the newspaper Le Monde to publish an article by Les Décodeurs on the impact of salmon farming. Link to the article here. Since then, the information has been picked up by a series of media outlets such as Les Bon Potes, Brut, France Inter, and TV platforms like the 1 PM news on TF1, thus raising collective awareness about the impacts of the salmon industry.",
+      "imageAlt": "Image of a phone with media applications"
+    },
+    "mediaLogosAlt": {
+      "tf1": "TF1 Logo",
+      "brut": "Brut Logo",
+      "franceInter": "France Inter Logo",
+      "franceInfo": "France Info Logo",
+      "leMonde": "Le Monde Logo",
+      "leBonPote": "Le Bon Pote Logo",
+      "laCroix": "La Croix Logo",
+      "radioFrance": "Radio France Logo"
+    },
+    "method": {
+      "title": "Approach and Methodology",
+      "caption": "PinkBombs was created to analyze and transform public data into tools accessible to everyone.",
+      "values": {
+        "title": "Our approach is based on three values:",
+        "items": [
+          "<strong>Open source:</strong>\nThe data is available on the platform.",
+          "<strong>Collaborative:</strong>\nContact us to contribute or suggest improvements.",
+          "<strong>Dynamic:</strong>\nOur database is regularly updated to incorporate new perspectives and improve its accuracy."
+        ]
+      },
+      "steps": {
+        "title": "Our approach followed three steps :",
+        "items": [
+          "<strong>Identification of priority topics:</strong>\nSince the site's goal is to provide a compilation of the most striking information on the subject, the organization began by prioritizing the topics to be addressed.",
+          "<strong>In-depth research:</strong>\nDocumentary research was conducted on the Internet and by contacting experts, taking care to use only scientific sources or those from renowned international organizations.",
+          "<strong>Peer-reviewed data:</strong>\nIn the interest of data quality, all information was internally verified. Support from experts allowed for final validation."
+        ]
+      },
+      "missingInfo": "Did we forget any key information? Do you have a question? Please contact us.",
+      "downloadCta": "Download the complete methodology (PDF)"
+    },
+    "contact": {
+      "title": "Contact",
+      "paragraph": "Seastemik dreams of an Ocean teeming with life, preserved by a plant-based diet, ensuring the habitability of our planet: climate stability, human health, food justice, and animal welfare."
+    }
+  }
+}
