@@ -49,6 +49,24 @@
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "S’inspirer"
           }
+        ],
+        "toAct": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
+            "title": "Le debunk des lobbys industriels",
+            "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Comprendre"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
+            "title": "S’inspirer d’initiatives",
+            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour etre égal.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "S’inspirer"
+          }
         ]
       }
     }

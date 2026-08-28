@@ -111,7 +111,9 @@ const Navbar = () => {
                   className="inline-block self-center mr-2"
                 />
               )}
-              <p className="cta tracking-wider focus:text-v2-red">{item.text}</p>
+              <p className="cta tracking-wider focus:text-v2-red">
+                {item.text}
+              </p>
             </Link>
           ))}
 
