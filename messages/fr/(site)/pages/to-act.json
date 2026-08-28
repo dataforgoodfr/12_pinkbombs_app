@@ -1,0 +1,127 @@
+{
+  "toAct": {
+    "meta": {
+      "title": "Agir"
+    },
+    "intro": {
+      "caption": "Réduire son impact",
+      "title": "Découvrez des actions simples et des leviers collectifs.",
+      "imageAlt": "Image illustrative représentant des solutions pour réduire son impact."
+    },
+    "tags": {
+      "individual": "Individu",
+      "company": "Entreprise"
+    },
+    "howToAct": "Oui, mais comment\u00a0?",
+    "iAct": "J’agis",
+    "individualSection": {
+      "title": {
+        "part1": "À notre échelle,",
+        "part2": "nous avons toutes et tous le pouvoir d’agir sur notre consommation de saumons."
+      },
+      "recommendations": [
+        {
+          "title": "Réduire sa consommation de saumons",
+          "description": "La première étape pour réduire son impact est de diminuer progressivement sa consommation.\n\nDiviser par 3 notre consommation nationale permettrait déjà de limiter fortement les pressions exercées sur l'Océan, les animaux et les humains.\n\nLe choix le plus efficace reste de ne plus consommer de saumons, du tout.\n\nPourquoi\u00a0? Nos choix alimentaires ont un véritable pouvoir\u00a0: lorsque la demande évolue, les filières s’adaptent. En choisissant de ne plus acheter de saumons issus de modes de production qui posent problème, nous envoyons un signal fort aux industriels et encourageons le développement d’alternatives plus respectueuses.",
+          "actions": [
+            {
+              "cta": "Calculez votre empreinte saumons",
+              "url": "",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Exemple article interne",
+              "url": "",
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Exemple article externe",
+              "url": "",
+              "type": "externalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Continuer à manger iodé (sans poisson)",
+          "description": "Le plaisir d’une cuisine iodée <strong>ne repose pas uniquement sur les poissons.</strong>\n\n<strong>Algues, coquillages</strong> et nouvelles façons de cuisiner permettent de retrouver des saveurs marines tout en diversifiant son alimentation.\n\nTestez dès maintenant nos menus marins sans poissons, avec des recettes 100% océanes et végétales, pour faire danser les papilles, sans vider l'Océan\u00a0!",
+          "actions": [
+            {
+              "cta": "Télécharger notre livre de recette",
+              "url": "",
+              "type": "download"
+            }
+          ]
+        },
+        {
+          "title": "Introduire des alternatives végétales dans son alimentation",
+          "description": "Aujourd’hui, il <strong>existe de nombreuses alternatives végétales pour continuer à profiter des recettes que l’on aime\u00a0:</strong> saumon fumé végétal, pavés, tartinables ou encore préparations inspirées des produits de la mer.\n\nCes alternatives permettent de retrouver des textures, des usages et des plaisirs familiers, <strong>tout en réduisant l’impact lié à la consommation de saumons.</strong>",
+          "actions": [
+            {
+              "cta": "Lire notre article cookbook",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Sensibiliser autour de soi",
+          "description": "<strong>La plupart des personnes ignorent encore les impacts réels liés à la consommation de saumons.</strong>\n\n<strong>Partager ces informations autour de soi</strong>, ouvrir la discussion et faire découvrir d’autres façons de consommer sont aussi des formes d’action. Plus nous sommes nombreux à comprendre les enjeux, <strong>plus nous pouvons faire évoluer les pratiques.</strong>",
+          "actions": [
+            {
+              "cta": "Télécharger le kit comt de la campagne",
+              "url": "",
+              "type": "download"
+            }
+          ]
+        }
+      ]
+    },
+    "companySection": {
+      "title": {
+        "part1": "La transition à grande échelle se fera",
+        "part2": "si nos organisations jouent le jeu.",
+        "part3": "Il est urgent de les embarquer."
+      },
+      "recommendations": [
+        {
+          "title": "Je demande de réduire ou retirer les plats à base de saumons de la cantine",
+          "description": "Faire évoluer une carte de restaurant d'entreprise peut avoir un fort impact.\n\nEn portant ce sujet auprès de votre enterprise, xxx (garder tout ce paragraphe).",
+          "actions": [
+            {
+              "cta": "Téléchargez le kit ambassadeur",
+              "url": "",
+              "type": "download"
+            },
+            {
+              "cta": "Demandez-nous de l'aide pour convaincre en interne",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Je propose une restauration événementielle 100% végétale",
+          "description": "Réunions, séminaires, cocktails, événements d’entreprise… autant d’occasions de faire découvrir une autre façon de se régaler.\n\nLes traiteurs généralistes ou spécialisés en végétal proposent  aujourd’hui des alternatives créatives, gourmandes et inclusives, qui répondent plus facilement aux différentes habitudes alimentaires tout en limitant l’impact environnemental.",
+          "actions": [
+            {
+              "cta": "Exemple de traiteur 100% végétal",
+              "url": "",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Je demande un accompagnement de Seastemik",
+          "description": "Chaque entreprise peut engager des transformations puissantes. Seastemik peut vous accompagner pour enclencher ce changement avec vos services adéquats.\n\nIl est urgent, possible (et joyeux) de dépoissonner l’alimentation dans la restauration pour aller vers une offre alignée avec les 10kg de consommation de poissons par an et par habitants en France.\n\nContactez-nous\u00a0!",
+          "actions": [
+            {
+              "cta": "Prendre RDV avec Seastemik",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

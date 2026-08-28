@@ -42,9 +42,7 @@ const IntroSection = () => {
     <section className="bg-v2-pink text-v2-blue">
       <div className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 lg:py-0 px-10 md:px-12">
         <div className="relative lg:top-20 col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pt-32 lg:pl-12 xl:pt-152 xl:-ml-[250px]">
-          <h1 className="h1 text-pretty lg:max-w-[60%]">
-            {t("intro.title")}
-          </h1>
+          <h1 className="h1 text-pretty lg:max-w-[60%]">{t("intro.title")}</h1>
           <p className="p-lead text-pretty lg:max-w-[80%] xl:max-w-[100%]">
             {t("intro.caption")}
           </p>

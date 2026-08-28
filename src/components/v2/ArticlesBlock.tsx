@@ -7,7 +7,7 @@ import ArticleCard, {
 } from "@/components/v2/cards/ArticleCard";
 
 interface ArticlesBlockProps {
-  page?: "homepage" | "about";
+  page?: "homepage" | "about" | "toAct";
 }
 
 const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
@@ -28,11 +28,10 @@ const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
       <h2 className="h2 text-center text-v2-blue text-pretty">
         {t("articlesBlock.title")}
       </h2>
-      <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row gap-10 lg:gap-4 py-4 max-w-[1592px] mx-auto">
+      <div className="flex flex-col justify-center md:grid grid-cols-2 lg:flex lg:flex-row gap-10 lg:gap-8 py-4 max-w-[1592px] mx-auto">
         {articleCardItems.map((item, index) => (
           <ArticleCard
             key={index}
-            className="mx-auto"
             title={item.title}
             description={item.description}
             imageSrc={item.imageSrc}

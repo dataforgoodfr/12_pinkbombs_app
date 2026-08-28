@@ -1,0 +1,127 @@
+{
+  "toAct": {
+    "meta": {
+      "title": "Take action"
+    },
+    "intro": {
+      "caption": "Reduce your impact",
+      "title": "Discover simple actions and collective levers for change.",
+      "imageAlt": "Illustrative image representing solutions to reduce your impact."
+    },
+    "tags": {
+      "individual": "Individual",
+      "company": "Company"
+    },
+    "howToAct": "Yes, but how?",
+    "iAct": "I take action",
+    "individualSection": {
+      "title": {
+        "part1": "At our own level,",
+        "part2": "we all have the power to take action on our salmon consumption."
+      },
+      "recommendations": [
+        {
+          "title": "Reduce your salmon consumption",
+          "description": "The first step towards reducing your impact is to gradually reduce your consumption.\n\nDividing our national consumption by 3 would already significantly reduce the pressure placed on the Ocean, animals and people.\n\nThe most effective choice is still to stop eating salmon altogether.\n\nWhy? Our food choices have real power: when demand changes, industries adapt. By choosing to stop buying salmon from production methods that cause problems, we send a strong signal to industry and encourage the development of more sustainable alternatives.",
+          "actions": [
+            {
+              "cta": "Calculate your salmon footprint",
+              "url": "",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Example internal article",
+              "url": "",
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Example external article",
+              "url": "",
+              "type": "externalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Keep enjoying ocean-inspired flavors (without fish)",
+          "description": "The pleasure of ocean-inspired cuisine <strong>does not rely solely on fish.</strong>\n\n<strong>Seaweed, shellfish</strong> and new ways of cooking make it possible to rediscover marine flavors while diversifying your diet.\n\nTry our fish-free ocean-inspired menus now, with 100% ocean-based and plant-based recipes to delight your taste buds without emptying the Ocean!",
+          "actions": [
+            {
+              "cta": "Download our recipe book",
+              "url": "",
+              "type": "download"
+            }
+          ]
+        },
+        {
+          "title": "Introduce plant-based alternatives into your diet",
+          "description": "Today, <strong>there are many plant-based alternatives that allow you to keep enjoying the recipes you love:</strong> plant-based smoked salmon, fillets, spreads and other preparations inspired by seafood products.\n\nThese alternatives make it possible to rediscover familiar textures, uses and pleasures, <strong>while reducing the impact associated with salmon consumption.</strong>",
+          "actions": [
+            {
+              "cta": "Read our cookbook article",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Raise awareness among those around you",
+          "description": "<strong>Most people are still unaware of the real impacts associated with salmon consumption.</strong>\n\n<strong>Sharing this information with those around you</strong>, starting conversations and introducing other ways of eating are also forms of action. The more of us who understand the issues, <strong>the more we can help change practices.</strong>",
+          "actions": [
+            {
+              "cta": "Download the campaign communications kit",
+              "url": "",
+              "type": "download"
+            }
+          ]
+        }
+      ]
+    },
+    "companySection": {
+      "title": {
+        "part1": "Large-scale change will happen",
+        "part2": "if our organizations play their part.",
+        "part3": "It is urgent to get them on board."
+      },
+      "recommendations": [
+        {
+          "title": "I ask for salmon-based dishes to be reduced or removed from the cafeteria menu",
+          "description": "Changing a company restaurant menu can have a significant impact.\n\nBy raising this issue with your company, xxx (keep this whole paragraph).",
+          "actions": [
+            {
+              "cta": "Download the ambassador kit",
+              "url": "",
+              "type": "download"
+            },
+            {
+              "cta": "Ask us for help making the case internally",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "I suggest 100% plant-based catering for events",
+          "description": "Meetings, seminars, cocktail receptions, corporate events… all are opportunities to introduce people to another way of enjoying great food.\n\nGeneralist or plant-based caterers now offer creative, delicious and inclusive alternatives that more easily accommodate different dietary habits while limiting environmental impact.",
+          "actions": [
+            {
+              "cta": "Example of a 100% plant-based caterer",
+              "url": "",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "I request support from Seastemik",
+          "description": "Every company can drive powerful transformations. Seastemik can support you in initiating this change with your relevant teams.\n\nIt is urgent, possible (and joyful) to remove fish from food service and move towards an offering aligned with the 10 kg of fish consumed per year per person in France.\n\nContact us!",
+          "actions": [
+            {
+              "cta": "Book an appointment with Seastemik",
+              "url": "",
+              "type": "internalRedirect"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

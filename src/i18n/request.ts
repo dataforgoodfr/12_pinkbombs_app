@@ -40,6 +40,8 @@ export default getRequestConfig(async () => {
           .default,
         ...(await import(`../../messages/${locale}/(site)/pages/about.json`))
           .default,
+        ...(await import(`../../messages/${locale}/(site)/pages/to-act.json`))
+          .default,
       },
     },
   };
