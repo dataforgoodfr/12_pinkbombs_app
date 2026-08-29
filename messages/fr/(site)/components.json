@@ -67,6 +67,24 @@
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "S’inspirer"
           }
+        ],
+        "toUnderstand": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Image illustrative représentant des solutions pour réduire son impact.",
+            "title": "Réduire son impact dès aujourd’hui",
+            "description": "Dans votre quotidien comme au travail, découvrez des actions simples et des leviers collectifs. ",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Agir"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
+            "title": "S’inspirer d’initiatives",
+            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour etre égal.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "S’inspirer"
+          }
         ]
       }
     }

@@ -67,6 +67,24 @@
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "Get inspired"
           }
+        ],
+        "toUnderstand": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "title": "Reduce your impact today",
+            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Act"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Illustrative image representing a smile and happy fish.",
+            "title": "Get inspired by initiatives",
+            "description": "Emerging alternatives. Stories and ideas that make you want to do things differently.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "Get inspired"
+          }
         ]
       }
     }

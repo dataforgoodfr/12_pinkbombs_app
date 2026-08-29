@@ -1,0 +1,97 @@
+{
+  "toUnderstand": {
+    "meta": {
+      "title": "Comprendre"
+    },
+    "intro": {
+      "caption": "Le debunk des lobbys industriels",
+      "title": "Tout ce que l'industrie du saumon veut vous faire croire",
+      "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme."
+    },
+    "tags": {
+      "act1": "Acte 1",
+      "act2": "Acte 2",
+      "act3": "Acte 3"
+    },
+    "debunk": {
+      "act1": {
+        "title": "Un discours bien rôdé",
+        "items": [
+          {
+            "falseBelief": "« Le saumon, c'est un classique. »",
+            "reality": "Les industriels ont tout mis en oeuvre pour que le saumon devienne votre poisson préféré.",
+            "paragraph": "<strong>Il y a à peine quarante ans, consommer du saumon était rare et cher.</strong> Sa banalisation est le résultat d'un travail industriel et commercial\u00a0: inondation du marché avec des volumes importants, prix ajustés, communication autour du saumon fumé pour les fêtes, poisson présenté comme accessible pour la restauration collective...\n\n<strong>Notre appétence pour ce poisson a été construite pas à pas.</strong>",
+            "imageAlt": "Charte graphique illustrant la production  exponentielle de saumon dans plusieurs pays du monde.",
+            "imageExtension": "png",
+            "catchPhrase": "La production de saumon d’élevage est exponentielle"
+          },
+          {
+            "falseBelief": "« Il faut manger du poisson pour ses oméga-3. »",
+            "reality": "Les oméga-3 ne viennent pas du poisson. Ils viennent des algues.",
+            "paragraph": "<strong>A l'origine, les oméga-3 sont produits par des micro-algues marines.</strong> Le zooplancton les accumule, les petits poissons le mangent, le saumon mange les petits poissons. Il ne les fabrique pas\u00a0: il les transporte. Depuis qu'on remplace l'huile de poisson et le krill - les coûts sont élevés -  par des huiles végétales, sa chair en contient nettement moins au point <strong>qu'une partie de la filière ajoute désormais de l'huile d'algue dans les granulés.</strong>",
+            "imageAlt": "Illustration d'un humain qui consomme un saumon qui lui-même mange des algues.",
+            "catchPhrase": "Les oméga-3 ne viennent pas du poisson. Ils viennent des algues."
+          },
+          {
+            "falseBelief": "« C'est prouvé scientifiquement. »",
+            "reality": "Une preuve financée n'est pas une preuve fausse. C'est une preuve à vérifier.",
+            "paragraph": "<strong>Une part importante des travaux qui établissent les bénéfices du poisson a été financée par le secteur qui le vend. Cela ne les rend pas faux.</strong> Cela oblige à les lire de près et à regarder ce qu'ils ne mesurent pas.",
+            "imageAlt": "Illustration de poissons avec des étiquettes de prix et degage de sûreté",
+            "catchPhrase": "Une part importante des travaux qui établissent les bénéfices du poisson a été financée par le secteur qui le vend."
+          }
+        ]
+      },
+      "act2": {
+        "title": "Une industrie floutée",
+        "items": [
+          {
+            "falseBelief": "« ON EST CONTRAINT D’ENTASSER POUR RÉPONDRE À LA DEMANDE »",
+            "reality": "La densité n'est pas un défaut du modèle. C'est le modèle.",
+            "paragraph": "Pour produire toujours plus de saumons à moindre coût, <strong>l’élevage industriel les concentre dans des espaces limités</strong>. Cette forte densité favorise le stress, les blessures, les parasites et la propagation des maladies, pouvant entraîner des mortalités massives.\n\n<strong>Et le problème ne s’arrête pas aux cages\u00a0:</strong> dans les élevages en pleine mer, les parasites et certains agents pathogènes peuvent se propager dans l’environnement et affecter les saumons sauvages, notamment les jeunes qui passent à proximité.",
+            "imageAlt": "Illustration de 4 saumons dans une baignoire",
+            "catchPhrase": "4 saumons dans l’équivalent d’une baignoire d’eau. C’est la densité requise pour que les fermes-usines soient rentables"
+          },
+          {
+            "falseBelief": "« FAIRE DE L’ÉLEVAGE C’EST LIMITER LA PÊCHE DES POISSONS SAUVAGES »",
+            "reality": "On ne soulage pas l'océan en y pêchant davantage.",
+            "paragraph": "<strong>On a choisi d'élever un prédateur.</strong> Il faut donc aller chercher sa nourriture en mer\u00a0: sardines, anchois, sardinelles, merlans bleus, des poissons entiers pêchés exprès et broyés en farine et en huile.\nL'élevage ne remplace pas la pêche\u00a0: il en dépend, et plus il grandit, plus il pêche.",
+            "imageAlt": "",
+            "catchPhrase": "Les oméga-3 ne viennent pas du poisson. Ils viennent des algues."
+          },
+          {
+            "falseBelief": "« Se tourner vers l’ÉLEVAGE SUR TERRE, C’EST PLUS ÉCOLOGIQUE »",
+            "reality": "Remplacer l'exploitation de la mer par l'exploitation des champs, ce n'est pas réduire l'empreinte. C'est la déplacer.",
+            "paragraph": "<strong>Utiliser de l'huile et des farines de poissons coûte cher et se raréfie.</strong>\n\nLa filière a donc remplacé une grande partie de la ration par du soja, du blé ou encore du colza <strong>(95 g de soja pour 100 g de saumon)</strong>.\n\nL'expérience a déjà eu lieu, et son bilan est connu\u00a0: de la déforestation d'un côté\u00a0; de l'autre, des terres qui auraient pu rester sauvages et laisser les écosystèmes se régénérer, ou nourrir directement des humains en légumes et légumineuses, alors que la France en manque et importe l'essentiel de ses protéines végétales.",
+            "imageAlt": "",
+            "catchPhrase": "95 g de soja pour 100 g de saumon"
+          }
+        ]
+      },
+      "act3": {
+        "title": "Les fausses bonnes idées",
+        "items": [
+          {
+            "falseBelief": "« Et si je mangeais du saumon sauvage\u00a0? »",
+            "reality": "Ce qui reste de la population de saumons sauvage ne se mange pas. Ça se protège.",
+            "paragraph": "Leurs populations s'effondrent, magie des saumons\u00a0: 5 000 kilomètres parcourus, l'odorat qui retrouve la rivière natale, le champ magnétique, les rapides et les cascades. Les saumons qui reste ne supporteront pas une pression de plus."
+          },
+          {
+            "falseBelief": "« Et la truite\u00a0? »",
+            "reality": "Changer d'espèce, ce n'est pas changer de modèle.",
+            "paragraph": "Autre poisson, même modèle, même granulé, même dépendance à la farine de poisson."
+          },
+          {
+            "falseBelief": "« Et l'élevage à terre\u00a0? »",
+            "reality": "Changer le contenant ne change pas le menu et le modèle (intensif).",
+            "paragraph": "Sortir de l'eau ne change ni la densité, ni la durée d'enfermement, ni la ration. Les déchets sont captés, pas supprimés\u00a0: ils changent de forme et d'adresse. Et la consommation d'énergie augmente."
+          },
+          {
+            "falseBelief": "« Et si je passais au poulet\u00a0? »",
+            "reality": "Sortir du saumon pour entrer dans le poulet, c'est changer d'animal, pas de modèle.",
+            "paragraph": "(Mettre le poulet me parait important, le report se fait majoritairement sur cet animal, c'est un gros risque avec la truite) Ordres de grandeur sur la réduction de consommation de viande à atteindre, et part de la production issue de l'élevage intensif 80% (voir l'infographie sur le poulet de Libé + travail d'Axel)"
+          }
+        ]
+      }
+    }
+  }
+}
