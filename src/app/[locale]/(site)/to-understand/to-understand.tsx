@@ -107,7 +107,7 @@ const DebunkSection = () => {
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
           />
-          <h1 className="h1 text-v2-blue">{t("debunk.act1.title")}</h1>
+          <h1 className="h1 text-v2-blue text-pretty">{t("debunk.act1.title")}</h1>
           <div className="flex flex-col py-10 gap-12">
             {firstActItems.map((item, index) => (
               <IllustratedDebunkBlock
@@ -139,7 +139,7 @@ const DebunkSection = () => {
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
           />
-          <h1 className="h1 text-v2-blue">{t("debunk.act2.title")}</h1>
+          <h1 className="h1 text-v2-blue text-pretty">{t("debunk.act2.title")}</h1>
           <div className="flex flex-col py-10 gap-12">
             {secondActItems.map((item, index) => (
               <IllustratedDebunkBlock
@@ -165,13 +165,13 @@ const DebunkSection = () => {
         />
       </section>
       <section id="act3" className="bg-v2-blue text-v2-blue">
-        <div className="px-14 py-16 xl:max-w-[1279px] mx-auto">
+        <div className="px-14 pt-16 lg:py-16 xl:max-w-[1279px] mx-auto">
           <SectionButtons
             sectionDisplayed="act3"
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
           />
-          <h1 className="h1 text-center text-v2-pink">
+          <h1 className="h1 text-center text-v2-pink text-pretty">
             {t("debunk.act3.title")}
           </h1>
           <div className="flex flex-col py-10 gap-12">

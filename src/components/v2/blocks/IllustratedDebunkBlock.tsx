@@ -24,8 +24,8 @@ const IllustratedDebunkBlock = ({
   const t = useTranslations("site.toUnderstand");
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-16 text-black">
-      <div className="flex flex-col gap-4">
+    <div className="grid grid-cols-1 gap-10 lg:gap-4 lg:grid-cols-2 md:gap-16 text-black">
+      <div className="flex flex-col gap-6 lg:gap-4">
         <div className="flex flex-col">
           <h3 className="h3 uppercase text-v2-red line-through decoration-1">
             {falseBelief}
