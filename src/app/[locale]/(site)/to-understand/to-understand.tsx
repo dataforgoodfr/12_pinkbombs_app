@@ -6,7 +6,7 @@ import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import DebunkBlock, { DebunkProps } from "@/components/v2/blocks/DebunkBlock";
 import IllustratedDebunkBlock, {
   IllustratedDebunkProps,
@@ -19,7 +19,7 @@ const ToUnderstand = () => {
       <IntroSection />
       <DebunkSection />
       <CalculatorBlock />
-      <ArticlesBlock page="toUnderstand" />
+      <ExplorationBlock page="toUnderstand" />
     </>
   );
 };

@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ShareLink from "@/components/v2/links/shareLink";
 
@@ -28,7 +28,7 @@ const About = () => {
       <StorySection />
       <ApproachAndMethodSection />
       <CalculatorBlock />
-      <ArticlesBlock />
+      <ExplorationBlock />
     </>
   );
 };

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import type { MenuCardProps } from "@/components/v2/cards/MenuCard";
 import MenuCard from "@/components/v2/cards/MenuCard";
@@ -19,7 +19,7 @@ const HomePage = () => {
       <MenuSection />
       <AdditionSection />
       <CalculatorBlock />
-      <ArticlesBlock />
+      <ExplorationBlock />
     </>
   );
 };

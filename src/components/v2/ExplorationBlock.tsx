@@ -2,19 +2,19 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import ArticleCard, {
-  ArticleCardProps,
-} from "@/components/v2/cards/ArticleCard";
+import PageCard, {
+  PageCardProps,
+} from "@/components/v2/cards/PageCard";
 
-interface ArticlesBlockProps {
+interface ExplorationBlockProps {
   page?: "homepage" | "about" | "toAct" | "toUnderstand";
 }
 
-const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
+const ExplorationBlock = ({ page = "homepage" }: ExplorationBlockProps) => {
   const t = useTranslations("site.components");
-  const articleCardItems = t.raw(
+  const pageCardItems = t.raw(
     `articlesBlock.articles.${page}`,
-  ) as ArticleCardProps[];
+  ) as PageCardProps[];
   return (
     <section className="bg-white px-10 lg:px-16 py-20">
       <Image
@@ -29,8 +29,8 @@ const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
         {t("articlesBlock.title")}
       </h2>
       <div className="flex flex-col justify-center md:grid grid-cols-2 lg:flex lg:flex-row gap-10 lg:gap-8 py-4 max-w-[1592px] mx-auto">
-        {articleCardItems.map((item, index) => (
-          <ArticleCard
+        {pageCardItems.map((item, index) => (
+          <PageCard
             key={index}
             title={item.title}
             description={item.description}
@@ -44,4 +44,4 @@ const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
     </section>
   );
 };
-export default ArticlesBlock;
+export default ExplorationBlock;

@@ -4,7 +4,7 @@ import React from "react";
 
 import Button from "@/components/v2/buttons/Button";
 
-export interface ArticleCardProps {
+export interface PageCardProps {
   className?: string;
   title: string;
   description: JSX.Element;
@@ -14,7 +14,8 @@ export interface ArticleCardProps {
   buttonUrl: string;
 }
 
-const ArticleCard = ({
+const PageCard
+ = ({
   className,
   title,
   description,
@@ -22,7 +23,7 @@ const ArticleCard = ({
   imageAlt,
   buttonCta,
   buttonUrl,
-}: ArticleCardProps) => {
+}: PageCardProps) => {
   if (!title || !description || !imageAlt) {
     return <></>;
   }
@@ -55,4 +56,4 @@ const ArticleCard = ({
     </div>
   );
 };
-export default ArticleCard;
+export default PageCard;

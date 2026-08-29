@@ -6,7 +6,7 @@ import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import AccordionCard, {
   RecommendationProps,
@@ -18,7 +18,7 @@ const ToAct = () => {
       <IntroSection />
       <RecommendationsSection />
       <CalculatorBlock />
-      <ArticlesBlock page="toAct" />
+      <ExplorationBlock page="toAct" />
     </>
   );
 };
