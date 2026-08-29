@@ -1,0 +1,97 @@
+{
+  "toUnderstand": {
+    "meta": {
+      "title": "Understanding"
+    },
+    "intro": {
+      "caption": "The industrial lobby debunk",
+      "title": "Everything the salmon industry wants you to believe",
+      "imageAlt": "Illustrative image depicting the industry, trawlers, and farmed fish."
+    },
+    "tags": {
+      "act1": "Act 1",
+      "act2": "Act 2",
+      "act3": "Act 3"
+    },
+    "debunk": {
+      "act1": {
+        "title": "A well-rehearsed narrative",
+        "items": [
+          {
+            "falseBelief": "« Salmon is a classic. »",
+            "reality": "The industry has done everything it can to make salmon your favorite fish.",
+            "paragraph": "<strong>Just forty years ago, eating salmon was rare and expensive.</strong> Its widespread adoption is the result of industrial and commercial efforts: flooding the market with large volumes, adjusting prices, promoting smoked salmon for the holidays, presenting fish as an affordable option for institutional catering ...\n\n<strong>Our appetite for this fish was built step by step.</strong>",
+            "imageAlt": "Graphic illustrating the exponential growth of salmon production in several countries around the world.",
+            "imageExtension": "png",
+            "catchPhrase": "Farmed salmon production is exponential"
+          },
+          {
+            "falseBelief": "« You need to eat fish for its omega-3s. »",
+            "reality": "Omega-3s don't come from fish. They come from algae.",
+            "paragraph": "<strong>Originally, omega-3s are produced by marine microalgae.</strong> Zooplankton accumulate them, small fish eat the zooplankton, and salmon eat the small fish. Salmon don't produce them: they transport them. Since fish oil and krill have increasingly been replaced — because of their high cost — with vegetable oils, salmon flesh contains significantly less omega-3s, to the point that <strong>part of the industry now adds algal oil to the feed pellets.</strong>",
+            "imageAlt": "Illustration of a human eating a salmon that itself eats algae.",
+            "catchPhrase": "Omega-3s don't come from fish. They come from algae."
+          },
+          {
+            "falseBelief": "« It's scientifically proven. »",
+            "reality": "Funded evidence isn't false evidence. It's evidence that needs to be checked.",
+            "paragraph": "<strong>A significant share of the research establishing the benefits of fish has been funded by the industry that sells it. That doesn't make it false.</strong> It does mean we need to examine it closely and look at what it doesn't measure.",
+            "imageAlt": "Illustration of fish with price tags and safety badges",
+            "catchPhrase": "A significant share of the research establishing the benefits of fish has been funded by the industry that sells it."
+          }
+        ]
+      },
+      "act2": {
+        "title": "An industry kept out of focus",
+        "items": [
+          {
+            "falseBelief": "« WE ARE FORCED TO PACK THEM IN TO MEET DEMAND »",
+            "reality": "High density isn't a flaw in the model. It is the model.",
+            "paragraph": "To produce ever more salmon at lower cost, <strong>industrial farming concentrates them in limited spaces</strong>. This high density promotes stress, injuries, parasites, and the spread of disease, potentially leading to mass mortality.\n\n<strong>And the problem doesn't stop at the cages:</strong> in open-sea farms, parasites and certain pathogens can spread into the environment and affect wild salmon, particularly young fish passing nearby.",
+            "imageAlt": "Illustration of 4 salmon in a bathtub",
+            "catchPhrase": "4 salmon in the equivalent of a bathtub of water. That's the density required for factory farms to be profitable"
+          },
+          {
+            "falseBelief": "« FARMING FISH MEANS LIMITING THE FISHING OF WILD FISH »",
+            "reality": "You don't relieve pressure on the ocean by fishing it even more.",
+            "paragraph": "<strong>We chose to farm a predator.</strong> So we have to source its food from the sea: sardines, anchovies, sardinellas, blue whiting — whole fish deliberately caught and ground into fishmeal and fish oil.\nFish farming doesn't replace fishing: it depends on it, and the more it grows, the more fish it catches.",
+            "imageAlt": "",
+            "catchPhrase": "Omega-3s don't come from fish. They come from algae."
+          },
+          {
+            "falseBelief": "« TURNING TO LAND-BASED FARMING IS MORE ECO-FRIENDLY »",
+            "reality": "Replacing exploitation of the sea with exploitation of farmland doesn't reduce the footprint. It moves it.",
+            "paragraph": "<strong>Using fish oil and fishmeal is expensive and becoming increasingly scarce.</strong>\n\nThe industry has therefore replaced a large part of the feed with soy, wheat, or rapeseed <strong>(95 g of soy for 100 g of salmon)</strong>.\n\nThe experiment has already been carried out, and its outcome is known: deforestation on one side; on the other, land that could have remained wild and allowed ecosystems to regenerate, or directly fed humans with vegetables and legumes, at a time when France lacks these resources and imports most of its plant-based proteins.",
+            "imageAlt": "",
+            "catchPhrase": "95 g of soy for 100 g of salmon"
+          }
+        ]
+      },
+      "act3": {
+        "title": "The seemingly good ideas",
+        "items": [
+          {
+            "falseBelief": "« What if I ate wild salmon instead? »",
+            "reality": "What remains of the wild salmon population isn't for eating. It's for protecting.",
+            "paragraph": "Their populations are collapsing, the magic of salmon: 5,000 kilometers traveled, the sense of smell that finds its way back to its home river, the magnetic field, rapids and waterfalls. The salmon that remain won't withstand any additional pressure."
+          },
+          {
+            "falseBelief": "« What about trout? »",
+            "reality": "Changing species doesn't mean changing the model.",
+            "paragraph": "Different fish, same model, same feed pellets, same dependence on fishmeal."
+          },
+          {
+            "falseBelief": "« What about land-based farming? »",
+            "reality": "Changing the container doesn't change the menu or the (intensive) model.",
+            "paragraph": "Taking the fish out of the water changes neither the density, nor the duration of confinement, nor the feed ration. Waste is captured, not eliminated: it changes form and location. And energy consumption increases."
+          },
+          {
+            "falseBelief": "« What if I switched to chicken? »",
+            "reality": "Moving from salmon to chicken means changing the animal, not the model.",
+            "paragraph": "(I think including chicken is important; the switch is mainly toward this animal, which is a major risk compared with trout) Orders of magnitude for the reduction in meat consumption that needs to be achieved, and the share of production coming from intensive farming 80% (see Libé's chicken infographic + Axel's work)"
+          }
+        ]
+      }
+    }
+  }
+}

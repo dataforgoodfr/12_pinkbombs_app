@@ -7,7 +7,7 @@ import ArticleCard, {
 } from "@/components/v2/cards/ArticleCard";
 
 interface ArticlesBlockProps {
-  page?: "homepage" | "about" | "toAct";
+  page?: "homepage" | "about" | "toAct" | "toUnderstand";
 }
 
 const ArticlesBlock = ({ page = "homepage" }: ArticlesBlockProps) => {
