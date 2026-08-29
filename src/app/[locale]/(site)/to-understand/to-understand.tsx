@@ -7,11 +7,9 @@ import { useState } from "react";
 import "@/lib/env";
 
 import ArticlesBlock from "@/components/v2/ArticlesBlock";
-import DebunkBlock, {
-  DebunkProps as DebunkBlockProps,
-} from "@/components/v2/blocks/DebunkBlock";
+import DebunkBlock, { DebunkProps } from "@/components/v2/blocks/DebunkBlock";
 import IllustratedDebunkBlock, {
-  IllustratedDebunkBlockProps,
+  IllustratedDebunkProps,
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 
@@ -50,13 +48,9 @@ const DebunkSection = () => {
   const [activeSection, setActiveSection] = useState<"act1" | "act2" | "act3">(
     "act1",
   );
-  const firstActItems = t.raw(
-    "debunk.act1.items",
-  ) as IllustratedDebunkBlockProps[];
-  const secondActItems = t.raw(
-    "debunk.act2.items",
-  ) as IllustratedDebunkBlockProps[];
-  const thirdActItems = t.raw("debunk.act3.items") as DebunkBlockProps[];
+  const firstActItems = t.raw("debunk.act1.items") as IllustratedDebunkProps[];
+  const secondActItems = t.raw("debunk.act2.items") as IllustratedDebunkProps[];
+  const thirdActItems = t.raw("debunk.act3.items") as DebunkProps[];
 
   const handleSectionToggle = (section: "act1" | "act2" | "act3") => {
     const sectionElement = document.getElementById(`${section}`);
@@ -92,7 +86,7 @@ const DebunkSection = () => {
         }
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -107,7 +101,9 @@ const DebunkSection = () => {
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
           />
-          <h1 className="h1 text-v2-blue text-pretty">{t("debunk.act1.title")}</h1>
+          <h1 className="h1 text-v2-blue text-pretty">
+            {t("debunk.act1.title")}
+          </h1>
           <div className="flex flex-col py-10 gap-12">
             {firstActItems.map((item, index) => (
               <IllustratedDebunkBlock
@@ -128,7 +124,7 @@ const DebunkSection = () => {
           src="/site/images/to-understand/act2-divider.svg"
           width={1510}
           height={48}
-          alt="Divider"
+          alt=""
           className="object-cover xl:w-[2000px]"
         />
       </section>
@@ -139,7 +135,9 @@ const DebunkSection = () => {
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
           />
-          <h1 className="h1 text-v2-blue text-pretty">{t("debunk.act2.title")}</h1>
+          <h1 className="h1 text-v2-blue text-pretty">
+            {t("debunk.act2.title")}
+          </h1>
           <div className="flex flex-col py-10 gap-12">
             {secondActItems.map((item, index) => (
               <IllustratedDebunkBlock
@@ -160,7 +158,7 @@ const DebunkSection = () => {
           src="/site/images/to-understand/act3-divider.svg"
           width={1510}
           height={48}
-          alt="Divider"
+          alt=""
           className="object-cover xl:w-[2000px]"
         />
       </section>

@@ -2,14 +2,17 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-export interface IllustratedDebunkBlockProps {
+export interface IllustratedDebunkProps {
   falseBelief: string;
   reality: string;
   imageAlt: string;
   catchPhrase: string;
+  imageExtension?: string;
+}
+
+export interface IllustratedDebunkBlockProps extends IllustratedDebunkProps {
   actNumber: number;
   index: number;
-  imageExtension?: string;
 }
 
 const IllustratedDebunkBlock = ({
