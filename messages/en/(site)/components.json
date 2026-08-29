@@ -85,6 +85,24 @@
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "Get inspired"
           }
+        ],
+        "toBeInspired": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "title": "Reduce your impact today",
+            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Act"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",
+            "title": "The debunking of industrial lobbies",
+            "description": "Discover who the salmon are, how they are produced and the impacts of their consumption.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Understand"
+          }
         ]
       }
     }

@@ -7,7 +7,7 @@ import PageCard, {
 } from "@/components/v2/cards/PageCard";
 
 interface ExplorationBlockProps {
-  page?: "homepage" | "about" | "toAct" | "toUnderstand";
+  page?: "homepage" | "about" | "toAct" | "toUnderstand" | "toBeInspired";
 }
 
 const ExplorationBlock = ({ page = "homepage" }: ExplorationBlockProps) => {
