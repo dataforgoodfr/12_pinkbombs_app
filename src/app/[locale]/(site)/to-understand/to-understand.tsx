@@ -6,12 +6,12 @@ import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
 
-import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import DebunkBlock, { DebunkProps } from "@/components/v2/blocks/DebunkBlock";
 import IllustratedDebunkBlock, {
   IllustratedDebunkProps,
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToUnderstand = () => {
   return (

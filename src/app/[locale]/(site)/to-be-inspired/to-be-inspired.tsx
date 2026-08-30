@@ -5,9 +5,11 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
-import ArticleCard, { ArticleCardProps } from "@/components/v2/cards/ArticleCard";
+import ArticleCard, {
+  ArticleCardProps,
+} from "@/components/v2/cards/ArticleCard";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToBeInspired = () => {
   return (
@@ -39,16 +41,13 @@ const IntroSection = () => {
   );
 };
 
-
 const ArticleSection = () => {
   const t = useTranslations("site.toBeInspired");
-  const articleCardItems = t.raw(
-      "articles",
-    ) as ArticleCardProps[];
+  const articleCardItems = t.raw("articles") as ArticleCardProps[];
   return (
-    <section className="py-16 px-28 grid grid-cols-1 gap-6 lg:grid-cols-4 bg-v2-magenta text-v2-pink">
-      {
-        articleCardItems.map((article, index) => (
+    <section className="bg-v2-magenta">
+      <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
+        {articleCardItems.map((article, index) => (
           <ArticleCard
             key={index}
             id={article.id}
@@ -56,8 +55,8 @@ const ArticleSection = () => {
             type={article.type}
             image={article.image}
           />
-        ))
-      }
+        ))}
+      </div>
     </section>
   );
 };

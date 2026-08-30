@@ -14,8 +14,7 @@ export interface PageCardProps {
   buttonUrl: string;
 }
 
-const PageCard
- = ({
+const PageCard = ({
   className,
   title,
   description,

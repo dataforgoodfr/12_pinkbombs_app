@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import ShareLink from "@/components/v2/links/shareLink";
 
 interface TeamMember {

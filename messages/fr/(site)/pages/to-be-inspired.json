@@ -13,91 +13,91 @@
         "id": 1,
         "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam",
         "type": "external",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 2,
         "title": "Salmo, l’histoire incroyable d’un saumon sauvage",
         "type": "internal",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 3,
         "title": "Repeupler l'Océan et nourrir le futur avec Seastemik",
         "type": "external",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 4,
         "title": "Moins d’impots plus d’océan",
         "type": "internal",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 5,
         "title": "404 planet not found: when AI bugs the climate",
         "type": "external",
-        "image":{
+        "image": {
           "width": 969,
           "height": 412,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 6,
         "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam ",
         "type": "external",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 7,
         "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam",
         "type": "internal",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 8,
         "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam",
         "type": "external",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": ""
-        } 
+        }
       },
       {
         "id": 9,
         "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam",
         "type": "external",
-        "image":{
+        "image": {
           "width": 302,
           "height": 242,
           "alt": "Un spectacle qui parle des saumons, des fantomes et du vietnam"
-        } 
+        }
       }
     ]
   }

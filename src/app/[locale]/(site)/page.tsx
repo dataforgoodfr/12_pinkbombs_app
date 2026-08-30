@@ -5,10 +5,10 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import type { MenuCardProps } from "@/components/v2/cards/MenuCard";
 import MenuCard from "@/components/v2/cards/MenuCard";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const HomePage = () => {
   return (

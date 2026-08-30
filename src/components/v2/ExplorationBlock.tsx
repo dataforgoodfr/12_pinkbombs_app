@@ -2,9 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import PageCard, {
-  PageCardProps,
-} from "@/components/v2/cards/PageCard";
+import PageCard, { PageCardProps } from "@/components/v2/cards/PageCard";
 
 interface ExplorationBlockProps {
   page?: "homepage" | "about" | "toAct" | "toUnderstand" | "toBeInspired";
