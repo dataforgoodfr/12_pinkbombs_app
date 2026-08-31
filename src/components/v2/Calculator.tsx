@@ -42,15 +42,38 @@ const Calculator = ({
   // -90 = left, 0 = top, 90 = right
   const pointerAngle = -90 + segmentAngle / 2 + active * segmentAngle;
 
+  // The shaking animation travels from -70deg to 70deg. Otherwise there's a visual issue with the red arrow with the black bottom border
+  const shakeMinAngle = -70;
+  const shakeMaxAngle = 70;
+  const lastGaugeQuandrantStartAngle = 90 - segmentAngle;
+
+  // Convert the red start angle into the corresponding animation percentage.
+  // This keeps the color transition synchronized with the pointer position.
+  const lastGaugeQuandrantStartPercent =
+    ((lastGaugeQuandrantStartAngle - shakeMinAngle) /
+      (shakeMaxAngle - shakeMinAngle)) *
+    100;
+
   return (
     <div className={`flex flex-col justify-center items-center ${className}`}>
       <style>
-        {`
-          @keyframes gaugeShake {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(-3deg); }
-            75% { transform: rotate(3deg); }
-          }
+        {` 
+          @keyframes gaugeShake { 
+            0% { transform: rotate(${shakeMinAngle}deg); } 
+            100% { transform: rotate(${shakeMaxAngle}deg); } 
+          } 
+          @keyframes gaugeShakeColor { 
+            0%, 25% { color: #000; } 
+            25%, 60% { color: #000; } 
+            60%, ${lastGaugeQuandrantStartPercent}% { color: #000; } 
+            ${lastGaugeQuandrantStartPercent}%, 100% { color: ${themeColors.red}; } 
+          } 
+          @keyframes gaugeShakeBg { 
+            0%, 25% { color: #000; } 
+            25%, 60% { color: #000; } 
+            60%, ${lastGaugeQuandrantStartPercent}% { background-color: #000; } 
+            ${lastGaugeQuandrantStartPercent}%, 100% { background-color: ${themeColors.red}; } 
+          } 
         `}
       </style>
       {/* Removed overflow-hidden here so the labels don't get clipped */}
@@ -108,7 +131,7 @@ const Calculator = ({
             className="relative h-full w-full origin-bottom"
             style={{
               animation: !isDynamic
-                ? "gaugeShake 0.4s infinite alternate ease-in-out"
+                ? "gaugeShake 5s infinite alternate ease-in-out"
                 : "none",
             }}
           >
@@ -122,6 +145,11 @@ const Calculator = ({
                   "h-20 w-20",
                   active === segments.length - 1 ? "text-v2-red" : "text-black",
                 )}
+                style={{
+                  animation: !isDynamic
+                    ? "gaugeShakeColor 5s infinite alternate ease-in-out"
+                    : "none",
+                }}
                 strokeWidth={isMobile ? 1 : 2}
               />
             </div>
@@ -131,6 +159,11 @@ const Calculator = ({
                 "absolute bottom-1 lg:bottom-2 left-1/2 -translate-x-1/2 w-1 lg:w-[6px] h-full",
                 active === segments.length - 1 ? "bg-v2-red" : "bg-black",
               )}
+              style={{
+                animation: !isDynamic
+                  ? "gaugeShakeBg 5s infinite alternate ease-in-out"
+                  : "none",
+              }}
             />
           </div>
         </div>
@@ -141,6 +174,11 @@ const Calculator = ({
             "absolute bottom-0 left-1/2 h-[18.75px] w-[37.5px] lg:h-[37.5px] lg:w-[75px] -translate-x-1/2 rounded-t-full z-20",
             active === segments.length - 1 ? "bg-v2-red" : "bg-black",
           )}
+          style={{
+            animation: !isDynamic
+              ? "gaugeShakeBg 5s infinite alternate ease-in-out"
+              : "none",
+          }}
         />
       </div>
     </div>
