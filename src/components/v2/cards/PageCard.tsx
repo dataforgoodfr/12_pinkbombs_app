@@ -7,7 +7,7 @@ import Button from "@/components/v2/buttons/Button";
 export interface PageCardProps {
   className?: string;
   title: string;
-  description: JSX.Element;
+  description: string;
   imageSrc: string;
   imageAlt: string;
   buttonCta: string;
