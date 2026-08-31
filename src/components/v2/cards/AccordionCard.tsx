@@ -62,14 +62,14 @@ const AccordionCard = ({
         aria-expanded={isActive}
         className={`flex w-full items-center justify-between p-8 text-left rounded-2xl focus:outline-hidden ${isActive ? "" : "hover:bg-v2-magenta/20"}`}
       >
-        <div className="flex items-start md:items-center gap-6 lg:gap-10">
+        <div className="flex items-start md:items-center gap-4 lg:gap-10">
           <span className="block text-6xl text-v2-magenta font-secondary font-extrabold">
             {index + 1}
           </span>
           <h3 className="h3 text-pretty">{title}</h3>
         </div>
         <ChevronDown
-          className={`h-9 w-9 transition-transform ${isActive ? "rotate-180 transform" : ""}`}
+          className={`shrink-0 w-8 h-8 lg:w-10 lg:h-10 transition-transform ${isActive ? "rotate-180 transform" : ""}`}
         />
       </button>
       <div
