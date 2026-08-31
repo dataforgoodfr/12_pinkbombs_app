@@ -143,8 +143,8 @@ const PresentationSection = () => {
             href="https://seastemik.org/"
             name="Seastemik"
             customName={t("seastemik.cta")}
-            iconFillColor="fill-v2-blue"
-            className="font-secondary font-bold text-md uppercase tracking-wide"
+            iconFillColor="fill-v2-blue group-hover:fill-v2-magenta"
+            className="font-secondary font-bold text-md uppercase tracking-wide hover:text-v2-magenta"
           />
         </div>
         <div className="flex flex-col gap-8">
@@ -154,8 +154,8 @@ const PresentationSection = () => {
             href="https://dataforgood.org/"
             name="Data for Good"
             customName={t("dataforgood.cta")}
-            iconFillColor="fill-v2-blue"
-            className="font-secondary font-bold text-md uppercase tracking-wide"
+            iconFillColor="fill-v2-blue group-hover:fill-v2-magenta"
+            className="font-secondary font-bold text-md uppercase tracking-wide hover:text-v2-magenta"
           />
         </div>
       </div>
@@ -351,8 +351,8 @@ const ApproachAndMethodSection = () => {
             href="/"
             name="Download"
             customName={t("method.downloadCta")}
-            iconFillColor="fill-v2-pink"
-            className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide max-w-[95%]"
+            iconFillColor="fill-v2-magenta group-hover:fill-v2-blue"
+            className="font-secondary font-bold text-md text-v2-magenta uppercase tracking-wide max-w-[95%] hover:text-v2-blue"
           />
         </div>
         <h2 className="h2 mt-20">{t("contact.title")}</h2>
@@ -362,8 +362,8 @@ const ApproachAndMethodSection = () => {
             href="mailto:info@seastemik.org"
             name="Seastemik Email"
             customName="info@seastemik.org"
-            iconFillColor="fill-v2-pink"
-            className="font-secondary font-bold text-md text-v2-pink uppercase tracking-wide"
+            iconFillColor="fill-v2-magenta group-hover:fill-v2-blue"
+            className="font-secondary font-bold text-md text-v2-magenta uppercase tracking-wide hover:text-v2-blue"
           />
         </div>
       </div>

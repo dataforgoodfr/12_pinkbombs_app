@@ -7,7 +7,7 @@ type ShareLinkProps = {
   href: string;
   name: string;
   customName?: string;
-  iconFillColor?: "fill-white" | "fill-v2-blue" | "fill-v2-pink";
+  iconFillColor?: string;
 };
 
 const ShareLink = ({
@@ -16,7 +16,7 @@ const ShareLink = ({
   href,
   name,
   customName,
-  iconFillColor = "fill-white",
+  iconFillColor,
   ...rest
 }: ShareLinkProps) => {
   const t = useTranslations("site.layout");
@@ -26,10 +26,7 @@ const ShareLink = ({
   }
   return (
     <a
-      className={clsx(
-        "text-base underline hover:text-v2-yellow group",
-        className,
-      )}
+      className={clsx("text-base underline group", className)}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -41,7 +38,7 @@ const ShareLink = ({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="16"
-        className={`inline-block ml-2 align-middle ${iconFillColor} group-hover:fill-v2-yellow`}
+        className={`inline-block ml-2 align-middle ${iconFillColor ?? "fill-white group-hover:fill-v2-yellow"}`}
         viewBox="0 -960 960 960"
         width="16"
       >

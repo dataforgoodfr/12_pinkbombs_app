@@ -33,6 +33,7 @@ const Footer = () => {
               href="https://seastemik.org/"
               name="Seastemik"
               type="site"
+              className="text-white hover:text-v2-yellow"
             />
           </div>
 
@@ -83,16 +84,19 @@ const Footer = () => {
               href="https://seastemik.org/"
               type="sources"
               name={t("shareLink.sources")}
+              className="text-white hover:text-v2-yellow"
             />
             <ShareLink
               href="https://seastemik.org/"
               type="legalNotices"
               name={t("shareLink.legalNotices")}
+              className="text-white hover:text-v2-yellow"
             />
             <ShareLink
               href="https://seastemik.org/"
               type="contactUs"
               name={t("shareLink.contactUs")}
+              className="text-white hover:text-v2-yellow"
             />
           </div>
 
@@ -135,7 +139,7 @@ const Footer = () => {
               href="https://coucou.design/"
               type="design"
               name={t("shareLink.design")}
-              className="text-xs"
+              className="text-xs text-white hover:text-v2-yellow"
             />
           </div>
         </div>
