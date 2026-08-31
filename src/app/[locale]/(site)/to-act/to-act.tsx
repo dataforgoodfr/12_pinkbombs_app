@@ -6,11 +6,11 @@ import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import AccordionCard, {
   RecommendationProps,
 } from "@/components/v2/cards/AccordionCard";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToAct = () => {
   return (
@@ -18,7 +18,7 @@ const ToAct = () => {
       <IntroSection />
       <RecommendationsSection />
       <CalculatorBlock />
-      <ArticlesBlock page="toAct" />
+      <ExplorationBlock page="toAct" />
     </>
   );
 };

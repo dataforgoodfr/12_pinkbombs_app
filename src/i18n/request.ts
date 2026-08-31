@@ -47,6 +47,11 @@ export default getRequestConfig(async () => {
             `../../messages/${locale}/(site)/pages/to-understand.json`
           )
         ).default,
+        ...(
+          await import(
+            `../../messages/${locale}/(site)/pages/to-be-inspired.json`
+          )
+        ).default,
       },
     },
   };

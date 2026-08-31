@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import ShareLink from "@/components/v2/links/shareLink";
 
 interface TeamMember {
@@ -28,7 +28,7 @@ const About = () => {
       <StorySection />
       <ApproachAndMethodSection />
       <CalculatorBlock />
-      <ArticlesBlock />
+      <ExplorationBlock />
     </>
   );
 };

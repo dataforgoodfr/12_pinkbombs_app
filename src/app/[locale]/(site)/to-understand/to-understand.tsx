@@ -6,12 +6,12 @@ import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
 
-import ArticlesBlock from "@/components/v2/ArticlesBlock";
 import DebunkBlock, { DebunkProps } from "@/components/v2/blocks/DebunkBlock";
 import IllustratedDebunkBlock, {
   IllustratedDebunkProps,
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToUnderstand = () => {
   return (
@@ -19,7 +19,7 @@ const ToUnderstand = () => {
       <IntroSection />
       <DebunkSection />
       <CalculatorBlock />
-      <ArticlesBlock page="toUnderstand" />
+      <ExplorationBlock page="toUnderstand" />
     </>
   );
 };

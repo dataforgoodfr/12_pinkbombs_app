@@ -1,0 +1,104 @@
+{
+  "toBeInspired": {
+    "meta": {
+      "title": "Get Inspired"
+    },
+    "intro": {
+      "caption": "Get inspired by initiatives",
+      "title": "Stories and ideas that inspire us to do things differently.",
+      "imageAlt": "Illustrative image featuring a smile and happy fish."
+    },
+    "articles": [
+      {
+        "id": 1,
+        "title": "A show about salmon, ghosts and Vietnam",
+        "type": "external",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 2,
+        "title": "Salmo, the incredible story of a wild salmon",
+        "type": "internal",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 3,
+        "title": "Repopulate the Ocean and feed the future with Seastemik",
+        "type": "external",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 4,
+        "title": "Less taxes, more ocean",
+        "type": "internal",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 5,
+        "title": "404 planet not found: when AI bugs the climate",
+        "type": "external",
+        "image": {
+          "width": 969,
+          "height": 412,
+          "alt": ""
+        }
+      },
+      {
+        "id": 6,
+        "title": "A show about salmon, ghosts and Vietnam ",
+        "type": "external",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 7,
+        "title": "A show about salmon, ghosts and Vietnam",
+        "type": "internal",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 8,
+        "title": "A show about salmon, ghosts and Vietnam",
+        "type": "external",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": ""
+        }
+      },
+      {
+        "id": 9,
+        "title": "A show about salmon, ghosts and Vietnam",
+        "type": "external",
+        "image": {
+          "width": 302,
+          "height": 242,
+          "alt": "A show about salmon, ghosts and Vietnam"
+        }
+      }
+    ]
+  }
+}
