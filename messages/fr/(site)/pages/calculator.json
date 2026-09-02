@@ -17,55 +17,64 @@
           "title": "Quels types de consommation de saumon avez-vous\u00a0?",
           "type": "checkbox",
           "options": [
-            { "name": "none", "label": "Je ne consomme pas de saumon"},
-            { "name": "fillet", "label": "filet ou pavé"},
-            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)"},
-            { "name": "pokeBowl", "label": "poké bowl"},
-            { "name": "appetizer", "label": "amuse-bouche"},
-            { "name": "pasta", "label": "pâtes au saumon"},
-            { "name": "smokedSalmon", "label": "saumon fumé en tranche"},
-            { "name": "quicheSandwich", "label": "quiche, sandwich, croque-monsieur"}
+            { "name": "none", "label": "Je ne consomme pas de saumon" },
+            { "name": "fillet", "label": "filet ou pavé" },
+            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)" },
+            { "name": "pokeBowl", "label": "poké bowl" },
+            { "name": "appetizer", "label": "amuse-bouche" },
+            { "name": "pasta", "label": "pâtes au saumon" },
+            { "name": "smokedSalmon", "label": "saumon fumé en tranche" },
+            {
+              "name": "quicheSandwich",
+              "label": "quiche, sandwich, croque-monsieur"
+            }
           ]
         },
         {
           "title": "Consommez-vous d'autres types de saumons non listés précédemment\u00a0?",
           "type": "text",
           "options": [
-            { "name": "otherType", "label": "otherType", "placeholder": "Autre type de saumon..."}
+            {
+              "name": "otherSalmonType",
+              "label": "Autre type de saumon",
+              "placeholder": "Autre type de saumon..."
+            }
           ]
         },
         {
           "title": "À quelle fréquence consommez-vous {productName}\u00a0?",
           "type": "radio",
           "options": [
-            { "name": "never", "label": "Jamais"},
-            { "name": "weekly", "label": "1 fois par semaine"},
-            { "name": "biWeekly", "label": "2 fois par semaine"},
-            { "name": "monthly", "label": "1 fois par mois"},
-            { "name": "semiMonthly", "label": "2 fois par mois"},
-            { "name": "biMonthly", "label": "1 fois tous les deux mois"},
-            { "name": "quarterly", "label": "1 fois par trimestre"},
-            { "name": "semiAnnually", "label": "2 fois par an"}, 
-            { "name": "otherFrequency", "label": "Fréquence personnalisée", "options": [
-              { "name": "otherWeekly", "label": "fois par semaine"},
-              { "name": "otherYearly", "label": "fois par an"}
-            ]}
+            { "name": "never", "label": "Jamais" },
+            { "name": "weekly", "label": "1 fois par semaine" },
+            { "name": "biWeekly", "label": "2 fois par semaine" },
+            { "name": "monthly", "label": "1 fois par mois" },
+            { "name": "semiMonthly", "label": "2 fois par mois" },
+            { "name": "biMonthly", "label": "1 fois tous les deux mois" },
+            { "name": "quarterly", "label": "1 fois par trimestre" },
+            { "name": "semiAnnually", "label": "2 fois par an" },
+            {
+              "name": "otherFrequency",
+              "label": "Fréquence personnalisée",
+              "options": [
+                { "name": "otherWeekly", "label": "fois par semaine" },
+                { "name": "otherYearly", "label": "fois par an" }
+              ]
+            }
           ],
           "subQuestions": [
             {
               "productName": "smokedSalmon",
               "title": "Combien de tranches consommez-vous à chaque occasion\u00a0?",
-              "options": [
-                { "name": "slice", "label": "tranches"}
-              ]
+              "options": [{ "name": "slice", "label": "tranches" }]
             },
             {
               "productName": "sushi",
               "title": "Combien de sushis consommez-vous à chaque occasion\u00a0?",
               "options": [
-                { "name": "makis", "label": "makis"},
-                { "name": "nigiris", "label": "nigiris"},
-                { "name": "sashimis", "label": "sashimis"}
+                { "name": "makis", "label": "makis" },
+                { "name": "nigiris", "label": "nigiris" },
+                { "name": "sashimis", "label": "sashimis" }
               ]
             }
           ]
