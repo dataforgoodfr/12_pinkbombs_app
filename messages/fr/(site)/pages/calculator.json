@@ -18,12 +18,12 @@
           "type": "checkbox",
           "options": [
             { "name": "none", "label": "Je ne consomme pas de saumon" },
-            { "name": "fillet", "label": "filet ou pavé" },
-            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)" },
-            { "name": "pokeBowl", "label": "poké bowl" },
-            { "name": "appetizer", "label": "amuse-bouche" },
-            { "name": "pasta", "label": "pâtes au saumon" },
-            { "name": "smokedSalmon", "label": "saumon fumé en tranche" },
+            { "name": "fillet", "label": "filet ou pavé", "prefix": "du" },
+            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)", "prefix": "des" },
+            { "name": "pokeBowl", "label": "poké bowls", "prefix": "des" },
+            { "name": "appetizer", "label": "amuse-bouches", "prefix": "des" },
+            { "name": "pasta", "label": "pâtes au saumon", "prefix": "des" },
+            { "name": "smokedSalmon", "label": "saumon fumé en tranche", "prefix": "du" },
             {
               "name": "quicheSandwich",
               "label": "quiche, sandwich, croque-monsieur"
@@ -31,23 +31,12 @@
           ]
         },
         {
-          "title": "Consommez-vous d'autres types de saumons non listés précédemment\u00a0?",
-          "type": "text",
-          "options": [
-            {
-              "name": "otherSalmonType",
-              "label": "Autre type de saumon",
-              "placeholder": "Autre type de saumon..."
-            }
-          ]
-        },
-        {
-          "title": "À quelle fréquence consommez-vous {productName}\u00a0?",
+          "title": "À quelle fréquence consommez-vous {prefix} {label}\u00a0?",
           "type": "radio",
           "options": [
             { "name": "never", "label": "Jamais" },
             { "name": "weekly", "label": "1 fois par semaine" },
-            { "name": "biWeekly", "label": "2 fois par semaine" },
+            { "name": "semiWeekly", "label": "2 fois par semaine" },
             { "name": "monthly", "label": "1 fois par mois" },
             { "name": "semiMonthly", "label": "2 fois par mois" },
             { "name": "biMonthly", "label": "1 fois tous les deux mois" },
