@@ -19,11 +19,19 @@
           "options": [
             { "name": "none", "label": "Je ne consomme pas de saumon" },
             { "name": "fillet", "label": "filet ou pavé", "prefix": "du" },
-            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)", "prefix": "des" },
+            {
+              "name": "sushi",
+              "label": "sushis (makis, nigiris, sashimis)",
+              "prefix": "des"
+            },
             { "name": "pokeBowl", "label": "poké bowls", "prefix": "des" },
             { "name": "appetizer", "label": "amuse-bouches", "prefix": "des" },
             { "name": "pasta", "label": "pâtes au saumon", "prefix": "des" },
-            { "name": "smokedSalmon", "label": "saumon fumé en tranche", "prefix": "du" },
+            {
+              "name": "smokedSalmon",
+              "label": "saumon fumé en tranche",
+              "prefix": "du"
+            },
             {
               "name": "quicheSandwich",
               "label": "quiche, sandwich, croque-monsieur"
@@ -34,7 +42,6 @@
           "title": "À quelle fréquence consommez-vous {prefix} {label}\u00a0?",
           "type": "radio",
           "options": [
-            { "name": "never", "label": "Jamais" },
             { "name": "weekly", "label": "1 fois par semaine" },
             { "name": "semiWeekly", "label": "2 fois par semaine" },
             { "name": "monthly", "label": "1 fois par mois" },
@@ -53,22 +60,28 @@
           ],
           "subQuestions": [
             {
-              "productName": "smokedSalmon",
+              "name": "smokedSalmon",
               "title": "Combien de tranches consommez-vous à chaque occasion\u00a0?",
-              "options": [{ "name": "slice", "label": "tranches" }]
+              "options": [{ "defaultValue": 1, "name": "slice", "label": "tranche" }]
             },
             {
-              "productName": "sushi",
+              "name": "sushi",
               "title": "Combien de sushis consommez-vous à chaque occasion\u00a0?",
               "options": [
-                { "name": "makis", "label": "makis" },
-                { "name": "nigiris", "label": "nigiris" },
-                { "name": "sashimis", "label": "sashimis" }
+                { "defaultValue": 12, "name": "maki", "label": "maki" },
+                { "defaultValue": 6, "name": "nigiri", "label": "nigiri" },
+                { "defaultValue": 0, "name": "sashimi", "label": "sashimi" }
               ]
             }
           ]
         }
       ]
+    },
+    "sumUp": {
+      "title": "Votre consommation de saumon",
+      "caption": "Vous pouvez revenir en arrière pour modifier vos réponses avant de lancer le calcul.",
+      "button": "Calculer mon impact",
+      "around": "Environ :"
     },
     "loading": {
       "title": "On plonge dans vos données",
