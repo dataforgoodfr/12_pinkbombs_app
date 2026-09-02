@@ -7,7 +7,7 @@ import { useIsMobile } from "../../hooks/useIsMobile";
 import tailwindConfig from "../../../tailwind.config";
 
 type LabelProps = {
-  label: string;
+  label: "neutral" | "low" | "medium" | "high" | "veryHigh";
   text: string;
   color: string;
 };
@@ -20,7 +20,7 @@ const Calculator = ({
   label,
 }: {
   className?: string;
-  label?: string;
+  label?: "neutral" | "low" | "medium" | "high" | "veryHigh";
 }) => {
   const t = useTranslations("site.components.calculator");
   const isMobile = useIsMobile();

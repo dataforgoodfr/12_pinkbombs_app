@@ -21,7 +21,7 @@ const Button = ({
   className?: string;
   href?: string;
   content: JSX.Element | string;
-  type: "regular" | "small";
+  type?: "regular" | "small";
 }) => {
   if (!content) {
     return <></>;
@@ -29,7 +29,7 @@ const Button = ({
   return (
     <Link
       className={clsx(
-        "inline-flex cta border-2 rounded-xl hover:scale-105",
+        "inline-flex cta border-2 rounded-xl pointer-events-auto hover:scale-105",
         borderColor,
         className,
         textColor,
