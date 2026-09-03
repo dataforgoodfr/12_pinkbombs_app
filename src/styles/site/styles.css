@@ -90,13 +90,13 @@
   .navbar-active-blue {
     @apply relative;
 
-    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-blue;
+    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-blue hover:after:bg-v2-magenta;
   }
 
   .navbar-active-pink {
     @apply relative;
 
-    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-pink;
+    @apply after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-1 after:bg-v2-pink hover:after:bg-v2-magenta;
   }
   /* #endregion  /**======== HEADER =========== */
 }
