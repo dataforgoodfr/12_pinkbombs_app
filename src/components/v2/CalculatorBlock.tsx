@@ -42,7 +42,7 @@ const CalculatorBlock = () => {
             type="regular"
             backgroundColor="bg-v2-pink"
             textColor="text-v2-blue"
-            className="z-30 mt-10 mb-2"
+            className="z-30 mt-10 mb-2 hover:border-v2-pink"
           />
           <p className="z-30 p-caption italic text-center text-v2-pink w-full lg:w-[90%] xl:w-[60%] mx-auto">
             {t("calculatorBlock.companyHelp")}{" "}

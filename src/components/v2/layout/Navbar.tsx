@@ -115,7 +115,7 @@ const Navbar = () => {
                 </div>
 
               )}
-              <p className="cta tracking-wider focus:text-v2-red">
+              <p className="cta tracking-wider hover:text-v2-magenta transition-colors ease-in-out duration-200">
                 {item.text}
               </p>
             </Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
           <Menu as="div" className="relative block">
             <MenuButton
               className={clsx(
-                "flex justify-between items-center border border-1 px-3 rounded-md cta focus:text-v2-red transition-colors ease-in-out duration-200 group",
+                "flex justify-between items-center border border-1 px-3 rounded-md cta hover:text-v2-magenta transition-colors ease-in-out duration-200 group",
                 `${getColor() === "blue" ? "border-v2-blue text-v2-blue" : "border-v2-pink text-v2-pink"}`,
                 "hover:text-v2-magenta",
               )}

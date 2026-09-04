@@ -29,11 +29,12 @@ const Button = ({
   return (
     <Link
       className={clsx(
-        "inline-flex cta border-2 rounded-xl hover:scale-105",
+        "inline-flex cta border-2 rounded-xl transition-all ease-in-out duration-200",
         borderColor,
         className,
         textColor,
         backgroundColor,
+        textColor === "text-v2-blue" && "hover:text-v2-pink hover:bg-v2-blue",
         type === "small" && "px-4 py-2 text-sm lg:text-base w-fit",
         type === "regular" && "px-8 py-3 gap-5",
       )}

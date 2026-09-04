@@ -25,7 +25,7 @@ const ArticleCard = ({
     <>
       {id === 5 ? (
         <Link
-          className="rounded-lg text-v2-blue bg-white flex flex-col justify-between md:col-span-2 md:flex-row lg:col-span-4 min-h-[412px]"
+          className="rounded-lg text-v2-blue bg-white flex flex-col justify-between md:col-span-2 md:flex-row lg:col-span-4 min-h-[412px] hover:scale-105 transition-transform duration-300"
           style={{ boxShadow: "6px 6px 0px 0px rgba(0, 0, 0, 1)" }}
           href=""
           target="_blank"
@@ -60,7 +60,7 @@ const ArticleCard = ({
         </Link>
       ) : (
         <Link
-          className="rounded-lg text-v2-blue bg-white flex flex-col justify-between max-w-[302px]"
+          className="rounded-lg text-v2-blue bg-white flex flex-col justify-between max-w-[302px] hover:scale-105 transition-transform duration-300"
           style={{ boxShadow: "6px 6px 0px 0px rgba(0, 0, 0, 1)" }}
           href=""
           target="_blank"

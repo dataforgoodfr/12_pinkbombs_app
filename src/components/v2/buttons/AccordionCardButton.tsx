@@ -25,7 +25,7 @@ const AccordionCardButton = ({
   return (
     <Link
       className={clsx(
-        "flex items-center justify-between py-2 px-4 p-lead border-2 border-v2-pink rounded-xl hover:scale-105 text-v2-blue",
+        "flex items-center justify-between py-2 px-4 p-lead border-2 border-v2-pink rounded-xl text-v2-blue hover:bg-v2-blue hover:text-v2-pink hover:border-v2-blue transition-all ease-in-out duration-200",
         className,
         type === "externalArticle" || type === "internalArticle"
           ? "bg-white"
