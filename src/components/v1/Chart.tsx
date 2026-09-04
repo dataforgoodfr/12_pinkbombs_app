@@ -2,7 +2,15 @@
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
-const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
+import type { PlotParams } from "react-plotly.js";
+// cast needed: @types/react-plotly.js's class typing doesn't structurally match next/dynamic's ComponentType
+const Plot = dynamic(
+  () =>
+    import("react-plotly.js").then(
+      (mod) => mod.default as unknown as React.ComponentType<PlotParams>,
+    ),
+  { ssr: false },
+);
 import { useLocale, useTranslations } from "next-intl";
 
 import { fetchData } from "@/pages/api/chart";
