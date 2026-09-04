@@ -99,6 +99,7 @@
     },
     "method": {
       "title": "Approach and Methodology",
+      "sectionId": "sources-and-methodology",
       "caption": "PinkBombs was created to analyze and transform public data into tools accessible to everyone.",
       "values": {
         "title": "Our approach is based on three values:",

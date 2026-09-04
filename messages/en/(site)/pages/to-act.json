@@ -26,7 +26,7 @@
           "actions": [
             {
               "cta": "Calculate your salmon footprint",
-              "url": "",
+              "url": "/calculator",
               "type": "internalRedirect"
             },
             {

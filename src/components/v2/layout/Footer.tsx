@@ -81,7 +81,7 @@ const Footer = () => {
               {t("nav.about")}
             </Link>
             <ShareLink
-              href="https://seastemik.org/"
+              href={`/about#${t("footer.sections.more.sourceId")}`}
               type="sources"
               name={t("shareLink.sources")}
               className="text-white hover:text-v2-yellow"
@@ -93,7 +93,7 @@ const Footer = () => {
               className="text-white hover:text-v2-yellow"
             />
             <ShareLink
-              href="https://seastemik.org/"
+              href="mailto:info@seastemik.org"
               type="contactUs"
               name={t("shareLink.contactUs")}
               className="text-white hover:text-v2-yellow"

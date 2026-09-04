@@ -38,7 +38,7 @@ const CalculatorBlock = () => {
           <Calculator />
           <Button
             content={t("calculatorBlock.buttonCta")}
-            href="/"
+            href="/calculator"
             type="regular"
             backgroundColor="bg-v2-pink"
             textColor="text-v2-blue"
@@ -46,7 +46,7 @@ const CalculatorBlock = () => {
           />
           <p className="z-30 p-caption italic text-center text-v2-pink w-full lg:w-[90%] xl:w-[60%] mx-auto">
             {t("calculatorBlock.companyHelp")}{" "}
-            <Link href="/contact" className="underline">
+            <Link href="mailto:info@seastemik.org" className="underline">
               {t("calculatorBlock.contactLink")}
             </Link>
             .

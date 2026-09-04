@@ -319,7 +319,7 @@ const ApproachAndMethodSection = () => {
   const valueItems = t.raw("method.values.items") as string[];
   const stepItems = t.raw("method.steps.items") as string[];
   return (
-    <section className="bg-v2-white text-v2-blue">
+    <section id={t("method.sectionId")} className="bg-v2-white text-v2-blue">
       <div className="pt-14 px-10 lg:px-0 lg:max-w-[642px] mx-auto">
         <h2 className="h2 text-v2-blue text-pretty mb-8">
           {t("method.title")}

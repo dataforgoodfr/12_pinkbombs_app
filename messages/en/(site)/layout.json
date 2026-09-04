@@ -28,7 +28,8 @@
           "title": "More information",
           "sources": "Sources and methodologies",
           "legalNotice": "Legal notices",
-          "contactUs": "Contact us"
+          "contactUs": "Contact us",
+          "sourceId": "sources-and-methodology"
         },
         "stayInformed": {
           "title": "Stay informed",

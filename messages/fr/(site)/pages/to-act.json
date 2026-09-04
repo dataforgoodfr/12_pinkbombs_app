@@ -26,7 +26,7 @@
           "actions": [
             {
               "cta": "Calculez votre empreinte saumons",
-              "url": "",
+              "url": "/calculateur",
               "type": "internalRedirect"
             },
             {

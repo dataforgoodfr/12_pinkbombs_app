@@ -25,7 +25,8 @@
           "site": "Pinkbombs"
         },
         "more": {
-          "title": "Plus d'informations"
+          "title": "Plus d'informations",
+          "sourceId": "sources-et-methodologies"
         },
         "stayInformed": {
           "title": "Restez informé",
