@@ -30,14 +30,32 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-green text-v2-blue">
-      <Image
-        loading="lazy"
-        src="/site/images/to-act/intro.svg"
-        width={1537}
-        height={596}
-        alt={t("intro.imageAlt")}
-        className="object-contain h-auto mx-auto lg:pt-24 xl:w-[2000px]"
-      />
+      <div className="flex flex-col lg:flex-row px-12 pt-12 lg:pt-40 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
+        <div className="flex flex-col gap-4 lg:w-[40%]">
+          <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
+          <h1 className="h1 text-pretty">{t("intro.title")}</h1>
+        </div>
+        <div className="flex flex-col lg:mt-16 xl:-mt-10 lg:w-[60%]">
+          <Image
+            loading="lazy"
+            src="/site/images/to-act/intro.svg"
+            width={841}
+            height={461}
+            alt={t("intro.imageAlt")}
+            className="relative z-0 object-contain"
+          />
+        </div>
+      </div>
+      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-20 xl:-mt-28 2xl:-mt-32">
+        <Image
+          loading="lazy"
+          src="/site/images/to-act/intro-divider.svg"
+          width={1512}
+          height={103}
+          alt={t("intro.imageAlt")}
+          className="object-cover4 md:w-[1024px] lg:w-[1440px] xl:w-[2000px]"
+        />
+      </div>
     </section>
   );
 };
@@ -52,6 +70,11 @@ const RecommendationsSection = () => {
   );
   const [activeSection, setActiveSection] = useState<"individual" | "company">(
     "individual",
+  );
+  const individualSectionRef = React.useRef<HTMLDivElement>(null);
+  const companySectionRef = React.useRef<HTMLDivElement>(null);
+  const pendingScrollSectionRef = React.useRef<"individual" | "company" | null>(
+    null,
   );
   const handleIndividualToggle = (index: number) => {
     setActiveCompanyIndex(null);
@@ -69,14 +92,25 @@ const RecommendationsSection = () => {
   ) as RecommendationProps[];
 
   const handleSectionToggle = (section: "individual" | "company") => {
-    const sectionElement = document.getElementById(`${section}-section`);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
+    pendingScrollSectionRef.current = section;
     setActiveSection(section);
     setActiveIndividualIndex(null);
     setActiveCompanyIndex(null);
   };
+
+  // scroll only after the accordion-collapse re-render has committed, so the target position is measured post-layout-shift
+  React.useEffect(() => {
+    const section = pendingScrollSectionRef.current;
+    if (!section) return;
+    pendingScrollSectionRef.current = null;
+    const sectionElement =
+      section === "individual"
+        ? individualSectionRef.current
+        : companySectionRef.current;
+    requestAnimationFrame(() => {
+      sectionElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [activeSection, activeIndividualIndex, activeCompanyIndex]);
 
   // if user scrolls down, we want to set the active section based on the scroll position
   React.useEffect(() => {
@@ -104,9 +138,10 @@ const RecommendationsSection = () => {
   }, []);
 
   return (
-    <section className="bg-white text-v2-blue">
+    <section className="relative z-10 bg-white text-v2-blue">
       <div
         id="individual-section"
+        ref={individualSectionRef}
         className="px-6 lg:px-10 pb-16 xl:max-w-[1279px] mx-auto"
       >
         <div className="py-16">
@@ -143,11 +178,12 @@ const RecommendationsSection = () => {
         src="/site/images/to-act/divider.svg"
         width={1512}
         height={63}
-        alt="Divider"
+        alt=""
         className="object-cover xl:w-[2000px]"
       />
       <div
         id="company-section"
+        ref={companySectionRef}
         className="px-6 lg:px-10 mb-10 xl:max-w-[1279px] mx-auto"
       >
         <div className="py-16">
@@ -203,7 +239,7 @@ const SectionButtons = ({
 }) => {
   const t = useTranslations("site.toAct");
   return (
-    <div className="flex gap-4 justify-center items-center">
+    <div className="flex bg-white gap-4 justify-center items-center">
       <button
         className={`border border-2 rounded-xl border-v2-blue py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "individual" ? "bg-v2-blue text-v2-pink" : "bg-white"}`}
         onClick={() => setActiveSection("individual")}

@@ -137,7 +137,15 @@ const PresentationSection = () => {
     <section className="bg-v2-white text-v2-blue px-10 pt-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col gap-8">
-          <h2 className="h2 text-pretty">{t("seastemik.title")}</h2>
+          <Image
+            loading="lazy"
+            src="/site/images/seastemik_logo.avif"
+            width={768}
+            height={166}
+            alt="Logo Seastemik"
+            className="object-contain w-[50%]"
+          />
+          <h2 className="sr-only">{t("seastemik.title")}</h2>
           <p className="p-body preserve-lines">{t("seastemik.paragraph")}</p>
           <ShareLink
             href="https://seastemik.org/"
@@ -148,7 +156,15 @@ const PresentationSection = () => {
           />
         </div>
         <div className="flex flex-col gap-8">
-          <h2 className="h2 text-pretty">{t("dataforgood.title")}</h2>
+          <Image
+            loading="lazy"
+            src="/site/images/dataforgood_logo.svg"
+            width={768}
+            height={166}
+            alt="Logo Data for Good"
+            className="object-contain w-[50%]"
+          />
+          <h2 className="sr-only">{t("dataforgood.title")}</h2>
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
           <ShareLink
             href="https://dataforgood.org/"
@@ -208,7 +224,7 @@ const PartnerSection = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start lg:items-center border border12 border-v2-blue md:border-none lg:border-solid lg:border-v2-blue rounded-xl">
           <Image
             loading="lazy"
-            src="/site/images/about/kresk-4-oceans.jpg"
+            src="/site/images/about/kresk-4-oceans.png"
             width={297}
             height={178}
             alt={t("partner.imageAlt")}

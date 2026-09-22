@@ -4,6 +4,8 @@ import React from "react";
 
 import PageCard, { PageCardProps } from "@/components/v2/cards/PageCard";
 
+import { basePathType } from "@/navigation";
+
 interface ExplorationBlockProps {
   page?: "homepage" | "about" | "toAct" | "toUnderstand" | "toBeInspired";
 }
@@ -35,7 +37,7 @@ const ExplorationBlock = ({ page = "homepage" }: ExplorationBlockProps) => {
             imageSrc={item.imageSrc}
             imageAlt={item.imageAlt}
             buttonCta={item.buttonCta}
-            buttonUrl={item.buttonUrl}
+            buttonUrl={item.buttonUrl as basePathType}
           />
         ))}
       </div>
