@@ -76,7 +76,7 @@ export default async function GlobalLayout({
       className={clsx(
         barlow.variable,
         montserrat.variable,
-        "scroll-smooth overflow-x-hidden",
+        "scroll-smooth overflow-x-hidden lg:scroll-pt-24",
       )}
       suppressHydrationWarning
     >

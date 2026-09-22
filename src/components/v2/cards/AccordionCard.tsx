@@ -66,7 +66,7 @@ const AccordionCard = ({
           <span className="block text-6xl text-v2-magenta font-secondary font-extrabold">
             {index + 1}
           </span>
-          <h3 className="h3 text-pretty">{title}</h3>
+          <h3 className="h4 lg:h3 text-pretty">{title}</h3>
         </div>
         <ChevronDown
           className={`shrink-0 w-8 h-8 lg:w-10 lg:h-10 transition-transform ${isActive ? "rotate-180 transform" : ""}`}

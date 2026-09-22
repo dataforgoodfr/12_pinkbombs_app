@@ -73,6 +73,11 @@ const RecommendationsSection = () => {
   const [activeSection, setActiveSection] = useState<"individual" | "company">(
     "individual",
   );
+  const individualSectionRef = React.useRef<HTMLDivElement>(null);
+  const companySectionRef = React.useRef<HTMLDivElement>(null);
+  const pendingScrollSectionRef = React.useRef<"individual" | "company" | null>(
+    null,
+  );
   const handleIndividualToggle = (index: number) => {
     setActiveCompanyIndex(null);
     setActiveIndividualIndex((prev) => (prev === index ? null : index));
@@ -89,14 +94,25 @@ const RecommendationsSection = () => {
   ) as RecommendationProps[];
 
   const handleSectionToggle = (section: "individual" | "company") => {
-    const sectionElement = document.getElementById(`${section}-section`);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
+    pendingScrollSectionRef.current = section;
     setActiveSection(section);
     setActiveIndividualIndex(null);
     setActiveCompanyIndex(null);
   };
+
+  // scroll only after the accordion-collapse re-render has committed, so the target position is measured post-layout-shift
+  React.useEffect(() => {
+    const section = pendingScrollSectionRef.current;
+    if (!section) return;
+    pendingScrollSectionRef.current = null;
+    const sectionElement =
+      section === "individual"
+        ? individualSectionRef.current
+        : companySectionRef.current;
+    requestAnimationFrame(() => {
+      sectionElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [activeSection, activeIndividualIndex, activeCompanyIndex]);
 
   // if user scrolls down, we want to set the active section based on the scroll position
   React.useEffect(() => {
@@ -127,6 +143,7 @@ const RecommendationsSection = () => {
     <section className="relative z-10 bg-white text-v2-blue">
       <div
         id="individual-section"
+        ref={individualSectionRef}
         className="px-6 lg:px-10 pb-16 xl:max-w-[1279px] mx-auto"
       >
         <div className="py-16">
@@ -168,6 +185,7 @@ const RecommendationsSection = () => {
       />
       <div
         id="company-section"
+        ref={companySectionRef}
         className="px-6 lg:px-10 mb-10 xl:max-w-[1279px] mx-auto"
       >
         <div className="py-16">
