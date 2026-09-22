@@ -62,7 +62,9 @@ const ExplodeSection = () => {
       <div className="bg-[url(/site/images/homepage/divider-explode-section.svg)] bg-center bg-repeat w-full h-[49px]" />
       <div className="flex flex-col gap-20 lg:gap-0 pt-20 text-black lg:min-h-[760px] max-w-[1596px] mx-auto">
         <div className="px-10 flex text-center flex gap-2">
-          <p className="h1 text-pretty md:max-w-[80%] lg:max-w-[60%] mx-auto">{t("bomb.title")}</p>
+          <p className="h1 text-pretty md:max-w-[80%] lg:max-w-[60%] mx-auto">
+            {t("bomb.title")}
+          </p>
         </div>
         <Image
           loading="lazy"

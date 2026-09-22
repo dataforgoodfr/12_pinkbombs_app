@@ -33,9 +33,7 @@ const IntroSection = () => {
     <section className="bg-v2-blue text-v2-pink">
       <div className="flex flex-col lg:flex-row px-12 pt-12 pb-10 md:pb-14 lg:pb-36 xl:pb-24 lg:pt-40 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
         <div className="flex flex-col gap-4 z-10 lg:w-[40%]">
-          <h4 className="h4 text-pretty">
-            {t("intro.caption")}
-          </h4>
+          <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
           <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
         <div className="flex flex-col lg:w-[60%]">
