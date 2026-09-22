@@ -4,6 +4,8 @@ import React from "react";
 
 import Button from "@/components/v2/buttons/Button";
 
+import { basePathType, Link } from "@/navigation";
+
 export interface PageCardProps {
   className?: string;
   title: string;
@@ -11,7 +13,7 @@ export interface PageCardProps {
   imageSrc: string;
   imageAlt: string;
   buttonCta: string;
-  buttonUrl: string;
+  buttonUrl: basePathType;
 }
 
 const PageCard = ({
@@ -34,7 +36,7 @@ const PageCard = ({
         className,
       )}
     >
-      <a href={buttonUrl}>
+      <Link href={buttonUrl}>
         <Image
           loading="lazy"
           src={imageSrc}
@@ -43,7 +45,7 @@ const PageCard = ({
           alt={imageAlt}
           className="object-cover mx-auto hover:scale-105 transition-transform duration-300"
         />
-      </a>
+      </Link>
       <p className="h4 mt-4 text-pretty">{title}</p>
       <p className="p-lead my-4 preserve-lines">{description}</p>
       <Button

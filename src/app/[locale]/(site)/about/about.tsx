@@ -142,9 +142,10 @@ const PresentationSection = () => {
             src="/site/images/seastemik_logo.avif"
             width={768}
             height={166}
-            alt="Logo de Seastemik"
+            alt="Logo Seastemik"
             className="object-contain w-[50%]"
           />
+          <h2 className="sr-only">{t("seastemik.title")}</h2>
           <p className="p-body preserve-lines">{t("seastemik.paragraph")}</p>
           <ShareLink
             href="https://seastemik.org/"
@@ -160,9 +161,10 @@ const PresentationSection = () => {
             src="/site/images/dataforgood_logo.svg"
             width={768}
             height={166}
-            alt="Logo de Data for Good"
+            alt="Logo Data for Good"
             className="object-contain w-[50%]"
           />
+          <h2 className="sr-only">{t("dataforgood.title")}</h2>
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
           <ShareLink
             href="https://dataforgood.org/"

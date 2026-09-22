@@ -52,7 +52,7 @@ const IntroSection = () => {
           loading="lazy"
           src="/site/images/to-understand/intro-divider.svg"
           width={1512}
-          height={297}
+          height={103}
           alt={t("intro.imageAlt")}
           className="object-cover4 md:w-[1024px] lg:w-[1440px] xl:w-[2000px]"
         />
