@@ -29,7 +29,7 @@ export default HomePage;
 const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="flex lg:mt-26 py-20 lg:pt-40 px-10 min-h-[300px] lg:h-screen text-v2-pink bg-v2-blue">
+    <section className="flex lg:mt-26 py-20 lg:pt-40 px-10 min-h-[300px] text-v2-pink bg-v2-blue">
       <div className="flex flex-col gap-24 lg:gap-8 lg:grid grid-rows-[1fr, auto, 1fr] w-full max-w-[1596px] mx-auto">
         <Image
           loading="lazy"
@@ -39,7 +39,7 @@ const HeroSection = () => {
           alt={t("hero.imageAlt")}
           className="object-contain h-auto mx-auto"
         />
-        <div className="row-start-3 items-left flex gap-2 lg:max-w-[48%]">
+        <div className="row-start-3 items-left flex gap-2 lg:max-w-[60%]">
           <p
             className={clsx(
               "h1",
