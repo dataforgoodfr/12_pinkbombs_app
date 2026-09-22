@@ -84,7 +84,12 @@ const ImpactSection = () => {
       <div className="max-w-[1512px] mx-auto">
         <div className="bg-[url(/site/images/homepage/divider-impact-section.svg)] bg-center bg-repeat w-full h-[48px]" />
         <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between max-w-[1512px]">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between max-w-[1512px]">
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
+              <p className="h2">{t("impact.title")}</p>
+              <p className="h2 text-v2-red">{t("impact.titleHighlight")}</p>
+              <p className="p-lead pt-2">{t("impact.impact")}</p>
+            </div>
             <Image
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
@@ -93,13 +98,13 @@ const ImpactSection = () => {
               alt={t("impact.imageAltTitle")}
               className="block flex-1 object-contain lg:max-w-[611px] mx-auto h-auto"
             />
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
-              <p className="h2">{t("impact.title")}</p>
-              <p className="h2 text-v2-red">{t("impact.titleHighlight")}</p>
-              <p className="p-lead pt-2">{t("impact.impact")}</p>
-            </div>
           </div>
-          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-0 items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between">
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
+              <p className="h2 text-pretty">{t("impact.title2")}</p>
+              <p className="h2 text-v2-red">{t("impact.title2Highlight")}</p>
+              <p className="p-lead pt-2">{t("impact.description")}</p>
+            </div>
             <Image
               loading="lazy"
               src="/site/images/homepage/salmons.svg"
@@ -108,11 +113,6 @@ const ImpactSection = () => {
               alt={t("impact.imageAltDescription")}
               className="object-contain flex-1 lg:max-w-[646px] mx-auto"
             />
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
-              <p className="h2 text-pretty">{t("impact.title2")}</p>
-              <p className="h2 text-v2-red">{t("impact.title2Highlight")}</p>
-              <p className="p-lead pt-2">{t("impact.description")}</p>
-            </div>
           </div>
         </div>
       </div>
