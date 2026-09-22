@@ -31,12 +31,12 @@ const Navbar = () => {
       text: t("nav.toBeInspired"),
     },
     {
-      link: "/calculator",
-      text: t("nav.calculator"),
-    },
-    {
       link: "/about",
       text: t("nav.about"),
+    },
+    {
+      link: "/calculator",
+      text: t("nav.calculator"),
     },
   ];
   const getBackgroundColor = () => {
