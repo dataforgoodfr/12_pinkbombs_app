@@ -34,14 +34,16 @@ const PageCard = ({
         className,
       )}
     >
-      <Image
-        loading="lazy"
-        src={imageSrc}
-        width={400}
-        height={284}
-        alt={imageAlt}
-        className="object-cover mx-auto"
-      />
+      <a href={buttonUrl}>
+        <Image
+          loading="lazy"
+          src={imageSrc}
+          width={400}
+          height={284}
+          alt={imageAlt}
+          className="object-cover mx-auto hover:scale-105 transition-transform duration-300"
+        />
+      </a>
       <p className="h4 mt-4 text-pretty">{title}</p>
       <p className="p-lead my-4 preserve-lines">{description}</p>
       <Button
