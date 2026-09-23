@@ -52,6 +52,8 @@ export default getRequestConfig(async () => {
             `../../messages/${locale}/(site)/pages/to-be-inspired.json`
           )
         ).default,
+        ...(await import(`../../messages/${locale}/(site)/pages/calculator.json`))
+          .default
       },
     },
   };

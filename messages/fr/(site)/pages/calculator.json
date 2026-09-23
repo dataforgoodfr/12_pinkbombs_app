@@ -1,0 +1,81 @@
+{
+  "calculator": {
+    "meta": {
+      "title": "Calculateur"
+    },
+    "intro": {
+      "title": "Calculez votre impact",
+      "caption": "Vous venez de lire l'addition d'un seul saumon.\nReste à savoir combien vous en avez commandé.",
+      "button": "Commencer"
+    },
+    "modal": {
+      "completionTime": "5 min à compléter",
+      "quit": "Quitter le calculateur",
+      "next": "Suivant",
+      "questions": [
+        {
+          "title": "Quels types de consommation de saumon avez-vous\u00a0?",
+          "type": "checkbox",
+          "options": [
+            { "name": "none", "label": "Je ne consomme pas de saumon"},
+            { "name": "fillet", "label": "filet ou pavé"},
+            { "name": "sushi", "label": "sushis (makis, nigiris, sashimis)"},
+            { "name": "pokeBowl", "label": "poké bowl"},
+            { "name": "appetizer", "label": "amuse-bouche"},
+            { "name": "pasta", "label": "pâtes au saumon"},
+            { "name": "smokedSalmon", "label": "saumon fumé en tranche"},
+            { "name": "quicheSandwich", "label": "quiche, sandwich, croque-monsieur"}
+          ]
+        },
+        {
+          "title": "Consommez-vous d'autres types de saumons non listés précédemment\u00a0?",
+          "type": "text",
+          "options": [
+            { "name": "otherType", "label": "otherType", "placeholder": "Autre type de saumon..."}
+          ]
+        },
+        {
+          "title": "À quelle fréquence consommez-vous {productName}\u00a0?",
+          "type": "radio",
+          "options": [
+            { "name": "never", "label": "Jamais"},
+            { "name": "weekly", "label": "1 fois par semaine"},
+            { "name": "biWeekly", "label": "2 fois par semaine"},
+            { "name": "monthly", "label": "1 fois par mois"},
+            { "name": "semiMonthly", "label": "2 fois par mois"},
+            { "name": "biMonthly", "label": "1 fois tous les deux mois"},
+            { "name": "quarterly", "label": "1 fois par trimestre"},
+            { "name": "semiAnnually", "label": "2 fois par an"}, 
+            { "name": "otherFrequency", "label": "Fréquence personnalisée", "options": [
+              { "name": "otherWeekly", "label": "fois par semaine"},
+              { "name": "otherYearly", "label": "fois par an"}
+            ]}
+          ],
+          "subQuestions": [
+            {
+              "productName": "smokedSalmon",
+              "title": "Combien de tranches consommez-vous à chaque occasion\u00a0?",
+              "options": [
+                { "name": "slice", "label": "tranches"}
+              ]
+            },
+            {
+              "productName": "sushi",
+              "title": "Combien de sushis consommez-vous à chaque occasion\u00a0?",
+              "options": [
+                { "name": "makis", "label": "makis"},
+                { "name": "nigiris", "label": "nigiris"},
+                { "name": "sashimis", "label": "sashimis"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "loading": {
+      "title": "On plonge dans vos données",
+      "caption": "Calcul de votre empreinte océan en cours...",
+      "info": "Un saumon d'élevage parcourt en moyenne 8000 km avant votre assiette."
+    }
+  }
+}

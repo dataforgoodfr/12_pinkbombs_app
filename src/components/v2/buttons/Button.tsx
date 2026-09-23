@@ -21,7 +21,7 @@ const Button = ({
   className?: string;
   href?: string;
   content: JSX.Element | string;
-  type: "regular" | "small";
+  type?: "regular" | "small";
 }) => {
   if (!content) {
     return <></>;
