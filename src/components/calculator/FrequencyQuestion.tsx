@@ -75,6 +75,7 @@ export const FrequencyQuestion = ({
                         name="custom-frequency"
                         type="number"
                         min="0"
+                        aria-label={`${customOption?.label ?? ""} ${customChoices[0]?.label ?? ""}`.trim()}
                         placeholder="0"
                         value={
                           customFrequency === "weekly"
@@ -106,6 +107,7 @@ export const FrequencyQuestion = ({
                         name="custom-frequency"
                         type="number"
                         min="0"
+                        aria-label={`${customOption?.label ?? ""} ${customChoices[1]?.label ?? ""}`.trim()}
                         placeholder="0"
                         value={
                           customFrequency === "yearly"

@@ -137,7 +137,7 @@ export const CalculatorModal = ({
               {state.step !== CalculatorStep.Selection && (
                 <button
                   type="button"
-                  aria-label="Back"
+                  aria-label={t("modal.back")}
                   onClick={back}
                   className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
                 >
@@ -286,41 +286,47 @@ const CalculatorProgress = ({
 }: {
   completedProducts: number;
   totalProducts: number;
-}) => (
-  <div
-    role="progressbar"
-    aria-label="Calculator progress"
-    aria-valuemin={0}
-    aria-valuemax={totalProducts}
-    aria-valuenow={completedProducts}
-    aria-valuetext={`${completedProducts} of ${totalProducts} products completed`}
-    className="col-span-2 row-start-2 flex items-center justify-center gap-2 justify-self-center sm:col-span-1 sm:col-start-2 sm:row-start-1"
-  >
-    {Array.from({ length: totalProducts }, (_, index) => {
-      const completed = index < completedProducts;
+}) => {
+  const t = useTranslations("site.calculator");
+  return (
+    <div
+      role="progressbar"
+      aria-label="Calculator progress"
+      aria-valuemin={0}
+      aria-valuemax={totalProducts}
+      aria-valuenow={completedProducts}
+      aria-valuetext={t("modal.progressLabel", {
+        completedProducts,
+        totalProducts,
+      })}
+      className="col-span-2 row-start-2 flex items-center justify-center gap-2 justify-self-center sm:col-span-1 sm:col-start-2 sm:row-start-1"
+    >
+      {Array.from({ length: totalProducts }, (_, index) => {
+        const completed = index < completedProducts;
 
-      return (
-        <svg
-          key={index}
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <ellipse
-            cx="6.75"
-            cy="6.5"
-            rx="6.75"
-            ry="6.5"
-            fill={completed ? "#E82D04" : "white"}
-          />
-        </svg>
-      );
-    })}
-  </div>
-);
+        return (
+          <svg
+            key={index}
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <ellipse
+              cx="6.75"
+              cy="6.5"
+              rx="6.75"
+              ry="6.5"
+              fill={completed ? "#E82D04" : "white"}
+            />
+          </svg>
+        );
+      })}
+    </div>
+  );
+};
 
 const NextButton = ({
   disabled,

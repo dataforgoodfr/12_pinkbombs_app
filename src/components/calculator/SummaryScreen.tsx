@@ -46,7 +46,10 @@ export const SummaryScreen = ({
                 key={product.name}
                 className="flex flex-col justify-start pb-2 border-b-2 border-v2-magenta/20"
               >
-                <p className="p-lead text-v2-pink">{product.label.charAt(0).toUpperCase() + product.label.slice(1)}</p>
+                <p className="p-lead text-v2-pink">
+                  {product.label.charAt(0).toUpperCase() +
+                    product.label.slice(1)}
+                </p>
                 <p className="p-caption px-2 text-v2-pink">
                   {product.frequency === "otherWeekly" ||
                   product.frequency === "otherYearly"

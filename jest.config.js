@@ -1,6 +1,5 @@
 /** @jest-config-loader ts-node */
 
-
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const nextJest = require("next/jest");
 

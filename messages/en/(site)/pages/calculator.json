@@ -12,6 +12,9 @@
 
     "modal": {
       "completionTime": "5 min to complete",
+      "back": "Back",
+      "progress": "Completion status of the calculator questions",
+      "progressLabel": "{completedProducts} of {totalProducts} selected products questions have been completed",
       "quit": "Quit calculator",
       "next": "Next",
       "questions": [

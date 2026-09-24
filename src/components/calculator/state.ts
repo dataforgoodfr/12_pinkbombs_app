@@ -198,5 +198,7 @@ export const isCurrentStepAnswered = (state: CalculatorState) => {
 
 export const normalizeOccurrence = (value: string) => {
   const occurrence = Number.parseInt(value, 10);
-  return Number.isNaN(occurrence) ? EMPTY_OCCURRENCE : occurrence;
+  return Number.isNaN(occurrence)
+    ? EMPTY_OCCURRENCE
+    : Math.max(EMPTY_OCCURRENCE, occurrence);
 };

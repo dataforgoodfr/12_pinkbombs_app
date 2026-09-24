@@ -10,6 +10,9 @@
     },
     "modal": {
       "completionTime": "5 min à compléter",
+      "back": "Retour",
+      "progress": "État de complétion des questions du calculateur",
+      "progressLabel": "{completedProducts} questions sur {totalProducts} ont été complétées sur les produits sélectionnés",
       "quit": "Quitter le calculateur",
       "next": "Suivant",
       "questions": [
@@ -62,7 +65,9 @@
             {
               "name": "smokedSalmon",
               "title": "Combien de tranches consommez-vous à chaque occasion\u00a0?",
-              "options": [{ "defaultValue": 1, "name": "tranche", "label": "tranche" }]
+              "options": [
+                { "defaultValue": 1, "name": "tranche", "label": "tranche" }
+              ]
             },
             {
               "name": "sushi",
