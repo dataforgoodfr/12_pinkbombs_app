@@ -27,7 +27,7 @@ export const SummaryScreen = ({
         width={571}
         height={425}
         alt=""
-        className="object-contain h-auto mx-auto lg:mx-0 lg:ml-auto w-[50%] h-[20%] md:w-[30%] md:h-[30%] lg:w-[50%] lg:h-[50%]"
+        className="object-contain h-auto mx-auto lg:mx-0 lg:ml-auto w-[50%] h-[20%] md:w-[30%] md:h-[30%] lg:w-[80%] lg:h-[80%]"
       />
       <div className="flex flex-col gap-8 justify-center lg:justify-start">
         <h4 className="h4 text-pretty text-v2-pink text-center lg:text-left">

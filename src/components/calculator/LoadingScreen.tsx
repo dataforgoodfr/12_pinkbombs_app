@@ -14,7 +14,7 @@ export const LoadingScreen = () => {
         width={314}
         height={173}
         alt=""
-        className="object-cover w-[80%]"
+        className="object-cover w-[80%] lg:w-[40%]"
       />
       <div className="gap-4 flex flex-col items-center text-center">
         <h2 className="h2 text-pretty text-v2-pink">{t("loading.title")}</h2>

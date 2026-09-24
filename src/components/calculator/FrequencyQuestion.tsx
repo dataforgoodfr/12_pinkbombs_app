@@ -60,7 +60,7 @@ export const FrequencyQuestion = ({
   );
 
   return (
-    <div className="flex flex-col w-full gap-4">
+    <div className="flex flex-col md:mx-auto gap-4">
       {mode === "frequency" &&
         options.map((option) => {
           if (option.name === "otherFrequency") {
