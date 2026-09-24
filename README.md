@@ -30,6 +30,18 @@ Run the followed command:
 - Launch Prettier: `yarn format:check`
 - Launch Jest: `yarn test`
 
+The calculator has focused reducer tests and a rendered modal-flow regression
+test covering product selection, frequency selection, summary, and loading.
+Run them with:
+
+```bash
+pnpm test -- src/components/calculator/__tests__
+```
+
+Calculator submission currently uses a mocked async service. Its typed
+submission boundary is ready to be replaced by the future React mutation and
+backend persistence flow.
+
 ### 5. Commit Message Convention
 
 This starter is using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/), it is mandatory to use it to commit changes.

@@ -1,0 +1,104 @@
+{
+  "calculator": {
+    "meta": {
+      "title": "Calculator"
+    },
+
+    "intro": {
+      "title": "Calculate your impact",
+      "caption": "You have just read the breakdown for a single salmon.\nNow let's find out how many you have ordered.",
+      "button": "Start"
+    },
+
+    "modal": {
+      "completionTime": "5 min to complete",
+      "back": "Back",
+      "progress": "Completion status of the calculator questions",
+      "progressLabel": "{completedProducts} of {totalProducts} selected products questions have been completed",
+      "quit": "Quit calculator",
+      "next": "Next",
+      "questions": [
+        {
+          "title": "What types of salmon do you consume?",
+          "type": "checkbox",
+          "options": [
+            { "name": "none", "label": "I don't consume salmon" },
+            { "name": "fillet", "label": "fillet or steak", "prefix": "of" },
+            {
+              "name": "sushi",
+              "label": "sushi (maki, nigiri, sashimi)",
+              "prefix": "of"
+            },
+            { "name": "pokeBowl", "label": "poke bowls", "prefix": "of" },
+            { "name": "appetizer", "label": "appetizers", "prefix": "of" },
+            { "name": "pasta", "label": "salmon pasta", "prefix": "of" },
+            {
+              "name": "smokedSalmon",
+              "label": "sliced smoked salmon",
+              "prefix": "of"
+            },
+            {
+              "name": "quicheSandwich",
+              "label": "quiche, sandwich, croque-monsieur"
+            }
+          ]
+        },
+
+        {
+          "title": "How often do you consume {prefix} {label}?",
+          "type": "radio",
+          "options": [
+            { "name": "weekly", "label": "Once a week" },
+            { "name": "semiWeekly", "label": "Twice a week" },
+            { "name": "monthly", "label": "Once a month" },
+            { "name": "semiMonthly", "label": "Twice a month" },
+            { "name": "biMonthly", "label": "Once every two months" },
+            { "name": "quarterly", "label": "Once per quarter" },
+            { "name": "semiAnnually", "label": "Twice a year" },
+            {
+              "name": "otherFrequency",
+              "label": "Custom frequency",
+              "options": [
+                { "name": "otherWeekly", "label": "times per week" },
+                { "name": "otherYearly", "label": "times per year" }
+              ]
+            }
+          ],
+
+          "subQuestions": [
+            {
+              "name": "smokedSalmon",
+              "title": "How many slices do you consume on each occasion?",
+              "options": [
+                { "defaultValue": 1, "name": "slice", "label": "slice" }
+              ]
+            },
+
+            {
+              "name": "sushi",
+              "title": "How much sushi do you consume on each occasion?",
+              "options": [
+                { "defaultValue": 12, "name": "maki", "label": "maki" },
+                { "defaultValue": 6, "name": "nigiri", "label": "nigiri" },
+                { "defaultValue": 0, "name": "sashimi", "label": "sashimi" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "sumUp": {
+      "title": "Your salmon consumption",
+      "caption": "If needed, click the back arrow to update your answers.",
+      "button": "Calculate my impact",
+      "around": "Approximately:"
+    },
+
+    "loading": {
+      "title": "Diving into your data",
+      "caption": "Calculating your ocean footprint...",
+      "info": "A farmed salmon travels an average of 8,000 km before reaching your plate."
+    }
+  }
+}
