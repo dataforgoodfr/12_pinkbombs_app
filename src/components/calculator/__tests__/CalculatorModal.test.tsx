@@ -34,7 +34,17 @@ const questions = [
   {
     title: "How often?",
     options: [{ name: "weekly", label: "once a week" }],
-    subQuestions: [],
+    subQuestions: [
+      {
+        name: "sushi",
+        title: "How many pieces?",
+        options: [
+          { name: "maki", label: "maki", defaultValue: 12 },
+          { name: "nigiri", label: "nigiri", defaultValue: 6 },
+          { name: "sashimi", label: "sashimi", defaultValue: 0 },
+        ],
+      },
+    ],
   },
 ];
 
@@ -52,10 +62,22 @@ describe("CalculatorModal", () => {
 
     fireEvent.click(screen.getByRole("checkbox"));
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
-    fireEvent.click(screen.getByRole("radio"));
+
+    expect(screen.queryByText("How many pieces?")).not.toBeInTheDocument();
+
+    fireEvent.click(await screen.findByRole("radio"));
+
+    expect(await screen.findByText("How many pieces?")).toBeInTheDocument();
+    expect(screen.queryByRole("radio")).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "Back" }));
+    expect(await screen.findByRole("radio")).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await screen.findByText("How many pieces?");
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
 
-    expect(screen.getByText("sumUp.title")).toBeInTheDocument();
+    expect(await screen.findByText("sumUp.title")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
 
     await waitFor(() => {

@@ -40,6 +40,7 @@ export interface UserProductConsumption {
 export enum CalculatorStep {
   Selection = "selection",
   Frequency = "frequency",
+  Variant = "variant",
   Summary = "summary",
   Loading = "loading",
 }

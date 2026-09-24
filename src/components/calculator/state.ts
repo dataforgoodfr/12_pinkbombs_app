@@ -25,6 +25,7 @@ export type CalculatorAction =
       frequency: string | undefined;
       frequencyLabel?: string;
       occurrence?: number;
+      advanceToVariant?: boolean;
     }
   | {
       type: "setVariantCount";
@@ -47,6 +48,21 @@ const updateProduct = (
     index === productIndex ? update(product) : product,
   ),
 });
+
+const getLastProductStep = (product?: UserProductConsumption) =>
+  product?.variants.length ? CalculatorStep.Variant : CalculatorStep.Frequency;
+
+const advanceFromProduct = (state: CalculatorState): CalculatorState => {
+  if (state.productIndex < state.products.length - 1) {
+    return {
+      ...state,
+      step: CalculatorStep.Frequency,
+      productIndex: state.productIndex + 1,
+    };
+  }
+
+  return { ...state, step: CalculatorStep.Summary };
+};
 
 export const calculatorReducer = (
   state: CalculatorState,
@@ -72,13 +88,28 @@ export const calculatorReducer = (
           : [...products, action.product],
       };
     }
-    case "setFrequency":
-      return updateProduct(state, action.productIndex, (product) => ({
-        ...product,
-        frequency: action.frequency,
-        frequencyLabel: action.frequencyLabel,
-        occurrence: action.occurrence,
-      }));
+    case "setFrequency": {
+      const nextState = updateProduct(
+        state,
+        action.productIndex,
+        (product) => ({
+          ...product,
+          frequency: action.frequency,
+          frequencyLabel: action.frequencyLabel,
+          occurrence: action.occurrence,
+        }),
+      );
+
+      if (
+        action.advanceToVariant &&
+        action.frequency &&
+        state.products[action.productIndex]?.variants.length
+      ) {
+        return { ...nextState, step: CalculatorStep.Variant };
+      }
+
+      return nextState;
+    }
     case "setVariantCount":
       return updateProduct(state, action.productIndex, (product) => ({
         ...product,
@@ -97,30 +128,45 @@ export const calculatorReducer = (
           productIndex: DEFAULT_PRODUCT_INDEX,
         };
       }
-      if (
-        state.step === CalculatorStep.Frequency &&
-        state.productIndex < state.products.length - 1
-      ) {
-        return { ...state, productIndex: state.productIndex + 1 };
+      if (state.step === CalculatorStep.Frequency) {
+        if (state.products[state.productIndex]?.variants.length) {
+          return { ...state, step: CalculatorStep.Variant };
+        }
+
+        return advanceFromProduct(state);
+      }
+      if (state.step === CalculatorStep.Variant) {
+        return advanceFromProduct(state);
       }
       return { ...state, step: CalculatorStep.Summary };
     case "back":
       if (state.step === CalculatorStep.Summary) {
+        const productIndex = Math.max(
+          DEFAULT_PRODUCT_INDEX,
+          state.products.length - 1,
+        );
+
         return {
           ...state,
-          step: CalculatorStep.Frequency,
+          step: getLastProductStep(state.products[productIndex]),
           questionIndex: QUESTION_INDEX.Frequency,
-          productIndex: Math.max(
-            DEFAULT_PRODUCT_INDEX,
-            state.products.length - 1,
-          ),
+          productIndex,
         };
+      }
+      if (state.step === CalculatorStep.Variant) {
+        return { ...state, step: CalculatorStep.Frequency };
       }
       if (
         state.step === CalculatorStep.Frequency &&
         state.productIndex > DEFAULT_PRODUCT_INDEX
       ) {
-        return { ...state, productIndex: state.productIndex - 1 };
+        const productIndex = state.productIndex - 1;
+
+        return {
+          ...state,
+          step: getLastProductStep(state.products[productIndex]),
+          productIndex,
+        };
       }
       return {
         ...state,
@@ -143,6 +189,9 @@ export const isCurrentStepAnswered = (state: CalculatorState) => {
   }
   if (state.step === CalculatorStep.Frequency) {
     return Boolean(state.products[state.productIndex]?.frequency);
+  }
+  if (state.step === CalculatorStep.Variant) {
+    return true;
   }
   return false;
 };

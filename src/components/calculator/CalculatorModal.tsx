@@ -6,6 +6,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import * as React from "react";
@@ -29,6 +30,37 @@ interface CalculatorModalProps {
   submissionService?: CalculatorSubmissionService;
 }
 
+type ScreenTransition = {
+  axis: "x" | "y";
+  direction: -1 | 0 | 1;
+};
+
+const screenVariants = {
+  enter: ({
+    axis,
+    direction,
+    reducedMotion,
+  }: ScreenTransition & {
+    reducedMotion: boolean;
+  }) => ({
+    opacity: 0,
+    x: reducedMotion || axis === "y" ? 0 : direction * 80,
+    y: reducedMotion || axis === "x" ? 0 : direction * 80,
+  }),
+  center: { opacity: 1, x: 0, y: 0 },
+  exit: ({
+    axis,
+    direction,
+    reducedMotion,
+  }: ScreenTransition & {
+    reducedMotion: boolean;
+  }) => ({
+    opacity: 0,
+    x: reducedMotion || axis === "y" ? 0 : direction * -80,
+    y: reducedMotion || axis === "x" ? 0 : direction * -80,
+  }),
+};
+
 export const CalculatorModal = ({
   open,
   questions,
@@ -37,17 +69,53 @@ export const CalculatorModal = ({
 }: CalculatorModalProps) => {
   const t = useTranslations("site.calculator");
   const { state, dispatch, isNextButtonActive } = useCalculator();
+  const reducedMotion = useReducedMotion() ?? false;
+  const [screenTransition, setScreenTransition] =
+    React.useState<ScreenTransition>({ axis: "x", direction: 0 });
   const currentProduct = state.products[state.productIndex];
+  const currentVariantQuestion = questions[1]?.subQuestions?.find(
+    ({ name }) => name === currentProduct?.name,
+  );
 
   const reset = () => {
+    setScreenTransition({ axis: "x", direction: 0 });
     dispatch({ type: "reset" });
     onClose();
   };
 
   const submit = async () => {
+    setScreenTransition({ axis: "x", direction: 1 });
     dispatch({ type: "startLoading" });
     await submissionService({ products: state.products });
   };
+
+  const next = () => {
+    setScreenTransition({
+      axis:
+        state.step === CalculatorStep.Frequency &&
+        Boolean(currentProduct?.variants.length)
+          ? "y"
+          : "x",
+      direction: 1,
+    });
+    dispatch({ type: "next" });
+  };
+
+  const back = () => {
+    setScreenTransition({
+      axis: state.step === CalculatorStep.Variant ? "y" : "x",
+      direction: -1,
+    });
+    dispatch({ type: "back" });
+  };
+
+  const screenKey = `${state.step}-${
+    state.step === CalculatorStep.Frequency ||
+    state.step === CalculatorStep.Variant
+      ? state.productIndex
+      : "screen"
+  }`;
+  const motionContext = { ...screenTransition, reducedMotion };
 
   return (
     <Dialog open={open} onClose={reset} className="relative z-50">
@@ -64,7 +132,7 @@ export const CalculatorModal = ({
                 <button
                   type="button"
                   aria-label="Back"
-                  onClick={() => dispatch({ type: "back" })}
+                  onClick={back}
                   className="cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
                 >
                   <ArrowLeft />
@@ -78,78 +146,119 @@ export const CalculatorModal = ({
               </CloseButton>
             </div>
 
-            <div className="min-h-0 flex-1 overflow-y-auto">
+            <div className="min-h-0 flex-1 overflow-x-hidden overflow-y-auto">
               <div className="flex min-h-full flex-col justify-center">
-                {state.step === CalculatorStep.Summary && (
-                  <SummaryScreen
-                    products={state.products}
-                    questions={questions}
-                    onSubmit={submit}
-                  />
-                )}
-                {state.step === CalculatorStep.Loading && <LoadingScreen />}
-                {state.step === CalculatorStep.Selection && (
-                  <div className="flex flex-col justify-center items-center gap-8">
-                    <div className="flex flex-col h-full items-center px-6 gap-10 w-full">
-                      <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
-                        {questions[0]?.title}
-                      </DialogTitle>
-                      <ProductSelectionQuestion
-                        options={questions[0]?.options ?? []}
+                <AnimatePresence
+                  mode="wait"
+                  initial={false}
+                  custom={motionContext}
+                >
+                  <motion.div
+                    key={screenKey}
+                    custom={motionContext}
+                    variants={screenVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                      duration: reducedMotion ? 0.12 : 0.3,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="w-full"
+                  >
+                    {state.step === CalculatorStep.Summary && (
+                      <SummaryScreen
                         products={state.products}
-                        onToggleProduct={(product) =>
-                          dispatch({ type: "toggleProduct", product })
-                        }
+                        questions={questions}
+                        onSubmit={submit}
                       />
-                    </div>
-                    <NextButton
-                      disabled={!isNextButtonActive}
-                      onClick={() => dispatch({ type: "next" })}
-                    />
-                  </div>
-                )}
-                {state.step === CalculatorStep.Frequency && currentProduct && (
-                  <div className="flex flex-col justify-center items-center gap-8">
-                    <div className="flex flex-col items-center px-6 gap-10 w-full">
-                      <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
-                        {t("modal.questions.1.title", {
-                          prefix: currentProduct.prefix ?? "",
-                          label: currentProduct.label,
-                        })}
-                      </DialogTitle>
-                      <FrequencyQuestion
-                        product={currentProduct}
-                        options={questions[1]?.options ?? []}
-                        subQuestions={questions[1]?.subQuestions}
-                        onFrequencyChange={(
-                          frequency,
-                          frequencyLabel,
-                          occurrence,
-                        ) =>
-                          dispatch({
-                            type: "setFrequency",
-                            productIndex: state.productIndex,
-                            frequency,
-                            frequencyLabel,
-                            occurrence,
-                          })
-                        }
-                        onVariantChange={(variantType, count) =>
-                          dispatch({
-                            type: "setVariantCount",
-                            productIndex: state.productIndex,
-                            variantType,
-                            count,
-                          })
-                        }
-                      />
-                    </div>
-                    <NextButton
-                      disabled={!isNextButtonActive}
-                      onClick={() => dispatch({ type: "next" })}
-                    />
-                  </div>
-                )}
+                    )}
+                    {state.step === CalculatorStep.Loading && <LoadingScreen />}
+                    {state.step === CalculatorStep.Selection && (
+                      <div className="flex flex-col justify-center items-center gap-8">
+                        <div className="flex flex-col h-full items-center px-6 gap-10 w-full">
+                          <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
+                            {questions[0]?.title}
+                          </DialogTitle>
+                          <ProductSelectionQuestion
+                            options={questions[0]?.options ?? []}
+                            products={state.products}
+                            onToggleProduct={(product) =>
+                              dispatch({ type: "toggleProduct", product })
+                            }
+                          />
+                        </div>
+                        <NextButton
+                          disabled={!isNextButtonActive}
+                          onClick={next}
+                        />
+                      </div>
+                    )}
+                    {(state.step === CalculatorStep.Frequency ||
+                      state.step === CalculatorStep.Variant) &&
+                      currentProduct && (
+                        <div className="flex flex-col justify-center items-center gap-8">
+                          <div className="flex flex-col items-center px-6 gap-10 w-full">
+                            <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
+                              {state.step === CalculatorStep.Variant
+                                ? currentVariantQuestion?.title
+                                : t("modal.questions.1.title", {
+                                    prefix: currentProduct.prefix ?? "",
+                                    label: currentProduct.label,
+                                  })}
+                            </DialogTitle>
+                            <FrequencyQuestion
+                              product={currentProduct}
+                              options={questions[1]?.options ?? []}
+                              subQuestions={questions[1]?.subQuestions}
+                              mode={
+                                state.step === CalculatorStep.Variant
+                                  ? "variant"
+                                  : "frequency"
+                              }
+                              onFrequencyChange={(
+                                frequency,
+                                frequencyLabel,
+                                occurrence,
+                                advanceToVariant,
+                              ) => {
+                                if (
+                                  advanceToVariant &&
+                                  currentProduct.variants.length
+                                ) {
+                                  setScreenTransition({
+                                    axis: "y",
+                                    direction: 1,
+                                  });
+                                }
+
+                                dispatch({
+                                  type: "setFrequency",
+                                  productIndex: state.productIndex,
+                                  frequency,
+                                  frequencyLabel,
+                                  occurrence,
+                                  advanceToVariant,
+                                });
+                              }}
+                              onVariantChange={(variantType, count) =>
+                                dispatch({
+                                  type: "setVariantCount",
+                                  productIndex: state.productIndex,
+                                  variantType,
+                                  count,
+                                })
+                              }
+                            />
+                          </div>
+                          <NextButton
+                            disabled={!isNextButtonActive}
+                            onClick={next}
+                          />
+                        </div>
+                      )}
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
           </DialogPanel>

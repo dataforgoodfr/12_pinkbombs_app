@@ -13,10 +13,12 @@ interface FrequencyQuestionProps {
   product: UserProductConsumption;
   options: QuestionOption[];
   subQuestions?: SubQuestion[];
+  mode: "frequency" | "variant";
   onFrequencyChange: (
     frequency: string | undefined,
     frequencyLabel?: string,
     occurrence?: number,
+    advanceToVariant?: boolean,
   ) => void;
   onVariantChange: (variantType: string, count: number) => void;
 }
@@ -32,6 +34,7 @@ export const FrequencyQuestion = ({
   product,
   options,
   subQuestions,
+  mode,
   onFrequencyChange,
   onVariantChange,
 }: FrequencyQuestionProps) => {
@@ -47,7 +50,7 @@ export const FrequencyQuestion = ({
 
   const selectFrequency = (option: QuestionOption) => {
     setCustomFrequency(null);
-    onFrequencyChange(option.name, option.label);
+    onFrequencyChange(option.name, option.label, undefined, true);
   };
 
   const customOption = options.find(({ name }) => name === "otherFrequency");
@@ -58,111 +61,109 @@ export const FrequencyQuestion = ({
 
   return (
     <div className="flex flex-col w-full gap-4">
-      {options.map((option) => {
-        if (option.name === "otherFrequency") {
-          return (
-            <div key={option.name}>
-              <p className="p-lead text-v2-pink">{option.label}</p>
-              <div className="flex row">
-                <div className="inline-flex flex-col gap-2">
-                  <div className="flex flex-row gap-2 items-end">
-                    <input
-                      id="custom-frequency-weekly"
-                      name="custom-frequency"
-                      type="number"
-                      min="0"
-                      placeholder="0"
-                      value={
-                        customFrequency === "weekly"
-                          ? product.occurrence ?? ""
-                          : ""
-                      }
-                      onFocus={() => {
-                        setCustomFrequency("weekly");
-                        onFrequencyChange(undefined);
-                      }}
-                      onChange={(event) => 
-                        onFrequencyChange(
-                          customChoices[0]?.name,
-                          customChoices[0]?.label,
-                          normalizeOccurrence(event.target.value),
-                        )
-                      }
-                      className={`${frequencyInputClassName} ${customFrequency === "yearly" ? "hidden" : "block"}`}
-                    />
-                    <span
-                      className={`${customFrequency === "yearly" ? "hidden" : "block"} p-lead text-v2-pink`}
-                    >
-                      {customChoices[0]?.label}
-                    </span>
-                  </div>
-                  <div className="flex flex-row gap-2 items-end">
-                    <input
-                      id="custom-frequency-yearly"
-                      name="custom-frequency"
-                      type="number"
-                      min="0"
-                      placeholder="0"
-                      value={
-                        customFrequency === "yearly"
-                          ? product.occurrence ?? ""
-                          : ""
-                      }
-                      onFocus={() => {
-                        setCustomFrequency("yearly");
-                        onFrequencyChange(undefined);
-                      }}
-                      onChange={(event) =>
-                        onFrequencyChange(
-                          customChoices[1]?.name,
-                          customChoices[1]?.label,
-                          normalizeOccurrence(event.target.value),
-                        )
-                      }
-                      className={`${frequencyInputClassName} ${customFrequency === "weekly" ? "hidden" : "block"}`}
-                    />
-                    <span
-                      className={`${customFrequency === "weekly" ? "hidden" : "block"} p-lead text-v2-pink`}
-                    >
-                      {customChoices[1]?.label}
-                    </span>
+      {mode === "frequency" &&
+        options.map((option) => {
+          if (option.name === "otherFrequency") {
+            return (
+              <div key={option.name}>
+                <p className="p-lead text-v2-pink">{option.label}</p>
+                <div className="flex row">
+                  <div className="inline-flex flex-col gap-2">
+                    <div className="flex flex-row gap-2 items-end">
+                      <input
+                        id="custom-frequency-weekly"
+                        name="custom-frequency"
+                        type="number"
+                        min="0"
+                        placeholder="0"
+                        value={
+                          customFrequency === "weekly"
+                            ? product.occurrence ?? ""
+                            : ""
+                        }
+                        onFocus={() => {
+                          setCustomFrequency("weekly");
+                          onFrequencyChange(undefined);
+                        }}
+                        onChange={(event) =>
+                          onFrequencyChange(
+                            customChoices[0]?.name,
+                            customChoices[0]?.label,
+                            normalizeOccurrence(event.target.value),
+                          )
+                        }
+                        className={`${frequencyInputClassName} ${customFrequency === "yearly" ? "hidden" : "block"}`}
+                      />
+                      <span
+                        className={`${customFrequency === "yearly" ? "hidden" : "block"} p-lead text-v2-pink`}
+                      >
+                        {customChoices[0]?.label}
+                      </span>
+                    </div>
+                    <div className="flex flex-row gap-2 items-end">
+                      <input
+                        id="custom-frequency-yearly"
+                        name="custom-frequency"
+                        type="number"
+                        min="0"
+                        placeholder="0"
+                        value={
+                          customFrequency === "yearly"
+                            ? product.occurrence ?? ""
+                            : ""
+                        }
+                        onFocus={() => {
+                          setCustomFrequency("yearly");
+                          onFrequencyChange(undefined);
+                        }}
+                        onChange={(event) =>
+                          onFrequencyChange(
+                            customChoices[1]?.name,
+                            customChoices[1]?.label,
+                            normalizeOccurrence(event.target.value),
+                          )
+                        }
+                        className={`${frequencyInputClassName} ${customFrequency === "weekly" ? "hidden" : "block"}`}
+                      />
+                      <span
+                        className={`${customFrequency === "weekly" ? "hidden" : "block"} p-lead text-v2-pink`}
+                      >
+                        {customChoices[1]?.label}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        }
+            );
+          }
 
-        return (
-          <label
-            key={option.name}
-            className="cursor-pointer flex items-center gap-4"
-          >
-            <input
-              id={`frequency-${option.name}`}
-              name="frequency"
-              type="radio"
-              checked={product.frequency === option.name}
-              onChange={() => selectFrequency(option)}
-              className="
+          return (
+            <label
+              key={option.name}
+              className="cursor-pointer flex items-center gap-4"
+            >
+              <input
+                id={`frequency-${option.name}`}
+                name="frequency"
+                type="radio"
+                checked={product.frequency === option.name}
+                onChange={() => selectFrequency(option)}
+                className="
                 cursor-pointer appearance-none w-6 h-6 p-1 rounded-full
                 border border-v2-magenta bg-v2-pink checked:bg-v2-magenta
                 checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
                 focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
                 focus:bg-v2-magenta focus:text-v2-magenta"
-            />
-            <span className="p-lead text-v2-pink">
-              {option.label.charAt(0).toUpperCase() + option.label.slice(1)}
-            </span>
-          </label>
-        );
-      })}
+              />
+              <span className="p-lead text-v2-pink">
+                {option.label.charAt(0).toUpperCase() + option.label.slice(1)}
+              </span>
+            </label>
+          );
+        })}
 
-      {variantQuestion && (
-        <div className="flex flex-col gap-4 pt-4">
-          <p className="h4 lg:h2 text-center text-pretty text-v2-pink">
-            {variantQuestion.title}
-          </p>
+      {mode === "variant" && variantQuestion && (
+        <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             {variantQuestion.options.map((option) => {
               const count =
@@ -171,10 +172,7 @@ export const FrequencyQuestion = ({
                 option.defaultValue ??
                 0;
               return (
-                <label
-                  key={option.name}
-                  className="flex gap-2 items-end"
-                >
+                <label key={option.name} className="flex gap-2 items-end">
                   <input
                     id={`variant-${option.name}`}
                     name={product.name}
