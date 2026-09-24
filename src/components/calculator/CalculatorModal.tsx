@@ -116,6 +116,14 @@ export const CalculatorModal = ({
       : "screen"
   }`;
   const motionContext = { ...screenTransition, reducedMotion };
+  const showProgress =
+    state.step === CalculatorStep.Frequency ||
+    state.step === CalculatorStep.Variant ||
+    state.step === CalculatorStep.Summary;
+  const completedProducts =
+    state.step === CalculatorStep.Summary
+      ? state.products.length
+      : state.productIndex;
 
   return (
     <Dialog open={open} onClose={reset} className="relative z-50">
@@ -125,22 +133,26 @@ export const CalculatorModal = ({
             transition
             className="relative flex flex-col h-screen w-full px-3 pt-6 pb-10 gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
-            <div
-              className={`flex shrink-0 px-4 ${state.step !== CalculatorStep.Selection ? "justify-between" : "justify-end"}`}
-            >
+            <div className="grid shrink-0 grid-cols-2 items-center gap-y-3 px-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-x-4 sm:gap-y-0">
               {state.step !== CalculatorStep.Selection && (
                 <button
                   type="button"
                   aria-label="Back"
                   onClick={back}
-                  className="cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
+                  className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
                 >
                   <ArrowLeft />
                 </button>
               )}
+              {showProgress && (
+                <CalculatorProgress
+                  completedProducts={completedProducts}
+                  totalProducts={state.products.length}
+                />
+              )}
               <CloseButton
                 onClick={reset}
-                className="text-v2-pink hover:text-v2-magenta text-end tracking-wider text-md cta"
+                className="col-start-2 row-start-1 justify-self-end text-v2-pink hover:text-v2-magenta text-end tracking-wider text-md cta sm:col-start-3"
               >
                 {t("modal.quit")}
               </CloseButton>
@@ -267,6 +279,48 @@ export const CalculatorModal = ({
     </Dialog>
   );
 };
+
+const CalculatorProgress = ({
+  completedProducts,
+  totalProducts,
+}: {
+  completedProducts: number;
+  totalProducts: number;
+}) => (
+  <div
+    role="progressbar"
+    aria-label="Calculator progress"
+    aria-valuemin={0}
+    aria-valuemax={totalProducts}
+    aria-valuenow={completedProducts}
+    aria-valuetext={`${completedProducts} of ${totalProducts} products completed`}
+    className="col-span-2 row-start-2 flex items-center justify-center gap-2 justify-self-center sm:col-span-1 sm:col-start-2 sm:row-start-1"
+  >
+    {Array.from({ length: totalProducts }, (_, index) => {
+      const completed = index < completedProducts;
+
+      return (
+        <svg
+          key={index}
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <ellipse
+            cx="6.75"
+            cy="6.5"
+            rx="6.75"
+            ry="6.5"
+            fill={completed ? "#E82D04" : "white"}
+          />
+        </svg>
+      );
+    })}
+  </div>
+);
 
 const NextButton = ({
   disabled,
