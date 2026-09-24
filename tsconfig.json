@@ -34,5 +34,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules", ".next/*"],
-  "moduleResolution": ["node_modules", ".next", "node"]
+  "moduleResolution": ["node_modules", ".next", "node"],
+  "types": ["jest"]
 }
