@@ -62,7 +62,7 @@
             {
               "name": "smokedSalmon",
               "title": "Combien de tranches consommez-vous à chaque occasion\u00a0?",
-              "options": [{ "defaultValue": 1, "name": "slice", "label": "tranche" }]
+              "options": [{ "defaultValue": 1, "name": "tranche", "label": "tranche" }]
             },
             {
               "name": "sushi",
@@ -79,7 +79,7 @@
     },
     "sumUp": {
       "title": "Votre consommation de saumon",
-      "caption": "Vous pouvez revenir en arrière pour modifier vos réponses avant de lancer le calcul.",
+      "caption": "Si besoin, cliquez sur la flèche retour pour mettre à jour vos réponses.",
       "button": "Calculer mon impact",
       "around": "Environ :"
     },
