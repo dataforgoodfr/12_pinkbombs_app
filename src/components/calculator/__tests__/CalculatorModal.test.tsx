@@ -1,6 +1,7 @@
+import { describe, expect, it, jest } from "@jest/globals";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { describe, it, expect, jest } from "@jest/globals";
-import { CalculatorModal } from "../CalculatorModal";
+
+import type { CalculatorSubmissionService } from "../submission";
 
 jest.mock("next/image", () => ({
   __esModule: true,
@@ -25,6 +26,9 @@ jest.mock("next-intl", () => ({
     return translate;
   },
 }));
+
+const { CalculatorModal } =
+  jest.requireActual<typeof import("../CalculatorModal")>("../CalculatorModal");
 
 const questions = [
   {
@@ -57,7 +61,9 @@ const questions = [
 
 describe("CalculatorModal", () => {
   it("tracks completed products from frequency through summary", async () => {
-    const submissionService = jest.fn().mockResolvedValue({ result: null });
+    const submissionService = jest
+      .fn<CalculatorSubmissionService>()
+      .mockResolvedValue({ result: null });
     render(
       <CalculatorModal
         open
@@ -67,20 +73,20 @@ describe("CalculatorModal", () => {
       />,
     );
 
-    expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
+    expect(screen.queryByRole("progressbar")).toBeNull();
 
     screen.getAllByRole("checkbox").forEach((checkbox) => {
       fireEvent.click(checkbox);
     });
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
 
-    expect(screen.queryByText("How many pieces?")).not.toBeInTheDocument();
+    expect(screen.queryByText("How many pieces?")).toBeNull();
 
     let progress = await screen.findByRole("progressbar", {
       name: "Calculator progress",
     });
-    expect(progress).toHaveAttribute("aria-valuenow", "0");
-    expect(progress).toHaveAttribute("aria-valuemax", "2");
+    expect(progress.getAttribute("aria-valuenow")).toBe("0");
+    expect(progress.getAttribute("aria-valuemax")).toBe("2");
     expect(
       Array.from(progress.querySelectorAll("ellipse"), (dot) =>
         dot.getAttribute("fill"),
@@ -89,13 +95,13 @@ describe("CalculatorModal", () => {
 
     fireEvent.click(await screen.findByRole("radio"));
 
-    expect(await screen.findByText("How many pieces?")).toBeInTheDocument();
-    expect(screen.queryByRole("radio")).not.toBeInTheDocument();
+    expect(await screen.findByText("How many pieces?")).not.toBeNull();
+    expect(screen.queryByRole("radio")).toBeNull();
     progress = screen.getByRole("progressbar");
-    expect(progress).toHaveAttribute("aria-valuenow", "0");
+    expect(progress.getAttribute("aria-valuenow")).toBe("0");
 
     fireEvent.click(screen.getByRole("button", { name: "Back" }));
-    expect(await screen.findByRole("radio")).toBeInTheDocument();
+    expect(await screen.findByRole("radio")).not.toBeNull();
 
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
     await screen.findByText("How many pieces?");
@@ -103,7 +109,7 @@ describe("CalculatorModal", () => {
 
     await screen.findByRole("radio");
     progress = screen.getByRole("progressbar");
-    expect(progress).toHaveAttribute("aria-valuenow", "1");
+    expect(progress.getAttribute("aria-valuenow")).toBe("1");
     expect(
       Array.from(progress.querySelectorAll("ellipse"), (dot) =>
         dot.getAttribute("fill"),
@@ -113,9 +119,9 @@ describe("CalculatorModal", () => {
     fireEvent.click(screen.getByRole("radio"));
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
 
-    expect(await screen.findByText("sumUp.title")).toBeInTheDocument();
+    expect(await screen.findByText("sumUp.title")).not.toBeNull();
     progress = screen.getByRole("progressbar");
-    expect(progress).toHaveAttribute("aria-valuenow", "2");
+    expect(progress.getAttribute("aria-valuenow")).toBe("2");
     expect(
       Array.from(progress.querySelectorAll("ellipse"), (dot) =>
         dot.getAttribute("fill"),
@@ -125,8 +131,8 @@ describe("CalculatorModal", () => {
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
 
     await waitFor(() => {
-      expect(screen.getByText("loading.title")).toBeInTheDocument();
-      expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
+      expect(screen.getByText("loading.title")).not.toBeNull();
+      expect(screen.queryByRole("progressbar")).toBeNull();
       expect(submissionService).toHaveBeenCalledWith(
         expect.objectContaining({ products: expect.any(Array) }),
       );
