@@ -82,9 +82,7 @@ describe("CalculatorModal", () => {
 
     expect(screen.queryByText("How many pieces?")).toBeNull();
 
-    let progress = await screen.findByRole("progressbar", {
-      name: "Calculator progress",
-    });
+    let progress = await screen.findByRole("progressbar");
     expect(progress.getAttribute("aria-valuenow")).toBe("0");
     expect(progress.getAttribute("aria-valuemax")).toBe("2");
     expect(
@@ -100,14 +98,31 @@ describe("CalculatorModal", () => {
     progress = screen.getByRole("progressbar");
     expect(progress.getAttribute("aria-valuenow")).toBe("0");
 
-    fireEvent.click(screen.getByRole("button", { name: "Back" }));
-    expect(await screen.findByRole("radio")).not.toBeNull();
+    fireEvent.click(screen.getByRole("backbutton"));
+    await waitFor(() => {
+      expect(screen.getByText("some sushi")).not.toBeNull();
+      expect(screen.getByRole("radio")).not.toBeNull();
+    });
 
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
-    await screen.findByText("How many pieces?");
-    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await waitFor(() => {
+      expect(screen.getByText("How many pieces?")).not.toBeNull();
+    });
 
-    await screen.findByRole("radio");
+    expect(screen.queryByRole("radio")).toBeNull();
+    progress = screen.getByRole("progressbar");
+    expect(progress.getAttribute("aria-valuenow")).toBe("0");
+    expect(
+      Array.from(progress.querySelectorAll("ellipse"), (dot) =>
+        dot.getAttribute("fill"),
+      ),
+    ).toEqual(["white", "white"]);
+
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await waitFor(() => {
+      expect(screen.getByText("some fresh salmon")).not.toBeNull();
+    });
+
     progress = screen.getByRole("progressbar");
     expect(progress.getAttribute("aria-valuenow")).toBe("1");
     expect(
@@ -127,7 +142,6 @@ describe("CalculatorModal", () => {
         dot.getAttribute("fill"),
       ),
     ).toEqual(["#E82D04", "#E82D04"]);
-
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
 
     await waitFor(() => {

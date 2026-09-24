@@ -137,6 +137,7 @@ export const CalculatorModal = ({
               {state.step !== CalculatorStep.Selection && (
                 <button
                   type="button"
+                  role="backbutton"
                   aria-label={t("modal.back")}
                   onClick={back}
                   className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
@@ -291,7 +292,7 @@ const CalculatorProgress = ({
   return (
     <div
       role="progressbar"
-      aria-label="Calculator progress"
+      aria-label={t("modal.progress")}
       aria-valuemin={0}
       aria-valuemax={totalProducts}
       aria-valuenow={completedProducts}
