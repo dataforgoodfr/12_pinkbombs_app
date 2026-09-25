@@ -198,6 +198,7 @@ const Navbar = () => {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
         className="relative z-50 lg:hidden"
+        aria-label={t("nav.ariaLabel")}
       >
         <div
           aria-hidden="true"
@@ -205,6 +206,7 @@ const Navbar = () => {
         />
         <div className="fixed inset-0 flex justify-end">
           <DialogPanel
+            transition
             className={clsx(
               "flex flex-col gap-8 w-full max-w-xs h-full px-6 py-6 overflow-y-auto transition data-closed:translate-x-full data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in",
               `bg-v2-${getBackgroundColor()}`,

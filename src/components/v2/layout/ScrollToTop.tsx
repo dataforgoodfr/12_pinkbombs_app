@@ -18,7 +18,10 @@ export default function ScrollToTop() {
   }, []);
 
   useLayoutEffect(() => {
-    if (previousPathname.current === pathname) return;
+    if (previousPathname.current === pathname) {
+      isHistoryNavigation.current = false;
+      return;
+    }
     previousPathname.current = pathname;
 
     if (isHistoryNavigation.current) {
