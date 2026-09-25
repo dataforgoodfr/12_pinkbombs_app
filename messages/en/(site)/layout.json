@@ -4,6 +4,8 @@
     "nav": {
       "title": "main",
       "home": "Home",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
       "toUnderstand": "To understand",
       "toAct": "To act",
       "toBeInspired": "To be inspired",
