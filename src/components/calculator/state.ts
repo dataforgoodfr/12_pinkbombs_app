@@ -4,6 +4,7 @@ import {
   MIN_VARIANT_COUNT,
   QUESTION_INDEX,
 } from "./constants";
+import type { CalculatorSubmissionResponse } from "./submission";
 import {
   type CalculatorState,
   CalculatorStep,
@@ -15,6 +16,8 @@ export const INITIAL_CALCULATOR_STATE: CalculatorState = {
   questionIndex: QUESTION_INDEX.ProductSelection,
   productIndex: DEFAULT_PRODUCT_INDEX,
   products: [],
+  calculationResponse: null,
+  calculationError: null,
 };
 
 export type CalculatorAction =
@@ -36,6 +39,8 @@ export type CalculatorAction =
   | { type: "next" }
   | { type: "back" }
   | { type: "startLoading" }
+  | { type: "calculationSucceeded"; response: CalculatorSubmissionResponse }
+  | { type: "calculationFailed"; error: string }
   | { type: "reset" };
 
 const updateProduct = (
@@ -140,6 +145,13 @@ export const calculatorReducer = (
       }
       return { ...state, step: CalculatorStep.Summary };
     case "back":
+      if (state.step === CalculatorStep.Error) {
+        return {
+          ...state,
+          step: CalculatorStep.Summary,
+          calculationError: null,
+        };
+      }
       if (state.step === CalculatorStep.Summary) {
         const productIndex = Math.max(
           DEFAULT_PRODUCT_INDEX,
@@ -176,6 +188,18 @@ export const calculatorReducer = (
       };
     case "startLoading":
       return { ...state, step: CalculatorStep.Loading };
+    case "calculationSucceeded":
+      return {
+        ...state,
+        step: CalculatorStep.Result,
+        calculationResponse: action.response,
+      };
+    case "calculationFailed":
+      return {
+        ...state,
+        step: CalculatorStep.Error,
+        calculationError: action.error,
+      };
     case "reset":
       return INITIAL_CALCULATOR_STATE;
     default:
@@ -195,6 +219,9 @@ export const isCurrentStepAnswered = (state: CalculatorState) => {
   }
   return false;
 };
+
+export const isCalculationResponseReady = (state: CalculatorState) =>
+  state.calculationResponse !== null;
 
 export const normalizeOccurrence = (value: string) => {
   const occurrence = Number.parseInt(value, 10);

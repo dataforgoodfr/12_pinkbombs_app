@@ -3,6 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import {
   calculatorReducer,
   INITIAL_CALCULATOR_STATE,
+  isCalculationResponseReady,
   isCurrentStepAnswered,
 } from "../state";
 import { CalculatorStep } from "../types";
@@ -144,6 +145,42 @@ describe("calculator workflow", () => {
     expect(calculatorReducer(state, { type: "reset" })).toEqual(
       INITIAL_CALCULATOR_STATE,
     );
+  });
+
+  it("moves to the result step when the calculation succeeds", () => {
+    const response = {
+      totalConsoInKg: 1.5,
+      consoPerProduct: { sushi: 1.5 },
+      impact: "medium" as const,
+    };
+    let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
+      type: "startLoading",
+    });
+    state = calculatorReducer(state, {
+      type: "calculationSucceeded",
+      response,
+    });
+
+    expect(state.step).toBe(CalculatorStep.Result);
+    expect(state.calculationResponse).toEqual(response);
+    expect(isCalculationResponseReady(state)).toBe(true);
+  });
+
+  it("moves to the error step when the calculation fails", () => {
+    let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
+      type: "startLoading",
+    });
+    state = calculatorReducer(state, {
+      type: "calculationFailed",
+      error: "Submission failed",
+    });
+
+    expect(state.step).toBe(CalculatorStep.Error);
+    expect(state.calculationError).toBe("Submission failed");
+
+    state = calculatorReducer(state, { type: "back" });
+    expect(state.step).toBe(CalculatorStep.Summary);
+    expect(state.calculationError).toBeNull();
   });
 
   it("reverses through variants and the previous product", () => {

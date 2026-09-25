@@ -1,5 +1,5 @@
 import { describe, expect, it, jest } from "@jest/globals";
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 
 import type { CalculatorSubmissionService } from "../submission";
 
@@ -22,7 +22,16 @@ jest.mock("next-intl", () => ({
       }
       return key;
     }) as MockTranslate;
-    translate.raw = () => [];
+    translate.raw = (key: string) =>
+      key === "labels"
+        ? [
+            { label: "neutral", text: "Neutral", color: "green" },
+            { label: "low", text: "Low", color: "yellow" },
+            { label: "medium", text: "Medium", color: "magenta" },
+            { label: "high", text: "High", color: "red" },
+            { label: "veryHigh", text: "Very High", color: "black" },
+          ]
+        : [];
     return translate;
   },
 }));
@@ -60,10 +69,18 @@ const questions = [
 ];
 
 describe("CalculatorModal", () => {
+  afterEach(() => {
+    jest.useRealTimers();
+  });
+
   it("tracks completed products from frequency through summary", async () => {
     const submissionService = jest
       .fn<CalculatorSubmissionService>()
-      .mockResolvedValue({ result: null });
+      .mockResolvedValue({
+        totalConsoInKg: 0,
+        consoPerProduct: {},
+        impact: "neutral",
+      });
     render(
       <CalculatorModal
         open
@@ -142,14 +159,66 @@ describe("CalculatorModal", () => {
         dot.getAttribute("fill"),
       ),
     ).toEqual(["#E82D04", "#E82D04"]);
+    jest.useFakeTimers();
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
+    await act(() => jest.advanceTimersByTimeAsync(3000));
+    jest.useRealTimers();
 
     await waitFor(() => {
-      expect(screen.getByText("loading.title")).not.toBeNull();
+      expect(screen.getByText("result.title")).not.toBeNull();
       expect(screen.queryByRole("progressbar")).toBeNull();
       expect(submissionService).toHaveBeenCalledWith(
         expect.objectContaining({ products: expect.any(Array) }),
       );
     });
+  });
+
+  it("shows the error screen when submission fails", async () => {
+    const submissionService = jest
+      .fn<CalculatorSubmissionService>()
+      .mockResolvedValue("Submission failed");
+    render(
+      <CalculatorModal
+        open
+        questions={questions}
+        onClose={jest.fn()}
+        submissionService={submissionService}
+      />,
+    );
+
+    screen.getAllByRole("checkbox").forEach((checkbox) => {
+      fireEvent.click(checkbox);
+    });
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await waitFor(() => {
+      expect(screen.getByRole("radio")).not.toBeNull();
+    });
+
+    fireEvent.click(screen.getByRole("radio"));
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await waitFor(() => {
+      expect(screen.getByText("How many pieces?")).not.toBeNull();
+    });
+
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await waitFor(() => {
+      expect(screen.getByText("some fresh salmon")).not.toBeNull();
+    });
+
+    fireEvent.click(screen.getByRole("radio"));
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+
+    expect(await screen.findByText("sumUp.title")).not.toBeNull();
+    jest.useFakeTimers();
+    fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
+    await act(() => jest.advanceTimersByTimeAsync(3000));
+    jest.useRealTimers();
+
+    await waitFor(() => {
+      expect(screen.getByText("error.title")).not.toBeNull();
+    });
+
+    fireEvent.click(screen.getByRole("button", { name: "error.retry" }));
+    expect(await screen.findByText("sumUp.title")).not.toBeNull();
   });
 });

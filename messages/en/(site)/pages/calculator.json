@@ -99,6 +99,18 @@
       "title": "Diving into your data",
       "caption": "Calculating your ocean footprint...",
       "info": "A farmed salmon travels an average of 8,000 km before reaching your plate."
+    },
+
+    "result": {
+      "title": "Impact: {impact}",
+      "caption": "That's about {totalConsoInKg} kg of salmon per year.",
+      "productListTitle": "Your consumption in detail"
+    },
+
+    "error": {
+      "title": "Something went wrong",
+      "caption": "We couldn't calculate your impact. Please try again.",
+      "retry": "Back to summary"
     }
   }
 }

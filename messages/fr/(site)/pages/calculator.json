@@ -92,6 +92,18 @@
       "title": "On plonge dans vos données",
       "caption": "Calcul de votre empreinte océan en cours...",
       "info": "Un saumon d'élevage parcourt en moyenne 8000 km avant votre assiette."
+    },
+
+    "result": {
+      "title": "Impact : {impact}",
+      "caption": "Soit environ {totalConsoInKg} kg de saumon par an.",
+      "productListTitle": "Votre consommation en détail"
+    },
+
+    "error": {
+      "title": "Une erreur est survenue",
+      "caption": "Impossible de calculer votre impact. Merci de réessayer.",
+      "retry": "Retour au récapitulatif"
     }
   }
 }

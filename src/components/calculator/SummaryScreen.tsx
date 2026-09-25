@@ -18,7 +18,6 @@ export const SummaryScreen = ({
 }: SummaryScreenProps) => {
   const t = useTranslations("site.calculator");
   const variantQuestion = questions[1]?.subQuestions ?? [];
-  console.log({products})
   return (
     <div className="flex flex-col lg:grid grid-cols-2 justify-center lg:items-center px-4 gap-12 lg:gap-24 lg:pt-10">
       <Image
