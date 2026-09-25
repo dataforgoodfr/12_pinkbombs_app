@@ -9,12 +9,12 @@
       "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme."
     },
     "tags": {
-      "act1": "Acte 1",
-      "act2": "Acte 2",
-      "act3": "Acte 3"
+      "block1": "Un discours bien rôdé",
+      "block2": "Une industrie floutée",
+      "block3": "Les impacts environnementaux"
     },
     "debunk": {
-      "act1": {
+      "block1": {
         "title": "Un discours bien rôdé",
         "items": [
           {
@@ -41,7 +41,7 @@
           }
         ]
       },
-      "act2": {
+      "block2": {
         "title": "Une industrie floutée",
         "items": [
           {
@@ -67,7 +67,7 @@
           }
         ]
       },
-      "act3": {
+      "block3": {
         "title": "Les fausses bonnes idées",
         "items": [
           {
