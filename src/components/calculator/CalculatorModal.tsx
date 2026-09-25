@@ -11,12 +11,14 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
+import { ErrorScreen } from "./ErrorScreen";
 import { FrequencyQuestion } from "./FrequencyQuestion";
 import { LoadingScreen } from "./LoadingScreen";
 import { ProductSelectionQuestion } from "./ProductSelectionQuestion";
+import { ResultScreen } from "./ResultScreen";
 import {
   type CalculatorSubmissionService,
-  submitCalculatorMock,
+  submitProductToCalculator,
 } from "./submission";
 import { SummaryScreen } from "./SummaryScreen";
 import type { Question } from "./types";
@@ -34,6 +36,11 @@ type ScreenTransition = {
   axis: "x" | "y";
   direction: -1 | 0 | 1;
 };
+
+const MIN_LOADING_DURATION_MS = 3000;
+
+const sleep = (durationMs: number) =>
+  new Promise((resolve) => setTimeout(resolve, durationMs));
 
 const screenVariants = {
   enter: ({
@@ -61,11 +68,24 @@ const screenVariants = {
   }),
 };
 
+// Reveals the result screen sliding up from the bottom, regardless of the ambient screen transition
+const resultVariants = {
+  enter: ({ reducedMotion }: { reducedMotion: boolean }) => ({
+    opacity: 0,
+    y: reducedMotion ? 0 : 80,
+  }),
+  center: { opacity: 1, y: 0 },
+  exit: ({ reducedMotion }: { reducedMotion: boolean }) => ({
+    opacity: 0,
+    y: reducedMotion ? 0 : 80,
+  }),
+};
+
 export const CalculatorModal = ({
   open,
   questions,
   onClose,
-  submissionService = submitCalculatorMock,
+  submissionService = submitProductToCalculator,
 }: CalculatorModalProps) => {
   const t = useTranslations("site.calculator");
   const { state, dispatch, isNextButtonActive } = useCalculator();
@@ -86,7 +106,17 @@ export const CalculatorModal = ({
   const submit = async () => {
     setScreenTransition({ axis: "x", direction: 1 });
     dispatch({ type: "startLoading" });
-    await submissionService({ products: state.products });
+    const [result] = await Promise.all([
+      submissionService({ products: state.products }),
+      sleep(MIN_LOADING_DURATION_MS),
+    ]);
+
+    if (typeof result === "string") {
+      dispatch({ type: "calculationFailed", error: result });
+      return;
+    }
+
+    dispatch({ type: "calculationSucceeded", response: result });
   };
 
   const next = () => {
@@ -106,6 +136,11 @@ export const CalculatorModal = ({
       axis: state.step === CalculatorStep.Variant ? "y" : "x",
       direction: -1,
     });
+    dispatch({ type: "back" });
+  };
+
+  const retry = () => {
+    setScreenTransition({ axis: "x", direction: -1 });
     dispatch({ type: "back" });
   };
 
@@ -169,7 +204,11 @@ export const CalculatorModal = ({
                   <motion.div
                     key={screenKey}
                     custom={motionContext}
-                    variants={screenVariants}
+                    variants={
+                      state.step === CalculatorStep.Result
+                        ? resultVariants
+                        : screenVariants
+                    }
                     initial="enter"
                     animate="center"
                     exit="exit"
@@ -187,6 +226,38 @@ export const CalculatorModal = ({
                       />
                     )}
                     {state.step === CalculatorStep.Loading && <LoadingScreen />}
+                    {state.step === CalculatorStep.Result &&
+                      state.calculationResponse && (
+                        <ResultScreen
+                          questions={questions}
+                          response={state.calculationResponse}
+                          reduceImpact={state.reduceImpact}
+                          onSelectProduct={(productKey) =>
+                            dispatch({
+                              type: "selectReplacementProduct",
+                              productKey,
+                            })
+                          }
+                          onFrequencyChange={(occurrencePerYear) =>
+                            dispatch({
+                              type: "setReplacementFrequency",
+                              occurrencePerYear,
+                            })
+                          }
+                          onConfirmFrequency={() =>
+                            dispatch({ type: "confirmReplacementFrequency" })
+                          }
+                          onSelectAlternative={(alternative) =>
+                            dispatch({ type: "selectAlternative", alternative })
+                          }
+                          onSetActiveAccordion={(index) =>
+                            dispatch({ type: "setActiveAccordionIndex", index })
+                          }
+                        />
+                      )}
+                    {state.step === CalculatorStep.Error && (
+                      <ErrorScreen onRetry={retry} />
+                    )}
                     {state.step === CalculatorStep.Selection && (
                       <div className="flex flex-col justify-center items-center gap-8">
                         <div className="flex flex-col h-full items-center px-6 gap-10 w-full">

@@ -1,3 +1,5 @@
+import type { CalculatorSubmissionResponse } from "./submission";
+
 export interface QuestionOption {
   name: string;
   label: string;
@@ -43,6 +45,8 @@ export enum CalculatorStep {
   Variant = "variant",
   Summary = "summary",
   Loading = "loading",
+  Result = "result",
+  Error = "error",
 }
 
 export interface CalculatorState {
@@ -50,4 +54,14 @@ export interface CalculatorState {
   questionIndex: number;
   productIndex: number;
   products: UserProductConsumption[];
+  calculationResponse: CalculatorSubmissionResponse | null;
+  calculationError: string | null;
+  reduceImpact: ReduceImpactState;
+}
+
+export interface ReduceImpactState {
+  activeAccordionIndex: 0 | 1 | 2;
+  selectedProductKey: string | null;
+  replacementFrequencyPerYear: number | null;
+  selectedAlternative: string | null;
 }

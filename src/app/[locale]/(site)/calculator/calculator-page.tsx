@@ -39,7 +39,7 @@ const CalculatorPage = () => {
           width={1512}
           height={74}
           alt=""
-          className="object-cover xl:w-[2000px]"
+          className="object-cover w-full xl:w-[2000px]"
         />
       </section>
       <CalculatorModal

@@ -3,11 +3,12 @@ import { ChevronUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import resolveConfig from "tailwindcss/resolveConfig";
 
+import type { ImpactLevel } from "../calculator/computeConsumption";
 import { useIsMobile } from "../../hooks/useIsMobile";
 import tailwindConfig from "../../../tailwind.config";
 
 type LabelProps = {
-  label: "neutral" | "low" | "medium" | "high" | "veryHigh";
+  label: ImpactLevel;
   text: string;
   color: string;
 };
@@ -20,7 +21,7 @@ const Calculator = ({
   label,
 }: {
   className?: string;
-  label?: "neutral" | "low" | "medium" | "high" | "veryHigh";
+  label?: ImpactLevel;
 }) => {
   const t = useTranslations("site.components.calculator");
   const isMobile = useIsMobile();
