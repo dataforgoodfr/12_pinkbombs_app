@@ -5,6 +5,8 @@ import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
+import ScrollToTop from "@/components/v2/layout/ScrollToTop";
+
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
   subsets: ["latin"],
@@ -73,10 +75,11 @@ export default async function GlobalLayout({
   return (
     <html
       lang={locale}
+      data-scroll-behavior="smooth"
       className={clsx(
         barlow.variable,
         montserrat.variable,
-        "scroll-smooth overflow-x-hidden lg:scroll-pt-24",
+        "scroll-smooth overflow-x-hidden scroll-pt-[calc(88px+env(safe-area-inset-top))] lg:scroll-pt-[calc(104px+env(safe-area-inset-top))]",
       )}
       suppressHydrationWarning
     >
@@ -84,6 +87,7 @@ export default async function GlobalLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <ScrollToTop />
       </body>
     </html>
   );
