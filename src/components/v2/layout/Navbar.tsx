@@ -16,6 +16,7 @@ import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 
 import { getSectionBackgroundClass, getSectionColor } from "@/lib/sectionTheme";
+
 import { basePathType, Link, locales, usePathname } from "@/navigation";
 
 export type NavItemsProps = {
@@ -58,7 +59,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={clsx("fixed left-0 top-0 z-50 w-full", `bg-v2-${getBackgroundColor()}`)}
+      className={clsx(
+        "fixed left-0 top-0 z-50 w-full",
+        `bg-v2-${getBackgroundColor()}`,
+      )}
     >
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
         <Link href="/">
@@ -227,17 +231,17 @@ const Navbar = () => {
                     "cta text-xl flex items-center mr-auto",
                     getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
                     item.link === pathname
-                    ? getColor() === "blue"
-                      ? "navbar-active-blue"
-                      : "navbar-active-pink"
-                    : "",
+                      ? getColor() === "blue"
+                        ? "navbar-active-blue"
+                        : "navbar-active-pink"
+                      : "",
                   )}
                   href={item.link as basePathType}
                   aria-current={item.link === pathname ? "page" : undefined}
                   key={`mobile-nav-${key}`}
                   onClick={closeMobileMenu}
                 >
-                    {item.link === "/calculator" && (
+                  {item.link === "/calculator" && (
                     <div className="inline-block mr-2">
                       <svg
                         width="20"
@@ -265,15 +269,13 @@ const Navbar = () => {
             <div className="flex gap-4 mt-auto">
               {locales.map((lang, keyLang) => (
                 <Link
-                  className={
-                    clsx(
-                      "cta px-3 py-1 rounded-md border",
-                      lang === locale 
-                      ? `bg-v2-${getColor()} ${getColor() === "blue" ? "text-v2-pink" : "text-v2-blue"}` 
+                  className={clsx(
+                    "cta px-3 py-1 rounded-md border",
+                    lang === locale
+                      ? `bg-v2-${getColor()} ${getColor() === "blue" ? "text-v2-pink" : "text-v2-blue"}`
                       : `text-v2-${getColor()} bg-v2-${getBackgroundColor()}`,
-                      `border-v2-${getColor()}`
-                    )
-                  }
+                    `border-v2-${getColor()}`,
+                  )}
                   href={pathname}
                   key={`mobile-lang-${keyLang}`}
                   aria-current={lang === locale ? "page" : undefined}

@@ -63,11 +63,15 @@ const IntroSection = () => {
 
 const DebunkSection = () => {
   const t = useTranslations("site.toUnderstand");
-  const [activeSection, setActiveSection] = useState<"block1" | "block2" | "block3">(
-    "block1",
-  );
-  const firstActItems = t.raw("debunk.block1.items") as IllustratedDebunkProps[];
-  const secondActItems = t.raw("debunk.block2.items") as IllustratedDebunkProps[];
+  const [activeSection, setActiveSection] = useState<
+    "block1" | "block2" | "block3"
+  >("block1");
+  const firstActItems = t.raw(
+    "debunk.block1.items",
+  ) as IllustratedDebunkProps[];
+  const secondActItems = t.raw(
+    "debunk.block2.items",
+  ) as IllustratedDebunkProps[];
   const thirdActItems = t.raw("debunk.block3.items") as DebunkProps[];
 
   const handleSectionToggle = (section: "block1" | "block2" | "block3") => {
