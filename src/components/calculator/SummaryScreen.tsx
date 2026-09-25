@@ -18,7 +18,7 @@ export const SummaryScreen = ({
 }: SummaryScreenProps) => {
   const t = useTranslations("site.calculator");
   const variantQuestion = questions[1]?.subQuestions ?? [];
-
+  console.log({products})
   return (
     <div className="flex flex-col lg:grid grid-cols-2 justify-center lg:items-center px-4 gap-12 lg:gap-24 lg:pt-10">
       <Image
@@ -33,7 +33,7 @@ export const SummaryScreen = ({
         <h4 className="h4 text-pretty text-v2-pink text-center lg:text-left">
           {t("sumUp.title")}
         </h4>
-        <div className="flex flex-col border-l-4 pl-4 border-v2-magenta gap-2 mx-auto lg:mx-0 lg:items-start">
+        <div className="flex flex-col rounded-xl bg-v2-pink rotate-[3deg] divide-y-2 divide-black/5 py-6 px-4 text-black mx-auto lg:mx-0 lg:items-start lg:max-w-[50%]">
           {products.map((product) => {
             const filteredVariants = product.variants.filter(
               ({ count }) => count > 0,
@@ -44,13 +44,13 @@ export const SummaryScreen = ({
             return (
               <div
                 key={product.name}
-                className="flex flex-col justify-start pb-2 border-b-2 border-v2-magenta/20"
+                className="flex flex-col justify-start py-2"
               >
-                <p className="p-lead text-v2-pink">
+                <p className="p-lead">
                   {product.label.charAt(0).toUpperCase() +
                     product.label.slice(1)}
                 </p>
-                <p className="p-caption px-2 text-v2-pink">
+                <p className="p-caption px-2">
                   {product.frequency === "otherWeekly" ||
                   product.frequency === "otherYearly"
                     ? product.occurrence
@@ -58,7 +58,7 @@ export const SummaryScreen = ({
                   {product.frequencyLabel}
                 </p>
                 {filteredVariants.length > 0 && (
-                  <p className="p-caption px-2 text-v2-pink italic">
+                  <p className="p-caption px-2 italic">
                     {t("sumUp.around")}
                     {filteredVariants.map((variant, index) => {
                       const label =
@@ -67,7 +67,7 @@ export const SummaryScreen = ({
                       return (
                         <span
                           key={variant.type}
-                          className="inline-block ml-1 p-caption text-v2-pink"
+                          className="inline-block ml-1 p-caption"
                         >
                           {variant.count} {label}
                           {variant.count > 1 ? "s" : ""}
