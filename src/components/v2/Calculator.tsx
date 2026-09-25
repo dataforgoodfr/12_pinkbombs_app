@@ -86,12 +86,22 @@ const Calculator = ({
           const x = Math.cos((theta * Math.PI) / 180) * radius;
           const y = Math.sin((theta * Math.PI) / 180) * radius;
           const bottom = isMobile ? y - 3 : y - 1;
+          const isFirst = index === 0;
+          const isLast = index === segments.length - 1;
           return (
             <div
               key={segment.label}
-              className="absolute whitespace-nowrap z-20 font-bold px-3 py-1 text-xs lg:text-sm uppercase -translate-x-1/2 translate-y-1/2"
+              className={clsx(
+                "absolute z-20 font-bold px-3 py-1 text-[10px] lg:text-sm uppercase whitespace-nowrap translate-y-4",
+                !isFirst && !isLast && "-translate-x-1/2",
+              )}
               style={{
-                left: `calc(50% + ${x}px)`,
+                // Anchor edge labels to the container's own bounds so nowrap text can't push the page wider
+                ...(isFirst
+                  ? { left: -14 }
+                  : isLast
+                    ? { right: -16 }
+                    : { left: `calc(50% + ${x}px)` }),
                 bottom: `${bottom}px`,
                 backgroundColor: themeColors.blue,
                 color: themeColors.pink,

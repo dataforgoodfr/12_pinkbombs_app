@@ -30,7 +30,7 @@ const DebunkBlock = ({
       </div>
       <div className="flex flex-col gap-5">
         <p className="p-body">
-          {t.rich(`debunk.act${actNumber}.items.${index}.paragraph`, {
+          {t.rich(`debunk.block${actNumber}.items.${index}.paragraph`, {
             strong: (chunks) => <strong>{chunks}</strong>,
           })}
         </p>

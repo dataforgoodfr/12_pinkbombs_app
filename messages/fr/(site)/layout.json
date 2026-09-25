@@ -4,6 +4,9 @@
     "nav": {
       "title": "principale",
       "home": "Accueil",
+      "ariaLabel": "Navigation principale du site",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu",
       "toUnderstand": "Comprendre",
       "toAct": "Agir",
       "toBeInspired": "S'inspirer",

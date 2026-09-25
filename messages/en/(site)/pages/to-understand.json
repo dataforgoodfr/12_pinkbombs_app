@@ -9,12 +9,12 @@
       "imageAlt": "Illustrative image depicting the industry, trawlers, and farmed fish."
     },
     "tags": {
-      "act1": "Act 1",
-      "act2": "Act 2",
-      "act3": "Act 3"
+      "block1": "A well-rehearsed narrative",
+      "block2": "An industry kept out of focus",
+      "block3": "False good ideas"
     },
     "debunk": {
-      "act1": {
+      "block1": {
         "title": "A well-rehearsed narrative",
         "items": [
           {
@@ -41,7 +41,7 @@
           }
         ]
       },
-      "act2": {
+      "block2": {
         "title": "An industry kept out of focus",
         "items": [
           {
@@ -67,7 +67,7 @@
           }
         ]
       },
-      "act3": {
+      "block3": {
         "title": "The seemingly good ideas",
         "items": [
           {

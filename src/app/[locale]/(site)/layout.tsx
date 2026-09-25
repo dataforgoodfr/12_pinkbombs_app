@@ -6,6 +6,7 @@ import "@/styles/site/styles.css";
 
 import Footer from "@/components/v2/layout/Footer";
 import Navbar from "@/components/v2/layout/Navbar";
+import SectionBackground from "@/components/v2/layout/SectionBackground";
 
 export async function generateMetadata({
   params,
@@ -58,8 +59,9 @@ export default async function V2Layout({
   const t = await getTranslations({ locale, namespace: "site.layout" });
   return (
     <>
+      <SectionBackground />
       <Navbar />
-      <main>
+      <main className="pt-[calc(88px_+_env(safe-area-inset-top))] lg:pt-[calc(104px_+_env(safe-area-inset-top))]">
         {children}
         <a
           href="#"

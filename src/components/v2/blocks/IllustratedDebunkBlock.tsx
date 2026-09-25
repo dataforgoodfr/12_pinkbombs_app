@@ -36,7 +36,7 @@ const IllustratedDebunkBlock = ({
           <h3 className="h3 text-v2-blue">{reality}</h3>
         </div>
         <p className="p-body preserve-lines">
-          {t.rich(`debunk.act${actNumber}.items.${index}.paragraph`, {
+          {t.rich(`debunk.block${actNumber}.items.${index}.paragraph`, {
             strong: (chunks) => <strong>{chunks}</strong>,
           })}
         </p>
@@ -44,7 +44,7 @@ const IllustratedDebunkBlock = ({
       <div className="flex flex-col gap-5">
         <Image
           loading="lazy"
-          src={`/site/images/to-understand/act${actNumber}-${index + 1}.${imageExtension || "svg"}`}
+          src={`/site/images/to-understand/block${actNumber}-${index + 1}.${imageExtension || "svg"}`}
           width={606}
           height={387}
           alt={imageAlt}
