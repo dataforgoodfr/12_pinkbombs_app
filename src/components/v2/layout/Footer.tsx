@@ -104,7 +104,7 @@ const Footer = () => {
             <h5 className="h5 uppercase">
               {t("footer.sections.stayInformed.title")}
             </h5>
-            <p className="text-sm sm:max-w-xs md:max-w-lg lg:max-w-xs ">
+            <p className="text-base sm:max-w-xs md:max-w-lg lg:max-w-xs ">
               {t("footer.sections.stayInformed.text")}
             </p>
             <form className="flex flex-col lg:flex-row gap-4 lg:gap-2 w-full max-w-xs">
@@ -130,16 +130,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-4 items-center mt-6 lg:mt-12">
-          <p className="text-xs">Seastemik - © {currentYear}</p>
+        <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-6 lg:mt-12">
+          <p className="text-base">Seastemik - © {currentYear}</p>
           <br />
-          <div className="flex gap-1 items-center justify-center">
-            <p className="text-xs">design:</p>
+          <div className="flex gap-1 md:items-center md:justify-center">
+            <p className="text-base">design:</p>
             <ShareLink
               href="https://coucou.design/"
               type="design"
               name={t("shareLink.design")}
-              className="text-xs text-white hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
             />
           </div>
         </div>
