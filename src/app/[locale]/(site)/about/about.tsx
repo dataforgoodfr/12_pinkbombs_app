@@ -134,7 +134,7 @@ const ExplanationSection = () => {
 const PresentationSection = () => {
   const t = useTranslations("site.about");
   return (
-    <section className="bg-v2-white text-v2-blue px-10 pt-16">
+    <section className="bg-white text-v2-blue px-10 pt-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col gap-8">
           <Image
@@ -183,9 +183,9 @@ const TeamSection = () => {
   const t = useTranslations("site.about");
   const teamMembers = t.raw("teamSection.members") as TeamMember[];
   return (
-    <section className="bg-v2-white text-v2-blue pt-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
-      <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
-      <div className="flex flex-col gap-10">
+    <section className="bg-white text-v2-blue pt-14 px-10">
+      <div className="flex flex-col gap-10 lg:max-w-[1279px] mx-auto">
+        <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8">
           {teamMembers.map((member, index) => (
             <div
@@ -218,9 +218,9 @@ const TeamSection = () => {
 const PartnerSection = () => {
   const t = useTranslations("site.about");
   return (
-    <section className="bg-v2-white text-v2-blue pt-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
-      <h2 className="h2 text-pretty mb-8">{t("partner.title")}</h2>
-      <div className="flex flex-col gap-10 lg:flex-row">
+    <section className="bg-white text-v2-blue pt-14 px-10">
+      <div className="flex flex-col gap-10 lg:max-w-[1279px] mx-auto">
+        <h2 className="h2 text-pretty mb-8">{t("partner.title")}</h2>
         <div className="flex flex-col md:flex-row items-center md:items-start lg:items-center border border12 border-v2-blue md:border-none lg:border-solid lg:border-v2-blue rounded-xl">
           <Image
             loading="lazy"
@@ -292,39 +292,41 @@ const StorySection = () => {
     },
   ];
   return (
-    <section className="bg-v2-white py-14 px-10 lg:px-0 lg:max-w-[1279px] mx-auto">
-      <h2 className="h2 text-v2-blue text-pretty mb-8">{t("story.title")}</h2>
-      <div className="flex flex-col px-4 lg:px-10 items-center gap-10 lg:flex-row bg-v2-blue rounded-xl">
-        <p className="py-6 px-4 preserve-lines text-white ">
-          {t.rich("story.paragraph", {
-            strong: (chunks) => <strong>{chunks}</strong>,
-          })}
-        </p>
-        <Image
-          loading="lazy"
-          src="/site/images/about/phone-medias.png"
-          width={494}
-          height={474}
-          alt={t("story.imageAlt")}
-          className="rounded-t-lg mx-auto"
-        />
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row gap-8 mt-10 items-center justify-center">
-        {logoItems.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center gap-2 max-w-[132px]"
-          >
-            <Image
-              loading="lazy"
-              src={item.imgSrc}
-              width={item.width}
-              height={item.height}
-              alt={item.alt}
-              className="object-contain"
-            />
-          </div>
-        ))}
+    <section className="bg-white py-14 px-10">
+      <div className="lg:max-w-[1279px] mx-auto">
+        <h2 className="h2 text-v2-blue text-pretty mb-8">{t("story.title")}</h2>
+        <div className="bg-v2-blue flex flex-col px-4 lg:px-10 items-center gap-10 lg:flex-row rounded-xl">
+          <p className="py-6 px-4 preserve-lines text-white ">
+            {t.rich("story.paragraph", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+          <Image
+            loading="lazy"
+            src="/site/images/about/phone-medias.png"
+            width={494}
+            height={474}
+            alt={t("story.imageAlt")}
+            className="rounded-t-lg mx-auto"
+          />
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row gap-8 mt-10 items-center justify-center">
+          {logoItems.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-2 max-w-[132px]"
+            >
+              <Image
+                loading="lazy"
+                src={item.imgSrc}
+                width={item.width}
+                height={item.height}
+                alt={item.alt}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -335,7 +337,7 @@ const ApproachAndMethodSection = () => {
   const valueItems = t.raw("method.values.items") as string[];
   const stepItems = t.raw("method.steps.items") as string[];
   return (
-    <section id={t("method.sectionId")} className="bg-v2-white text-v2-blue">
+    <section id={t("method.sectionId")} className="bg-white text-v2-blue">
       <div className="pt-14 px-10 lg:px-0 lg:max-w-[642px] mx-auto">
         <h2 className="h2 text-v2-blue text-pretty mb-8">
           {t("method.title")}
