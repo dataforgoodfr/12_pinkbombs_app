@@ -2,8 +2,9 @@
 
 import { useTranslations } from "next-intl";
 
+import { ReduceImpactSection } from "./ReduceImpactSection";
 import type { CalculatorSubmissionResponse } from "./submission";
-import type { Question } from "./types";
+import type { Question, ReduceImpactState } from "./types";
 import Calculator from "../v2/Calculator";
 
 interface ImpactLabel {
@@ -14,9 +15,24 @@ interface ImpactLabel {
 interface ResultScreenProps {
   questions: Question[];
   response: CalculatorSubmissionResponse;
+  reduceImpact: ReduceImpactState;
+  onSelectProduct: (productKey: string) => void;
+  onFrequencyChange: (occurrencePerYear: number) => void;
+  onConfirmFrequency: () => void;
+  onSelectAlternative: (alternative: string) => void;
+  onSetActiveAccordion: (index: 0 | 1 | 2) => void;
 }
 
-export const ResultScreen = ({ questions, response }: ResultScreenProps) => {
+export const ResultScreen = ({
+  questions,
+  response,
+  reduceImpact,
+  onSelectProduct,
+  onFrequencyChange,
+  onConfirmFrequency,
+  onSelectAlternative,
+  onSetActiveAccordion,
+}: ResultScreenProps) => {
   const t = useTranslations("site.calculator");
   const tComponents = useTranslations("site.components.calculator");
   const impactLabels = tComponents.raw("labels") as ImpactLabel[];
@@ -24,40 +40,29 @@ export const ResultScreen = ({ questions, response }: ResultScreenProps) => {
     impactLabels.find(({ label }) => label === response.impact)?.text ??
     response.impact;
 
-  const productOptions = questions[0]?.options ?? [];
-  const variantOptions = (questions[1]?.subQuestions ?? []).flatMap(
-    (subQuestion) => subQuestion.options,
-  );
-
-  const getDisplayLabel = (key: string): string =>
-    productOptions.find(({ name }) => name === key)?.label ??
-    variantOptions.find(({ name }) => name === key)?.label ??
-    key;
-
   return (
     <div className="flex flex-col lg:flex-row justify-center lg:items-center px-4 gap-12 lg:gap-24">
-      <div className="flex flex-col gap-8 justify-center lg:justify-start">
-        <h4 className="h4 text-pretty text-v2-pink text-center lg:text-left">
+      <div className="flex flex-col gap-12 justify-center lg:justify-start">
+        <h3 className="h3 text-pretty text-v2-pink text-center lg:text-left">
           {t("result.title", { impact: impactText })}
-        </h4>
+        </h3>
+        <Calculator label={response.impact} />
         <p className="p-lead text-pretty text-v2-pink text-center lg:text-left">
           {t("result.caption", {
             totalConsoInKg: response.totalConsoInKg.toFixed(1),
           })}
         </p>
-        <div className="flex flex-col rounded-xl bg-v2-pink rotate-[3deg] divide-y-2 divide-black/5 py-6 px-4 text-black mx-auto lg:mx-0 lg:items-start lg:max-w-[50%]">
-          {Object.entries(response.consoPerProduct).map(
-            ([key, weightInKg]) => (
-              <div key={key} className="flex justify-between gap-4 py-2">
-                <p className="p-lead">{getDisplayLabel(key).charAt(0).toUpperCase() + getDisplayLabel(key).slice(1)}</p>
-                <p className="p-lead">{weightInKg.toFixed(1)} kg</p>
-              </div>
-            ),
-          )}
-        </div>
+        <ReduceImpactSection
+          questions={questions}
+          response={response}
+          reduceImpact={reduceImpact}
+          onSelectProduct={onSelectProduct}
+          onFrequencyChange={onFrequencyChange}
+          onConfirmFrequency={onConfirmFrequency}
+          onSelectAlternative={onSelectAlternative}
+          onSetActiveAccordion={onSetActiveAccordion}
+        />
       </div>
-      <Calculator label={response.impact} />
     </div>
   );
 };
-

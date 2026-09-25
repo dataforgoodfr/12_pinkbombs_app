@@ -96,8 +96,32 @@
 
     "result": {
       "title": "Impact : {impact}",
-      "caption": "Soit environ {totalConsoInKg} kg de saumon par an.",
+      "caption": "Vous consommez environ {totalConsoInKg} kg de saumon par an.",
       "productListTitle": "Votre consommation en détail"
+    },
+
+    "reduceImpact": {
+      "title": "Réduire mon impact",
+      "step1": {
+        "title": "Choisissez un plat à remplacer"
+      },
+      "step2": {
+        "title": "Combien de fois par an souhaitez-vous remplacer votre plat ?",
+        "suffix": "fois par an",
+        "confirm": "Valider"
+      },
+      "step3": {
+        "title": "Quelle alternative souhaitez-vous adopter à la place ?"
+      },
+      "falseFriend": "Faux-ami",
+      "alternatives": {
+        "algae": "Algues",
+        "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
+        "shellfish": "Coquillages (origine France de préférence)",
+        "plantBasedProtein": "Protéines Végétales (bio de préférence)",
+        "trout": "Truite",
+        "tuna": "Thon"
+      }
     },
 
     "error": {

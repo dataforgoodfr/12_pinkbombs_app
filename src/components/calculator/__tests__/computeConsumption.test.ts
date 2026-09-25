@@ -44,7 +44,8 @@ describe("computeConsumption", () => {
     const result = computeConsumption(products);
 
     // 2 occurrences * 52 weeks * 150g = 15600g = 15.6kg
-    expect(result.consoPerProduct.pokeBowl).toBeCloseTo(15.6);
+    expect(result.consoPerProduct.pokeBowl.weightInKg).toBeCloseTo(15.6);
+    expect(result.consoPerProduct.pokeBowl.occurrencePerYear).toBe(104);
     expect(result.totalConsoInKg).toBeCloseTo(15.6);
     expect(result.impact).toBe("veryHigh");
   });
@@ -67,9 +68,11 @@ describe("computeConsumption", () => {
     const result = computeConsumption(products);
 
     // 2 occurrences * 12 months * 12 * 6.67g = 1920.96g = 1.92096kg
-    expect(result.consoPerProduct.maki).toBeCloseTo(1.92096, 4);
+    expect(result.consoPerProduct.maki.weightInKg).toBeCloseTo(1.92096, 4);
+    expect(result.consoPerProduct.maki.occurrencePerYear).toBe(24);
     // 2 occurrences * 12 months * 6 * 17.5g = 2520g = 2.52kg
-    expect(result.consoPerProduct.nigiri).toBeCloseTo(2.52, 4);
+    expect(result.consoPerProduct.nigiri.weightInKg).toBeCloseTo(2.52, 4);
+    expect(result.consoPerProduct.nigiri.occurrencePerYear).toBe(24);
     expect(result.consoPerProduct.sashimi).toBeUndefined();
     expect(result.consoPerProduct.sushi).toBeUndefined();
   });
@@ -88,7 +91,8 @@ describe("computeConsumption", () => {
     const result = computeConsumption(products);
 
     // 1 * 52 * 3 * 30g = 4680g = 4.68kg
-    expect(result.consoPerProduct.smokedSalmon).toBeCloseTo(4.68);
+    expect(result.consoPerProduct.smokedSalmon.weightInKg).toBeCloseTo(4.68);
+    expect(result.consoPerProduct.smokedSalmon.occurrencePerYear).toBe(52);
   });
 
   it("uses the custom occurrence for otherWeekly/otherYearly frequencies", () => {
@@ -106,7 +110,7 @@ describe("computeConsumption", () => {
     const result = computeConsumption(products);
 
     // 5 * 1 * 26g = 130g = 0.13kg
-    expect(result.consoPerProduct.appetizer).toBeCloseTo(0.13);
+    expect(result.consoPerProduct.appetizer.weightInKg).toBeCloseTo(0.13);
   });
 
   it("sorts consoPerProduct descending by value and sums totalConsoInKg", () => {
@@ -134,7 +138,8 @@ describe("computeConsumption", () => {
       "appetizer",
     ]);
     expect(result.totalConsoInKg).toBeCloseTo(
-      result.consoPerProduct.pokeBowl + result.consoPerProduct.appetizer,
+      result.consoPerProduct.pokeBowl.weightInKg +
+        result.consoPerProduct.appetizer.weightInKg,
     );
   });
 

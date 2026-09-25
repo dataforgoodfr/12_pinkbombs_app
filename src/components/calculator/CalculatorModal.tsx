@@ -231,6 +231,28 @@ export const CalculatorModal = ({
                         <ResultScreen
                           questions={questions}
                           response={state.calculationResponse}
+                          reduceImpact={state.reduceImpact}
+                          onSelectProduct={(productKey) =>
+                            dispatch({
+                              type: "selectReplacementProduct",
+                              productKey,
+                            })
+                          }
+                          onFrequencyChange={(occurrencePerYear) =>
+                            dispatch({
+                              type: "setReplacementFrequency",
+                              occurrencePerYear,
+                            })
+                          }
+                          onConfirmFrequency={() =>
+                            dispatch({ type: "confirmReplacementFrequency" })
+                          }
+                          onSelectAlternative={(alternative) =>
+                            dispatch({ type: "selectAlternative", alternative })
+                          }
+                          onSetActiveAccordion={(index) =>
+                            dispatch({ type: "setActiveAccordionIndex", index })
+                          }
                         />
                       )}
                     {state.step === CalculatorStep.Error && (

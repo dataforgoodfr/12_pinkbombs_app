@@ -8,8 +8,16 @@ import type { CalculatorSubmissionResponse } from "./submission";
 import {
   type CalculatorState,
   CalculatorStep,
+  type ReduceImpactState,
   type UserProductConsumption,
 } from "./types";
+
+const INITIAL_REDUCE_IMPACT_STATE: ReduceImpactState = {
+  activeAccordionIndex: 0,
+  selectedProductKey: null,
+  replacementFrequencyPerYear: null,
+  selectedAlternative: null,
+};
 
 export const INITIAL_CALCULATOR_STATE: CalculatorState = {
   step: CalculatorStep.Selection,
@@ -18,6 +26,7 @@ export const INITIAL_CALCULATOR_STATE: CalculatorState = {
   products: [],
   calculationResponse: null,
   calculationError: null,
+  reduceImpact: INITIAL_REDUCE_IMPACT_STATE,
 };
 
 export type CalculatorAction =
@@ -41,6 +50,11 @@ export type CalculatorAction =
   | { type: "startLoading" }
   | { type: "calculationSucceeded"; response: CalculatorSubmissionResponse }
   | { type: "calculationFailed"; error: string }
+  | { type: "selectReplacementProduct"; productKey: string }
+  | { type: "setReplacementFrequency"; occurrencePerYear: number }
+  | { type: "confirmReplacementFrequency" }
+  | { type: "selectAlternative"; alternative: string }
+  | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 }
   | { type: "reset" };
 
 const updateProduct = (
@@ -67,6 +81,20 @@ const advanceFromProduct = (state: CalculatorState): CalculatorState => {
   }
 
   return { ...state, step: CalculatorStep.Summary };
+};
+
+const getInitialReduceImpactState = (
+  response: CalculatorSubmissionResponse,
+): ReduceImpactState => {
+  const [selectedProductKey, selectedEntry] =
+    Object.entries(response.consoPerProduct)[0] ?? [];
+
+  return {
+    activeAccordionIndex: 0,
+    selectedProductKey: selectedProductKey ?? null,
+    replacementFrequencyPerYear: selectedEntry?.occurrencePerYear ?? null,
+    selectedAlternative: null,
+  };
 };
 
 export const calculatorReducer = (
@@ -193,12 +221,57 @@ export const calculatorReducer = (
         ...state,
         step: CalculatorStep.Result,
         calculationResponse: action.response,
+        reduceImpact: getInitialReduceImpactState(action.response),
       };
     case "calculationFailed":
       return {
         ...state,
         step: CalculatorStep.Error,
         calculationError: action.error,
+      };
+    case "selectReplacementProduct": {
+      const occurrencePerYear =
+        state.calculationResponse?.consoPerProduct[action.productKey]
+          ?.occurrencePerYear ?? null;
+
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          activeAccordionIndex: 1,
+          selectedProductKey: action.productKey,
+          replacementFrequencyPerYear: occurrencePerYear,
+        },
+      };
+    }
+    case "setReplacementFrequency":
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          replacementFrequencyPerYear: action.occurrencePerYear,
+        },
+      };
+    case "confirmReplacementFrequency":
+      return {
+        ...state,
+        reduceImpact: { ...state.reduceImpact, activeAccordionIndex: 2 },
+      };
+    case "selectAlternative":
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          selectedAlternative: action.alternative,
+        },
+      };
+    case "setActiveAccordionIndex":
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          activeAccordionIndex: action.index,
+        },
       };
     case "reset":
       return INITIAL_CALCULATOR_STATE;

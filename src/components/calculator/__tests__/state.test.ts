@@ -150,7 +150,7 @@ describe("calculator workflow", () => {
   it("moves to the result step when the calculation succeeds", () => {
     const response = {
       totalConsoInKg: 1.5,
-      consoPerProduct: { sushi: 1.5 },
+      consoPerProduct: { sushi: { weightInKg: 1.5, occurrencePerYear: 24 } },
       impact: "medium" as const,
     };
     let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
@@ -164,6 +164,52 @@ describe("calculator workflow", () => {
     expect(state.step).toBe(CalculatorStep.Result);
     expect(state.calculationResponse).toEqual(response);
     expect(isCalculationResponseReady(state)).toBe(true);
+    expect(state.reduceImpact).toEqual({
+      activeAccordionIndex: 0,
+      selectedProductKey: "sushi",
+      replacementFrequencyPerYear: 24,
+      selectedAlternative: null,
+    });
+  });
+
+  it("advances the reduce-impact wizard as the user answers each step", () => {
+    const response = {
+      totalConsoInKg: 3,
+      consoPerProduct: {
+        sushi: { weightInKg: 2, occurrencePerYear: 24 },
+        pokeBowl: { weightInKg: 1, occurrencePerYear: 12 },
+      },
+      impact: "high" as const,
+    };
+    let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
+      type: "calculationSucceeded",
+      response,
+    });
+
+    state = calculatorReducer(state, {
+      type: "selectReplacementProduct",
+      productKey: "pokeBowl",
+    });
+    expect(state.reduceImpact).toMatchObject({
+      activeAccordionIndex: 1,
+      selectedProductKey: "pokeBowl",
+      replacementFrequencyPerYear: 12,
+    });
+
+    state = calculatorReducer(state, {
+      type: "setReplacementFrequency",
+      occurrencePerYear: 5,
+    });
+    expect(state.reduceImpact.replacementFrequencyPerYear).toBe(5);
+
+    state = calculatorReducer(state, { type: "confirmReplacementFrequency" });
+    expect(state.reduceImpact.activeAccordionIndex).toBe(2);
+
+    state = calculatorReducer(state, {
+      type: "selectAlternative",
+      alternative: "algae",
+    });
+    expect(state.reduceImpact.selectedAlternative).toBe("algae");
   });
 
   it("moves to the error step when the calculation fails", () => {

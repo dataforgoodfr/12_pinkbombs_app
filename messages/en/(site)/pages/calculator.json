@@ -103,10 +103,32 @@
 
     "result": {
       "title": "Impact: {impact}",
-      "caption": "That's about {totalConsoInKg} kg of salmon per year.",
+      "caption": "You eat about {totalConsoInKg} kg of salmon per year.",
       "productListTitle": "Your consumption in detail"
     },
-
+    "reduceImpact": {
+      "title": "Reduce my impact",
+      "step1": {
+        "title": "Choose a dish to replace"
+      },
+      "step2": {
+        "title": "How many times a year would you like to replace this dish?",
+        "suffix": "times per year",
+        "confirm": "Confirm"
+      },
+      "step3": {
+        "title": "Which alternative would you like to adopt instead?"
+      },
+      "falseFriend": "False friend",
+      "alternatives": {
+        "algae": "Seaweed",
+        "plantBasedSmokedSalmon": "Plant-based smoked salmon (organic preferred)",
+        "shellfish": "Shellfish (France-origin preferred)",
+        "plantBasedProtein": "Plant-based protein (organic preferred)",
+        "trout": "Trout",
+        "tuna": "Tuna"
+      }
+    },
     "error": {
       "title": "Something went wrong",
       "caption": "We couldn't calculate your impact. Please try again.",

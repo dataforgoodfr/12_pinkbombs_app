@@ -1,4 +1,4 @@
-import { type NextRequest,NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 
 import { computeConsumption } from "@/components/calculator/computeConsumption";
 import type { UserProductConsumption } from "@/components/calculator/types";
@@ -20,7 +20,9 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
     return NextResponse.json(result, { status: 200 });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error: "Internal error" }, { status: 500 });
+    return NextResponse.json(
+      { error: `Internal error: ${(error as Error).message}` },
+      { status: 500 },
+    );
   }
 }

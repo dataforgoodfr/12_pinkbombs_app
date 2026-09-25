@@ -56,4 +56,12 @@ export interface CalculatorState {
   products: UserProductConsumption[];
   calculationResponse: CalculatorSubmissionResponse | null;
   calculationError: string | null;
+  reduceImpact: ReduceImpactState;
+}
+
+export interface ReduceImpactState {
+  activeAccordionIndex: 0 | 1 | 2;
+  selectedProductKey: string | null;
+  replacementFrequencyPerYear: number | null;
+  selectedAlternative: string | null;
 }

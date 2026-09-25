@@ -58,7 +58,7 @@ export const getYearlyOccurrences = (
 
   const periodicity = PERIODICITY_TABLE[frequency];
   const occurrence = CUSTOM_FREQUENCIES.includes(frequency)
-    ? (product.occurrence ?? 0)
+    ? product.occurrence ?? 0
     : periodicity.occurrence;
 
   return occurrence * periodicity.yearPeriodicity;
@@ -66,14 +66,16 @@ export const getYearlyOccurrences = (
 
 export const getProductWeightEntries = (
   product: UserProductConsumption,
-): { key: string; weightInGrams: number }[] => {
+): { key: string; weightInGrams: number; occurrencePerYear: number }[] => {
   const yearlyOccurrences = getYearlyOccurrences(product);
 
   if (product.variants.length === 0) {
     return [
       {
         key: product.name,
-        weightInGrams: yearlyOccurrences * (WEIGHT_TABLE_IN_GRAMS[product.name] ?? 0),
+        weightInGrams:
+          yearlyOccurrences * (WEIGHT_TABLE_IN_GRAMS[product.name] ?? 0),
+        occurrencePerYear: yearlyOccurrences,
       },
     ];
   }
@@ -86,39 +88,55 @@ export const getProductWeightEntries = (
     return {
       key,
       weightInGrams: yearlyOccurrences * variant.count * grammagePerUnitG,
+      occurrencePerYear: yearlyOccurrences,
     };
   });
 };
 
+export interface ProductConsumptionEntry {
+  weightInKg: number;
+  occurrencePerYear: number;
+}
+
 export interface ConsumptionResult {
   totalConsoInKg: number;
-  consoPerProduct: Record<string, number>;
+  consoPerProduct: Record<string, ProductConsumptionEntry>;
   impact: ImpactLevel;
 }
 
 export const computeConsumption = (
   products: UserProductConsumption[],
 ): ConsumptionResult => {
-  const weightInKgByProduct = new Map<string, number>();
+  const entriesByKey = new Map<string, ProductConsumptionEntry>();
 
   for (const product of products) {
     for (const entry of getProductWeightEntries(product)) {
       const weightInKg = entry.weightInGrams * GRAMS_TO_KG;
-      const currentWeightInKg = weightInKgByProduct.get(entry.key) ?? 0;
-      weightInKgByProduct.set(entry.key, currentWeightInKg + weightInKg);
+      const current = entriesByKey.get(entry.key) ?? {
+        weightInKg: 0,
+        occurrencePerYear: 0,
+      };
+      entriesByKey.set(entry.key, {
+        weightInKg: current.weightInKg + weightInKg,
+        occurrencePerYear: current.occurrencePerYear + entry.occurrencePerYear,
+      });
     }
   }
 
   const consoPerProduct = Object.fromEntries(
-    Array.from(weightInKgByProduct.entries())
-      .filter(([, weightInKg]) => weightInKg > 0)
-      .sort(([, a], [, b]) => b - a),
+    Array.from(entriesByKey.entries())
+      .filter(([, entry]) => entry.weightInKg > 0)
+      .sort(([, a], [, b]) => b.weightInKg - a.weightInKg),
   );
 
-  const totalConsoInKg = Array.from(weightInKgByProduct.values()).reduce(
-    (sum, weightInKg) => sum + weightInKg,
+  const totalConsoInKg = Array.from(entriesByKey.values()).reduce(
+    (sum, entry) => sum + entry.weightInKg,
     0,
   );
 
-  return { totalConsoInKg, consoPerProduct, impact: getImpactLevel(totalConsoInKg) };
+  return {
+    totalConsoInKg,
+    consoPerProduct,
+    impact: getImpactLevel(totalConsoInKg),
+  };
 };
