@@ -29,12 +29,12 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-yellow text-v2-blue">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 pb-4 xl:pb-0 lg:pt-40 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 lg:w-[40%]">
+      <div className="flex flex-col lg:flex-row px-12 pt-12 pb-4 xl:pb-0 lg:pt-40 lg:pl-24 xl:pl-60 gap-12 lg:gap-0 justify-center mx-auto">
+        <div className="flex flex-col gap-4 lg:w-[40%] xl:w-full">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
           <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
-        <div className="flex flex-col lg:w-[60%]">
+        <div className="flex flex-col lg:w-[60%] xl:w-full justify-center mx-auto">
           <Image
             loading="lazy"
             src="/site/images/to-be-inspired/intro.svg"
@@ -52,7 +52,7 @@ const IntroSection = () => {
           width={1512}
           height={103}
           alt={t("intro.imageAlt")}
-          className="object-cover4 md:w-[1024px] lg:w-[1440px] xl:w-[2000px]"
+          className="object-cover w-full"
         />
       </div>
     </section>

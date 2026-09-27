@@ -54,7 +54,7 @@ const IntroSection = () => {
           width={1512}
           height={103}
           alt={t("intro.imageAlt")}
-          className="object-cover4 md:w-[1024px] lg:w-[1440px] xl:w-[2000px]"
+          className="object-cover w-full"
         />
       </div>
     </section>
@@ -147,7 +147,7 @@ const DebunkSection = () => {
           width={1510}
           height={48}
           alt=""
-          className="object-cover xl:w-[2000px]"
+          className="object-cover w-full"
         />
       </section>
       <section id="block2" className="bg-white  text-v2-blue">
@@ -181,7 +181,7 @@ const DebunkSection = () => {
           width={1510}
           height={48}
           alt=""
-          className="object-cover xl:w-[2000px]"
+          className="object-cover w-full"
         />
       </section>
       <section id="block3" className="bg-v2-blue text-v2-blue">

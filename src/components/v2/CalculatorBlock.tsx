@@ -59,7 +59,7 @@ const CalculatorBlock = () => {
         width={1512}
         height={53}
         alt={t("calculatorBlock.imageAlt")}
-        className="object-cover xl:w-[2000px]"
+        className="object-cover w-full"
       />
     </section>
   );

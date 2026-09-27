@@ -43,7 +43,7 @@ const IntroSection = () => {
       <div className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 lg:py-0 px-10 md:px-12">
         <div className="relative lg:top-20 col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pt-32 lg:pl-12 xl:pt-152 xl:-ml-[250px]">
           <h1 className="h1 text-pretty lg:max-w-[60%]">{t("intro.title")}</h1>
-          <p className="p-lead text-pretty lg:max-w-[80%] xl:max-w-[100%]">
+          <p className="p-lead text-pretty lg:max-w-[80%] xl:max-w-[60%]">
             {t("intro.caption")}
           </p>
         </div>
@@ -54,7 +54,7 @@ const IntroSection = () => {
         width={1537}
         height={596}
         alt={t("intro.imageAlt")}
-        className="object-contain h-auto mx-auto md:-mt-48 lg:-mt-70 xl:w-[2000px]"
+        className="object-contain h-auto mx-auto md:-mt-48 lg:-mt-70 w-full"
       />
     </section>
   );
@@ -391,7 +391,7 @@ const ApproachAndMethodSection = () => {
         width={1512}
         height={53}
         alt="Divider"
-        className="object-cover xl:w-[2000px]"
+        className="object-cover w-full"
       />
     </section>
   );
