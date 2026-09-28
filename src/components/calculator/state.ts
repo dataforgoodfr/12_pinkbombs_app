@@ -56,7 +56,7 @@ export type CalculatorAction =
   | { type: "confirmReplacementFrequency" }
   | { type: "selectAlternative"; alternative: string }
   | { type: "selectSupplement"; supplement: string }
-  | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 | 3 }
+  | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 | 3 | null }
   | { type: "reset" };
 
 const updateProduct = (
@@ -244,6 +244,8 @@ export const calculatorReducer = (
           activeAccordionIndex: 1,
           selectedProductKey: action.productKey,
           replacementFrequencyPerYear: occurrencePerYear,
+          selectedAlternative: null,
+          selectedSupplement: null,
         },
       };
     }

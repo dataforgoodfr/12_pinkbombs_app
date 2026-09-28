@@ -169,6 +169,7 @@ describe("calculator workflow", () => {
       selectedProductKey: "sushi",
       replacementFrequencyPerYear: 24,
       selectedAlternative: null,
+      selectedSupplement: null,
     });
   });
 
@@ -194,6 +195,8 @@ describe("calculator workflow", () => {
       activeAccordionIndex: 1,
       selectedProductKey: "pokeBowl",
       replacementFrequencyPerYear: 12,
+      selectedAlternative: null,
+      selectedSupplement: null,
     });
 
     state = calculatorReducer(state, {

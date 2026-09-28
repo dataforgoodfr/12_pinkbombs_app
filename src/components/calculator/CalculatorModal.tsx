@@ -166,7 +166,7 @@ export const CalculatorModal = ({
         <div className="flex min-h-full items-end justify-center text-center sm:items-center sm:p-0">
           <DialogPanel
             transition
-            className="relative flex flex-col h-screen w-full px-3 pt-6 pb-10 gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
+            className="relative flex flex-col h-screen w-full pt-6 gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
             <div className="grid shrink-0 grid-cols-2 items-center gap-y-3 px-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-x-4 sm:gap-y-0">
               {state.step !== CalculatorStep.Selection && (
@@ -231,6 +231,8 @@ export const CalculatorModal = ({
                         <ResultScreen
                           questions={questions}
                           response={state.calculationResponse}
+                          products={state.products}
+                          submissionService={submissionService}
                           reduceImpact={state.reduceImpact}
                           onSelectProduct={(productKey) =>
                             dispatch({

@@ -143,6 +143,76 @@
           "algae": "Algae",
           "fishOil": "Fish oil"
         }
+      },
+      "recalculate": {
+        "button": "Calculate my new impact",
+        "loading": "Calculating your new impact...",
+        "error": "We couldn't recalculate your impact. Please try again."
+      }
+    },
+    "newImpact": {
+      "title": "New impact"
+    },
+    "engagements": {
+      "title": "My commitment list:",
+      "dish": "Dish",
+      "perYear": "times per year",
+      "alternative": "Alternative",
+      "supplement": "Supplement",
+      "confirm": "Confirm my commitments",
+      "modify": "Modify my commitments",
+      "alternatives": {
+        "algae": "seaweed",
+        "plantBasedSmokedSalmon": "plant-based smoked salmon",
+        "shellfish": "shellfish",
+        "plantBasedProtein": "plant-based protein",
+        "trout": "trout",
+        "tuna": "tuna"
+      },
+      "supplements": {
+        "flaxSeedOil": "flaxseed oil",
+        "chiaSeeds": "chia seeds",
+        "walnutOil": "walnut oil",
+        "rapeSeedOil": "rapeseed oil",
+        "nut": "nuts",
+        "algae": "seaweed",
+        "fishOil": "fish oil"
+      },
+      "impactChanged": "I will consume {newFrequency, plural, =1 {1 dish} other {# dishes}} of {dish} instead of {oldFrequency, plural, =1 {1 dish} other {# dishes}} per year. I will alternate with {alternative} whenever possible. I will supplement with {supplement}, at a rate of {supplementAmount} g per week.",
+      "impactEqual": "I will continue to consume {oldFrequency, plural, =1 {1 dish} other {# dishes}} of {dish} per year. I will alternate with {alternative} as much as possible and supplement with {supplement}, at a rate of {supplementAmount} g per week."
+    },
+    "badgeQuestions": {
+      "title": "Two more inputs before accessing your badge...",
+      "omega3Consent": "I would like the State to supplement everyday products with omega-3s.",
+      "emailCaption": "Stay up to date with the collective impact of this campaign and all the new ways to take action towards a fairer ocean for all living beings.",
+      "email": "Your email address",
+      "emailPlaceholder": "Enter your email",
+      "emailError": "Please enter a valid email address.",
+      "button": "Confirm and see my badge",
+      "unlockedBadge": "Badge unlocked",
+      "share": "Share"
+    },
+    "badges": {
+      "engagement": "I aim for a frequency of {newFrequency} per year of {dish} instead of {oldFrequency} per year. I replace it with {alternative} whenever possible. I supplement my omega-3 intake with {supplement}.",
+      "neutral": {
+        "title": "Super salmon",
+        "caption": "Well done! You are at the beginning of becoming truly strong, probably, if ambition guides you through this small transformation: a great Atlantic salmon in the making!"
+      },
+      "low": {
+        "title": "Great salmon",
+        "caption": "Well done! You are at the beginning of becoming truly strong, probably, if ambition guides you through this small transformation: a great Atlantic salmon in the making!"
+      },
+      "medium": {
+        "title": "Teenage salmon",
+        "caption": "Well done! You are at the beginning of becoming truly strong, probably, if ambition guides you through this small transformation: a great Atlantic salmon in the making!"
+      },
+      "high": {
+        "title": "Baby salmon",
+        "caption": "You are a salmon fry: you have managed to hatch. Not bad at all, but you will need courage to make it all the way. Hold on, we need salmon like you."
+      },
+      "veryHigh": {
+        "title": "Salmon seed",
+        "caption": "Like an egg among the gravel of a mountain river, you are becoming a beautiful salmon, but the road will be long. You will need dedication and commitment, even when it takes extra effort!"
       }
     },
     "error": {

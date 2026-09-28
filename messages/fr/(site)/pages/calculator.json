@@ -73,9 +73,24 @@
               "name": "sushi",
               "title": "Combien de sushis consommez-vous à chaque occasion\u00a0?",
               "options": [
-                { "defaultValue": 12, "name": "maki", "label": "maki" },
-                { "defaultValue": 6, "name": "nigiri", "label": "nigiri" },
-                { "defaultValue": 0, "name": "sashimi", "label": "sashimi" }
+                {
+                  "defaultValue": 12,
+                  "name": "maki",
+                  "label": "maki",
+                  "prefix": "des"
+                },
+                {
+                  "defaultValue": 6,
+                  "name": "nigiri",
+                  "label": "nigiri",
+                  "prefix": "des"
+                },
+                {
+                  "defaultValue": 0,
+                  "name": "sashimi",
+                  "label": "sashimi",
+                  "prefix": "des"
+                }
               ]
             }
           ]
@@ -137,34 +152,77 @@
           "algae": "Algues",
           "fishOil": "Huile de poisson"
         }
+      },
+      "recalculate": {
+        "button": "Calculer mon nouvel impact",
+        "loading": "Calcul de votre nouvel impact...",
+        "error": "Impossible de recalculer votre impact. Merci de réessayer."
       }
+    },
+    "newImpact": {
+      "title": "Nouvel impact"
+    },
+    "engagements": {
+      "title": "Ma liste d'engagement :",
+      "dish": "Plat",
+      "perYear": "par an",
+      "timesPerYear": "fois par an",
+      "alternative": "Alternative",
+      "supplement": "Supplémentation",
+      "confirm": "Valider mes engagements",
+      "modify": "Modifier mes engagements",
+      "alternatives": {
+        "algae": "des algues",
+        "plantBasedSmokedSalmon": "du simili saumon fumé",
+        "shellfish": "des coquillages",
+        "plantBasedProtein": "des protéines végétales",
+        "trout": "de la truite",
+        "tuna": "du thon"
+      },
+      "supplements": {
+        "flaxSeedOil": "de l'huile de lin",
+        "chiaSeeds": "des graines de chia",
+        "walnutOil": "de l'huile de noix",
+        "rapeSeedOil": "de l'huile de colza",
+        "nut": "des noix",
+        "algae": "des algues",
+        "fishOil": "de l'huile de poisson"
+      },
+      "impactChanged": "Je vais consommer {newFrequency, plural, =1 {1 plat} other {# plats}} de {dish} au lieu de {oldFrequency, plural, =1 {1 plat} other {# plats}} par an. J'alterne avec {alternative} quand c'est possible et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine.",
+      "impactEqual": "Je continue à consommer {oldFrequency, plural, =1 {1 plat} other {# plats}} de {dish} par an. J'alterne au maximum avec {alternative} et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine."
+    },
+    "badgeQuestions": {
+      "title": "Encore deux saisies avant d'accéder à votre badge...",
+      "omega3Consent": "Je souhaite que l'État complémente des produits du quotidien en oméga-3.",
+      "emailCaption": "Restez au courant de l’impact collectif de cette campagne et de tous les nouveaux moyens d’action mis en oeuvre pour avancer vers un océan plus juste pour tous les vivants.",
+      "email": "Votre adresse email",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "emailError": "Veuillez saisir une adresse e-mail valide.",
+      "button": "Valider et voir mon badge",
+      "unlockedBadge": "Badge débloqué",
+      "share": "Partager"
     },
     "badges": {
       "engagement": "Je vise une fréquence de {newFrequency} par an de {dish} au lieu de {oldFrequency} par an. Je remplace par {alternative} quand c'est possible. Je me supplémente en oméga-3 avec {supplement}.",
       "neutral": {
         "title": "Super saumon.e",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
-        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
       },
       "low": {
         "title": "Grand.e saumon.e",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
-        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
       },
       "medium": {
         "title": "Saumon Ado",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
-        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
       },
       "high": {
         "title": "Bébé saumon",
-        "caption": "Vous êtes un.e alevin.e de saumon.e, vous avez réussi l’éclosion. Pas mal du tout mais il va falloir être courageux.se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon comme vous.",
-        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+        "caption": "Vous êtes un.e alevin.e de saumon.e, vous avez réussi l’éclosion. Pas mal du tout mais il va falloir être courageux.se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon comme vous."
       },
       "veryHigh": {
         "title": "Graine de saumon",
-        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort ! ",
-        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort ! "
       }
     },
     "error": {
