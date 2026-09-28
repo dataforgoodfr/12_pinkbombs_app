@@ -60,8 +60,9 @@ export interface CalculatorState {
 }
 
 export interface ReduceImpactState {
-  activeAccordionIndex: 0 | 1 | 2;
+  activeAccordionIndex: 0 | 1 | 2 | 3;
   selectedProductKey: string | null;
   replacementFrequencyPerYear: number | null;
   selectedAlternative: string | null;
+  selectedSupplement: string | null;
 }

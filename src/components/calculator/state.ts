@@ -17,6 +17,7 @@ const INITIAL_REDUCE_IMPACT_STATE: ReduceImpactState = {
   selectedProductKey: null,
   replacementFrequencyPerYear: null,
   selectedAlternative: null,
+  selectedSupplement: null,
 };
 
 export const INITIAL_CALCULATOR_STATE: CalculatorState = {
@@ -54,7 +55,8 @@ export type CalculatorAction =
   | { type: "setReplacementFrequency"; occurrencePerYear: number }
   | { type: "confirmReplacementFrequency" }
   | { type: "selectAlternative"; alternative: string }
-  | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 }
+  | { type: "selectSupplement"; supplement: string }
+  | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 | 3 }
   | { type: "reset" };
 
 const updateProduct = (
@@ -94,6 +96,7 @@ const getInitialReduceImpactState = (
     selectedProductKey: selectedProductKey ?? null,
     replacementFrequencyPerYear: selectedEntry?.occurrencePerYear ?? null,
     selectedAlternative: null,
+    selectedSupplement: null,
   };
 };
 
@@ -263,6 +266,15 @@ export const calculatorReducer = (
         reduceImpact: {
           ...state.reduceImpact,
           selectedAlternative: action.alternative,
+          activeAccordionIndex: 3,
+        },
+      };
+    case "selectSupplement":
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          selectedSupplement: action.supplement,
         },
       };
     case "setActiveAccordionIndex":

@@ -102,31 +102,47 @@
     },
 
     "result": {
-      "title": "Impact: {impact}",
+      "title": "Impact ",
+      "title2": " {impact}",
       "caption": "You eat about {totalConsoInKg} kg of salmon per year.",
       "productListTitle": "Your consumption in detail"
     },
     "reduceImpact": {
       "title": "Reduce my impact",
       "step1": {
-        "title": "Choose a dish to replace"
+        "title": "Pick a dish you currently consume",
+        "caption": "No need to change everything at once, every step counts. How about starting by replacing or reducing one dish?"
       },
       "step2": {
-        "title": "How many times a year would you like to replace this dish?",
+        "title": "Reduce its frequency",
+        "caption": "Currently it's {frequency} times per year. What about tomorrow?",
         "suffix": "times per year",
-        "confirm": "Confirm"
+        "confirm": "Find an alternative"
       },
       "step3": {
-        "title": "Which alternative would you like to adopt instead?"
+        "title": "Find an alternative",
+        "falseFriend": "False friend",
+        "alternatives": {
+          "algae": "Seaweed",
+          "plantBasedSmokedSalmon": "Plant-based smoked salmon (organic preferred)",
+          "shellfish": "Shellfish (France-origin preferred)",
+          "plantBasedProtein": "Plant-based protein (organic preferred)",
+          "trout": "Trout",
+          "tuna": "Tuna"
+        }
       },
-      "falseFriend": "False friend",
-      "alternatives": {
-        "algae": "Seaweed",
-        "plantBasedSmokedSalmon": "Plant-based smoked salmon (organic preferred)",
-        "shellfish": "Shellfish (France-origin preferred)",
-        "plantBasedProtein": "Plant-based protein (organic preferred)",
-        "trout": "Trout",
-        "tuna": "Tuna"
+      "step4": {
+        "title": "Choose an omega-3 supplement",
+        "falseFriend": "False friend",
+        "alternatives": {
+          "flaxSeedOil": "Flaxseed Oil",
+          "chiaSeeds": "Chia Seeds",
+          "walnutOil": "Walnut Oil",
+          "rapeSeedOil": "Rapeseed Oil",
+          "nut": "Nut",
+          "algae": "Algae",
+          "fishOil": "Fish oil"
+        }
       }
     },
     "error": {

@@ -95,7 +95,8 @@
     },
 
     "result": {
-      "title": "Impact : {impact}",
+      "title": "Impact ",
+      "title2": " {impact}",
       "caption": "Vous consommez environ {totalConsoInKg} kg de saumon par an.",
       "productListTitle": "Votre consommation en détail"
     },
@@ -103,27 +104,69 @@
     "reduceImpact": {
       "title": "Réduire mon impact",
       "step1": {
-        "title": "Choisissez un plat à remplacer"
+        "title": "Choisir un plat consommé actuellement",
+        "caption": "Pas besoin de tout changer d'un coup, chaque étape compte. Et si on commençait par remplacer ou diminuer un premier plat ?"
       },
       "step2": {
-        "title": "Combien de fois par an souhaitez-vous remplacer votre plat ?",
+        "title": "Diminuer sa fréquence",
         "suffix": "fois par an",
-        "confirm": "Valider"
+        "caption": "Aujourd’hui c’est {frequency} x par an. Demain ? ",
+        "confirm": "Trouver une alternative"
       },
       "step3": {
-        "title": "Quelle alternative souhaitez-vous adopter à la place ?"
+        "title": "Trouver une alternative",
+        "falseFriend": "Faux-ami",
+        "alternatives": {
+          "algae": "Algues",
+          "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
+          "shellfish": "Coquillages (origine France de préférence)",
+          "plantBasedProtein": "Protéines Végétales (bio de préférence)",
+          "trout": "Truite",
+          "tuna": "Thon"
+        }
       },
-      "falseFriend": "Faux-ami",
-      "alternatives": {
-        "algae": "Algues",
-        "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
-        "shellfish": "Coquillages (origine France de préférence)",
-        "plantBasedProtein": "Protéines Végétales (bio de préférence)",
-        "trout": "Truite",
-        "tuna": "Thon"
+      "step4": {
+        "title": "Choisir une supplémentation en oméga-3",
+        "falseFriend": "Faux-ami",
+        "alternatives": {
+          "flaxSeedOil": "Huile de lin",
+          "chiaSeeds": "Graines de chia",
+          "walnutOil": "Huile de noix",
+          "rapeSeedOil": "Huile de colza",
+          "nut": "Noix",
+          "algae": "Algues",
+          "fishOil": "Huile de poisson"
+        }
       }
     },
-
+    "badges": {
+      "engagement": "Je vise une fréquence de {newFrequency} par an de {dish} au lieu de {oldFrequency} par an. Je remplace par {alternative} quand c'est possible. Je me supplémente en oméga-3 avec {supplement}.",
+      "neutral": {
+        "title": "Super saumon.e",
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
+        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+      },
+      "low": {
+        "title": "Grand.e saumon.e",
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
+        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+      },
+      "medium": {
+        "title": "Saumon Ado",
+        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !",
+        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+      },
+      "high": {
+        "title": "Bébé saumon",
+        "caption": "Vous êtes un.e alevin.e de saumon.e, vous avez réussi l’éclosion. Pas mal du tout mais il va falloir être courageux.se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon comme vous.",
+        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+      },
+      "veryHigh": {
+        "title": "Graine de saumon",
+        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort ! ",
+        "impact": "Impact ramené de {oldImpact} à {newImpact}"
+      }
+    },
     "error": {
       "title": "Une erreur est survenue",
       "caption": "Impossible de calculer votre impact. Merci de réessayer.",

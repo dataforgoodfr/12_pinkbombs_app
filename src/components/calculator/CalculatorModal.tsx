@@ -250,6 +250,9 @@ export const CalculatorModal = ({
                           onSelectAlternative={(alternative) =>
                             dispatch({ type: "selectAlternative", alternative })
                           }
+                          onSelectSupplement={(supplement) =>
+                            dispatch({ type: "selectSupplement", supplement })
+                          }
                           onSetActiveAccordion={(index) =>
                             dispatch({ type: "setActiveAccordionIndex", index })
                           }

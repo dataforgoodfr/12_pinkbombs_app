@@ -15,7 +15,7 @@ const frequencyInputClassName = `
   focus:text-v2-pink
 `;
 
-const ALTERNATIVES: { key: string; disabled?: boolean }[] = [
+const STEP_3_ALTERNATIVES: { key: string; disabled?: boolean }[] = [
   { key: "algae" },
   { key: "plantBasedSmokedSalmon" },
   { key: "shellfish" },
@@ -23,6 +23,17 @@ const ALTERNATIVES: { key: string; disabled?: boolean }[] = [
   { key: "trout", disabled: true },
   { key: "tuna", disabled: true },
 ];
+
+const STEP_4_ALTERNATIVES: { key: string; disabled?: boolean }[] = [
+  { key: "flaxSeedOil" },
+  { key: "chiaSeeds" },
+  { key: "walnutOil" },
+  { key: "rapeSeedOil" },
+  { key: "nut" },
+  { key: "algae" },
+  { key: "fishOil", disabled: true },
+];
+
 
 interface ReduceImpactSectionProps {
   questions: Question[];
@@ -32,7 +43,8 @@ interface ReduceImpactSectionProps {
   onFrequencyChange: (occurrencePerYear: number) => void;
   onConfirmFrequency: () => void;
   onSelectAlternative: (alternative: string) => void;
-  onSetActiveAccordion: (index: 0 | 1 | 2) => void;
+  onSelectSupplement: (supplement: string) => void;
+  onSetActiveAccordion: (index: 0 | 1 | 2 | 3) => void;
 }
 
 export const ReduceImpactSection = ({
@@ -43,6 +55,7 @@ export const ReduceImpactSection = ({
   onFrequencyChange,
   onConfirmFrequency,
   onSelectAlternative,
+  onSelectSupplement,
   onSetActiveAccordion,
 }: ReduceImpactSectionProps) => {
   const t = useTranslations("site.calculator");
@@ -59,39 +72,43 @@ export const ReduceImpactSection = ({
       <h3 className="h3 text-pretty text-v2-pink text-center lg:text-left">
         {t("reduceImpact.title")}
       </h3>
-
       <div className="flex flex-col gap-4">
         <AccordionItem
           title={t("reduceImpact.step1.title")}
           isActive={reduceImpact.activeAccordionIndex === 0}
           onClick={() => onSetActiveAccordion(0)}
         >
-          <div className="flex flex-col gap-2">
-            {Object.entries(response.consoPerProduct).map(([key, entry]) => (
-              <label
-                key={key}
-                className="cursor-pointer flex items-center gap-4"
-              >
-                <input
-                  id={`replacement-product-${key}`}
-                  name="replacement-product"
-                  type="radio"
-                  checked={reduceImpact.selectedProductKey === key}
-                  onChange={() => onSelectProduct(key)}
-                  className="
-                    cursor-pointer appearance-none w-6 h-6 p-1 rounded-full
-                    border border-v2-magenta bg-v2-pink checked:bg-v2-magenta
-                    checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
-                    focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
-                    focus:bg-v2-magenta focus:text-v2-magenta"
-                />
-                <span className="p-lead text-v2-pink">
-                  {getDisplayLabel(key).charAt(0).toUpperCase() +
-                    getDisplayLabel(key).slice(1)}{" "}
-                  ({Math.round(entry.weightInKg)}kgs)
-                </span>
-              </label>
-            ))}
+          <div className="flex flex-col gap-4">
+            <p className="p-lead text-pretty text-v2-pink">
+              {t("reduceImpact.step1.caption")}
+            </p>
+            <div className="flex flex-col gap-2">
+              {Object.entries(response.consoPerProduct).map(([key, entry]) => (
+                <label
+                  key={key}
+                  className="cursor-pointer flex items-center gap-4"
+                >
+                  <input
+                    id={`replacement-product-${key}`}
+                    name="replacement-product"
+                    type="radio"
+                    checked={reduceImpact.selectedProductKey === key}
+                    onChange={() => onSelectProduct(key)}
+                    className="
+                      cursor-pointer appearance-none w-6 h-6 p-1 rounded-full
+                      border border-v2-magenta bg-v2-pink checked:bg-v2-magenta
+                      checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
+                      focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
+                      focus:bg-v2-magenta focus:text-v2-magenta"
+                  />
+                  <span className="p-lead text-v2-pink">
+                    {getDisplayLabel(key).charAt(0).toUpperCase() +
+                      getDisplayLabel(key).slice(1)}{" "}
+                    ({Math.round(entry.weightInKg)}kgs)
+                  </span>
+                </label>
+              ))}
+            </div>
           </div>
         </AccordionItem>
 
@@ -101,6 +118,9 @@ export const ReduceImpactSection = ({
           onClick={() => onSetActiveAccordion(1)}
         >
           <div className="flex flex-col gap-4">
+            <p className="p-lead text-pretty text-v2-pink">
+              {t("reduceImpact.step2.caption", { frequency: `${response.consoPerProduct[reduceImpact.selectedProductKey ?? ""]?.occurrencePerYear ?? 1}` })}
+            </p>
             <label className="flex gap-2 items-end">
               <input
                 id="replacement-frequency"
@@ -139,7 +159,7 @@ export const ReduceImpactSection = ({
           onClick={() => onSetActiveAccordion(2)}
         >
           <div className="flex flex-col gap-2">
-            {ALTERNATIVES.map(({ key, disabled }) => (
+            {STEP_3_ALTERNATIVES.map(({ key, disabled }) => (
               <label
                 key={key}
                 className={`flex items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
@@ -160,11 +180,50 @@ export const ReduceImpactSection = ({
                   disabled:cursor-not-allowed disabled:hover:bg-v2-pink"
                 />
                 <span className="p-lead text-v2-pink">
-                  {t(`reduceImpact.alternatives.${key}`)}
+                  {t(`reduceImpact.step3.alternatives.${key}`)}
                 </span>
                 {disabled && (
                   <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
-                    {t("reduceImpact.falseFriend")}
+                    {t("reduceImpact.step3.falseFriend")}
+                  </span>
+                )}
+              </label>
+            ))}
+          </div>
+        </AccordionItem>
+
+        <AccordionItem
+          title={t("reduceImpact.step4.title")}
+          isActive={reduceImpact.activeAccordionIndex === 3}
+          onClick={() => onSetActiveAccordion(3)}
+        >
+          <div className="flex flex-col gap-2">
+            {STEP_4_ALTERNATIVES.map(({ key, disabled }) => (
+              <label
+                key={key}
+                className={`flex items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+              >
+                <input
+                  id={`alternative-${key}`}
+                  name="alternative"
+                  type="radio"
+                  disabled={disabled}
+                  checked={reduceImpact.selectedSupplement === key}
+                  onChange={() => onSelectSupplement(key)}
+                  className="
+                  cursor-pointer appearance-none w-6 h-6 p-1 rounded-full
+                  border border-v2-magenta bg-v2-pink checked:bg-v2-magenta
+                  checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
+                  focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
+                  focus:bg-v2-magenta focus:text-v2-magenta
+                  disabled:cursor-not-allowed disabled:hover:bg-v2-pink"
+                />
+                <span className="p-lead text-v2-pink">
+                  {t(`reduceImpact.step4.alternatives.${key}`)}
+                </span>
+                {disabled && (
+                  <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
+                    {t("reduceImpact.step4.falseFriend")}
                   </span>
                 )}
               </label>
