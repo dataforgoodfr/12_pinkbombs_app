@@ -2,8 +2,9 @@
 
 import { useTranslations } from "next-intl";
 
+import type { CalculatorSubmissionResponse } from "@/lib/calculator/submission";
+
 import type { ImpactLabel } from "./ResultScreen";
-import type { CalculatorSubmissionResponse } from "./submission";
 import Calculator from "../v2/Calculator";
 
 interface DesktopImpactPanelProps {

@@ -1,7 +1,10 @@
 "use client";
 
-import { getDefaultVariants } from "./constants";
-import type { QuestionOption, UserProductConsumption } from "./types";
+import { getDefaultVariants } from "@/lib/calculator/constants";
+import type {
+  QuestionOption,
+  UserProductConsumption,
+} from "@/lib/calculator/types";
 
 interface ProductSelectionQuestionProps {
   options: QuestionOption[];

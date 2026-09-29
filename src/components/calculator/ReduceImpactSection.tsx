@@ -4,25 +4,26 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
+import { createDisplayLabelLookup } from "@/lib/calculator/getDisplayLabel";
+import { normalizeOccurrence } from "@/lib/calculator/state";
+import {
+  type CalculatorSubmissionResponse,
+  type CalculatorSubmissionService,
+} from "@/lib/calculator/submission";
+import type {
+  Question,
+  ReduceImpactState,
+  UserProductConsumption,
+} from "@/lib/calculator/types";
+import { useReduceImpactFlow } from "@/lib/calculator/useReduceImpactFlow";
+import { useIsMobile } from "@/hooks/useIsMobile";
+
 import type { ImpactLabel } from "@/components/calculator/ResultScreen";
 
 import { AccordionItem } from "./AccordionItem";
 import { AccordionRadio } from "./AccordionRadio";
 import { DesktopImpactPanel } from "./DesktopImpactPanel";
-import { createDisplayLabelLookup } from "./getDisplayLabel";
-import { normalizeOccurrence } from "./state";
-import {
-  buildReducedImpactProducts,
-  type CalculatorSubmissionResponse,
-  type CalculatorSubmissionService,
-} from "./submission";
-import type {
-  Question,
-  ReduceImpactState,
-  UserProductConsumption,
-} from "./types";
 import Calculator from "../v2/Calculator";
-import { useIsMobile } from "@/hooks/useIsMobile";
 
 const frequencyInputClassName = `
   w-12 p-1 border-0 border-b-2 border-dotted border-v2-pink bg-v2-blue
@@ -35,11 +36,6 @@ const formatConsumptionWeight = (weightInKg: number) =>
   weightInKg >= 1
     ? `${weightInKg.toFixed(1)} kg`
     : `${Math.round(weightInKg * 1000)} g`;
-
-const wait = (durationMs: number) =>
-  new Promise((resolve) => setTimeout(resolve, durationMs));
-
-const PRODUCT_SELECTION_DELAY_MS = 1500;
 
 const STEP_3_ALTERNATIVES: { key: string; disabled?: boolean }[] = [
   { key: "algae" },
@@ -90,38 +86,58 @@ export const ReduceImpactSection = ({
   const t = useTranslations("site.calculator");
   const isMobile = useIsMobile();
   const getDisplayLabel = createDisplayLabelLookup(questions);
-  const [newResponse, setNewResponse] =
-    React.useState<CalculatorSubmissionResponse | null>(null);
-  const [isCalculating, setIsCalculating] = React.useState(false);
-  const [calculationError, setCalculationError] = React.useState<string | null>(
-    null,
+  const selectedEntry = reduceImpact.selectedProductKey
+    ? response.consoPerProduct[reduceImpact.selectedProductKey]
+    : undefined;
+  const maxFrequency = selectedEntry?.occurrencePerYear ?? 1;
+  const frequency = reduceImpact.replacementFrequencyPerYear ?? maxFrequency;
+  const selectedAlternative = reduceImpact.selectedAlternative;
+  const selectedSupplement = reduceImpact.selectedSupplement;
+  const canCalculate = Boolean(
+    reduceImpact.selectedProductKey &&
+      reduceImpact.replacementFrequencyPerYear !== null &&
+      selectedAlternative &&
+      selectedSupplement,
   );
-  const [engagementsConfirmed, setEngagementsConfirmed] = React.useState(false);
-  const [hasOmega3Consent, setHasOmega3Consent] = React.useState(false);
-  const [email, setEmail] = React.useState("");
-  const [emailError, setEmailError] = React.useState<string | null>(null);
-  const [badgeVisible, setBadgeVisible] = React.useState(false);
-  const badgeQuestionsRef = React.useRef<HTMLDivElement>(null);
-  const badgeRef = React.useRef<HTMLDivElement>(null);
-  const newResponseRef = React.useRef<HTMLDivElement>(null);
-  const pendingProductTimeoutRef = React.useRef<ReturnType<
-    typeof setTimeout
-  > | null>(null);
-  const pendingAlternativeTimeoutRef = React.useRef<ReturnType<
-    typeof setTimeout
-  > | null>(null);
-  const pendingSupplementTimeoutRef = React.useRef<ReturnType<
-    typeof setTimeout
-  > | null>(null);
-  const [pendingProductKey, setPendingProductKey] = React.useState<
-    string | null
-  >(null);
-  const [pendingAlternative, setPendingAlternative] = React.useState<
-    string | null
-  >(null);
-  const [pendingSupplement, setPendingSupplement] = React.useState<
-    string | null
-  >(null);
+  const emailErrorMessage = t("badgeQuestions.emailError");
+  const {
+    newResponse,
+    isCalculating,
+    calculationError,
+    engagementsConfirmed,
+    setEngagementsConfirmed,
+    hasOmega3Consent,
+    setHasOmega3Consent,
+    email,
+    emailError,
+    onEmailChange,
+    validateEmail,
+    badgeVisible,
+    showBadge,
+    badgeQuestionsRef,
+    badgeRef,
+    newResponseRef,
+    pendingProductKey,
+    pendingAlternative,
+    pendingSupplement,
+    calculateNewImpact,
+    confirmFrequency,
+    selectProductWithDelay,
+    selectAlternativeWithDelay,
+    selectSupplementWithDelay,
+  } = useReduceImpactFlow({
+    canCalculate,
+    frequency,
+    isMobile,
+    products,
+    selectedProductKey: reduceImpact.selectedProductKey,
+    submissionService,
+    onConfirmFrequency,
+    onSelectProduct,
+    onSelectAlternative,
+    onSelectSupplement,
+    onSetActiveAccordion,
+  });
   const tComponents = useTranslations("site.components.calculator");
   const impactLabels = tComponents.raw("labels") as ImpactLabel[];
   const oldImpact = impactLabels.find(({ label }) => {
@@ -136,20 +152,6 @@ export const ReduceImpactSection = ({
     }
     return false;
   });
-
-  const selectedEntry = reduceImpact.selectedProductKey
-    ? response.consoPerProduct[reduceImpact.selectedProductKey]
-    : undefined;
-  const maxFrequency = selectedEntry?.occurrencePerYear ?? 1;
-  const frequency = reduceImpact.replacementFrequencyPerYear ?? maxFrequency;
-  const selectedAlternative = reduceImpact.selectedAlternative;
-  const selectedSupplement = reduceImpact.selectedSupplement;
-  const canCalculate = Boolean(
-    reduceImpact.selectedProductKey &&
-      reduceImpact.replacementFrequencyPerYear !== null &&
-      selectedAlternative &&
-      selectedSupplement,
-  );
   const selectedProductLabel = reduceImpact.selectedProductKey
     ? getDisplayLabel(reduceImpact.selectedProductKey)
     : "";
@@ -161,7 +163,7 @@ export const ReduceImpactSection = ({
     ? t(`engagements.supplements.${selectedSupplement}`)
     : "";
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
-  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const confirmEngagements = () => setEngagementsConfirmed(true);
 
   React.useEffect(() => {
     if (newResponse && !isCalculating) {
@@ -169,7 +171,7 @@ export const ReduceImpactSection = ({
         newResponseRef.current?.scrollIntoView({ behavior: "smooth" });
       });
     }
-  }, [newResponse, isCalculating]);
+  }, [newResponse, isCalculating, newResponseRef]);
 
   React.useEffect(() => {
     if (badgeVisible) {
@@ -177,7 +179,7 @@ export const ReduceImpactSection = ({
         badgeRef.current?.scrollIntoView({ behavior: "smooth" });
       });
     }
-  }, [badgeVisible]);
+  }, [badgeVisible, badgeRef]);
 
   React.useEffect(() => {
     if (engagementsConfirmed) {
@@ -188,122 +190,7 @@ export const ReduceImpactSection = ({
         });
       });
     }
-  }, [engagementsConfirmed]);
-
-  React.useEffect(
-    () => () => {
-      if (pendingProductTimeoutRef.current) {
-        clearTimeout(pendingProductTimeoutRef.current);
-      }
-      if (pendingAlternativeTimeoutRef.current) {
-        clearTimeout(pendingAlternativeTimeoutRef.current);
-      }
-      if (pendingSupplementTimeoutRef.current) {
-        clearTimeout(pendingSupplementTimeoutRef.current);
-      }
-    },
-    [],
-  );
-
-  const calculateReducedImpact = async () => {
-    if (!reduceImpact.selectedProductKey) return;
-
-    setIsCalculating(true);
-    setCalculationError(null);
-    setEngagementsConfirmed(false);
-    setBadgeVisible(false);
-
-    const [result] = await Promise.all([
-      submissionService({
-        products: buildReducedImpactProducts(products, {
-          selectedProductKey: reduceImpact.selectedProductKey,
-          replacementFrequencyPerYear: frequency,
-        }),
-      }),
-      wait(1000),
-    ]);
-
-    if (typeof result === "string") {
-      setCalculationError(result);
-    } else {
-      setNewResponse(result);
-    }
-
-    setIsCalculating(false);
-  };
-
-  const calculateNewImpact = async () => {
-    if (!canCalculate) return;
-    await calculateReducedImpact();
-  };
-
-  const confirmFrequency = () => {
-    onConfirmFrequency();
-    if (!isMobile) {
-      void calculateReducedImpact();
-    }
-  };
-
-  const confirmEngagements = () => {
-    setEngagementsConfirmed(true);
-  };
-
-  const validateEmail = () => {
-    if (email && !isEmailValid) {
-      setEmailError(t("badgeQuestions.emailError"));
-      return false;
-    }
-
-    setEmailError(null);
-    return true;
-  };
-
-  const showBadge = () => {
-    if (!validateEmail()) return;
-    setBadgeVisible(true);
-  };
-
-  const selectProductWithDelay = (productKey: string) => {
-    if (pendingProductTimeoutRef.current) {
-      clearTimeout(pendingProductTimeoutRef.current);
-    }
-
-    setPendingProductKey(productKey);
-    pendingProductTimeoutRef.current = setTimeout(() => {
-      onSelectProduct(productKey);
-      onSetActiveAccordion(1);
-      pendingProductTimeoutRef.current = null;
-      setPendingProductKey(null);
-    }, PRODUCT_SELECTION_DELAY_MS);
-  };
-
-  const selectAlternativeWithDelay = (alternative: string) => {
-    if (pendingAlternativeTimeoutRef.current) {
-      clearTimeout(pendingAlternativeTimeoutRef.current);
-    }
-
-    setPendingAlternative(alternative);
-    pendingAlternativeTimeoutRef.current = setTimeout(() => {
-      onSelectAlternative(alternative);
-      onSetActiveAccordion(3);
-      pendingAlternativeTimeoutRef.current = null;
-      setPendingAlternative(null);
-    }, PRODUCT_SELECTION_DELAY_MS);
-  };
-
-  const selectSupplementWithDelay = (supplement: string) => {
-    if (pendingSupplementTimeoutRef.current) {
-      clearTimeout(pendingSupplementTimeoutRef.current);
-    }
-
-    setPendingSupplement(supplement);
-    pendingSupplementTimeoutRef.current = setTimeout(() => {
-      onSelectSupplement(supplement);
-      onSetActiveAccordion(null);
-      pendingSupplementTimeoutRef.current = null;
-      setPendingSupplement(null);
-    }, PRODUCT_SELECTION_DELAY_MS);
-  };
+  }, [engagementsConfirmed, badgeQuestionsRef]);
 
   return (
     <div className="flex flex-col gap-8">
@@ -326,29 +213,31 @@ export const ReduceImpactSection = ({
                 {t("reduceImpact.step1.caption")}
               </p>
               <div className="p-4 flex flex-col gap-2">
-                {Object.entries(response.consoPerProduct).map(([key, entry]) => (
-                  <label
-                    key={key}
-                    className="cursor-pointer flex items-center gap-4"
-                  >
-                    <AccordionRadio
-                      id={`replacement-product-${key}`}
-                      name="replacement-product"
-                      checked={
-                        pendingProductKey !== null
-                          ? pendingProductKey === key
-                          : reduceImpact.selectedProductKey === key
-                      }
-                      onChange={() => selectProductWithDelay(key)}
-                    />
-                    <span className="p-lead text-v2-pink">
-                      {getDisplayLabel(key).charAt(0).toUpperCase() +
-                        getDisplayLabel(key).slice(1)}{" "}
-                      ({formatConsumptionWeight(entry.weightInKg)}{" "}
-                      {t("engagements.perYear")})
-                    </span>
-                  </label>
-                ))}
+                {Object.entries(response.consoPerProduct).map(
+                  ([key, entry]) => (
+                    <label
+                      key={key}
+                      className="cursor-pointer flex items-center gap-4"
+                    >
+                      <AccordionRadio
+                        id={`replacement-product-${key}`}
+                        name="replacement-product"
+                        checked={
+                          pendingProductKey !== null
+                            ? pendingProductKey === key
+                            : reduceImpact.selectedProductKey === key
+                        }
+                        onChange={() => selectProductWithDelay(key)}
+                      />
+                      <span className="p-lead text-v2-pink">
+                        {getDisplayLabel(key).charAt(0).toUpperCase() +
+                          getDisplayLabel(key).slice(1)}{" "}
+                        ({formatConsumptionWeight(entry.weightInKg)}{" "}
+                        {t("engagements.perYear")})
+                      </span>
+                    </label>
+                  ),
+                )}
               </div>
             </div>
           </AccordionItem>
@@ -539,7 +428,9 @@ export const ReduceImpactSection = ({
                   <p className="p-lead">{t("engagements.supplement")}</p>
                   <h4 className="h4 text-v2-blue">
                     {selectedSupplement
-                      ? t(`reduceImpact.step4.alternatives.${selectedSupplement}`)
+                      ? t(
+                          `reduceImpact.step4.alternatives.${selectedSupplement}`,
+                        )
                       : ""}
                   </h4>
                 </div>
@@ -603,64 +494,65 @@ export const ReduceImpactSection = ({
               <h3 className="h4 mt-8 lg:mt-12 text-center text-v2-blue">
                 {t("badgeQuestions.title")}
               </h3>
-            <label className="flex items-start gap-3 p-lead">
-              <input
-                type="checkbox"
-                checked={hasOmega3Consent}
-                onChange={(event) => setHasOmega3Consent(event.target.checked)}
-                className="
+              <label className="flex items-start gap-3 p-lead">
+                <input
+                  type="checkbox"
+                  checked={hasOmega3Consent}
+                  onChange={(event) =>
+                    setHasOmega3Consent(event.target.checked)
+                  }
+                  className="
                   cursor-pointer appearance-none w-6 h-6 p-1
                   border border-v2-magenta bg-white checked:bg-v2-magenta
                   checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
                   focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
                   focus:bg-v2-magenta focus:text-v2-magenta"
-              />
-              <span>{t("badgeQuestions.omega3Consent")}</span>
-            </label>
-            <label className="flex flex-col gap-3 p-lead">
-              <span className="text-pretty">{t("badgeQuestions.emailCaption")}</span>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                aria-label={t("badgeQuestions.email")}
-                value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                  setEmailError(null);
-                }}
-                onBlur={validateEmail}
-                placeholder={t("badgeQuestions.emailPlaceholder")}
-                className="inline-block h-10 w-full border-0 rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs lg:placeholder:text-sm focus:ring focus:ring-v2-magenta"
-                suppressHydrationWarning
-              />
-            </label>
-            {emailError && (
-              <p role="alert" className="text-sm text-v2-red">
-                {emailError}
-              </p>
-            )}
-
-            <button
-              type="button"
-              onClick={showBadge}
-              disabled={!!emailError}
-              className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.9849 10.6445L19.5327 12L17.9849 13.3545L8.38525 21.7539L6.01416 19.0449L14.0659 11.999L6.01416 4.9541L8.38525 2.24512L17.9849 10.6445Z"
-                  fill="#E82D04"
                 />
-              </svg>
-              {t("badgeQuestions.button")}
-            </button>
+                <span>{t("badgeQuestions.omega3Consent")}</span>
+              </label>
+              <label className="flex flex-col gap-3 p-lead">
+                <span className="text-pretty">
+                  {t("badgeQuestions.emailCaption")}
+                </span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  aria-label={t("badgeQuestions.email")}
+                  value={email}
+                  onChange={(event) => onEmailChange(event.target.value)}
+                  onBlur={() => validateEmail(emailErrorMessage)}
+                  placeholder={t("badgeQuestions.emailPlaceholder")}
+                  className="inline-block h-10 w-full border-0 rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs lg:placeholder:text-sm focus:ring focus:ring-v2-magenta"
+                  suppressHydrationWarning
+                />
+              </label>
+              {emailError && (
+                <p role="alert" className="text-sm text-v2-red">
+                  {emailError}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={() => showBadge(emailErrorMessage)}
+                disabled={!!emailError}
+                className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.9849 10.6445L19.5327 12L17.9849 13.3545L8.38525 21.7539L6.01416 19.0449L14.0659 11.999L6.01416 4.9541L8.38525 2.24512L17.9849 10.6445Z"
+                    fill="#E82D04"
+                  />
+                </svg>
+                {t("badgeQuestions.button")}
+              </button>
             </div>
             <Image
               loading="lazy"
@@ -673,11 +565,14 @@ export const ReduceImpactSection = ({
             />
           </div>
           {badgeVisible && (
-            <div ref={badgeRef} className="flex flex-col lg:bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16">
-              <h2 className="h2 text-center text-v2-blue">{t("badgeQuestions.unlockedBadge")}</h2>
-              <div
-                className="flex flex-col items-center gap-5 bg-white p-6 text-v2-blue rounded-xl mx-10 mb-10 py-20 px-6 md:px-12 lg:mx-auto lg:w-full lg:max-w-2xl"
-              >
+            <div
+              ref={badgeRef}
+              className="flex flex-col lg:bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16"
+            >
+              <h2 className="h2 text-center text-v2-blue">
+                {t("badgeQuestions.unlockedBadge")}
+              </h2>
+              <div className="flex flex-col items-center gap-5 bg-white p-6 text-v2-blue rounded-xl mx-10 mb-10 py-20 px-6 md:px-12 lg:mx-auto lg:w-full lg:max-w-2xl">
                 <Image
                   src={`/site/images/calculator/badges/${newResponse.impact}.svg`}
                   alt={t(`badges.${newResponse.impact}.title`)}
@@ -704,12 +599,12 @@ export const ReduceImpactSection = ({
                   {t(
                     `engagements.${oldFrequency === frequency ? "impactEqual" : "impactChanged"}`,
                     {
-                    newFrequency: frequency,
-                    oldFrequency,
-                    dish: engagementDish,
-                    alternative: engagementAlternative,
-                    supplement: engagementSupplement,
-                    supplementAmount: 15,
+                      newFrequency: frequency,
+                      oldFrequency,
+                      dish: engagementDish,
+                      alternative: engagementAlternative,
+                      supplement: engagementSupplement,
+                      supplementAmount: 15,
                     },
                   )}
                   "

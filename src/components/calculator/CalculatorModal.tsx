@@ -11,19 +11,20 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
+import {
+  type CalculatorSubmissionService,
+  submitProductToCalculator,
+} from "@/lib/calculator/submission";
+import type { Question } from "@/lib/calculator/types";
+import { CalculatorStep } from "@/lib/calculator/types";
+import { useCalculator } from "@/lib/calculator/useCalculator";
+
 import { ErrorScreen } from "./ErrorScreen";
 import { FrequencyQuestion } from "./FrequencyQuestion";
 import { LoadingScreen } from "./LoadingScreen";
 import { ProductSelectionQuestion } from "./ProductSelectionQuestion";
 import { ResultScreen } from "./ResultScreen";
-import {
-  type CalculatorSubmissionService,
-  submitProductToCalculator,
-} from "./submission";
 import { SummaryScreen } from "./SummaryScreen";
-import type { Question } from "./types";
-import { CalculatorStep } from "./types";
-import { useCalculator } from "./useCalculator";
 
 interface CalculatorModalProps {
   open: boolean;

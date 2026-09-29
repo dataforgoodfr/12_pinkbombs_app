@@ -1,4 +1,4 @@
-import { describe, expect, it, jest } from "@jest/globals";
+import { describe, afterEach, expect, it, jest } from "@jest/globals";
 import {
   act,
   fireEvent,
@@ -7,7 +7,7 @@ import {
   waitFor,
 } from "@testing-library/react";
 
-import type { CalculatorSubmissionService } from "../submission";
+import type { CalculatorSubmissionService } from "@/lib/calculator/submission";
 
 jest.mock("next/image", () => ({
   __esModule: true,
@@ -171,7 +171,7 @@ describe("CalculatorModal", () => {
     jest.useRealTimers();
 
     await waitFor(() => {
-      expect(screen.getByText("result.title")).not.toBeNull();
+      expect(screen.getAllByText("result.title").length).toBeGreaterThan(0);
       expect(screen.queryByRole("progressbar")).toBeNull();
       expect(submissionService).toHaveBeenCalledWith(
         expect.objectContaining({ products: expect.any(Array) }),
