@@ -39,7 +39,7 @@ type ScreenTransition = {
   direction: -1 | 0 | 1;
 };
 
-const MIN_LOADING_DURATION_MS = 3000;
+const MIN_LOADING_DURATION_MS = 6000;
 
 const sleep = (durationMs: number) =>
   new Promise((resolve) => setTimeout(resolve, durationMs));

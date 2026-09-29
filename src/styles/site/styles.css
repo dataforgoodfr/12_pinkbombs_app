@@ -106,3 +106,82 @@
     white-space: pre-line;
   }
 }
+
+
+/* /**======== CALCULATOR LOADING FISH =========== */
+.loading-fish {
+  width: min(314px, 80vw);
+}
+
+.loading-fish svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * The pupil's original center is:
+ *
+ * x = 124.468
+ * y = 64.6089
+ *
+ * We move it around that point in a small circle.
+ */
+.loading-fish__pupil {
+  animation: loading-fish-pupil-circle 1.8s linear infinite;
+  will-change: transform;
+}
+
+
+/*
+ * Circular pupil movement
+ *
+ * The eye itself NEVER moves.
+ * The fish NEVER moves.
+ * Only the dark pupil moves.
+ */
+@keyframes loading-fish-pupil-circle {
+  0% {
+    transform: translate(0, -2px);
+  }
+
+  12.5% {
+    transform: translate(1.4px, -1.4px);
+  }
+
+  25% {
+    transform: translate(2px, 0);
+  }
+
+  37.5% {
+    transform: translate(1.4px, 1.4px);
+  }
+
+  50% {
+    transform: translate(0, 2px);
+  }
+
+  62.5% {
+    transform: translate(-1.4px, 1.4px);
+  }
+
+  75% {
+    transform: translate(-2px, 0);
+  }
+
+  87.5% {
+    transform: translate(-1.4px, -1.4px);
+  }
+
+  100% {
+    transform: translate(0, -2px);
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-fish__pupil {
+    animation: none;
+  }
+}
+/* #endregion  /**======== CALCULATOR LOADING FISH =========== */
