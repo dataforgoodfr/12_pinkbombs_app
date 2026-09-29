@@ -1,4 +1,4 @@
-import { describe, afterEach, expect, it, jest } from "@jest/globals";
+import { afterEach, describe, expect, it, jest } from "@jest/globals";
 import {
   act,
   fireEvent,

@@ -101,7 +101,7 @@
       "title": "Votre consommation de saumon",
       "caption": "Si besoin, cliquez sur la flèche retour pour mettre à jour vos réponses.",
       "button": "Calculer mon impact",
-      "around": "Environ :"
+      "around": "Environ\u00a0:"
     },
     "loading": {
       "title": "On plonge dans vos données",
@@ -125,7 +125,7 @@
       "step2": {
         "title": "Diminuer sa fréquence",
         "suffix": "fois par an",
-        "caption": "Aujourd’hui c’est {frequency} x par an. Demain ? ",
+        "caption": "Aujourd’hui c’est {frequency} x par an. Demain\u00a0? ",
         "confirm": "Trouver une alternative"
       },
       "step3": {
@@ -163,7 +163,7 @@
       "title": "Nouvel impact"
     },
     "engagements": {
-      "title": "Ma liste d'engagement :",
+      "title": "Ma liste d'engagement\u00a0:",
       "dish": "Plat",
       "perYear": "par an",
       "timesPerYear": "fois par an",
@@ -205,15 +205,15 @@
       "engagement": "Je vise une fréquence de {newFrequency} par an de {dish} au lieu de {oldFrequency} par an. Je remplace par {alternative} quand c'est possible. Je me supplémente en oméga-3 avec {supplement}.",
       "neutral": {
         "title": "Super saumon.e",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
       },
       "low": {
         "title": "Grand.e saumon.e",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
       },
       "medium": {
         "title": "Saumon Ado",
-        "caption": "Alors là, bravo ! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique !"
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
       },
       "high": {
         "title": "Bébé saumon",
@@ -221,7 +221,7 @@
       },
       "veryHigh": {
         "title": "Graine de saumon",
-        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort ! "
+        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort\u00a0! "
       }
     },
     "error": {
