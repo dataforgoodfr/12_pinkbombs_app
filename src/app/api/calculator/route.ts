@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 
-import { computeConsumption } from "@/components/calculator/computeConsumption";
-import type { UserProductConsumption } from "@/components/calculator/types";
+import { computeConsumption } from "@/lib/calculator/computeConsumption";
+import type { UserProductConsumption } from "@/lib/calculator/types";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   try {

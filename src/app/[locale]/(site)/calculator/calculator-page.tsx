@@ -5,8 +5,9 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
+import type { Question } from "@/lib/calculator/types";
+
 import { CalculatorModal } from "@/components/calculator/CalculatorModal";
-import type { Question } from "@/components/calculator/types";
 import Calculator from "@/components/v2/Calculator";
 
 const CalculatorPage = () => {

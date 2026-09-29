@@ -73,9 +73,24 @@
               "name": "sushi",
               "title": "Combien de sushis consommez-vous à chaque occasion\u00a0?",
               "options": [
-                { "defaultValue": 12, "name": "maki", "label": "maki" },
-                { "defaultValue": 6, "name": "nigiri", "label": "nigiri" },
-                { "defaultValue": 0, "name": "sashimi", "label": "sashimi" }
+                {
+                  "defaultValue": 12,
+                  "name": "maki",
+                  "label": "maki",
+                  "prefix": "des"
+                },
+                {
+                  "defaultValue": 6,
+                  "name": "nigiri",
+                  "label": "nigiri",
+                  "prefix": "des"
+                },
+                {
+                  "defaultValue": 0,
+                  "name": "sashimi",
+                  "label": "sashimi",
+                  "prefix": "des"
+                }
               ]
             }
           ]
@@ -86,7 +101,7 @@
       "title": "Votre consommation de saumon",
       "caption": "Si besoin, cliquez sur la flèche retour pour mettre à jour vos réponses.",
       "button": "Calculer mon impact",
-      "around": "Environ :"
+      "around": "Environ\u00a0:"
     },
     "loading": {
       "title": "On plonge dans vos données",
@@ -95,7 +110,8 @@
     },
 
     "result": {
-      "title": "Impact : {impact}",
+      "title": "Impact ",
+      "title2": " {impact}",
       "caption": "Vous consommez environ {totalConsoInKg} kg de saumon par an.",
       "productListTitle": "Votre consommation en détail"
     },
@@ -103,27 +119,111 @@
     "reduceImpact": {
       "title": "Réduire mon impact",
       "step1": {
-        "title": "Choisissez un plat à remplacer"
+        "title": "Choisir un plat consommé actuellement",
+        "caption": "Pas besoin de tout changer d'un coup, chaque étape compte. Et si on commençait par remplacer ou diminuer un premier plat ?"
       },
       "step2": {
-        "title": "Combien de fois par an souhaitez-vous remplacer votre plat ?",
+        "title": "Diminuer sa fréquence",
         "suffix": "fois par an",
-        "confirm": "Valider"
+        "caption": "Aujourd’hui c’est {frequency} x par an. Demain\u00a0? ",
+        "confirm": "Trouver une alternative"
       },
       "step3": {
-        "title": "Quelle alternative souhaitez-vous adopter à la place ?"
+        "title": "Trouver une alternative",
+        "falseFriend": "Faux-ami",
+        "alternatives": {
+          "algae": "Algues",
+          "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
+          "shellfish": "Coquillages (origine France de préférence)",
+          "plantBasedProtein": "Protéines Végétales (bio de préférence)",
+          "trout": "Truite",
+          "tuna": "Thon"
+        }
       },
-      "falseFriend": "Faux-ami",
-      "alternatives": {
-        "algae": "Algues",
-        "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
-        "shellfish": "Coquillages (origine France de préférence)",
-        "plantBasedProtein": "Protéines Végétales (bio de préférence)",
-        "trout": "Truite",
-        "tuna": "Thon"
+      "step4": {
+        "title": "Choisir une supplémentation en oméga-3",
+        "falseFriend": "Faux-ami",
+        "alternatives": {
+          "flaxSeedOil": "Huile de lin",
+          "chiaSeeds": "Graines de chia",
+          "walnutOil": "Huile de noix",
+          "rapeSeedOil": "Huile de colza",
+          "nut": "Noix",
+          "algae": "Algues",
+          "fishOil": "Huile de poisson"
+        }
+      },
+      "recalculate": {
+        "button": "Calculer mon nouvel impact",
+        "loading": "Calcul de votre nouvel impact...",
+        "error": "Impossible de recalculer votre impact. Merci de réessayer."
       }
     },
-
+    "newImpact": {
+      "title": "Nouvel impact"
+    },
+    "engagements": {
+      "title": "Ma liste d'engagement\u00a0:",
+      "dish": "Plat",
+      "perYear": "par an",
+      "timesPerYear": "fois par an",
+      "alternative": "Alternative",
+      "supplement": "Supplémentation",
+      "confirm": "Valider mes engagements",
+      "alternatives": {
+        "algae": "des algues",
+        "plantBasedSmokedSalmon": "du simili saumon fumé",
+        "shellfish": "des coquillages",
+        "plantBasedProtein": "des protéines végétales",
+        "trout": "de la truite",
+        "tuna": "du thon"
+      },
+      "supplements": {
+        "flaxSeedOil": "de l'huile de lin",
+        "chiaSeeds": "des graines de chia",
+        "walnutOil": "de l'huile de noix",
+        "rapeSeedOil": "de l'huile de colza",
+        "nut": "des noix",
+        "algae": "des algues",
+        "fishOil": "de l'huile de poisson"
+      },
+      "impactChanged": "Je vais consommer {newFrequency, plural, =1 {1 plat} other {# plats}} de {dish} au lieu de {oldFrequency, plural, =1 {1 plat} other {# plats}} par an. J'alterne avec {alternative} quand c'est possible et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine.",
+      "impactEqual": "Je continue à consommer {oldFrequency, plural, =1 {1 plat} other {# plats}} de {dish} par an. J'alterne au maximum avec {alternative} et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine."
+    },
+    "badgeQuestions": {
+      "title": "Encore deux saisies avant d'accéder à votre badge...",
+      "omega3Consent": "Je souhaite que l'État complémente des produits du quotidien en oméga-3.",
+      "emailCaption": "Restez au courant de l’impact collectif de cette campagne et de tous les nouveaux moyens d’action mis en oeuvre pour avancer vers un océan plus juste pour tous les vivants.",
+      "email": "Votre adresse email",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "emailError": "Veuillez saisir une adresse e-mail valide.",
+      "button": "Valider et voir mon badge",
+      "unlockedBadge": "Badge débloqué",
+      "share": "Partager"
+    },
+    "badges": {
+      "engagement": "Je vise une fréquence de {newFrequency} par an de {dish} au lieu de {oldFrequency} par an. Je remplace par {alternative} quand c'est possible. Je me supplémente en oméga-3 avec {supplement}.",
+      "neutral": {
+        "title": "Super saumon.e",
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+      },
+      "low": {
+        "title": "Grand.e saumon.e",
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+      },
+      "medium": {
+        "title": "Saumon Ado",
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+      },
+      "high": {
+        "title": "Bébé saumon",
+        "caption": "Vous êtes un.e alevin.e de saumon.e, vous avez réussi l’éclosion. Pas mal du tout mais il va falloir être courageux.se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon comme vous."
+      },
+      "veryHigh": {
+        "title": "Graine de saumon",
+        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort\u00a0! "
+      }
+    },
     "error": {
       "title": "Une erreur est survenue",
       "caption": "Impossible de calculer votre impact. Merci de réessayer.",

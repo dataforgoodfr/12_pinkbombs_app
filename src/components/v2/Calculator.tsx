@@ -3,7 +3,8 @@ import { ChevronUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import resolveConfig from "tailwindcss/resolveConfig";
 
-import type { ImpactLevel } from "../calculator/computeConsumption";
+import type { ImpactLevel } from "@/lib/calculator/computeConsumption";
+
 import { useIsMobile } from "../../hooks/useIsMobile";
 import tailwindConfig from "../../../tailwind.config";
 

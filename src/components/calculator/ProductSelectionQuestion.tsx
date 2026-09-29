@@ -1,7 +1,10 @@
 "use client";
 
-import { getDefaultVariants } from "./constants";
-import type { QuestionOption, UserProductConsumption } from "./types";
+import { getDefaultVariants } from "@/lib/calculator/constants";
+import type {
+  QuestionOption,
+  UserProductConsumption,
+} from "@/lib/calculator/types";
 
 interface ProductSelectionQuestionProps {
   options: QuestionOption[];
@@ -37,7 +40,7 @@ export const ProductSelectionQuestion = ({
               onChange={() => onToggleProduct(product)}
               aria-label={option.label}
               className="
-                cursor-pointer appearance-none w-6 h-6 p-1 rounded-full
+                cursor-pointer appearance-none w-6 h-6 p-1
                 border border-v2-magenta bg-v2-pink checked:bg-v2-magenta
                 checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
                 focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink

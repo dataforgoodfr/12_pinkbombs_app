@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import type { Question, UserProductConsumption } from "./types";
+import type { Question, UserProductConsumption } from "@/lib/calculator/types";
 
 interface SummaryScreenProps {
   products: UserProductConsumption[];

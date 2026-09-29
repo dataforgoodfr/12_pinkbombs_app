@@ -2,12 +2,12 @@
 
 import * as React from "react";
 
-import { normalizeOccurrence } from "./state";
+import { normalizeOccurrence } from "@/lib/calculator/state";
 import type {
   QuestionOption,
   SubQuestion,
   UserProductConsumption,
-} from "./types";
+} from "@/lib/calculator/types";
 
 interface FrequencyQuestionProps {
   product: UserProductConsumption;
