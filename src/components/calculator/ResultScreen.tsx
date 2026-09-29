@@ -63,7 +63,7 @@ export const ResultScreen = ({
       <div className="flex min-h-full w-full flex-col justify-center gap-12">
         <div className="flex flex-col lg:hidden gap-10">
           <h3 className="h3 flex justify-center items-center text-pretty text-v2-pink text-center gap-2">
-            {t("result.title", { impact: impact?.text ?? response.impact })}
+            {t("result.title")}
             <span
               className={`p-2 ${impact?.label === "veryHigh" ? "text-v2-red bg-black" : `text-black bg-v2-${impact?.color}`}`}
             >
