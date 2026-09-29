@@ -92,6 +92,7 @@ export const useReduceImpactFlow = ({
     if (!selectedProductKey) return;
 
     setIsCalculating(true);
+    setNewResponse(null);
     setCalculationError(null);
     setEngagementsConfirmed(false);
     setBadgeVisible(false);

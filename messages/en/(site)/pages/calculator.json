@@ -156,7 +156,8 @@
     "engagements": {
       "title": "My commitment list:",
       "dish": "Dish",
-      "perYear": "times per year",
+      "perYear": "per year",
+      "timesPerYear": "times per year",
       "alternative": "Alternative",
       "supplement": "Supplement",
       "confirm": "Confirm my commitments",

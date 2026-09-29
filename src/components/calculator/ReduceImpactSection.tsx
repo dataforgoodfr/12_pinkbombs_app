@@ -344,8 +344,8 @@ export const ReduceImpactSection = ({
                   className={`flex items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                 >
                   <AccordionRadio
-                    id={`alternative-${key}`}
-                    name="alternative"
+                    id={`supplement-${key}`}
+                    name="supplement"
                     disabled={disabled}
                     checked={
                       pendingSupplement !== null

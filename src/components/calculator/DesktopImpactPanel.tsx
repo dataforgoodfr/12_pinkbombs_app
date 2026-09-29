@@ -104,7 +104,8 @@ export const DesktopImpactPanel = ({
           <button
             type="button"
             onClick={onConfirmEngagements}
-            className="inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink hover:bg-black px-8 py-2 text-sm w-fit self-center cursor-pointer"
+            disabled={!selectedAlternative || !selectedSupplement}
+            className={`${!selectedAlternative || !selectedSupplement ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:bg-black"} inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink px-8 py-2 text-sm w-fit self-center `}
           >
             {t("engagements.confirm")}
           </button>

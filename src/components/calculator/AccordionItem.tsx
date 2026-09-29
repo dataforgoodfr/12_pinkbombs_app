@@ -29,6 +29,8 @@ export const AccordionItem = ({
       />
     </button>
     <div
+      inert={!isActive}
+      aria-hidden={!isActive}
       className={`grid overflow-hidden transition-[grid-template-rows,padding] duration-300 ease-in-out ${isActive ? "grid-rows-[1fr] p-4 pt-0 lg:p-6 lg:pt-0" : "grid-rows-[0fr] p-0"}`}
     >
       <div className="overflow-hidden">{children}</div>
