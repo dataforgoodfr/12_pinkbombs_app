@@ -179,7 +179,7 @@ const RecommendationsSection = () => {
         width={1512}
         height={63}
         alt=""
-        className="object-cover w-full"
+        className="block w-full h-auto"
       />
       <div
         id="company-section"
@@ -224,7 +224,7 @@ const RecommendationsSection = () => {
         width={1512}
         height={53}
         alt="Divider"
-        className="object-cover w-full"
+        className="block w-full h-auto"
       />
     </section>
   );

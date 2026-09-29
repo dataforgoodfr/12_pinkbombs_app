@@ -391,7 +391,7 @@ const ApproachAndMethodSection = () => {
         width={1512}
         height={53}
         alt="Divider"
-        className="object-cover w-full"
+        className="block w-full h-auto"
       />
     </section>
   );

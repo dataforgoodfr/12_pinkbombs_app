@@ -17,7 +17,7 @@ const CalculatorPage = () => {
 
   return (
     <>
-      <section className="bg-v2-pink text-v2-blue lg:px-0">
+      <section className="bg-v2-pink text-v2-blue">
         <div className="relative flex flex-col justify-center items-center gap-8 px-10 py-20">
           <Calculator label="medium" />
           <div className="z-30 flex flex-col gap-4 text-center">
@@ -40,7 +40,7 @@ const CalculatorPage = () => {
           width={1512}
           height={74}
           alt=""
-          className="object-cover w-full"
+          className="object-contain w-full"
         />
       </section>
       <CalculatorModal
