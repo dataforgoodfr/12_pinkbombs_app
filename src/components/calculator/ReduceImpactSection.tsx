@@ -17,6 +17,7 @@ import type {
 } from "@/lib/calculator/types";
 import { useReduceImpactFlow } from "@/lib/calculator/useReduceImpactFlow";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import { useNewsletterSubscription } from "@/hooks/useNewsletterSubscription";
 
 import type { ImpactLabel } from "@/components/calculator/ResultScreen";
 
@@ -68,6 +69,9 @@ interface ReduceImpactSectionProps {
   onSelectAlternative: (alternative: string) => void;
   onSelectSupplement: (supplement: string) => void;
   onSetActiveAccordion: (index: 0 | 1 | 2 | 3 | null) => void;
+  onNewsletterInvalidEmail: () => void;
+  onNewsletterSuccess: () => void;
+  onNewsletterError: () => void;
 }
 
 export const ReduceImpactSection = ({
@@ -82,6 +86,9 @@ export const ReduceImpactSection = ({
   onSelectAlternative,
   onSelectSupplement,
   onSetActiveAccordion,
+  onNewsletterInvalidEmail,
+  onNewsletterSuccess,
+  onNewsletterError,
 }: ReduceImpactSectionProps) => {
   const t = useTranslations("site.calculator");
   const isMobile = useIsMobile();
@@ -93,6 +100,8 @@ export const ReduceImpactSection = ({
   const frequency = reduceImpact.replacementFrequencyPerYear ?? maxFrequency;
   const selectedAlternative = reduceImpact.selectedAlternative;
   const selectedSupplement = reduceImpact.selectedSupplement;
+  const [newsletterError, setNewsletterError] = React.useState(false);
+  const { subscribe } = useNewsletterSubscription();
   const canCalculate = Boolean(
     reduceImpact.selectedProductKey &&
       reduceImpact.replacementFrequencyPerYear !== null &&
@@ -164,6 +173,29 @@ export const ReduceImpactSection = ({
     : "";
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
   const confirmEngagements = () => setEngagementsConfirmed(true);
+
+  const handleBadgeSubmit = async () => {
+    if (!validateEmail(emailErrorMessage)) {
+      onNewsletterInvalidEmail();
+      return;
+    }
+
+    setNewsletterError(false);
+    showBadge(emailErrorMessage);
+
+    if (!email) return;
+
+    const result = await subscribe(email);
+
+    if (!result.success) {
+      setNewsletterError(true);
+      onNewsletterError();
+      return;
+    }
+
+    onEmailChange("");
+    onNewsletterSuccess();
+  };
 
   React.useEffect(() => {
     if (newResponse && !isCalculating) {
@@ -492,6 +524,11 @@ export const ReduceImpactSection = ({
                 className="object-cover mx-auto"
               />
               <h3 className="h4 mt-8 lg:mt-12 text-center text-v2-blue">
+                {newsletterError && (
+                  <span className="mb-4 block text-left text-sm text-v2-red">
+                    {t("badgeQuestions.subscriptionError")}
+                  </span>
+                )}
                 {t("badgeQuestions.title")}
               </h3>
               <label className="flex items-start gap-3 p-lead">
@@ -535,7 +572,7 @@ export const ReduceImpactSection = ({
 
               <button
                 type="button"
-                onClick={() => showBadge(emailErrorMessage)}
+                onClick={() => void handleBadgeSubmit()}
                 disabled={!!emailError}
                 className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
               >

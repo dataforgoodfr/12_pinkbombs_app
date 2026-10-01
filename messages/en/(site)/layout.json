@@ -39,7 +39,12 @@
           "text": "Receive the latest information on new data centers, news and data published by Data Center Bombs.",
           "newsletter": {
             "placeholder": "Enter your email",
-            "button": "Subscribe"
+            "button": "Subscribe",
+            "emailLabel": "Email address",
+            "loading": "Subscribing...",
+            "success": "You are subscribed to the newsletter.",
+            "invalidEmail": "Please enter a valid email address.",
+            "error": "We could not subscribe you to the newsletter. Please try again later."
           }
         }
       },

@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-plotly.js": "^2.6.0",
+    "sonner": "^2.0.8",
     "tailwind-merge": "^2.1.0",
     "zod": "^3.22.4"
   },

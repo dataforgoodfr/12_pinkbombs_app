@@ -8,6 +8,8 @@ import { z } from "zod";
 
 const envVariables = z.object({
   NEXT_PUBLIC_SHOW_LOGGER: z.enum(["true", "false"]).optional(),
+  BREVO_API_KEY: z.string().optional(),
+  BREVO_NEWSLETTER_LIST_ID: z.string().optional(),
 });
 
 envVariables.parse(process.env);
