@@ -2,10 +2,11 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 
-import Button from "@/components/v2/buttons/Button";
 import ShareLink from "@/components/v2/links/shareLink";
 
 import { Link } from "@/navigation";
+
+import NewsletterForm from "./NewsletterForm";
 
 const currentYear = new Date().getFullYear();
 
@@ -107,26 +108,7 @@ const Footer = () => {
             <p className="text-base sm:max-w-xs md:max-w-lg lg:max-w-xs ">
               {t("footer.sections.stayInformed.text")}
             </p>
-            <form className="flex flex-col lg:flex-row gap-4 lg:gap-2 w-full max-w-xs">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder={t(
-                  "footer.sections.stayInformed.newsletter.placeholder",
-                )}
-                className="inline-block w-full rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs"
-                suppressHydrationWarning
-              />
-              <Button
-                content={t("footer.sections.stayInformed.newsletter.button")}
-                href="https://www.helloasso.com/associations/seastemik/formulaires/1"
-                type="small"
-                backgroundColor="bg-white"
-                textColor="text-v2-blue"
-                borderColor="border-white"
-              />
-            </form>
+            <NewsletterForm />
           </div>
         </div>
 

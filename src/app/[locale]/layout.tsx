@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
+import { Toaster } from "sonner";
 
 import ScrollToTop from "@/components/v2/layout/ScrollToTop";
 
@@ -87,6 +88,7 @@ export default async function GlobalLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Toaster />
         <ScrollToTop />
       </body>
     </html>
