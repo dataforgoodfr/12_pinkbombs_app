@@ -39,21 +39,11 @@ export const LoadingScreen = () => {
           />
 
           {/* White eye */}
-          <circle
-            cx="124.466"
-            cy="64.6088"
-            r="7.869"
-            fill="white"
-          />
+          <circle cx="124.466" cy="64.6088" r="7.869" fill="white" />
 
           {/* Pupil */}
           <g className="loading-fish__pupil">
-            <circle
-              cx="124.468"
-              cy="64.6089"
-              r="4.927"
-              fill="#13176E"
-            />
+            <circle cx="124.468" cy="64.6089" r="4.927" fill="#13176E" />
           </g>
 
           {/* Fish fin */}
@@ -67,9 +57,7 @@ export const LoadingScreen = () => {
       </div>
 
       <div className="flex gap-4 flex-col items-center text-center">
-        <h2 className="h2 text-pretty text-v2-pink">
-          {t("loading.title")}
-        </h2>
+        <h2 className="h2 text-pretty text-v2-pink">{t("loading.title")}</h2>
 
         <p className="p-lead text-pretty text-v2-pink">
           {t("loading.caption")}

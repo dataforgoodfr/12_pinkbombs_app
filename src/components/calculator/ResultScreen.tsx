@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 import type {
   CalculatorSubmissionResponse,
@@ -115,6 +116,15 @@ export const ResultScreen = ({
           onSelectAlternative={onSelectAlternative}
           onSelectSupplement={onSelectSupplement}
           onSetActiveAccordion={onSetActiveAccordion}
+          onNewsletterInvalidEmail={() =>
+            toast.error(t("badgeQuestions.emailError"))
+          }
+          onNewsletterSuccess={() =>
+            toast.success(t("badgeQuestions.subscriptionSuccess"))
+          }
+          onNewsletterError={() =>
+            toast.error(t("badgeQuestions.subscriptionError"))
+          }
         />
       </div>
     </div>

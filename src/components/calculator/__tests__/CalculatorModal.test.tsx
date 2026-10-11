@@ -167,7 +167,7 @@ describe("CalculatorModal", () => {
     ).toEqual(["#E82D04", "#E82D04"]);
     jest.useFakeTimers();
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
-    await act(() => jest.advanceTimersByTimeAsync(3000));
+    await act(() => jest.advanceTimersByTimeAsync(4000));
     jest.useRealTimers();
 
     await waitFor(() => {
@@ -217,7 +217,7 @@ describe("CalculatorModal", () => {
     expect(await screen.findByText("sumUp.title")).not.toBeNull();
     jest.useFakeTimers();
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
-    await act(() => jest.advanceTimersByTimeAsync(3000));
+    await act(() => jest.advanceTimersByTimeAsync(4000));
     jest.useRealTimers();
 
     await waitFor(() => {

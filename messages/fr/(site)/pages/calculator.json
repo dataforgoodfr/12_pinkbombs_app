@@ -197,6 +197,8 @@
       "email": "Votre adresse email",
       "emailPlaceholder": "Entrez votre e-mail",
       "emailError": "Veuillez saisir une adresse e-mail valide.",
+      "subscriptionSuccess": "Vous êtes inscrit à la newsletter.",
+      "subscriptionError": "Oups, nous n'avons pas réussi à vous inscrire à la newsletter. Veuillez réessayer plus tard, mais en attendant découvrez votre badge.",
       "button": "Valider et voir mon badge",
       "unlockedBadge": "Badge débloqué",
       "share": "Partager"
