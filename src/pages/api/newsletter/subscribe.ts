@@ -1,7 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import logger from "@/lib/logger";
-
 interface NewsletterResponse {
   success: boolean;
   error?:

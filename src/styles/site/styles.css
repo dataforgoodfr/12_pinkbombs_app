@@ -107,7 +107,6 @@
   }
 }
 
-
 /* /**======== CALCULATOR LOADING FISH =========== */
 .loading-fish {
   width: min(314px, 80vw);
@@ -131,7 +130,6 @@
   animation: loading-fish-pupil-circle 1.8s linear infinite;
   will-change: transform;
 }
-
 
 /*
  * Circular pupil movement
@@ -177,7 +175,6 @@
     transform: translate(0, -2px);
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .loading-fish__pupil {
