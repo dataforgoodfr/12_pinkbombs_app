@@ -101,7 +101,7 @@ export const ReduceImpactSection = ({
   const selectedAlternative = reduceImpact.selectedAlternative;
   const selectedSupplement = reduceImpact.selectedSupplement;
   const [newsletterError, setNewsletterError] = React.useState(false);
-  const { subscribe } = useNewsletterSubscription();
+  const { subscribe, isSubmitting } = useNewsletterSubscription();
   const canCalculate = Boolean(
     reduceImpact.selectedProductKey &&
       reduceImpact.replacementFrequencyPerYear !== null &&
@@ -573,7 +573,7 @@ export const ReduceImpactSection = ({
               <button
                 type="button"
                 onClick={() => void handleBadgeSubmit()}
-                disabled={!!emailError}
+                disabled={!!emailError || isSubmitting}
                 className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <svg

@@ -39,7 +39,7 @@ export default async function handler(
   const listId = Number(process.env.BREVO_NEWSLETTER_LIST_ID);
 
   if (!apiKey || !Number.isInteger(listId) || listId <= 0) {
-    logger("Brevo newsletter is not configured");
+    console.error("Brevo newsletter is not configured");
     return response.status(500).json({
       success: false,
       error: "configuration",
@@ -77,7 +77,7 @@ export default async function handler(
         });
       }
 
-      logger(
+      console.error(
         {
           status: brevoResponse.status,
         },
@@ -91,7 +91,7 @@ export default async function handler(
 
     return response.status(200).json({ success: true });
   } catch (error) {
-    logger(error, "Brevo newsletter request failed");
+    console.error("Brevo newsletter request failed", error);
     return response.status(502).json({
       success: false,
       error: "brevo",
