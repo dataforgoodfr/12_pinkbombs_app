@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+import logger from "@/lib/logger";
+
 interface NewsletterResponse {
   success: boolean;
   error?:
@@ -37,7 +39,7 @@ export default async function handler(
   const listId = Number(process.env.BREVO_NEWSLETTER_LIST_ID);
 
   if (!apiKey || !Number.isInteger(listId) || listId <= 0) {
-    console.error("Brevo newsletter is not configured");
+    logger("Brevo newsletter is not configured");
     return response.status(500).json({
       success: false,
       error: "configuration",
@@ -75,7 +77,7 @@ export default async function handler(
         });
       }
 
-      console.error(
+      logger(
         {
           status: brevoResponse.status,
         },
@@ -89,7 +91,7 @@ export default async function handler(
 
     return response.status(200).json({ success: true });
   } catch (error) {
-    console.error("Brevo newsletter request failed", error);
+    logger(`Brevo newsletter request failed, error: ${error}`);
     return response.status(502).json({
       success: false,
       error: "brevo",
