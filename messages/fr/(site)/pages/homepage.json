@@ -1,118 +1,118 @@
 {
   "homepage": {
     "hero": {
-      "title": "Les saumons que nous produisons et consommons",
+      "title": "Les saumons que nous",
+      "title2": "produisons, vendons et mangeons",
       "imageAlt": "Saumon sur une assiette"
     },
     "bomb": {
-      "title": "SONT DES BOMBES ÉCOLOGIQUES, SOCIALES ET SANITAIRES",
+      "title": "sont des",
+      "title2": "bombes",
+      "title3": "écologiques, sociales et sanitaires",
       "imageAlt": "Saumon qui explose"
     },
     "impact": {
       "title": "Chaque année en France,",
-      "titleHighlight": "Nous consommons 37,6 millions de saumons",
-      "impact": "(soit l’équivalent en tonnes de 19 Tour Eiffel)",
+      "titleHighlight": "Nous consommons 62 millions de saumons",
+      "impact": "(soit l’équivalent en tonnes de 31 Tour Eiffel)",
       "imageAltTitle": "Tour eiffel sur une assiette",
       "title2": "de ces millions de saumons,",
       "title2Highlight": "98% sont issus d’élevage",
-      "description": "Contrairement à une grande partie des poissons que nous consommons, 98% des saumons consommés en France sont issus d'élevage. On ne les pêche pas. On les nourrit, tous les jours, pendant deux ans, dans des cages.",
+      "description": "La quasi-totalité des saumons que nous mangeons en France sont issus d'élevage. On ne les pêche pas. On les nourrit, tous les jours, pendant deux ans, dans des cages.",
       "imageAltDescription": "Saumons"
     },
     "menu": {
       "title": {
-        "part1": "Voici se qu’il se cache",
+        "part1": "Voici ce qui se cache",
         "part2": "derrière la consommation",
         "part3": "d’un saumon d’élevage"
       },
       "menuCards": [
         {
           "title": "Des poissons sauvages, réduits en farine et en huile",
-          "content": "<strong>Le saumon est un poisson carnivore</strong>. En élevage, ce sont des petits poissons sauvages pêchés et transformés en farine et huile pour nourrir les saumons. <strong>Cette pêche provoque des captures accidentelles de requins, tortues, baleines…</strong>",
+          "content": "<strong>Le saumon est un poisson carnivore</strong>. En élevage, ce sont 440 petits poissons sauvages pêchés et transformés en farine et huile pour nourrir 1 saumon. <strong>Cette pêche provoque des captures  \"accidentelles\" de requins, tortues, baleines…</strong>",
           "imageAlt": "Saumon et petits poissons"
         },
         {
           "title": "Du soja, du blé, du colza",
-          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourri au soja.</strong>\n\nLes cultures destinées à nourrir les saumons occupent une surface <strong>plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis\u00a0!</strong>",
+          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourri au soja, blé et colza.</strong>\n\nLa demande en soja pour les animaux d’élevage est à l’origine de la <strong>déforestation</strong> légale et illégale au Brésil.",
           "imageAlt": "Céréale"
         },
         {
           "title": "Du krill, pêché en Antarctique",
-          "content": "<strong>Pour accentuer sa couleur rose, on va également lui donner du krill</strong>, cette crevette minuscule qui constitue la nourriture de très nombreux animaux dans l'écosystème antarctique.",
+          "content": "Pour <strong>accentuer sa couleur rose</strong>, il est également alimenté en krill, cette crevette minuscule qui constitue la nourriture de très nombreux animaux dans l'écosystème antarctique.",
           "imageAlt": "Krill, crevette minuscule"
         },
         {
           "title": "Des traitements antiparasitaires",
-          "content": "Pour garder les saumons vivants et en bonne santé, <strong>on leur administre des traitements anti-parasites</strong>\u00a0; principalement contre les poux de mer, des petits crustacés qui prolifèrent dans les élevages.",
+          "content": "Les cages favorisent les infections. Les éleveurs industriels donnent des <strong>traitements anti-parasitaires</strong>, principalement <strong>contre les poux de mer</strong>, une sorte de tiques marines qui se collent à la peau des saumons.",
           "imageAlt": "Pulvérisateur"
         },
         {
           "title": "Des microplastiques",
-          "content": "Les saumons d'élevage <strong>peuvent ingérer des microplastiques</strong> présents dans leur environnement ou leur alimentation.",
+          "content": "Le saumon d'élevage <strong>peut ingérer des microplastiques</strong> présents dans son environnement ou son alimentation.",
           "imageAlt": "Bouteille en plastique qui se détériore"
         },
         {
           "title": "Des polluants éternels",
-          "content": "Les aliments utilisés en aquaculture peuvent constituer <strong>une voie d'exposition des poissons aux PFAS.</strong>",
+          "content": "Les aliments utilisés en aquaculture peuvent constituer une voie d'exposition du poisson aux <strong>PFAS, PCB et dioxines</strong>.",
           "imageAlt": "Molécule"
         }
-      ]
+      ],
+      "detail": "Les sources et détails des calculs se trouvent dans la",
+      "methodology": "méthodologie"
     },
     "addition": {
       "title": {
-        "part1": "En France, chaque habitant consomme en moyenne 3.8 kg de saumons d’élevage par an,",
+        "part1": "En France, chaque habitant consomme en moyenne 4,5 kg de saumons d’élevage par an,",
         "part2": "l’addition est salée:"
       },
       "results": {
-        "intro": "Ça fera :",
+        "intro": "Ça fera (pour l’ensemble des français·es)\u00a0:",
         "resultItems": {
           "item1": {
-            "title": "1 tonnes",
-            "description": " de poissons sauvages broyés",
-            "imageAlt": "Saumon et petits poissons"
+            "title": "62 millions de saumons",
+            "description": "tués par an, chacun ayant passé 2 années enfermé et entassé, nourri aux croquettes",
+            "imageAlt": "Saumons élevés en cage"
           },
           "item2": {
-            "title": "54 kg",
-            "description": "de soja, une surface plus grande que Paris + Hauts-de-Seine + Seine-Saint-Denis réunis\u00a0!",
-            "imageAlt": "Céréale"
+            "title": "27 milliards de petits poissons ",
+            "description": "tués par an, pêchés spécialement pour produire la farine et l’huile qui nourrissent les saumons, impactant les populations locales d’Afrique de l’Ouest",
+            "imageAlt": "Saumon et petits poissons"
           },
           "item3": {
-            "title": "1,2 tonnes",
-            "description": " d'émissions carbone",
-            "imageAlt": "Nuage de C02"
+            "title": "128 000 tonnes d’azote et phosphore rejetés",
+            "description": "par les élevages du fait des déjections des saumons, des aliments non consommés, des résidus de traitements, etc.",
+            "imageAlt": "Tuyau rejetant des eaux usées"
           },
           "item4": {
-            "title": "2 années",
-            "description": "enfermés et entassés, nourris aux croquettes",
-            "imageAlt": "Saumons élevés en cage"
+            "title": "1,9 millions tonnes de CO2",
+            "description": "générées par an, soit l’équivalent de 235 000 personnes par an en France",
+            "imageAlt": "Nuage de C02"
           }
         }
       },
       "addOns": {
-        "intro": "En supplément :",
+        "intro": "En supplément\u00a0:",
         "addOnItems": {
           "item1": {
-            "title": "Eau usée de 2,9 millions de personnes :",
-            "description": "Tout ce qu'on donne aux saumons ne devient pas de la chair. Le reste ressort : déjections, aliment non consommé, résidus de traitements. <strong>Cette activité représente jusqu'à 2,9 millions de personnes en équivalent des eaux usées non traitées.</strong>",
-            "imageAlt": "Tuyau rejetant des eaux usées"
+            "title": "987 km2 de terre sont utilisés",
+            "description": "pour produire l’alimentation végétale des saumons. C’est plus grand que la surface de la Seine Saint Denis + Hauts-de-Seine + Paris additionnés.",
+            "imageAlt": "Céréale"
           },
           "item2": {
-            "title": "Ressource de 588 millions de personnes :",
-            "description": "La nourriture des saumons d'élevage est prélevée au large de pays où ils comptent parmi les rares sources de protéines accessibles à toustes.\n\nSardines, anchois, sardinelles... des poissons entiers, pêchés exprès pour être broyés. <strong>Ces ressources détournées couvriraient les besoins en protéines de 588 millions de personnes.</strong>",
+            "title": "12 polluants organiques persistants (POPs)",
+            "description": "contenus dans les saumons. Sur la douzaine de polluants listés par la convention de Stockholm, on en retrouve… douze dans le saumon.",
             "imageAlt": "Saumon et petits poissons"
           },
           "item3": {
-            "title": "398 microplastiques :",
-            "description": "En France, chaque habitant consomme en moyenne <strong>3.8 kg de saumons d’élevage par an, ce qui équivaut à environ 398 microplastiques ingérés chaque année.</strong>",
-            "imageAlt": "Bouteille en plastique qui se détériore"
-          },
-          "item4": {
-            "title": "Moins d’oméga 3 :",
-            "description": "Pour information : Les oméga-3 ne viennent pas des saumons. Ils viennent des algues que pouvaient consommer les poissons.\n\nAujourd'hui, la chair des saumons contient nettement moins d'omega-3.\n\nLes polluants eux s'accumulent.",
+            "title": "Moins d’oméga 3",
+            "description": "Aujourd'hui, la chair des saumons contient nettement moins d'omega-3 qu’avant. C’est la conséquence du changement d’alimentation donnée aux saumons.",
             "imageAlt": "Algues et panneau de signalisation indiquant une interdiction"
           }
         }
       },
-      "total": "Total :"
+      "total": "Total\u00a0:"
     }
   }
 }

@@ -19,9 +19,7 @@ const Footer = () => {
       <div className="max-w-[1500px] mx-auto">
         <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-6 lg:gap-4 lg:pt-12">
           <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
-            <h5 className="h5 uppercase">
-              {t("footer.sections.projectBy.title")}
-            </h5>
+            <h4 className="h4">{t("footer.sections.projectBy.title")}</h4>
             <Image
               loading="lazy"
               src="/site/images/seastemik-x-dataforgood.svg"
@@ -39,9 +37,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4 w-full max-w-72">
-            <h5 className="h5 uppercase">
-              {t("footer.sections.projectBy.site")}
-            </h5>
+            <h4 className="h4">{t("footer.sections.projectBy.site")}</h4>
             <Link
               className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
               href="/"
@@ -73,7 +69,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4 w-full max-w-72">
-            <h5 className="h5 uppercase">{t("footer.sections.more.title")}</h5>
+            <h4 className="h4">{t("footer.sections.more.title")}</h4>
             <Link
               className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
               href="/about"
@@ -102,12 +98,8 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col col-span-3 gap-4 self-top lg:ml-auto w-full md:w-auto">
-            <h5 className="h5 uppercase">
-              {t("footer.sections.stayInformed.title")}
-            </h5>
-            <p className="text-base sm:max-w-xs md:max-w-lg lg:max-w-xs ">
-              {t("footer.sections.stayInformed.text")}
-            </p>
+            <h4 className="h4">{t("footer.sections.stayInformed.title")}</h4>
+            <p className="p-body">{t("footer.sections.stayInformed.text")}</p>
             <NewsletterForm />
           </div>
         </div>

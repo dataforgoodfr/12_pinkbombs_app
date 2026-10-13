@@ -55,7 +55,7 @@ const NewsletterForm = () => {
       />
       <button
         type="submit"
-        className="inline-flex cta border-2 rounded-xl border-white bg-white px-4 py-2 text-sm text-v2-blue transition-all duration-200 ease-in-out hover:bg-v2-blue hover:text-v2-pink disabled:cursor-not-allowed disabled:opacity-50 lg:text-base"
+        className="inline-flex mr-auto cta border-2 rounded-xl border-white bg-white px-4 py-2 text-sm text-v2-blue transition-all duration-200 ease-in-out hover:bg-v2-blue hover:text-v2-pink disabled:cursor-not-allowed disabled:opacity-50 lg:text-base"
         disabled={isSubmitting}
       >
         {isSubmitting

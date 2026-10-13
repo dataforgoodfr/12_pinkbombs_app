@@ -43,7 +43,7 @@ const MenuCard = ({
   return (
     <div
       className={clsx(
-        "flex flex-col rounded-lg items-center justify-center py-10 px-4 max-h-[450px] max-w-[409px] text-black bg-v2-pink",
+        "flex flex-col rounded-lg items-center justify-center py-10 px-4 max-h-[500px] max-w-[409px] text-black bg-v2-pink",
         className,
         index % 2 === 0 ? "rotate-1" : "-rotate-1",
       )}
