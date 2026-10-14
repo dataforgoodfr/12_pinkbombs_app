@@ -162,7 +162,7 @@ const PresentationSection = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="16"
-              className={`inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"}`}
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
               viewBox="0 -960 960 960"
               width="16"
             >
@@ -182,14 +182,14 @@ const PresentationSection = () => {
           <h2 className="sr-only">{t("dataforgood.title")}</h2>
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
           <a
-            href="https://seastemik.org/"
+            href="https://dataforgood.fr/"
             className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
           >
             {t("dataforgood.cta")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="16"
-              className={`inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"}`}
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
               viewBox="0 -960 960 960"
               width="16"
             >
@@ -440,7 +440,7 @@ const ApproachAndMethodSection = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="16"
-              className={`inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"}`}
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
               viewBox="0 -960 960 960"
               width="16"
             >

@@ -238,19 +238,19 @@ const SectionButtons = ({
       className={`flex gap-4 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
     >
       <button
-        className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg font-black tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block1")}
       >
         {t("tags.block1")}
       </button>
       <button
-        className={`${activeSection === "block2" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block2" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block2" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg tracking-wider hover:scale-105 ${activeSection === "block2" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block2")}
       >
         {t("tags.block2")}
       </button>
       <button
-        className={`${activeSection === "block3" ? "border-none" : "border border-2"}  ${borderColor} rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block3" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block3" ? "border-none" : "border border-2"}  ${borderColor} rounded-xl py-1 px-3 cta text-xs lg:text-lg tracking-wider hover:scale-105 ${activeSection === "block3" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block3")}
       >
         {t("tags.block3")}
