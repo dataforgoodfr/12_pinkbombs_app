@@ -30,23 +30,23 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-green text-v2-blue">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 lg:pt-40 lg:pl-24 xl:pl-60 gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 lg:w-[40%] xl:w-full">
+      <div className="flex flex-col lg:flex-row px-12 pt-12 lg:pt-32 lg:pb-12 lg:pl-24 xl:pl-32 2xl:pl-72 gap-12 lg:gap-0 justify-center mx-auto">
+        <div className="flex flex-col gap-4 lg:w-[40%] xl:w-[50%]">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
-          <h1 className="h1 text-pretty">{t("intro.title")}</h1>
+          <h1 className="h1 text-pretty xl:w-[80%]">{t("intro.title")}</h1>
         </div>
-        <div className="flex flex-col lg:mt-16 xl:-mt-10 lg:w-[60%] xl:w-full">
+        <div className="flex flex-col lg:mt-16 xl:-mt-10 lg:w-[60%] xl:w-[50%]">
           <Image
             loading="lazy"
             src="/site/images/to-act/intro.svg"
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative z-0 object-contain mx-auto"
+            className="relative z-0 object-contain mx-auto xl:scale-[120%] 2xl:scale-[120%]"
           />
         </div>
       </div>
-      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-20 xl:-mt-28 2xl:-mt-32">
+      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-32 xl:-mt-28 2xl:-mt-40">
         <Image
           loading="lazy"
           src="/site/images/to-act/intro-divider.svg"
