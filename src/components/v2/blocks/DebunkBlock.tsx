@@ -4,6 +4,7 @@ import React from "react";
 export interface DebunkProps {
   falseBelief: string;
   reality: string;
+  url?: string;
 }
 
 interface DebunkBlockProps extends DebunkProps {
@@ -14,6 +15,7 @@ interface DebunkBlockProps extends DebunkProps {
 const DebunkBlock = ({
   falseBelief,
   reality,
+  url,
   actNumber,
   index,
 }: DebunkBlockProps) => {
@@ -33,6 +35,16 @@ const DebunkBlock = ({
           {t.rich(`debunk.block${actNumber}.items.${index}.paragraph`, {
             strong: (chunks) => <strong>{chunks}</strong>,
           })}
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta text-sm hover:text-v2-red2 underline"
+            >
+              {url}
+            </a>
+          )}
         </p>
       </div>
     </div>

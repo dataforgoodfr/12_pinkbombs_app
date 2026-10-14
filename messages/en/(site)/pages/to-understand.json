@@ -1,94 +1,95 @@
 {
   "toUnderstand": {
     "meta": {
-      "title": "Understanding"
+      "title": "Understand"
     },
     "intro": {
-      "caption": "The industrial lobby debunk",
-      "title": "Everything the salmon industry wants you to believe",
-      "imageAlt": "Illustrative image depicting the industry, trawlers, and farmed fish."
+      "caption": "The salmon debunk",
+      "title": "Sort through pink marketing, dark reality, and false solutions",
+      "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish."
     },
     "tags": {
-      "block1": "A well-rehearsed narrative",
-      "block2": "An industry kept out of focus",
-      "block3": "False good ideas"
+      "block1": "Decoding",
+      "block2": "Impacts",
+      "block3": "Misconceptions"
     },
     "debunk": {
       "block1": {
-        "title": "A well-rehearsed narrative",
+        "title": "What the salmon industry wants us to believe",
         "items": [
           {
-            "falseBelief": "« Salmon is a classic. »",
-            "reality": "The industry has done everything it can to make salmon your favorite fish.",
-            "paragraph": "<strong>Just forty years ago, eating salmon was rare and expensive.</strong> Its widespread adoption is the result of industrial and commercial efforts: flooding the market with large volumes, adjusting prices, promoting smoked salmon for the holidays, presenting fish as an affordable option for institutional catering ...\n\n<strong>Our appetite for this fish was built step by step.</strong>",
-            "imageAlt": "Graphic illustrating the exponential growth of salmon production in several countries around the world.",
+            "falseBelief": "“Salmon is a classic in our cuisine.”",
+            "reality": "The industry has done everything possible to make salmon our favorite fish.",
+            "paragraph": "<strong>Barely forty years ago, eating salmon was rare and expensive.</strong> Its mainstreaming is the result of industrial and commercial efforts: flooding the market with large volumes, adjusted prices, communication around smoked salmon outside the holidays, etc.\n\n<strong>Our appetite for this fish was built step by step.</strong>",
+            "imageAlt": "Graphic chart illustrating the exponential production of salmon in several countries around the world.",
             "imageExtension": "png",
             "catchPhrase": "Farmed salmon production is exponential"
           },
           {
-            "falseBelief": "« You need to eat fish for its omega-3s. »",
-            "reality": "Omega-3s don't come from fish. They come from algae.",
-            "paragraph": "<strong>Originally, omega-3s are produced by marine microalgae.</strong> Zooplankton accumulate them, small fish eat the zooplankton, and salmon eat the small fish. Salmon don't produce them: they transport them. Since fish oil and krill have increasingly been replaced — because of their high cost — with vegetable oils, salmon flesh contains significantly less omega-3s, to the point that <strong>part of the industry now adds algal oil to the feed pellets.</strong>",
-            "imageAlt": "Illustration of a human eating a salmon that itself eats algae.",
+            "falseBelief": "“We need to eat fish for omega-3s.”",
+            "reality": "Omega-3s do not come from fish. They come from algae.",
+            "paragraph": "<strong>Originally, omega-3s are produced by marine microalgae.</strong> Zooplankton accumulates them, small fish eat it, salmon eat the small fish. It doesn't make them: it transports them. Since replacing fishmeal (which has high costs) with vegetable oils, salmon flesh contains significantly less omega-3, to the point <strong>that part of the industry now adds algae oil to salmon feed pellets.</strong>",
+            "imageAlt": "Illustration of a human eating a salmon which itself eats algae.",
             "catchPhrase": "Omega-3s don't come from fish. They come from algae."
           },
           {
-            "falseBelief": "« It's scientifically proven. »",
-            "reality": "Funded evidence isn't false evidence. It's evidence that needs to be checked.",
-            "paragraph": "<strong>A significant share of the research establishing the benefits of fish has been funded by the industry that sells it. That doesn't make it false.</strong> It does mean we need to examine it closely and look at what it doesn't measure.",
-            "imageAlt": "Illustration of fish with price tags and safety badges",
-            "catchPhrase": "A significant share of the research establishing the benefits of fish has been funded by the industry that sells it."
+            "falseBelief": "“SALMON IS GOOD FOR YOUR HEALTH.”",
+            "reality": "Many pollutants are present in salmon flesh.",
+            "paragraph": "The fish used for fishmeal and fish oil concentrate many pollutants, notably substances banned for decades. They then transmit them to the salmon which accumulate them in their flesh. <strong>For dioxins, seafood is our main source of exposure.</strong> Since the industry has been shifting towards a more plant-based diet, this accumulation is reduced for certain pollutants, and new contaminants specific to the plant ingredients used (rapeseed or sunflower oil, soy protein, corn, wheat gluten...), <strong>mainly pesticides</strong>, are making an appearance in salmon flesh.",
+            "imageAlt": "Illustration of fish with price tags and safety badge",
+            "catchPhrase": "Pollutants whose traces can be found in salmon flesh: Dioxins, furans, PCBs, DDT, aldrin, chlordane, dieldrin, endrin, heptachlor, hexachlorobenzene, mirex, and toxaphene."
           }
         ]
       },
       "block2": {
-        "title": "An industry kept out of focus",
+        "title": "Real impacts downplayed",
         "items": [
           {
-            "falseBelief": "« WE ARE FORCED TO PACK THEM IN TO MEET DEMAND »",
-            "reality": "High density isn't a flaw in the model. It is the model.",
-            "paragraph": "To produce ever more salmon at lower cost, <strong>industrial farming concentrates them in limited spaces</strong>. This high density promotes stress, injuries, parasites, and the spread of disease, potentially leading to mass mortality.\n\n<strong>And the problem doesn't stop at the cages:</strong> in open-sea farms, parasites and certain pathogens can spread into the environment and affect wild salmon, particularly young fish passing nearby.",
-            "imageAlt": "Illustration of 4 salmon in a bathtub",
-            "catchPhrase": "4 salmon in the equivalent of a bathtub of water. That's the density required for factory farms to be profitable"
+            "falseBelief": "“WE ARE FORCED TO CROWD THEM TO MEET DEMAND”",
+            "reality": "Density is not a flaw in the model. It is the model.",
+            "paragraph": "To produce ever more salmon at a lower cost, <strong>industrial farming concentrates them in limited spaces</strong>. This high density promotes stress, injuries, parasites, and the spread of diseases, which can lead to massive mortality rates.\n\n<strong>The problem doesn't stop at the cages:</strong> in open-sea farms, parasites and certain pathogens can spread into the environment and affect wild salmon, especially the young passing nearby.",
+            "imageAlt": "Illustration of 3 salmon in a bathtub",
+            "catchPhrase": "3 salmon in the equivalent of a bathtub of water. That is the density required for farms to be profitable."
           },
           {
-            "falseBelief": "« FARMING FISH MEANS LIMITING THE FISHING OF WILD FISH »",
-            "reality": "You don't relieve pressure on the ocean by fishing it even more.",
-            "paragraph": "<strong>We chose to farm a predator.</strong> So we have to source its food from the sea: sardines, anchovies, sardinellas, blue whiting — whole fish deliberately caught and ground into fishmeal and fish oil.\nFish farming doesn't replace fishing: it depends on it, and the more it grows, the more fish it catches.",
+            "falseBelief": "“FARMING LIMITS THE FISHING OF WILD FISH”",
+            "reality": "We don't relieve the ocean by fishing in it more.",
+            "paragraph": "<strong>We chose to farm a predator.</strong> So we must get its food from the sea: anchovies, sardinellas, blue whiting, whole fish caught specifically and ground into meal and oil.\nFarming doesn't replace fishing: it depends on it, and the more it grows, the more we fish.\n\nAbout 10% of fishing is used for fishmeal production, feeding the aquaculture sector. The impacts on coastal populations in West Africa are major.",
             "imageAlt": "",
-            "catchPhrase": "Omega-3s don't come from fish. They come from algae."
+            "catchPhrase": "It takes up to 440 wild fish to feed just 1 salmon."
           },
           {
-            "falseBelief": "« TURNING TO LAND-BASED FARMING IS MORE ECO-FRIENDLY »",
-            "reality": "Replacing exploitation of the sea with exploitation of farmland doesn't reduce the footprint. It moves it.",
-            "paragraph": "<strong>Using fish oil and fishmeal is expensive and becoming increasingly scarce.</strong>\n\nThe industry has therefore replaced a large part of the feed with soy, wheat, or rapeseed <strong>(95 g of soy for 100 g of salmon)</strong>.\n\nThe experiment has already been carried out, and its outcome is known: deforestation on one side; on the other, land that could have remained wild and allowed ecosystems to regenerate, or directly fed humans with vegetables and legumes, at a time when France lacks these resources and imports most of its plant-based proteins.",
+            "falseBelief": "“MAKING SALMON FEED PLANT-BASED IS MORE ECOLOGICAL”",
+            "reality": "Replacing the exploitation of the sea with the exploitation of fields doesn't reduce the footprint. It displaces it.",
+            "paragraph": "To optimize their costs, industrial farmers also feed salmon with soy, wheat, and rapeseed. The sector has therefore replaced a large part of the ration: 95 g of soy for 100 g of salmon.\n\nThe experiment has already taken place, and its outcome is known: deforestation on one hand; on the other, land that could have remained wild and let ecosystems regenerate, or directly feed humans with vegetables and legumes, while France lacks them and imports most of its plant proteins.",
             "imageAlt": "",
             "catchPhrase": "95 g of soy for 100 g of salmon"
           }
         ]
       },
       "block3": {
-        "title": "The seemingly good ideas",
+        "title": "Misguided solutions",
         "items": [
           {
-            "falseBelief": "« What if I ate wild salmon instead? »",
-            "reality": "What remains of the wild salmon population isn't for eating. It's for protecting.",
-            "paragraph": "Their populations are collapsing, the magic of salmon: 5,000 kilometers traveled, the sense of smell that finds its way back to its home river, the magnetic field, rapids and waterfalls. The salmon that remain won't withstand any additional pressure."
+            "falseBelief": "“What if I ate wild salmon?”",
+            "reality": "Shifting consumption would only displace the pressure onto ecosystems that are already exhausted.",
+            "paragraph": "Wild salmon populations are already weakened by dams, pollution, global warming, and overfishing. A large part of \"wild\" Pacific salmon actually comes from the release of young salmon born and raised in hatcheries that compete with natural fish."
           },
           {
-            "falseBelief": "« What about trout? »",
-            "reality": "Changing species doesn't mean changing the model.",
-            "paragraph": "Different fish, same model, same feed pellets, same dependence on fishmeal."
+            "falseBelief": "“What about trout?”",
+            "reality": "Changing the species doesn't mean changing the model.",
+            "paragraph": "Trout is the cousin of salmon: they are different species, but from the same family (Salmonidae). The trout farming model is similar to salmon's, with the same dependence on plant crops (soy, wheat) as well as fishmeal and fish oils."
           },
           {
-            "falseBelief": "« What about land-based farming? »",
-            "reality": "Changing the container doesn't change the menu or the (intensive) model.",
-            "paragraph": "Taking the fish out of the water changes neither the density, nor the duration of confinement, nor the feed ration. Waste is captured, not eliminated: it changes form and location. And energy consumption increases."
+            "falseBelief": "“What about land-based farming?”",
+            "reality": "Opting for land-farmed salmon is encouraging the same model.",
+            "paragraph": "The new industry of land-based factories increases and displaces pressures. It changes neither the density, nor the duration of confinement, nor the diet. It increases energy consumption, and does not stop the risks of marine pollution. Find more information on ",
+            "url": "https://www.usinesdesaumonsnonmerci.fr"
           },
           {
-            "falseBelief": "« What if I switched to chicken? »",
-            "reality": "Moving from salmon to chicken means changing the animal, not the model.",
-            "paragraph": "(I think including chicken is important; the switch is mainly toward this animal, which is a major risk compared with trout) Orders of magnitude for the reduction in meat consumption that needs to be achieved, and the share of production coming from intensive farming 80% (see Libé's chicken infographic + Axel's work)"
+            "falseBelief": "“What if I switched to chicken?”",
+            "reality": "Replacing salmon consumption with chicken is changing the animal, not the model.",
+            "paragraph": "In France, over 80% of chickens are raised in intensive systems: closed buildings, high densities, accelerated growth. As with salmon and trout, their diet relies heavily on imported crops, particularly soy, the cultivation of which is one of the main drivers of deforestation in South America. Therefore, we do not escape the industrial logic by changing species: we displace it."
           }
         ]
       }
