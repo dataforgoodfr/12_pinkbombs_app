@@ -32,7 +32,7 @@ const PageCard = ({
   return (
     <div
       className={clsx(
-        "flex flex-col rounded-lg max-w-[409px] text-v2-blue",
+        "flex-1 flex flex-col rounded-lg max-w-[409px] text-v2-blue",
         className,
       )}
     >
@@ -46,7 +46,7 @@ const PageCard = ({
           className="object-cover mx-auto hover:scale-105 transition-transform duration-300"
         />
       </Link>
-      <p className="h4 mt-4 text-pretty">{title}</p>
+      <p className="h4 mt-4 text-pretty leading-none">{title}</p>
       <p className="p-lead my-4 preserve-lines">{description}</p>
       <Button
         type="small"

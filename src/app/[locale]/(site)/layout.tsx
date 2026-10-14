@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
 
@@ -50,31 +49,15 @@ export async function generateMetadata({
 
 export default async function V2Layout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "site.layout" });
   return (
     <>
       <SectionBackground />
       <Navbar />
       <main className="overflow-x-clip pt-[calc(88px_+_env(safe-area-inset-top))] lg:pt-[calc(104px_+_env(safe-area-inset-top))]">
         {children}
-        <a
-          href="#"
-          className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
-        >
-          <Image
-            src="/archive/v1/images/bottom.svg"
-            alt={t("top")}
-            width="40"
-            height="20"
-            className="w-8 aspect-square rotate-180"
-          />
-        </a>
       </main>
       <Footer />
     </>

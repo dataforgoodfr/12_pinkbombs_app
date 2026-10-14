@@ -21,6 +21,7 @@ jest.mock("next-intl", () => ({
       values?: Record<string, string>,
     ) => string) & {
       raw: (key: string) => unknown;
+      has: (key: string) => boolean;
     };
     const translate = ((key: string, values?: Record<string, string>) => {
       if (key === "modal.questions.1.title") {
@@ -28,6 +29,7 @@ jest.mock("next-intl", () => ({
       }
       return key;
     }) as MockTranslate;
+    translate.has = () => false;
     translate.raw = (key: string) =>
       key === "labels"
         ? [
@@ -152,7 +154,7 @@ describe("CalculatorModal", () => {
       Array.from(progress.querySelectorAll("ellipse"), (dot) =>
         dot.getAttribute("fill"),
       ),
-    ).toEqual(["#E82D04", "white"]);
+    ).toEqual(["#FFD4D4", "white"]);
 
     fireEvent.click(screen.getByRole("radio"));
     fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
@@ -164,7 +166,7 @@ describe("CalculatorModal", () => {
       Array.from(progress.querySelectorAll("ellipse"), (dot) =>
         dot.getAttribute("fill"),
       ),
-    ).toEqual(["#E82D04", "#E82D04"]);
+    ).toEqual(["#FFD4D4", "#FFD4D4"]);
     jest.useFakeTimers();
     fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
     await act(() => jest.advanceTimersByTimeAsync(4000));

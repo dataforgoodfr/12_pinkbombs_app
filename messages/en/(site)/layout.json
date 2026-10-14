@@ -4,12 +4,12 @@
     "nav": {
       "title": "main",
       "home": "Home",
-      "openMenu": "Open menu",
       "ariaLabel": "Main site navigation",
+      "openMenu": "Open menu",
       "closeMenu": "Close menu",
-      "toUnderstand": "To understand",
-      "toAct": "To act",
-      "toBeInspired": "To be inspired",
+      "toUnderstand": "Understand",
+      "toAct": "Take action",
+      "toBeInspired": "Get inspired",
       "calculator": "Calculator",
       "about": "About"
     },
@@ -29,34 +29,31 @@
         },
         "more": {
           "title": "More information",
-          "sources": "Sources and methodologies",
-          "legalNotice": "Legal notices",
-          "contactUs": "Contact us",
-          "sourceId": "sources-and-methodology"
+          "sourceId": "sources-et-methodologies"
         },
         "stayInformed": {
           "title": "Stay informed",
-          "text": "Receive the latest information on new data centers, news and data published by Data Center Bombs.",
+          "text": "Receive all our updates.",
           "newsletter": {
             "placeholder": "Enter your email",
             "button": "Subscribe",
             "emailLabel": "Email address",
             "loading": "Subscribing...",
-            "success": "You are subscribed to the newsletter.",
+            "success": "You have successfully subscribed to the newsletter.",
             "invalidEmail": "Please enter a valid email address.",
-            "error": "We could not subscribe you to the newsletter. Please try again later."
+            "error": "We were unable to subscribe you to the newsletter. Please try again later."
           }
         }
       },
       "allRight": "All rights reserved",
       "and": "and",
-      "donation": "Donate",
-      "legalNotice": "Legal notices"
+      "donation": "Make a donation",
+      "legalNotice": "Legal notice"
     }
   },
   "siteConfig": {
     "title": "Pinkbombs",
-    "description": "Analyzing the impact of Salmon on the Environment, Ecosystem, Health and Communities.",
+    "description": "Analyzing the impact of salmon on the environment, ecosystems, health and communities.",
     "url": "https://pinkbombs-app.vercel.app"
   }
 }

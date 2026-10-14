@@ -10,15 +10,15 @@ const CalculatorBlock = () => {
   const t = useTranslations("site.components");
   return (
     <section className="bg-v2-blue">
-      <div className="flex flex-col lg:flex-row px-8 lg:px-16 py-20 gap-12 lg:gap-0 max-w-[1592px] mx-auto">
-        <div className="w-full lg:w-[55%] xl:w-[40%] flex flex-col items-start gap-6">
+      <div className="flex flex-col xl:flex-row px-8 lg:px-16 py-20 gap-12 lg:gap-0 max-w-[1592px] mx-auto">
+        <div className="w-full lg:w-[80%] xl:w-[40%] flex flex-col items-start gap-6 lg:mb-20">
           <Image
             loading="lazy"
-            src="/site/images/components/calculator-block/sunny-fish.png"
+            src="/site/images/components/calculator-block/sunny-fish.svg"
             width={202}
             height={111}
             alt={t("calculatorBlock.imageAlt")}
-            className="object-cover"
+            className="w-[33%] xl:w-[50%] h-[33%] xl:h-[50%] object-cover"
           />
           <div className="flex flex-col gap-4 lg:pl-8">
             <h1 className="h1 -mt-12 lg:-mt-16 text-pretty">
@@ -29,7 +29,7 @@ const CalculatorBlock = () => {
                 {t("calculatorBlock.title.part2")}
               </span>
             </h1>
-            <p className="p-lead text-v2-pink">
+            <p className="p-lead text-v2-pink text-pretty">
               {t("calculatorBlock.caption")}
             </p>
           </div>

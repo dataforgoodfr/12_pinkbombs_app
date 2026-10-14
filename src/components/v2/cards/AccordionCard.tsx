@@ -91,6 +91,7 @@ const AccordionCard = ({
             {actions.map((action, index) => (
               <AccordionCardButton
                 key={index}
+                index={index}
                 content={action.cta}
                 href={action.url}
                 type={action.type}

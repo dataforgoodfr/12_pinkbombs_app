@@ -2,51 +2,51 @@
   "components": {
     "calculatorBlock": {
       "title": {
-        "part1": "Happily",
-        "part2": ", It's still time to defuse the bomb!"
+        "part1": "Fortunately",
+        "part2": ", there's still time to defuse the bomb!"
       },
-      "caption": "Calculate your salmon footprint and discover how to reduce it, with a little surprise to reward you for your commitment!",
-      "imageAlt": "Fish jumping out of the water in front of a bright sun",
-      "buttonCta": "Assess your impact",
-      "buttonUrl": "/calculator",
-      "companyHelp": "For companies, we can support you in your impact reduction process. You can get in",
-      "contactLink": "contact here"
+      "caption": "Calculate your salmon footprint with the Pinkometer and find out how to reduce it.",
+      "imageAlt": "Happy fish jumping out of the water in front of a bright sun",
+      "buttonCta": "Calculate your impact",
+      "buttonUrl": "/calculateur",
+      "companyHelp": "For businesses, we can support you in your impact reduction journey. You can get in",
+      "contactLink": "touch here"
     },
     "calculator": {
       "labels": [
         { "label": "neutral", "text": "Neutral", "color": "green" },
         { "label": "low", "text": "Low", "color": "yellow" },
-        { "label": "medium", "text": "Medium", "color": "magenta" },
+        { "label": "medium", "text": "Moderate", "color": "magenta" },
         { "label": "high", "text": "High", "color": "red" },
-        { "label": "veryHigh", "text": "Very High", "color": "black" }
+        { "label": "veryHigh", "text": "Very high", "color": "black" }
       ]
     },
     "articlesBlock": {
-      "title": "To swim further!",
+      "title": "Dive deeper!",
       "imageAlt": "Diving fish",
       "articles": {
         "homepage": [
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
-            "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",
-            "title": "The debunking of industrial lobbies",
-            "description": "Discover who the salmon are, how they are produced and the impacts of their consumption.",
+            "imageAlt": "Illustration depicting the industry, trawlers and farmed fish.",
+            "title": "Debunking salmon myths",
+            "description": "Misconceptions, false good solutions, polished talking points… We separate fact from fiction to understand what really lies behind the salmon we produce and consume.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Understand"
           },
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
-            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "imageAlt": "Illustration depicting ways to reduce your impact.",
             "title": "Reduce your impact today",
-            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "description": "Discover simple actions and collective solutions you can take in your everyday life and at work. ",
             "buttonUrl": "/to-act",
-            "buttonCta": "Act"
+            "buttonCta": "Take action"
           },
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
-            "imageAlt": "Illustrative image representing a smile and happy fish.",
+            "imageAlt": "Illustration depicting a smile and happy fish.",
             "title": "Get inspired by initiatives",
-            "description": "Emerging alternatives. Stories and ideas that make you want to do things differently.",
+            "description": "Alternatives are emerging. Discover stories and ideas that inspire you to do things differently.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "Get inspired"
           }
@@ -54,17 +54,17 @@
         "toAct": [
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
-            "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",
-            "title": "The debunking of industrial lobbies",
-            "description": "Discover who the salmon are, how they are produced and the impacts of their consumption.",
+            "imageAlt": "Illustration depicting the industry, trawlers and farmed fish.",
+            "title": "Debunking industrial lobby myths",
+            "description": "Discover what salmon are, how they are produced and the impacts of consuming them.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Understand"
           },
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
-            "imageAlt": "Illustrative image representing a smile and happy fish.",
+            "imageAlt": "Illustration depicting a smile and happy fish.",
             "title": "Get inspired by initiatives",
-            "description": "Emerging alternatives. Stories and ideas that make you want to do things differently.",
+            "description": "Emerging alternatives. Stories and ideas that inspire you to do things differently. Third line to keep things aligned.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "Get inspired"
           }
@@ -72,17 +72,17 @@
         "toUnderstand": [
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
-            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "imageAlt": "Illustration depicting ways to reduce your impact.",
             "title": "Reduce your impact today",
-            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "description": "Discover simple actions and collective solutions you can take in your everyday life and at work. ",
             "buttonUrl": "/to-act",
-            "buttonCta": "Act"
+            "buttonCta": "Take action"
           },
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
-            "imageAlt": "Illustrative image representing a smile and happy fish.",
+            "imageAlt": "Illustration depicting a smile and happy fish.",
             "title": "Get inspired by initiatives",
-            "description": "Emerging alternatives. Stories and ideas that make you want to do things differently.",
+            "description": "Emerging alternatives. Stories and ideas that inspire you to do things differently. Third line to keep things aligned.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "Get inspired"
           }
@@ -90,17 +90,17 @@
         "toBeInspired": [
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
-            "imageAlt": "Illustrative image representing solutions to reduce impact.",
+            "imageAlt": "Illustration depicting ways to reduce your impact.",
             "title": "Reduce your impact today",
-            "description": "In your daily life as well as at work, discover simple actions and collective levers.",
+            "description": "Discover simple actions and collective solutions you can take in your everyday life and at work. ",
             "buttonUrl": "/to-act",
-            "buttonCta": "Act"
+            "buttonCta": "Take action"
           },
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
-            "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish.",
-            "title": "The debunking of industrial lobbies",
-            "description": "Discover who the salmon are, how they are produced and the impacts of their consumption.",
+            "imageAlt": "Illustration depicting the industry, trawlers and farmed fish.",
+            "title": "Debunking industrial lobby myths",
+            "description": "Discover what salmon are, how they are produced and the impacts of consuming them.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Understand"
           }

@@ -6,9 +6,11 @@ import React from "react";
 const AccordionCardButton = ({
   className,
   content,
+  index,
   type = "internalRedirect",
   href = "#",
 }: {
+  index: number;
   className?: string;
   href?: string;
   content: JSX.Element | string;
@@ -25,11 +27,9 @@ const AccordionCardButton = ({
   return (
     <Link
       className={clsx(
-        "flex items-center justify-between py-2 px-4 p-lead border-2 border-v2-pink rounded-xl text-v2-blue hover:bg-v2-blue hover:text-v2-pink hover:border-v2-blue transition-all ease-in-out duration-200",
+        "flex gap-4 items-center justify-between py-2 px-4 p-lead border-2 border-v2-pink rounded-xl text-v2-blue hover:bg-v2-blue hover:text-v2-pink hover:border-v2-blue transition-all ease-in-out duration-200",
         className,
-        type === "externalArticle" || type === "internalArticle"
-          ? "bg-white"
-          : "bg-v2-pink",
+        index === 0 ? "bg-v2-pink" : "bg-white",
       )}
       href={href}
     >

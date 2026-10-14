@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from "clsx";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
@@ -29,26 +28,20 @@ export default HomePage;
 const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="flex lg:mt-26 py-20 lg:pt-40 px-10 min-h-[300px] text-v2-pink bg-v2-blue">
-      <div className="flex flex-col gap-24 lg:gap-8 lg:grid grid-rows-[1fr, auto, 1fr] w-full max-w-[1596px] mx-auto">
+    <section className="flex lg:py-40 p-10 lg:px-20 xl:pt-28 min-h-[600px] text-v2-blue bg-v2-pink">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-[1596px] items-center mx-auto">
+        <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-magenta">
+          {t("hero.title")}{" "}
+          <span className="text-v2-blue">{t("hero.title2")}</span>
+        </h1>
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-plate.svg"
-          width={571}
-          height={425}
+          width={569}
+          height={424}
           alt={t("hero.imageAlt")}
           className="object-contain h-auto mx-auto"
         />
-        <div className="text-center flex gap-2">
-          <p
-            className={clsx(
-              "h1",
-              "md:max-w-[80%] lg:max-w-[60%] mx-auto w-full text-pretty",
-            )}
-          >
-            {t("hero.title")}
-          </p>
-        </div>
       </div>
     </section>
   );
@@ -58,21 +51,32 @@ const ExplodeSection = () => {
   const t = useTranslations("site.homepage");
 
   return (
-    <section className="relative bg-v2-pink">
-      <div className="bg-[url(/site/images/homepage/divider-explode-section.svg)] bg-center bg-repeat w-full h-[49px]" />
-      <div className="flex flex-col gap-20 lg:gap-0 pt-20 text-black lg:min-h-[760px] max-w-[1596px] mx-auto">
-        <div className="px-10 flex text-center flex gap-2">
-          <p className="h1 text-pretty md:max-w-[80%] lg:max-w-[60%] mx-auto">
-            {t("bomb.title")}
-          </p>
+    <section className="bg-v2-blue">
+      <div className="relative w-full max-w-[1596px] mx-auto">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[1596px] mx-auto">
+          <div className="p-10 lg:px-20 lg:py-40 2xl:px-0">
+            <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-pink">
+              {t("bomb.title")}{" "}
+              <span className="text-v2-red2">{t("bomb.title2")} </span>
+              {t("bomb.title3")}
+            </h1>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/red-line.svg"
+              width={437}
+              height={0}
+              alt={t("bomb.imageAlt")}
+              className="pt-2 object-contain h-auto max-w-[70%] lg:max-w-full"
+            />
+          </div>
         </div>
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-bomb.svg"
-          width={1130}
-          height={692}
+          width={1420}
+          height={870}
           alt={t("bomb.imageAlt")}
-          className="lg:pt-24 object-contain mx-auto h-auto"
+          className="relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto h-full"
         />
       </div>
     </section>
@@ -84,14 +88,8 @@ const ImpactSection = () => {
   return (
     <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto">
       <div className="max-w-[1512px] mx-auto">
-        <div className="bg-[url(/site/images/homepage/divider-impact-section.svg)] bg-center bg-repeat w-full h-[48px]" />
         <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between max-w-[1512px]">
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
-              <p className="h2">{t("impact.title")}</p>
-              <p className="h2 text-v2-red">{t("impact.titleHighlight")}</p>
-              <p className="p-lead pt-2">{t("impact.impact")}</p>
-            </div>
+          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
             <Image
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
@@ -100,21 +98,28 @@ const ImpactSection = () => {
               alt={t("impact.imageAltTitle")}
               className="block flex-1 object-contain lg:max-w-[611px] mx-auto h-auto"
             />
-          </div>
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between">
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[48%]">
-              <p className="h2 text-pretty">{t("impact.title2")}</p>
-              <p className="h2 text-v2-red">{t("impact.title2Highlight")}</p>
-              <p className="p-lead pt-2">{t("impact.description")}</p>
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
+              <p className="h2">{t("impact.title")}</p>
+              <p className="h2 text-v2-red">{t("impact.titleHighlight")}</p>
+              <p className="p-lead pt-2 text-pretty">{t("impact.impact")}</p>
             </div>
+          </div>
+          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between">
             <Image
               loading="lazy"
               src="/site/images/homepage/salmons.svg"
-              width={646}
+              width={596}
               height={59}
               alt={t("impact.imageAltDescription")}
-              className="object-contain flex-1 lg:max-w-[646px] mx-auto"
+              className="block flex-1 object-contain lg:max-w-[460px] lg:max-w-full mx-auto h-auto"
             />
+            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[80%] xl:max-w-[50%]">
+              <p className="h2 text-pretty">{t("impact.title2")}</p>
+              <p className="h2 text-v2-red">{t("impact.title2Highlight")}</p>
+              <p className="p-lead pt-2 text-pretty">
+                {t("impact.description")}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -124,6 +129,7 @@ const ImpactSection = () => {
 
 const MenuSection = () => {
   const t = useTranslations("site.homepage");
+  const tAbout = useTranslations("site.about");
   const menuCardItems = t.raw("menu.menuCards") as MenuCardProps[];
   return (
     <section className="relative flex flex-col bg-white mx-auto ">
@@ -136,7 +142,7 @@ const MenuSection = () => {
             <span className="text-v2-red">{t("menu.title.part3")}</span>
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 px-6 lg:px-32 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-4 px-6 lg:px-32">
           {menuCardItems.map((item, index) => (
             <MenuCard
               key={index}
@@ -150,6 +156,17 @@ const MenuSection = () => {
             />
           ))}
         </div>
+        <p className="text-center text-sm text-gray-500 pt-10 pb-20">
+          {t("menu.detail")}{" "}
+          <span>
+            <a
+              className="underline hover:text-v2-magenta"
+              href={`/about#${tAbout("method.sectionId")}`}
+            >
+              {t("menu.methodology")}.
+            </a>
+          </span>
+        </p>
       </div>
     </section>
   );
@@ -175,50 +192,52 @@ const AdditionSection = () => {
       </div>
       <div className="flex flex-col lg:rotate-[3deg] bg-v2-pink text-black mt-8 pt-8 px-6 lg:px-12 space-between gap-4 lg:w-[60%] mx-4 lg:mx-auto rounded-lg">
         <div className="flex flex-col gap-10 text-pretty">
-          <p className="h3 italic">{t("addition.results.intro")}</p>
+          <p className="h5 uppercase text-[22px] italic">
+            {t("addition.results.intro")}
+          </p>
           <div className="lg:grid grid-rows-4">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
+              <Image
+                loading="lazy"
+                src="/site/images/components/farmed-fishes.svg"
+                width={81}
+                height={81}
+                alt={t("addition.results.resultItems.item1.imageAlt")}
+                className="mr-4"
+              />
+              <div className="flex flex-col gap-2">
+                <h3 className="h3 text-pretty">
+                  {t("addition.results.resultItems.item1.title")}
+                </h3>{" "}
+                <p className="p-lead">
+                  {t("addition.results.resultItems.item1.description")}
+                </p>
+              </div>
+            </div>
+            <Image
+              loading="lazy"
+              src="/site/images/homepage/addition-thin-divider.svg"
+              width={725}
+              height={0}
+              alt="Divider"
+              className="-rotate-[2.2deg] my-4"
+            />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
                 src="/site/images/components/salmons.svg"
                 width={81}
                 height={81}
-                alt={t("addition.results.resultItems.item1.imageAlt")}
-                className="mr-4"
-              />
-              <div>
-                <span className="h2">
-                  {t("addition.results.resultItems.item1.title")}
-                </span>{" "}
-                <span className="p-lead">
-                  {t("addition.results.resultItems.item1.description")}
-                </span>
-              </div>
-            </div>
-            <Image
-              loading="lazy"
-              src="/site/images/homepage/addition-thin-divider.svg"
-              width={725}
-              height={0}
-              alt="Divider"
-              className="-rotate-[2.2deg] my-4"
-            />
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
-              <Image
-                loading="lazy"
-                src="/site/images/components/cereal.svg"
-                width={81}
-                height={81}
                 alt={t("addition.results.resultItems.item2.imageAlt")}
                 className="mr-4"
               />
-              <div>
-                <span className="h2">
+              <div className="flex flex-col gap-2">
+                <h3 className="h3 text-pretty">
                   {t("addition.results.resultItems.item2.title")}
-                </span>{" "}
-                <span className="p-lead">
+                </h3>{" "}
+                <p className="p-lead">
                   {t("addition.results.resultItems.item2.description")}
-                </span>
+                </p>
               </div>
             </div>
             <Image
@@ -232,19 +251,19 @@ const AdditionSection = () => {
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
-                src="/site/images/components/carbon.svg"
+                src="/site/images/components/water.svg"
                 width={81}
                 height={81}
                 alt={t("addition.results.resultItems.item3.imageAlt")}
                 className="mr-4"
               />
-              <div>
-                <span className="h2">
+              <div className="flex flex-col gap-2">
+                <h3 className="h3 text-pretty">
                   {t("addition.results.resultItems.item3.title")}
-                </span>{" "}
-                <span className="p-lead">
+                </h3>{" "}
+                <p className="p-lead">
                   {t("addition.results.resultItems.item3.description")}
-                </span>
+                </p>
               </div>
             </div>
             <Image
@@ -258,19 +277,19 @@ const AdditionSection = () => {
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
                 loading="lazy"
-                src="/site/images/components/farmed-fishes.svg"
+                src="/site/images/components/carbon.svg"
                 width={81}
                 height={81}
                 alt={t("addition.results.resultItems.item4.imageAlt")}
                 className="mr-4"
               />
-              <div>
-                <span className="h2">
+              <div className="flex flex-col gap-2">
+                <h3 className="h3 text-pretty">
                   {t("addition.results.resultItems.item4.title")}
-                </span>{" "}
-                <span className="p-lead">
+                </h3>{" "}
+                <p className="p-lead">
                   {t("addition.results.resultItems.item4.description")}
-                </span>
+                </p>
               </div>
             </div>
             <Image
@@ -289,13 +308,13 @@ const AdditionSection = () => {
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
-                src="/site/images/components/water.svg"
+                src="/site/images/components/cereal.svg"
                 width={81}
                 height={81}
                 alt={t("addition.addOns.addOnItems.item1.imageAlt")}
                 className="mr-4"
               />
-              <div>
+              <div className="flex flex-col gap-2">
                 <span className="h4">
                   {t("addition.addOns.addOnItems.item1.title")}
                 </span>{" "}
@@ -315,7 +334,7 @@ const AdditionSection = () => {
                 alt={t("addition.addOns.addOnItems.item2.imageAlt")}
                 className="mr-4"
               />
-              <div>
+              <div className="flex flex-col gap-2">
                 <span className="h4">
                   {t("addition.addOns.addOnItems.item2.title")}
                 </span>{" "}
@@ -329,38 +348,18 @@ const AdditionSection = () => {
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
               <Image
                 loading="lazy"
-                src="/site/images/components/bottle.svg"
+                src="/site/images/components/omega3.svg"
                 width={81}
                 height={81}
                 alt={t("addition.addOns.addOnItems.item3.imageAlt")}
                 className="mr-4"
               />
-              <div>
+              <div className="flex flex-col gap-2">
                 <span className="h4">
                   {t("addition.addOns.addOnItems.item3.title")}
                 </span>{" "}
                 <span className="p">
                   {t.rich("addition.addOns.addOnItems.item3.description", {
-                    strong: (chunks) => <strong>{chunks}</strong>,
-                  })}
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 border-bottom">
-              <Image
-                loading="lazy"
-                src="/site/images/components/omega3.svg"
-                width={81}
-                height={81}
-                alt={t("addition.addOns.addOnItems.item4.imageAlt")}
-                className="mr-4"
-              />
-              <div>
-                <span className="h4">
-                  {t("addition.addOns.addOnItems.item4.title")}
-                </span>{" "}
-                <span className="p preserve-lines">
-                  {t.rich("addition.addOns.addOnItems.item4.description", {
                     strong: (chunks) => <strong>{chunks}</strong>,
                   })}
                 </span>

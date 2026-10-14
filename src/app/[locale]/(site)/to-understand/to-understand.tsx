@@ -31,8 +31,8 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-blue text-v2-pink">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 pb-10 md:pb-14 lg:pb-36 xl:pb-24 lg:pt-40 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 z-10 lg:w-[40%]">
+      <div className="flex flex-col lg:flex-row px-12 pt-12 pb-10 md:pb-14 lg:pb-36 xl:pb-24 lg:pt-20 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
+        <div className="flex flex-col gap-4 z-10 lg:w-[40%] xl:w-[50%] 2xl:pl-48">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
           <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
@@ -43,7 +43,7 @@ const IntroSection = () => {
             width={1796}
             height={415}
             alt={t("intro.imageAlt")}
-            className="relative right-14 md:right-0 md:left-2 lg:-left-20 lg:top-32 xl:top-2 z-0 object-contain scale-[150%] md:scale-[110%] lg:scale-[150%] xl:scale-[130%]"
+            className="relative right-14 md:right-0 md:left-2 lg:-left-16 lg:top-44 xl:top-0 xl:-left-32 2xl:top-2 z-0 object-contain scale-[150%] md:scale-[110%] lg:scale-[150%] xl:scale-[150%] 2xl:scale-[130%]"
           />
         </div>
       </div>
@@ -203,6 +203,7 @@ const DebunkSection = () => {
                 reality={item.reality}
                 actNumber={3}
                 index={index}
+                url={item.url}
               />
             ))}
           </div>
@@ -234,22 +235,22 @@ const SectionButtons = ({
     sectionDisplayed === "block3" ? "border-v2-pink" : "border-v2-blue";
   return (
     <div
-      className={`flex flex-col md:flex-row gap-4 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
+      className={`flex gap-4 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
     >
       <button
-        className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg font-black tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block1")}
       >
         {t("tags.block1")}
       </button>
       <button
-        className={`${activeSection === "block2" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block2" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block2" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg tracking-wider hover:scale-105 ${activeSection === "block2" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block2")}
       >
         {t("tags.block2")}
       </button>
       <button
-        className={`${activeSection === "block3" ? "border-none" : "border border-2"}  ${borderColor} rounded-xl py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "block3" ? activeTagColor : inactiveTagColor}`}
+        className={`${activeSection === "block3" ? "border-none" : "border border-2"}  ${borderColor} rounded-xl py-1 px-3 cta text-xs lg:text-lg tracking-wider hover:scale-105 ${activeSection === "block3" ? activeTagColor : inactiveTagColor}`}
         onClick={() => setActiveSection("block3")}
       >
         {t("tags.block3")}

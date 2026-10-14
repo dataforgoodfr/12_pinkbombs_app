@@ -6,7 +6,11 @@ export const getSectionBackgroundClass = (pathname: string): string => {
     return "green";
   } else if (/to-be-inspired/.test(pathname)) {
     return "yellow";
-  } else if (/about/.test(pathname) || /calculator/.test(pathname)) {
+  } else if (
+    /^\/$/.test(pathname) ||
+    /about/.test(pathname) ||
+    /calculator/.test(pathname)
+  ) {
     return "pink";
   } else {
     return "blue";
@@ -15,6 +19,7 @@ export const getSectionBackgroundClass = (pathname: string): string => {
 
 export const getSectionColor = (pathname: string): SectionColor => {
   if (
+    /^\/$/.test(pathname) ||
     /to-act/.test(pathname) ||
     /to-be-inspired/.test(pathname) ||
     /about/.test(pathname) ||

@@ -8,7 +8,6 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
@@ -177,25 +176,32 @@ export const CalculatorModal = ({
           >
             <div className="grid shrink-0 grid-cols-2 items-center gap-y-3 px-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-x-4 sm:gap-y-0">
               {state.step !== CalculatorStep.Selection && (
-                <button
-                  type="button"
-                  role="backbutton"
-                  aria-label={t("modal.back")}
-                  onClick={back}
-                  className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta"
-                >
-                  <ArrowLeft />
-                </button>
-              )}
-              {showProgress && (
-                <CalculatorProgress
-                  completedProducts={completedProducts}
-                  totalProducts={state.products.length}
-                />
+                <div className="flex flex-col items-start gap-4">
+                  <button
+                    type="button"
+                    role="backbutton"
+                    aria-label={t("modal.back")}
+                    onClick={back}
+                    className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta text-sm"
+                  >
+                    {t("modal.back")}
+                  </button>
+                  {showProgress && (
+                    <div className="flex flex-col items-start gap-2">
+                      <CalculatorProgress
+                        completedProducts={completedProducts}
+                        totalProducts={state.products.length}
+                      />
+                      <p className="text-white text-xs">
+                        {t("modal.completionTime")}
+                      </p>
+                    </div>
+                  )}
+                </div>
               )}
               <CloseButton
                 onClick={reset}
-                className="col-start-2 row-start-1 justify-self-end text-v2-pink hover:text-v2-magenta text-end tracking-wider text-md cta sm:col-start-3"
+                className="col-start-2 row-start-1 mb-auto justify-self-end text-v2-pink hover:text-v2-magenta tracking-wider text-md cta text-sm sm:col-start-3"
               >
                 {t("modal.quit")}
               </CloseButton>
@@ -403,7 +409,7 @@ const CalculatorProgress = ({
               cy="6.5"
               rx="6.75"
               ry="6.5"
-              fill={completed ? "#E82D04" : "white"}
+              fill={completed ? "#FFD4D4" : "white"}
             />
           </svg>
         );
@@ -426,7 +432,7 @@ const NextButton = ({
       type="button"
       disabled={disabled}
       onClick={onClick}
-      className={`pointer-events-auto inline-flex cta border-2 rounded-xl border-v2-blue text-v2-blue bg-v2-pink px-4 py-3 gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "hover:bg-v2-blue hover:text-v2-pink hover:border-v2-pink"}`}
+      className={`pointer-events-auto inline-flex cta text-sm border-2 rounded-xl border-v2-blue text-v2-blue bg-v2-pink px-4 py-3 gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "hover:bg-v2-blue hover:text-v2-pink hover:border-v2-pink"}`}
     >
       <span aria-hidden="true">
         <svg

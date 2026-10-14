@@ -5,7 +5,7 @@
         "part1": "Heureusement",
         "part2": ", Il est encore temps de désamorcer la bombe!"
       },
-      "caption": "Calcule ton empreinte saumon et découvre comment la réduire, avec une petite surprise pour te récompenser de ton engagement\u00a0!",
+      "caption": "Calculez votre empreinte saumon avec le Pinkomètre et découvrez comment la réduire.",
       "imageAlt": "Joyeux poisson qui saute de l'eau et passe devant un soleil brillant",
       "buttonCta": "Calculer votre impact",
       "buttonUrl": "/calculateur",
@@ -29,8 +29,8 @@
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
             "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
-            "title": "Le debunk des lobbys industriels",
-            "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
+            "title": "Le debunk du saumon",
+            "description": "Idées reçues, fausses bonnes solutions, discours bien huilés… On fait le tri pour comprendre ce qui se cache vraiment derrière le saumon que l’on produit et consomme.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Comprendre"
           },
@@ -46,7 +46,7 @@
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
             "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
             "title": "S’inspirer d’initiatives",
-            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour être égal.",
+            "description": "Des alternatives émergent, découvrez des récits et des idées qui donnent envie de faire autrement.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "S’inspirer"
           }

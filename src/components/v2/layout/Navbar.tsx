@@ -69,9 +69,9 @@ const Navbar = () => {
           <Image
             src={`/site/images/pinkbombs-${getColor()}.svg`}
             alt="PinkBombs"
-            width={176}
-            height={43}
-            className="w-24 md:w-36 lg:w-44 h-auto object-contain"
+            width={192}
+            height={58}
+            className="w-full h-auto object-contain"
           />
         </Link>
 
@@ -129,7 +129,7 @@ const Navbar = () => {
                   </svg>
                 </div>
               )}
-              <p className="cta tracking-wider hover:text-v2-magenta transition-colors ease-in-out duration-200">
+              <p className="uppercase font-black tracking-wider hover:text-v2-magenta transition-colors ease-in-out duration-200">
                 {item.text}
               </p>
             </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
           <Menu as="div" className="relative block">
             <MenuButton
               className={clsx(
-                "flex justify-between items-center border border-1 px-3 rounded-md cta hover:text-v2-magenta transition-colors ease-in-out duration-200 group",
+                "flex justify-between items-center border border-1 px-3 rounded-md font-black hover:text-v2-magenta transition-colors ease-in-out duration-200 group",
                 `${getColor() === "blue" ? "border-v2-blue text-v2-blue" : "border-v2-pink text-v2-pink"}`,
                 "hover:text-v2-magenta",
               )}
@@ -171,7 +171,7 @@ const Navbar = () => {
                   <MenuItem key={`lang-${keyLang}`}>
                     <Link
                       className={clsx(
-                        "block px-4 py-2 cta outline-hidden",
+                        "block px-4 py-2 font-black outline-hidden",
                         lang === locale
                           ? getColor() === "blue"
                             ? "text-white bg-v2-blue"
@@ -230,7 +230,7 @@ const Navbar = () => {
               {navItems.map((item, key) => (
                 <Link
                   className={clsx(
-                    "cta text-xl flex items-center mr-auto",
+                    "uppercase font-black text-xl flex items-center mr-auto",
                     getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
                     item.link === pathname
                       ? getColor() === "blue"
@@ -272,7 +272,7 @@ const Navbar = () => {
               {locales.map((lang, keyLang) => (
                 <Link
                   className={clsx(
-                    "cta px-3 py-1 rounded-md border",
+                    "uppercase font-black px-3 py-1 rounded-md border",
                     lang === locale
                       ? `bg-v2-${getColor()} ${getColor() === "blue" ? "text-v2-pink" : "text-v2-blue"}`
                       : `text-v2-${getColor()} bg-v2-${getBackgroundColor()}`,

@@ -7,7 +7,8 @@ import "@/lib/env";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
-import ShareLink from "@/components/v2/links/shareLink";
+
+import { Link } from "@/navigation";
 
 interface TeamMember {
   name: string;
@@ -40,10 +41,12 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-pink text-v2-blue">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 lg:py-0 px-10 md:px-12">
-        <div className="relative lg:top-20 col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pt-32 lg:pl-12 xl:pt-152 xl:-ml-[250px]">
-          <h1 className="h1 text-pretty lg:max-w-[60%]">{t("intro.title")}</h1>
-          <p className="p-lead text-pretty lg:max-w-[80%] xl:max-w-[60%]">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 xl:flex ml-auto xl:w-[50%] py-12 lg:py-0 px-10 md:px-12 lg:pt-20 xl:pt-0 2xl:pt-20">
+        <div className="relative col-start-2 xl:col-start-3 flex flex-col gap-4 lg:pl-12 xl:pt-0">
+          <h1 className="h1 text-pretty pt-12 xl:mt-20 2xl:mt-72 xl:max-w-[80%]">
+            {t("intro.title")}
+          </h1>
+          <p className="p-lead text-pretty lg:max-w-[80%] xl:max-w-none 2xl:max-w-[70%]">
             {t("intro.caption")}
           </p>
         </div>
@@ -54,7 +57,7 @@ const IntroSection = () => {
         width={1537}
         height={596}
         alt={t("intro.imageAlt")}
-        className="object-contain h-auto mx-auto md:-mt-48 lg:-mt-70 w-full"
+        className="object-contain h-auto mx-auto md:-mt-48 xl:-mt-60 2xl:-mt-72 w-full"
       />
     </section>
   );
@@ -84,13 +87,13 @@ const ExplanationSection = () => {
         {t("why.title")}
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
-        <div className="flex flex-col bg-v2-pink gap-8 p-6 lg:p-12 rounded-xl">
+        <div className="flex flex-col justify-center bg-v2-pink gap-8 p-6 lg:p-12 rounded-xl">
           <div className="flex flex-col items-start">
             <Image
               loading="lazy"
               src="/site/images/about/sinking-fish.svg"
-              width={54}
-              height={136}
+              width={98}
+              height={90}
               alt={t("why.situation.imageAlt")}
               className="object-contain"
             />
@@ -104,13 +107,13 @@ const ExplanationSection = () => {
             })}
           </p>
         </div>
-        <div className="flex flex-col bg-v2-green gap-8 p-6 lg:p-12 rounded-xl">
+        <div className="flex flex-col justify-center bg-v2-green gap-8 p-6 lg:p-12 rounded-xl">
           <div className="flex flex-col items-start gap-2">
             <Image
               loading="lazy"
               src="/site/images/about/moving-on-fish.svg"
-              width={54}
-              height={136}
+              width={100}
+              height={45}
               alt={t("why.reaction.imageAlt")}
               className="object-contain"
             />
@@ -135,25 +138,37 @@ const PresentationSection = () => {
   const t = useTranslations("site.about");
   return (
     <section className="bg-white text-v2-blue px-10 pt-16">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:max-w-[1279px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:max-w-[1279px] mx-auto">
         <div className="flex flex-col gap-8">
           <Image
             loading="lazy"
-            src="/site/images/seastemik_logo.avif"
+            src="/site/images/seastemik-logo.svg"
             width={768}
             height={166}
             alt="Logo Seastemik"
-            className="object-contain w-[50%]"
+            className="object-contain w-[40%]"
           />
           <h2 className="sr-only">{t("seastemik.title")}</h2>
-          <p className="p-body preserve-lines">{t("seastemik.paragraph")}</p>
-          <ShareLink
+          <p className="p-body preserve-lines">
+            {t.rich("seastemik.paragraph", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+          <a
             href="https://seastemik.org/"
-            name="Seastemik"
-            customName={t("seastemik.cta")}
-            iconFillColor="fill-v2-blue group-hover:fill-v2-magenta"
-            className="font-secondary font-bold text-md uppercase tracking-wide hover:text-v2-magenta"
-          />
+            className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
+          >
+            {t("seastemik.cta")}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
+              viewBox="0 -960 960 960"
+              width="16"
+            >
+              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+          </a>
         </div>
         <div className="flex flex-col gap-8">
           <Image
@@ -162,17 +177,25 @@ const PresentationSection = () => {
             width={768}
             height={166}
             alt="Logo Data for Good"
-            className="object-contain w-[50%]"
+            className="object-contain w-[40%]"
           />
           <h2 className="sr-only">{t("dataforgood.title")}</h2>
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
-          <ShareLink
-            href="https://dataforgood.org/"
-            name="Data for Good"
-            customName={t("dataforgood.cta")}
-            iconFillColor="fill-v2-blue group-hover:fill-v2-magenta"
-            className="font-secondary font-bold text-md uppercase tracking-wide hover:text-v2-magenta"
-          />
+          <a
+            href="https://dataforgood.fr/"
+            className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
+          >
+            {t("dataforgood.cta")}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
+              viewBox="0 -960 960 960"
+              width="16"
+            >
+              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -186,11 +209,11 @@ const TeamSection = () => {
     <section className="bg-white text-v2-blue pt-14 px-10">
       <div className="flex flex-col gap-10 lg:max-w-[1279px] mx-auto">
         <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8 mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 max-w-[132px]"
+              className="flex flex-col items-center gap-2 max-w-[125px] lg:max-w-none lg:w-[250px]"
             >
               <Image
                 loading="lazy"
@@ -208,7 +231,16 @@ const TeamSection = () => {
           ))}
         </div>
         <div className="flex flex-col items-center gap-8 lg:max-w-[911px]">
-          <p className="p-lead">{t("teamSection.greetings")}</p>
+          <p className="p-body">
+            {t.rich("teamSection.greetings", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+          <p className="p-body">
+            {t.rich("teamSection.greetingsv1", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
         </div>
       </div>
     </section>
@@ -365,24 +397,56 @@ const ApproachAndMethodSection = () => {
             ))}
           </div>
           <p className="p-lead">{t("method.missingInfo")}</p>
-          <ShareLink
+          <Link
             href="/"
-            name="Download"
-            customName={t("method.downloadCta")}
-            iconFillColor="fill-v2-magenta group-hover:fill-v2-blue"
-            className="font-secondary font-bold text-md text-v2-magenta uppercase tracking-wide max-w-[95%] hover:text-v2-blue"
-          />
+            className="flex gap-2 cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
+          >
+            {t("method.downloadCta")}
+            <svg
+              className="inline-block"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 8.99994V12.7499H12V8.99994H13.5V14.2499H1.5V8.99994H3Z"
+                fill="#13176E"
+              />
+              <path
+                d="M8.17529 0.5V10.5005H6.82471V0.5H8.17529Z"
+                fill="#13176E"
+              />
+              <path
+                d="M10.9775 7.97748L7.5 11.455L4.02246 7.97748L4.97754 7.0224L7.5 9.54486L10.0225 7.0224L10.9775 7.97748Z"
+                fill="#13176E"
+              />
+            </svg>
+          </Link>
         </div>
         <h2 className="h2 mt-20">{t("contact.title")}</h2>
         <div className="flex flex-col gap-8 mt-8 mb-20">
-          <p className="p-lead">{t("contact.paragraph")}</p>
-          <ShareLink
+          <p className="p-body">
+            {t.rich("contact.paragraph", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+          <a
             href="mailto:info@seastemik.org"
-            name="Seastemik Email"
-            customName="info@seastemik.org"
-            iconFillColor="fill-v2-magenta group-hover:fill-v2-blue"
-            className="font-secondary font-bold text-md text-v2-magenta uppercase tracking-wide hover:text-v2-blue"
-          />
+            className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
+          >
+            info@seastemik.org
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              className="inline-block ml-2 align-middle fill-v2-blue group-hover:fill-v2-magenta"
+              viewBox="0 -960 960 960"
+              width="16"
+            >
+              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+          </a>
         </div>
       </div>
       <Image

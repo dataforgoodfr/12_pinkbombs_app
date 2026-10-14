@@ -1,5 +1,6 @@
 "use client";
 
+import { Info } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
@@ -92,6 +93,41 @@ export const ReduceImpactSection = ({
 }: ReduceImpactSectionProps) => {
   const t = useTranslations("site.calculator");
   const isMobile = useIsMobile();
+  const [openInfoKey, setOpenInfoKey] = React.useState<string | null>(null);
+  const infoRegionRef = React.useRef<HTMLDivElement>(null);
+  const infoPointerType = React.useRef("mouse");
+  const infoId = React.useId();
+  const infoContext = `${isMobile}-${reduceImpact.activeAccordionIndex}`;
+  const [previousInfoContext, setPreviousInfoContext] =
+    React.useState(infoContext);
+  if (previousInfoContext !== infoContext) {
+    setPreviousInfoContext(infoContext);
+    setOpenInfoKey(null);
+  }
+
+  React.useEffect(() => {
+    if (!openInfoKey) return;
+
+    const dismissOutside = (event: PointerEvent) => {
+      if (!infoRegionRef.current?.contains(event.target as Node)) {
+        setOpenInfoKey(null);
+      }
+    };
+    const dismissOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.stopPropagation();
+        setOpenInfoKey(null);
+      }
+    };
+
+    document.addEventListener("pointerdown", dismissOutside);
+    document.addEventListener("keydown", dismissOnEscape, true);
+    return () => {
+      document.removeEventListener("pointerdown", dismissOutside);
+      document.removeEventListener("keydown", dismissOnEscape, true);
+    };
+  }, [openInfoKey]);
+
   const getDisplayLabel = createDisplayLabelLookup(questions);
   const selectedEntry = reduceImpact.selectedProductKey
     ? response.consoPerProduct[reduceImpact.selectedProductKey]
@@ -226,9 +262,9 @@ export const ReduceImpactSection = ({
 
   return (
     <div className="flex flex-col gap-8">
-      <h3 className="h3 text-pretty text-v2-pink text-center lg:text-left lg:pl-12 xl:w-[80%] 2xl:w-[60%] mx-auto">
+      <h1 className="h1 text-pretty text-v2-pink text-center lg:text-left lg:pl-12 xl:w-[80%] 2xl:w-[60%] mx-auto">
         {t("reduceImpact.title")}
-      </h3>
+      </h1>
       <div className="grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:pb-20 xl:w-[80%] 2xl:w-[60%] mx-auto">
         <div className="flex flex-col gap-4 px-4 md:px-12">
           <AccordionItem
@@ -330,33 +366,115 @@ export const ReduceImpactSection = ({
               )
             }
           >
-            <div className="p-4 flex flex-col gap-2">
-              {STEP_3_ALTERNATIVES.map(({ key, disabled }) => (
-                <label
-                  key={key}
-                  className={`flex items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-                >
-                  <AccordionRadio
-                    id={`alternative-${key}`}
-                    name="alternative"
-                    disabled={disabled}
-                    checked={
-                      pendingAlternative !== null
-                        ? pendingAlternative === key
-                        : reduceImpact.selectedAlternative === key
-                    }
-                    onChange={() => selectAlternativeWithDelay(key)}
-                  />
-                  <span className="p-lead text-v2-pink">
-                    {t(`reduceImpact.step3.alternatives.${key}`)}
-                  </span>
-                  {disabled && (
-                    <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
-                      {t("reduceImpact.step3.falseFriend")}
-                    </span>
-                  )}
-                </label>
-              ))}
+            <div className="p-2 flex flex-col gap-2">
+              {STEP_3_ALTERNATIVES.map(({ key, disabled }) => {
+                const label = t(`reduceImpact.step3.alternatives.${key}`);
+                const infoKey = `reduceImpact.step3.info.${key}`;
+                const info = t.has(infoKey) ? t(infoKey).trim() : "";
+                const isInfoOpen = openInfoKey === key;
+                const descriptionId = `${infoId}-${key}`;
+
+                return (
+                  <div
+                    key={key}
+                    ref={isInfoOpen ? infoRegionRef : undefined}
+                    className="min-w-0"
+                    onPointerLeave={(event) => {
+                      if (
+                        !isMobile &&
+                        event.pointerType === "mouse" &&
+                        !event.currentTarget.contains(document.activeElement)
+                      ) {
+                        setOpenInfoKey((current) =>
+                          current === key ? null : current,
+                        );
+                      }
+                    }}
+                    onBlur={(event) => {
+                      if (!event.currentTarget.contains(event.relatedTarget)) {
+                        setOpenInfoKey((current) =>
+                          current === key ? null : current,
+                        );
+                      }
+                    }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <label
+                        className={`flex min-w-0 flex-1 items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+                      >
+                        <AccordionRadio
+                          id={`alternative-${key}`}
+                          name="alternative"
+                          disabled={disabled}
+                          checked={
+                            pendingAlternative !== null
+                              ? pendingAlternative === key
+                              : reduceImpact.selectedAlternative === key
+                          }
+                          onChange={() => selectAlternativeWithDelay(key)}
+                        />
+                        <span className="flex min-w-0 flex-wrap items-center gap-2">
+                          <span className="p-lead break-words text-v2-pink">
+                            {label}
+                          </span>
+                          {disabled && (
+                            <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
+                              {t("reduceImpact.step3.falseFriend")}
+                            </span>
+                          )}
+                        </span>
+                      </label>
+                      {info && (
+                        <button
+                          type="button"
+                          aria-label={label}
+                          aria-expanded={isInfoOpen}
+                          aria-controls={descriptionId}
+                          aria-describedby={
+                            isInfoOpen ? descriptionId : undefined
+                          }
+                          className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-md text-v2-magenta hover:bg-v2-pink/10 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-v2-magenta"
+                          onPointerDown={(event) => {
+                            infoPointerType.current = event.pointerType;
+                          }}
+                          onPointerEnter={(event) => {
+                            if (!isMobile && event.pointerType === "mouse") {
+                              setOpenInfoKey(key);
+                            }
+                          }}
+                          onFocus={() => {
+                            if (
+                              !isMobile &&
+                              infoPointerType.current !== "touch"
+                            ) {
+                              setOpenInfoKey(key);
+                            }
+                          }}
+                          onKeyDown={() => {
+                            infoPointerType.current = "mouse";
+                          }}
+                          onClick={() => {
+                            setOpenInfoKey((current) =>
+                              current === key ? null : key,
+                            );
+                          }}
+                        >
+                          <Info aria-hidden="true" />
+                        </button>
+                      )}
+                    </div>
+                    {info && isInfoOpen && (
+                      <div
+                        id={descriptionId}
+                        role="tooltip"
+                        className="m-2 rounded-md border border-v2-magenta p-3 text-sm text-v2-pink whitespace-pre-line [overflow-wrap:anywhere]"
+                      >
+                        {info}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </AccordionItem>
 
@@ -370,32 +488,114 @@ export const ReduceImpactSection = ({
             }
           >
             <div className="p-4 flex flex-col gap-2">
-              {STEP_4_ALTERNATIVES.map(({ key, disabled }) => (
-                <label
-                  key={key}
-                  className={`flex items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-                >
-                  <AccordionRadio
-                    id={`supplement-${key}`}
-                    name="supplement"
-                    disabled={disabled}
-                    checked={
-                      pendingSupplement !== null
-                        ? pendingSupplement === key
-                        : reduceImpact.selectedSupplement === key
-                    }
-                    onChange={() => selectSupplementWithDelay(key)}
-                  />
-                  <span className="p-lead text-v2-pink">
-                    {t(`reduceImpact.step4.alternatives.${key}`)}
-                  </span>
-                  {disabled && (
-                    <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
-                      {t("reduceImpact.step4.falseFriend")}
-                    </span>
-                  )}
-                </label>
-              ))}
+              {STEP_4_ALTERNATIVES.map(({ key, disabled }) => {
+                const label = t(`reduceImpact.step4.alternatives.${key}`);
+                const infoKey = `reduceImpact.step4.info.${key}`;
+                const info = t.has(infoKey) ? t(infoKey).trim() : "";
+                const isInfoOpen = openInfoKey === key;
+                const descriptionId = `${infoId}-${key}`;
+
+                return (
+                  <div
+                    key={key}
+                    ref={isInfoOpen ? infoRegionRef : undefined}
+                    className="min-w-0"
+                    onPointerLeave={(event) => {
+                      if (
+                        !isMobile &&
+                        event.pointerType === "mouse" &&
+                        !event.currentTarget.contains(document.activeElement)
+                      ) {
+                        setOpenInfoKey((current) =>
+                          current === key ? null : current,
+                        );
+                      }
+                    }}
+                    onBlur={(event) => {
+                      if (!event.currentTarget.contains(event.relatedTarget)) {
+                        setOpenInfoKey((current) =>
+                          current === key ? null : current,
+                        );
+                      }
+                    }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <label
+                        className={`flex min-w-0 flex-1 items-center gap-4 ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+                      >
+                        <AccordionRadio
+                          id={`supplement-${key}`}
+                          name="supplement"
+                          disabled={disabled}
+                          checked={
+                            pendingSupplement !== null
+                              ? pendingSupplement === key
+                              : reduceImpact.selectedSupplement === key
+                          }
+                          onChange={() => selectSupplementWithDelay(key)}
+                        />
+                        <span className="flex min-w-0 flex-wrap items-center gap-2">
+                          <span className="p-lead break-words text-v2-pink">
+                            {label}
+                          </span>
+                          {disabled && (
+                            <span className="text-xs uppercase px-2 py-0.5 rounded-full border border-v2-pink text-v2-pink">
+                              {t("reduceImpact.step4.falseFriend")}
+                            </span>
+                          )}
+                        </span>
+                      </label>
+                      {info && (
+                        <button
+                          type="button"
+                          aria-label={label}
+                          aria-expanded={isInfoOpen}
+                          aria-controls={descriptionId}
+                          aria-describedby={
+                            isInfoOpen ? descriptionId : undefined
+                          }
+                          className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-md text-v2-magenta hover:bg-v2-pink/10 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-v2-magenta"
+                          onPointerDown={(event) => {
+                            infoPointerType.current = event.pointerType;
+                          }}
+                          onPointerEnter={(event) => {
+                            if (!isMobile && event.pointerType === "mouse") {
+                              setOpenInfoKey(key);
+                            }
+                          }}
+                          onFocus={() => {
+                            if (
+                              !isMobile &&
+                              infoPointerType.current !== "touch"
+                            ) {
+                              setOpenInfoKey(key);
+                            }
+                          }}
+                          onKeyDown={() => {
+                            infoPointerType.current = "mouse";
+                          }}
+                          onClick={() => {
+                            setOpenInfoKey((current) =>
+                              current === key ? null : key,
+                            );
+                          }}
+                        >
+                          <Info aria-hidden="true" />
+                        </button>
+                      )}
+                    </div>
+                    {info && isInfoOpen && (
+                      <div
+                        id={descriptionId}
+                        role="tooltip"
+                        className="m-2 rounded-md border border-v2-magenta p-3 text-sm text-v2-pink whitespace-pre-line [overflow-wrap:anywhere]"
+                      >
+                        {info}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </AccordionItem>
 
@@ -641,7 +841,6 @@ export const ReduceImpactSection = ({
                       dish: engagementDish,
                       alternative: engagementAlternative,
                       supplement: engagementSupplement,
-                      supplementAmount: 15,
                     },
                   )}
                   "

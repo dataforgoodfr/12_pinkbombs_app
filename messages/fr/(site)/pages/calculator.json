@@ -99,21 +99,28 @@
     },
     "sumUp": {
       "title": "Votre consommation de saumon",
-      "caption": "Si besoin, cliquez sur la flèche retour pour mettre à jour vos réponses.",
+      "caption": "Si besoin, cliquez sur le bouton retour pour mettre à jour vos réponses.",
       "button": "Calculer mon impact",
       "around": "Environ\u00a0:"
     },
     "loading": {
       "title": "On plonge dans vos données",
-      "caption": "Calcul de votre empreinte océan en cours...",
-      "info": "Un saumon d'élevage parcourt en moyenne 8000 km avant votre assiette."
+      "caption": "Calcul de votre empreinte saumons en cours...",
+      "info": "Un saumon d'élevage parcourt en moyenne 8\u00a0000 km avant votre assiette."
     },
 
     "result": {
       "title": "Impact ",
       "title2": " {impact}",
       "caption": "Vous consommez environ {totalConsoInKg} kg de saumon par an.",
-      "productListTitle": "Votre consommation en détail"
+      "productListTitle": "Votre consommation en détail",
+      "paragraphs": {
+        "neutral": "Vous ne consommez pas de saumon. On ne peut que vous féliciter et vous encourager à porter ce message autour de vous.",
+        "low": "Vous consommez environ {totalConsoInKg}kg de saumon par an. Vous êtes déjà sur la bonne voie. Prochaine étape\u00a0: objectif zéro\u00a0!",
+        "medium": "Vous consommez environ {totalConsoInKg}kg de saumon par an. En remplaçant une partie de votre consommation par l’une des alternatives proposées, vous réduisez déjà nettement votre impact.",
+        "high": "Vous consommez environ {totalConsoInKg}kg de saumon par an. Le saumon fait partie de vos habitudes, et c’est justement là que chaque repas remplacé compte le plus pour réduire votre impact.",
+        "veryHigh": "Vous consommez environ {totalConsoInKg}kg de saumon par an. Votre marge de progression est la plus grande, et diviser votre consommation par deux aurait déjà un vrai impact pour l’océan."
+      }
     },
 
     "reduceImpact": {
@@ -133,11 +140,19 @@
         "falseFriend": "Faux-ami",
         "alternatives": {
           "algae": "Algues",
-          "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio de préférence)",
-          "shellfish": "Coquillages (origine France de préférence)",
-          "plantBasedProtein": "Protéines Végétales (bio de préférence)",
+          "plantBasedSmokedSalmon": "Simili Saumon Fumé (bio)",
+          "shellfish": "Coquillages (origine France)",
+          "plantBasedProtein": "Protéines Végétales (bio)",
           "trout": "Truite",
           "tuna": "Thon"
+        },
+        "info": {
+          "algae": "Les algues se cultivent sans farine de poisson, sans engrais et sans eau douce. Et les oméga-3 que l’on cherche dans les saumons sont produits à l’origine par des micro-algues. Une filière à faire grandir sur nos côtes.",
+          "plantBasedSmokedSalmon": "Le plaisir du saumon fumé, sans l’élevage intensif. Les alternatives végétales se multiplient et progressent vite. Le bon réflexe\u00a0: retourner le paquet et choisir une liste d’ingrédients courte.",
+          "shellfish": "Moules et huîtres se nourrissent en filtrant l’eau de mer, et donc sans farine, ni huile de poisson. Elles apportent aussi du fer, du zinc et de la B12. Leur santé dépend de celle de nos eaux côtières.",
+          "plantBasedProtein": "Lentilles, pois chiches et haricots sont riches en protéines et en fibres, bon marché et faciles à conserver. Les recommandations nutritionnelles conseillent d’en manger au moins 2 fois par semaine.",
+          "trout": "Remplacer le saumon par la truite est une fausse bonne idée. Saumon et truite sont cousins\u00a0: deux carnivores élevés de façon intensive et nourris  de farines et d’huiles issues de poissons sauvages.",
+          "tuna": "Remplacer par le thon est une fausse bonne idée. C'est un prédateur en bout de chaîne qui concentre le mercure. La pêche industrielle au thon entraîne des captures de requins, tortues et dauphins."
         }
       },
       "step4": {
@@ -151,6 +166,9 @@
           "nut": "Noix",
           "algae": "Algues",
           "fishOil": "Huile de poisson"
+        },
+        "info": {
+          "fishOil": "Fausse bonne idée\u00a0: l’huile de poisson vient des mêmes pêcheries d’anchois et de sardines que celles qui nourrissent les saumons d’élevage. Et les oméga-3 qu’elle contient ont été produits au départ par des micro-algues. Essayez les autres ingrédients\u00a0!"
         }
       },
       "recalculate": {
@@ -187,13 +205,13 @@
         "algae": "des algues",
         "fishOil": "de l'huile de poisson"
       },
-      "impactChanged": "Je vais consommer {newFrequency, plural, =1 {1 plat} other {# plats}} de {dish} au lieu de {oldFrequency, plural, =1 {1 plat} other {# plats}} par an. J'alterne avec {alternative} quand c'est possible et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine.",
-      "impactEqual": "Je continue à consommer {oldFrequency, plural, =1 {1 plat} other {# plats}} de {dish} par an. J'alterne au maximum avec {alternative} et je me supplémente avec {supplement}, à raison de {supplementAmount} g par semaine."
+      "impactChanged": "Je vais consommer {newFrequency, plural, =1 {1 plat} other {# plats}} de {dish} au lieu de {oldFrequency, plural, =1 {1 plat} other {# plats}} par an. J'alterne avec {alternative} quand c'est possible et je me supplémente avec {supplement}.",
+      "impactEqual": "Je continue à consommer {oldFrequency, plural, =1 {1 plat} other {# plats}} de {dish} par an. J'alterne au maximum avec {alternative} et je me supplémente avec {supplement}."
     },
     "badgeQuestions": {
-      "title": "Encore deux saisies avant d'accéder à votre badge...",
+      "title": "Plus que deux clics avant d'accéder à votre badge...",
       "omega3Consent": "Je souhaite que l'État complémente des produits du quotidien en oméga-3.",
-      "emailCaption": "Restez au courant de l’impact collectif de cette campagne et de tous les nouveaux moyens d’action mis en oeuvre pour avancer vers un océan plus juste pour tous les vivants.",
+      "emailCaption": "Restez au courant de l’impact collectif de cette campagne et de tous les nouveaux moyens d’action mis en oeuvre pour avancer vers un Océan plus juste pour tous·tes les vivant·es.",
       "email": "Votre adresse email",
       "emailPlaceholder": "Entrez votre e-mail",
       "emailError": "Veuillez saisir une adresse e-mail valide.",
@@ -211,19 +229,19 @@
       },
       "low": {
         "title": "Grand.e saumon.e",
-        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+        "caption": "Félicitations, vous êtes en chemin pour devenir bien costaud·e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grand·e saumon·e d'Atlantique\u00a0!"
       },
       "medium": {
-        "title": "Saumon Ado",
-        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+        "title": "Saumon Ado (smolt)",
+        "caption": "Bravo\u00a0! Vous êtes bien en chemin, un·e smolt comme disent les scientifiques et probablement, si l'ambition vous accompagne dans cette petite transformation\u00a0: un ou une très grande saumon\u00a0!"
       },
       "high": {
         "title": "Bébé saumon",
-        "caption": "Vous êtes un.e alevin.e de saumon.e, vous avez réussi l’éclosion. Pas mal du tout mais il va falloir être courageux.se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon comme vous."
+        "caption": "Vous êtes un·e alevin·e de saumon·e, vous avez réussi l’éclosion. Pas mal du tout\u00a0! Il va maintenant falloir être courageux·se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon·e comme vous."
       },
       "veryHigh": {
         "title": "Graine de saumon",
-        "caption": "Tel un oeuf au milieu entre le gravier d’une rivière de montagne, vous êtes en devenir d’être un beau ou une belle saumon.e, mais pour ça, la route va être longue, il faudra être assidu.e et réussir à tenir des engagements quitte à redoubler d’effort\u00a0! "
+        "caption": "Tel un oeuf de saumon·e sur le gravier d’une rivière de montagne, vous pouvez devenir d’être un beau ou une belle saumon·e, mais pour ça, la route va être longue, il faudra redoubler d’effort pour passer au niveau supérieur\u00a0! "
       }
     },
     "error": {

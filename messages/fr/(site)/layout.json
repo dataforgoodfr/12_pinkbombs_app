@@ -24,7 +24,7 @@
     "footer": {
       "sections": {
         "projectBy": {
-          "title": "Un projet de",
+          "title": "Un projet par",
           "site": "Pinkbombs"
         },
         "more": {
@@ -32,8 +32,8 @@
           "sourceId": "sources-et-methodologies"
         },
         "stayInformed": {
-          "title": "Restez informé",
-          "text": "Recevez les dernières informations sur les nouveaux centres de données, les actualités et les données publiées par Data Center Bombs.",
+          "title": "Restez informé·e",
+          "text": "Recevez toutes nos informations.",
           "newsletter": {
             "placeholder": "Entrez votre e-mail",
             "button": "S'abonner",
