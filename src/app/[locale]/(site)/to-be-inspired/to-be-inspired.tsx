@@ -5,12 +5,12 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
 
-import CalculatorBlock from "@/components/v2/CalculatorBlock";
-import ArticleCard, {
-  ArticleCardProps,
-} from "@/components/v2/cards/ArticleCard";
-import ExplorationBlock from "@/components/v2/ExplorationBlock";
 import { getArticleSlug } from "@/lib/articles/slug";
+import type { ArticleContent } from "@/lib/articles/types";
+
+import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ArticleCard from "@/components/v2/cards/ArticleCard";
+import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToBeInspired = () => {
   return (
@@ -61,18 +61,23 @@ const IntroSection = () => {
 };
 
 const ArticleSection = () => {
-  const t = useTranslations("site.toBeInspired");
-  const articleCardItems = t.raw("articles") as ArticleCardProps[];
+  const t = useTranslations("site.toBeInspiredArticle");
+  const articleCardItems = t.raw("articles") as ArticleContent[];
   return (
     <section className="bg-v2-magenta">
       <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
-        {articleCardItems.map((article, index) => (
+        {articleCardItems.map((article) => (
           <ArticleCard
-            key={article.id ?? index}
+            key={article.id}
             id={article.id}
             title={article.title}
             slug={getArticleSlug(article.title, article.id)}
-            image={article.image}
+            image={{
+              src: article.heroImage,
+              width: article.id === 5 ? 969 : 302,
+              height: article.id === 5 ? 412 : 242,
+              alt: article.heroImageAlt,
+            }}
           />
         ))}
       </div>

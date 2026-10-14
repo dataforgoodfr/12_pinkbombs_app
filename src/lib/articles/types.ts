@@ -17,4 +17,5 @@ export interface ArticleContent {
   heroImage: string;
   heroImageAlt: string;
   blocks: ArticleContentBlock[];
+  relatedArticleIds?: number[];
 }
