@@ -27,6 +27,8 @@ export type NavItemsProps = {
 const Navbar = () => {
   const t = useTranslations("site.layout");
   const pathname = usePathname();
+  const localePathname =
+    pathname === "/to-be-inspired/[slug]" ? "/to-be-inspired" : pathname;
   const locale = useLocale();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -178,7 +180,7 @@ const Navbar = () => {
                             : "text-v2-blue bg-v2-pink"
                           : "text-v2-blue",
                       )}
-                      href={pathname}
+                      href={localePathname}
                       key={`lang-${keyLang}`}
                       aria-current={lang === locale ? "page" : undefined}
                       locale={lang}
@@ -278,7 +280,7 @@ const Navbar = () => {
                       : `text-v2-${getColor()} bg-v2-${getBackgroundColor()}`,
                     `border-v2-${getColor()}`,
                   )}
-                  href={pathname}
+                  href={localePathname}
                   key={`mobile-lang-${keyLang}`}
                   aria-current={lang === locale ? "page" : undefined}
                   locale={lang}

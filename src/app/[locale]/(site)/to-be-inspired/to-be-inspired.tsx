@@ -10,6 +10,7 @@ import ArticleCard, {
   ArticleCardProps,
 } from "@/components/v2/cards/ArticleCard";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import { getArticleSlug } from "@/lib/articles/slug";
 
 const ToBeInspired = () => {
   return (
@@ -67,10 +68,10 @@ const ArticleSection = () => {
       <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
         {articleCardItems.map((article, index) => (
           <ArticleCard
-            key={index}
+            key={article.id ?? index}
             id={article.id}
             title={article.title}
-            type={article.type}
+            slug={getArticleSlug(article.title, article.id)}
             image={article.image}
           />
         ))}

@@ -1,0 +1,189 @@
+{
+  "toBeInspiredArticle": {
+    "page": "S'inspirer - ",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Les saumons, symbole d'une industrie",
+        "summary": "Longtemps réservés aux tables de fête, les saumons sont devenus en quelques décennies les poissons les plus consommés en France. Derrière cette consommation inquiétante se cache l'histoire d'une industrie qui a transformé les saumons en produit de masse.",
+        "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageAlt": "Cages d'élevage de saumons dans une baie",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "L'histoire des saumons d'élevage commence par celle d'un Océan qui a changé de visage. En un siècle, la consommation mondiale de poissons a été multipliée par neuf, "
+              },
+              {
+                "type": "link",
+                "text": "d'après l'Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)",
+                "href": "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/fr/fr_atlanticsalmon.htm"
+              },
+              {
+                "type": "text",
+                "text": ". Et ce bouleversement ne doit rien au hasard."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Au lendemain de la Seconde Guerre mondiale, les moyens de capture s'accroissent de façon vertigineuse. De grandes flottes de pêche industrielle de pays comme la France, la Chine ou la Russie prennent la mer. À terre, les marchés du frais et de la conserve se développent et les habitudes alimentaires changent."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Une invention de la Norvège"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans la foulée se développent la commercialisation des plats cuisinés surgelés et l'aquaculture, autrement dit l'élevage des poissons, en particulier des saumons. Les élevages piscicoles industriels sont nés en Norvège dans les années 1960. Petit à petit, leur modèle s'exporte dans les rares pays qui réunissent les conditions naturelles propices à l'élevage."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/1.jpg",
+            "alt": "Filets de saumon emballés dans un rayon de supermarché",
+            "caption": "Le saumon d'élevage est devenu un produit de grande consommation."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En 2021, quatre pays concentrent à eux seuls 90 % des saumons élevés dans le monde, "
+              },
+              {
+                "type": "link",
+                "text": "selon la FAO",
+                "href": "https://www.fao.org/fishery/fr/collection/aquaculture"
+              },
+              {
+                "type": "text",
+                "text": ". La Norvège en produit plus de la moitié, le Chili un quart, suivi de loin par le Royaume-Uni et le Canada."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un marketing bien rosé"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Parmi tous les poissons, c'est le saumon de l'Atlantique, le Salmo salar, que l'industrie a imposé comme espèce d'élevage. Plusieurs raisons expliquent ce choix. Le saumon sauvage avait déjà sa place à table, comme produit festif et de luxe. L'aquaculture l'a rendu largement accessible en quelques années. Pour les producteurs, il présentait un atout décisif : il pouvait être élevé massivement en cages. En clair, l'industrie piscicole a calqué les méthodes de l'industrie agricole."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/2.jpg",
+            "alt": "Tranches de saumon frais présentées sur de la glace",
+            "caption": "Le saumon est souvent vendu pour sa couleur et sa chair."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans leurs publicités, les industriels des saumons vantent la couleur rosée et la chair sans arête de leurs poissons. Ils évoquent aussi leur richesse en matières grasses et en oméga 3, en laissant dans l'ombre les éléments toxiques que contient la chair des poissons. Et à force, leurs opérations de séduction ont fini par séduire le grand public."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Une croissance sans frein"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Depuis les années 1980, la production des saumons d'élevage connaît une hypercroissance à l'échelle mondiale. Et cette tendance n'est pas prête de s'arrêter. La Norvège, leader mondial, ambitionne de tripler sa production annuelle d'ici 2050. Pour y parvenir, elle mise sur de nouvelles technologies ultra-énergivores et impactantes : l'élevage terrestre et l'élevage offshore."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/3.png",
+            "alt": "Cages d'élevage de saumons installées au large d'une côte",
+            "caption": "L'élevage du saumon s'étend des fjords aux installations offshore."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Rappelons que l'industrie des saumons représente une bombe écologique, sociale et sanitaire. Les élevages intensifs engendrent des conséquences désastreuses : émissions de gaz à effet de serre (GES), maltraitances animales, déforestation, aggravation de la surpêche, pillage des ressources de populations d'autres pays. Sans parler des conséquences pour notre santé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Le paradoxe français"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce récit, la France tient un rôle de premier plan. Premier pays consommateur de saumons en Europe et quatrième au niveau mondial, elle est un acteur majeur du secteur. Elle porte donc une responsabilité particulière dans l'évolution de ces pratiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Le paradoxe est frappant. Selon le type d'oméga 3 considéré (DHA/EPA ou ALA), 89 % à 99 % de la population française présentent des insuffisances. Malgré une forte consommation de saumons, les besoins d'une large majorité des Français ne sont donc pas couverts."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Du produit de luxe à l'élevage intensif, le saumon raconte l'histoire d'une industrie qui a façonné nos habitudes alimentaires. Mais ses promesses nutritionnelles ne tiennent pas face aux chiffres. Ce constat invite à stopper notre surconsommation de saumons d'élevage industriels. Il souligne surtout l'impérieuse nécessité de transformer notre système alimentaire."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour en savoir davantage sur les rouages et les ravages de l'industrie des saumons, lisez notre rapport : "
+              },
+              {
+                "type": "link",
+                "text": "Saumon, la bombe rose d'un système alimentaire à bout de souffle",
+                "href": "https://seastemik.org/nos-enquetes"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

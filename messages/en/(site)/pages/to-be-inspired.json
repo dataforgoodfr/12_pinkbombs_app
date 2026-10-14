@@ -98,6 +98,17 @@
           "height": 242,
           "alt": "A show about salmon, ghosts and Vietnam"
         }
+      },
+      {
+        "id": 10,
+        "title": "Salmon, a symbol of an industry",
+        "type": "internal",
+        "image": {
+          "src": "/site/images/to-be-inspired/articles/3.png",
+          "width": 302,
+          "height": 242,
+          "alt": "Salmon farming pens in a coastal bay"
+        }
       }
     ]
   }

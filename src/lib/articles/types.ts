@@ -1,0 +1,20 @@
+export interface ArticleTextSegment {
+  type: "text" | "link";
+  text: string;
+  href?: string;
+}
+
+export type ArticleContentBlock =
+  | { type: "paragraph"; segments: ArticleTextSegment[] }
+  | { type: "heading"; text: string }
+  | { type: "image"; src?: string; alt: string; caption?: string }
+  | { type: "youtube"; videoId: string; title: string };
+
+export interface ArticleContent {
+  id: number;
+  title: string;
+  summary: string;
+  heroImage: string;
+  heroImageAlt: string;
+  blocks: ArticleContentBlock[];
+}

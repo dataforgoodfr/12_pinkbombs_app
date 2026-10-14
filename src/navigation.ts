@@ -32,6 +32,10 @@ export const pathnames = {
     fr: "/s-inspirer",
     en: "/to-be-inspired",
   },
+  "/to-be-inspired/[slug]": {
+    fr: "/s-inspirer/[slug]",
+    en: "/to-be-inspired/[slug]",
+  },
   "/calculator": {
     fr: "/calculateur",
     en: "/calculator",

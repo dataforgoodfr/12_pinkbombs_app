@@ -11,12 +11,13 @@
     "articles": [
       {
         "id": 1,
-        "title": "Un spectacle qui parle des saumons, des fantomes et du vietnam",
-        "type": "external",
+        "title": "Les saumons, symbole d'une industrie",
+        "type": "internal",
         "image": {
+          "src": "/site/images/to-be-inspired/articles/3.png",
           "width": 302,
           "height": 242,
-          "alt": ""
+          "alt": "Cages d'élevage de saumons dans une baie"
         }
       },
       {

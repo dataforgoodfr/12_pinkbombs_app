@@ -1,0 +1,187 @@
+{
+  "toBeInspiredArticle": {
+    "page": "To Be Inspired - ",
+    "articles": [
+      {
+        "id": 10,
+        "title": "Salmon, a symbol of an industry",
+        "summary": "Once reserved for celebratory meals, salmon has become the most consumed fish in France in just a few decades. Behind this troubling consumption lies the story of an industry that turned salmon into a mass-market product.",
+        "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageAlt": "Salmon farming pens in a coastal bay",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The story of farmed salmon begins with an ocean that has changed beyond recognition. In a century, global fish consumption has increased ninefold, according to the "
+              },
+              {
+                "type": "link",
+                "text": "Food and Agriculture Organization of the United Nations (FAO)",
+                "href": "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/en/en_atlanticsalmon.htm"
+              },
+              {
+                "type": "text",
+                "text": ". This transformation did not happen by chance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "After the Second World War, fishing capacity grew dramatically. Large industrial fishing fleets from countries such as France, China, and Russia set out to sea. On land, fresh-fish and canned-food markets expanded, and eating habits changed."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A Norwegian invention"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Frozen ready meals and aquaculture, the farming of fish, particularly salmon, grew in their wake. Industrial fish farms began in Norway in the 1960s. Gradually, the model spread to the few countries with natural conditions suited to salmon farming."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "alt": "Packaged salmon fillets displayed in a supermarket case",
+            "caption": "Farmed salmon has become a mass-market product."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In 2021, four countries produced 90% of the world's farmed salmon, "
+              },
+              {
+                "type": "link",
+                "text": "according to the FAO",
+                "href": "https://www.fao.org/fishery/en/collection/aquaculture"
+              },
+              {
+                "type": "text",
+                "text": ". Norway accounted for more than half, Chile for a quarter, followed at a distance by the United Kingdom and Canada."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A rosy marketing story"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Among all fish, the industry established Atlantic salmon, Salmo salar, as the farmed species of choice. Several reasons explain that decision. Wild salmon was already a festive luxury at the table. Aquaculture made it widely available within a few years. For producers, it had one decisive advantage: it could be raised in large numbers in cages. In short, fish farming borrowed the methods of industrial agriculture."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "alt": "Fresh salmon steaks displayed on ice",
+            "caption": "Salmon is often marketed for its color and boneless flesh."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In their advertising, salmon producers promote the rosy color and boneless flesh of their fish. They also highlight their fat content and omega-3s, leaving the toxic substances in fish flesh out of view. Over time, their marketing campaigns won over the public."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Unrestrained growth"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Since the 1980s, farmed salmon production has grown at an extraordinary pace worldwide, and the trend shows no sign of stopping. Norway, the world's leading producer, aims to triple its annual output by 2050. To achieve this, it is betting on new, highly energy-intensive and damaging technologies: land-based and offshore farming."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/1.jpg",
+            "alt": "Salmon farming pens installed off a coastline",
+            "caption": "Salmon farming is expanding from fjords to offshore facilities."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The salmon industry is an ecological, social, and public-health time bomb. Intensive farms have disastrous consequences: greenhouse-gas emissions, animal cruelty, deforestation, worsening overfishing, and the plundering of other communities' resources, not to mention the effects on our health."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "The French paradox"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "France plays a leading role in this story. It is Europe's largest salmon consumer and the world's fourth largest, making it a major player in the sector. It therefore bears particular responsibility for how these practices evolve."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The paradox is striking. Depending on the omega-3 type considered (DHA/EPA or ALA), 89% to 99% of the French population has insufficient levels. Despite high salmon consumption, the needs of most people in France are not being met."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "From luxury food to intensive farming, salmon tells the story of an industry that has reshaped our eating habits. But its nutritional promises do not hold up against the figures. This calls for us to stop overconsuming farmed salmon, and highlights the urgent need to transform our food system."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "To learn more about the inner workings and harms of the salmon industry, read our report: "
+              },
+              {
+                "type": "link",
+                "text": "Salmon: the pink bomb of a food system running out of steam",
+                "href": "https://seastemik.org/nos-enquetes"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

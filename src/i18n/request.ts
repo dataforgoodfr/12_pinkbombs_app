@@ -53,6 +53,11 @@ export default getRequestConfig(async () => {
           )
         ).default,
         ...(
+          await import(
+            `../../messages/${locale}/(site)/pages/to-be-inspired-articles.json`
+          )
+        ).default,
+        ...(
           await import(`../../messages/${locale}/(site)/pages/calculator.json`)
         ).default,
       },
