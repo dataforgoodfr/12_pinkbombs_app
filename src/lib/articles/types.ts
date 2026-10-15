@@ -23,6 +23,8 @@ export interface ArticleContent {
   summary: string;
   heroImage: string;
   heroImageAlt: string;
+  heroImageSize?: { width: number; height: number };
+  heroLayout?: "overlay" | "stacked";
   heroImageCredit?: string;
   heroTextSide?: "left" | "right";
   blocks: ArticleContentBlock[];

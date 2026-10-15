@@ -67,24 +67,47 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const heroTextSide = article.article.heroTextSide ?? "left";
   const heroTextSideClass =
     heroTextSide === "right" ? "lg:ml-auto lg:mr-[8%]" : "lg:ml-[8%]";
+  const isStackedHero = article.article.heroLayout === "stacked";
 
   return (
     <>
       <article className="bg-white text-v2-blue">
-        <header className="relative isolate bg-white lg:flex lg:min-h-[600px] lg:items-end lg:overflow-hidden">
-          <div className="relative h-[360px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto lg:overflow-visible">
+        <header
+          className={
+            isStackedHero
+              ? "bg-white"
+              : "relative isolate bg-white lg:flex lg:min-h-[600px] lg:items-end lg:overflow-hidden"
+          }
+        >
+          {isStackedHero ? (
             <Image
               src={article.article.heroImage}
               alt={article.article.heroImageAlt}
-              fill
+              width={article.article.heroImageSize?.width ?? 1440}
+              height={article.article.heroImageSize?.height ?? 960}
               priority
               sizes="100vw"
-              className="object-cover"
+              className="mx-auto block h-auto max-h-[80vh] w-full object-contain"
             />
-            <div className="absolute inset-0 bg-v2-blue/20" />
-          </div>
+          ) : (
+            <div className="relative h-[360px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto lg:overflow-visible">
+              <Image
+                src={article.article.heroImage}
+                alt={article.article.heroImageAlt}
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-v2-blue/20" />
+            </div>
+          )}
           <div
-            className={`relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`}
+            className={
+              isStackedHero
+                ? "mx-auto max-w-3xl px-5 py-8 md:px-8 lg:py-12"
+                : `relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`
+            }
           >
             <h1 className="h1 text-pretty">{article.article.title}</h1>
             <p className="mt-4 text-sm leading-relaxed lg:text-base">

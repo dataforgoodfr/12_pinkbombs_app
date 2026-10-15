@@ -965,6 +965,11 @@
             ]
           ],
           "articleId": 3
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 5760,
+          "height": 3840
         }
       },
       {
@@ -1139,6 +1144,11 @@
             ]
           ],
           "articleId": 2
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1534,
+          "height": 1416
         }
       },
       {
@@ -1337,7 +1347,12 @@
               "<strong>Above all, focus on enjoyment.</strong> Try new recipes, discover new ingredients, find ocean flavors in other ways, and share your dishes with others. For Charlotte, it means “opening up to new dishes and broadening your culinary repertoire,” rather than seeing the change as a constraint."
             ]
           }
-        ]
+        ],
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1500,
+          "height": 1003
+        }
       },
       {
         "id": 9,

@@ -967,6 +967,11 @@
             ]
           ],
           "articleId": 3
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 5760,
+          "height": 3840
         }
       },
       {
@@ -1141,6 +1146,11 @@
             ]
           ],
           "articleId": 2
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1534,
+          "height": 1416
         }
       },
       {
@@ -1339,7 +1349,12 @@
               "<strong>Et surtout, miser sur le plaisir.</strong> Tester de nouvelles recettes, découvrir de nouveaux ingrédients, retrouver les saveurs iodées autrement, faire goûter ses plats autour de soi… Pour Charlotte, il s’agit de « s’ouvrir à de nouveaux plats, en élargissant son répertoire culinaire », plutôt que de voir l’arrêt comme une contrainte."
             ]
           }
-        ]
+        ],
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1500,
+          "height": 1003
+        }
       },
       {
         "id": 9,
