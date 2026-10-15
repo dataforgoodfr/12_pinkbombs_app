@@ -1,7 +1,6 @@
 {
   "toBeInspiredArticle": {
     "page": "S'inspirer - ",
-    "relatedArticlesTitle": "Vous reprendrez bien un peu d’inspiration\u00a0?",
     "articles": [
       {
         "id": 1,
@@ -83,7 +82,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Parmi tous les poissons, c'est le saumon de l'Atlantique, le Salmo salar, que l'industrie a imposé comme espèce d'élevage. Plusieurs raisons expliquent ce choix. Le saumon sauvage avait déjà sa place à table, comme produit festif et de luxe. L'aquaculture l'a rendu largement accessible en quelques années. Pour les producteurs, il présentait un atout décisif\u00a0: il pouvait être élevé massivement en cages. En clair, l'industrie piscicole a calqué les méthodes de l'industrie agricole."
+                "text": "Parmi tous les poissons, c'est le saumon de l'Atlantique, le Salmo salar, que l'industrie a imposé comme espèce d'élevage. Plusieurs raisons expliquent ce choix. Le saumon sauvage avait déjà sa place à table, comme produit festif et de luxe. L'aquaculture l'a rendu largement accessible en quelques années. Pour les producteurs, il présentait un atout décisif : il pouvait être élevé massivement en cages. En clair, l'industrie piscicole a calqué les méthodes de l'industrie agricole."
               }
             ]
           },
@@ -111,7 +110,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Depuis les années 1980, la production des saumons d'élevage connaît une hypercroissance à l'échelle mondiale. Et cette tendance n'est pas prête de s'arrêter. La Norvège, leader mondial, ambitionne de tripler sa production annuelle d'ici 2050. Pour y parvenir, elle mise sur de nouvelles technologies ultra-énergivores et impactantes\u00a0: l'élevage terrestre et l'élevage offshore."
+                "text": "Depuis les années 1980, la production des saumons d'élevage connaît une hypercroissance à l'échelle mondiale. Et cette tendance n'est pas prête de s'arrêter. La Norvège, leader mondial, ambitionne de tripler sa production annuelle d'ici 2050. Pour y parvenir, elle mise sur de nouvelles technologies ultra-énergivores et impactantes : l'élevage terrestre et l'élevage offshore."
               }
             ]
           },
@@ -126,7 +125,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Rappelons que l'industrie des saumons représente une bombe écologique, sociale et sanitaire. Les élevages intensifs engendrent des conséquences désastreuses\u00a0: émissions de gaz à effet de serre (GES), maltraitances animales, déforestation, aggravation de la surpêche, pillage des ressources de populations d'autres pays. Sans parler des conséquences pour notre santé."
+                "text": "Rappelons que l'industrie des saumons représente une bombe écologique, sociale et sanitaire. Les élevages intensifs engendrent des conséquences désastreuses : émissions de gaz à effet de serre (GES), maltraitances animales, déforestation, aggravation de la surpêche, pillage des ressources de populations d'autres pays. Sans parler des conséquences pour notre santé."
               }
             ]
           },
@@ -160,17 +159,16 @@
                 "text": "Du produit de luxe à l'élevage intensif, le saumon raconte l'histoire d'une industrie qui a façonné nos habitudes alimentaires. Mais ses promesses nutritionnelles ne tiennent pas face aux chiffres. Ce constat invite à stopper notre surconsommation de saumons d'élevage industriels. Il souligne surtout l'impérieuse nécessité de transformer notre système alimentaire."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
               {
                 "type": "text",
-                "text": "Pour en savoir davantage sur les rouages et les ravages de l'industrie des saumons, lisez notre rapport\u00a0: "
+                "text": "Pour en savoir davantage sur les rouages et les ravages de l'industrie des saumons, lisez notre rapport : "
               },
               {
                 "type": "link",
@@ -182,76 +180,74 @@
                 "text": "."
               }
             ]
-          }
-        ],
-        "heroTextSide": "left"
+          ]
+        }
       },
       {
         "id": 2,
-        "title": "Comment remplacer les poissons dans son assiette\u00a0?",
+        "title": "Comment remplacer les poissons dans son assiette ?",
         "summary": "Rencontre avec Marie Laforêt, star de la cuisine végétale",
         "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
         "heroImageAlt": "Marie Laforêt, autrice de Seafood Vegan",
-        "relatedArticleIds": [1],
         "blocks": [
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Par où commencer\u00a0? Que cuisiner quand on veut déguster un plat au goût iodé\u00a0? Pour répondre à ces questions, Marie Laforêt a publié «\u00a0Seafood Vegan\u00a0» aux éditions Solar, un livre de recettes aussi beau que didactique. À cette occasion, elle répond aux questions de Seastemik."
+                "text": "Par où commencer ? Que cuisiner quand on veut déguster un plat au goût iodé ? Pour répondre à ces questions, Marie Laforêt a publié « Seafood Vegan » aux éditions Solar, un livre de recettes aussi beau que didactique. À cette occasion, elle répond aux questions de Seastemik."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Marie, tu es une référence de la cuisine végétale en France. Tu as publié plus de 20 livres de recettes en quinze ans. Pourquoi avoir choisi cette fois-ci de te concentrer sur l’univers marin\u00a0?"
+            "text": "Marie, tu es une référence de la cuisine végétale en France. Tu as publié plus de 20 livres de recettes en quinze ans. Pourquoi avoir choisi cette fois-ci de te concentrer sur l’univers marin ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Parmi tous les livres de cuisine vegan publiés en France, beaucoup expliquent comment remplacer les animaux terrestres dans nos assiettes, mais très peu proposent des alternatives aux animaux marins. Par ailleurs, les personnes qui décident de manger moins, voire plus du tout de viande, ont souvent tendance à se tourner vers les poissons. Ça a d’ailleurs été mon cas quand j’étais plus jeune\u00a0! Et c’est un vrai problème selon moi, d’autant qu’on oublie souvent que pour se nourrir, on tue beaucoup plus d’animaux marins que de terrestres. Pour toutes ces raisons, c’était important pour moi de proposer un livre dédié à ce sujet. C’est un projet que je prépare depuis longtemps. Plusieurs de mes ouvrages ont d’ailleurs des parties entièrement dédiées au sujet, mais il méritait selon moi un livre complet."
+                "text": "<strong>Marie Laforêt :</strong> Parmi tous les livres de cuisine vegan publiés en France, beaucoup expliquent comment remplacer les animaux terrestres dans nos assiettes, mais très peu proposent des alternatives aux animaux marins. Par ailleurs, les personnes qui décident de manger moins, voire plus du tout de viande, ont souvent tendance à se tourner vers les poissons. Ça a d’ailleurs été mon cas quand j’étais plus jeune ! Et c’est un vrai problème selon moi, d’autant qu’on oublie souvent que pour se nourrir, on tue beaucoup plus d’animaux marins que de terrestres. Pour toutes ces raisons, c’était important pour moi de proposer un livre dédié à ce sujet. C’est un projet que je prépare depuis longtemps. Plusieurs de mes ouvrages ont d’ailleurs des parties entièrement dédiées au sujet, mais il méritait selon moi un livre complet."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Tu nous dis que, plus jeune, tu mangeais des poissons. À quel point les animaux marins ont-ils fait partie de ton alimentation\u00a0? Quand et pourquoi as-tu arrêté de les manger\u00a0?"
+            "text": "Tu nous dis que, plus jeune, tu mangeais des poissons. À quel point les animaux marins ont-ils fait partie de ton alimentation ? Quand et pourquoi as-tu arrêté de les manger ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> J'ai grandi dans une famille bretonne où on servait régulièrement des animaux marins à table, en particulier au moment des fêtes de fin d’année. Adolescente, puis plus tard, quand j’ai arrêté de manger des animaux terrestres, je me suis mise à manger encore plus de poissons, notamment des saumons\u00a0! Puis en 2008, j’ai réalisé que les poissons étaient aussi des êtres sensibles. D’un point de vue éthique, ça ne faisait pas sens pour moi de manger certains animaux et pas d’autres. Alors, cette année-là, je suis devenue végétarienne."
+                "text": "<strong>Marie Laforêt :</strong> J'ai grandi dans une famille bretonne où on servait régulièrement des animaux marins à table, en particulier au moment des fêtes de fin d’année. Adolescente, puis plus tard, quand j’ai arrêté de manger des animaux terrestres, je me suis mise à manger encore plus de poissons, notamment des saumons ! Puis en 2008, j’ai réalisé que les poissons étaient aussi des êtres sensibles. D’un point de vue éthique, ça ne faisait pas sens pour moi de manger certains animaux et pas d’autres. Alors, cette année-là, je suis devenue végétarienne."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Que conseillerais-tu à une personne qui s'interroge sur son alimentation et qui envisage de diminuer, voire d’arrêter les poissons dans son assiette\u00a0?"
+            "text": "Que conseillerais-tu à une personne qui s'interroge sur son alimentation et qui envisage de diminuer, voire d’arrêter les poissons dans son assiette ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Je commencerais par dire qu’il est important de questionner ce que l’on met dans nos assiettes. Ensuite, on ne mange pas toutes et tous des poissons pour les mêmes raisons. Parfois, c’est par habitude. Parfois, c’est par plaisir. Parfois, c’est parce qu’on est persuadé·e que c’est un indispensable pour être en bonne santé. Selon les raisons qui nous animent, les pistes pour diminuer et arrêter seront différentes."
+                "text": "<strong>Marie Laforêt :</strong> Je commencerais par dire qu’il est important de questionner ce que l’on met dans nos assiettes. Ensuite, on ne mange pas toutes et tous des poissons pour les mêmes raisons. Parfois, c’est par habitude. Parfois, c’est par plaisir. Parfois, c’est parce qu’on est persuadé·e que c’est un indispensable pour être en bonne santé. Selon les raisons qui nous animent, les pistes pour diminuer et arrêter seront différentes."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Peux-tu nous détailler ces différentes pistes\u00a0?"
+            "text": "Peux-tu nous détailler ces différentes pistes ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Si on mange des poissons pour les protéines, on peut tout simplement opter pour une source de protéines végétales, quel que soit son goût ou sa forme. Si on mange des poissons pour les oméga-3, il existe des huiles, des oléagineux et des compléments qui répondent parfaitement à nos besoins. Enfin, si c’est une question de goût, des recettes végétales – comme celles que vous trouverez dans mon livre – feront parfaitement l’affaire. Par exemple, si vous tenez à une recette familiale cuisinée avec des poissons et transmise de génération en génération, comme la bouillabaisse, il est tout à fait possible d’en créer une version végétale. Arrêter les poissons ne signifie pas abandonner nos traditions, mais plutôt les faire évoluer. Et si vous manquez d’inspiration, mon livre est là pour ça."
+                "text": "<strong>Marie Laforêt :</strong> Si on mange des poissons pour les protéines, on peut tout simplement opter pour une source de protéines végétales, quel que soit son goût ou sa forme. Si on mange des poissons pour les oméga-3, il existe des huiles, des oléagineux et des compléments qui répondent parfaitement à nos besoins. Enfin, si c’est une question de goût, des recettes végétales – comme celles que vous trouverez dans mon livre – feront parfaitement l’affaire. Par exemple, si vous tenez à une recette familiale cuisinée avec des poissons et transmise de génération en génération, comme la bouillabaisse, il est tout à fait possible d’en créer une version végétale. Arrêter les poissons ne signifie pas abandonner nos traditions, mais plutôt les faire évoluer. Et si vous manquez d’inspiration, mon livre est là pour ça."
               }
             ]
           },
@@ -263,40 +259,40 @@
           },
           {
             "type": "heading",
-            "text": "À qui s’adresse ton nouveau livre Seafood Vegan\u00a0? Est-il accessible aux personnes qui cuisinent peu, ou destiné aux fins connaisseur·euses de la cuisine végétale\u00a0?"
+            "text": "À qui s’adresse ton nouveau livre Seafood Vegan ? Est-il accessible aux personnes qui cuisinent peu, ou destiné aux fins connaisseur·euses de la cuisine végétale ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> J'ai vraiment pensé ce livre pour tout le monde. On y trouve des recettes très simples avec des ingrédients faciles à trouver. J’ai aussi choisi d’y intégrer des recettes plus créatives et plus techniques à destination des personnes qui aiment tester de nouveaux plats, cuisiner des alternatives bluffantes ou des versions végétales de plats familiaux. Certaines des recettes que j'ai créées pour ce livre sont des alternatives à des plats que je n'avais pas mangés depuis quinze ans\u00a0!"
+                "text": "<strong>Marie Laforêt :</strong> J'ai vraiment pensé ce livre pour tout le monde. On y trouve des recettes très simples avec des ingrédients faciles à trouver. J’ai aussi choisi d’y intégrer des recettes plus créatives et plus techniques à destination des personnes qui aiment tester de nouveaux plats, cuisiner des alternatives bluffantes ou des versions végétales de plats familiaux. Certaines des recettes que j'ai créées pour ce livre sont des alternatives à des plats que je n'avais pas mangés depuis quinze ans !"
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Pour proposer des alternatives crédibles dans ton livre, tu t’es familiarisée avec les méthodes de préparation et de cuisson des animaux marins. Comment t’y es-tu prise\u00a0?"
+            "text": "Pour proposer des alternatives crédibles dans ton livre, tu t’es familiarisée avec les méthodes de préparation et de cuisson des animaux marins. Comment t’y es-tu prise ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> J’ai effectué énormément de recherches sur tous ces procédés, en particulier sur les saumons. On peut penser que le saumon fumé, le gravlax ou le nova lox, c'est la même chose, alors que pas du tout. Le gravlax, c'est un saumon mariné au sel. Le saumon fumé est, comme son nom l'indique, non pas mariné mais fumé au bois de hêtre. Le nova lox, c’est un intermédiaire entre les deux, à la fois mariné et fumé. Ces recherches m'ont permis de proposer des recettes végétales précises et subtiles, aussi bien dans les arômes que dans les textures."
+                "text": "<strong>Marie Laforêt :</strong> J’ai effectué énormément de recherches sur tous ces procédés, en particulier sur les saumons. On peut penser que le saumon fumé, le gravlax ou le nova lox, c'est la même chose, alors que pas du tout. Le gravlax, c'est un saumon mariné au sel. Le saumon fumé est, comme son nom l'indique, non pas mariné mais fumé au bois de hêtre. Le nova lox, c’est un intermédiaire entre les deux, à la fois mariné et fumé. Ces recherches m'ont permis de proposer des recettes végétales précises et subtiles, aussi bien dans les arômes que dans les textures."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Outre ces recherches techniques, quelles ont été tes inspirations pour ce livre\u00a0?"
+            "text": "Outre ces recherches techniques, quelles ont été tes inspirations pour ce livre ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Je me suis inspirée des grands classiques français, bien sûr, comme la bouillabaisse, les filets à la meunière ou les moules marinières, sans oublier mes recettes familiales. Je me suis aussi inspirée des recettes de nombreux autres pays et des spécialités de régions côtières comme de la street food. Une cuisine m’a particulièrement inspirée\u00a0: les techniques japonaises d’imitation modoki ryōri, issues de traditions bouddhistes. On pense qu’imiter la chair des animaux terrestres ou marins, c’est une lubie récente de vegans occidentaux. En réalité, manger vegan est une tradition vieille de plusieurs centaines, voire milliers d'années dans certains pays d'Asie."
+                "text": "<strong>Marie Laforêt :</strong> Je me suis inspirée des grands classiques français, bien sûr, comme la bouillabaisse, les filets à la meunière ou les moules marinières, sans oublier mes recettes familiales. Je me suis aussi inspirée des recettes de nombreux autres pays et des spécialités de régions côtières comme de la street food. Une cuisine m’a particulièrement inspirée : les techniques japonaises d’imitation modoki ryōri, issues de traditions bouddhistes. On pense qu’imiter la chair des animaux terrestres ou marins, c’est une lubie récente de vegans occidentaux. En réalité, manger vegan est une tradition vieille de plusieurs centaines, voire milliers d'années dans certains pays d'Asie."
               }
             ]
           },
@@ -308,58 +304,57 @@
           },
           {
             "type": "heading",
-            "text": "Dans ton livre, tu proposes plusieurs recettes alternatives au saumon. Laquelle conseillerais-tu à quelqu’un qui n’en a jamais cuisiné\u00a0?"
+            "text": "Dans ton livre, tu proposes plusieurs recettes alternatives au saumon. Laquelle conseillerais-tu à quelqu’un qui n’en a jamais cuisiné ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Je commencerais par conseiller une recette où la chair animale n’est pas brute, donc typiquement pas une recette d’alternative au pavé de saumon. Les rillettes saumonées font partie des recettes que j’adore et qui sont faciles à réaliser. Je les prépare moi-même à Noël chaque année et elles ont toujours un franc succès auprès de ma famille. Cette recette est vraiment bluffante, tant en termes de couleur que de texture et de goût."
+                "text": "<strong>Marie Laforêt :</strong> Je commencerais par conseiller une recette où la chair animale n’est pas brute, donc typiquement pas une recette d’alternative au pavé de saumon. Les rillettes saumonées font partie des recettes que j’adore et qui sont faciles à réaliser. Je les prépare moi-même à Noël chaque année et elles ont toujours un franc succès auprès de ma famille. Cette recette est vraiment bluffante, tant en termes de couleur que de texture et de goût."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "En magasin, on trouve parfois des alternatives végétales au saumon, comme des similis de saumon fumé. En as-tu testé\u00a0? Qu’en as-tu pensé\u00a0?"
+            "text": "En magasin, on trouve parfois des alternatives végétales au saumon, comme des similis de saumon fumé. En as-tu testé ? Qu’en as-tu pensé ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Une fois à Noël, j'ai acheté une alternative au saumon fumé et j'ai eu l'impression de manger une sorte de saucisson plutôt que du saumon fumé\u00a0! J’ai vraiment été déçue, mais j'ai compris à ce moment-là que la saveur fumée n'est pas unique\u00a0: il en existe plusieurs, très différentes. J’en parle d’ailleurs dans mon livre. Une alternative réussie au saumon fumé est composée d’un condiment fumé au bois de hêtre, le bois avec lequel les saumons sont traditionnellement fumés."
+                "text": "<strong>Marie Laforêt :</strong> Une fois à Noël, j'ai acheté une alternative au saumon fumé et j'ai eu l'impression de manger une sorte de saucisson plutôt que du saumon fumé ! J’ai vraiment été déçue, mais j'ai compris à ce moment-là que la saveur fumée n'est pas unique : il en existe plusieurs, très différentes. J’en parle d’ailleurs dans mon livre. Une alternative réussie au saumon fumé est composée d’un condiment fumé au bois de hêtre, le bois avec lequel les saumons sont traditionnellement fumés."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Une dernière chose à nous partager\u00a0?"
+            "text": "Une dernière chose à nous partager ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Marie Laforêt\u00a0:</strong> Oui, si vous hésitez à réduire ou à arrêter de manger des animaux marins, je sais que les réactions potentielles de votre entourage peuvent vous freiner. La meilleure chose à faire, selon moi, c’est de cuisiner des recettes gourmandes à vos proches. Car oui, parfois, un plat délicieux vaut mieux que mille mots. Le tarama, par exemple, en version végétale est aussi bon, voire meilleur, que la version industrielle pas chère. Recette après recette, c’est par le goût plutôt que par les idées qu’on arrive le mieux à convaincre. Dans ma famille, certaines de mes recettes sont devenues des classiques de nos repas de fête alors que, je vous le dis, ce n'était franchement pas gagné au départ\u00a0!"
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Les poissons ont-ils vraiment la mémoire courte\u00a0? Ressentent-ils la douleur et le plaisir\u00a0? Sont-ils vraiment muets comme des carpes\u00a0? Découvrez cinq idées reçues pour mieux considérer ces animaux marins."
+                "text": "<strong>Marie Laforêt :</strong> Oui, si vous hésitez à réduire ou à arrêter de manger des animaux marins, je sais que les réactions potentielles de votre entourage peuvent vous freiner. La meilleure chose à faire, selon moi, c’est de cuisiner des recettes gourmandes à vos proches. Car oui, parfois, un plat délicieux vaut mieux que mille mots. Le tarama, par exemple, en version végétale est aussi bon, voire meilleur, que la version industrielle pas chère. Recette après recette, c’est par le goût plutôt que par les idées qu’on arrive le mieux à convaincre. Dans ma famille, certaines de mes recettes sont devenues des classiques de nos repas de fête alors que, je vous le dis, ce n'était franchement pas gagné au départ !"
               }
             ]
           }
         ],
-        "heroTextSide": "left"
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les poissons ont-ils vraiment la mémoire courte ? Ressentent-ils la douleur et le plaisir ? Sont-ils vraiment muets comme des carpes ? Découvrez cinq idées reçues pour mieux considérer ces animaux marins."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
       },
       {
         "id": 3,
@@ -373,7 +368,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "C’est l’histoire d’un saumon sauvage qui quitte sa rivière natale pour rejoindre l’Océan. Dans SALMO, on suit le périple d’un jeune saumon sur des milliers de kilomètres. Huit minutes de poésie et d’aventures rocambolesques. Huit minutes aussi pendant lesquelles on réalise une triste réalité\u00a0: le déclin alarmant des populations de saumon atlantique et la dégradation terrible des écosystèmes qu’ils traversent, due aux activités humaines."
+                "text": "C’est l’histoire d’un saumon sauvage qui quitte sa rivière natale pour rejoindre l’Océan. Dans SALMO, on suit le périple d’un jeune saumon sur des milliers de kilomètres. Huit minutes de poésie et d’aventures rocambolesques. Huit minutes aussi pendant lesquelles on réalise une triste réalité : le déclin alarmant des populations de saumon atlantique et la dégradation terrible des écosystèmes qu’ils traversent, due aux activités humaines."
               }
             ]
           },
@@ -434,7 +429,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Dans ce court-métrage, Paul Pajot a choisi de donner une dimension sensible à des enjeux sérieux. Pour écrire son film, il s’est notamment appuyé sur de nombreuses recherches scientifiques. Par sa démarche sensible, il nous fait comprendre que protéger les saumons, ce n’est pas seulement protéger une espèce\u00a0: c’est aussi protéger des milieux dont tout le vivant dépend, nous compris."
+                "text": "Dans ce court-métrage, Paul Pajot a choisi de donner une dimension sensible à des enjeux sérieux. Pour écrire son film, il s’est notamment appuyé sur de nombreuses recherches scientifiques. Par sa démarche sensible, il nous fait comprendre que protéger les saumons, ce n’est pas seulement protéger une espèce : c’est aussi protéger des milieux dont tout le vivant dépend, nous compris."
               }
             ]
           },
@@ -464,22 +459,21 @@
             "type": "youtube",
             "videoId": "wR759GYF1MU",
             "title": "SALMO, court-métrage d’animation réalisé par Paul Pajot"
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Les poissons ont-ils vraiment la mémoire courte\u00a0? Éprouvent-ils de la douleur et du plaisir\u00a0? Sont-ils vraiment muets comme des carpes\u00a0? Plongez dans cinq idées reçues pour mieux considérer ces animaux marins."
-              }
-            ]
           }
         ],
-        "heroTextSide": "left"
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les poissons ont-ils vraiment la mémoire courte ? Éprouvent-ils de la douleur et du plaisir ? Sont-ils vraiment muets comme des carpes ? Plongez dans cinq idées reçues pour mieux considérer ces animaux marins."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
       },
       {
         "id": 4,
@@ -517,7 +511,7 @@
           },
           {
             "type": "heading",
-            "text": "1. «\u00a0Les poissons ont une mémoire de trois secondes\u00a0»",
+            "text": "1. « Les poissons ont une mémoire de trois secondes »",
             "strikethrough": true
           },
           {
@@ -530,7 +524,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "On a longtemps sous-estimé les capacités des animaux marins. Et cette histoire de «\u00a0mémoire de trois secondes\u00a0» fait partie des premiers mythes à déconstruire. Les poissons sont capables d’apprendre de leurs expériences et de s’en souvenir suffisamment longtemps pour modifier leur comportement."
+                "text": "On a longtemps sous-estimé les capacités des animaux marins. Et cette histoire de « mémoire de trois secondes » fait partie des premiers mythes à déconstruire. Les poissons sont capables d’apprendre de leurs expériences et de s’en souvenir suffisamment longtemps pour modifier leur comportement."
               }
             ]
           },
@@ -545,7 +539,7 @@
           },
           {
             "type": "heading",
-            "text": "2. «\u00a0Les poissons ne ressentent pas la douleur\u00a0»",
+            "text": "2. « Les poissons ne ressentent pas la douleur »",
             "strikethrough": true
           },
           {
@@ -582,7 +576,7 @@
           },
           {
             "type": "heading",
-            "text": "3. «\u00a0Les poissons ne communiquent pas\u00a0»",
+            "text": "3. « Les poissons ne communiquent pas »",
             "strikethrough": true
           },
           {
@@ -610,7 +604,7 @@
           },
           {
             "type": "heading",
-            "text": "4. «\u00a0Les poissons sont des produits de consommation\u00a0»",
+            "text": "4. « Les poissons sont des produits de consommation »",
             "strikethrough": true
           },
           {
@@ -623,7 +617,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "On dit «\u00a0un chien\u00a0», «\u00a0un chat\u00a0», «\u00a0un éléphant\u00a0», mais on parle «\u00a0du saumon\u00a0», «\u00a0du thon\u00a0», «\u00a0de la truite\u00a0». Notre propre langage invisibilise la sensibilité et l’intelligence des animaux marins que l’on mange. Les évoquer en termes de kilos, de portions ou de filets participe à rationaliser leur exploitation et à déculpabiliser nos consciences."
+                "text": "On dit « un chien », « un chat », « un éléphant », mais on parle « du saumon », « du thon », « de la truite ». Notre propre langage invisibilise la sensibilité et l’intelligence des animaux marins que l’on mange. Les évoquer en termes de kilos, de portions ou de filets participe à rationaliser leur exploitation et à déculpabiliser nos consciences."
               }
             ]
           },
@@ -632,13 +626,13 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Or, un saumon n’est pas un filet. Une truite n’est pas une portion. Un poisson n’est pas un produit. Avant d’être «\u00a0du saumon\u00a0» dans une assiette, ce saumon était un être vivant, un animal sentient."
+                "text": "Or, un saumon n’est pas un filet. Une truite n’est pas une portion. Un poisson n’est pas un produit. Avant d’être « du saumon » dans une assiette, ce saumon était un être vivant, un animal sentient."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "5. «\u00a0Manger des poissons, c’est naturel\u00a0»",
+            "text": "5. « Manger des poissons, c’est naturel »",
             "strikethrough": true
           },
           {
@@ -651,7 +645,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "L’image du pêcheur solitaire avec sa ligne et sa petite barque a nourri l’idée que manger des poissons serait une pratique ancestrale, voire «\u00a0naturelle\u00a0». Rappelons que, selon les époques et les régions du monde, notre alimentation a été le plus souvent végétale."
+                "text": "L’image du pêcheur solitaire avec sa ligne et sa petite barque a nourri l’idée que manger des poissons serait une pratique ancestrale, voire « naturelle ». Rappelons que, selon les époques et les régions du monde, notre alimentation a été le plus souvent végétale."
               }
             ]
           },
@@ -669,47 +663,31 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Derrière cette industrie, une logique domine\u00a0: produire davantage, plus vite et à moindre coût, pour alimenter un marché mondial. Les poissons deviennent alors des volumes, des tonnes, des rendements et des marges. Même en aquaculture, le vocabulaire en dit long\u00a0: on parle de «\u00a0biomasse\u00a0», de «\u00a0croissance\u00a0», de «\u00a0taux de conversion alimentaire\u00a0», de «\u00a0rendement\u00a0». Mais une tonne de poissons, ce n’est pas une tonne de biomasse, c’est une multitude d’animaux."
+                "text": "Derrière cette industrie, une logique domine : produire davantage, plus vite et à moindre coût, pour alimenter un marché mondial. Les poissons deviennent alors des volumes, des tonnes, des rendements et des marges. Même en aquaculture, le vocabulaire en dit long : on parle de « biomasse », de « croissance », de « taux de conversion alimentaire », de « rendement ». Mais une tonne de poissons, ce n’est pas une tonne de biomasse, c’est une multitude d’animaux."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles. Découvrez 5 choses que vous ne savez (sans doute) pas sur les saumons."
               }
             ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Article à découvrir\u00a0: "
-              },
-              {
-                "type": "link",
-                "text": "5 choses à savoir sur les saumons (au lieu de les manger)",
-                "href": "/s-inspirer/5-choses-a-savoir-sur-les-saumons-au-lieu-de-les-manger-6"
-              }
-            ]
-          }
-        ],
-        "heroTextSide": "left"
+          ],
+          "articleId": 6
+        }
       },
       {
         "id": 5,
         "title": "5 alternatives aux saumons qui changent (déjà) la donne",
-        "summary": "Vous êtes accros à la texture et aux parfums des salmonidés\u00a0? Pas de panique\u00a0! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
+        "summary": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
         "heroImageAlt": "Carottes fumées sur une tartine, une alternative végétale au saumon fumé",
-        "relatedArticleIds": [2],
         "blocks": [
           {
             "type": "heading",
@@ -725,7 +703,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "En quelques années, elle s’est imposée comme l’une des alternatives les plus connues au saumon fumé. Les raisons\u00a0? Sa couleur, bien sûr, sa texture fondante une fois cuisinée et surtout sa capacité à absorber les marinades. Miam."
+                "text": "En quelques années, elle s’est imposée comme l’une des alternatives les plus connues au saumon fumé. Les raisons ? Sa couleur, bien sûr, sa texture fondante une fois cuisinée et surtout sa capacité à absorber les marinades. Miam."
               }
             ]
           },
@@ -734,7 +712,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>À tester\u00a0:</strong> Commencez par couper vos carottes en (très) fines lamelles. Faites-les tremper dans un bon bain de sauce soja agrémenté de citron, d’aneth, de sel fumé au bois de hêtre ou d’algues. Gardez le tout au frais pendant au moins 24 heures et amusez-vous à glisser ces lamelles sur une tartine, dans un bagel ou sur des blinis. Miam miam."
+                "text": "<strong>À tester :</strong> Commencez par couper vos carottes en (très) fines lamelles. Faites-les tremper dans un bon bain de sauce soja agrémenté de citron, d’aneth, de sel fumé au bois de hêtre ou d’algues. Gardez le tout au frais pendant au moins 24 heures et amusez-vous à glisser ces lamelles sur une tartine, dans un bagel ou sur des blinis. Miam miam."
               }
             ]
           },
@@ -752,7 +730,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Oui, oui, vous avez bien lu\u00a0: une pastèque. Une fois découpée en tranches épaisses, marinée puis rôtie ou fumée, on s’y croirait. Selon la préparation, elle peut remplacer le saumon mais aussi le thon. Elle fonctionne particulièrement bien en sushis, en makis, en sashimi, en chirashi, en poké bowls ou en tartare. D’ailleurs, même les restaurants japonais s’y mettent."
+                "text": "Oui, oui, vous avez bien lu : une pastèque. Une fois découpée en tranches épaisses, marinée puis rôtie ou fumée, on s’y croirait. Selon la préparation, elle peut remplacer le saumon mais aussi le thon. Elle fonctionne particulièrement bien en sushis, en makis, en sashimi, en chirashi, en poké bowls ou en tartare. D’ailleurs, même les restaurants japonais s’y mettent."
               }
             ]
           },
@@ -761,7 +739,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>À tester\u00a0:</strong> Taillez la pastèque en petits rectangles. Préparez une marinade avec de la sauce soja, de l’huile de sésame, du vinaigre de riz et des miettes d’algues nori. Déposez-y les morceaux de pastèque et laissez-les mariner au moins deux heures au réfrigérateur. Égouttez-les, puis préchauffez votre four à 180 °C. Enfournez-les sur une plaque pendant 30 à 45 minutes. Laissez-les complètement refroidir et déposez ces bijoux sur du riz vinaigré. Vos sushis végétaux sont prêts\u00a0!"
+                "text": "<strong>À tester :</strong> Taillez la pastèque en petits rectangles. Préparez une marinade avec de la sauce soja, de l’huile de sésame, du vinaigre de riz et des miettes d’algues nori. Déposez-y les morceaux de pastèque et laissez-les mariner au moins deux heures au réfrigérateur. Égouttez-les, puis préchauffez votre four à 180 °C. Enfournez-les sur une plaque pendant 30 à 45 minutes. Laissez-les complètement refroidir et déposez ces bijoux sur du riz vinaigré. Vos sushis végétaux sont prêts !"
               }
             ]
           },
@@ -779,7 +757,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Peut-être l’avez-vous déjà aperçu dans vos magasins. Le fauxmon, contraction de «\u00a0faux\u00a0» et «\u00a0saumon\u00a0», est une version végétale censée reproduire au plus près l’apparence, la texture et les parfums du saumon. Il existe en filet, en cubes et en version fumée. Selon les marques, le résultat est plus ou moins réussi. Il est destiné aux personnes qui veulent réduire leur consommation de poisson sans renoncer à leurs habitudes."
+                "text": "Peut-être l’avez-vous déjà aperçu dans vos magasins. Le fauxmon, contraction de « faux » et « saumon », est une version végétale censée reproduire au plus près l’apparence, la texture et les parfums du saumon. Il existe en filet, en cubes et en version fumée. Selon les marques, le résultat est plus ou moins réussi. Il est destiné aux personnes qui veulent réduire leur consommation de poisson sans renoncer à leurs habitudes."
               }
             ]
           },
@@ -788,7 +766,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>À retenir\u00a0:</strong> Si vous cherchez un fauxmon fumé réussi, Marie Laforêt, star de la cuisine végétale en France et autrice du livre «\u00a0Seafood Vegan\u00a0» (Solar, 2026), conseille de privilégier les fauxmons fumés aux arômes de bois de hêtre."
+                "text": "<strong>À retenir :</strong> Si vous cherchez un fauxmon fumé réussi, Marie Laforêt, star de la cuisine végétale en France et autrice du livre « Seafood Vegan » (Solar, 2026), conseille de privilégier les fauxmons fumés aux arômes de bois de hêtre."
               }
             ]
           },
@@ -806,7 +784,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Si ce que l’on recherche dans le saumon, c’est le goût iodé et les oméga-3, pourquoi ne pas aller directement à la source\u00a0? Nori, dulse, wakamé, laitue de mer\u00a0: les algues apportent une touche marine à de très nombreux plats. En paillettes ou en feuille, elles sont particulièrement intéressantes associées à des ingrédients neutres comme le tofu, les haricots blancs ou le riz."
+                "text": "Si ce que l’on recherche dans le saumon, c’est le goût iodé et les oméga-3, pourquoi ne pas aller directement à la source ? Nori, dulse, wakamé, laitue de mer : les algues apportent une touche marine à de très nombreux plats. En paillettes ou en feuille, elles sont particulièrement intéressantes associées à des ingrédients neutres comme le tofu, les haricots blancs ou le riz."
               }
             ]
           },
@@ -815,13 +793,13 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>À tester\u00a0:</strong> Émiettez du tofu dans un grand bol, ajoutez des haricots blancs et écrasez-les à la fourchette. Saupoudrez le tout d’algues en paillettes, versez un peu d’huile d’olive et un jus de citron, puis ajoutez une pincée de sel et de poivre. Mélangez bien et mettez au réfrigérateur au moins deux heures avant de déguster ces rillettes sur une tartine de pain grillé."
+                "text": "<strong>À tester :</strong> Émiettez du tofu dans un grand bol, ajoutez des haricots blancs et écrasez-les à la fourchette. Saupoudrez le tout d’algues en paillettes, versez un peu d’huile d’olive et un jus de citron, puis ajoutez une pincée de sel et de poivre. Mélangez bien et mettez au réfrigérateur au moins deux heures avant de déguster ces rillettes sur une tartine de pain grillé."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "5. Et si la meilleure alternative était une toute nouvelle recette\u00a0?"
+            "text": "5. Et si la meilleure alternative était une toute nouvelle recette ?"
           },
           {
             "type": "image",
@@ -842,25 +820,24 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>À tester\u00a0:</strong> Découvrez les recettes de livres comme «\u00a0Cuisine vegan petit budget\u00a0» de Marie Laforêt (éd. Solar), «\u00a0Plats veggie du monde\u00a0» de Stéphanie de Turckheim (éd. Hachette) et «\u00a0Ma cuisine vegan pour tous les jours\u00a0» de Stéphanie Tresch Medici (éd. La Plage)."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Seastemik a rencontré Marie Laforêt, star de la cuisine végétale. À l’occasion de la sortie de son nouveau livre de recettes «\u00a0Seafood Vegan\u00a0» (Solar, 2026), elle nous raconte son parcours et partage ses astuces pour se passer des saumons dans nos assiettes."
+                "text": "<strong>À tester :</strong> Découvrez les recettes de livres comme « Cuisine vegan petit budget » de Marie Laforêt (éd. Solar), « Plats veggie du monde » de Stéphanie de Turckheim (éd. Hachette) et « Ma cuisine vegan pour tous les jours » de Stéphanie Tresch Medici (éd. La Plage)."
               }
             ]
           }
         ],
-        "heroTextSide": "left"
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, star de la cuisine végétale. À l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan » (Solar, 2026), elle nous raconte son parcours et partage ses astuces pour se passer des saumons dans nos assiettes."
+              }
+            ]
+          ],
+          "articleId": 2
+        }
       },
       {
         "id": 6,
@@ -868,7 +845,6 @@
         "summary": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs habitudes, leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles.",
         "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
         "heroImageAlt": "Illustration consacrée aux saumons et à leur mode de vie",
-        "relatedArticleIds": [3],
         "blocks": [
           {
             "type": "heading",
@@ -902,7 +878,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Les saumons sont des poissons de rivière mais aussi de mer. Au moins une fois dans leur vie, ils participent à une migration collective sur des distances colossales à travers l’Océan. Pour vous donner une idée, certaines populations quittent l’Espagne pour migrer jusqu’au Groenland. Mais comment savent-ils où aller\u00a0? Quelles routes emprunter\u00a0? Selon l’endroit où ils se trouvent, les saumons s’orientent grâce aux étoiles, au soleil, au champ magnétique de notre planète ou à des repères visuels et olfactifs. Par exemple, leur odorat remarquable leur permet de retrouver leur rivière natale sur le chemin du retour grâce à une empreinte chimique unique, mémorisée durant les premières années de leur vie."
+                "text": "Les saumons sont des poissons de rivière mais aussi de mer. Au moins une fois dans leur vie, ils participent à une migration collective sur des distances colossales à travers l’Océan. Pour vous donner une idée, certaines populations quittent l’Espagne pour migrer jusqu’au Groenland. Mais comment savent-ils où aller ? Quelles routes emprunter ? Selon l’endroit où ils se trouvent, les saumons s’orientent grâce aux étoiles, au soleil, au champ magnétique de notre planète ou à des repères visuels et olfactifs. Par exemple, leur odorat remarquable leur permet de retrouver leur rivière natale sur le chemin du retour grâce à une empreinte chimique unique, mémorisée durant les premières années de leur vie."
               }
             ]
           },
@@ -938,7 +914,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "De retour à la rivière, des saumones creusent des nids dans les graviers. Une saumone peut pondre des milliers d’œufs en un seul jour. Une fois qu’elles ont fini, elles ouvrent la bouche. C’est le signal pour les mâles, qui viennent déverser leur laitance pour féconder les œufs. Parfois, ce sont des mâles que les femelles ont choisis\u00a0; parfois, ce sont des mâles qui surgissent à leur insu. Les scientifiques les ont surnommés «\u00a0sneaker males\u00a0» (ou «\u00a0mâles tricheurs\u00a0») car, en plus de contourner le rituel de séduction, ils ne participent pas à la grande migration."
+                "text": "De retour à la rivière, des saumones creusent des nids dans les graviers. Une saumone peut pondre des milliers d’œufs en un seul jour. Une fois qu’elles ont fini, elles ouvrent la bouche. C’est le signal pour les mâles, qui viennent déverser leur laitance pour féconder les œufs. Parfois, ce sont des mâles que les femelles ont choisis ; parfois, ce sont des mâles qui surgissent à leur insu. Les scientifiques les ont surnommés « sneaker males » (ou « mâles tricheurs ») car, en plus de contourner le rituel de séduction, ils ne participent pas à la grande migration."
               }
             ]
           },
@@ -965,50 +941,48 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Toutes ces informations sont tirées de la vidéo «\u00a0"
+                "text": "Toutes ces informations sont tirées de la vidéo « "
               },
               {
                 "type": "link",
-                "text": "Qui sont les saumons\u00a0?",
+                "text": "Qui sont les saumons ?",
                 "href": "https://www.youtube.com/watch?v=UKsljob-upk"
               },
               {
                 "type": "text",
-                "text": "\u00a0» publiée en 2024 sur la chaîne YouTube Cervelle d’oiseau, animée par Sébastien Moro, vulgarisateur scientifique."
+                "text": " » publiée en 2024 sur la chaîne YouTube Cervelle d’oiseau, animée par Sébastien Moro, vulgarisateur scientifique."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "right",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, réalisé par Paul Pajot, raconte l’incroyable épopée des saumons sauvages et la fragilité des écosystèmes qu’ils traversent."
               }
             ]
-          }
-        ],
-        "heroTextSide": "right"
+          ],
+          "articleId": 3
+        }
       },
       {
         "id": 7,
         "title": "Quand une enseigne de boulangerie française retire les saumons de son menu",
-        "summary": "En collaboration avec Seastemik, Boulangerie Landemaine est devenue en 2025 la première enseigne de boulangerie à retirer les saumons de ses boutiques pour protéger l’Océan et toutes celles et ceux qui en dépendent. Alors, quel bilan un an après avoir lancé cette révolution iodée\u00a0?",
+        "summary": "En collaboration avec Seastemik, Boulangerie Landemaine est devenue en 2025 la première enseigne de boulangerie à retirer les saumons de ses boutiques pour protéger l’Océan et toutes celles et ceux qui en dépendent. Alors, quel bilan un an après avoir lancé cette révolution iodée ?",
         "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
         "heroImageAlt": "La démarche de Boulangerie Landemaine pour retirer le saumon de son menu",
         "heroTextSide": "left",
-        "relatedArticleIds": [2],
         "blocks": [
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "«\u00a0Nos équipes étaient assez réticentes au départ, mais aujourd'hui personne ne remet ce choix en question\u00a0», nous a affirmé Emma Bonvento, responsable communication de Boulangerie Landemaine, enseigne reconnue de 19 boutiques installées en France et au Japon."
+                "text": "« Nos équipes étaient assez réticentes au départ, mais aujourd'hui personne ne remet ce choix en question », nous a affirmé Emma Bonvento, responsable communication de Boulangerie Landemaine, enseigne reconnue de 19 boutiques installées en France et au Japon."
               }
             ]
           },
@@ -1070,7 +1044,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Retirer les saumons, c'est bien. Mais encore faut-il proposer autre chose à la place. Sur ce point, l'enseigne n'a pas fait les choses à moitié\u00a0: à chaque offre à base de saumon retirée, une nouvelle offre végétarienne ou végétalienne a été ajoutée. Au sandwich au saumon s’est substitué un sandwich aux légumes rôtis\u00a0; à la quiche au saumon a succédé une quiche aux légumes et au chèvre."
+                "text": "Retirer les saumons, c'est bien. Mais encore faut-il proposer autre chose à la place. Sur ce point, l'enseigne n'a pas fait les choses à moitié : à chaque offre à base de saumon retirée, une nouvelle offre végétarienne ou végétalienne a été ajoutée. Au sandwich au saumon s’est substitué un sandwich aux légumes rôtis ; à la quiche au saumon a succédé une quiche aux légumes et au chèvre."
               }
             ]
           },
@@ -1084,7 +1058,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Aujourd'hui, l'offre végétarienne et végane représente 40 % des références de snacking de l'enseigne, été comme hiver, et plus d'un tiers des ventes. Le sandwich aux légumes rôtis, présent à la carte d'été, a particulièrement bien trouvé son public et se vend tout aussi bien que certaines offres carnées. Une grande victoire pour les saumons, l’Océan et toutes celles et ceux qui en dépendent\u00a0!"
+                "text": "Aujourd'hui, l'offre végétarienne et végane représente 40 % des références de snacking de l'enseigne, été comme hiver, et plus d'un tiers des ventes. Le sandwich aux légumes rôtis, présent à la carte d'été, a particulièrement bien trouvé son public et se vend tout aussi bien que certaines offres carnées. Une grande victoire pour les saumons, l’Océan et toutes celles et ceux qui en dépendent !"
               }
             ]
           },
@@ -1106,7 +1080,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Autre belle victoire\u00a0: Boulangerie Landemaine constate une baisse d'environ 30 % des coûts de revient en passant d'une offre classique à une offre végétale, comme entre la quiche aux poireaux et la quiche saumon-épinard désormais retirée. Une belle façon de rassurer les sceptiques de la démarche, en interne comme chez les concurrents."
+                "text": "Autre belle victoire : Boulangerie Landemaine constate une baisse d'environ 30 % des coûts de revient en passant d'une offre classique à une offre végétale, comme entre la quiche aux poireaux et la quiche saumon-épinard désormais retirée. Une belle façon de rassurer les sceptiques de la démarche, en interne comme chez les concurrents."
               }
             ]
           },
@@ -1120,7 +1094,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Et les client·es dans tout ça\u00a0? À Seastemik, on accompagne les acteur·ices de la restauration dans leur transition et on s’assure que les client·es prennent la vague avec elleux."
+                "text": "Et les client·es dans tout ça ? À Seastemik, on accompagne les acteur·ices de la restauration dans leur transition et on s’assure que les client·es prennent la vague avec elleux."
               }
             ]
           },
@@ -1129,7 +1103,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Le partenariat Seastemik x Boulangerie Landemaine a été annoncé, entre autres, sur les réseaux sociaux. La vidéo publiée avec Esther Dufaure, notre cofondatrice, et Rodolphe Landemaine, fondateur de l’enseigne, a comptabilisé près de 15 000 vues. Même constat pour un second post partagé quelques semaines plus tard. Et le plus étonnant\u00a0: les réactions négatives se sont faites rares."
+                "text": "Le partenariat Seastemik x Boulangerie Landemaine a été annoncé, entre autres, sur les réseaux sociaux. La vidéo publiée avec Esther Dufaure, notre cofondatrice, et Rodolphe Landemaine, fondateur de l’enseigne, a comptabilisé près de 15 000 vues. Même constat pour un second post partagé quelques semaines plus tard. Et le plus étonnant : les réactions négatives se sont faites rares."
               }
             ]
           },
@@ -1151,34 +1125,28 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Cet exemple nous montre qu'une autre voie existe\u00a0: celle d'enseignes qui choisissent de prendre le contre-pied des habitudes du secteur et qui, parce que ce choix est bien pensé, réussissent avec brio. Alors, qu'attendons-nous pour dire à nos restaurants, à nos traiteurs et à nos boulangeries qu'il est temps de se passer des saumons\u00a0?!"
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Seastemik a rencontré Marie Laforêt, une star de la cuisine végétale, qui, à l’occasion de la sortie de son nouveau livre de recettes «\u00a0Seafood Vegan\u00a0», nous raconte son parcours et ses astuces pour se passer des saumons dans nos assiettes. "
-              },
-              {
-                "type": "link",
-                "text": "Découvrez l’entretien avec Marie Laforêt.",
-                "href": "/s-inspirer/comment-remplacer-les-poissons-dans-son-assiette-2"
+                "text": "Cet exemple nous montre qu'une autre voie existe : celle d'enseignes qui choisissent de prendre le contre-pied des habitudes du secteur et qui, parce que ce choix est bien pensé, réussissent avec brio. Alors, qu'attendons-nous pour dire à nos restaurants, à nos traiteurs et à nos boulangeries qu'il est temps de se passer des saumons ?!"
               }
             ]
           }
-        ]
+        ],
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, une star de la cuisine végétale, qui, à l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan », nous raconte son parcours et ses astuces pour se passer des saumons dans nos assiettes. "
+              }
+            ]
+          ],
+          "articleId": 2
+        }
       },
       {
         "id": 8,
-        "title": "L’équipe Seastemik mange-t-elle encore des saumons\u00a0?",
-        "summary": "Spoiler\u00a0: non. Chacun·e à sa manière, chacun·e à son rythme, nous avons toustes réalisé que notre plus grand pouvoir pour construire un monde et un futur désirables résidait dans nos assiettes.",
+        "title": "L’équipe Seastemik mange-t-elle encore des saumons ?",
+        "summary": "Spoiler : non. Chacun·e à sa manière, chacun·e à son rythme, nous avons toustes réalisé que notre plus grand pouvoir pour construire un monde et un futur désirables résidait dans nos assiettes.",
         "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
         "heroImageAlt": "L’équipe Seastemik réunie",
         "heroTextSide": "left",
@@ -1206,20 +1174,20 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Esther, cofondatrice et codirectrice, partait de loin. Issue d’une famille de pêcheurs, elle a pris très jeune l’habitude de considérer les poissons comme de la nourriture. Mais une scène va tout changer. En 2013, elle est au Maroc avec des ami·es. Iels achètent des poissons frétillants pour leur déjeuner. Quelques minutes plus tard, elle ressent «\u00a0le goût de la mort\u00a0» dans sa bouche. Ce jour-là, elle comprend qu’elle préfère voir les poissons vivants plutôt que dans son assiette."
+                "text": "Esther, cofondatrice et codirectrice, partait de loin. Issue d’une famille de pêcheurs, elle a pris très jeune l’habitude de considérer les poissons comme de la nourriture. Mais une scène va tout changer. En 2013, elle est au Maroc avec des ami·es. Iels achètent des poissons frétillants pour leur déjeuner. Quelques minutes plus tard, elle ressent « le goût de la mort » dans sa bouche. Ce jour-là, elle comprend qu’elle préfère voir les poissons vivants plutôt que dans son assiette."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Quel a été le déclic\u00a0?"
+            "text": "Quel a été le déclic ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Pour Maxime, cofondateur et codirecteur, la prise de conscience est venue lors d’une mission avec Sea Shepherd. En 2020, il se retrouve au large des côtes d’Afrique de l’Ouest et assiste à une pêche industrielle. «\u00a0Ça a été un choc de voir ces bestioles marines remontées des filets, dont une bonne partie rejetée ensuite à la mer, mortes pour rien.\u00a0» À son retour, il arrête complètement de manger des poissons."
+                "text": "Pour Maxime, cofondateur et codirecteur, la prise de conscience est venue lors d’une mission avec Sea Shepherd. En 2020, il se retrouve au large des côtes d’Afrique de l’Ouest et assiste à une pêche industrielle. « Ça a été un choc de voir ces bestioles marines remontées des filets, dont une bonne partie rejetée ensuite à la mer, mortes pour rien. » À son retour, il arrête complètement de manger des poissons."
               }
             ]
           },
@@ -1228,7 +1196,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "De son côté, Charlotte, responsable corporate, a petit à petit déconstruit son rapport aux animaux. Jusqu’à ce qu’un jour, devant un filet de sole, vienne le déclic. «\u00a0Je ne voyais plus le filet, je voyais l’animal, son corps, la vie qui lui avait été prise.\u00a0»"
+                "text": "De son côté, Charlotte, responsable corporate, a petit à petit déconstruit son rapport aux animaux. Jusqu’à ce qu’un jour, devant un filet de sole, vienne le déclic. « Je ne voyais plus le filet, je voyais l’animal, son corps, la vie qui lui avait été prise. »"
               }
             ]
           },
@@ -1251,7 +1219,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Marie, chargée de campagne, a commencé par réduire sa consommation de viande, à force d’entendre ses amies lui raconter à quel point les élevages intensifs détruisent les animaux et le monde qu’on partage avec eux. Après quelques recherches, elle est tombée sur des enquêtes sur l’élevage, la pêche et l’état de l’Océan. Depuis, pour elle, les poissons, c’est fini. Quelques années après son arrêt, un morceau de saumon gravlax lui faisait envie. Elle a fini par goûter. Verdict\u00a0? «\u00a0J’ai eu l’impression d’avoir le Vieux-Port de Marseille à 7 heures du matin dans la bouche.\u00a0» Depuis, c’est fini, fini."
+                "text": "Marie, chargée de campagne, a commencé par réduire sa consommation de viande, à force d’entendre ses amies lui raconter à quel point les élevages intensifs détruisent les animaux et le monde qu’on partage avec eux. Après quelques recherches, elle est tombée sur des enquêtes sur l’élevage, la pêche et l’état de l’Océan. Depuis, pour elle, les poissons, c’est fini. Quelques années après son arrêt, un morceau de saumon gravlax lui faisait envie. Elle a fini par goûter. Verdict ? « J’ai eu l’impression d’avoir le Vieux-Port de Marseille à 7 heures du matin dans la bouche. » Depuis, c’est fini, fini."
               }
             ]
           },
@@ -1260,20 +1228,20 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Quant à Diane, responsable de la communication numérique, elle n’a pas eu de déclic\u00a0: elle a grandi dans une famille où les saumons ont tout simplement disparu de la table, après que son père a visionné un documentaire sur les impacts néfastes des élevages de poissons. Adulte, elle voit le documentaire coup de poing Seaspiracy d’Ali Tabrizi. Plus aucun doute\u00a0: les saumons, c’est terminé."
+                "text": "Quant à Diane, responsable de la communication numérique, elle n’a pas eu de déclic : elle a grandi dans une famille où les saumons ont tout simplement disparu de la table, après que son père a visionné un documentaire sur les impacts néfastes des élevages de poissons. Adulte, elle voit le documentaire coup de poing Seaspiracy d’Ali Tabrizi. Plus aucun doute : les saumons, c’est terminé."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Et après, on mange quoi\u00a0?"
+            "text": "Et après, on mange quoi ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "C’est souvent la première question quand on parle d’arrêter les saumons\u00a0: mais concrètement, que mange-t-on à la place\u00a0? Notre réponse est unanime\u00a0: bien plus qu’on ne l’imagine\u00a0!"
+                "text": "C’est souvent la première question quand on parle d’arrêter les saumons : mais concrètement, que mange-t-on à la place ? Notre réponse est unanime : bien plus qu’on ne l’imagine !"
               }
             ]
           },
@@ -1282,7 +1250,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Certain·es d’entre nous ont souhaité préserver leurs habitudes, comme Marie qui a testé des similis saumons, des options végétales censées reproduire la texture et le goût. «\u00a0Les similis peuvent être une bonne passerelle pour arrêter\u00a0», explique-t-elle, tout en insistant sur l’importance de se laisser du temps."
+                "text": "Certain·es d’entre nous ont souhaité préserver leurs habitudes, comme Marie qui a testé des similis saumons, des options végétales censées reproduire la texture et le goût. « Les similis peuvent être une bonne passerelle pour arrêter », explique-t-elle, tout en insistant sur l’importance de se laisser du temps."
               }
             ]
           },
@@ -1296,7 +1264,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Pour d’autres, ce fut l’occasion d’ouvrir leurs horizons culinaires. Charlotte s’est appuyée sur des recettes végétales qui reprenaient les codes de plats qu’elle aimait. Pour Fleur, le principal défi, c’étaient les sushis. Mais en arrêtant de commander «\u00a0le menu saumon\u00a0», elle a découvert des plats et des saveurs qu’elle n’aurait probablement jamais choisis avant."
+                "text": "Pour d’autres, ce fut l’occasion d’ouvrir leurs horizons culinaires. Charlotte s’est appuyée sur des recettes végétales qui reprenaient les codes de plats qu’elle aimait. Pour Fleur, le principal défi, c’étaient les sushis. Mais en arrêtant de commander « le menu saumon », elle a découvert des plats et des saveurs qu’elle n’aurait probablement jamais choisis avant."
               }
             ]
           },
@@ -1311,7 +1279,7 @@
           },
           {
             "type": "heading",
-            "text": "Et les repas de fêtes, alors\u00a0?"
+            "text": "Et les repas de fêtes, alors ?"
           },
           {
             "type": "paragraph",
@@ -1327,7 +1295,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Plusieurs membres de l’équipe ont dû apprendre à composer. Marie a trouvé sa technique. Hors de question de demander à ses proches de cuisiner quelque chose de différent pour elle, alors elle s’est mise à cuisiner pour les fêtes. «\u00a0Je me débrouille toujours pour cuisiner des plats qui font saliver toute la table.\u00a0»"
+                "text": "Plusieurs membres de l’équipe ont dû apprendre à composer. Marie a trouvé sa technique. Hors de question de demander à ses proches de cuisiner quelque chose de différent pour elle, alors elle s’est mise à cuisiner pour les fêtes. « Je me débrouille toujours pour cuisiner des plats qui font saliver toute la table. »"
               }
             ]
           },
@@ -1345,30 +1313,30 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Et Charlotte rappelle qu’il est aussi important de savoir poser ses limites\u00a0: on peut expliquer ses choix, mais on n’est pas obligé·e de devenir l’ambassadeur·rice de la transition alimentaire à chaque repas de famille."
+                "text": "Et Charlotte rappelle qu’il est aussi important de savoir poser ses limites : on peut expliquer ses choix, mais on n’est pas obligé·e de devenir l’ambassadeur·rice de la transition alimentaire à chaque repas de famille."
               }
             ]
           },
           {
             "type": "heading",
-            "text": "Alors, comment s’y mettre\u00a0?"
+            "text": "Alors, comment s’y mettre ?"
           },
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Il n’y a pas de méthode unique. Certain·es préféreront commencer par un jour, puis une semaine ou un mois sans saumon. D’autres auront besoin d’un déclic et arrêteront d’un coup. Le plus important est de trouver une manière de faire qui puisse s’inscrire dans la durée. Voici quelques conseils de Seastemik\u00a0:"
+                "text": "Il n’y a pas de méthode unique. Certain·es préféreront commencer par un jour, puis une semaine ou un mois sans saumon. D’autres auront besoin d’un déclic et arrêteront d’un coup. Le plus important est de trouver une manière de faire qui puisse s’inscrire dans la durée. Voici quelques conseils de Seastemik :"
               }
             ]
           },
           {
             "type": "list",
             "items": [
-              "<strong>Se documenter.</strong> Pink Bombs est là pour ça. Il existe aussi des reportages comme «\u00a0Le saumon, nouvel avatar de l’élevage industriel\u00a0» (Arte, 2026), des documentaires comme Seaspiracy (Netflix, 2021) ou des livres comme Un poison nommé saumon de Maxime Carsel (Broché, 2025).",
-              "<strong>Commencer par comprendre ce qui vous retient.</strong> Le goût\u00a0? La texture\u00a0? Les habitudes\u00a0? Les repas de famille\u00a0? Les questions nutritionnelles\u00a0? À chaque frein, sa solution.",
-              "<strong>S’entourer.</strong> En parler avec des proches, cuisiner ensemble, partager des recettes ou se lancer des petits défis à plusieurs peut vraiment faciliter la transition. Comme le résume Esther\u00a0: «\u00a0S’informer, parler de vos questionnements à votre entourage\u00a0» et, pourquoi pas, «\u00a0se fixer des challenges de périodes sans saumons avec des potes\u00a0».",
-              "<strong>Et surtout, miser sur le plaisir.</strong> Tester de nouvelles recettes, découvrir de nouveaux ingrédients, retrouver les saveurs iodées autrement, faire goûter ses plats autour de soi… Pour Charlotte, il s’agit de «\u00a0s’ouvrir à de nouveaux plats, en élargissant son répertoire culinaire\u00a0», plutôt que de voir l’arrêt comme une contrainte."
+              "<strong>Se documenter.</strong> Pink Bombs est là pour ça. Il existe aussi des reportages comme « Le saumon, nouvel avatar de l’élevage industriel » (Arte, 2026), des documentaires comme Seaspiracy (Netflix, 2021) ou des livres comme Un poison nommé saumon de Maxime Carsel (Broché, 2025).",
+              "<strong>Commencer par comprendre ce qui vous retient.</strong> Le goût ? La texture ? Les habitudes ? Les repas de famille ? Les questions nutritionnelles ? À chaque frein, sa solution.",
+              "<strong>S’entourer.</strong> En parler avec des proches, cuisiner ensemble, partager des recettes ou se lancer des petits défis à plusieurs peut vraiment faciliter la transition. Comme le résume Esther : « S’informer, parler de vos questionnements à votre entourage » et, pourquoi pas, « se fixer des challenges de périodes sans saumons avec des potes ».",
+              "<strong>Et surtout, miser sur le plaisir.</strong> Tester de nouvelles recettes, découvrir de nouveaux ingrédients, retrouver les saveurs iodées autrement, faire goûter ses plats autour de soi… Pour Charlotte, il s’agit de « s’ouvrir à de nouveaux plats, en élargissant son répertoire culinaire », plutôt que de voir l’arrêt comme une contrainte."
             ]
           }
         ]
@@ -1376,19 +1344,18 @@
       {
         "id": 9,
         "title": "George Ka, les saumons et les fantômes",
-        "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 «\u00a0Salmo Salar\u00a0», un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
+        "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 « Salmo Salar », un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
         "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
         "heroImageAlt": "George Ka sur scène pendant Salmo Salar",
         "heroImageCredit": "Hugo Meunier",
         "heroTextSide": "left",
-        "relatedArticleIds": [5],
         "blocks": [
           {
             "type": "paragraph",
             "segments": [
               {
                 "type": "text",
-                "text": "Quel est le point commun entre un saumon et un fantôme\u00a0? Si, cherchez bien, il y en a un. Le saumon traverse l’Océan et retourne ensuite à sa rivière natale. En clair, le poisson comme l’esprit a tendance à revenir sur les lieux de son enfance. Deux trajectoires de retour et d’appartenance."
+                "text": "Quel est le point commun entre un saumon et un fantôme ? Si, cherchez bien, il y en a un. Le saumon traverse l’Océan et retourne ensuite à sa rivière natale. En clair, le poisson comme l’esprit a tendance à revenir sur les lieux de son enfance. Deux trajectoires de retour et d’appartenance."
               }
             ]
           },
@@ -1397,7 +1364,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Ce parallèle constitue le fil rouge de «\u00a0Salmo Salar\u00a0», un spectacle écrit et mis en scène par George Ka, autrice et chanteuse reconnue pour ses textes poétiques et engagés. Dans «\u00a0Salmo Salar\u00a0», on s’interroge en rythme sur nos identités, nos histoires, celles qu’on transmet et celles qu’on oublie, et surtout sur nos liens avec les autres êtres vivants."
+                "text": "Ce parallèle constitue le fil rouge de « Salmo Salar », un spectacle écrit et mis en scène par George Ka, autrice et chanteuse reconnue pour ses textes poétiques et engagés. Dans « Salmo Salar », on s’interroge en rythme sur nos identités, nos histoires, celles qu’on transmet et celles qu’on oublie, et surtout sur nos liens avec les autres êtres vivants."
               }
             ]
           },
@@ -1410,7 +1377,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Et si les saumons, réduits le plus souvent au statut d’aliment, étaient aussi des individus avec une histoire, des comportements, un environnement et une trajectoire propres\u00a0? Pendant plus d’une heure, musique, dialogues et poèmes s’entrelacent pour interroger avec humour et tendresse nos perceptions humaines et nos systèmes de consommation."
+                "text": "Et si les saumons, réduits le plus souvent au statut d’aliment, étaient aussi des individus avec une histoire, des comportements, un environnement et une trajectoire propres ? Pendant plus d’une heure, musique, dialogues et poèmes s’entrelacent pour interroger avec humour et tendresse nos perceptions humaines et nos systèmes de consommation."
               }
             ]
           },
@@ -1424,7 +1391,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "En d’autres termes, George Ka pose la question\u00a0: que dit de nous notre rapport aux saumons\u00a0? En créant ce spectacle, elle vient d’ailleurs bousculer ce rapport, puisque accorder aux saumons une place et un temps sur scène, c’est déjà les considérer autrement qu’avec nos fourchettes."
+                "text": "En d’autres termes, George Ka pose la question : que dit de nous notre rapport aux saumons ? En créant ce spectacle, elle vient d’ailleurs bousculer ce rapport, puisque accorder aux saumons une place et un temps sur scène, c’est déjà les considérer autrement qu’avec nos fourchettes."
               }
             ]
           },
@@ -1433,34 +1400,28 @@
             "segments": [
               {
                 "type": "text",
-                "text": "«\u00a0Salmo Salar\u00a0» fait partie de ces œuvres qui interrogent notre manière de cohabiter avec les autres animaux, qu’ils soient terrestres ou marins. En sortant du spectacle, notre regard est modifié\u00a0: on ne voit plus les saumons seulement comme un aliment, mais comme des êtres sensibles et vivants."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour aller plus loin"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Vous êtes accros à la texture et aux parfums des salmonidés\u00a0? Pas de panique\u00a0! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu. "
-              },
-              {
-                "type": "link",
-                "text": "Découvrez les cinq alternatives aux saumons.",
-                "href": "/s-inspirer/5-alternatives-aux-saumons-qui-changent-deja-la-donne-5"
+                "text": "« Salmo Salar » fait partie de ces œuvres qui interrogent notre manière de cohabiter avec les autres animaux, qu’ils soient terrestres ou marins. En sortant du spectacle, notre regard est modifié : on ne voit plus les saumons seulement comme un aliment, mais comme des êtres sensibles et vivants."
               }
             ]
           }
-        ]
+        ],
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu. "
+              }
+            ]
+          ],
+          "articleId": 5
+        }
       },
       {
         "id": 10,
         "title": "13 associations qui œuvrent pour repeupler l’Océan",
-        "summary": "L’Océan n’a pas seulement besoin d’être «\u00a0sauvé\u00a0». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
+        "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
         "heroImageAlt": "L’Océan et les associations qui œuvrent à le protéger",
         "heroTextSide": "left",
@@ -1479,7 +1440,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Seastemik</strong> est parti d’une idée simple\u00a0: un Océan qui déborde de vie passe par une remise en question de la place que nous accordons aux animaux marins dans nos assiettes. À travers nos campagnes, comme la mobilisation contre le méga-élevage <strong>Pure Salmon</strong> en Gironde, et nos enquêtes, comme le projet PinkBombs que vous consultez en ce moment même, on cherche à rendre visibles les conséquences désastreuses de notre alimentation et à accompagner individus comme entreprises pour changer nos façons de manger, sans culpabilité et avec plaisir."
+                "text": "<strong>Seastemik</strong> est parti d’une idée simple : un Océan qui déborde de vie passe par une remise en question de la place que nous accordons aux animaux marins dans nos assiettes. À travers nos campagnes, comme la mobilisation contre le méga-élevage <strong>Pure Salmon</strong> en Gironde, et nos enquêtes, comme le projet PinkBombs que vous consultez en ce moment même, on cherche à rendre visibles les conséquences désastreuses de notre alimentation et à accompagner individus comme entreprises pour changer nos façons de manger, sans culpabilité et avec plaisir."
               }
             ]
           },
@@ -1524,7 +1485,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Planète Mer</strong> travaille à retrouver un équilibre durable entre la vie marine et les activités humaines. L’association développe des actions de terrain autour de trois grands axes\u00a0: protéger la biodiversité marine avec les citoyen·nes, accompagner une gestion durable des ressources de pêche avec les pêcheur·euses et restaurer des écosystèmes dégradés avec les populations locales."
+                "text": "<strong>Planète Mer</strong> travaille à retrouver un équilibre durable entre la vie marine et les activités humaines. L’association développe des actions de terrain autour de trois grands axes : protéger la biodiversité marine avec les citoyen·nes, accompagner une gestion durable des ressources de pêche avec les pêcheur·euses et restaurer des écosystèmes dégradés avec les populations locales."
               }
             ]
           },
@@ -1533,7 +1494,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "La <strong>Plateforme Océan et Climat</strong> rassemble des ONG, des instituts de recherche, des collectivités et des acteurs économiques autour d’un même objectif\u00a0: faire reconnaître le rôle central de l’Océan dans la régulation du climat. Née en amont de la COP21, elle produit des ressources scientifiques accessibles et porte la voix de l’Océan dans les négociations climatiques internationales."
+                "text": "La <strong>Plateforme Océan et Climat</strong> rassemble des ONG, des instituts de recherche, des collectivités et des acteurs économiques autour d’un même objectif : faire reconnaître le rôle central de l’Océan dans la régulation du climat. Née en amont de la COP21, elle produit des ressources scientifiques accessibles et porte la voix de l’Océan dans les négociations climatiques internationales."
               }
             ]
           },
@@ -1551,7 +1512,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Surfrider</strong> agit sur plusieurs fronts pour protéger l’Océan et les littoraux\u00a0: lutte contre les pollutions, notamment plastiques, protection de la qualité des eaux, préservation des espaces côtiers et adaptation au changement climatique. L’association s’appuie notamment sur l’expertise scientifique, l’éducation, la mobilisation citoyenne et le plaidoyer pour faire évoluer les pratiques et les politiques publiques."
+                "text": "<strong>Surfrider</strong> agit sur plusieurs fronts pour protéger l’Océan et les littoraux : lutte contre les pollutions, notamment plastiques, protection de la qualité des eaux, préservation des espaces côtiers et adaptation au changement climatique. L’association s’appuie notamment sur l’expertise scientifique, l’éducation, la mobilisation citoyenne et le plaidoyer pour faire évoluer les pratiques et les politiques publiques."
               }
             ]
           },
@@ -1560,7 +1521,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Under The Pole</strong> explore les zones les moins connues de l’Océan, des eaux polaires aux profondeurs dites «\u00a0mésophotiques\u00a0», situées entre 30 et 200 mètres. À travers des expéditions au long cours mêlant plongée, recherche scientifique et innovation, l’association étudie notamment les coraux profonds et leur rôle de refuge face au réchauffement. Elle partage ensuite ses découvertes avec le grand public et les scolaires pour faire connaître ces écosystèmes encore largement ignorés."
+                "text": "<strong>Under The Pole</strong> explore les zones les moins connues de l’Océan, des eaux polaires aux profondeurs dites « mésophotiques », situées entre 30 et 200 mètres. À travers des expéditions au long cours mêlant plongée, recherche scientifique et innovation, l’association étudie notamment les coraux profonds et leur rôle de refuge face au réchauffement. Elle partage ensuite ses découvertes avec le grand public et les scolaires pour faire connaître ces écosystèmes encore largement ignorés."
               }
             ]
           },

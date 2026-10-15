@@ -4,6 +4,12 @@ export interface ArticleTextSegment {
   href?: string;
 }
 
+export interface ArticleRelatedSection {
+  title: string;
+  paragraphs: ArticleTextSegment[][];
+  articleId?: number;
+}
+
 export type ArticleContentBlock =
   | { type: "paragraph"; segments: ArticleTextSegment[] }
   | { type: "heading"; text: string; strikethrough?: boolean }
@@ -20,5 +26,5 @@ export interface ArticleContent {
   heroImageCredit?: string;
   heroTextSide?: "left" | "right";
   blocks: ArticleContentBlock[];
-  relatedArticleIds?: number[];
+  relatedSection?: ArticleRelatedSection;
 }

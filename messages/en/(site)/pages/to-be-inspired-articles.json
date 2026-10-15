@@ -1,7 +1,6 @@
 {
   "toBeInspiredArticle": {
     "page": "To Be Inspired - ",
-    "relatedArticlesTitle": "Would you like a little more inspiration?",
     "articles": [
       {
         "id": 1,
@@ -158,14 +157,13 @@
                 "text": "From luxury food to intensive farming, salmon tells the story of an industry that has reshaped our eating habits. But its nutritional promises do not hold up against the figures. This calls for us to stop overconsuming farmed salmon, and highlights the urgent need to transform our food system."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "To learn more about the inner workings and harms of the salmon industry, read our report: "
@@ -180,9 +178,8 @@
                 "text": "."
               }
             ]
-          }
-        ],
-        "heroTextSide": "left"
+          ]
+        }
       },
       {
         "id": 2,
@@ -190,7 +187,6 @@
         "summary": "An interview with Marie Laforêt, a leading voice in plant-based cooking",
         "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
         "heroImageAlt": "Marie Laforêt, author of Seafood Vegan",
-        "relatedArticleIds": [10],
         "blocks": [
           {
             "type": "paragraph",
@@ -342,22 +338,21 @@
                 "text": "<strong>Marie Laforêt:</strong> Yes. If you are hesitating to reduce or stop eating marine animals, I know that your loved ones' potential reactions can hold you back. In my view, the best thing to do is cook delicious recipes for them. Sometimes a delicious dish is worth more than a thousand words. Plant-based tarama, for example, is just as good as, or even better than, the cheap industrial version. Recipe by recipe, it is easier to convince people through taste than through ideas or arguments. Some of my recipes have become holiday classics in my family, even though I can tell you it was not a sure thing at first!"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a fish? Explore five misconceptions and learn to consider marine animals more thoughtfully."
               }
             ]
-          }
-        ],
-        "heroTextSide": "left"
+          ],
+          "articleId": 4
+        }
       },
       {
         "id": 3,
@@ -462,22 +457,21 @@
             "type": "youtube",
             "videoId": "wR759GYF1MU",
             "title": "SALMO, an animated short film by Paul Pajot"
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a carp? Explore five misconceptions and learn to consider these marine animals more thoughtfully."
               }
             ]
-          }
-        ],
-        "heroTextSide": "left"
+          ],
+          "articleId": 4
+        }
       },
       {
         "id": 4,
@@ -670,36 +664,21 @@
                 "text": "One logic drives this industry: produce more, faster, and at lower cost to supply a global market. Fish become volumes, tons, yields, and margins. Even aquaculture’s vocabulary says a lot: “biomass,” “growth,” “feed conversion ratio,” and “yield.” But a ton of fish is not a ton of biomass; it is countless individual animals."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Salmon are surprising living beings. Learning more about their bodies and lives helps us see that they, like us, are sentient animals. Discover five things you probably do not know about salmon."
               }
             ]
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Read next: "
-              },
-              {
-                "type": "link",
-                "text": "5 things to know about salmon (instead of eating them)",
-                "href": "/to-be-inspired/5-things-to-know-about-salmon-instead-of-eating-them-6"
-              }
-            ]
-          }
-        ],
-        "heroTextSide": "left"
+          ],
+          "articleId": 6
+        }
       },
       {
         "id": 5,
@@ -707,7 +686,6 @@
         "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
         "heroImageAlt": "Smoked carrot on toast, a plant-based alternative to smoked salmon",
-        "relatedArticleIds": [2],
         "blocks": [
           {
             "type": "heading",
@@ -843,22 +821,21 @@
                 "text": "<strong>Try this:</strong> Explore cookbooks such as Cuisine vegan petit budget by Marie Laforêt (Solar), Plats veggie du monde by Stéphanie de Turckheim (Hachette), and Ma cuisine vegan pour tous les jours by Stéphanie Tresch Medici (La Plage)."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan (Solar, 2026), she shares her story and tips for leaving salmon off our plates."
               }
             ]
-          }
-        ],
-        "heroTextSide": "left"
+          ],
+          "articleId": 2
+        }
       },
       {
         "id": 6,
@@ -866,7 +843,6 @@
         "summary": "Salmon are surprising living beings. Learning more about their habits, bodies, and lives helps us see that they, like us, are sentient animals.",
         "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
         "heroImageAlt": "Illustration about salmon and their lives",
-        "relatedArticleIds": [3],
         "blocks": [
           {
             "type": "heading",
@@ -975,22 +951,21 @@
                 "text": "”, published in 2024 on the Cervelle d’oiseau YouTube channel, hosted by science communicator Sébastien Moro."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "heroTextSide": "right",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Salmon spend their lives connecting worlds we think of as separate. The animated short film SALMO, directed by Paul Pajot, tells the incredible epic journey of wild salmon and the fragility of the ecosystems they travel through."
               }
             ]
-          }
-        ],
-        "heroTextSide": "right"
+          ],
+          "articleId": 3
+        }
       },
       {
         "id": 7,
@@ -999,7 +974,6 @@
         "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
         "heroImageAlt": "Boulangerie Landemaine's decision to remove salmon from its menu",
         "heroTextSide": "left",
-        "relatedArticleIds": [2],
         "blocks": [
           {
             "type": "paragraph",
@@ -1152,26 +1126,20 @@
                 "text": "This example shows us that another path is possible: businesses can go against industry habits and succeed when the choice is thoughtfully planned. So what are we waiting for? Let’s tell our restaurants, caterers, and bakeries it is time to leave salmon off the menu!"
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan, she shares her story and tips for leaving salmon off our plates. "
-              },
-              {
-                "type": "link",
-                "text": "Read the interview with Marie Laforêt.",
-                "href": "/to-be-inspired/how-can-we-replace-fish-on-our-plates-2"
               }
             ]
-          }
-        ]
+          ],
+          "articleId": 2
+        }
       },
       {
         "id": 8,
@@ -1379,7 +1347,6 @@
         "heroImageAlt": "George Ka on stage during Salmo Salar",
         "heroImageCredit": "Hugo Meunier",
         "heroTextSide": "left",
-        "relatedArticleIds": [5],
         "blocks": [
           {
             "type": "paragraph",
@@ -1434,26 +1401,20 @@
                 "text": "Salmo Salar is one of those works that questions how we coexist with other animals, whether they live on land or in the sea. When we leave the show, our perspective has shifted: we no longer see salmon only as food, but as sentient, living beings."
               }
             ]
-          },
-          {
-            "type": "heading",
-            "text": "Read more"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
+          }
+        ],
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
               {
                 "type": "text",
                 "text": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu. "
-              },
-              {
-                "type": "link",
-                "text": "Explore five alternatives to salmon.",
-                "href": "/to-be-inspired/5-salmon-alternatives-that-are-already-changing-the-game-5"
               }
             ]
-          }
-        ]
+          ],
+          "articleId": 5
+        }
       },
       {
         "id": 10,

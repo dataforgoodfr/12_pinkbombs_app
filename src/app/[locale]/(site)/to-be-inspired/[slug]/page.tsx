@@ -5,7 +5,11 @@ import { getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
 
 import { getArticleSlug } from "@/lib/articles/slug";
-import type { ArticleContent, ArticleContentBlock } from "@/lib/articles/types";
+import type {
+  ArticleContent,
+  ArticleContentBlock,
+  ArticleTextSegment,
+} from "@/lib/articles/types";
 
 import ArticleCard from "@/components/v2/cards/ArticleCard";
 
@@ -22,7 +26,6 @@ async function getArticle(locale: string, slug: string) {
 
   return {
     page: t("page"),
-    relatedArticlesTitle: t("relatedArticlesTitle"),
     articles,
     article: articles.find(
       (article) => getArticleSlug(article.title, article.id) === slug,
@@ -56,9 +59,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   if (!article.article) notFound();
 
-  const relatedArticles = (article.article.relatedArticleIds ?? []).flatMap(
-    (id) => article.articles.find((item) => item.id === id) ?? [],
-  );
+  const relatedArticle = article.article.relatedSection?.articleId
+    ? article.articles.find(
+        (item) => item.id === article.article?.relatedSection?.articleId,
+      )
+    : undefined;
   const heroTextSide = article.article.heroTextSide ?? "left";
   const heroTextSideClass =
     heroTextSide === "right" ? "lg:ml-auto lg:mr-[8%]" : "lg:ml-[8%]";
@@ -102,13 +107,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </div>
       </article>
 
-      {relatedArticles.length > 0 && (
-        <section className="bg-v2-magenta pt-12 text-v2-blue md:pt-16">
-          <h2 className="h3 px-5 text-center text-black">
-            {article.relatedArticlesTitle}
+      {article.article.relatedSection && (
+        <section className="bg-v2-magenta pt-12 text-black md:pt-16">
+          <h2 className="h3 px-5 text-center">
+            {article.article.relatedSection.title}
           </h2>
-          <div className="mx-auto grid max-w-[1000px] grid-cols-1 justify-items-center gap-6 px-5 py-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedArticles.map((relatedArticle) => (
+          <div className="mx-auto max-w-3xl px-5 py-8 md:px-8">
+            {article.article.relatedSection.paragraphs.map(
+              (segments, index) => (
+                <ArticleParagraphView
+                  key={`related-${index}`}
+                  segments={segments}
+                />
+              ),
+            )}
+          </div>
+          {relatedArticle && (
+            <div className="flex justify-center px-5 pb-8">
               <ArticleCard
                 key={relatedArticle.id}
                 id={relatedArticle.id}
@@ -121,8 +136,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   alt: relatedArticle.heroImageAlt,
                 }}
               />
-            ))}
-          </div>
+            </div>
+          )}
           <Image
             src="/site/images/to-be-inspired/more-articles-divider.svg"
             width={1512}
@@ -201,16 +216,24 @@ function ArticleBlockView({ block }: { block: ArticleContentBlock }) {
     );
   }
 
+  return <ArticleParagraphView segments={block.segments} />;
+}
+
+function ArticleParagraphView({
+  segments,
+}: {
+  segments: ArticleTextSegment[];
+}) {
   return (
     <p className="my-5 text-base leading-relaxed md:text-lg">
-      {block.segments.map((segment, index) =>
+      {segments.map((segment, index) =>
         segment.type === "link" && segment.href ? (
           <a
             key={`${index}-${segment.text}`}
             href={segment.href}
             target="_blank"
             rel="noreferrer"
-            className="underline decoration-1 underline-offset-2 hover:text-v2-magenta"
+            className="underline decoration-1 underline-offset-2 hover:font-semibold"
           >
             {renderInlineText(segment.text)}
           </a>
