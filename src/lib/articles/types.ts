@@ -6,7 +6,7 @@ export interface ArticleTextSegment {
 
 export type ArticleContentBlock =
   | { type: "paragraph"; segments: ArticleTextSegment[] }
-  | { type: "heading"; text: string }
+  | { type: "heading"; text: string; strikethrough?: boolean }
   | { type: "image"; src?: string; alt: string; caption?: string }
   | { type: "youtube"; videoId: string; title: string };
 

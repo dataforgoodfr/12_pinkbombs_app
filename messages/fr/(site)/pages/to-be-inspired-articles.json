@@ -477,6 +477,222 @@
             ]
           }
         ]
+      },
+      {
+        "id": 4,
+        "title": "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
+        "summary": "Être muet·e comme une carpe, engueuler quelqu'un comme du poisson pourri ou avoir une mémoire de poisson rouge… Ces expressions racontent à quel point nous estimons peu et connaissons mal les poissons. Petit plongeon dans les idées reçues les plus courantes pour mieux considérer ces animaux marins.",
+        "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageAlt": "Illustration de poissons pour l’article sur les idées reçues",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dès l’enfance, nous construisons notre rapport au vivant. Cette construction, fruit d’une histoire scientifique, culturelle et religieuse, a tendance, quelles que soient les régions du monde, à distinguer et donc à hiérarchiser des espèces."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En Europe, par exemple, on apprend très tôt à faire la distinction entre les animaux que l’on aime – un chaton – et les animaux que l’on mange – du saumon. Autrement dit, on considère certains animaux comme des individus et d’autres comme des ressources. Et clairement, les poissons que l’on met dans nos assiettes font partie des animaux que l’on respecte le moins."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pourtant, les poissons sont, comme nous et comme les chatons, des êtres sentients. C’est-à-dire qu’ils ont une expérience subjective du monde. Ils sont capables de percevoir le monde qui les entoure, d’apprendre, de mémoriser, de ressentir du plaisir, de la peur et de la douleur. En clair, les poissons sont des êtres vivants et, pour les considérer comme tels, il est bon de briser certains clichés."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. « Les poissons ont une mémoire de trois secondes »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/1.png",
+            "alt": "Illustration associée à la mémoire des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On a longtemps sous-estimé les capacités des animaux marins. Et cette histoire de « mémoire de trois secondes » fait partie des premiers mythes à déconstruire. Les poissons sont capables d’apprendre de leurs expériences et de s’en souvenir suffisamment longtemps pour modifier leur comportement."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ils peuvent, par exemple, reconnaître leur environnement, mémoriser des lieux où trouver de la nourriture, éviter des zones dangereuses ou associer certains signaux à une récompense ou à une menace. Chez certaines espèces, la mémoire joue aussi un rôle dans la navigation et les interactions sociales."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. « Les poissons ne ressentent pas la douleur »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/2.jpg",
+            "alt": "Illustration associée à la sensibilité des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce n’est pas parce qu’un poisson est incapable de crier qu’il est incapable de souffrir. Les poissons sont, comme nous, dotés d’un système nerveux. Ils peuvent détecter des stimuli susceptibles d’endommager leur corps, comme une chaleur extrême."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Des études montrent qu’ils modifient leur comportement et leur fonctionnement physiologique lorsqu’ils sont confrontés à des situations potentiellement douloureuses."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Nous ne pouvons pas demander aux poissons de nous raconter ce qu’ils ressentent (même si on aimerait bien), mais ils éprouvent bel et bien du plaisir, de la peur, du stress et de la douleur."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. « Les poissons ne communiquent pas »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/3.jpg",
+            "alt": "Illustration associée à la communication des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On imagine facilement que les poissons vivent dans un monde silencieux et sans interaction. Pourtant, les poissons se parlent bel et bien. Leur langage et leurs codes sont juste différents des nôtres."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Selon les espèces, ils utilisent des signaux visuels, chimiques, acoustiques ou encore physiques pour transmettre des informations à leurs congénères. Certaines espèces vivent d’ailleurs dans des sociétés structurées où leurs interactions sont complexes. En bref, un animal n’a pas besoin de nous ressembler pour avoir une vie sociale."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. « Les poissons sont des produits de consommation »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/4.jpg",
+            "alt": "Illustration associée à la consommation des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On dit « un chien », « un chat », « un éléphant », mais on parle « du saumon », « du thon », « de la truite ». Notre propre langage invisibilise la sensibilité et l’intelligence des animaux marins que l’on mange. Les évoquer en termes de kilos, de portions ou de filets participe à rationaliser leur exploitation et à déculpabiliser nos consciences."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Or, un saumon n’est pas un filet. Une truite n’est pas une portion. Un poisson n’est pas un produit. Avant d’être « du saumon » dans une assiette, ce saumon était un être vivant, un animal sentient."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. « Manger des poissons, c’est naturel »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/5.jpg",
+            "alt": "Illustration associée à la pêche et à l’élevage des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "L’image du pêcheur solitaire avec sa ligne et sa petite barque a nourri l’idée que manger des poissons serait une pratique ancestrale, voire « naturelle ». Rappelons que, selon les époques et les régions du monde, notre alimentation a été le plus souvent végétale."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Qui plus est, cette image du pêcheur solitaire est loin de représenter notre système alimentaire actuel. Les poissons que l’on trouve en magasin sont soit capturés par de gigantesques chalutiers qui ratissent les fonds sur des kilomètres, soit élevés de manière intensive dans des bassins marins, voire terrestres. Il ne s’agit donc pas d’une pêche artisanale, mais d’une industrie."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Derrière cette industrie, une logique domine : produire davantage, plus vite et à moindre coût, pour alimenter un marché mondial. Les poissons deviennent alors des volumes, des tonnes, des rendements et des marges. Même en aquaculture, le vocabulaire en dit long : on parle de « biomasse », de « croissance », de « taux de conversion alimentaire », de « rendement ». Mais une tonne de poissons, ce n’est pas une tonne de biomasse, c’est une multitude d’animaux."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles. Découvrez 5 choses que vous ne savez (sans doute) pas sur les saumons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Article à découvrir : 5 choses à savoir sur les saumons (au lieu de les manger)."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

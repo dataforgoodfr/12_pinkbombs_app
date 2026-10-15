@@ -475,6 +475,222 @@
             ]
           }
         ]
+      },
+      {
+        "id": 4,
+        "title": "5 misconceptions about fish (and why they are false)",
+        "summary": "Being as silent as a carp, cursing someone with a fishy insult, or having a goldfish memory… These expressions reveal how little we value and know about fish. Let’s take a closer look at common misconceptions and learn to see these marine animals differently.",
+        "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageAlt": "Illustration of fish for the article about common misconceptions",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "From childhood, we build our relationship with the living world. Shaped by scientific, cultural, and religious histories, this process tends to distinguish species and rank them, wherever we live."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In Europe, for example, we learn early to distinguish animals we love, such as kittens, from animals we eat, such as salmon. In other words, we treat some animals as individuals and others as resources. Fish on our plates are clearly among the animals we respect the least."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Yet fish, like us and like kittens, are sentient beings. They have a subjective experience of the world: they can perceive their surroundings, learn, remember, and feel pleasure, fear, and pain. Fish are living beings, and challenging certain clichés can help us recognize them as such."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. “Fish only have a three-second memory”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/1.png",
+            "alt": "Illustration accompanying the section about fish memory"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marine animals’ abilities have long been underestimated. The claim that fish have a “three-second memory” is one of the first myths to challenge. Fish can learn from experience and remember it long enough to change their behavior."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "For example, they can recognize their environment, remember where to find food, avoid dangerous areas, or associate certain signals with a reward or a threat. In some species, memory also plays a role in navigation and social interactions."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. “Fish don’t feel pain”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/2.jpg",
+            "alt": "Illustration accompanying the section about fish sensitivity"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "A fish’s inability to cry out does not mean it cannot suffer. Like us, fish have a nervous system. They can detect stimuli that may harm their bodies, such as extreme heat."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Studies show that fish change their behavior and physiological responses when faced with potentially painful situations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "We cannot ask fish to tell us what they feel (though we might like to), but they really do experience pleasure, fear, stress, and pain."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. “Fish don’t communicate”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/3.jpg",
+            "alt": "Illustration accompanying the section about fish communication"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "It is easy to imagine fish living in a silent world without interaction. Yet fish do communicate. Their language and signals are simply different from ours."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Depending on the species, they use visual, chemical, acoustic, or physical signals to share information with one another. Some species live in structured societies with complex interactions. In short, an animal does not have to resemble us to have a social life."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. “Fish are consumer products”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/4.jpg",
+            "alt": "Illustration accompanying the section about fish consumption"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "We say “a dog,” “a cat,” or “an elephant,” but talk about “salmon,” “tuna,” or “trout.” Our own language makes invisible the sensitivity and intelligence of the marine animals we eat. Describing them in kilos, portions, and fillets helps rationalize their exploitation and ease our consciences."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "But a salmon is not a fillet. A trout is not a portion. A fish is not a product. Before it became “salmon” on a plate, that salmon was a living, sentient animal."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. “Eating fish is natural”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/5.jpg",
+            "alt": "Illustration accompanying the section about fishing and fish farming"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The image of a lone fisher with a line and a small boat has fueled the idea that eating fish is an ancient, even “natural,” practice. Yet, depending on the era and region, our diets have most often been plant-based."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This image of a lone fisher is far removed from today’s food system. Fish sold in shops are either caught by gigantic trawlers that sweep the seabed for miles or intensively farmed in marine and even land-based facilities. This is not small-scale fishing; it is an industry."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "One logic drives this industry: produce more, faster, and at lower cost to supply a global market. Fish become volumes, tons, yields, and margins. Even aquaculture’s vocabulary says a lot: “biomass,” “growth,” “feed conversion ratio,” and “yield.” But a ton of fish is not a ton of biomass; it is countless individual animals."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmon are surprising living beings. Learning more about their bodies and lives helps us see that they, like us, are sentient animals. Discover five things you probably do not know about salmon."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Read next: 5 things to know about salmon (instead of eating them)."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

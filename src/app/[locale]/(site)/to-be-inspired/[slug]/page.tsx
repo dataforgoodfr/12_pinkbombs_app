@@ -127,7 +127,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
 function ArticleBlockView({ block }: { block: ArticleContentBlock }) {
   if (block.type === "heading") {
-    return <h2 className="h3 mt-12 text-pretty first:mt-0">{block.text}</h2>;
+    return (
+      <h2
+        className={`h3 mt-12 text-pretty first:mt-0 ${block.strikethrough ? "line-through decoration-2" : ""}`}
+      >
+        {block.text}
+      </h2>
+    );
   }
 
   if (block.type === "image") {
