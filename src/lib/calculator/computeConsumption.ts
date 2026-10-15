@@ -21,16 +21,17 @@ export const PERIODICITY_TABLE: Record<FrequencyName, Periodicity> = {
   [FREQUENCY.OtherYearly]: { occurrence: 0, yearPeriodicity: 1 },
 };
 
+// See decision here : https://seastemikworkspace.slack.com/archives/C07QK4T02EA/p1791742137256239
 export const WEIGHT_TABLE_IN_GRAMS: Record<string, number> = {
-  fillet: 110,
-  maki: 6.67,
-  nigiri: 17.5,
-  sashimi: 22.67,
-  pokeBowl: 150,
-  smokedSalmon: 30,
-  quicheSandwich: 30,
-  appetizer: 26,
-  pasta: 80,
+  fillet: 220,
+  maki: 13.3,
+  nigiri: 35,
+  sashimi: 45.3,
+  pokeBowl: 300,
+  smokedSalmon: 115.2,
+  quicheSandwich: 115.2,
+  appetizer: 99.8,
+  pasta: 160,
 };
 
 const CUSTOM_FREQUENCIES: FrequencyName[] = [
