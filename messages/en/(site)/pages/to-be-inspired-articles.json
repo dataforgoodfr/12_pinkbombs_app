@@ -1370,6 +1370,90 @@
             ]
           }
         ]
+      },
+      {
+        "id": 9,
+        "title": "George Ka, salmon and ghosts",
+        "summary": "At the Théâtre de la Ville in Paris, artist George Ka presented Salmo Salar in 2026: an expanded concert that uses migratory fish as a starting point for reflecting on identity and our relationship with the living world.",
+        "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageAlt": "George Ka on stage during Salmo Salar",
+        "heroImageCredit": "Hugo Meunier",
+        "heroTextSide": "left",
+        "relatedArticleIds": [5],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "What do a salmon and a ghost have in common? Look closely, there is a connection. Salmon cross the ocean and then return to their home river. In other words, fish, like spirits, tend to return to the places where they grew up. Two journeys shaped by return and belonging."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This parallel is the thread running through Salmo Salar, a show written and directed by George Ka, a celebrated author and singer known for her poetic, socially engaged lyrics. Through rhythm, Salmo Salar explores our identities, our stories, the ones we pass on and the ones we forget, and above all our connections with other living beings."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Connecting with the living world, connecting with salmon"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "What if salmon, most often reduced to food, were also individuals with their own histories, behaviors, environments, and journeys? For more than an hour, music, dialogue, and poetry intertwine to question our human perceptions and consumption systems with humor and tenderness."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/9/1.jpg",
+            "alt": "George Ka performing Salmo Salar"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In other words, George Ka asks: what does our relationship with salmon say about us? By creating this show, she challenges that relationship. Giving salmon space and time on stage is already a way to see them as more than something on our forks."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmo Salar is one of those works that questions how we coexist with other animals, whether they live on land or in the sea. When we leave the show, our perspective has shifted: we no longer see salmon only as food, but as sentient, living beings."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu. "
+              },
+              {
+                "type": "link",
+                "text": "Explore five alternatives to salmon.",
+                "href": "/to-be-inspired/5-salmon-alternatives-that-are-already-changing-the-game-5"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

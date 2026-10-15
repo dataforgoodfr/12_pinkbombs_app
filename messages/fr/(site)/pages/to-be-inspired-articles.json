@@ -1372,6 +1372,90 @@
             ]
           }
         ]
+      },
+      {
+        "id": 9,
+        "title": "George Ka, les saumons et les fantômes",
+        "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 « Salmo Salar », un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
+        "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageAlt": "George Ka sur scène pendant Salmo Salar",
+        "heroImageCredit": "Hugo Meunier",
+        "heroTextSide": "left",
+        "relatedArticleIds": [5],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quel est le point commun entre un saumon et un fantôme ? Si, cherchez bien, il y en a un. Le saumon traverse l’Océan et retourne ensuite à sa rivière natale. En clair, le poisson comme l’esprit a tendance à revenir sur les lieux de son enfance. Deux trajectoires de retour et d’appartenance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce parallèle constitue le fil rouge de « Salmo Salar », un spectacle écrit et mis en scène par George Ka, autrice et chanteuse reconnue pour ses textes poétiques et engagés. Dans « Salmo Salar », on s’interroge en rythme sur nos identités, nos histoires, celles qu’on transmet et celles qu’on oublie, et surtout sur nos liens avec les autres êtres vivants."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Se relier au vivant, se relier aux saumons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et si les saumons, réduits le plus souvent au statut d’aliment, étaient aussi des individus avec une histoire, des comportements, un environnement et une trajectoire propres ? Pendant plus d’une heure, musique, dialogues et poèmes s’entrelacent pour interroger avec humour et tendresse nos perceptions humaines et nos systèmes de consommation."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/9/1.jpg",
+            "alt": "George Ka lors du spectacle Salmo Salar"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En d’autres termes, George Ka pose la question : que dit de nous notre rapport aux saumons ? En créant ce spectacle, elle vient d’ailleurs bousculer ce rapport, puisque accorder aux saumons une place et un temps sur scène, c’est déjà les considérer autrement qu’avec nos fourchettes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "« Salmo Salar » fait partie de ces œuvres qui interrogent notre manière de cohabiter avec les autres animaux, qu’ils soient terrestres ou marins. En sortant du spectacle, notre regard est modifié : on ne voit plus les saumons seulement comme un aliment, mais comme des êtres sensibles et vivants."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu. "
+              },
+              {
+                "type": "link",
+                "text": "Découvrez les cinq alternatives aux saumons.",
+                "href": "/s-inspirer/5-alternatives-aux-saumons-qui-changent-deja-la-donne-5"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

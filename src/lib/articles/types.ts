@@ -17,6 +17,7 @@ export interface ArticleContent {
   summary: string;
   heroImage: string;
   heroImageAlt: string;
+  heroImageCredit?: string;
   heroTextSide?: "left" | "right";
   blocks: ArticleContentBlock[];
   relatedArticleIds?: number[];

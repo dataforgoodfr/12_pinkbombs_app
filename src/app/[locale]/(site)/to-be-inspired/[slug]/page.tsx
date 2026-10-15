@@ -88,6 +88,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </div>
         </header>
 
+        {article.article.heroImageCredit && (
+          <p className="mx-auto max-w-3xl px-5 pt-3 text-right text-xs text-v2-blue/70 md:px-8">
+            {locale === "fr" ? "Crédit photo : " : "Photo credit: "}
+            {article.article.heroImageCredit}
+          </p>
+        )}
+
         <div className="mx-auto max-w-3xl px-5 md:px-8 md:py-16">
           {article.article.blocks.map((block, index) => (
             <ArticleBlockView key={`${block.type}-${index}`} block={block} />
