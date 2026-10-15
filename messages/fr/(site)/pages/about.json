@@ -41,49 +41,49 @@
         {
           "name": "Esther Dufaure",
           "role": "Co-fondatrice & CoDG Seastemik",
-          "pictureUrl": "/site/images/about/team/Esther.png",
+          "pictureUrl": "/site/images/about/team/esther.png",
           "pictureAlt": "Esther, co-fondatrice et co-capitaine du projet PinkBombs"
         },
         {
           "name": "Maxime de Lisle",
           "role": "Co-fondateur & CoDG Seastemik",
-          "pictureUrl": "/site/images/about/team/Maxime.png",
+          "pictureUrl": "/site/images/about/team/maxime.png",
           "pictureAlt": "Maxime, co-fondateur de Seastemik"
         },
         {
           "name": "Fleur Marques Bosio",
           "role": "Directrice Communication Seastemik",
-          "pictureUrl": "/site/images/about/team/Fleur.png",
+          "pictureUrl": "/site/images/about/team/fleur.png",
           "pictureAlt": "Fleur, Directrice Communication Seastemik"
         },
         {
           "name": "Diane Jean",
           "role": "Responsable Comm. Digitale Seastemik",
-          "pictureUrl": "/site/images/about/team/Diane.png",
+          "pictureUrl": "/site/images/about/team/diane.png",
           "pictureAlt": "Diane, Responsable Communication Digitale Seastemik"
         },
         {
           "name": "Gaëlle Nordström-Schüler",
           "role": "Product Owner bénévole",
-          "pictureUrl": "/site/images/about/team/Gaëlle.png",
+          "pictureUrl": "/site/images/about/team/gaelle.png",
           "pictureAlt": "Gaëlle, Product Owner bénévole"
         },
         {
           "name": "Brigitte Wear",
           "role": "Lead Data Analyst et Recherche",
-          "pictureUrl": "/site/images/about/team/brigitte.avif",
+          "pictureUrl": "/site/images/about/team/brigitte.png",
           "pictureAlt": "Brigitte, Lead Data Analyst et Recherche"
         },
         {
           "name": "Azra Hamidovic",
           "role": "Data Analyst et Recherche bénévole",
-          "pictureUrl": "/site/images/about/team/Azra.png",
+          "pictureUrl": "/site/images/about/team/azra.png",
           "pictureAlt": "Azra, Data Analyst et Recherche bénévole"
         },
         {
           "name": "Pierre Moneyron",
           "role": "Data Analyst et Recherche bénévole",
-          "pictureUrl": "/site/images/about/team/Pierre.png",
+          "pictureUrl": "/site/images/about/team/pierre.png",
           "pictureAlt": "Pierre, Data Analyst et Recherche bénévole"
         },
         {
@@ -95,7 +95,7 @@
         {
           "name": "Aurélie Anglio",
           "role": "Développeuse Web Fullstack bénévole",
-          "pictureUrl": "/site/images/about/team/aurelie2.png",
+          "pictureUrl": "/site/images/about/team/aurelie.png",
           "pictureAlt": "Aurélie, Développeuse Web Fullstack bénévole"
         }
       ],
@@ -109,7 +109,7 @@
     },
     "story": {
       "title": "Histoire",
-      "paragraph": "<strong>En 2023, nous avons lancé la première version de Pinkbombs, qui a eu de grandes retombées médiatiques et fait avancer la cause.</strong>\n\nNos données ont été utilisées en exclusivité par le journal Le Monde pour publier un article des Décodeurs sur l’impact de l’élevage de saumons. Lien vers l'article ici. Depuis les données ont été relayées par nombre de médias comme Bon Pote, Brut, France Inter, BFM ou le JT de 13h de TF1 élevant ainsi la conscience collective à propos des impacts de l'industrie du saumon.",
+      "paragraph": "<strong>En 2024, nous avons lancé la première version de Pinkbombs, qui a eu de grandes retombées médiatiques et fait avancer la cause.</strong>\n\nNos données ont été utilisées en exclusivité par le journal Le Monde pour publier un article des Décodeurs sur l’impact de l’élevage de saumons. Lien vers l'article ici. Depuis les données ont été relayées par nombre de médias comme Bon Pote, Brut, France Inter, BFM ou le JT de 13h de TF1 élevant ainsi la conscience collective à propos des impacts de l'industrie du saumon.",
       "imageAlt": "Image d'un téléphone avec des applications de médias"
     },
     "mediaLogosAlt": {

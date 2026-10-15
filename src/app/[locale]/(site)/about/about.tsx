@@ -156,6 +156,7 @@ const PresentationSection = () => {
           </p>
           <a
             href="https://seastemik.org/"
+            target="_blank"
             className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
           >
             {t("seastemik.cta")}
@@ -183,6 +184,7 @@ const PresentationSection = () => {
           <p className="p-body preserve-lines">{t("dataforgood.paragraph")}</p>
           <a
             href="https://dataforgood.fr/"
+            target="_blank"
             className="group cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
           >
             {t("dataforgood.cta")}
@@ -209,17 +211,17 @@ const TeamSection = () => {
     <section className="bg-white text-v2-blue pt-14 px-10">
       <div className="flex flex-col gap-10 lg:max-w-[1279px] mx-auto">
         <h2 className="h2 text-pretty mb-8">{t("teamSection.title")}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex flex-row flex-wrap gap-8 mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-16 mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 max-w-[125px] lg:max-w-none lg:w-[250px]"
+              className="flex flex-col items-center gap-2 max-w-[180px]"
             >
               <Image
                 loading="lazy"
                 src={member.pictureUrl}
-                width={131}
-                height={131}
+                width={146}
+                height={146}
                 alt={member.pictureAlt}
                 className="object-contain rounded-full"
               />
