@@ -12,9 +12,11 @@ import {
 import clsx from "clsx";
 import { Menu as MenuIcon, X } from "lucide-react";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 
+import { getLocalizedArticleSlug } from "@/lib/articles/slug";
 import { getSectionBackgroundClass, getSectionColor } from "@/lib/sectionTheme";
 
 import { basePathType, Link, locales, usePathname } from "@/navigation";
@@ -27,8 +29,29 @@ export type NavItemsProps = {
 const Navbar = () => {
   const t = useTranslations("site.layout");
   const pathname = usePathname();
+  const slug = useParams<{ slug?: string }>()?.slug;
+  const navPathname =
+    pathname === "/to-be-inspired/[slug]" ? "/to-be-inspired" : pathname;
+  const localePathname = navPathname;
   const locale = useLocale();
+  const articleId =
+    pathname === "/to-be-inspired/[slug]"
+      ? Number(slug?.match(/-(\d+)$/)?.[1])
+      : undefined;
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+
+  const getLocaleHref = (targetLocale: (typeof locales)[number]) => {
+    const localizedSlug = articleId
+      ? getLocalizedArticleSlug(articleId, targetLocale)
+      : undefined;
+
+    return localizedSlug
+      ? {
+          pathname: "/to-be-inspired/[slug]" as const,
+          params: { slug: localizedSlug },
+        }
+      : localePathname;
+  };
 
   const navItems: NavItemsProps = [
     {
@@ -97,7 +120,7 @@ const Navbar = () => {
             <Link
               className={clsx(
                 "flex transition-colors ease-in-out duration-200 group",
-                item.link === pathname
+                item.link === navPathname
                   ? getColor() === "blue"
                     ? "navbar-active-blue"
                     : "navbar-active-pink"
@@ -106,7 +129,7 @@ const Navbar = () => {
                 "hover:text-v2-magenta",
               )}
               href={item.link as basePathType}
-              aria-current={item.link === pathname ? "page" : undefined}
+              aria-current={item.link === navPathname ? "page" : undefined}
               key={`nav-${key}`}
             >
               {item.link === "/calculator" && (
@@ -178,7 +201,7 @@ const Navbar = () => {
                             : "text-v2-blue bg-v2-pink"
                           : "text-v2-blue",
                       )}
-                      href={pathname}
+                      href={getLocaleHref(lang)}
                       key={`lang-${keyLang}`}
                       aria-current={lang === locale ? "page" : undefined}
                       locale={lang}
@@ -232,14 +255,14 @@ const Navbar = () => {
                   className={clsx(
                     "uppercase font-black text-xl flex items-center mr-auto",
                     getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
-                    item.link === pathname
+                    item.link === navPathname
                       ? getColor() === "blue"
                         ? "navbar-active-blue"
                         : "navbar-active-pink"
                       : "",
                   )}
                   href={item.link as basePathType}
-                  aria-current={item.link === pathname ? "page" : undefined}
+                  aria-current={item.link === navPathname ? "page" : undefined}
                   key={`mobile-nav-${key}`}
                   onClick={closeMobileMenu}
                 >
@@ -278,7 +301,7 @@ const Navbar = () => {
                       : `text-v2-${getColor()} bg-v2-${getBackgroundColor()}`,
                     `border-v2-${getColor()}`,
                   )}
-                  href={pathname}
+                  href={getLocaleHref(lang)}
                   key={`mobile-lang-${keyLang}`}
                   aria-current={lang === locale ? "page" : undefined}
                   locale={lang}

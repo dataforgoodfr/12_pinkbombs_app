@@ -15,6 +15,8 @@ type NavItemsProps = {
 const Navbar = () => {
   const t = useTranslations("layout");
   const pathname = usePathname();
+  const localePathname =
+    pathname === "/to-be-inspired/[slug]" ? "/to-be-inspired" : pathname;
   const locale = useLocale();
 
   const navItems: NavItemsProps = [
@@ -88,7 +90,7 @@ const Navbar = () => {
                     ? "font-bold text-white bg-darkblue1"
                     : "text-darkblue1 bg-transparent",
                 )}
-                href={pathname}
+                href={localePathname}
                 key={`lang-${keyLang}`}
                 aria-current={lang === locale ? "page" : undefined}
                 locale={lang}

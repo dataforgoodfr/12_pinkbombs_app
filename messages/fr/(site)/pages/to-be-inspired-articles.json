@@ -1,0 +1,1583 @@
+{
+  "toBeInspiredArticle": {
+    "page": "S'inspirer - ",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Les saumons, symbole d'une industrie",
+        "summary": "Longtemps réservés aux tables de fête, les saumons sont devenus en quelques décennies les poissons les plus consommés en France. Derrière cette consommation inquiétante se cache l'histoire d'une industrie qui a transformé les saumons en produit de masse.",
+        "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageAlt": "Cages d'élevage de saumons dans une baie",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "L'histoire des saumons d'élevage commence par celle d'un Océan qui a changé de visage. En un siècle, la consommation mondiale de poissons a été multipliée par neuf, "
+              },
+              {
+                "type": "link",
+                "text": "d'après l'Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)",
+                "href": "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/fr/fr_atlanticsalmon.htm"
+              },
+              {
+                "type": "text",
+                "text": ". Et ce bouleversement ne doit rien au hasard."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Au lendemain de la Seconde Guerre mondiale, les moyens de capture s'accroissent de façon vertigineuse. De grandes flottes de pêche industrielle de pays comme la France, la Chine ou la Russie prennent la mer. À terre, les marchés du frais et de la conserve se développent et les habitudes alimentaires changent."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Une invention de la Norvège"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans la foulée se développent la commercialisation des plats cuisinés surgelés et l'aquaculture, autrement dit l'élevage des poissons, en particulier des saumons. Les élevages piscicoles industriels sont nés en Norvège dans les années 1960. Petit à petit, leur modèle s'exporte dans les rares pays qui réunissent les conditions naturelles propices à l'élevage."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/1.jpg",
+            "alt": "Filets de saumon emballés dans un rayon de supermarché",
+            "caption": "Le saumon d'élevage est devenu un produit de grande consommation."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En 2021, quatre pays concentrent à eux seuls 90 % des saumons élevés dans le monde, "
+              },
+              {
+                "type": "link",
+                "text": "selon la FAO",
+                "href": "https://www.fao.org/fishery/fr/collection/aquaculture"
+              },
+              {
+                "type": "text",
+                "text": ". La Norvège en produit plus de la moitié, le Chili un quart, suivi de loin par le Royaume-Uni et le Canada."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un marketing bien rosé"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Parmi tous les poissons, c'est le saumon de l'Atlantique, le Salmo salar, que l'industrie a imposé comme espèce d'élevage. Plusieurs raisons expliquent ce choix. Le saumon sauvage avait déjà sa place à table, comme produit festif et de luxe. L'aquaculture l'a rendu largement accessible en quelques années. Pour les producteurs, il présentait un atout décisif : il pouvait être élevé massivement en cages. En clair, l'industrie piscicole a calqué les méthodes de l'industrie agricole."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/2.jpg",
+            "alt": "Tranches de saumon frais présentées sur de la glace",
+            "caption": "Le saumon est souvent vendu pour sa couleur et sa chair."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans leurs publicités, les industriels des saumons vantent la couleur rosée et la chair sans arête de leurs poissons. Ils évoquent aussi leur richesse en matières grasses et en oméga 3, en laissant dans l'ombre les éléments toxiques que contient la chair des poissons. Et à force, leurs opérations de séduction ont fini par séduire le grand public."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Une croissance sans frein"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Depuis les années 1980, la production des saumons d'élevage connaît une hypercroissance à l'échelle mondiale. Et cette tendance n'est pas prête de s'arrêter. La Norvège, leader mondial, ambitionne de tripler sa production annuelle d'ici 2050. Pour y parvenir, elle mise sur de nouvelles technologies ultra-énergivores et impactantes : l'élevage terrestre et l'élevage offshore."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/3.png",
+            "alt": "Cages d'élevage de saumons installées au large d'une côte",
+            "caption": "L'élevage du saumon s'étend des fjords aux installations offshore."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Rappelons que l'industrie des saumons représente une bombe écologique, sociale et sanitaire. Les élevages intensifs engendrent des conséquences désastreuses : émissions de gaz à effet de serre (GES), maltraitances animales, déforestation, aggravation de la surpêche, pillage des ressources de populations d'autres pays. Sans parler des conséquences pour notre santé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Le paradoxe français"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce récit, la France tient un rôle de premier plan. Premier pays consommateur de saumons en Europe et quatrième au niveau mondial, elle est un acteur majeur du secteur. Elle porte donc une responsabilité particulière dans l'évolution de ces pratiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Le paradoxe est frappant. Selon le type d'oméga 3 considéré (DHA/EPA ou ALA), 89 % à 99 % de la population française présentent des insuffisances. Malgré une forte consommation de saumons, les besoins d'une large majorité des Français ne sont donc pas couverts."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Du produit de luxe à l'élevage intensif, le saumon raconte l'histoire d'une industrie qui a façonné nos habitudes alimentaires. Mais ses promesses nutritionnelles ne tiennent pas face aux chiffres. Ce constat invite à stopper notre surconsommation de saumons d'élevage industriels. Il souligne surtout l'impérieuse nécessité de transformer notre système alimentaire."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Pour en savoir davantage sur les rouages et les ravages de l'industrie des saumons, lisez notre rapport : "
+              },
+              {
+                "type": "link",
+                "text": "Saumon, la bombe rose d'un système alimentaire à bout de souffle",
+                "href": "https://seastemik.org/nos-enquetes"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "Comment remplacer les poissons dans son assiette ?",
+        "summary": "Rencontre avec Marie Laforêt, star de la cuisine végétale",
+        "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
+        "heroImageAlt": "Marie Laforêt, autrice de Seafood Vegan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Par où commencer ? Que cuisiner quand on veut déguster un plat au goût iodé ? Pour répondre à ces questions, Marie Laforêt a publié « Seafood Vegan » aux éditions Solar, un livre de recettes aussi beau que didactique. À cette occasion, elle répond aux questions de Seastemik."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Marie, tu es une référence de la cuisine végétale en France. Tu as publié plus de 20 livres de recettes en quinze ans. Pourquoi avoir choisi cette fois-ci de te concentrer sur l’univers marin ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Parmi tous les livres de cuisine vegan publiés en France, beaucoup expliquent comment remplacer les animaux terrestres dans nos assiettes, mais très peu proposent des alternatives aux animaux marins. Par ailleurs, les personnes qui décident de manger moins, voire plus du tout de viande, ont souvent tendance à se tourner vers les poissons. Ça a d’ailleurs été mon cas quand j’étais plus jeune ! Et c’est un vrai problème selon moi, d’autant qu’on oublie souvent que pour se nourrir, on tue beaucoup plus d’animaux marins que de terrestres. Pour toutes ces raisons, c’était important pour moi de proposer un livre dédié à ce sujet. C’est un projet que je prépare depuis longtemps. Plusieurs de mes ouvrages ont d’ailleurs des parties entièrement dédiées au sujet, mais il méritait selon moi un livre complet."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Tu nous dis que, plus jeune, tu mangeais des poissons. À quel point les animaux marins ont-ils fait partie de ton alimentation ? Quand et pourquoi as-tu arrêté de les manger ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> J'ai grandi dans une famille bretonne où on servait régulièrement des animaux marins à table, en particulier au moment des fêtes de fin d’année. Adolescente, puis plus tard, quand j’ai arrêté de manger des animaux terrestres, je me suis mise à manger encore plus de poissons, notamment des saumons ! Puis en 2008, j’ai réalisé que les poissons étaient aussi des êtres sensibles. D’un point de vue éthique, ça ne faisait pas sens pour moi de manger certains animaux et pas d’autres. Alors, cette année-là, je suis devenue végétarienne."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Que conseillerais-tu à une personne qui s'interroge sur son alimentation et qui envisage de diminuer, voire d’arrêter les poissons dans son assiette ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Je commencerais par dire qu’il est important de questionner ce que l’on met dans nos assiettes. Ensuite, on ne mange pas toutes et tous des poissons pour les mêmes raisons. Parfois, c’est par habitude. Parfois, c’est par plaisir. Parfois, c’est parce qu’on est persuadé·e que c’est un indispensable pour être en bonne santé. Selon les raisons qui nous animent, les pistes pour diminuer et arrêter seront différentes."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Peux-tu nous détailler ces différentes pistes ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Si on mange des poissons pour les protéines, on peut tout simplement opter pour une source de protéines végétales, quel que soit son goût ou sa forme. Si on mange des poissons pour les oméga-3, il existe des huiles, des oléagineux et des compléments qui répondent parfaitement à nos besoins. Enfin, si c’est une question de goût, des recettes végétales – comme celles que vous trouverez dans mon livre – feront parfaitement l’affaire. Par exemple, si vous tenez à une recette familiale cuisinée avec des poissons et transmise de génération en génération, comme la bouillabaisse, il est tout à fait possible d’en créer une version végétale. Arrêter les poissons ne signifie pas abandonner nos traditions, mais plutôt les faire évoluer. Et si vous manquez d’inspiration, mon livre est là pour ça."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/2/1.png",
+            "alt": "Recette végétale inspirée de l'univers marin",
+            "caption": "Seafood Vegan propose des alternatives végétales aux recettes marines."
+          },
+          {
+            "type": "heading",
+            "text": "À qui s’adresse ton nouveau livre Seafood Vegan ? Est-il accessible aux personnes qui cuisinent peu, ou destiné aux fins connaisseur·euses de la cuisine végétale ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> J'ai vraiment pensé ce livre pour tout le monde. On y trouve des recettes très simples avec des ingrédients faciles à trouver. J’ai aussi choisi d’y intégrer des recettes plus créatives et plus techniques à destination des personnes qui aiment tester de nouveaux plats, cuisiner des alternatives bluffantes ou des versions végétales de plats familiaux. Certaines des recettes que j'ai créées pour ce livre sont des alternatives à des plats que je n'avais pas mangés depuis quinze ans !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour proposer des alternatives crédibles dans ton livre, tu t’es familiarisée avec les méthodes de préparation et de cuisson des animaux marins. Comment t’y es-tu prise ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> J’ai effectué énormément de recherches sur tous ces procédés, en particulier sur les saumons. On peut penser que le saumon fumé, le gravlax ou le nova lox, c'est la même chose, alors que pas du tout. Le gravlax, c'est un saumon mariné au sel. Le saumon fumé est, comme son nom l'indique, non pas mariné mais fumé au bois de hêtre. Le nova lox, c’est un intermédiaire entre les deux, à la fois mariné et fumé. Ces recherches m'ont permis de proposer des recettes végétales précises et subtiles, aussi bien dans les arômes que dans les textures."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Outre ces recherches techniques, quelles ont été tes inspirations pour ce livre ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Je me suis inspirée des grands classiques français, bien sûr, comme la bouillabaisse, les filets à la meunière ou les moules marinières, sans oublier mes recettes familiales. Je me suis aussi inspirée des recettes de nombreux autres pays et des spécialités de régions côtières comme de la street food. Une cuisine m’a particulièrement inspirée : les techniques japonaises d’imitation modoki ryōri, issues de traditions bouddhistes. On pense qu’imiter la chair des animaux terrestres ou marins, c’est une lubie récente de vegans occidentaux. En réalité, manger vegan est une tradition vieille de plusieurs centaines, voire milliers d'années dans certains pays d'Asie."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/2/2.png",
+            "alt": "Marie Laforêt et son livre de cuisine végétale",
+            "caption": "Marie Laforêt a imaginé des recettes inspirées de traditions culinaires variées."
+          },
+          {
+            "type": "heading",
+            "text": "Dans ton livre, tu proposes plusieurs recettes alternatives au saumon. Laquelle conseillerais-tu à quelqu’un qui n’en a jamais cuisiné ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Je commencerais par conseiller une recette où la chair animale n’est pas brute, donc typiquement pas une recette d’alternative au pavé de saumon. Les rillettes saumonées font partie des recettes que j’adore et qui sont faciles à réaliser. Je les prépare moi-même à Noël chaque année et elles ont toujours un franc succès auprès de ma famille. Cette recette est vraiment bluffante, tant en termes de couleur que de texture et de goût."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "En magasin, on trouve parfois des alternatives végétales au saumon, comme des similis de saumon fumé. En as-tu testé ? Qu’en as-tu pensé ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Une fois à Noël, j'ai acheté une alternative au saumon fumé et j'ai eu l'impression de manger une sorte de saucisson plutôt que du saumon fumé ! J’ai vraiment été déçue, mais j'ai compris à ce moment-là que la saveur fumée n'est pas unique : il en existe plusieurs, très différentes. J’en parle d’ailleurs dans mon livre. Une alternative réussie au saumon fumé est composée d’un condiment fumé au bois de hêtre, le bois avec lequel les saumons sont traditionnellement fumés."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Une dernière chose à nous partager ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt :</strong> Oui, si vous hésitez à réduire ou à arrêter de manger des animaux marins, je sais que les réactions potentielles de votre entourage peuvent vous freiner. La meilleure chose à faire, selon moi, c’est de cuisiner des recettes gourmandes à vos proches. Car oui, parfois, un plat délicieux vaut mieux que mille mots. Le tarama, par exemple, en version végétale est aussi bon, voire meilleur, que la version industrielle pas chère. Recette après recette, c’est par le goût plutôt que par les idées qu’on arrive le mieux à convaincre. Dans ma famille, certaines de mes recettes sont devenues des classiques de nos repas de fête alors que, je vous le dis, ce n'était franchement pas gagné au départ !"
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les poissons ont-ils vraiment la mémoire courte ? Ressentent-ils la douleur et le plaisir ? Sont-ils vraiment muets comme des carpes ? Découvrez cinq idées reçues pour mieux considérer ces animaux marins."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
+      },
+      {
+        "id": 3,
+        "title": "SALMO, l’histoire incroyable d’un saumon sauvage",
+        "summary": "Une rivière, une forêt, un estuaire, l’Océan et puis des glaciers. Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, sélectionné dans de nombreux festivals, raconte l’incroyable voyage des saumons sauvages et la fragilité des écosystèmes qu’ils traversent.",
+        "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageAlt": "Illustration du court-métrage d’animation SALMO",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est l’histoire d’un saumon sauvage qui quitte sa rivière natale pour rejoindre l’Océan. Dans SALMO, on suit le périple d’un jeune saumon sur des milliers de kilomètres. Huit minutes de poésie et d’aventures rocambolesques. Huit minutes aussi pendant lesquelles on réalise une triste réalité : le déclin alarmant des populations de saumon atlantique et la dégradation terrible des écosystèmes qu’ils traversent, due aux activités humaines."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce court-métrage réalisé par Paul Pajot et produit par La Méridienne, nous sommes invité·es à mettre sur pause notre perspective d’humain·es. On vit tout à hauteur de saumons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce point de vue assumé permet de révéler, entre autres, les liens invisibles qui relient les différents milieux que les saumons traversent au cours de leur vie. Car, contrairement à ce que l’on peut croire, ces espaces sont loin d’être étanches."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/1.jpg",
+            "alt": "Scène du court-métrage d’animation SALMO",
+            "caption": "SALMO nous fait découvrir les écosystèmes à hauteur de saumons."
+          },
+          {
+            "type": "heading",
+            "text": "Une traversée à hauteur de saumons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce film, ce n’est pas seulement l’histoire d’un saumon. C’est aussi celle d’un monde vivant dont nous faisons nous aussi partie. La peinture vibrante de l’animation crée d’ailleurs un sentiment de symbiose et permet de réaliser la continuité écologique entre la rivière, l’estuaire et l’Océan."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "SALMO nous donne à voir des phénomènes biologiques invisibles à l’œil nu et souvent méconnus, comme par exemple la smoltification. Au cours de leur traversée, les saumons passent d’une eau douce à une eau salée. Pour s’adapter à ce changement de milieu, leurs branchies mutent pour être capables d’expulser le sel."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/2.jpg",
+            "alt": "Scène du voyage du saumon dans le film SALMO",
+            "caption": "Le film donne à voir les différentes étapes du voyage du saumon."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce court-métrage, Paul Pajot a choisi de donner une dimension sensible à des enjeux sérieux. Pour écrire son film, il s’est notamment appuyé sur de nombreuses recherches scientifiques. Par sa démarche sensible, il nous fait comprendre que protéger les saumons, ce n’est pas seulement protéger une espèce : c’est aussi protéger des milieux dont tout le vivant dépend, nous compris."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Se relier au vivant, une histoire à la fois"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Né pendant le confinement de 2020, SALMO est devenu une aventure collective réunissant artistes, animateurs, musiciens et spécialistes du saumon. Le film a depuis été sélectionné dans une vingtaine de festivals et continue d’être diffusé comme œuvre artistique, mais aussi comme outil de sensibilisation."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cette démarche de raconter de manière sensible des enjeux écologiques s’inscrit dans un mouvement plus large que Seastemik soutient. Se relier au vivant, une histoire à la fois, permet de mieux connaître notre environnement et de prendre soin du monde dans lequel nous avançons."
+              }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "wR759GYF1MU",
+            "title": "SALMO, court-métrage d’animation réalisé par Paul Pajot"
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les poissons ont-ils vraiment la mémoire courte ? Éprouvent-ils de la douleur et du plaisir ? Sont-ils vraiment muets comme des carpes ? Plongez dans cinq idées reçues pour mieux considérer ces animaux marins."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
+      },
+      {
+        "id": 4,
+        "title": "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
+        "summary": "Être muet·e comme une carpe, engueuler quelqu'un comme du poisson pourri ou avoir une mémoire de poisson rouge… Ces expressions racontent à quel point nous estimons peu et connaissons mal les poissons. Petit plongeon dans les idées reçues les plus courantes pour mieux considérer ces animaux marins.",
+        "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageAlt": "Illustration de poissons pour l’article sur les idées reçues",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dès l’enfance, nous construisons notre rapport au vivant. Cette construction, fruit d’une histoire scientifique, culturelle et religieuse, a tendance, quelles que soient les régions du monde, à distinguer et donc à hiérarchiser des espèces."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En Europe, par exemple, on apprend très tôt à faire la distinction entre les animaux que l’on aime – un chaton – et les animaux que l’on mange – du saumon. Autrement dit, on considère certains animaux comme des individus et d’autres comme des ressources. Et clairement, les poissons que l’on met dans nos assiettes font partie des animaux que l’on respecte le moins."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pourtant, les poissons sont, comme nous et comme les chatons, des êtres sentients. C’est-à-dire qu’ils ont une expérience subjective du monde. Ils sont capables de percevoir le monde qui les entoure, d’apprendre, de mémoriser, de ressentir du plaisir, de la peur et de la douleur. En clair, les poissons sont des êtres vivants et, pour les considérer comme tels, il est bon de briser certains clichés."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. « Les poissons ont une mémoire de trois secondes »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/1.png",
+            "alt": "Illustration associée à la mémoire des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On a longtemps sous-estimé les capacités des animaux marins. Et cette histoire de « mémoire de trois secondes » fait partie des premiers mythes à déconstruire. Les poissons sont capables d’apprendre de leurs expériences et de s’en souvenir suffisamment longtemps pour modifier leur comportement."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ils peuvent, par exemple, reconnaître leur environnement, mémoriser des lieux où trouver de la nourriture, éviter des zones dangereuses ou associer certains signaux à une récompense ou à une menace. Chez certaines espèces, la mémoire joue aussi un rôle dans la navigation et les interactions sociales."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. « Les poissons ne ressentent pas la douleur »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/2.jpg",
+            "alt": "Illustration associée à la sensibilité des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce n’est pas parce qu’un poisson est incapable de crier qu’il est incapable de souffrir. Les poissons sont, comme nous, dotés d’un système nerveux. Ils peuvent détecter des stimuli susceptibles d’endommager leur corps, comme une chaleur extrême."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Des études montrent qu’ils modifient leur comportement et leur fonctionnement physiologique lorsqu’ils sont confrontés à des situations potentiellement douloureuses."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Nous ne pouvons pas demander aux poissons de nous raconter ce qu’ils ressentent (même si on aimerait bien), mais ils éprouvent bel et bien du plaisir, de la peur, du stress et de la douleur."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. « Les poissons ne communiquent pas »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/3.jpg",
+            "alt": "Illustration associée à la communication des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On imagine facilement que les poissons vivent dans un monde silencieux et sans interaction. Pourtant, les poissons se parlent bel et bien. Leur langage et leurs codes sont juste différents des nôtres."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Selon les espèces, ils utilisent des signaux visuels, chimiques, acoustiques ou encore physiques pour transmettre des informations à leurs congénères. Certaines espèces vivent d’ailleurs dans des sociétés structurées où leurs interactions sont complexes. En bref, un animal n’a pas besoin de nous ressembler pour avoir une vie sociale."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. « Les poissons sont des produits de consommation »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/4.jpg",
+            "alt": "Illustration associée à la consommation des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On dit « un chien », « un chat », « un éléphant », mais on parle « du saumon », « du thon », « de la truite ». Notre propre langage invisibilise la sensibilité et l’intelligence des animaux marins que l’on mange. Les évoquer en termes de kilos, de portions ou de filets participe à rationaliser leur exploitation et à déculpabiliser nos consciences."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Or, un saumon n’est pas un filet. Une truite n’est pas une portion. Un poisson n’est pas un produit. Avant d’être « du saumon » dans une assiette, ce saumon était un être vivant, un animal sentient."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. « Manger des poissons, c’est naturel »",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/5.jpg",
+            "alt": "Illustration associée à la pêche et à l’élevage des poissons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "L’image du pêcheur solitaire avec sa ligne et sa petite barque a nourri l’idée que manger des poissons serait une pratique ancestrale, voire « naturelle ». Rappelons que, selon les époques et les régions du monde, notre alimentation a été le plus souvent végétale."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Qui plus est, cette image du pêcheur solitaire est loin de représenter notre système alimentaire actuel. Les poissons que l’on trouve en magasin sont soit capturés par de gigantesques chalutiers qui ratissent les fonds sur des kilomètres, soit élevés de manière intensive dans des bassins marins, voire terrestres. Il ne s’agit donc pas d’une pêche artisanale, mais d’une industrie."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Derrière cette industrie, une logique domine : produire davantage, plus vite et à moindre coût, pour alimenter un marché mondial. Les poissons deviennent alors des volumes, des tonnes, des rendements et des marges. Même en aquaculture, le vocabulaire en dit long : on parle de « biomasse », de « croissance », de « taux de conversion alimentaire », de « rendement ». Mais une tonne de poissons, ce n’est pas une tonne de biomasse, c’est une multitude d’animaux."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles. Découvrez 5 choses que vous ne savez (sans doute) pas sur les saumons."
+              }
+            ]
+          ],
+          "articleId": 6
+        }
+      },
+      {
+        "id": 5,
+        "title": "5 alternatives aux saumons qui changent (déjà) la donne",
+        "summary": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
+        "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageAlt": "Carottes fumées sur une tartine, une alternative végétale au saumon fumé",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. La carotte fumée, un grand classique"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/hero.jpg",
+            "alt": "Carottes fumées sur une tartine avec de l’aneth"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En quelques années, elle s’est imposée comme l’une des alternatives les plus connues au saumon fumé. Les raisons ? Sa couleur, bien sûr, sa texture fondante une fois cuisinée et surtout sa capacité à absorber les marinades. Miam."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Commencez par couper vos carottes en (très) fines lamelles. Faites-les tremper dans un bon bain de sauce soja agrémenté de citron, d’aneth, de sel fumé au bois de hêtre ou d’algues. Gardez le tout au frais pendant au moins 24 heures et amusez-vous à glisser ces lamelles sur une tartine, dans un bagel ou sur des blinis. Miam miam."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. La pastèque, un fruit à sushis et à poké"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/2.jpg",
+            "alt": "Alternative végétale rôtie, servie avec des légumes"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Oui, oui, vous avez bien lu : une pastèque. Une fois découpée en tranches épaisses, marinée puis rôtie ou fumée, on s’y croirait. Selon la préparation, elle peut remplacer le saumon mais aussi le thon. Elle fonctionne particulièrement bien en sushis, en makis, en sashimi, en chirashi, en poké bowls ou en tartare. D’ailleurs, même les restaurants japonais s’y mettent."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Taillez la pastèque en petits rectangles. Préparez une marinade avec de la sauce soja, de l’huile de sésame, du vinaigre de riz et des miettes d’algues nori. Déposez-y les morceaux de pastèque et laissez-les mariner au moins deux heures au réfrigérateur. Égouttez-les, puis préchauffez votre four à 180 °C. Enfournez-les sur une plaque pendant 30 à 45 minutes. Laissez-les complètement refroidir et déposez ces bijoux sur du riz vinaigré. Vos sushis végétaux sont prêts !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Le fauxmon, un vrai faux-semblant"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/1.png",
+            "alt": "Gros plan sur une alternative végétale au saumon"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Peut-être l’avez-vous déjà aperçu dans vos magasins. Le fauxmon, contraction de « faux » et « saumon », est une version végétale censée reproduire au plus près l’apparence, la texture et les parfums du saumon. Il existe en filet, en cubes et en version fumée. Selon les marques, le résultat est plus ou moins réussi. Il est destiné aux personnes qui veulent réduire leur consommation de poisson sans renoncer à leurs habitudes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À retenir :</strong> Si vous cherchez un fauxmon fumé réussi, Marie Laforêt, star de la cuisine végétale en France et autrice du livre « Seafood Vegan » (Solar, 2026), conseille de privilégier les fauxmons fumés aux arômes de bois de hêtre."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Les algues, les super-aliments de l’Océan"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/3.jpg",
+            "alt": "Préparations végétales aux algues et tartines à partager"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Si ce que l’on recherche dans le saumon, c’est le goût iodé et les oméga-3, pourquoi ne pas aller directement à la source ? Nori, dulse, wakamé, laitue de mer : les algues apportent une touche marine à de très nombreux plats. En paillettes ou en feuille, elles sont particulièrement intéressantes associées à des ingrédients neutres comme le tofu, les haricots blancs ou le riz."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Émiettez du tofu dans un grand bol, ajoutez des haricots blancs et écrasez-les à la fourchette. Saupoudrez le tout d’algues en paillettes, versez un peu d’huile d’olive et un jus de citron, puis ajoutez une pincée de sel et de poivre. Mélangez bien et mettez au réfrigérateur au moins deux heures avant de déguster ces rillettes sur une tartine de pain grillé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Et si la meilleure alternative était une toute nouvelle recette ?"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/4.png",
+            "alt": "Assortiment de plats végétaux inspirés de la cuisine de la mer"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est peut-être l’alternative la plus intéressante de toutes. Au lieu de chercher à tout prix l’équivalent végétal du saumon, on peut aussi profiter de cette transition pour découvrir d’autres ingrédients et d’autres associations. La cuisine végétale ne consiste pas seulement à remplacer un ingrédient par un autre. Elle peut aussi ouvrir de nouveaux horizons culinaires et permettre de (ré)inventer des classiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Découvrez les recettes de livres comme « Cuisine vegan petit budget » de Marie Laforêt (éd. Solar), « Plats veggie du monde » de Stéphanie de Turckheim (éd. Hachette) et « Ma cuisine vegan pour tous les jours » de Stéphanie Tresch Medici (éd. La Plage)."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, star de la cuisine végétale. À l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan » (Solar, 2026), elle nous raconte son parcours et partage ses astuces pour se passer des saumons dans nos assiettes."
+              }
+            ]
+          ],
+          "articleId": 2
+        }
+      },
+      {
+        "id": 6,
+        "title": "5 choses à savoir sur les saumons (au lieu de les manger)",
+        "summary": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs habitudes, leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles.",
+        "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
+        "heroImageAlt": "Illustration consacrée aux saumons et à leur mode de vie",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Les bébés saumons se nourrissent tout seuls"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/1.jpg",
+            "alt": "Jeune saumon au début de son développement"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Au moment de l’éclosion, un bébé saumon (ou alevin) naît avec une petite poche accrochée au ventre. Ce sac contient tous les nutriments nécessaires pour qu’il puisse grandir sans avoir besoin de chercher de la nourriture. Il passe ainsi ses premiers mois blotti au chaud dans le lit de sa rivière natale, en compagnie de tous ses frères et sœurs."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Les saumons courent des marathons sans GPS"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/2.jpg",
+            "alt": "Saumon en migration dans l’océan"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Les saumons sont des poissons de rivière mais aussi de mer. Au moins une fois dans leur vie, ils participent à une migration collective sur des distances colossales à travers l’Océan. Pour vous donner une idée, certaines populations quittent l’Espagne pour migrer jusqu’au Groenland. Mais comment savent-ils où aller ? Quelles routes emprunter ? Selon l’endroit où ils se trouvent, les saumons s’orientent grâce aux étoiles, au soleil, au champ magnétique de notre planète ou à des repères visuels et olfactifs. Par exemple, leur odorat remarquable leur permet de retrouver leur rivière natale sur le chemin du retour grâce à une empreinte chimique unique, mémorisée durant les premières années de leur vie."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Les saumons se métamorphosent"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/3.jpg",
+            "alt": "Saumon à différents stades de sa transformation"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Avant d’entamer leur grande traversée, les saumons mutent. Pour survivre dans l’eau salée de l’Océan, leurs corps, jusque-là adaptés à l’eau douce des rivières, se métamorphosent. Par exemple, leurs branchies se modifient pour être capables d’expulser le sel. Cette transformation, appelée smoltification, comporte des changements physiques mais aussi comportementaux. En rivière, les jeunes saumons sont plutôt solitaires, mais avant de prendre le large, ils développent une intelligence collective et se regroupent en banc."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Les saumons ne pratiquent pas la pénétration"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/4.jpg",
+            "alt": "Saumons qui se rassemblent pour frayer dans une rivière"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De retour à la rivière, des saumones creusent des nids dans les graviers. Une saumone peut pondre des milliers d’œufs en un seul jour. Une fois qu’elles ont fini, elles ouvrent la bouche. C’est le signal pour les mâles, qui viennent déverser leur laitance pour féconder les œufs. Parfois, ce sont des mâles que les femelles ont choisis ; parfois, ce sont des mâles qui surgissent à leur insu. Les scientifiques les ont surnommés « sneaker males » (ou « mâles tricheurs ») car, en plus de contourner le rituel de séduction, ils ne participent pas à la grande migration."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Les saumons aussi font des dépressions"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/5.png",
+            "alt": "Saumons dans un élevage intensif"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans les élevages intensifs, où les interactions agressives sont incessantes et la fuite impossible, certains individus développent un état d’inhibition totale. Ils cessent de s’alimenter, deviennent immobiles et présentent des dérèglements physiologiques et hormonaux comparables à nos dépressions."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Toutes ces informations sont tirées de la vidéo « "
+              },
+              {
+                "type": "link",
+                "text": "Qui sont les saumons ?",
+                "href": "https://www.youtube.com/watch?v=UKsljob-upk"
+              },
+              {
+                "type": "text",
+                "text": " » publiée en 2024 sur la chaîne YouTube Cervelle d’oiseau, animée par Sébastien Moro, vulgarisateur scientifique."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "right",
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, réalisé par Paul Pajot, raconte l’incroyable épopée des saumons sauvages et la fragilité des écosystèmes qu’ils traversent."
+              }
+            ]
+          ],
+          "articleId": 3
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 5760,
+          "height": 3840
+        }
+      },
+      {
+        "id": 7,
+        "title": "Quand une enseigne de boulangerie française retire les saumons de son menu",
+        "summary": "En collaboration avec Seastemik, Boulangerie Landemaine est devenue en 2025 la première enseigne de boulangerie à retirer les saumons de ses boutiques pour protéger l’Océan et toutes celles et ceux qui en dépendent. Alors, quel bilan un an après avoir lancé cette révolution iodée ?",
+        "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
+        "heroImageAlt": "La démarche de Boulangerie Landemaine pour retirer le saumon de son menu",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "« Nos équipes étaient assez réticentes au départ, mais aujourd'hui personne ne remet ce choix en question », nous a affirmé Emma Bonvento, responsable communication de Boulangerie Landemaine, enseigne reconnue de 19 boutiques installées en France et au Japon."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Chez Seastemik, on comprend ce qui a nourri ces premières réticences. Dans les enseignes de boulangerie-pâtisserie disposant d'une offre de snacking (soit 96 % d'entre elles), les sandwichs à base de saumon fumé font très souvent partie des best-sellers, tout comme les canapés aux saumons dans les services traiteurs."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Boulangerie Landemaine fait aussi traiteur pour les entreprises. Jusqu’en 2025, les canapés aux saumons faisaient partie de ses produits les plus demandés. Autant dire que, pour l’enseigne, se passer des saumons représentait un sacré défi."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix judicieux"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Définir son menu n’a rien d’anodin. Mettre un aliment à la carte, c’est encourager sa consommation et sa production. C’est aussi prendre une responsabilité vis-à-vis de ses client·es. Or, proposer du saumon en sandwich, en quiche ou en filet en 2026, c’est proposer à ses client·es des poissons bourrés de médicaments et de microplastiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Car 98 % des saumons que nous mangeons en France proviennent d’élevages. Ces poissons sont élevés dans des conditions désastreuses. La pêche pratiquée pour nourrir les saumons prive des populations de nourriture et vide l’Océan, sans parler de la pollution et de la déforestation induites par ces élevages."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Autant de raisons qui ont convaincu Boulangerie Landemaine de franchir le pas, là où la grande majorité des acteurs choisissent au quotidien de maintenir le saumon comme incontournable de leur carte."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix audacieux"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Retirer les saumons, c'est bien. Mais encore faut-il proposer autre chose à la place. Sur ce point, l'enseigne n'a pas fait les choses à moitié : à chaque offre à base de saumon retirée, une nouvelle offre végétarienne ou végétalienne a été ajoutée. Au sandwich au saumon s’est substitué un sandwich aux légumes rôtis ; à la quiche au saumon a succédé une quiche aux légumes et au chèvre."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/1.jpg",
+            "alt": "Une offre de snacking végétale de Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Aujourd'hui, l'offre végétarienne et végane représente 40 % des références de snacking de l'enseigne, été comme hiver, et plus d'un tiers des ventes. Le sandwich aux légumes rôtis, présent à la carte d'été, a particulièrement bien trouvé son public et se vend tout aussi bien que certaines offres carnées. Une grande victoire pour les saumons, l’Océan et toutes celles et ceux qui en dépendent !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix récompensé"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Côté traiteur, le résultat est encore plus impressionnant. Les offres végétariennes représentent plus de la moitié des ventes, preuve que certaines entreprises commencent à contribuer à la transition alimentaire lors de leurs événements."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Autre belle victoire : Boulangerie Landemaine constate une baisse d'environ 30 % des coûts de revient en passant d'une offre classique à une offre végétale, comme entre la quiche aux poireaux et la quiche saumon-épinard désormais retirée. Une belle façon de rassurer les sceptiques de la démarche, en interne comme chez les concurrents."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/2.jpg",
+            "alt": "Des produits végétariens proposés par Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et les client·es dans tout ça ? À Seastemik, on accompagne les acteur·ices de la restauration dans leur transition et on s’assure que les client·es prennent la vague avec elleux."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Le partenariat Seastemik x Boulangerie Landemaine a été annoncé, entre autres, sur les réseaux sociaux. La vidéo publiée avec Esther Dufaure, notre cofondatrice, et Rodolphe Landemaine, fondateur de l’enseigne, a comptabilisé près de 15 000 vues. Même constat pour un second post partagé quelques semaines plus tard. Et le plus étonnant : les réactions négatives se sont faites rares."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un pari gagnant"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Près d'un an et demi plus tard, force est de constater que ce qui semblait être un risque économique s'est finalement révélé être un pari gagnant. Aucun retour en arrière, des offres végétales qui ont trouvé leur place, et cet engagement est même devenu un motif de fierté pour l'enseigne."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cet exemple nous montre qu'une autre voie existe : celle d'enseignes qui choisissent de prendre le contre-pied des habitudes du secteur et qui, parce que ce choix est bien pensé, réussissent avec brio. Alors, qu'attendons-nous pour dire à nos restaurants, à nos traiteurs et à nos boulangeries qu'il est temps de se passer des saumons ?!"
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, une star de la cuisine végétale, qui, à l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan », nous raconte son parcours et ses astuces pour se passer des saumons dans nos assiettes. "
+              }
+            ]
+          ],
+          "articleId": 2
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1534,
+          "height": 1416
+        }
+      },
+      {
+        "id": 8,
+        "title": "L’équipe Seastemik mange-t-elle encore des saumons ?",
+        "summary": "Spoiler : non. Chacun·e à sa manière, chacun·e à son rythme, nous avons toustes réalisé que notre plus grand pouvoir pour construire un monde et un futur désirables résidait dans nos assiettes.",
+        "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
+        "heroImageAlt": "L’équipe Seastemik réunie",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On vous raconte quand, comment et pourquoi chacun·e a retiré les saumons de son assiette."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Six personnes dans l’équipe, six parcours différents pour arrêter de manger des saumons. Certain·es ont arrêté il y a vingt ans, d’autres récemment. Certain·es ont eu un déclic, d’autres ont eu besoin de temps."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esther, cofondatrice et codirectrice, partait de loin. Issue d’une famille de pêcheurs, elle a pris très jeune l’habitude de considérer les poissons comme de la nourriture. Mais une scène va tout changer. En 2013, elle est au Maroc avec des ami·es. Iels achètent des poissons frétillants pour leur déjeuner. Quelques minutes plus tard, elle ressent « le goût de la mort » dans sa bouche. Ce jour-là, elle comprend qu’elle préfère voir les poissons vivants plutôt que dans son assiette."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Quel a été le déclic ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour Maxime, cofondateur et codirecteur, la prise de conscience est venue lors d’une mission avec Sea Shepherd. En 2020, il se retrouve au large des côtes d’Afrique de l’Ouest et assiste à une pêche industrielle. « Ça a été un choc de voir ces bestioles marines remontées des filets, dont une bonne partie rejetée ensuite à la mer, mortes pour rien. » À son retour, il arrête complètement de manger des poissons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De son côté, Charlotte, responsable corporate, a petit à petit déconstruit son rapport aux animaux. Jusqu’à ce qu’un jour, devant un filet de sole, vienne le déclic. « Je ne voyais plus le filet, je voyais l’animal, son corps, la vie qui lui avait été prise. »"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour Fleur, directrice de communication, la transition vers une alimentation sans animaux s’est faite aussi progressivement, avec l’aide précieuse de sa femme, végane depuis près de quinze ans. Une rencontre qui lui a permis de découvrir une autre façon de cuisiner, mais surtout de remettre peu à peu ses habitudes en cohérence avec ses valeurs."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/1.jpg",
+            "alt": "Membres de l’équipe Seastemik"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marie, chargée de campagne, a commencé par réduire sa consommation de viande, à force d’entendre ses amies lui raconter à quel point les élevages intensifs détruisent les animaux et le monde qu’on partage avec eux. Après quelques recherches, elle est tombée sur des enquêtes sur l’élevage, la pêche et l’état de l’Océan. Depuis, pour elle, les poissons, c’est fini. Quelques années après son arrêt, un morceau de saumon gravlax lui faisait envie. Elle a fini par goûter. Verdict ? « J’ai eu l’impression d’avoir le Vieux-Port de Marseille à 7 heures du matin dans la bouche. » Depuis, c’est fini, fini."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quant à Diane, responsable de la communication numérique, elle n’a pas eu de déclic : elle a grandi dans une famille où les saumons ont tout simplement disparu de la table, après que son père a visionné un documentaire sur les impacts néfastes des élevages de poissons. Adulte, elle voit le documentaire coup de poing Seaspiracy d’Ali Tabrizi. Plus aucun doute : les saumons, c’est terminé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Et après, on mange quoi ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est souvent la première question quand on parle d’arrêter les saumons : mais concrètement, que mange-t-on à la place ? Notre réponse est unanime : bien plus qu’on ne l’imagine !"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Certain·es d’entre nous ont souhaité préserver leurs habitudes, comme Marie qui a testé des similis saumons, des options végétales censées reproduire la texture et le goût. « Les similis peuvent être une bonne passerelle pour arrêter », explique-t-elle, tout en insistant sur l’importance de se laisser du temps."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/2.jpg",
+            "alt": "Un repas partagé par des membres de l’équipe Seastemik"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour d’autres, ce fut l’occasion d’ouvrir leurs horizons culinaires. Charlotte s’est appuyée sur des recettes végétales qui reprenaient les codes de plats qu’elle aimait. Pour Fleur, le principal défi, c’étaient les sushis. Mais en arrêtant de commander « le menu saumon », elle a découvert des plats et des saveurs qu’elle n’aurait probablement jamais choisis avant."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Même chose pour Esther, qui aime toujours autant les saveurs iodées. Elle s’est mise à explorer d’autres façons de les retrouver, notamment à travers des cuisines et des ingrédients moins familiers."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Et les repas de fêtes, alors ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Soyons honnêtes, les saumons ont la fâcheuse tendance à réapparaître dans les assiettes dès qu’il y a un repas de fête en famille ou entre ami·es."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Plusieurs membres de l’équipe ont dû apprendre à composer. Marie a trouvé sa technique. Hors de question de demander à ses proches de cuisiner quelque chose de différent pour elle, alors elle s’est mise à cuisiner pour les fêtes. « Je me débrouille toujours pour cuisiner des plats qui font saliver toute la table. »"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Que ce soit avec la famille, les ami·es ou les amantes, Diane préfère discuter en amont pour trouver une solution qui convienne à tout le monde."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et Charlotte rappelle qu’il est aussi important de savoir poser ses limites : on peut expliquer ses choix, mais on n’est pas obligé·e de devenir l’ambassadeur·rice de la transition alimentaire à chaque repas de famille."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Alors, comment s’y mettre ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Il n’y a pas de méthode unique. Certain·es préféreront commencer par un jour, puis une semaine ou un mois sans saumon. D’autres auront besoin d’un déclic et arrêteront d’un coup. Le plus important est de trouver une manière de faire qui puisse s’inscrire dans la durée. Voici quelques conseils de Seastemik :"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Se documenter.</strong> Pink Bombs est là pour ça. Il existe aussi des reportages comme « Le saumon, nouvel avatar de l’élevage industriel » (Arte, 2026), des documentaires comme Seaspiracy (Netflix, 2021) ou des livres comme Un poison nommé saumon de Maxime Carsel (Broché, 2025).",
+              "<strong>Commencer par comprendre ce qui vous retient.</strong> Le goût ? La texture ? Les habitudes ? Les repas de famille ? Les questions nutritionnelles ? À chaque frein, sa solution.",
+              "<strong>S’entourer.</strong> En parler avec des proches, cuisiner ensemble, partager des recettes ou se lancer des petits défis à plusieurs peut vraiment faciliter la transition. Comme le résume Esther : « S’informer, parler de vos questionnements à votre entourage » et, pourquoi pas, « se fixer des challenges de périodes sans saumons avec des potes ».",
+              "<strong>Et surtout, miser sur le plaisir.</strong> Tester de nouvelles recettes, découvrir de nouveaux ingrédients, retrouver les saveurs iodées autrement, faire goûter ses plats autour de soi… Pour Charlotte, il s’agit de « s’ouvrir à de nouveaux plats, en élargissant son répertoire culinaire », plutôt que de voir l’arrêt comme une contrainte."
+            ]
+          }
+        ],
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1500,
+          "height": 1003
+        }
+      },
+      {
+        "id": 9,
+        "title": "George Ka, les saumons et les fantômes",
+        "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 « Salmo Salar », un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
+        "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageAlt": "George Ka sur scène pendant Salmo Salar",
+        "heroImageCredit": "Hugo Meunier",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quel est le point commun entre un saumon et un fantôme ? Si, cherchez bien, il y en a un. Le saumon traverse l’Océan et retourne ensuite à sa rivière natale. En clair, le poisson comme l’esprit a tendance à revenir sur les lieux de son enfance. Deux trajectoires de retour et d’appartenance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce parallèle constitue le fil rouge de « Salmo Salar », un spectacle écrit et mis en scène par George Ka, autrice et chanteuse reconnue pour ses textes poétiques et engagés. Dans « Salmo Salar », on s’interroge en rythme sur nos identités, nos histoires, celles qu’on transmet et celles qu’on oublie, et surtout sur nos liens avec les autres êtres vivants."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Se relier au vivant, se relier aux saumons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et si les saumons, réduits le plus souvent au statut d’aliment, étaient aussi des individus avec une histoire, des comportements, un environnement et une trajectoire propres ? Pendant plus d’une heure, musique, dialogues et poèmes s’entrelacent pour interroger avec humour et tendresse nos perceptions humaines et nos systèmes de consommation."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/9/1.jpg",
+            "alt": "George Ka lors du spectacle Salmo Salar"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En d’autres termes, George Ka pose la question : que dit de nous notre rapport aux saumons ? En créant ce spectacle, elle vient d’ailleurs bousculer ce rapport, puisque accorder aux saumons une place et un temps sur scène, c’est déjà les considérer autrement qu’avec nos fourchettes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "« Salmo Salar » fait partie de ces œuvres qui interrogent notre manière de cohabiter avec les autres animaux, qu’ils soient terrestres ou marins. En sortant du spectacle, notre regard est modifié : on ne voit plus les saumons seulement comme un aliment, mais comme des êtres sensibles et vivants."
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "Pour aller plus loin",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu. "
+              }
+            ]
+          ],
+          "articleId": 5
+        }
+      },
+      {
+        "id": 10,
+        "title": "13 associations qui œuvrent pour repeupler l’Océan",
+        "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
+        "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageAlt": "L’Océan et les associations qui œuvrent à le protéger",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Partout dans le monde, des associations travaillent à protéger les écosystèmes marins. Certaines agissent directement sur le terrain. D’autres documentent, enquêtent, mobilisent le grand public ou interpellent les pouvoirs publics. Certaines se concentrent sur une espèce ou un écosystème précis, d’autres défendent une vision plus globale de l’Océan. Cette liste est loin d’être exhaustive."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Seastemik</strong> est parti d’une idée simple : un Océan qui déborde de vie passe par une remise en question de la place que nous accordons aux animaux marins dans nos assiettes. À travers nos campagnes, comme la mobilisation contre le méga-élevage <strong>Pure Salmon</strong> en Gironde, et nos enquêtes, comme le projet PinkBombs que vous consultez en ce moment même, on cherche à rendre visibles les conséquences désastreuses de notre alimentation et à accompagner individus comme entreprises pour changer nos façons de manger, sans culpabilité et avec plaisir."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Bloom</strong> s’attaque notamment aux pratiques de pêche destructrices et mène un important travail d’enquête, de plaidoyer et de mobilisation citoyenne pour défendre les écosystèmes marins et les communautés qui en dépendent."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Ethic Océan</strong> travaille main dans la main avec les professionnel·les des produits de la mer (chef·fes, poissonnier·es, distributeurs, restauration collective) pour faire évoluer leurs pratiques d’achat. L’association s’appuie sur l’expertise scientifique pour les aider à tenir compte de l’état des stocks et de l’impact des méthodes de pêche ou d’élevage, et ainsi réduire la pression sur les espèces les plus menacées."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>L214</strong> travaille sur la condition animale, y compris celle des poissons. Son travail contribue notamment à rendre visibles des réalités de l’élevage aquatique encore largement méconnues et à questionner la place des poissons dans notre système alimentaire."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Longitude 181</strong> défend l’idée que protéger l’Océan commence par mieux connaître et respecter celles et ceux qui l’habitent. Fondée par des plongeur·euses et des scientifiques, l’association promeut une relation respectueuse avec la faune marine, notamment à travers sa charte internationale du plongeur responsable. Elle mène aussi des actions de sensibilisation et de plaidoyer en faveur des requins, des cétacés et des grands animaux marins, souvent victimes de préjugés et de la pêche."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Planète Mer</strong> travaille à retrouver un équilibre durable entre la vie marine et les activités humaines. L’association développe des actions de terrain autour de trois grands axes : protéger la biodiversité marine avec les citoyen·nes, accompagner une gestion durable des ressources de pêche avec les pêcheur·euses et restaurer des écosystèmes dégradés avec les populations locales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La <strong>Plateforme Océan et Climat</strong> rassemble des ONG, des instituts de recherche, des collectivités et des acteurs économiques autour d’un même objectif : faire reconnaître le rôle central de l’Océan dans la régulation du climat. Née en amont de la COP21, elle produit des ressources scientifiques accessibles et porte la voix de l’Océan dans les négociations climatiques internationales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Pleine Mer</strong> défend une pêche artisanale à taille humaine face à l’industrialisation du secteur. L’association soutient les petit·es pêcheur·euses, dénonce les pratiques les plus destructrices comme le chalutage industriel et plaide pour une répartition plus juste de l’accès aux ressources marines, en France comme au niveau européen."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Surfrider</strong> agit sur plusieurs fronts pour protéger l’Océan et les littoraux : lutte contre les pollutions, notamment plastiques, protection de la qualité des eaux, préservation des espaces côtiers et adaptation au changement climatique. L’association s’appuie notamment sur l’expertise scientifique, l’éducation, la mobilisation citoyenne et le plaidoyer pour faire évoluer les pratiques et les politiques publiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Under The Pole</strong> explore les zones les moins connues de l’Océan, des eaux polaires aux profondeurs dites « mésophotiques », situées entre 30 et 200 mètres. À travers des expéditions au long cours mêlant plongée, recherche scientifique et innovation, l’association étudie notamment les coraux profonds et leur rôle de refuge face au réchauffement. Elle partage ensuite ses découvertes avec le grand public et les scolaires pour faire connaître ces écosystèmes encore largement ignorés."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Welfarm</strong> agit pour la protection des animaux de ferme, et les poissons en font partie. L’association mène des campagnes pour que leur bien-être soit enfin pris en compte, en particulier dans l’aquaculture, que ce soit pour les conditions d’élevage, le transport ou l’abattage. Son travail contribue à rappeler que les poissons sont des êtres sensibles, trop souvent oubliés des réglementations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour en découvrir encore d’autres, découvrez les 185 ONG et mouvements de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Coalition Océans</strong>",
+                "href": "https://www.oceancoalition.org/coalition"
+              },
+              {
+                "type": "text",
+                "text": ", ou les 115 organisations membres de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/nos-membres/"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

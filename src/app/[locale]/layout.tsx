@@ -8,6 +8,8 @@ import { Toaster } from "sonner";
 
 import ScrollToTop from "@/components/v2/layout/ScrollToTop";
 
+import { getClientMessages } from "@/i18n/clientMessages";
+
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
   subsets: ["latin"],
@@ -85,7 +87,7 @@ export default async function GlobalLayout({
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={getClientMessages(messages)}>
           {children}
         </NextIntlClientProvider>
         <Toaster />
