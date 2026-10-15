@@ -1,11 +1,13 @@
 "use client";
 
+/* eslint-disable no-console */
 import { Info } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 
 import { createDisplayLabelLookup } from "@/lib/calculator/getDisplayLabel";
+import { persistCalculatorSubmission } from "@/lib/calculator/persistedSubmission";
 import { normalizeOccurrence } from "@/lib/calculator/state";
 import {
   type CalculatorSubmissionResponse,
@@ -138,6 +140,12 @@ export const ReduceImpactSection = ({
   const selectedAlternative = reduceImpact.selectedAlternative;
   const selectedSupplement = reduceImpact.selectedSupplement;
   const [newsletterError, setNewsletterError] = React.useState(false);
+  const [isPersistenceSubmitting, setIsPersistenceSubmitting] =
+    React.useState(false);
+  const persistenceInFlightRef = React.useRef(false);
+  const persistencePromiseRef = React.useRef<Promise<
+    Awaited<ReturnType<typeof persistCalculatorSubmission>>
+  > | null>(null);
   const { subscribe, isSubmitting } = useNewsletterSubscription();
   const canCalculate = Boolean(
     reduceImpact.selectedProductKey &&
@@ -222,14 +230,53 @@ export const ReduceImpactSection = ({
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
   const confirmEngagements = () => setEngagementsConfirmed(true);
 
-  const handleBadgeSubmit = async () => {
+  const handleResponseSubmit = async () => {
     if (!validateEmail(emailErrorMessage)) {
+      console.info("Calculator persistence skipped: invalid email");
       onNewsletterInvalidEmail();
       return;
     }
 
     setNewsletterError(false);
     showBadge(emailErrorMessage);
+    let persistencePromise = persistencePromiseRef.current;
+
+    if (
+      !persistenceInFlightRef.current &&
+      newResponse &&
+      reduceImpact.selectedProductKey &&
+      selectedAlternative &&
+      selectedSupplement
+    ) {
+      persistenceInFlightRef.current = true;
+      setIsPersistenceSubmitting(true);
+      persistencePromise = persistCalculatorSubmission({
+        email,
+        impactInitial: response.impact,
+        impactAfterCommitment: newResponse.impact,
+        alternative: selectedAlternative,
+        supplement: selectedSupplement,
+        consentOmega3: hasOmega3Consent,
+        products,
+        selectedProductKey: reduceImpact.selectedProductKey,
+        replacementFrequencyPerYear: frequency,
+      }).catch(() => ({ success: false, error: "unavailable" as const }));
+      persistencePromiseRef.current = persistencePromise;
+      void persistencePromise.finally(() => {
+        persistenceInFlightRef.current = false;
+        setIsPersistenceSubmitting(false);
+        if (persistencePromiseRef.current === persistencePromise) {
+          persistencePromiseRef.current = null;
+        }
+      });
+    } else {
+      console.warn("Calculator persistence skipped:", {
+        hasNewResponse: Boolean(newResponse),
+        hasSelectedProduct: Boolean(reduceImpact.selectedProductKey),
+        hasAlternative: Boolean(selectedAlternative),
+        hasSupplement: Boolean(selectedSupplement),
+      });
+    }
 
     if (!email) return;
 
@@ -241,7 +288,13 @@ export const ReduceImpactSection = ({
       return;
     }
 
-    onEmailChange("");
+    if (persistencePromise) {
+      void persistencePromise.then((persistenceResult) => {
+        if (persistenceResult.success) onEmailChange("");
+      });
+    } else {
+      onEmailChange("");
+    }
     onNewsletterSuccess();
   };
 
@@ -776,6 +829,7 @@ export const ReduceImpactSection = ({
                   onChange={(event) => onEmailChange(event.target.value)}
                   onBlur={() => validateEmail(emailErrorMessage)}
                   placeholder={t("badgeQuestions.emailPlaceholder")}
+                  disabled={isPersistenceSubmitting}
                   className="inline-block h-10 w-full border-0 rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs lg:placeholder:text-sm focus:ring focus:ring-v2-magenta"
                   suppressHydrationWarning
                 />
@@ -788,8 +842,10 @@ export const ReduceImpactSection = ({
 
               <button
                 type="button"
-                onClick={() => void handleBadgeSubmit()}
-                disabled={!!emailError || isSubmitting}
+                onClick={() => void handleResponseSubmit()}
+                disabled={
+                  !!emailError || isSubmitting || isPersistenceSubmitting
+                }
                 className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <svg

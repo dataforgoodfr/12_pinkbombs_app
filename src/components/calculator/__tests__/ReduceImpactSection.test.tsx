@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import type { CalculatorSubmissionResponse } from "@/lib/calculator/submission";
@@ -73,7 +74,9 @@ jest.mock("../../v2/Calculator", () => ({
   default: () => <div data-testid="impact-calculator" />,
 }));
 
-import { ReduceImpactSection } from "../ReduceImpactSection";
+const { ReduceImpactSection } = jest.requireActual<
+  typeof import("../ReduceImpactSection")
+>("../ReduceImpactSection");
 
 const response: CalculatorSubmissionResponse = {
   totalConsoInKg: 0,
