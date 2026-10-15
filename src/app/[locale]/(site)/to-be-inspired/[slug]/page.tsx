@@ -59,12 +59,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const relatedArticles = (article.article.relatedArticleIds ?? []).flatMap(
     (id) => article.articles.find((item) => item.id === id) ?? [],
   );
+  const heroTextSide = article.article.heroTextSide ?? "left";
+  const heroTextSideClass =
+    heroTextSide === "right" ? "lg:ml-auto lg:mr-[8%]" : "lg:ml-[8%]";
 
   return (
     <>
       <article className="bg-white text-v2-blue">
-        <header className="relative isolate bg-white md:flex md:min-h-[600px] md:items-end md:overflow-hidden">
-          <div className="relative h-[360px] overflow-hidden md:absolute md:inset-0 md:h-auto md:overflow-visible">
+        <header className="relative isolate bg-white lg:flex lg:min-h-[600px] lg:items-end lg:overflow-hidden">
+          <div className="relative h-[360px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto lg:overflow-visible">
             <Image
               src={article.article.heroImage}
               alt={article.article.heroImageAlt}
@@ -75,9 +78,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             />
             <div className="absolute inset-0 bg-v2-blue/20" />
           </div>
-          <div className="relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 md:mb-12 md:ml-[8%] md:translate-y-0 md:p-8">
+          <div
+            className={`relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`}
+          >
             <h1 className="h1 text-pretty">{article.article.title}</h1>
-            <p className="mt-4 text-sm leading-relaxed md:text-base">
+            <p className="mt-4 text-sm leading-relaxed lg:text-base">
               {article.article.summary}
             </p>
           </div>

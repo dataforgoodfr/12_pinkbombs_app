@@ -183,7 +183,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 2,
@@ -357,7 +358,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 3,
@@ -476,7 +478,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 4,
@@ -688,11 +691,17 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Article à découvrir : 5 choses à savoir sur les saumons (au lieu de les manger)."
+                "text": "Article à découvrir : "
+              },
+              {
+                "type": "link",
+                "text": "5 choses à savoir sur les saumons (au lieu de les manger)",
+                "href": "/s-inspirer/5-choses-a-savoir-sur-les-saumons-au-lieu-de-les-manger-6"
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 5,
@@ -850,7 +859,140 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
+      },
+      {
+        "id": 6,
+        "title": "5 choses à savoir sur les saumons (au lieu de les manger)",
+        "summary": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs habitudes, leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles.",
+        "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
+        "heroImageAlt": "Illustration consacrée aux saumons et à leur mode de vie",
+        "relatedArticleIds": [3],
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Les bébés saumons se nourrissent tout seuls"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/1.jpg",
+            "alt": "Jeune saumon au début de son développement"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Au moment de l’éclosion, un bébé saumon (ou alevin) naît avec une petite poche accrochée au ventre. Ce sac contient tous les nutriments nécessaires pour qu’il puisse grandir sans avoir besoin de chercher de la nourriture. Il passe ainsi ses premiers mois blotti au chaud dans le lit de sa rivière natale, en compagnie de tous ses frères et sœurs."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Les saumons courent des marathons sans GPS"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/2.jpg",
+            "alt": "Saumon en migration dans l’océan"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Les saumons sont des poissons de rivière mais aussi de mer. Au moins une fois dans leur vie, ils participent à une migration collective sur des distances colossales à travers l’Océan. Pour vous donner une idée, certaines populations quittent l’Espagne pour migrer jusqu’au Groenland. Mais comment savent-ils où aller ? Quelles routes emprunter ? Selon l’endroit où ils se trouvent, les saumons s’orientent grâce aux étoiles, au soleil, au champ magnétique de notre planète ou à des repères visuels et olfactifs. Par exemple, leur odorat remarquable leur permet de retrouver leur rivière natale sur le chemin du retour grâce à une empreinte chimique unique, mémorisée durant les premières années de leur vie."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Les saumons se métamorphosent"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/3.jpg",
+            "alt": "Saumon à différents stades de sa transformation"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Avant d’entamer leur grande traversée, les saumons mutent. Pour survivre dans l’eau salée de l’Océan, leurs corps, jusque-là adaptés à l’eau douce des rivières, se métamorphosent. Par exemple, leurs branchies se modifient pour être capables d’expulser le sel. Cette transformation, appelée smoltification, comporte des changements physiques mais aussi comportementaux. En rivière, les jeunes saumons sont plutôt solitaires, mais avant de prendre le large, ils développent une intelligence collective et se regroupent en banc."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Les saumons ne pratiquent pas la pénétration"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/4.jpg",
+            "alt": "Saumons qui se rassemblent pour frayer dans une rivière"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De retour à la rivière, des saumones creusent des nids dans les graviers. Une saumone peut pondre des milliers d’œufs en un seul jour. Une fois qu’elles ont fini, elles ouvrent la bouche. C’est le signal pour les mâles, qui viennent déverser leur laitance pour féconder les œufs. Parfois, ce sont des mâles que les femelles ont choisis ; parfois, ce sont des mâles qui surgissent à leur insu. Les scientifiques les ont surnommés « sneaker males » (ou « mâles tricheurs ») car, en plus de contourner le rituel de séduction, ils ne participent pas à la grande migration."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Les saumons aussi font des dépressions"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/5.png",
+            "alt": "Saumons dans un élevage intensif"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans les élevages intensifs, où les interactions agressives sont incessantes et la fuite impossible, certains individus développent un état d’inhibition totale. Ils cessent de s’alimenter, deviennent immobiles et présentent des dérèglements physiologiques et hormonaux comparables à nos dépressions."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Toutes ces informations sont tirées de la vidéo « "
+              },
+              {
+                "type": "link",
+                "text": "Qui sont les saumons ?",
+                "href": "https://www.youtube.com/watch?v=UKsljob-upk"
+              },
+              {
+                "type": "text",
+                "text": " » publiée en 2024 sur la chaîne YouTube Cervelle d’oiseau, animée par Sébastien Moro, vulgarisateur scientifique."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, réalisé par Paul Pajot, raconte l’incroyable épopée des saumons sauvages et la fragilité des écosystèmes qu’ils traversent."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "right"
       }
     ]
   }

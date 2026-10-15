@@ -181,7 +181,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 2,
@@ -355,7 +356,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 3,
@@ -474,7 +476,8 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 4,
@@ -686,11 +689,17 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Read next: 5 things to know about salmon (instead of eating them)."
+                "text": "Read next: "
+              },
+              {
+                "type": "link",
+                "text": "5 things to know about salmon (instead of eating them)",
+                "href": "/to-be-inspired/5-things-to-know-about-salmon-instead-of-eating-them-6"
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
       },
       {
         "id": 5,
@@ -848,7 +857,140 @@
               }
             ]
           }
-        ]
+        ],
+        "heroTextSide": "left"
+      },
+      {
+        "id": 6,
+        "title": "5 things to know about salmon (instead of eating them)",
+        "summary": "Salmon are surprising living beings. Learning more about their habits, bodies, and lives helps us see that they, like us, are sentient animals.",
+        "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
+        "heroImageAlt": "Illustration about salmon and their lives",
+        "relatedArticleIds": [3],
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Baby salmon feed themselves"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/1.jpg",
+            "alt": "A young salmon at an early stage of development"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "When it hatches, a baby salmon, or alevin, has a small sac attached to its belly. It contains all the nutrients the fish needs to grow without having to find food. For its first few months, it stays warm in the bed of its home river alongside all its brothers and sisters."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Salmon run marathons without GPS"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/2.jpg",
+            "alt": "A salmon migrating through the ocean"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmon live in rivers and at sea. At least once in their lives, they join a collective migration across the ocean over colossal distances. To give you an idea, some populations leave Spain and migrate as far as Greenland. But how do they know where to go and which routes to take? Depending on where they are, salmon navigate by the stars, the sun, Earth’s magnetic field, or visual and olfactory cues. Their remarkable sense of smell, for example, helps them find their home river on the return journey by recognizing a unique chemical imprint they memorized during the first years of life."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Salmon transform themselves"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/3.jpg",
+            "alt": "Salmon at different stages of transformation"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Before setting out on their great journey, salmon change. To survive in the ocean’s salt water, their bodies, which were adapted to fresh river water, transform. Their gills, for example, change so they can expel salt. This process, called smoltification, involves physical as well as behavioral changes. Young salmon tend to be solitary in rivers, but before heading out to sea they develop collective intelligence and gather in schools."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Salmon do not have penetrative sex"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/4.jpg",
+            "alt": "Salmon gathering to spawn in a river"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "When they return to the river, female salmon dig nests in the gravel. A female can lay thousands of eggs in a single day. Once they are done, they open their mouths. This signals the males to release milt and fertilize the eggs. Sometimes the males are chosen by the females; sometimes they appear without the females’ knowledge. Scientists call the latter “sneaker males” because they bypass courtship and do not take part in the great migration."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Salmon can also become depressed"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/5.png",
+            "alt": "Salmon in an intensive fish farm"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In intensive farms, where aggressive interactions are constant and escape is impossible, some individuals develop a state of complete inhibition. They stop eating, become immobile, and show physiological and hormonal disruptions comparable to depression in humans."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This information comes from the video “"
+              },
+              {
+                "type": "link",
+                "text": "Who are salmon?",
+                "href": "https://www.youtube.com/watch?v=UKsljob-upk"
+              },
+              {
+                "type": "text",
+                "text": "”, published in 2024 on the Cervelle d’oiseau YouTube channel, hosted by science communicator Sébastien Moro."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmon spend their lives connecting worlds we think of as separate. The animated short film SALMO, directed by Paul Pajot, tells the incredible epic journey of wild salmon and the fragility of the ecosystems they travel through."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "right"
       }
     ]
   }
