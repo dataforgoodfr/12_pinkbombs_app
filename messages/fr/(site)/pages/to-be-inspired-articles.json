@@ -358,6 +358,125 @@
             ]
           }
         ]
+      },
+      {
+        "id": 3,
+        "title": "SALMO, l’histoire incroyable d’un saumon sauvage",
+        "summary": "Une rivière, une forêt, un estuaire, l’Océan et puis des glaciers. Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, sélectionné dans de nombreux festivals, raconte l’incroyable voyage des saumons sauvages et la fragilité des écosystèmes qu’ils traversent.",
+        "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageAlt": "Illustration du court-métrage d’animation SALMO",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est l’histoire d’un saumon sauvage qui quitte sa rivière natale pour rejoindre l’Océan. Dans SALMO, on suit le périple d’un jeune saumon sur des milliers de kilomètres. Huit minutes de poésie et d’aventures rocambolesques. Huit minutes aussi pendant lesquelles on réalise une triste réalité : le déclin alarmant des populations de saumon atlantique et la dégradation terrible des écosystèmes qu’ils traversent, due aux activités humaines."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce court-métrage réalisé par Paul Pajot et produit par La Méridienne, nous sommes invité·es à mettre sur pause notre perspective d’humain·es. On vit tout à hauteur de saumons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce point de vue assumé permet de révéler, entre autres, les liens invisibles qui relient les différents milieux que les saumons traversent au cours de leur vie. Car, contrairement à ce que l’on peut croire, ces espaces sont loin d’être étanches."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/1.jpg",
+            "alt": "Scène du court-métrage d’animation SALMO",
+            "caption": "SALMO nous fait découvrir les écosystèmes à hauteur de saumons."
+          },
+          {
+            "type": "heading",
+            "text": "Une traversée à hauteur de saumons"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ce film, ce n’est pas seulement l’histoire d’un saumon. C’est aussi celle d’un monde vivant dont nous faisons nous aussi partie. La peinture vibrante de l’animation crée d’ailleurs un sentiment de symbiose et permet de réaliser la continuité écologique entre la rivière, l’estuaire et l’Océan."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "SALMO nous donne à voir des phénomènes biologiques invisibles à l’œil nu et souvent méconnus, comme par exemple la smoltification. Au cours de leur traversée, les saumons passent d’une eau douce à une eau salée. Pour s’adapter à ce changement de milieu, leurs branchies mutent pour être capables d’expulser le sel."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/2.jpg",
+            "alt": "Scène du voyage du saumon dans le film SALMO",
+            "caption": "Le film donne à voir les différentes étapes du voyage du saumon."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dans ce court-métrage, Paul Pajot a choisi de donner une dimension sensible à des enjeux sérieux. Pour écrire son film, il s’est notamment appuyé sur de nombreuses recherches scientifiques. Par sa démarche sensible, il nous fait comprendre que protéger les saumons, ce n’est pas seulement protéger une espèce : c’est aussi protéger des milieux dont tout le vivant dépend, nous compris."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Se relier au vivant, une histoire à la fois"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Né pendant le confinement de 2020, SALMO est devenu une aventure collective réunissant artistes, animateurs, musiciens et spécialistes du saumon. Le film a depuis été sélectionné dans une vingtaine de festivals et continue d’être diffusé comme œuvre artistique, mais aussi comme outil de sensibilisation."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cette démarche de raconter de manière sensible des enjeux écologiques s’inscrit dans un mouvement plus large que Seastemik soutient. Se relier au vivant, une histoire à la fois, permet de mieux connaître notre environnement et de prendre soin du monde dans lequel nous avançons."
+              }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "wR759GYF1MU",
+            "title": "SALMO, court-métrage d’animation réalisé par Paul Pajot"
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Les poissons ont-ils vraiment la mémoire courte ? Éprouvent-ils de la douleur et du plaisir ? Sont-ils vraiment muets comme des carpes ? Plongez dans cinq idées reçues pour mieux considérer ces animaux marins."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -356,6 +356,125 @@
             ]
           }
         ]
+      },
+      {
+        "id": 3,
+        "title": "SALMO, the incredible story of a wild salmon",
+        "summary": "A river, a forest, an estuary, the ocean, and then glaciers. Salmon spend their lives connecting worlds we think of as separate. Selected for many festivals, the animated short film SALMO tells the incredible journey of wild salmon and shows how fragile the ecosystems they cross are.",
+        "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageAlt": "Artwork from the animated short film SALMO",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "It is the story of a wild salmon leaving its home river to reach the ocean. In SALMO, we follow a young salmon on a journey spanning thousands of kilometers: eight minutes of poetry and adventurous twists. Eight minutes, too, in which we confront a sobering reality: Atlantic salmon populations are in alarming decline, and the ecosystems they travel through are being severely degraded by human activity."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Directed by Paul Pajot and produced by La Méridienne, the short invites us to pause our human perspective. We experience everything from a salmon’s point of view."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This deliberate perspective reveals, among other things, the invisible connections between the different environments salmon pass through during their lives. Contrary to what we might think, these spaces are far from isolated."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/1.jpg",
+            "alt": "A scene from the animated short film SALMO",
+            "caption": "SALMO reveals ecosystems from a salmon’s point of view."
+          },
+          {
+            "type": "heading",
+            "text": "A journey seen through salmon’s eyes"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This film is not only the story of a salmon. It is also the story of a living world that we are part of. The animation’s vivid painting creates a sense of symbiosis and reveals the ecological continuity between river, estuary, and ocean."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "SALMO lets us see biological phenomena that are invisible to the naked eye and often little known, such as smoltification. During their journey, salmon move from fresh water to salt water. To adapt, their gills change so they can expel salt."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/2.jpg",
+            "alt": "A scene from the salmon’s journey in SALMO",
+            "caption": "The film follows the different stages of a salmon’s journey."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In this short film, Paul Pajot chose to bring a sensitive dimension to serious issues. He drew on extensive scientific research to write it. Through this thoughtful approach, he helps us understand that protecting salmon is not only about protecting a species: it is also about protecting the environments all life depends on, including us."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Connecting with the living world, one story at a time"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Born during the 2020 lockdown, SALMO became a collective adventure bringing together artists, animators, musicians, and salmon specialists. The film has since been selected for around twenty festivals and continues to be shown both as a work of art and as an educational tool."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This sensitive way of telling stories about ecological issues is part of a broader movement supported by Seastemik. Connecting with the living world, one story at a time, helps us learn about our environment and care for the world we move through."
+              }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "wR759GYF1MU",
+            "title": "SALMO, an animated short film by Paul Pajot"
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a carp? Explore five misconceptions and learn to consider these marine animals more thoughtfully."
+              }
+            ]
+          }
+        ]
       }
     ]
   }
