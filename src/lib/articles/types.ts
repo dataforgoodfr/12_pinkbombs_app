@@ -30,3 +30,8 @@ export interface ArticleContent {
   blocks: ArticleContentBlock[];
   relatedSection?: ArticleRelatedSection;
 }
+
+export type ArticleCardContent = Pick<
+  ArticleContent,
+  "id" | "title" | "heroImage" | "heroImageAlt"
+>;

@@ -6,7 +6,7 @@ import * as React from "react";
 import "@/lib/env";
 
 import { getArticleSlug } from "@/lib/articles/slug";
-import type { ArticleContent } from "@/lib/articles/types";
+import type { ArticleCardContent } from "@/lib/articles/types";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ArticleCard from "@/components/v2/cards/ArticleCard";
@@ -62,7 +62,7 @@ const IntroSection = () => {
 
 const ArticleSection = () => {
   const t = useTranslations("site.toBeInspiredArticle");
-  const articleCardItems = t.raw("articles") as ArticleContent[];
+  const articleCardItems = t.raw("articles") as ArticleCardContent[];
   return (
     <section className="bg-v2-magenta">
       <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
