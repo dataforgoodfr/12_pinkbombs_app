@@ -125,7 +125,11 @@ export const CalculatorModal = ({
     state.products.length === 1 && state.products[0]?.name === "none";
 
   React.useEffect(() => {
-    if (state.step !== CalculatorStep.Selection || !isNoConsumptionSelection) {
+    if (
+      state.step !== CalculatorStep.Selection ||
+      !isNoConsumptionSelection ||
+      state.calculationResponse !== null
+    ) {
       return;
     }
 
@@ -134,7 +138,7 @@ export const CalculatorModal = ({
     }, NO_CONSUMPTION_SUBMIT_DELAY_MS);
 
     return () => clearTimeout(timeoutId);
-  }, [isNoConsumptionSelection, state.step, submit]);
+  }, [isNoConsumptionSelection, state.step, state.calculationResponse, submit]);
 
   const next = () => {
     setScreenTransition({
@@ -203,15 +207,10 @@ export const CalculatorModal = ({
                     {t("modal.back")}
                   </button>
                   {showProgress && (
-                    <div className="flex flex-col items-start gap-2">
-                      <CalculatorProgress
-                        completedProducts={completedProducts}
-                        totalProducts={state.products.length}
-                      />
-                      <p className="text-white text-xs">
-                        {t("modal.completionTime")}
-                      </p>
-                    </div>
+                    <CalculatorProgress
+                      completedProducts={completedProducts}
+                      totalProducts={state.products.length}
+                    />
                   )}
                 </div>
               )}

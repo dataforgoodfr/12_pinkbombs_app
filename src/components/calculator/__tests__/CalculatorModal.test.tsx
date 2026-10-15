@@ -191,7 +191,7 @@ describe("CalculatorModal", () => {
     });
   });
 
-  it("submits the no-consumption answer after one second without frequency or summary", async () => {
+  it("submits none after one second and allows going back through summary to selection", async () => {
     jest.useFakeTimers();
     const submissionService = jest
       .fn<CalculatorSubmissionService>()
@@ -232,6 +232,28 @@ describe("CalculatorModal", () => {
     await waitFor(() => {
       expect(screen.getAllByText("result.title").length).toBeGreaterThan(0);
     });
+
+    fireEvent.click(screen.getByRole("backbutton"));
+    expect(await screen.findByText("sumUp.title")).not.toBeNull();
+    jest.useFakeTimers();
+    fireEvent.click(screen.getByRole("backbutton"));
+    await act(() => jest.advanceTimersByTimeAsync(500));
+    const noneCheckbox = await screen.findByRole("checkbox", {
+      name: "Je ne consomme pas de saumon",
+    });
+    expect((noneCheckbox as HTMLInputElement).checked).toBe(true);
+    expect(screen.queryByRole("radio")).toBeNull();
+
+    await act(() => jest.advanceTimersByTimeAsync(1500));
+    expect(submissionService).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole("checkbox", {
+      name: "Je ne consomme pas de saumon",
+    })).toBe(noneCheckbox);
+
+    fireEvent.click(noneCheckbox);
+    await act(() => jest.advanceTimersByTimeAsync(1000));
+    expect(submissionService).toHaveBeenCalledTimes(2);
+    await act(() => jest.advanceTimersByTimeAsync(4000));
   });
 
   it("shows the error screen when submission fails", async () => {

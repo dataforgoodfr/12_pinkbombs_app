@@ -9,7 +9,6 @@
       "button": "Start"
     },
     "modal": {
-      "completionTime": "5 min to complete",
       "back": "Back",
       "progress": "Completion status of pinkometer questions",
       "progressLabel": "{completedProducts} questions out of {totalProducts} have been completed for the selected products",
@@ -45,11 +44,11 @@
           "title": "How often do you consume {prefix} {label}?",
           "type": "radio",
           "options": [
-            { "name": "weekly", "label": "Once a week" },
             { "name": "semiWeekly", "label": "Twice a week" },
-            { "name": "monthly", "label": "Once a month" },
+            { "name": "weekly", "label": "Once a week" },
             { "name": "semiMonthly", "label": "Twice a month" },
             { "name": "biMonthly", "label": "Once every two months" },
+            { "name": "monthly", "label": "Once a month" },
             { "name": "quarterly", "label": "Once a quarter" },
             { "name": "semiAnnually", "label": "Twice a year" },
             {

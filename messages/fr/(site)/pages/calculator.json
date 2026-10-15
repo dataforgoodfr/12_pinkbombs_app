@@ -9,7 +9,6 @@
       "button": "Commencer"
     },
     "modal": {
-      "completionTime": "5 min à compléter",
       "back": "Retour",
       "progress": "État de complétion des questions du pinkomètre",
       "progressLabel": "{completedProducts} questions sur {totalProducts} ont été complétées sur les produits sélectionnés",
@@ -45,10 +44,10 @@
           "title": "À quelle fréquence consommez-vous {prefix} {label}\u00a0?",
           "type": "radio",
           "options": [
-            { "name": "weekly", "label": "1 fois par semaine" },
             { "name": "semiWeekly", "label": "2 fois par semaine" },
-            { "name": "monthly", "label": "1 fois par mois" },
+            { "name": "weekly", "label": "1 fois par semaine" },
             { "name": "semiMonthly", "label": "2 fois par mois" },
+            { "name": "monthly", "label": "1 fois par mois" },
             { "name": "biMonthly", "label": "1 fois tous les deux mois" },
             { "name": "quarterly", "label": "1 fois par trimestre" },
             { "name": "semiAnnually", "label": "2 fois par an" },

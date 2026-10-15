@@ -173,6 +173,38 @@ describe("calculator workflow", () => {
     });
   });
 
+  it("returns from results to summary without changing the answers", () => {
+    const response = {
+      totalConsoInKg: 1.5,
+      consoPerProduct: { sushi: { weightInKg: 1.5, occurrencePerYear: 24 } },
+      impact: "medium" as const,
+    };
+    let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
+      type: "toggleProduct",
+      product,
+    });
+    state = calculatorReducer(state, { type: "next" });
+    state = calculatorReducer(state, {
+      type: "setFrequency",
+      productIndex: 0,
+      frequency: "weekly",
+      frequencyLabel: "1 time per week",
+      advanceToVariant: true,
+    });
+    state = calculatorReducer(state, { type: "next" });
+    state = calculatorReducer(state, { type: "startLoading" });
+    state = calculatorReducer(state, {
+      type: "calculationSucceeded",
+      response,
+    });
+
+    expect(state.step).toBe(CalculatorStep.Result);
+    expect(calculatorReducer(state, { type: "back" })).toEqual({
+      ...state,
+      step: CalculatorStep.Summary,
+    });
+  });
+
   it("advances the reduce-impact wizard as the user answers each step", () => {
     const response = {
       totalConsoInKg: 3,
@@ -263,6 +295,45 @@ describe("calculator workflow", () => {
     state = calculatorReducer(state, { type: "back" });
     expect(state.step).toBe(CalculatorStep.Variant);
     expect(state.productIndex).toBe(0);
+  });
+
+  it("returns from results through summary to selection for none", () => {
+    const noneProduct = { name: "none", label: "None", variants: [] };
+    let state = calculatorReducer(INITIAL_CALCULATOR_STATE, {
+      type: "toggleProduct",
+      product: noneProduct,
+    });
+    state = calculatorReducer(state, {
+      type: "calculationSucceeded",
+      response: {
+        totalConsoInKg: 0,
+        consoPerProduct: {},
+        impact: "neutral",
+      },
+    });
+
+    state = calculatorReducer(state, { type: "back" });
+    expect(state.step).toBe(CalculatorStep.Summary);
+
+    expect(calculatorReducer(state, { type: "back" })).toEqual({
+      ...state,
+      step: CalculatorStep.Selection,
+      questionIndex: INITIAL_CALCULATOR_STATE.questionIndex,
+      productIndex: INITIAL_CALCULATOR_STATE.productIndex,
+    });
+  });
+
+  it("returns from summary to frequency for a product without variants", () => {
+    const state = {
+      ...INITIAL_CALCULATOR_STATE,
+      step: CalculatorStep.Summary,
+      products: [productWithoutVariants],
+    };
+
+    expect(calculatorReducer(state, { type: "back" })).toMatchObject({
+      step: CalculatorStep.Frequency,
+      productIndex: 0,
+    });
   });
 
   it("returns from summary to the last applicable product step", () => {
