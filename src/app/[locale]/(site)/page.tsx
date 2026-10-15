@@ -72,11 +72,19 @@ const ExplodeSection = () => {
         </div>
         <Image
           loading="lazy"
+          src="/site/images/homepage/fish-bomb-mobile.svg"
+          width={1024}
+          height={870}
+          alt={t("bomb.imageAlt")}
+          className="relative z-2 bottom-6 object-contain mx-auto w-full h-auto lg:hidden"
+        />
+        <Image
+          loading="lazy"
           src="/site/images/homepage/fish-bomb.svg"
           width={1420}
           height={870}
           alt={t("bomb.imageAlt")}
-          className="relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto h-full"
+          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto h-full"
         />
       </div>
     </section>
