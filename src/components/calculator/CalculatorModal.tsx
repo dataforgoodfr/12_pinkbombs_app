@@ -190,7 +190,7 @@ export const CalculatorModal = ({
             transition
             className="relative flex flex-col h-dvh max-h-dvh w-full pt-[calc(1.5rem_+_env(safe-area-inset-top))] gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
-            <div className="grid shrink-0 grid-cols-2 items-center gap-y-3 px-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-x-4 sm:gap-y-0">
+            <div className="flex justify-between items-center px-4 py-2">
               {state.step !== CalculatorStep.Selection && (
                 <div className="flex flex-col items-start gap-4">
                   <button
