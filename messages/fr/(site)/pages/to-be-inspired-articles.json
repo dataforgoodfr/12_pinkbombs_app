@@ -993,6 +993,187 @@
           }
         ],
         "heroTextSide": "right"
+      },
+      {
+        "id": 7,
+        "title": "Quand une enseigne de boulangerie française retire les saumons de son menu",
+        "summary": "En collaboration avec Seastemik, Boulangerie Landemaine est devenue en 2025 la première enseigne de boulangerie à retirer les saumons de ses boutiques pour protéger l’Océan et toutes celles et ceux qui en dépendent. Alors, quel bilan un an après avoir lancé cette révolution iodée ?",
+        "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
+        "heroImageAlt": "La démarche de Boulangerie Landemaine pour retirer le saumon de son menu",
+        "heroTextSide": "left",
+        "relatedArticleIds": [2],
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "« Nos équipes étaient assez réticentes au départ, mais aujourd'hui personne ne remet ce choix en question », nous a affirmé Emma Bonvento, responsable communication de Boulangerie Landemaine, enseigne reconnue de 19 boutiques installées en France et au Japon."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Chez Seastemik, on comprend ce qui a nourri ces premières réticences. Dans les enseignes de boulangerie-pâtisserie disposant d'une offre de snacking (soit 96 % d'entre elles), les sandwichs à base de saumon fumé font très souvent partie des best-sellers, tout comme les canapés aux saumons dans les services traiteurs."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Boulangerie Landemaine fait aussi traiteur pour les entreprises. Jusqu’en 2025, les canapés aux saumons faisaient partie de ses produits les plus demandés. Autant dire que, pour l’enseigne, se passer des saumons représentait un sacré défi."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix judicieux"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Définir son menu n’a rien d’anodin. Mettre un aliment à la carte, c’est encourager sa consommation et sa production. C’est aussi prendre une responsabilité vis-à-vis de ses client·es. Or, proposer du saumon en sandwich, en quiche ou en filet en 2026, c’est proposer à ses client·es des poissons bourrés de médicaments et de microplastiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Car 98 % des saumons que nous mangeons en France proviennent d’élevages. Ces poissons sont élevés dans des conditions désastreuses. La pêche pratiquée pour nourrir les saumons prive des populations de nourriture et vide l’Océan, sans parler de la pollution et de la déforestation induites par ces élevages."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Autant de raisons qui ont convaincu Boulangerie Landemaine de franchir le pas, là où la grande majorité des acteurs choisissent au quotidien de maintenir le saumon comme incontournable de leur carte."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix audacieux"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Retirer les saumons, c'est bien. Mais encore faut-il proposer autre chose à la place. Sur ce point, l'enseigne n'a pas fait les choses à moitié : à chaque offre à base de saumon retirée, une nouvelle offre végétarienne ou végétalienne a été ajoutée. Au sandwich au saumon s’est substitué un sandwich aux légumes rôtis ; à la quiche au saumon a succédé une quiche aux légumes et au chèvre."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/1.jpg",
+            "alt": "Une offre de snacking végétale de Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Aujourd'hui, l'offre végétarienne et végane représente 40 % des références de snacking de l'enseigne, été comme hiver, et plus d'un tiers des ventes. Le sandwich aux légumes rôtis, présent à la carte d'été, a particulièrement bien trouvé son public et se vend tout aussi bien que certaines offres carnées. Une grande victoire pour les saumons, l’Océan et toutes celles et ceux qui en dépendent !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un choix récompensé"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Côté traiteur, le résultat est encore plus impressionnant. Les offres végétariennes représentent plus de la moitié des ventes, preuve que certaines entreprises commencent à contribuer à la transition alimentaire lors de leurs événements."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Autre belle victoire : Boulangerie Landemaine constate une baisse d'environ 30 % des coûts de revient en passant d'une offre classique à une offre végétale, comme entre la quiche aux poireaux et la quiche saumon-épinard désormais retirée. Une belle façon de rassurer les sceptiques de la démarche, en interne comme chez les concurrents."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/2.jpg",
+            "alt": "Des produits végétariens proposés par Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et les client·es dans tout ça ? À Seastemik, on accompagne les acteur·ices de la restauration dans leur transition et on s’assure que les client·es prennent la vague avec elleux."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Le partenariat Seastemik x Boulangerie Landemaine a été annoncé, entre autres, sur les réseaux sociaux. La vidéo publiée avec Esther Dufaure, notre cofondatrice, et Rodolphe Landemaine, fondateur de l’enseigne, a comptabilisé près de 15 000 vues. Même constat pour un second post partagé quelques semaines plus tard. Et le plus étonnant : les réactions négatives se sont faites rares."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un pari gagnant"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Près d'un an et demi plus tard, force est de constater que ce qui semblait être un risque économique s'est finalement révélé être un pari gagnant. Aucun retour en arrière, des offres végétales qui ont trouvé leur place, et cet engagement est même devenu un motif de fierté pour l'enseigne."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cet exemple nous montre qu'une autre voie existe : celle d'enseignes qui choisissent de prendre le contre-pied des habitudes du secteur et qui, parce que ce choix est bien pensé, réussissent avec brio. Alors, qu'attendons-nous pour dire à nos restaurants, à nos traiteurs et à nos boulangeries qu'il est temps de se passer des saumons ?!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, une star de la cuisine végétale, qui, à l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan », nous raconte son parcours et ses astuces pour se passer des saumons dans nos assiettes. "
+              },
+              {
+                "type": "link",
+                "text": "Découvrez l’entretien avec Marie Laforêt.",
+                "href": "/s-inspirer/comment-remplacer-les-poissons-dans-son-assiette-2"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
