@@ -129,10 +129,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 id={relatedArticle.id}
                 title={relatedArticle.title}
                 slug={getArticleSlug(relatedArticle.title, relatedArticle.id)}
+                variant="standard"
                 image={{
                   src: relatedArticle.heroImage,
-                  width: relatedArticle.id === 5 ? 969 : 302,
-                  height: relatedArticle.id === 5 ? 412 : 242,
                   alt: relatedArticle.heroImageAlt,
                 }}
               />

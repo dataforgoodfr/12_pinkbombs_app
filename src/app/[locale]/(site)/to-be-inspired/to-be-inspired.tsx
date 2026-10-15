@@ -66,16 +66,15 @@ const ArticleSection = () => {
   return (
     <section className="bg-v2-magenta">
       <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
-        {articleCardItems.map((article) => (
+        {articleCardItems.map((article, index) => (
           <ArticleCard
             key={article.id}
             id={article.id}
             title={article.title}
             slug={getArticleSlug(article.title, article.id)}
+            variant={(index + 1) % 5 === 0 ? "wide" : "standard"}
             image={{
               src: article.heroImage,
-              width: article.id === 5 ? 969 : 302,
-              height: article.id === 5 ? 412 : 242,
               alt: article.heroImageAlt,
             }}
           />
