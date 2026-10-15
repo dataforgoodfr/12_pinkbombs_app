@@ -38,9 +38,21 @@ Run them with:
 pnpm test -- src/components/calculator/__tests__
 ```
 
-Calculator submission currently uses a mocked async service. Its typed
-submission boundary is ready to be replaced by the future React mutation and
-backend persistence flow.
+The calculator sends its initial answers and selected reduced-impact
+commitment to the Pinkbombs FastAPI ([https://github.com/dataforgoodfr/12_pinkbombs](https://github.com/dataforgoodfr/12_pinkbombs)) service when the badge form is submitted.
+The calculation itself remains local to the Next.js application.
+
+Configure this server-only environment variable in Vercel for Development,
+Preview, and Production:
+
+- `PINKBOMBS_API_BASE_URL`
+
+For local development, set `PINKBOMBS_API_BASE_URL=http://localhost:8000` in
+`.env.local`. The Vercel Route Handlers proxy `/api/v1/options` and
+`/api/v1/submissions`; the browser does not call FastAPI directly. Configure the
+FastAPI CORS allowlist with the deployed frontend's exact origin (never `*`);
+CORS is not an authentication mechanism. Do not expose API credentials through
+`NEXT_PUBLIC_` variables.
 
 ### Newsletter subscription
 

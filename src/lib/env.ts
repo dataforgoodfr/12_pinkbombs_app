@@ -10,6 +10,7 @@ const envVariables = z.object({
   NEXT_PUBLIC_SHOW_LOGGER: z.enum(["true", "false"]).optional(),
   BREVO_API_KEY: z.string().optional(),
   BREVO_NEWSLETTER_LIST_ID: z.string().optional(),
+  PINKBOMBS_API_BASE_URL: z.string().url().optional(),
 });
 
 envVariables.parse(process.env);
