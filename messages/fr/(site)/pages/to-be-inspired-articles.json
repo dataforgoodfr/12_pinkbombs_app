@@ -1456,6 +1456,151 @@
             ]
           }
         ]
+      },
+      {
+        "id": 10,
+        "title": "13 associations qui œuvrent pour repeupler l’Océan",
+        "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
+        "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageAlt": "L’Océan et les associations qui œuvrent à le protéger",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Partout dans le monde, des associations travaillent à protéger les écosystèmes marins. Certaines agissent directement sur le terrain. D’autres documentent, enquêtent, mobilisent le grand public ou interpellent les pouvoirs publics. Certaines se concentrent sur une espèce ou un écosystème précis, d’autres défendent une vision plus globale de l’Océan. Cette liste est loin d’être exhaustive."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Seastemik</strong> est parti d’une idée simple : un Océan qui déborde de vie passe par une remise en question de la place que nous accordons aux animaux marins dans nos assiettes. À travers nos campagnes, comme la mobilisation contre le méga-élevage <strong>Pure Salmon</strong> en Gironde, et nos enquêtes, comme le projet PinkBombs que vous consultez en ce moment même, on cherche à rendre visibles les conséquences désastreuses de notre alimentation et à accompagner individus comme entreprises pour changer nos façons de manger, sans culpabilité et avec plaisir."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Bloom</strong> s’attaque notamment aux pratiques de pêche destructrices et mène un important travail d’enquête, de plaidoyer et de mobilisation citoyenne pour défendre les écosystèmes marins et les communautés qui en dépendent."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Ethic Océan</strong> travaille main dans la main avec les professionnel·les des produits de la mer (chef·fes, poissonnier·es, distributeurs, restauration collective) pour faire évoluer leurs pratiques d’achat. L’association s’appuie sur l’expertise scientifique pour les aider à tenir compte de l’état des stocks et de l’impact des méthodes de pêche ou d’élevage, et ainsi réduire la pression sur les espèces les plus menacées."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>L214</strong> travaille sur la condition animale, y compris celle des poissons. Son travail contribue notamment à rendre visibles des réalités de l’élevage aquatique encore largement méconnues et à questionner la place des poissons dans notre système alimentaire."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Longitude 181</strong> défend l’idée que protéger l’Océan commence par mieux connaître et respecter celles et ceux qui l’habitent. Fondée par des plongeur·euses et des scientifiques, l’association promeut une relation respectueuse avec la faune marine, notamment à travers sa charte internationale du plongeur responsable. Elle mène aussi des actions de sensibilisation et de plaidoyer en faveur des requins, des cétacés et des grands animaux marins, souvent victimes de préjugés et de la pêche."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Planète Mer</strong> travaille à retrouver un équilibre durable entre la vie marine et les activités humaines. L’association développe des actions de terrain autour de trois grands axes : protéger la biodiversité marine avec les citoyen·nes, accompagner une gestion durable des ressources de pêche avec les pêcheur·euses et restaurer des écosystèmes dégradés avec les populations locales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La <strong>Plateforme Océan et Climat</strong> rassemble des ONG, des instituts de recherche, des collectivités et des acteurs économiques autour d’un même objectif : faire reconnaître le rôle central de l’Océan dans la régulation du climat. Née en amont de la COP21, elle produit des ressources scientifiques accessibles et porte la voix de l’Océan dans les négociations climatiques internationales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Pleine Mer</strong> défend une pêche artisanale à taille humaine face à l’industrialisation du secteur. L’association soutient les petit·es pêcheur·euses, dénonce les pratiques les plus destructrices comme le chalutage industriel et plaide pour une répartition plus juste de l’accès aux ressources marines, en France comme au niveau européen."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Surfrider</strong> agit sur plusieurs fronts pour protéger l’Océan et les littoraux : lutte contre les pollutions, notamment plastiques, protection de la qualité des eaux, préservation des espaces côtiers et adaptation au changement climatique. L’association s’appuie notamment sur l’expertise scientifique, l’éducation, la mobilisation citoyenne et le plaidoyer pour faire évoluer les pratiques et les politiques publiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Under The Pole</strong> explore les zones les moins connues de l’Océan, des eaux polaires aux profondeurs dites « mésophotiques », situées entre 30 et 200 mètres. À travers des expéditions au long cours mêlant plongée, recherche scientifique et innovation, l’association étudie notamment les coraux profonds et leur rôle de refuge face au réchauffement. Elle partage ensuite ses découvertes avec le grand public et les scolaires pour faire connaître ces écosystèmes encore largement ignorés."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Welfarm</strong> agit pour la protection des animaux de ferme, et les poissons en font partie. L’association mène des campagnes pour que leur bien-être soit enfin pris en compte, en particulier dans l’aquaculture, que ce soit pour les conditions d’élevage, le transport ou l’abattage. Son travail contribue à rappeler que les poissons sont des êtres sensibles, trop souvent oubliés des réglementations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour en découvrir encore d’autres, découvrez les 185 ONG et mouvements de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Coalition Océans</strong>",
+                "href": "https://www.oceancoalition.org/coalition"
+              },
+              {
+                "type": "text",
+                "text": ", ou les 115 organisations membres de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/nos-membres/"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

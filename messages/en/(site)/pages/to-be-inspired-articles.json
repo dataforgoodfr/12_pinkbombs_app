@@ -4,7 +4,7 @@
     "relatedArticlesTitle": "Would you like a little more inspiration?",
     "articles": [
       {
-        "id": 10,
+        "id": 1,
         "title": "Salmon, a symbol of an industry",
         "summary": "Once reserved for celebratory meals, salmon has become the most consumed fish in France in just a few decades. Behind this troubling consumption lies the story of an industry that turned salmon into a mass-market product.",
         "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
@@ -1450,6 +1450,151 @@
                 "type": "link",
                 "text": "Explore five alternatives to salmon.",
                 "href": "/to-be-inspired/5-salmon-alternatives-that-are-already-changing-the-game-5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "13 organizations working to bring life back to the ocean",
+        "summary": "The ocean does not just need to be “saved.” It needs life to return. Around the world, groups, scientists, and citizens are working to transform our relationship with the ocean. Here is a look at organizations making a difference in their own ways.",
+        "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageAlt": "The ocean and organizations working to protect it",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Around the world, organizations work to protect marine ecosystems. Some take direct action in the field. Others document, investigate, engage the public, or call on decision-makers. Some focus on a particular species or ecosystem; others take a broader view of the ocean. This list is far from exhaustive."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Seastemik</strong> started with a simple idea: an ocean full of life requires us to rethink the place we give marine animals on our plates. Through campaigns such as our mobilization against the <strong>Pure Salmon</strong> mega-farm in Gironde, and investigations such as the PinkBombs project you are reading now, we make the devastating consequences of our food choices visible and help individuals and businesses change how they eat, without guilt and with pleasure."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Bloom</strong> takes on destructive fishing practices and conducts investigations, advocacy, and public mobilization to defend marine ecosystems and the communities that depend on them."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Ethic Océan</strong> works hand in hand with seafood professionals, including chefs, fishmongers, distributors, and institutional caterers, to change purchasing practices. Drawing on scientific expertise, it helps them consider stock health and the impacts of fishing and farming methods, reducing pressure on the most threatened species."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>L214</strong> works on animal welfare, including the welfare of fish. Its work helps bring little-known realities of aquatic farming to light and prompts questions about the place of fish in our food system."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Longitude 181</strong> believes ocean protection begins with knowing and respecting the life within it. Founded by divers and scientists, the organization promotes a respectful relationship with marine wildlife, notably through its International Charter for Responsible Diving. It also raises awareness and advocates for sharks, cetaceans, and large marine animals, often targeted by prejudice and fishing."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Planète Mer</strong> works to restore a lasting balance between marine life and human activity. Its field projects focus on three areas: protecting marine biodiversity with citizens, supporting sustainable fisheries management with fishers, and restoring damaged ecosystems with local communities."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The <strong>Plateforme Océan et Climat</strong> brings together NGOs, research institutes, local authorities, and businesses around one goal: recognizing the ocean’s central role in regulating the climate. Founded ahead of COP21, it produces accessible scientific resources and brings the ocean’s voice to international climate negotiations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Pleine Mer</strong> defends small-scale artisanal fishing against the industrialization of the sector. It supports small fishers, denounces destructive practices such as industrial trawling, and advocates for fairer access to marine resources in France and across Europe."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Surfrider</strong> works on several fronts to protect the ocean and coastlines: tackling pollution, especially plastic pollution; protecting water quality; preserving coastal areas; and adapting to climate change. It draws on scientific expertise, education, public engagement, and advocacy to change practices and public policy."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Under The Pole</strong> explores some of the ocean’s least-known areas, from polar waters to so-called mesophotic depths between 30 and 200 meters. Through long-term expeditions combining diving, scientific research, and innovation, the organization studies deep-water corals and their role as refuges from warming. It shares its discoveries with the public and schools to introduce these largely overlooked ecosystems."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Welfarm</strong> works to protect farm animals, including fish. Its campaigns call for fish welfare to be considered, especially in aquaculture, from farming conditions to transport and slaughter. Its work reminds us that fish are sentient beings, too often overlooked by regulations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "To discover more, explore the 185 NGOs and movements in the "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Coalition Océans</strong>",
+                "href": "https://www.oceancoalition.org/coalition"
+              },
+              {
+                "type": "text",
+                "text": ", or the 115 member organizations of the "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/nos-membres/"
+              },
+              {
+                "type": "text",
+                "text": "."
               }
             ]
           }
