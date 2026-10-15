@@ -11,7 +11,7 @@ export type basePathType =
   | "/to-understand"
   | "/to-act"
   | "/to-be-inspired"
-  | "/calculator"
+  | "/pinkometer"
   | "/about"
   | "/archive/v1"
   | "/archive/v1/dashboard"
@@ -36,9 +36,9 @@ export const pathnames = {
     fr: "/s-inspirer/[slug]",
     en: "/to-be-inspired/[slug]",
   },
-  "/calculator": {
-    fr: "/calculateur",
-    en: "/calculator",
+  "/pinkometer": {
+    fr: "/pinkometre",
+    en: "/pinkometer",
   },
   "/about": {
     fr: "/a-propos",

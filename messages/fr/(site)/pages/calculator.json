@@ -1,7 +1,7 @@
 {
   "calculator": {
     "meta": {
-      "title": "Calculateur"
+      "title": "Pinkomètre"
     },
     "intro": {
       "title": "Calculez votre impact",
@@ -11,9 +11,9 @@
     "modal": {
       "completionTime": "5 min à compléter",
       "back": "Retour",
-      "progress": "État de complétion des questions du calculateur",
+      "progress": "État de complétion des questions du pinkomètre",
       "progressLabel": "{completedProducts} questions sur {totalProducts} ont été complétées sur les produits sélectionnés",
-      "quit": "Quitter le calculateur",
+      "quit": "Quitter le pinkomètre",
       "next": "Suivant",
       "questions": [
         {

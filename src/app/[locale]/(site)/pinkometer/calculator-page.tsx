@@ -19,7 +19,7 @@ const CalculatorPage = () => {
     <>
       <section className="bg-v2-pink text-v2-blue">
         <div className="relative flex flex-col justify-center items-center gap-8 px-10 py-20">
-          <Calculator label="medium" />
+          <Calculator />
           <div className="z-30 flex flex-col gap-4 text-center">
             <h1 className="h1 text-pretty">{t("intro.title")}</h1>
             <p className="p-lead text-pretty lg:preserve-lines">

@@ -1,7 +1,7 @@
 {
   "calculator": {
     "meta": {
-      "title": "Calculator"
+      "title": "Pinkometer"
     },
     "intro": {
       "title": "Calculate your impact",
@@ -11,9 +11,9 @@
     "modal": {
       "completionTime": "5 min to complete",
       "back": "Back",
-      "progress": "Completion status of calculator questions",
+      "progress": "Completion status of pinkometer questions",
       "progressLabel": "{completedProducts} questions out of {totalProducts} have been completed for the selected products",
-      "quit": "Quit the calculator",
+      "quit": "Quit the pinkometer",
       "next": "Next",
       "questions": [
         {

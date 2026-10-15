@@ -26,7 +26,7 @@
           "actions": [
             {
               "cta": "Calculez votre empreinte saumons avec le Pinkomètre",
-              "url": "/calculator",
+              "url": "/pinkometer",
               "type": "internalRedirect"
             },
             {
@@ -68,7 +68,7 @@
           "actions": [
             {
               "cta": "Calculez votre empreinte saumons avec le Pinkomètre et explorer les alternatives",
-              "url": "/calculator",
+              "url": "/pinkometer",
               "type": "internalRedirect"
             },
             {

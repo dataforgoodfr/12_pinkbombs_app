@@ -26,7 +26,7 @@
           "actions": [
             {
               "cta": "Calculate your salmon footprint with the Pinkometer",
-              "url": "/calculator",
+              "url": "/pinkometer",
               "type": "internalRedirect"
             },
             {
@@ -68,7 +68,7 @@
           "actions": [
             {
               "cta": "Calculate your salmon footprint with the Pinkometer and explore alternatives",
-              "url": "/calculator",
+              "url": "/pinkometer",
               "type": "internalRedirect"
             },
             {

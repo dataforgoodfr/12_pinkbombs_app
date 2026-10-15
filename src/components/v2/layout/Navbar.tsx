@@ -71,7 +71,7 @@ const Navbar = () => {
       text: t("nav.about"),
     },
     {
-      link: "/calculator",
+      link: "/pinkometer",
       text: t("nav.calculator"),
     },
   ];
@@ -132,7 +132,7 @@ const Navbar = () => {
               aria-current={item.link === navPathname ? "page" : undefined}
               key={`nav-${key}`}
             >
-              {item.link === "/calculator" && (
+              {item.link === "/pinkometer" && (
                 <div className="inline-block self-center mr-2">
                   <svg
                     width="20"
@@ -266,7 +266,7 @@ const Navbar = () => {
                   key={`mobile-nav-${key}`}
                   onClick={closeMobileMenu}
                 >
-                  {item.link === "/calculator" && (
+                  {item.link === "/pinkometer" && (
                     <div className="inline-block mr-2">
                       <svg
                         width="20"
