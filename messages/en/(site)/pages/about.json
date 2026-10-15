@@ -41,49 +41,49 @@
         {
           "name": "Esther Dufaure",
           "role": "Co-founder & Co-CEO Seastemik",
-          "pictureUrl": "/site/images/about/team/Esther.png",
+          "pictureUrl": "/site/images/about/team/esther.png",
           "pictureAlt": "Esther, co-founder and co-captain of the PinkBombs project"
         },
         {
           "name": "Maxime de Lisle",
           "role": "Co-founder & Co-CEO Seastemik",
-          "pictureUrl": "/site/images/about/team/Maxime.png",
+          "pictureUrl": "/site/images/about/team/maxime.png",
           "pictureAlt": "Maxime, co-founder of Seastemik"
         },
         {
           "name": "Fleur Marques Bosio",
           "role": "Communications Director Seastemik",
-          "pictureUrl": "/site/images/about/team/Fleur.png",
+          "pictureUrl": "/site/images/about/team/fleur.png",
           "pictureAlt": "Fleur, Communications Director Seastemik"
         },
         {
           "name": "Diane Jean",
           "role": "Digital Communications Manager Seastemik",
-          "pictureUrl": "/site/images/about/team/Diane.png",
+          "pictureUrl": "/site/images/about/team/diane.png",
           "pictureAlt": "Diane, Digital Communications Manager Seastemik"
         },
         {
           "name": "Gaëlle Nordström-Schüler",
           "role": "Volunteer Product Owner",
-          "pictureUrl": "/site/images/about/team/Gaëlle.png",
+          "pictureUrl": "/site/images/about/team/gaelle.png",
           "pictureAlt": "Gaëlle, Volunteer Product Owner"
         },
         {
           "name": "Brigitte Wear",
           "role": "Lead Data Analyst and Research",
-          "pictureUrl": "/site/images/about/team/brigitte.avif",
+          "pictureUrl": "/site/images/about/team/brigitte.png",
           "pictureAlt": "Brigitte, Lead Data Analyst and Research"
         },
         {
           "name": "Azra Hamidovic",
           "role": "Volunteer Data Analyst and Research",
-          "pictureUrl": "/site/images/about/team/Azra.png",
+          "pictureUrl": "/site/images/about/team/azra.png",
           "pictureAlt": "Azra, Volunteer Data Analyst and Research"
         },
         {
           "name": "Pierre Moneyron",
           "role": "Volunteer Data Analyst and Research",
-          "pictureUrl": "/site/images/about/team/Pierre.png",
+          "pictureUrl": "/site/images/about/team/pierre.png",
           "pictureAlt": "Pierre, Volunteer Data Analyst and Research"
         },
         {
@@ -95,7 +95,7 @@
         {
           "name": "Aurélie Anglio",
           "role": "Volunteer Fullstack Web Developer",
-          "pictureUrl": "/site/images/about/team/aurelie2.png",
+          "pictureUrl": "/site/images/about/team/aurelie.png",
           "pictureAlt": "Aurélie, Volunteer Fullstack Web Developer"
         }
       ],
@@ -109,7 +109,10 @@
     },
     "story": {
       "title": "Story",
-      "paragraph": "<strong>In 2023, we launched the first version of Pinkbombs, which had major media coverage and advanced the cause.</strong>\n\nOur data was exclusively used by the newspaper Le Monde to publish an article by Les Décodeurs on the impact of salmon farming. Link to the article here. Since then, the data has been relayed by numerous media outlets such as Bon Pote, Brut, France Inter, BFM, or the TF1 1pm news, thus raising collective awareness about the impacts of the salmon industry.",
+      "paragraphFirstPart": "<strong>In 2024, we launched the first version of Pinkbombs, which had major media coverage and advanced the cause.</strong>\n\nOur data was exclusively used by the newspaper Le Monde to publish an article by Les Décodeurs on the impact of salmon farming.",
+      "paragraphLastPart": "Since then, the data has been relayed by numerous media outlets such as Bon Pote, Brut, France Inter, BFM, or the TF1 1pm news, thus raising collective awareness about the impacts of the salmon industry.",
+      "paragraphUrl": "https://www.lemonde.fr/les-decodeurs/article/2024/10/14/l-elevage-intensif-de-saumon-une-bombe-ecologique-et-sociale-en-huit-chiffres_6351402_4355770.html",
+      "paragraphLinkText": "Read the article",
       "imageAlt": "Image of a phone with media apps"
     },
     "mediaLogosAlt": {

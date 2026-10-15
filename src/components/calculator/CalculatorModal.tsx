@@ -39,6 +39,7 @@ type ScreenTransition = {
 };
 
 const MIN_LOADING_DURATION_MS = 4000;
+const NO_CONSUMPTION_SUBMIT_DELAY_MS = 1000;
 
 const sleep = (durationMs: number) =>
   new Promise((resolve) => setTimeout(resolve, durationMs));
@@ -104,7 +105,7 @@ export const CalculatorModal = ({
     onClose();
   };
 
-  const submit = async () => {
+  const submit = React.useCallback(async () => {
     setScreenTransition({ axis: "x", direction: 1 });
     dispatch({ type: "startLoading" });
     const [result] = await Promise.all([
@@ -118,7 +119,26 @@ export const CalculatorModal = ({
     }
 
     dispatch({ type: "calculationSucceeded", response: result });
-  };
+  }, [dispatch, state.products, submissionService]);
+
+  const isNoConsumptionSelection =
+    state.products.length === 1 && state.products[0]?.name === "none";
+
+  React.useEffect(() => {
+    if (
+      state.step !== CalculatorStep.Selection ||
+      !isNoConsumptionSelection ||
+      state.calculationResponse !== null
+    ) {
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      void submit();
+    }, NO_CONSUMPTION_SUBMIT_DELAY_MS);
+
+    return () => clearTimeout(timeoutId);
+  }, [isNoConsumptionSelection, state.step, state.calculationResponse, submit]);
 
   const next = () => {
     setScreenTransition({
@@ -174,7 +194,7 @@ export const CalculatorModal = ({
             transition
             className="relative flex flex-col h-dvh max-h-dvh w-full pt-[calc(1.5rem_+_env(safe-area-inset-top))] gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
-            <div className="grid shrink-0 grid-cols-2 items-center gap-y-3 px-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-x-4 sm:gap-y-0">
+            <div className="flex justify-between items-center px-4 py-2">
               {state.step !== CalculatorStep.Selection && (
                 <div className="flex flex-col items-start gap-4">
                   <button
@@ -187,15 +207,10 @@ export const CalculatorModal = ({
                     {t("modal.back")}
                   </button>
                   {showProgress && (
-                    <div className="flex flex-col items-start gap-2">
-                      <CalculatorProgress
-                        completedProducts={completedProducts}
-                        totalProducts={state.products.length}
-                      />
-                      <p className="text-white text-xs">
-                        {t("modal.completionTime")}
-                      </p>
-                    </div>
+                    <CalculatorProgress
+                      completedProducts={completedProducts}
+                      totalProducts={state.products.length}
+                    />
                   )}
                 </div>
               )}
@@ -290,10 +305,12 @@ export const CalculatorModal = ({
                             }
                           />
                         </div>
-                        <NextButton
-                          disabled={!isNextButtonActive}
-                          onClick={next}
-                        />
+                        {!isNoConsumptionSelection && (
+                          <NextButton
+                            disabled={!isNextButtonActive}
+                            onClick={next}
+                          />
+                        )}
                       </div>
                     )}
                     {(state.step === CalculatorStep.Frequency ||

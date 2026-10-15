@@ -5,6 +5,7 @@ import {
   render,
   screen,
   waitFor,
+  waitForElementToBeRemoved,
 } from "@testing-library/react";
 
 import type { CalculatorSubmissionService } from "@/lib/calculator/submission";
@@ -74,6 +75,16 @@ const questions = [
       },
     ],
   },
+];
+const noneQuestions = [
+  {
+    ...questions[0],
+    options: [
+      ...questions[0].options,
+      { name: "none", label: "Je ne consomme pas de saumon", prefix: "" },
+    ],
+  },
+  questions[1],
 ];
 
 describe("CalculatorModal", () => {
@@ -179,6 +190,76 @@ describe("CalculatorModal", () => {
         expect.objectContaining({ products: expect.any(Array) }),
       );
     });
+  });
+
+  it("submits none after one second and allows going back through summary to selection", async () => {
+    jest.useFakeTimers();
+    const submissionService = jest
+      .fn<CalculatorSubmissionService>()
+      .mockResolvedValue({
+        totalConsoInKg: 0,
+        consoPerProduct: {},
+        impact: "neutral",
+      });
+    render(
+      <CalculatorModal
+        open
+        questions={noneQuestions}
+        onClose={jest.fn()}
+        submissionService={submissionService}
+      />,
+    );
+
+    fireEvent.click(
+      screen.getByRole("checkbox", {
+        name: "Je ne consomme pas de saumon",
+      }),
+    );
+
+    expect(submissionService).not.toHaveBeenCalled();
+    expect(screen.queryByRole("button", { name: "modal.next" })).toBeNull();
+    await act(() => jest.advanceTimersByTimeAsync(999));
+    expect(submissionService).not.toHaveBeenCalled();
+
+    await act(() => jest.advanceTimersByTimeAsync(1));
+    expect(submissionService).toHaveBeenCalledWith({
+      products: [expect.objectContaining({ name: "none" })],
+    });
+    expect(screen.queryByText("modal.questions.1.title")).toBeNull();
+    expect(screen.queryByText("sumUp.title")).toBeNull();
+
+    await act(() => jest.advanceTimersByTimeAsync(4000));
+    jest.useRealTimers();
+    await waitFor(() => {
+      expect(screen.getAllByText("result.title").length).toBeGreaterThan(0);
+    });
+
+    fireEvent.click(screen.getByRole("backbutton"));
+    expect(await screen.findByText("sumUp.title")).not.toBeNull();
+    const summaryTitle = screen.getByText("sumUp.title");
+    fireEvent.click(screen.getByRole("backbutton"));
+    await waitForElementToBeRemoved(summaryTitle, { timeout: 5000 });
+    const noneCheckbox = await screen.findByRole(
+      "checkbox",
+      { name: "Je ne consomme pas de saumon" },
+      { timeout: 5000 },
+    );
+    expect((noneCheckbox as HTMLInputElement).checked).toBe(true);
+    expect(screen.queryByRole("radio")).toBeNull();
+
+    jest.useFakeTimers();
+    await act(() => jest.advanceTimersByTimeAsync(1500));
+    expect(submissionService).toHaveBeenCalledTimes(1);
+    expect(
+      screen.getByRole("checkbox", {
+        name: "Je ne consomme pas de saumon",
+      }),
+    ).toBe(noneCheckbox);
+
+    fireEvent.click(noneCheckbox);
+    await act(() => jest.advanceTimersByTimeAsync(1000));
+    expect(submissionService).toHaveBeenCalledTimes(2);
+    await act(() => jest.advanceTimersByTimeAsync(4000));
   });
 
   it("shows the error screen when submission fails", async () => {

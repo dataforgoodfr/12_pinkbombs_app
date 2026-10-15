@@ -38,7 +38,7 @@ const CalculatorBlock = () => {
           <Calculator />
           <Button
             content={t("calculatorBlock.buttonCta")}
-            href="/calculator"
+            href="/pinkometer"
             type="regular"
             backgroundColor="bg-v2-pink"
             textColor="text-v2-blue"

@@ -1,17 +1,22 @@
 import clsx from "clsx";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 import React from "react";
+
+import { getLocalizedArticleSlug } from "@/lib/articles/slug";
 
 const AccordionCardButton = ({
   className,
   content,
   index,
+  id,
+  href,
   type = "internalRedirect",
-  href = "#",
 }: {
   index: number;
   className?: string;
+  id?: number;
   href?: string;
   content: JSX.Element | string;
   type:
@@ -21,9 +26,18 @@ const AccordionCardButton = ({
     | "externalRedirect"
     | "download";
 }) => {
+  const locale = useLocale();
   if (!content) {
     return <></>;
   }
+  const slug = id
+    ? getLocalizedArticleSlug(id, locale === "fr" ? "fr" : "en")
+    : "";
+  const link =
+    href ??
+    (locale === "en"
+      ? `/en/to-be-inspired/${slug}`
+      : `/${locale}/s-inspirer/${slug}`);
   return (
     <Link
       className={clsx(
@@ -31,7 +45,8 @@ const AccordionCardButton = ({
         className,
         index === 0 ? "bg-v2-pink" : "bg-white",
       )}
-      href={href}
+      target="_blank"
+      href={link}
     >
       {content}
       {(type === "internalRedirect" || type === "internalArticle") && (

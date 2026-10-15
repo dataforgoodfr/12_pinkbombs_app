@@ -20,9 +20,14 @@ jest.mock("next-intl", () => ({
       if (key === "reduceImpact.step4.falseFriend") return "False friend";
       return key;
     }) as MockTranslate;
-    translate.has = (key) => key === "reduceImpact.step4.info.fishOil";
-    translate.raw = (key) =>
-      key === "labels"
+    translate.has = (key) =>
+      key === "reduceImpact.step4.info.fishOil" ||
+      key === "badges.neutral.width" ||
+      key === "badges.neutral.height";
+    translate.raw = (key) => {
+      if (key === "badges.neutral.width") return 212;
+      if (key === "badges.neutral.height") return 361;
+      return key === "labels"
         ? [
             { label: "neutral", text: "Neutral", color: "green" },
             { label: "low", text: "Low", color: "yellow" },
@@ -31,13 +36,32 @@ jest.mock("next-intl", () => ({
             { label: "veryHigh", text: "Very High", color: "black" },
           ]
         : [];
+    };
     return translate;
   },
 }));
 
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: () => null,
+  default: ({
+    src,
+    alt,
+    width,
+    height,
+  }: {
+    src?: string;
+    alt?: string;
+    width?: number;
+    height?: number;
+  }) => (
+    <span
+      role="img"
+      aria-label={alt}
+      data-src={src}
+      data-width={width}
+      data-height={height}
+    />
+  ),
 }));
 
 jest.mock("../DesktopImpactPanel", () => ({
@@ -46,7 +70,7 @@ jest.mock("../DesktopImpactPanel", () => ({
 
 jest.mock("../../v2/Calculator", () => ({
   __esModule: true,
-  default: () => null,
+  default: () => <div data-testid="impact-calculator" />,
 }));
 
 import { ReduceImpactSection } from "../ReduceImpactSection";
@@ -103,5 +127,63 @@ describe("ReduceImpactSection Step 4 info", () => {
 
     expect(screen.queryByRole("tooltip")).toBeNull();
     expect(infoButton).toHaveAttribute("aria-expanded", "false");
+  });
+});
+
+describe("ReduceImpactSection no-consumption result", () => {
+  it("shows the newsletter area directly and unlocks the neutral badge without engagement content", () => {
+    render(
+      <ReduceImpactSection
+        questions={[]}
+        response={response}
+        products={[{ name: "none", label: "No salmon", variants: [] }]}
+        submissionService={async () => response}
+        reduceImpact={{
+          activeAccordionIndex: 0,
+          selectedProductKey: null,
+          replacementFrequencyPerYear: null,
+          selectedAlternative: null,
+          selectedSupplement: null,
+        }}
+        onSelectProduct={() => {}}
+        onFrequencyChange={() => {}}
+        onConfirmFrequency={() => {}}
+        onSelectAlternative={() => {}}
+        onSelectSupplement={() => {}}
+        onSetActiveAccordion={() => {}}
+        onNewsletterInvalidEmail={() => {}}
+        onNewsletterSuccess={() => {}}
+        onNewsletterError={() => {}}
+      />,
+    );
+
+    expect(screen.getByText("badgeQuestions.title")).toBeInTheDocument();
+    expect(screen.getByText("reduceImpact.title")).toHaveClass("hidden");
+    expect(
+      screen.getByText("reduceImpact.step1.title").closest(".grid"),
+    ).toHaveClass("hidden");
+    expect(screen.queryByTestId("impact-calculator")).toBeNull();
+    expect(
+      screen.queryByRole("img", { name: "badges.neutral.title" }),
+    ).toBeNull();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: "badgeQuestions.button" }),
+    );
+
+    expect(
+      screen.getByRole("img", { name: "badges.neutral.title" }),
+    ).toHaveAttribute("data-src", "/site/images/calculator/badges/neutral.svg");
+    expect(
+      screen.getByRole("img", { name: "badges.neutral.title" }),
+    ).toHaveAttribute("data-width", "212");
+    expect(
+      screen.getByRole("img", { name: "badges.neutral.title" }),
+    ).toHaveAttribute("data-height", "361");
+    expect(
+      screen.getByRole("button", { name: "badgeQuestions.share" }),
+    ).toBeInTheDocument();
+    expect(screen.queryByText("engagements.impactEqual")).toBeNull();
+    expect(screen.queryByText("engagements.impactChanged")).toBeNull();
   });
 });

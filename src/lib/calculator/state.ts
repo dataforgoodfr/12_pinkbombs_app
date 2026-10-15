@@ -176,6 +176,9 @@ export const calculatorReducer = (
       }
       return { ...state, step: CalculatorStep.Summary };
     case "back":
+      if (state.step === CalculatorStep.Result) {
+        return { ...state, step: CalculatorStep.Summary };
+      }
       if (state.step === CalculatorStep.Error) {
         return {
           ...state,
@@ -184,6 +187,14 @@ export const calculatorReducer = (
         };
       }
       if (state.step === CalculatorStep.Summary) {
+        if (state.products.length === 1 && state.products[0]?.name === "none") {
+          return {
+            ...state,
+            step: CalculatorStep.Selection,
+            questionIndex: QUESTION_INDEX.ProductSelection,
+            productIndex: DEFAULT_PRODUCT_INDEX,
+          };
+        }
         const productIndex = Math.max(
           DEFAULT_PRODUCT_INDEX,
           state.products.length - 1,

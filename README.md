@@ -30,7 +30,7 @@ Run the followed command:
 - Launch Prettier: `yarn format:check`
 - Launch Jest: `yarn test`
 
-The calculator has focused reducer tests and a rendered modal-flow regression
+The calculator (Pinkometer) has focused reducer tests and a rendered modal-flow regression
 test covering product selection, frequency selection, summary, and loading.
 Run them with:
 
