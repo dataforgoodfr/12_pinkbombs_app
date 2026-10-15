@@ -169,6 +169,16 @@ function ArticleBlockView({ block }: { block: ArticleContentBlock }) {
     );
   }
 
+  if (block.type === "list") {
+    return (
+      <ul className="my-5 list-disc space-y-3 pl-6 text-base leading-relaxed md:text-lg">
+        {block.items.map((item, index) => (
+          <li key={`${index}-${item}`}>{renderInlineText(item)}</li>
+        ))}
+      </ul>
+    );
+  }
+
   if (block.type === "youtube") {
     return (
       <div className="my-10 aspect-video overflow-hidden rounded-md">

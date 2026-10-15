@@ -1174,6 +1174,204 @@
             ]
           }
         ]
+      },
+      {
+        "id": 8,
+        "title": "L’équipe Seastemik mange-t-elle encore des saumons ?",
+        "summary": "Spoiler : non. Chacun·e à sa manière, chacun·e à son rythme, nous avons toustes réalisé que notre plus grand pouvoir pour construire un monde et un futur désirables résidait dans nos assiettes.",
+        "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
+        "heroImageAlt": "L’équipe Seastemik réunie",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On vous raconte quand, comment et pourquoi chacun·e a retiré les saumons de son assiette."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Six personnes dans l’équipe, six parcours différents pour arrêter de manger des saumons. Certain·es ont arrêté il y a vingt ans, d’autres récemment. Certain·es ont eu un déclic, d’autres ont eu besoin de temps."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esther, cofondatrice et codirectrice, partait de loin. Issue d’une famille de pêcheurs, elle a pris très jeune l’habitude de considérer les poissons comme de la nourriture. Mais une scène va tout changer. En 2013, elle est au Maroc avec des ami·es. Iels achètent des poissons frétillants pour leur déjeuner. Quelques minutes plus tard, elle ressent « le goût de la mort » dans sa bouche. Ce jour-là, elle comprend qu’elle préfère voir les poissons vivants plutôt que dans son assiette."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Quel a été le déclic ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour Maxime, cofondateur et codirecteur, la prise de conscience est venue lors d’une mission avec Sea Shepherd. En 2020, il se retrouve au large des côtes d’Afrique de l’Ouest et assiste à une pêche industrielle. « Ça a été un choc de voir ces bestioles marines remontées des filets, dont une bonne partie rejetée ensuite à la mer, mortes pour rien. » À son retour, il arrête complètement de manger des poissons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De son côté, Charlotte, responsable corporate, a petit à petit déconstruit son rapport aux animaux. Jusqu’à ce qu’un jour, devant un filet de sole, vienne le déclic. « Je ne voyais plus le filet, je voyais l’animal, son corps, la vie qui lui avait été prise. »"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour Fleur, directrice de communication, la transition vers une alimentation sans animaux s’est faite aussi progressivement, avec l’aide précieuse de sa femme, végane depuis près de quinze ans. Une rencontre qui lui a permis de découvrir une autre façon de cuisiner, mais surtout de remettre peu à peu ses habitudes en cohérence avec ses valeurs."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/1.jpg",
+            "alt": "Membres de l’équipe Seastemik"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marie, chargée de campagne, a commencé par réduire sa consommation de viande, à force d’entendre ses amies lui raconter à quel point les élevages intensifs détruisent les animaux et le monde qu’on partage avec eux. Après quelques recherches, elle est tombée sur des enquêtes sur l’élevage, la pêche et l’état de l’Océan. Depuis, pour elle, les poissons, c’est fini. Quelques années après son arrêt, un morceau de saumon gravlax lui faisait envie. Elle a fini par goûter. Verdict ? « J’ai eu l’impression d’avoir le Vieux-Port de Marseille à 7 heures du matin dans la bouche. » Depuis, c’est fini, fini."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quant à Diane, responsable de la communication numérique, elle n’a pas eu de déclic : elle a grandi dans une famille où les saumons ont tout simplement disparu de la table, après que son père a visionné un documentaire sur les impacts néfastes des élevages de poissons. Adulte, elle voit le documentaire coup de poing Seaspiracy d’Ali Tabrizi. Plus aucun doute : les saumons, c’est terminé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Et après, on mange quoi ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est souvent la première question quand on parle d’arrêter les saumons : mais concrètement, que mange-t-on à la place ? Notre réponse est unanime : bien plus qu’on ne l’imagine !"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Certain·es d’entre nous ont souhaité préserver leurs habitudes, comme Marie qui a testé des similis saumons, des options végétales censées reproduire la texture et le goût. « Les similis peuvent être une bonne passerelle pour arrêter », explique-t-elle, tout en insistant sur l’importance de se laisser du temps."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/2.jpg",
+            "alt": "Un repas partagé par des membres de l’équipe Seastemik"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour d’autres, ce fut l’occasion d’ouvrir leurs horizons culinaires. Charlotte s’est appuyée sur des recettes végétales qui reprenaient les codes de plats qu’elle aimait. Pour Fleur, le principal défi, c’étaient les sushis. Mais en arrêtant de commander « le menu saumon », elle a découvert des plats et des saveurs qu’elle n’aurait probablement jamais choisis avant."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Même chose pour Esther, qui aime toujours autant les saveurs iodées. Elle s’est mise à explorer d’autres façons de les retrouver, notamment à travers des cuisines et des ingrédients moins familiers."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Et les repas de fêtes, alors ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Soyons honnêtes, les saumons ont la fâcheuse tendance à réapparaître dans les assiettes dès qu’il y a un repas de fête en famille ou entre ami·es."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Plusieurs membres de l’équipe ont dû apprendre à composer. Marie a trouvé sa technique. Hors de question de demander à ses proches de cuisiner quelque chose de différent pour elle, alors elle s’est mise à cuisiner pour les fêtes. « Je me débrouille toujours pour cuisiner des plats qui font saliver toute la table. »"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Que ce soit avec la famille, les ami·es ou les amantes, Diane préfère discuter en amont pour trouver une solution qui convienne à tout le monde."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Et Charlotte rappelle qu’il est aussi important de savoir poser ses limites : on peut expliquer ses choix, mais on n’est pas obligé·e de devenir l’ambassadeur·rice de la transition alimentaire à chaque repas de famille."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Alors, comment s’y mettre ?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Il n’y a pas de méthode unique. Certain·es préféreront commencer par un jour, puis une semaine ou un mois sans saumon. D’autres auront besoin d’un déclic et arrêteront d’un coup. Le plus important est de trouver une manière de faire qui puisse s’inscrire dans la durée. Voici quelques conseils de Seastemik :"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Se documenter.</strong> Pink Bombs est là pour ça. Il existe aussi des reportages comme « Le saumon, nouvel avatar de l’élevage industriel » (Arte, 2026), des documentaires comme Seaspiracy (Netflix, 2021) ou des livres comme Un poison nommé saumon de Maxime Carsel (Broché, 2025).",
+              "<strong>Commencer par comprendre ce qui vous retient.</strong> Le goût ? La texture ? Les habitudes ? Les repas de famille ? Les questions nutritionnelles ? À chaque frein, sa solution.",
+              "<strong>S’entourer.</strong> En parler avec des proches, cuisiner ensemble, partager des recettes ou se lancer des petits défis à plusieurs peut vraiment faciliter la transition. Comme le résume Esther : « S’informer, parler de vos questionnements à votre entourage » et, pourquoi pas, « se fixer des challenges de périodes sans saumons avec des potes ».",
+              "<strong>Et surtout, miser sur le plaisir.</strong> Tester de nouvelles recettes, découvrir de nouveaux ingrédients, retrouver les saveurs iodées autrement, faire goûter ses plats autour de soi… Pour Charlotte, il s’agit de « s’ouvrir à de nouveaux plats, en élargissant son répertoire culinaire », plutôt que de voir l’arrêt comme une contrainte."
+            ]
+          }
+        ]
       }
     ]
   }
