@@ -27,8 +27,9 @@ export type NavItemsProps = {
 const Navbar = () => {
   const t = useTranslations("site.layout");
   const pathname = usePathname();
-  const localePathname =
+  const navPathname =
     pathname === "/to-be-inspired/[slug]" ? "/to-be-inspired" : pathname;
+  const localePathname = navPathname;
   const locale = useLocale();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -99,7 +100,7 @@ const Navbar = () => {
             <Link
               className={clsx(
                 "flex transition-colors ease-in-out duration-200 group",
-                item.link === pathname
+                item.link === navPathname
                   ? getColor() === "blue"
                     ? "navbar-active-blue"
                     : "navbar-active-pink"
@@ -108,7 +109,7 @@ const Navbar = () => {
                 "hover:text-v2-magenta",
               )}
               href={item.link as basePathType}
-              aria-current={item.link === pathname ? "page" : undefined}
+              aria-current={item.link === navPathname ? "page" : undefined}
               key={`nav-${key}`}
             >
               {item.link === "/calculator" && (
@@ -234,14 +235,14 @@ const Navbar = () => {
                   className={clsx(
                     "uppercase font-black text-xl flex items-center mr-auto",
                     getColor() === "blue" ? "text-v2-blue" : "text-v2-pink",
-                    item.link === pathname
+                    item.link === navPathname
                       ? getColor() === "blue"
                         ? "navbar-active-blue"
                         : "navbar-active-pink"
                       : "",
                   )}
                   href={item.link as basePathType}
-                  aria-current={item.link === pathname ? "page" : undefined}
+                  aria-current={item.link === navPathname ? "page" : undefined}
                   key={`mobile-nav-${key}`}
                   onClick={closeMobileMenu}
                 >
