@@ -693,6 +693,164 @@
             ]
           }
         ]
+      },
+      {
+        "id": 5,
+        "title": "5 alternatives aux saumons qui changent (déjà) la donne",
+        "summary": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
+        "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageAlt": "Carottes fumées sur une tartine, une alternative végétale au saumon fumé",
+        "relatedArticleIds": [2],
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. La carotte fumée, un grand classique"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/hero.jpg",
+            "alt": "Carottes fumées sur une tartine avec de l’aneth"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En quelques années, elle s’est imposée comme l’une des alternatives les plus connues au saumon fumé. Les raisons ? Sa couleur, bien sûr, sa texture fondante une fois cuisinée et surtout sa capacité à absorber les marinades. Miam."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Commencez par couper vos carottes en (très) fines lamelles. Faites-les tremper dans un bon bain de sauce soja agrémenté de citron, d’aneth, de sel fumé au bois de hêtre ou d’algues. Gardez le tout au frais pendant au moins 24 heures et amusez-vous à glisser ces lamelles sur une tartine, dans un bagel ou sur des blinis. Miam miam."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. La pastèque, un fruit à sushis et à poké"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/2.jpg",
+            "alt": "Alternative végétale rôtie, servie avec des légumes"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Oui, oui, vous avez bien lu : une pastèque. Une fois découpée en tranches épaisses, marinée puis rôtie ou fumée, on s’y croirait. Selon la préparation, elle peut remplacer le saumon mais aussi le thon. Elle fonctionne particulièrement bien en sushis, en makis, en sashimi, en chirashi, en poké bowls ou en tartare. D’ailleurs, même les restaurants japonais s’y mettent."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Taillez la pastèque en petits rectangles. Préparez une marinade avec de la sauce soja, de l’huile de sésame, du vinaigre de riz et des miettes d’algues nori. Déposez-y les morceaux de pastèque et laissez-les mariner au moins deux heures au réfrigérateur. Égouttez-les, puis préchauffez votre four à 180 °C. Enfournez-les sur une plaque pendant 30 à 45 minutes. Laissez-les complètement refroidir et déposez ces bijoux sur du riz vinaigré. Vos sushis végétaux sont prêts !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Le fauxmon, un vrai faux-semblant"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/1.png",
+            "alt": "Gros plan sur une alternative végétale au saumon"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Peut-être l’avez-vous déjà aperçu dans vos magasins. Le fauxmon, contraction de « faux » et « saumon », est une version végétale censée reproduire au plus près l’apparence, la texture et les parfums du saumon. Il existe en filet, en cubes et en version fumée. Selon les marques, le résultat est plus ou moins réussi. Il est destiné aux personnes qui veulent réduire leur consommation de poisson sans renoncer à leurs habitudes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À retenir :</strong> Si vous cherchez un fauxmon fumé réussi, Marie Laforêt, star de la cuisine végétale en France et autrice du livre « Seafood Vegan » (Solar, 2026), conseille de privilégier les fauxmons fumés aux arômes de bois de hêtre."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Les algues, les super-aliments de l’Océan"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/3.jpg",
+            "alt": "Préparations végétales aux algues et tartines à partager"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Si ce que l’on recherche dans le saumon, c’est le goût iodé et les oméga-3, pourquoi ne pas aller directement à la source ? Nori, dulse, wakamé, laitue de mer : les algues apportent une touche marine à de très nombreux plats. En paillettes ou en feuille, elles sont particulièrement intéressantes associées à des ingrédients neutres comme le tofu, les haricots blancs ou le riz."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Émiettez du tofu dans un grand bol, ajoutez des haricots blancs et écrasez-les à la fourchette. Saupoudrez le tout d’algues en paillettes, versez un peu d’huile d’olive et un jus de citron, puis ajoutez une pincée de sel et de poivre. Mélangez bien et mettez au réfrigérateur au moins deux heures avant de déguster ces rillettes sur une tartine de pain grillé."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Et si la meilleure alternative était une toute nouvelle recette ?"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/4.png",
+            "alt": "Assortiment de plats végétaux inspirés de la cuisine de la mer"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "C’est peut-être l’alternative la plus intéressante de toutes. Au lieu de chercher à tout prix l’équivalent végétal du saumon, on peut aussi profiter de cette transition pour découvrir d’autres ingrédients et d’autres associations. La cuisine végétale ne consiste pas seulement à remplacer un ingrédient par un autre. Elle peut aussi ouvrir de nouveaux horizons culinaires et permettre de (ré)inventer des classiques."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>À tester :</strong> Découvrez les recettes de livres comme « Cuisine vegan petit budget » de Marie Laforêt (éd. Solar), « Plats veggie du monde » de Stéphanie de Turckheim (éd. Hachette) et « Ma cuisine vegan pour tous les jours » de Stéphanie Tresch Medici (éd. La Plage)."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pour aller plus loin"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Seastemik a rencontré Marie Laforêt, star de la cuisine végétale. À l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan » (Solar, 2026), elle nous raconte son parcours et partage ses astuces pour se passer des saumons dans nos assiettes."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -691,6 +691,164 @@
             ]
           }
         ]
+      },
+      {
+        "id": 5,
+        "title": "5 salmon alternatives that are already changing the game",
+        "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
+        "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageAlt": "Smoked carrot on toast, a plant-based alternative to smoked salmon",
+        "relatedArticleIds": [2],
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Smoked carrot, a modern classic"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/hero.jpg",
+            "alt": "Smoked carrot on toast with dill"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In just a few years, it has become one of the best-known alternatives to smoked salmon. Why? Its color, of course, its tender texture when cooked, and above all its ability to absorb marinades. Delicious."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Start by slicing carrots into very thin ribbons. Soak them in a generous bath of soy sauce with lemon, dill, and either beechwood-smoked salt or seaweed. Refrigerate for at least 24 hours, then enjoy the ribbons on toast, in a bagel, or on blinis. Delicious!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Watermelon, a fruit for sushi and poke"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/2.jpg",
+            "alt": "A roasted plant-based alternative served with vegetables"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Yes, you read that right: watermelon. Cut into thick slices, marinated, then roasted or smoked, it can be surprisingly convincing. Depending on how it is prepared, it can replace salmon and even tuna. It works especially well in sushi, maki, sashimi, chirashi, poke bowls, or tartare. Japanese restaurants are getting in on it, too."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Cut the watermelon into small rectangles. Make a marinade with soy sauce, sesame oil, rice vinegar, and crumbled nori. Add the watermelon and leave it to marinate in the refrigerator for at least two hours. Drain the pieces and preheat the oven to 180°C. Bake on a tray for 30 to 45 minutes. Let them cool completely, then place these little gems on seasoned sushi rice. Your plant-based sushi is ready!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Fauxmon, a convincing fake salmon"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/1.png",
+            "alt": "Close-up of a plant-based salmon alternative"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "You may have seen it in stores. Fauxmon, a blend of “fake” and “salmon,” is a plant-based product designed to mimic salmon’s appearance, texture, and flavor as closely as possible. It comes as fillets, cubes, and smoked slices. Results vary by brand. It is aimed at people who want to eat less fish without giving up familiar foods."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Worth remembering:</strong> For a good smoked fauxmon, Marie Laforêt, a leading voice in plant-based cooking in France and author of Seafood Vegan (Solar, 2026), recommends choosing versions flavored with beechwood smoke."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Seaweed, the ocean’s superfood"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/3.jpg",
+            "alt": "Seaweed spreads and toast prepared for sharing"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "If what we want from salmon is an ocean flavor and omega-3s, why not go straight to the source? Nori, dulse, wakame, and sea lettuce add a marine touch to all kinds of dishes. As flakes or sheets, they work especially well with neutral ingredients such as tofu, white beans, or rice."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Crumble tofu into a large bowl, add white beans, and mash them with a fork. Sprinkle with seaweed flakes, add a little olive oil and lemon juice, then season with salt and pepper. Mix well and chill for at least two hours before serving the rillettes on toasted bread."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. What if the best alternative were a whole new recipe?"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/4.png",
+            "alt": "An assortment of plant-based dishes inspired by seafood"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This may be the most interesting alternative of all. Instead of searching at all costs for a plant-based equivalent to salmon, we can use this transition to discover new ingredients and combinations. Plant-based cooking is not just about replacing one ingredient with another. It can open up new culinary horizons and help us reinvent familiar classics."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Explore cookbooks such as Cuisine vegan petit budget by Marie Laforêt (Solar), Plats veggie du monde by Stéphanie de Turckheim (Hachette), and Ma cuisine vegan pour tous les jours by Stéphanie Tresch Medici (La Plage)."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Read more"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan (Solar, 2026), she shares her story and tips for leaving salmon off our plates."
+              }
+            ]
+          }
+        ]
       }
     ]
   }
