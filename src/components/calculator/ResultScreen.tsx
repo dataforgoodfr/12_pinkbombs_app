@@ -95,15 +95,19 @@ export const ResultScreen = ({
             </p>
           </div>
           <Calculator label={response.impact} />
-        </div>
-        <Image
-          loading="lazy"
-          src="/site/images/calculator/divider-reduce-impact-section.svg"
-          width={1278}
-          height={0}
-          alt="Divider"
-          className="hidden md:block h-auto w-full object-cover px-20"
-        />
+        </div> 
+        {
+          response.impact !== "neutral" && (
+            <Image
+              loading="lazy"
+              src="/site/images/calculator/divider-reduce-impact-section.svg"
+              width={1278}
+              height={0}
+              alt="Divider"
+              className="hidden md:block h-auto w-full object-cover px-20"
+            />
+          )
+        }
         <ReduceImpactSection
           questions={questions}
           response={response}

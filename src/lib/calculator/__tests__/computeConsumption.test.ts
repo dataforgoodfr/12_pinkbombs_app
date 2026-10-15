@@ -30,6 +30,18 @@ describe("getImpactLevel", () => {
 });
 
 describe("computeConsumption", () => {
+  it("returns a neutral result for no consumption without a frequency", () => {
+    const result = computeConsumption([
+      { name: "none", label: "No salmon", variants: [] },
+    ]);
+
+    expect(result).toEqual({
+      totalConsoInKg: 0,
+      consoPerProduct: {},
+      impact: "neutral",
+    });
+  });
+
   it("computes weight for a product without variants (pokeBowl, semiWeekly)", () => {
     const products: UserProductConsumption[] = [
       {

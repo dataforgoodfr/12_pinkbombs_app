@@ -223,23 +223,33 @@
       "engagement": "I aim for a frequency of {newFrequency} a year of {dish} instead of {oldFrequency} a year. I replace with {alternative} whenever possible. I supplement with omega-3 using {supplement}.",
       "neutral": {
         "title": "Super salmon",
-        "caption": "Wow, well done! You are right at the beginning of becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!"
+        "caption": "Wow, well done! You are right at the beginning of becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!",
+        "width": 212,
+        "height": 361
       },
       "low": {
         "title": "Great salmon",
-        "caption": "Congratulations, you are on your way to becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!"
+        "caption": "Congratulations, you are on your way to becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!",
+        "width": 564,
+        "height": 158
       },
       "medium": {
         "title": "Teen Salmon (smolt)",
-        "caption": "Well done! You are well on your way, a smolt as scientists say, and probably, if ambition accompanies you in this little transformation: a very large salmon!"
+        "caption": "Well done! You are well on your way, a smolt as scientists say, and probably, if ambition accompanies you in this little transformation: a very large salmon!",
+        "width": 422,
+        "height": 135
       },
       "high": {
         "title": "Baby salmon",
-        "caption": "You are a salmon alevin, you successfully hatched. Not bad at all! Now you will have to be brave to hold on until the end. Hang in there, we need salmon like you."
+        "caption": "You are a salmon alevin, you successfully hatched. Not bad at all! Now you will have to be brave to hold on until the end. Hang in there, we need salmon like you.",
+        "width": 193,
+        "height": 128
       },
       "veryHigh": {
         "title": "Salmon seed",
-        "caption": "Like a salmon egg on the gravel of a mountain river, you can become a beautiful salmon, but for that, the road will be long, you will have to double your efforts to reach the next level!"
+        "caption": "Like a salmon egg on the gravel of a mountain river, you can become a beautiful salmon, but for that, the road will be long, you will have to double your efforts to reach the next level!",
+        "width": 304,
+        "height": 101
       }
     },
     "error": {

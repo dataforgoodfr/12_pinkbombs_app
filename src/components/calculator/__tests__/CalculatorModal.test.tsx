@@ -75,6 +75,16 @@ const questions = [
     ],
   },
 ];
+const noneQuestions = [
+  {
+    ...questions[0],
+    options: [
+      ...questions[0].options,
+      { name: "none", label: "Je ne consomme pas de saumon", prefix: "" },
+    ],
+  },
+  questions[1],
+];
 
 describe("CalculatorModal", () => {
   afterEach(() => {
@@ -178,6 +188,49 @@ describe("CalculatorModal", () => {
       expect(submissionService).toHaveBeenCalledWith(
         expect.objectContaining({ products: expect.any(Array) }),
       );
+    });
+  });
+
+  it("submits the no-consumption answer after one second without frequency or summary", async () => {
+    jest.useFakeTimers();
+    const submissionService = jest
+      .fn<CalculatorSubmissionService>()
+      .mockResolvedValue({
+        totalConsoInKg: 0,
+        consoPerProduct: {},
+        impact: "neutral",
+      });
+    render(
+      <CalculatorModal
+        open
+        questions={noneQuestions}
+        onClose={jest.fn()}
+        submissionService={submissionService}
+      />,
+    );
+
+    fireEvent.click(
+      screen.getByRole("checkbox", {
+        name: "Je ne consomme pas de saumon",
+      }),
+    );
+
+    expect(submissionService).not.toHaveBeenCalled();
+    expect(screen.queryByRole("button", { name: "modal.next" })).toBeNull();
+    await act(() => jest.advanceTimersByTimeAsync(999));
+    expect(submissionService).not.toHaveBeenCalled();
+
+    await act(() => jest.advanceTimersByTimeAsync(1));
+    expect(submissionService).toHaveBeenCalledWith({
+      products: [expect.objectContaining({ name: "none" })],
+    });
+    expect(screen.queryByText("modal.questions.1.title")).toBeNull();
+    expect(screen.queryByText("sumUp.title")).toBeNull();
+
+    await act(() => jest.advanceTimersByTimeAsync(4000));
+    jest.useRealTimers();
+    await waitFor(() => {
+      expect(screen.getAllByText("result.title").length).toBeGreaterThan(0);
     });
   });
 

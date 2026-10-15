@@ -39,6 +39,7 @@ type ScreenTransition = {
 };
 
 const MIN_LOADING_DURATION_MS = 4000;
+const NO_CONSUMPTION_SUBMIT_DELAY_MS = 1000;
 
 const sleep = (durationMs: number) =>
   new Promise((resolve) => setTimeout(resolve, durationMs));
@@ -104,7 +105,7 @@ export const CalculatorModal = ({
     onClose();
   };
 
-  const submit = async () => {
+  const submit = React.useCallback(async () => {
     setScreenTransition({ axis: "x", direction: 1 });
     dispatch({ type: "startLoading" });
     const [result] = await Promise.all([
@@ -118,7 +119,22 @@ export const CalculatorModal = ({
     }
 
     dispatch({ type: "calculationSucceeded", response: result });
-  };
+  }, [dispatch, state.products, submissionService]);
+
+  const isNoConsumptionSelection =
+    state.products.length === 1 && state.products[0]?.name === "none";
+
+  React.useEffect(() => {
+    if (state.step !== CalculatorStep.Selection || !isNoConsumptionSelection) {
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      void submit();
+    }, NO_CONSUMPTION_SUBMIT_DELAY_MS);
+
+    return () => clearTimeout(timeoutId);
+  }, [isNoConsumptionSelection, state.step, submit]);
 
   const next = () => {
     setScreenTransition({
@@ -290,10 +306,12 @@ export const CalculatorModal = ({
                             }
                           />
                         </div>
-                        <NextButton
-                          disabled={!isNextButtonActive}
-                          onClick={next}
-                        />
+                        {!isNoConsumptionSelection && (
+                          <NextButton
+                            disabled={!isNextButtonActive}
+                            onClick={next}
+                          />
+                        )}
                       </div>
                     )}
                     {(state.step === CalculatorStep.Frequency ||

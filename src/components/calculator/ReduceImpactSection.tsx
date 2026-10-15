@@ -132,6 +132,7 @@ export const ReduceImpactSection = ({
   const selectedEntry = reduceImpact.selectedProductKey
     ? response.consoPerProduct[reduceImpact.selectedProductKey]
     : undefined;
+  const isNoConsumption = products.length === 1 && products[0]?.name === "none";
   const maxFrequency = selectedEntry?.occurrencePerYear ?? 1;
   const frequency = reduceImpact.replacementFrequencyPerYear ?? maxFrequency;
   const selectedAlternative = reduceImpact.selectedAlternative;
@@ -207,6 +208,15 @@ export const ReduceImpactSection = ({
   const engagementSupplement = selectedSupplement
     ? t(`engagements.supplements.${selectedSupplement}`)
     : "";
+  const badgeImpact = isNoConsumption ? response.impact : newResponse?.impact;
+  const getBadgeDimension = (dimension: "width" | "height") => {
+    if (!badgeImpact) return 640;
+
+    const key = `badges.${badgeImpact}.${dimension}`;
+    if (!t.has(key)) return 640;
+    const value = Number.parseInt(key, 10);
+    return Number.isNaN(value) ? 640 : value;
+  };
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
   const confirmEngagements = () => setEngagementsConfirmed(true);
 
@@ -262,10 +272,14 @@ export const ReduceImpactSection = ({
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="h1 text-pretty text-v2-pink text-center lg:text-left lg:pl-12 xl:w-[80%] 2xl:w-[60%] mx-auto">
+      <h1
+        className={`${isNoConsumption ? "hidden " : ""}h1 text-pretty text-v2-pink text-center lg:text-left lg:pl-12 xl:w-[80%] 2xl:w-[60%] mx-auto`}
+      >
         {t("reduceImpact.title")}
       </h1>
-      <div className="grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:pb-20 xl:w-[80%] 2xl:w-[60%] mx-auto">
+      <div
+        className={`${isNoConsumption ? "hidden " : ""}grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:pb-20 xl:w-[80%] 2xl:w-[60%] mx-auto`}
+      >
         <div className="flex flex-col gap-4 px-4 md:px-12">
           <AccordionItem
             title={t("reduceImpact.step1.title")}
@@ -691,7 +705,7 @@ export const ReduceImpactSection = ({
         </div>
       </div>
 
-      {newResponse && engagementsConfirmed && (
+      {(isNoConsumption || (newResponse && engagementsConfirmed)) && (
         <div className="w-full bg-v2-yellow text-v2-blue">
           <Image
             loading="lazy"
@@ -801,7 +815,7 @@ export const ReduceImpactSection = ({
               className="pointer-events-none absolute right-0 top-1/2 hidden h-auto w-[26%] max-w-[566px] -translate-y-1/2 xl:translate-y-0 xl:block"
             />
           </div>
-          {badgeVisible && (
+          {badgeVisible && badgeImpact && (
             <div
               ref={badgeRef}
               className="flex flex-col lg:bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16"
@@ -811,40 +825,44 @@ export const ReduceImpactSection = ({
               </h2>
               <div className="flex flex-col items-center gap-5 bg-white p-6 text-v2-blue rounded-xl mx-10 mb-10 py-20 px-6 md:px-12 lg:mx-auto lg:w-full lg:max-w-2xl">
                 <Image
-                  src={`/site/images/calculator/badges/${newResponse.impact}.svg`}
-                  alt={t(`badges.${newResponse.impact}.title`)}
-                  width={640}
-                  height={640}
+                  src={`/site/images/calculator/badges/${badgeImpact}.svg`}
+                  alt={t(`badges.${badgeImpact}.title`)}
+                  width={getBadgeDimension("width")}
+                  height={getBadgeDimension("height")}
                   className="h-auto w-full max-w-sm"
                 />
                 <h3 className="h3 text-center">
-                  {t(`badges.${newResponse.impact}.title`)}
+                  {t(`badges.${badgeImpact}.title`)}
                 </h3>
                 <p className="p-lead text-center">
-                  {t(`badges.${newResponse.impact}.caption`)}
+                  {t(`badges.${badgeImpact}.caption`)}
                 </p>
-                <Image
-                  loading="lazy"
-                  src="/site/images/calculator/divider-engagement.svg"
-                  width={460}
-                  height={0}
-                  alt="Divider"
-                  className="object-cover w-[50%] mx-auto"
-                />
-                <h4 className="h4 text-center">
-                  "
-                  {t(
-                    `engagements.${oldFrequency === frequency ? "impactEqual" : "impactChanged"}`,
-                    {
-                      newFrequency: frequency,
-                      oldFrequency,
-                      dish: engagementDish,
-                      alternative: engagementAlternative,
-                      supplement: engagementSupplement,
-                    },
-                  )}
-                  "
-                </h4>
+                {!isNoConsumption && (
+                  <>
+                    <Image
+                      loading="lazy"
+                      src="/site/images/calculator/divider-engagement.svg"
+                      width={460}
+                      height={0}
+                      alt="Divider"
+                      className="object-cover w-[50%] mx-auto"
+                    />
+                    <h4 className="h4 text-center">
+                      "
+                      {t(
+                        `engagements.${oldFrequency === frequency ? "impactEqual" : "impactChanged"}`,
+                        {
+                          newFrequency: frequency,
+                          oldFrequency,
+                          dish: engagementDish,
+                          alternative: engagementAlternative,
+                          supplement: engagementSupplement,
+                        },
+                      )}
+                      "
+                    </h4>
+                  </>
+                )}
                 <button
                   type="button"
                   onClick={() => {}}

@@ -225,23 +225,33 @@
       "engagement": "Je vise une fréquence de {newFrequency} par an de {dish} au lieu de {oldFrequency} par an. Je remplace par {alternative} quand c'est possible. Je me supplémente en oméga-3 avec {supplement}.",
       "neutral": {
         "title": "Super saumon.e",
-        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!"
+        "caption": "Alors là, bravo\u00a0! Vous êtes bien au début de devenir bien costaud.e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grande saumon.e d’Atlantique\u00a0!",
+        "width": 212,
+        "height": 361
       },
       "low": {
         "title": "Grand.e saumon.e",
-        "caption": "Félicitations, vous êtes en chemin pour devenir bien costaud·e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grand·e saumon·e d'Atlantique\u00a0!"
+        "caption": "Félicitations, vous êtes en chemin pour devenir bien costaud·e, probablement, si l’ambition vous accompagne dans cette petite transformation: un ou une très grand·e saumon·e d'Atlantique\u00a0!",
+        "width": 564,
+        "height": 158
       },
       "medium": {
         "title": "Saumon Ado (smolt)",
-        "caption": "Bravo\u00a0! Vous êtes bien en chemin, un·e smolt comme disent les scientifiques et probablement, si l'ambition vous accompagne dans cette petite transformation\u00a0: un ou une très grande saumon\u00a0!"
+        "caption": "Bravo\u00a0! Vous êtes bien en chemin, un·e smolt comme disent les scientifiques et probablement, si l'ambition vous accompagne dans cette petite transformation\u00a0: un ou une très grande saumon\u00a0!",
+        "width": 422,
+        "height": 135
       },
       "high": {
         "title": "Bébé saumon",
-        "caption": "Vous êtes un·e alevin·e de saumon·e, vous avez réussi l’éclosion. Pas mal du tout\u00a0! Il va maintenant falloir être courageux·se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon·e comme vous."
+        "caption": "Vous êtes un·e alevin·e de saumon·e, vous avez réussi l’éclosion. Pas mal du tout\u00a0! Il va maintenant falloir être courageux·se pour tenir jusqu’au bout. Accrochez vous, on a besoin de saumon·e comme vous.",
+        "width": 193,
+        "height": 128
       },
       "veryHigh": {
         "title": "Graine de saumon",
-        "caption": "Tel un oeuf de saumon·e sur le gravier d’une rivière de montagne, vous pouvez devenir d’être un beau ou une belle saumon·e, mais pour ça, la route va être longue, il faudra redoubler d’effort pour passer au niveau supérieur\u00a0! "
+        "caption": "Tel un oeuf de saumon·e sur le gravier d’une rivière de montagne, vous pouvez devenir d’être un beau ou une belle saumon·e, mais pour ça, la route va être longue, il faudra redoubler d’effort pour passer au niveau supérieur\u00a0! ",
+        "width": 304,
+        "height": 101
       }
     },
     "error": {
