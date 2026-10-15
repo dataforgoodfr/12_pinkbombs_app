@@ -36,7 +36,7 @@ const AccordionCardButton = ({
   const link =
     href ??
     (locale === "en"
-      ? `/to-be-inspired/${slug}`
+      ? `/en/to-be-inspired/${slug}`
       : `/${locale}/s-inspirer/${slug}`);
   return (
     <Link

@@ -18,16 +18,16 @@ jest.mock("next-intl", () => ({
         return "Fish oil comes from the same fisheries that feed farmed salmon.";
       }
       if (key === "reduceImpact.step4.falseFriend") return "False friend";
-      if (key === "badges.neutral.width") return "212";
-      if (key === "badges.neutral.height") return "361";
       return key;
     }) as MockTranslate;
     translate.has = (key) =>
       key === "reduceImpact.step4.info.fishOil" ||
       key === "badges.neutral.width" ||
       key === "badges.neutral.height";
-    translate.raw = (key) =>
-      key === "labels"
+    translate.raw = (key) => {
+      if (key === "badges.neutral.width") return 212;
+      if (key === "badges.neutral.height") return 361;
+      return key === "labels"
         ? [
             { label: "neutral", text: "Neutral", color: "green" },
             { label: "low", text: "Low", color: "yellow" },
@@ -36,6 +36,7 @@ jest.mock("next-intl", () => ({
             { label: "veryHigh", text: "Very High", color: "black" },
           ]
         : [];
+    };
     return translate;
   },
 }));

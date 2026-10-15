@@ -5,6 +5,7 @@ import {
   render,
   screen,
   waitFor,
+  waitForElementToBeRemoved,
 } from "@testing-library/react";
 
 import type { CalculatorSubmissionService } from "@/lib/calculator/submission";
@@ -235,15 +236,18 @@ describe("CalculatorModal", () => {
 
     fireEvent.click(screen.getByRole("backbutton"));
     expect(await screen.findByText("sumUp.title")).not.toBeNull();
-    jest.useFakeTimers();
+    const summaryTitle = screen.getByText("sumUp.title");
     fireEvent.click(screen.getByRole("backbutton"));
-    await act(() => jest.advanceTimersByTimeAsync(500));
-    const noneCheckbox = await screen.findByRole("checkbox", {
-      name: "Je ne consomme pas de saumon",
-    });
+    await waitForElementToBeRemoved(summaryTitle, { timeout: 5000 });
+    const noneCheckbox = await screen.findByRole(
+      "checkbox",
+      { name: "Je ne consomme pas de saumon" },
+      { timeout: 5000 },
+    );
     expect((noneCheckbox as HTMLInputElement).checked).toBe(true);
     expect(screen.queryByRole("radio")).toBeNull();
 
+    jest.useFakeTimers();
     await act(() => jest.advanceTimersByTimeAsync(1500));
     expect(submissionService).toHaveBeenCalledTimes(1);
     expect(

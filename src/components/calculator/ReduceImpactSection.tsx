@@ -214,8 +214,10 @@ export const ReduceImpactSection = ({
 
     const key = `badges.${badgeImpact}.${dimension}`;
     if (!t.has(key)) return 640;
-    const value = Number.parseInt(t(key), 10);
-    return Number.isNaN(value) ? 640 : value;
+    const value = t.raw(key);
+    return typeof value === "number" && Number.isInteger(value) && value > 0
+      ? value
+      : 640;
   };
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
   const confirmEngagements = () => setEngagementsConfirmed(true);

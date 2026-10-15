@@ -9,7 +9,7 @@ export const getSectionBackgroundClass = (pathname: string): string => {
   } else if (
     /^\/$/.test(pathname) ||
     /about/.test(pathname) ||
-    /calculator/.test(pathname)
+    /pinkometer/.test(pathname)
   ) {
     return "pink";
   } else {
@@ -23,7 +23,7 @@ export const getSectionColor = (pathname: string): SectionColor => {
     /to-act/.test(pathname) ||
     /to-be-inspired/.test(pathname) ||
     /about/.test(pathname) ||
-    /calculator/.test(pathname)
+    /pinkometer/.test(pathname)
   ) {
     return "blue";
   } else {
