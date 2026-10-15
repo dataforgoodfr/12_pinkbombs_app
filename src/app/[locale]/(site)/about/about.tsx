@@ -331,9 +331,22 @@ const StorySection = () => {
         <h2 className="h2 text-v2-blue text-pretty mb-8">{t("story.title")}</h2>
         <div className="bg-v2-blue flex flex-col px-4 lg:px-10 items-center gap-10 lg:flex-row rounded-xl">
           <p className="py-6 px-4 preserve-lines text-white ">
-            {t.rich("story.paragraph", {
+            <span>{t.rich("story.paragraphFirstPart", {
               strong: (chunks) => <strong>{chunks}</strong>,
-            })}
+            })}</span>{" "}
+            <span>
+              <a
+                href={t("story.paragraphUrl")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:font-semibold"
+              >
+                {t("story.paragraphLinkText")}
+            </a>. {" "}
+            </span>
+            <span>{t.rich("story.paragraphLastPart", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}</span>
           </p>
           <Image
             loading="lazy"

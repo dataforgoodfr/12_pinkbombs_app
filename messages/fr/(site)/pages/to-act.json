@@ -31,12 +31,12 @@
             },
             {
               "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
-              "url": "",
+              "id": 5,
               "type": "internalArticle"
             },
             {
               "cta": "Repeupler l’Océan\u00a0: ces associations qui font bouger les lignes",
-              "url": "",
+              "id": 10,
               "type": "internalArticle"
             }
           ]
@@ -47,18 +47,18 @@
           "actions": [
             {
               "cta": "Télécharger notre livre de recette",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
               "cta": "Les chef·fes qui réinventent la mer dans nos assiettes",
-              "url": "",
-              "type": "internalRedirect"
+              "id": 7,
+              "type": "internalArticle"
             },
             {
               "cta": "Manger la mer sans la vider\u00a0: le potentiel (méconnu) des algues",
-              "url": "",
-              "type": "internalRedirect"
+              "id": 5,
+              "type": "internalArticle"
             }
           ]
         },
@@ -73,12 +73,12 @@
             },
             {
               "cta": "Télécharger notre livre de recette",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
-              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changes déjà la donne",
-              "url": "",
+              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
+              "id": 5,
               "type": "internalArticle"
             }
           ]
@@ -89,17 +89,17 @@
           "actions": [
             {
               "cta": "Le saumon, symbole d’une industrie\u00a0: récit d’un poisson pas comme les autres",
-              "url": "",
+              "id":1,
               "type": "internalArticle"
             },
             {
               "cta": "Oméga 3\u00a0: faut-il vraiment manger du poisson pour être en bonne santé\u00a0?",
-              "url": "",
+              "id": 2,
               "type": "internalArticle"
             },
             {
               "cta": "5 idées reçues sur le poisson (et pourquoi elles sont fausses)",
-              "url": "",
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -119,7 +119,7 @@
           "actions": [
             {
               "cta": "Téléchargez nos recettes iodées",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {

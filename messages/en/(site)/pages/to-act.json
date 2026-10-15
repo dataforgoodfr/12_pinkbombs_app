@@ -31,12 +31,12 @@
             },
             {
               "cta": "Replacing salmon: 5 alternatives that are already game-changers",
-              "url": "",
+              "id": 5,
               "type": "internalArticle"
             },
             {
               "cta": "Repopulating the Ocean: the associations making a difference",
-              "url": "",
+              "id": 10,
               "type": "internalArticle"
             }
           ]
@@ -47,18 +47,18 @@
           "actions": [
             {
               "cta": "Download our recipe book",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
               "cta": "The chefs reinventing the sea on our plates",
-              "url": "",
+              "id": 7,
               "type": "internalRedirect"
             },
             {
               "cta": "Eating the sea without emptying it: the (little-known) potential of algae",
-              "url": "",
-              "type": "internalRedirect"
+              "id": 5,
+              "type": "internalArticle"
             }
           ]
         },
@@ -73,12 +73,12 @@
             },
             {
               "cta": "Download our recipe book",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
               "cta": "Replacing salmon: 5 alternatives that are already game-changers",
-              "url": "",
+              "id": 5,
               "type": "internalArticle"
             }
           ]
@@ -89,17 +89,17 @@
           "actions": [
             {
               "cta": "Salmon, symbol of an industry: the story of a fish like no other",
-              "url": "",
+              "id":1,
               "type": "internalArticle"
             },
             {
               "cta": "Omega 3: do you really need to eat fish to be healthy?",
-              "url": "",
+              "id": 2,
               "type": "internalArticle"
             },
             {
               "cta": "5 misconceptions about fish (and why they are wrong)",
-              "url": "",
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -119,7 +119,7 @@
           "actions": [
             {
               "cta": "Download our iodine-rich recipes",
-              "url": "",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {

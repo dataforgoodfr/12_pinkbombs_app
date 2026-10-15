@@ -12,6 +12,7 @@ export interface RecommendationProps {
 interface ActionProps {
   cta: string;
   url?: string;
+  id?: number;
   type:
     | "internalRedirect"
     | "externalRedirect"
@@ -93,6 +94,7 @@ const AccordionCard = ({
                 key={index}
                 index={index}
                 content={action.cta}
+                id={action.id}
                 href={action.url}
                 type={action.type}
               />

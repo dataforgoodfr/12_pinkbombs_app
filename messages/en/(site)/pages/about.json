@@ -109,7 +109,10 @@
     },
     "story": {
       "title": "Story",
-      "paragraph": "<strong>In 2024, we launched the first version of Pinkbombs, which had major media coverage and advanced the cause.</strong>\n\nOur data was exclusively used by the newspaper Le Monde to publish an article by Les Décodeurs on the impact of salmon farming. Link to the article here. Since then, the data has been relayed by numerous media outlets such as Bon Pote, Brut, France Inter, BFM, or the TF1 1pm news, thus raising collective awareness about the impacts of the salmon industry.",
+      "paragraphFirstPart": "<strong>In 2024, we launched the first version of Pinkbombs, which had major media coverage and advanced the cause.</strong>\n\nOur data was exclusively used by the newspaper Le Monde to publish an article by Les Décodeurs on the impact of salmon farming.",
+      "paragraphLastPart": "Since then, the data has been relayed by numerous media outlets such as Bon Pote, Brut, France Inter, BFM, or the TF1 1pm news, thus raising collective awareness about the impacts of the salmon industry.",
+      "paragraphUrl": "https://www.lemonde.fr/les-decodeurs/article/2024/10/14/l-elevage-intensif-de-saumon-une-bombe-ecologique-et-sociale-en-huit-chiffres_6351402_4355770.html",
+      "paragraphLinkText": "Read the article",
       "imageAlt": "Image of a phone with media apps"
     },
     "mediaLogosAlt": {
