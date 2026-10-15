@@ -55,10 +55,10 @@ describe("computeConsumption", () => {
 
     const result = computeConsumption(products);
 
-    // 2 occurrences * 52 weeks * 150g = 15600g = 15.6kg
-    expect(result.consoPerProduct.pokeBowl.weightInKg).toBeCloseTo(15.6);
+    // 2 occurrences * 52 weeks * 300g = 31200g = 31.2kg
+    expect(result.consoPerProduct.pokeBowl.weightInKg).toBeCloseTo(31.2);
     expect(result.consoPerProduct.pokeBowl.occurrencePerYear).toBe(104);
-    expect(result.totalConsoInKg).toBeCloseTo(15.6);
+    expect(result.totalConsoInKg).toBeCloseTo(31.2);
     expect(result.impact).toBe("veryHigh");
   });
 
@@ -79,11 +79,11 @@ describe("computeConsumption", () => {
 
     const result = computeConsumption(products);
 
-    // 2 occurrences * 12 months * 12 * 6.67g = 1920.96g = 1.92096kg
-    expect(result.consoPerProduct.maki.weightInKg).toBeCloseTo(1.92096, 4);
+    // 2 occurrences * 12 months * 12 * 13.3g = 3830.4g = 3.8304kg
+    expect(result.consoPerProduct.maki.weightInKg).toBeCloseTo(3.8304, 4);
     expect(result.consoPerProduct.maki.occurrencePerYear).toBe(24);
-    // 2 occurrences * 12 months * 6 * 17.5g = 2520g = 2.52kg
-    expect(result.consoPerProduct.nigiri.weightInKg).toBeCloseTo(2.52, 4);
+    // 2 occurrences * 12 months * 6 * 35g = 5040g = 5.04kg
+    expect(result.consoPerProduct.nigiri.weightInKg).toBeCloseTo(5.04, 4);
     expect(result.consoPerProduct.nigiri.occurrencePerYear).toBe(24);
     expect(result.consoPerProduct.sashimi).toBeUndefined();
     expect(result.consoPerProduct.sushi).toBeUndefined();
@@ -102,8 +102,8 @@ describe("computeConsumption", () => {
 
     const result = computeConsumption(products);
 
-    // 1 * 52 * 3 * 30g = 4680g = 4.68kg
-    expect(result.consoPerProduct.smokedSalmon.weightInKg).toBeCloseTo(4.68);
+    // 1 * 52 * 3 * 115.2g = 17971.2g = 17.9712kg
+    expect(result.consoPerProduct.smokedSalmon.weightInKg).toBeCloseTo(17.9712);
     expect(result.consoPerProduct.smokedSalmon.occurrencePerYear).toBe(52);
   });
 
@@ -121,8 +121,8 @@ describe("computeConsumption", () => {
 
     const result = computeConsumption(products);
 
-    // 5 * 1 * 26g = 130g = 0.13kg
-    expect(result.consoPerProduct.appetizer.weightInKg).toBeCloseTo(0.13);
+    // 5 * 1 * 99.8g = 499g = 0.499kg
+    expect(result.consoPerProduct.appetizer.weightInKg).toBeCloseTo(0.499);
   });
 
   it("sorts consoPerProduct descending by value and sums totalConsoInKg", () => {

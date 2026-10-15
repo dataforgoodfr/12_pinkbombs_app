@@ -214,7 +214,7 @@ export const ReduceImpactSection = ({
 
     const key = `badges.${badgeImpact}.${dimension}`;
     if (!t.has(key)) return 640;
-    const value = Number.parseInt(key, 10);
+    const value = Number.parseInt(t(key), 10);
     return Number.isNaN(value) ? 640 : value;
   };
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;

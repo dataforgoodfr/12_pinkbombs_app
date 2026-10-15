@@ -246,9 +246,11 @@ describe("CalculatorModal", () => {
 
     await act(() => jest.advanceTimersByTimeAsync(1500));
     expect(submissionService).toHaveBeenCalledTimes(1);
-    expect(screen.getByRole("checkbox", {
-      name: "Je ne consomme pas de saumon",
-    })).toBe(noneCheckbox);
+    expect(
+      screen.getByRole("checkbox", {
+        name: "Je ne consomme pas de saumon",
+      }),
+    ).toBe(noneCheckbox);
 
     fireEvent.click(noneCheckbox);
     await act(() => jest.advanceTimersByTimeAsync(1000));
