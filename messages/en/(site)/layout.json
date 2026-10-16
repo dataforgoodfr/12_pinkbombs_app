@@ -1,6 +1,13 @@
 {
   "layout": {
     "top": "Back to top",
+    "analyticsConsent": {
+      "title": "Help improve Pinkbombs?",
+      "description": "With your permission, we use Matomo analytics to understand how this site is used. You can change your choice at any time in the footer.",
+      "accept": "Allow analytics",
+      "reject": "Reject analytics",
+      "preferences": "Analytics settings"
+    },
     "nav": {
       "title": "main",
       "home": "Home",

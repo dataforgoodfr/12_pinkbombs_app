@@ -4,6 +4,7 @@ import * as React from "react";
 import "@/styles/site/styles.css";
 
 import Footer from "@/components/v2/layout/Footer";
+import { MatomoConsentProvider } from "@/components/v2/layout/MatomoConsent";
 import Navbar from "@/components/v2/layout/Navbar";
 import SectionBackground from "@/components/v2/layout/SectionBackground";
 
@@ -52,14 +53,16 @@ export default async function V2Layout({
 }: {
   children: React.ReactNode;
 }) {
+  const isProductionDeployment = process.env.VERCEL_ENV === "production";
+
   return (
-    <>
+    <MatomoConsentProvider isProduction={isProductionDeployment}>
       <SectionBackground />
       <Navbar />
       <main className="overflow-x-clip pt-[calc(88px_+_env(safe-area-inset-top))] lg:pt-[calc(104px_+_env(safe-area-inset-top))]">
         {children}
       </main>
       <Footer />
-    </>
+    </MatomoConsentProvider>
   );
 }
