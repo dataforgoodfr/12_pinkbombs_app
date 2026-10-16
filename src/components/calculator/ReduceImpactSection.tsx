@@ -807,7 +807,7 @@ export const ReduceImpactSection = ({
 
       {(isNoConsumption || (newResponse && engagementsConfirmed)) && (
         <div className="w-full text-v2-blue">
-          <div hidden={badgeVisible} className="bg-v2-yellow">
+          <div hidden={badgeVisible} className="bg-v2-yellow overflow-hidden">
             <Image
               loading="lazy"
               src="/site/images/calculator/divider-badge.svg"
@@ -838,7 +838,7 @@ export const ReduceImpactSection = ({
                   alt=""
                   className="object-cover mx-auto"
                 />
-                <h3 className="h4 mt-8 lg:mt-12 text-center text-v2-blue">
+                <h3 className="h3 mt-8 lg:mt-12 text-center text-v2-blue text-pretty">
                   {newsletterError && (
                     <span className="mb-4 block text-left text-sm text-v2-red">
                       {t("badgeQuestions.subscriptionError")}
@@ -892,7 +892,7 @@ export const ReduceImpactSection = ({
                   disabled={
                     !!emailError || isSubmitting || isPersistenceSubmitting
                   }
-                  className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-white border-white text-v2-blue hover:bg-v2-blue hover:text-white hover:border-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <svg
                     width="24"
