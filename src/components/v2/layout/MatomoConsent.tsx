@@ -47,6 +47,21 @@ export function MatomoConsentProvider({
 }) {
   const t = useTranslations("site.layout.analyticsConsent");
   const [consent, setConsent] = React.useState<ConsentStatus>(getStoredConsent);
+
+  React.useEffect(() => {
+    const syncConsent = (event: StorageEvent) => {
+      if (
+        event.key === CONSENT_STORAGE_KEY &&
+        event.storageArea === window.localStorage &&
+        (event.newValue === "accepted" || event.newValue === "rejected")
+      ) {
+        setConsent(event.newValue);
+      }
+    };
+    window.addEventListener("storage", syncConsent);
+    return () => window.removeEventListener("storage", syncConsent);
+  }, []);
+
   const [isPreferencesOpen, setIsPreferencesOpen] = React.useState(false);
   const isHydrated = React.useSyncExternalStore(
     subscribeToHydration,
@@ -84,7 +99,11 @@ export function MatomoConsentProvider({
   }, [consent, isHydrated, isProduction]);
 
   const chooseConsent = (choice: Exclude<ConsentStatus, "undecided">) => {
-    window.localStorage.setItem(CONSENT_STORAGE_KEY, choice);
+    try {
+      window.localStorage.setItem(CONSENT_STORAGE_KEY, choice);
+    } catch {
+      // Apply the choice in memory even when persistence is unavailable.
+    }
     setConsent(choice);
     setIsPreferencesOpen(false);
   };
