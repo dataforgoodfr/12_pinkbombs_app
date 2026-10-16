@@ -97,7 +97,7 @@ const ImpactSection = () => {
     <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto">
       <div className="max-w-[1512px] mx-auto">
         <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
             <Image
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
