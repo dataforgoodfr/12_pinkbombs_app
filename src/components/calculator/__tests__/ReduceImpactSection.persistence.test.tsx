@@ -1,4 +1,4 @@
-import { beforeAll, jest } from "@jest/globals";
+import { afterEach, beforeAll, beforeEach, jest } from "@jest/globals";
 import {
   act,
   fireEvent,
@@ -126,7 +126,134 @@ const products: UserProductConsumption[] = [
   { name: "fillet", label: "fillet", frequency: "weekly", variants: [] },
 ];
 
+const defaultFlow = jest.mocked(useReduceImpactFlow).getMockImplementation()!;
+
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
+afterEach(() => {
+  jest.mocked(useReduceImpactFlow).mockImplementation(defaultFlow);
+});
+
+const renderNoConsumption = () =>
+  render(
+    <ReduceImpactSection
+      questions={[]}
+      response={{ totalConsoInKg: 0, consoPerProduct: {}, impact: "neutral" }}
+      products={[{ name: "none", label: "No salmon", variants: [] }]}
+      submissionService={jest.fn<CalculatorSubmissionService>()}
+      reduceImpact={{
+        activeAccordionIndex: null,
+        selectedProductKey: null,
+        replacementFrequencyPerYear: null,
+        selectedAlternative: null,
+        selectedSupplement: null,
+      }}
+      onSelectProduct={jest.fn()}
+      onFrequencyChange={jest.fn()}
+      onConfirmFrequency={jest.fn()}
+      onSelectAlternative={jest.fn()}
+      onSelectSupplement={jest.fn()}
+      onSetActiveAccordion={jest.fn()}
+      onNewsletterInvalidEmail={jest.fn()}
+      onNewsletterSuccess={jest.fn()}
+      onNewsletterError={jest.fn()}
+    />,
+  );
+
 describe("ReduceImpactSection persistence", () => {
+  it.each([true, false])(
+    "persists no consumption without selections with consent %s",
+    async (consent) => {
+      const onEmailChange = jest.fn();
+      jest.mocked(useReduceImpactFlow).mockImplementation((input) => ({
+        ...defaultFlow(input),
+        newResponse: null,
+        engagementsConfirmed: false,
+        hasOmega3Consent: consent,
+        onEmailChange,
+      }));
+      let resolvePersistence!: (value: {
+        success: true;
+        id: number;
+        replayed: boolean;
+      }) => void;
+      const pendingPersistence = new Promise<{
+        success: true;
+        id: number;
+        replayed: boolean;
+      }>((resolve) => {
+        resolvePersistence = resolve;
+      });
+      jest
+        .mocked(persistCalculatorSubmission)
+        .mockReturnValue(pendingPersistence);
+      renderNoConsumption();
+
+      fireEvent.click(
+        screen.getByRole("button", { name: "badgeQuestions.button" }),
+      );
+
+      expect(screen.getByText("badgeQuestions.unlockedBadge")).not.toBeNull();
+      expect(persistCalculatorSubmission).toHaveBeenCalledTimes(1);
+      expect(persistCalculatorSubmission).toHaveBeenCalledWith({
+        mode: "noConsumption",
+        email: "person@example.org",
+        impactInitial: "neutral",
+        consentOmega3: consent,
+        products: [{ name: "none", label: "No salmon", variants: [] }],
+      });
+      expect(onEmailChange).not.toHaveBeenCalledWith("");
+      expect(
+        screen.getByRole("button", { name: "badgeQuestions.button" }),
+      ).toBeDisabled();
+
+      await act(async () => {
+        resolvePersistence({ success: true, id: 1, replayed: false });
+        await pendingPersistence;
+      });
+      await waitFor(() => expect(onEmailChange).toHaveBeenCalledWith(""));
+    },
+  );
+
+  it("retains the non-consumer email when persistence fails", async () => {
+    const onEmailChange = jest.fn();
+    jest.mocked(useReduceImpactFlow).mockImplementation((input) => ({
+      ...defaultFlow(input),
+      newResponse: null,
+      engagementsConfirmed: false,
+      onEmailChange,
+    }));
+    jest
+      .mocked(persistCalculatorSubmission)
+      .mockResolvedValue({ success: false, error: "unavailable" });
+    renderNoConsumption();
+    await act(async () => {
+      fireEvent.click(
+        screen.getByRole("button", { name: "badgeQuestions.button" }),
+      );
+    });
+    expect(persistCalculatorSubmission).toHaveBeenCalledTimes(1);
+    expect(onEmailChange).not.toHaveBeenCalledWith("");
+    expect(screen.getByText("badgeQuestions.unlockedBadge")).not.toBeNull();
+  });
+
+  it("does not persist a non-consumer response with invalid email", () => {
+    jest.mocked(useReduceImpactFlow).mockImplementation((input) => ({
+      ...defaultFlow(input),
+      newResponse: null,
+      engagementsConfirmed: false,
+      validateEmail: () => false,
+    }));
+    renderNoConsumption();
+    fireEvent.click(
+      screen.getByRole("button", { name: "badgeQuestions.button" }),
+    );
+    expect(persistCalculatorSubmission).not.toHaveBeenCalled();
+    expect(screen.queryByText("badgeQuestions.unlockedBadge")).toBeNull();
+  });
+
   it("shows the badge immediately and preserves email when persistence fails", async () => {
     let resolvePersistence:
       | ((value: { success: false; error: "unavailable" }) => void)

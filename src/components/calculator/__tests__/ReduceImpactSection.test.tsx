@@ -3,6 +3,14 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 import type { CalculatorSubmissionResponse } from "@/lib/calculator/submission";
 
+jest.mock("@/lib/calculator/persistedSubmission", () => ({
+  persistCalculatorSubmission: jest.fn(async () => ({
+    success: true,
+    id: 1,
+    replayed: false,
+  })),
+}));
+
 jest.mock("next-intl", () => ({
   useTranslations: () => {
     type MockTranslate = ((key: string) => string) & {

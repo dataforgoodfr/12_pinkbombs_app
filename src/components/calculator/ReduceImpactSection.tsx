@@ -7,7 +7,10 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 
 import { createDisplayLabelLookup } from "@/lib/calculator/getDisplayLabel";
-import { persistCalculatorSubmission } from "@/lib/calculator/persistedSubmission";
+import {
+  persistCalculatorSubmission,
+  type PersistedSubmissionInput,
+} from "@/lib/calculator/persistedSubmission";
 import { normalizeOccurrence } from "@/lib/calculator/state";
 import {
   type CalculatorSubmissionResponse,
@@ -240,27 +243,35 @@ export const ReduceImpactSection = ({
     setNewsletterError(false);
     showBadge(emailErrorMessage);
     let persistencePromise = persistencePromiseRef.current;
+    const submissionBase = {
+      email,
+      impactInitial: response.impact,
+      consentOmega3: hasOmega3Consent,
+      products,
+    };
+    const persistenceInput: PersistedSubmissionInput | null = isNoConsumption
+      ? { ...submissionBase, mode: "noConsumption" }
+      : newResponse &&
+          reduceImpact.selectedProductKey &&
+          selectedAlternative &&
+          selectedSupplement
+        ? {
+            ...submissionBase,
+            mode: "engagement",
+            impactAfterCommitment: newResponse.impact,
+            alternative: selectedAlternative,
+            supplement: selectedSupplement,
+            selectedProductKey: reduceImpact.selectedProductKey,
+            replacementFrequencyPerYear: frequency,
+          }
+        : null;
 
-    if (
-      !persistenceInFlightRef.current &&
-      newResponse &&
-      reduceImpact.selectedProductKey &&
-      selectedAlternative &&
-      selectedSupplement
-    ) {
+    if (!persistenceInFlightRef.current && persistenceInput) {
       persistenceInFlightRef.current = true;
       setIsPersistenceSubmitting(true);
-      persistencePromise = persistCalculatorSubmission({
-        email,
-        impactInitial: response.impact,
-        impactAfterCommitment: newResponse.impact,
-        alternative: selectedAlternative,
-        supplement: selectedSupplement,
-        consentOmega3: hasOmega3Consent,
-        products,
-        selectedProductKey: reduceImpact.selectedProductKey,
-        replacementFrequencyPerYear: frequency,
-      }).catch(() => ({ success: false, error: "unavailable" as const }));
+      persistencePromise = persistCalculatorSubmission(persistenceInput).catch(
+        () => ({ success: false, error: "unavailable" as const }),
+      );
       persistencePromiseRef.current = persistencePromise;
       void persistencePromise.finally(() => {
         persistenceInFlightRef.current = false;
