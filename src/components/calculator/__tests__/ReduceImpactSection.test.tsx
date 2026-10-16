@@ -1,5 +1,5 @@
 import { jest } from "@jest/globals";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 
 import type { CalculatorSubmissionResponse } from "@/lib/calculator/submission";
 
@@ -144,7 +144,7 @@ describe("ReduceImpactSection Step 4 info", () => {
 });
 
 describe("ReduceImpactSection no-consumption result", () => {
-  it("shows the newsletter area directly and unlocks the neutral badge without engagement content", () => {
+  it("shows the newsletter area directly and unlocks the neutral badge without engagement content", async () => {
     render(
       <ReduceImpactSection
         questions={[]}
@@ -182,9 +182,11 @@ describe("ReduceImpactSection no-consumption result", () => {
       screen.queryByRole("img", { name: "badges.neutral.title" }),
     ).toBeNull();
 
-    fireEvent.click(
-      screen.getByRole("button", { name: "badgeQuestions.button" }),
-    );
+    await act(async () => {
+      fireEvent.click(
+        screen.getByRole("button", { name: "badgeQuestions.button" }),
+      );
+    });
 
     expect(
       screen.getByRole("img", { name: "badges.neutral.title" }),

@@ -197,19 +197,19 @@ export const buildPersistedSubmission = (
   const selectedProduct = input.products.find((product) =>
     product.name === "none"
       ? false
-      : product.variants.length > 0
-        ? product.variants.some(
-            (variant) => variant.type === input.selectedProductKey,
-          )
-        : product.name === input.selectedProductKey,
+      : getProductWeightEntries(product).some(
+          (entry) => entry.key === input.selectedProductKey,
+        ),
   );
 
   if (!selectedProduct) {
     throw new Error("Selected product is unavailable");
   }
 
+  const selectedWeightEntries = getProductWeightEntries(selectedProduct);
   const selectedVariants = selectedProduct.variants.filter(
-    (variant) => variant.type === input.selectedProductKey,
+    (_, index) =>
+      selectedWeightEntries[index]?.key === input.selectedProductKey,
   );
   const afterCommitmentProduct: UserProductConsumption = {
     ...selectedProduct,
