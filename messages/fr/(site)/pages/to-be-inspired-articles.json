@@ -7,6 +7,7 @@
         "title": "Les saumons, symbole d'une industrie",
         "summary": "Longtemps réservés aux tables de fête, les saumons sont devenus en quelques décennies les poissons les plus consommés en France. Derrière cette consommation inquiétante se cache l'histoire d'une industrie qui a transformé les saumons en produit de masse.",
         "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageSize": { "width": 2481, "height": 3508 },
         "heroImageAlt": "Cages d'élevage de saumons dans une baie",
         "blocks": [
           {
@@ -188,6 +189,7 @@
         "title": "Comment remplacer les poissons dans son assiette ?",
         "summary": "Rencontre avec Marie Laforêt, star de la cuisine végétale",
         "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
+        "heroImageSize": { "width": 492, "height": 633 },
         "heroImageAlt": "Marie Laforêt, autrice de Seafood Vegan",
         "blocks": [
           {
@@ -361,6 +363,7 @@
         "title": "SALMO, l’histoire incroyable d’un saumon sauvage",
         "summary": "Une rivière, une forêt, un estuaire, l’Océan et puis des glaciers. Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, sélectionné dans de nombreux festivals, raconte l’incroyable voyage des saumons sauvages et la fragilité des écosystèmes qu’ils traversent.",
         "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageSize": { "width": 1607, "height": 903 },
         "heroImageAlt": "Illustration du court-métrage d’animation SALMO",
         "blocks": [
           {
@@ -480,6 +483,7 @@
         "title": "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
         "summary": "Être muet·e comme une carpe, engueuler quelqu'un comme du poisson pourri ou avoir une mémoire de poisson rouge… Ces expressions racontent à quel point nous estimons peu et connaissons mal les poissons. Petit plongeon dans les idées reçues les plus courantes pour mieux considérer ces animaux marins.",
         "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageSize": { "width": 3860, "height": 2571 },
         "heroImageAlt": "Illustration de poissons pour l’article sur les idées reçues",
         "blocks": [
           {
@@ -687,6 +691,7 @@
         "title": "5 alternatives aux saumons qui changent (déjà) la donne",
         "summary": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageSize": { "width": 800, "height": 1000 },
         "heroImageAlt": "Carottes fumées sur une tartine, une alternative végétale au saumon fumé",
         "blocks": [
           {
@@ -1361,6 +1366,7 @@
         "title": "George Ka, les saumons et les fantômes",
         "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 « Salmo Salar », un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
         "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
         "heroImageAlt": "George Ka sur scène pendant Salmo Salar",
         "heroImageCredit": "Hugo Meunier",
         "heroTextSide": "left",
@@ -1438,6 +1444,7 @@
         "title": "13 associations qui œuvrent pour repeupler l’Océan",
         "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
         "heroImageAlt": "L’Océan et les associations qui œuvrent à le protéger",
         "heroTextSide": "left",
         "blocks": [

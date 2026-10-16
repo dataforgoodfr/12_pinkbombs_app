@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.site-main:has([data-viewport-article-hero]) {
+  padding-top: var(--site-navbar-height, 82px);
+}
+
+.viewport-article-hero-image {
+  max-height: max(0px, calc(100svh - var(--site-navbar-height, 82px)));
+}
+
 :root {
   /* #region  /**=========== Primary Color =========== */
   /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
