@@ -30,31 +30,21 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-yellow text-v2-blue">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 lg:py-24 pb-4 xl:pb-0 lg:pl-24 xl:px-28 2xl:max-w-[70%] gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 lg:w-[40%] 2xl:w-[50%] xl:w-full">
+      <div className="mx-auto grid max-w-[1596px] grid-cols-1 items-center gap-12 px-8 py-10 lg:min-h-[400px] lg:grid-cols-2 lg:gap-10 lg:px-32">
+        <div className="flex min-w-0 flex-col gap-4">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
           <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
-        <div className="flex flex-col lg:w-[60%] 2xl:w-[50%] xl:w-full justify-center mx-auto">
+        <div className="min-w-0 lg:-mr-32 2xl:mr-0">
           <Image
             loading="lazy"
             src="/site/images/to-be-inspired/intro.svg"
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative z-0 lg:top-8 lg:scale-[130%] xl:scale-[120%] xl:-top-20 object-contain"
+            className="relative lg:top-[48px] ml-auto h-auto w-full object-contain object-right scale-[120%]"
           />
         </div>
-      </div>
-      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-20 xl:-mt-28 2xl:-mt-32">
-        <Image
-          loading="lazy"
-          src="/site/images/to-be-inspired/intro-divider.svg"
-          width={1512}
-          height={103}
-          alt={t("intro.imageAlt")}
-          className="object-cover w-full"
-        />
       </div>
     </section>
   );
@@ -65,7 +55,17 @@ const ArticleSection = () => {
   const articleCardItems = t.raw("articles") as ArticleCardContent[];
   return (
     <section className="bg-v2-magenta">
-      <div className="p-10 lg:py-16 lg:px-28 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 xl:max-w-[1279px] mx-auto">
+      <div className="bg-v2-yellow">
+        <Image
+          loading="lazy"
+          src="/site/images/to-be-inspired/intro-divider.svg"
+          width={1512}
+          height={103}
+          alt=""
+          className="block h-auto w-full"
+        />
+      </div>
+      <div className="mx-auto grid max-w-[1596px] grid-cols-1 justify-items-center gap-6 px-8 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-32 2xl:py-24">
         {articleCardItems.map((article, index) => (
           <ArticleCard
             key={article.id}

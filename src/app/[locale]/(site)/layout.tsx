@@ -59,7 +59,7 @@ export default async function V2Layout({
     <MatomoConsentProvider isProduction={isProductionDeployment}>
       <SectionBackground />
       <Navbar />
-      <main className="site-main overflow-x-clip pt-[calc(88px_+_env(safe-area-inset-top))] md:pt-0">
+      <main className="site-main overflow-x-clip pt-[calc(88px_+_env(safe-area-inset-top))] pt-[var(--site-navbar-height,82px)]">
         {children}
       </main>
       <Footer />

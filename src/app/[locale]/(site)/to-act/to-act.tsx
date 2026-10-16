@@ -30,30 +30,30 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-green text-v2-blue">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 lg:pt-32 lg:pb-12 lg:pl-24 xl:pl-32 2xl:pl-72 gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 lg:w-[40%] xl:w-[50%]">
+      <div className="mx-auto grid max-w-[1596px] grid-cols-1 items-center gap-12 px-8 py-10 lg:min-h-[400px] lg:grid-cols-2 lg:gap-10 lg:px-32">
+        <div className="flex min-w-0 flex-col gap-4">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
-          <h1 className="h1 text-pretty xl:w-[80%]">{t("intro.title")}</h1>
+          <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
-        <div className="flex flex-col lg:mt-16 xl:-mt-10 lg:w-[60%] xl:w-[50%]">
+        <div className="min-w-0 lg:-mr-32 2xl:mr-0">
           <Image
-            loading="lazy"
+            loading="eager"
             src="/site/images/to-act/intro.svg"
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative z-0 object-contain mx-auto xl:scale-[120%] 2xl:scale-[120%]"
+            className="relative z-10 -bottom-[52px] lg:-bottom-[98px] xl:-bottom-[96px] lg:right-10 2xl:-right-40 ml-auto h-auto w-full object-contain object-right scale-[120%]"
           />
         </div>
       </div>
-      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-32 xl:-mt-28 2xl:-mt-40">
+      <div>
         <Image
           loading="lazy"
           src="/site/images/to-act/intro-divider.svg"
           width={1512}
           height={103}
-          alt={t("intro.imageAlt")}
-          className="object-cover w-full"
+          alt=""
+          className="relative block h-auto w-full z-20"
         />
       </div>
     </section>
@@ -138,13 +138,13 @@ const RecommendationsSection = () => {
   }, []);
 
   return (
-    <section className="relative z-10 bg-white text-v2-blue">
+    <section className="relative bg-white text-v2-blue">
       <div
         id="individual-section"
         ref={individualSectionRef}
-        className="px-6 lg:px-10 pb-16 xl:max-w-[1279px] mx-auto"
+        className="mx-auto max-w-[1596px] px-8 py-12 lg:px-32 2xl:py-24"
       >
-        <div className="py-16">
+        <div className="pb-8">
           <SectionButtons
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
@@ -184,9 +184,9 @@ const RecommendationsSection = () => {
       <div
         id="company-section"
         ref={companySectionRef}
-        className="px-6 lg:px-10 mb-10 xl:max-w-[1279px] mx-auto"
+        className="mx-auto max-w-[1596px] px-8 py-12 lg:px-32 2xl:py-24"
       >
-        <div className="py-16">
+        <div className="pb-8">
           <SectionButtons
             activeSection={activeSection}
             setActiveSection={handleSectionToggle}
@@ -239,7 +239,7 @@ const SectionButtons = ({
 }) => {
   const t = useTranslations("site.toAct");
   return (
-    <div className="flex bg-white gap-4 justify-center items-center">
+    <div className="flex flex-wrap bg-white gap-4 justify-center items-center">
       <button
         className={`border border-2 rounded-xl border-v2-blue py-1 px-3 cta tracking-wider hover:scale-105 ${activeSection === "individual" ? "bg-v2-blue text-v2-pink" : "bg-white"}`}
         onClick={() => setActiveSection("individual")}

@@ -28,7 +28,7 @@ export default HomePage;
 const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="flex lg:py-40 p-10 lg:px-20 xl:pt-28 min-h-[600px] text-v2-blue bg-v2-pink">
+    <section className="relative flex px-8 py-10 lg:py-0 lg:px-32 lg:h-screen text-v2-blue bg-v2-pink">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-[1596px] items-center mx-auto">
         <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-magenta">
           {t("hero.title")}{" "}
