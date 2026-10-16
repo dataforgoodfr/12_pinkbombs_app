@@ -1,6 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
+  type CalculatorAction,
   calculatorReducer,
   INITIAL_CALCULATOR_STATE,
   isCalculationResponseReady,
@@ -22,6 +23,50 @@ const productWithoutVariants = {
 };
 
 describe("calculator workflow", () => {
+  it("locks confirmed engagements against edits and navigation until reset", () => {
+    const state = {
+      ...INITIAL_CALCULATOR_STATE,
+      step: CalculatorStep.Result,
+      reduceImpact: {
+        ...INITIAL_CALCULATOR_STATE.reduceImpact,
+        activeAccordionIndex: 1 as const,
+        selectedProductKey: "maki",
+        replacementFrequencyPerYear: 4,
+        selectedAlternative: "algae",
+        selectedSupplement: "chiaSeeds",
+      },
+    };
+    const confirmed = calculatorReducer(state, { type: "confirmEngagements" });
+    expect(confirmed.reduceImpact).toMatchObject({
+      engagementsConfirmed: true,
+      activeAccordionIndex: null,
+    });
+    const edits: CalculatorAction[] = [
+      { type: "back" },
+      { type: "next" },
+      { type: "selectReplacementProduct", productKey: "fillet" },
+      { type: "setReplacementFrequency", occurrencePerYear: 20 },
+      { type: "confirmReplacementFrequency" },
+      { type: "selectAlternative", alternative: "shellfish" },
+      { type: "selectSupplement", supplement: "nut" },
+      { type: "setActiveAccordionIndex", index: 1 },
+      { type: "confirmEngagements" },
+    ];
+    for (const action of edits) {
+      expect(calculatorReducer(confirmed, action)).toBe(confirmed);
+    }
+    expect(calculatorReducer(confirmed, { type: "reset" })).toBe(
+      INITIAL_CALCULATOR_STATE,
+    );
+  });
+
+  it("does not confirm an incomplete engagement", () => {
+    const state = { ...INITIAL_CALCULATOR_STATE, step: CalculatorStep.Result };
+    expect(calculatorReducer(state, { type: "confirmEngagements" })).toBe(
+      state,
+    );
+  });
+
   it("requires a product before continuing", () => {
     expect(isCurrentStepAnswered(INITIAL_CALCULATOR_STATE)).toBe(false);
 
@@ -165,6 +210,7 @@ describe("calculator workflow", () => {
     expect(state.calculationResponse).toEqual(response);
     expect(isCalculationResponseReady(state)).toBe(true);
     expect(state.reduceImpact).toEqual({
+      engagementsConfirmed: false,
       activeAccordionIndex: 0,
       selectedProductKey: "sushi",
       replacementFrequencyPerYear: 24,

@@ -29,6 +29,7 @@ interface ResultScreenProps {
   products: UserProductConsumption[];
   submissionService: CalculatorSubmissionService;
   reduceImpact: ReduceImpactState;
+  onConfirmEngagements: () => void;
   onSelectProduct: (productKey: string) => void;
   onFrequencyChange: (occurrencePerYear: number) => void;
   onConfirmFrequency: () => void;
@@ -43,6 +44,7 @@ export const ResultScreen = ({
   products,
   submissionService,
   reduceImpact,
+  onConfirmEngagements,
   onSelectProduct,
   onFrequencyChange,
   onConfirmFrequency,
@@ -112,6 +114,7 @@ export const ResultScreen = ({
           products={products}
           submissionService={submissionService}
           reduceImpact={reduceImpact}
+          onConfirmEngagements={onConfirmEngagements}
           onSelectProduct={onSelectProduct}
           onFrequencyChange={onFrequencyChange}
           onConfirmFrequency={onConfirmFrequency}

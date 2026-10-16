@@ -101,6 +101,7 @@ describe("ReduceImpactSection Step 4 info", () => {
         products={[]}
         submissionService={async () => response}
         reduceImpact={{
+          engagementsConfirmed: false,
           activeAccordionIndex: 3,
           selectedProductKey: null,
           replacementFrequencyPerYear: null,
@@ -108,6 +109,7 @@ describe("ReduceImpactSection Step 4 info", () => {
           selectedSupplement: null,
         }}
         onSelectProduct={() => {}}
+        onConfirmEngagements={() => {}}
         onFrequencyChange={() => {}}
         onConfirmFrequency={() => {}}
         onSelectAlternative={() => {}}
@@ -150,6 +152,7 @@ describe("ReduceImpactSection no-consumption result", () => {
         products={[{ name: "none", label: "No salmon", variants: [] }]}
         submissionService={async () => response}
         reduceImpact={{
+          engagementsConfirmed: false,
           activeAccordionIndex: 0,
           selectedProductKey: null,
           replacementFrequencyPerYear: null,
@@ -157,6 +160,7 @@ describe("ReduceImpactSection no-consumption result", () => {
           selectedSupplement: null,
         }}
         onSelectProduct={() => {}}
+        onConfirmEngagements={() => {}}
         onFrequencyChange={() => {}}
         onConfirmFrequency={() => {}}
         onSelectAlternative={() => {}}

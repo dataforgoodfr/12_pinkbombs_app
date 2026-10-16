@@ -60,6 +60,7 @@ export interface CalculatorState {
 }
 
 export interface ReduceImpactState {
+  engagementsConfirmed: boolean;
   activeAccordionIndex: 0 | 1 | 2 | 3 | null;
   selectedProductKey: string | null;
   replacementFrequencyPerYear: number | null;

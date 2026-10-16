@@ -13,6 +13,7 @@ import {
 } from "./types";
 
 const INITIAL_REDUCE_IMPACT_STATE: ReduceImpactState = {
+  engagementsConfirmed: false,
   activeAccordionIndex: 0,
   selectedProductKey: null,
   replacementFrequencyPerYear: null,
@@ -57,6 +58,7 @@ export type CalculatorAction =
   | { type: "selectAlternative"; alternative: string }
   | { type: "selectSupplement"; supplement: string }
   | { type: "setActiveAccordionIndex"; index: 0 | 1 | 2 | 3 | null }
+  | { type: "confirmEngagements" }
   | { type: "reset" };
 
 const updateProduct = (
@@ -92,6 +94,7 @@ const getInitialReduceImpactState = (
     Object.entries(response.consoPerProduct)[0] ?? [];
 
   return {
+    engagementsConfirmed: false,
     activeAccordionIndex: 0,
     selectedProductKey: selectedProductKey ?? null,
     replacementFrequencyPerYear: selectedEntry?.occurrencePerYear ?? null,
@@ -104,7 +107,29 @@ export const calculatorReducer = (
   state: CalculatorState,
   action: CalculatorAction,
 ): CalculatorState => {
+  if (state.reduceImpact.engagementsConfirmed && action.type !== "reset") {
+    return state;
+  }
+
   switch (action.type) {
+    case "confirmEngagements":
+      if (
+        state.step !== CalculatorStep.Result ||
+        !state.reduceImpact.selectedProductKey ||
+        state.reduceImpact.replacementFrequencyPerYear === null ||
+        !state.reduceImpact.selectedAlternative ||
+        !state.reduceImpact.selectedSupplement
+      ) {
+        return state;
+      }
+      return {
+        ...state,
+        reduceImpact: {
+          ...state.reduceImpact,
+          engagementsConfirmed: true,
+          activeAccordionIndex: null,
+        },
+      };
     case "toggleProduct": {
       if (action.product.name === "none") {
         return { ...INITIAL_CALCULATOR_STATE, products: [action.product] };
