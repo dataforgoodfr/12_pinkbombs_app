@@ -1,6 +1,13 @@
 {
   "layout": {
     "top": "Haut de page",
+    "analyticsConsent": {
+      "title": "Aidez-nous à améliorer Pinkbombs ?",
+      "description": "Avec votre accord, nous utilisons Matomo pour comprendre comment ce site est utilisé. Vous pouvez modifier votre choix à tout moment depuis le pied de page.",
+      "accept": "Autoriser les statistiques",
+      "reject": "Refuser les statistiques",
+      "preferences": "Paramètres des statistiques"
+    },
     "nav": {
       "title": "principale",
       "home": "Accueil",

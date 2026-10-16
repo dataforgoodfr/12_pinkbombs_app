@@ -6,6 +6,7 @@ import ShareLink from "@/components/v2/links/shareLink";
 
 import { Link } from "@/navigation";
 
+import { MatomoPreferencesButton } from "./MatomoConsent";
 import NewsletterForm from "./NewsletterForm";
 
 const currentYear = new Date().getFullYear();
@@ -117,6 +118,7 @@ const Footer = () => {
             />
           </div>
         </div>
+        <MatomoPreferencesButton />
       </div>
     </footer>
   );
