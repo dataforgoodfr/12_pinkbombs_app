@@ -99,14 +99,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 sizes="100vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-v2-blue/20" />
+              <div className="absolute inset-0" />
             </div>
           )}
           <div
             className={
               isStackedHero
                 ? "mx-auto max-w-3xl px-5 py-8 md:px-8 lg:py-12"
-                : `relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`
+                : `relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-v2-yellow p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`
             }
           >
             <h1 className="h1 text-pretty">{article.article.title}</h1>

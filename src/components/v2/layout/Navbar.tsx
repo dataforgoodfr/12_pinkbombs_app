@@ -87,7 +87,7 @@ const Navbar = () => {
         `bg-v2-${getBackgroundColor()}`,
       )}
     >
-      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
+      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 max-w-[1596px] mx-auto">
         <Link href="/">
           <Image
             src={`/site/images/pinkbombs-${getColor()}.svg`}
