@@ -30,6 +30,7 @@ const products: UserProductConsumption[] = [
 const createOptions = (
   overrides: Partial<Parameters<typeof useReduceImpactFlow>[0]> = {},
 ) => ({
+  engagementsConfirmed: false,
   canCalculate: true,
   frequency: 4,
   isMobile: false,
@@ -47,6 +48,29 @@ const createOptions = (
 });
 
 describe("useReduceImpactFlow", () => {
+  it("ignores calculation and selection callbacks after confirmation", async () => {
+    jest.useFakeTimers();
+    const options = createOptions({ engagementsConfirmed: true });
+    const { result } = renderHook(() => useReduceImpactFlow(options));
+    await act(async () => {
+      await result.current.calculateNewImpact();
+      result.current.confirmFrequency();
+      result.current.selectProductWithDelay("fillet");
+      result.current.selectAlternativeWithDelay("algae");
+      result.current.selectSupplementWithDelay("chiaSeeds");
+      await jest.advanceTimersByTimeAsync(1500);
+    });
+    expect(options.submissionService).not.toHaveBeenCalled();
+    expect(options.onConfirmFrequency).not.toHaveBeenCalled();
+    expect(options.onSelectProduct).not.toHaveBeenCalled();
+    expect(options.onSelectAlternative).not.toHaveBeenCalled();
+    expect(options.onSelectSupplement).not.toHaveBeenCalled();
+    expect(options.onSetActiveAccordion).not.toHaveBeenCalled();
+    expect(result.current.pendingProductKey).toBeNull();
+    expect(result.current.pendingAlternative).toBeNull();
+    expect(result.current.pendingSupplement).toBeNull();
+  });
+
   afterEach(() => {
     jest.useRealTimers();
   });

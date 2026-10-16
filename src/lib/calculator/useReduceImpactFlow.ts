@@ -14,6 +14,7 @@ const wait = (durationMs: number) =>
   new Promise((resolve) => setTimeout(resolve, durationMs));
 
 interface UseReduceImpactFlowOptions {
+  engagementsConfirmed: boolean;
   canCalculate: boolean;
   frequency: number;
   isMobile: boolean;
@@ -28,6 +29,7 @@ interface UseReduceImpactFlowOptions {
 }
 
 export const useReduceImpactFlow = ({
+  engagementsConfirmed,
   canCalculate,
   frequency,
   isMobile,
@@ -46,7 +48,6 @@ export const useReduceImpactFlow = ({
   const [calculationError, setCalculationError] = React.useState<string | null>(
     null,
   );
-  const [engagementsConfirmed, setEngagementsConfirmed] = React.useState(false);
   const [hasOmega3Consent, setHasOmega3Consent] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [emailError, setEmailError] = React.useState<string | null>(null);
@@ -89,12 +90,11 @@ export const useReduceImpactFlow = ({
   );
 
   const calculateReducedImpact = async () => {
-    if (!selectedProductKey) return;
+    if (engagementsConfirmed || isCalculating || !selectedProductKey) return;
 
     setIsCalculating(true);
     setNewResponse(null);
     setCalculationError(null);
-    setEngagementsConfirmed(false);
     setBadgeVisible(false);
 
     const [result] = await Promise.all([
@@ -122,6 +122,7 @@ export const useReduceImpactFlow = ({
   };
 
   const confirmFrequency = () => {
+    if (engagementsConfirmed || isCalculating) return;
     onConfirmFrequency();
     if (!isMobile) {
       void calculateReducedImpact();
@@ -129,6 +130,7 @@ export const useReduceImpactFlow = ({
   };
 
   const selectProductWithDelay = (productKey: string) => {
+    if (engagementsConfirmed) return;
     if (pendingProductTimeoutRef.current) {
       clearTimeout(pendingProductTimeoutRef.current);
     }
@@ -143,6 +145,7 @@ export const useReduceImpactFlow = ({
   };
 
   const selectAlternativeWithDelay = (alternative: string) => {
+    if (engagementsConfirmed) return;
     if (pendingAlternativeTimeoutRef.current) {
       clearTimeout(pendingAlternativeTimeoutRef.current);
     }
@@ -157,6 +160,7 @@ export const useReduceImpactFlow = ({
   };
 
   const selectSupplementWithDelay = (supplement: string) => {
+    if (engagementsConfirmed) return;
     if (pendingSupplementTimeoutRef.current) {
       clearTimeout(pendingSupplementTimeoutRef.current);
     }
@@ -194,8 +198,6 @@ export const useReduceImpactFlow = ({
     newResponse,
     isCalculating,
     calculationError,
-    engagementsConfirmed,
-    setEngagementsConfirmed,
     hasOmega3Consent,
     setHasOmega3Consent,
     email,

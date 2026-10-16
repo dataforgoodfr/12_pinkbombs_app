@@ -7,7 +7,10 @@ import { useTranslations } from "next-intl";
 import * as React from "react";
 
 import { createDisplayLabelLookup } from "@/lib/calculator/getDisplayLabel";
-import { persistCalculatorSubmission } from "@/lib/calculator/persistedSubmission";
+import {
+  persistCalculatorSubmission,
+  type PersistedSubmissionInput,
+} from "@/lib/calculator/persistedSubmission";
 import { normalizeOccurrence } from "@/lib/calculator/state";
 import {
   type CalculatorSubmissionResponse,
@@ -66,6 +69,7 @@ interface ReduceImpactSectionProps {
   products: UserProductConsumption[];
   submissionService: CalculatorSubmissionService;
   reduceImpact: ReduceImpactState;
+  onConfirmEngagements: () => void;
   onSelectProduct: (productKey: string) => void;
   onFrequencyChange: (occurrencePerYear: number) => void;
   onConfirmFrequency: () => void;
@@ -83,6 +87,7 @@ export const ReduceImpactSection = ({
   products,
   submissionService,
   reduceImpact,
+  onConfirmEngagements,
   onSelectProduct,
   onFrequencyChange,
   onConfirmFrequency,
@@ -139,6 +144,7 @@ export const ReduceImpactSection = ({
   const frequency = reduceImpact.replacementFrequencyPerYear ?? maxFrequency;
   const selectedAlternative = reduceImpact.selectedAlternative;
   const selectedSupplement = reduceImpact.selectedSupplement;
+  const engagementsConfirmed = reduceImpact.engagementsConfirmed;
   const [newsletterError, setNewsletterError] = React.useState(false);
   const [isPersistenceSubmitting, setIsPersistenceSubmitting] =
     React.useState(false);
@@ -158,8 +164,6 @@ export const ReduceImpactSection = ({
     newResponse,
     isCalculating,
     calculationError,
-    engagementsConfirmed,
-    setEngagementsConfirmed,
     hasOmega3Consent,
     setHasOmega3Consent,
     email,
@@ -180,6 +184,7 @@ export const ReduceImpactSection = ({
     selectAlternativeWithDelay,
     selectSupplementWithDelay,
   } = useReduceImpactFlow({
+    engagementsConfirmed,
     canCalculate,
     frequency,
     isMobile,
@@ -228,9 +233,22 @@ export const ReduceImpactSection = ({
       : 640;
   };
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
-  const confirmEngagements = () => setEngagementsConfirmed(true);
+  const canConfirmEngagements = Boolean(
+    !engagementsConfirmed &&
+      canCalculate &&
+      newResponse &&
+      !isCalculating &&
+      pendingProductKey === null &&
+      pendingAlternative === null &&
+      pendingSupplement === null,
+  );
+  const confirmEngagements = () => {
+    if (canConfirmEngagements) onConfirmEngagements();
+  };
 
   const handleResponseSubmit = async () => {
+    if (badgeVisible || persistenceInFlightRef.current || isSubmitting) return;
+
     if (!validateEmail(emailErrorMessage)) {
       console.info("Calculator persistence skipped: invalid email");
       onNewsletterInvalidEmail();
@@ -240,27 +258,35 @@ export const ReduceImpactSection = ({
     setNewsletterError(false);
     showBadge(emailErrorMessage);
     let persistencePromise = persistencePromiseRef.current;
+    const submissionBase = {
+      email,
+      impactInitial: response.impact,
+      consentOmega3: hasOmega3Consent,
+      products,
+    };
+    const persistenceInput: PersistedSubmissionInput | null = isNoConsumption
+      ? { ...submissionBase, mode: "noConsumption" }
+      : newResponse &&
+          reduceImpact.selectedProductKey &&
+          selectedAlternative &&
+          selectedSupplement
+        ? {
+            ...submissionBase,
+            mode: "engagement",
+            impactAfterCommitment: newResponse.impact,
+            alternative: selectedAlternative,
+            supplement: selectedSupplement,
+            selectedProductKey: reduceImpact.selectedProductKey,
+            replacementFrequencyPerYear: frequency,
+          }
+        : null;
 
-    if (
-      !persistenceInFlightRef.current &&
-      newResponse &&
-      reduceImpact.selectedProductKey &&
-      selectedAlternative &&
-      selectedSupplement
-    ) {
+    if (!persistenceInFlightRef.current && persistenceInput) {
       persistenceInFlightRef.current = true;
       setIsPersistenceSubmitting(true);
-      persistencePromise = persistCalculatorSubmission({
-        email,
-        impactInitial: response.impact,
-        impactAfterCommitment: newResponse.impact,
-        alternative: selectedAlternative,
-        supplement: selectedSupplement,
-        consentOmega3: hasOmega3Consent,
-        products,
-        selectedProductKey: reduceImpact.selectedProductKey,
-        replacementFrequencyPerYear: frequency,
-      }).catch(() => ({ success: false, error: "unavailable" as const }));
+      persistencePromise = persistCalculatorSubmission(persistenceInput).catch(
+        () => ({ success: false, error: "unavailable" as const }),
+      );
       persistencePromiseRef.current = persistencePromise;
       void persistencePromise.finally(() => {
         persistenceInFlightRef.current = false;
@@ -290,7 +316,9 @@ export const ReduceImpactSection = ({
 
     if (persistencePromise) {
       void persistencePromise.then((persistenceResult) => {
-        if (persistenceResult.success) onEmailChange("");
+        if (persistenceResult.success) {
+          onEmailChange("");
+        }
       });
     } else {
       onEmailChange("");
@@ -335,10 +363,16 @@ export const ReduceImpactSection = ({
       <div
         className={`${isNoConsumption ? "hidden " : ""}grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:pb-20 xl:w-[80%] 2xl:w-[60%] mx-auto`}
       >
-        <div className="flex flex-col gap-4 px-4 md:px-12">
+        <fieldset
+          disabled={engagementsConfirmed}
+          className="min-w-0 flex flex-col gap-4 px-4 md:px-12"
+        >
           <AccordionItem
             title={t("reduceImpact.step1.title")}
-            isActive={reduceImpact.activeAccordionIndex === 0}
+            disabled={engagementsConfirmed}
+            isActive={
+              !engagementsConfirmed && reduceImpact.activeAccordionIndex === 0
+            }
             onClick={() =>
               onSetActiveAccordion(
                 reduceImpact.activeAccordionIndex === 0 ? null : 0,
@@ -381,7 +415,10 @@ export const ReduceImpactSection = ({
 
           <AccordionItem
             title={t("reduceImpact.step2.title")}
-            isActive={reduceImpact.activeAccordionIndex === 1}
+            disabled={engagementsConfirmed}
+            isActive={
+              !engagementsConfirmed && reduceImpact.activeAccordionIndex === 1
+            }
             onClick={() =>
               onSetActiveAccordion(
                 reduceImpact.activeAccordionIndex === 1 ? null : 1,
@@ -428,7 +465,10 @@ export const ReduceImpactSection = ({
 
           <AccordionItem
             title={t("reduceImpact.step3.title")}
-            isActive={reduceImpact.activeAccordionIndex === 2}
+            disabled={engagementsConfirmed}
+            isActive={
+              !engagementsConfirmed && reduceImpact.activeAccordionIndex === 2
+            }
             onClick={() =>
               onSetActiveAccordion(
                 reduceImpact.activeAccordionIndex === 2 ? null : 2,
@@ -549,7 +589,10 @@ export const ReduceImpactSection = ({
 
           <AccordionItem
             title={t("reduceImpact.step4.title")}
-            isActive={reduceImpact.activeAccordionIndex === 3}
+            disabled={engagementsConfirmed}
+            isActive={
+              !engagementsConfirmed && reduceImpact.activeAccordionIndex === 3
+            }
             onClick={() =>
               onSetActiveAccordion(
                 reduceImpact.activeAccordionIndex === 3 ? null : 3,
@@ -671,7 +714,7 @@ export const ReduceImpactSection = ({
           <button
             type="button"
             onClick={calculateNewImpact}
-            disabled={!canCalculate || isCalculating}
+            disabled={engagementsConfirmed || !canCalculate || isCalculating}
             className="my-2 inline-flex lg:hidden cta border-2 rounded-xl pointer-events-auto border-v2-blue hover:border-v2-pink hover:bg-v2-blue hover:text-v2-pink px-8 cursor-pointer text-v2-blue bg-v2-pink py-2 text-sm w-fit self-center disabled:cursor-not-allowed disabled:opacity-50 text-pretty"
           >
             {isCalculating
@@ -683,7 +726,7 @@ export const ReduceImpactSection = ({
               {t("reduceImpact.recalculate.error")}
             </p>
           )}
-        </div>
+        </fieldset>
         {newResponse && (
           <div
             ref={newResponseRef}
@@ -740,7 +783,8 @@ export const ReduceImpactSection = ({
             <button
               type="button"
               onClick={confirmEngagements}
-              className="inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink hover:bg-black px-8 py-2 text-sm w-fit self-center text-v2-blue cursor-pointer"
+              disabled={!canConfirmEngagements}
+              className="inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink enabled:hover:bg-black px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
             >
               {t("engagements.confirm")}
             </button>
@@ -756,127 +800,130 @@ export const ReduceImpactSection = ({
             selectedAlternative={selectedAlternative}
             selectedSupplement={selectedSupplement}
             onConfirmEngagements={confirmEngagements}
+            canConfirmEngagements={canConfirmEngagements}
           />
         </div>
       </div>
 
       {(isNoConsumption || (newResponse && engagementsConfirmed)) && (
-        <div className="w-full bg-v2-yellow text-v2-blue">
-          <Image
-            loading="lazy"
-            src="/site/images/calculator/divider-badge.svg"
-            width={1512}
-            height={53}
-            alt="Divider"
-            className="block h-auto w-full object-cover"
-          />
-          <div className="relative grid place-items-center px-4 py-20 sm:px-6 sm:py-14 lg:px-8 lg:py-16 2xl:mt-52">
+        <div className="w-full text-v2-blue">
+          <div hidden={badgeVisible} className="bg-v2-yellow">
             <Image
               loading="lazy"
-              src="/site/images/calculator/badges/fishes-left-block.svg"
-              width={612}
-              height={707}
-              alt=""
-              aria-hidden
-              className="pointer-events-none absolute left-0 top-1/2 hidden h-auto w-[26%] max-w-[612px] -translate-y-1/2 xl:translate-y-0 xl:block"
+              src="/site/images/calculator/divider-badge.svg"
+              width={1512}
+              height={53}
+              alt="Divider"
+              className="block h-auto w-full object-cover"
             />
-            <div
-              ref={badgeQuestionsRef}
-              className="relative z-10 mx-auto flex w-full max-w-xl flex-col gap-6 xl:mt-16 2xl:-mt-32"
-            >
+            <div className="relative grid place-items-center px-4 py-20 sm:px-6 sm:py-14 lg:px-8 lg:py-16 2xl:mt-52">
               <Image
                 loading="lazy"
-                src="/site/images/calculator/loading-fish.svg"
-                width={314}
-                height={173}
+                src="/site/images/calculator/badges/fishes-left-block.svg"
+                width={612}
+                height={707}
                 alt=""
-                className="object-cover mx-auto"
+                aria-hidden
+                className="pointer-events-none absolute left-0 top-1/2 hidden h-auto w-[26%] max-w-[612px] -translate-y-1/2 xl:translate-y-0 xl:block"
               />
-              <h3 className="h4 mt-8 lg:mt-12 text-center text-v2-blue">
-                {newsletterError && (
-                  <span className="mb-4 block text-left text-sm text-v2-red">
-                    {t("badgeQuestions.subscriptionError")}
-                  </span>
-                )}
-                {t("badgeQuestions.title")}
-              </h3>
-              <label className="flex items-start gap-3 p-lead">
-                <input
-                  type="checkbox"
-                  checked={hasOmega3Consent}
-                  onChange={(event) =>
-                    setHasOmega3Consent(event.target.checked)
-                  }
-                  className="
+              <div
+                ref={badgeQuestionsRef}
+                className="relative z-10 mx-auto flex w-full max-w-xl flex-col gap-6 xl:mt-16 2xl:-mt-32"
+              >
+                <Image
+                  loading="lazy"
+                  src="/site/images/calculator/loading-fish.svg"
+                  width={314}
+                  height={173}
+                  alt=""
+                  className="object-cover mx-auto"
+                />
+                <h3 className="h4 mt-8 lg:mt-12 text-center text-v2-blue">
+                  {newsletterError && (
+                    <span className="mb-4 block text-left text-sm text-v2-red">
+                      {t("badgeQuestions.subscriptionError")}
+                    </span>
+                  )}
+                  {t("badgeQuestions.title")}
+                </h3>
+                <label className="flex items-start gap-3 p-lead">
+                  <input
+                    type="checkbox"
+                    checked={hasOmega3Consent}
+                    onChange={(event) =>
+                      setHasOmega3Consent(event.target.checked)
+                    }
+                    className="
                   cursor-pointer appearance-none w-6 h-6 p-1
                   border border-v2-magenta bg-white checked:bg-v2-magenta
                   checked:ring-v2-magenta hover:ring-v2-magenta hover:bg-v2-magenta
                   focus:ring focus:ring-v2-magenta focus:ring-offset-v2-pink
                   focus:bg-v2-magenta focus:text-v2-magenta"
-                />
-                <span>{t("badgeQuestions.omega3Consent")}</span>
-              </label>
-              <label className="flex flex-col gap-3 p-lead">
-                <span className="text-pretty">
-                  {t("badgeQuestions.emailCaption")}
-                </span>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  aria-label={t("badgeQuestions.email")}
-                  value={email}
-                  onChange={(event) => onEmailChange(event.target.value)}
-                  onBlur={() => validateEmail(emailErrorMessage)}
-                  placeholder={t("badgeQuestions.emailPlaceholder")}
-                  disabled={isPersistenceSubmitting}
-                  className="inline-block h-10 w-full border-0 rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs lg:placeholder:text-sm focus:ring focus:ring-v2-magenta"
-                  suppressHydrationWarning
-                />
-              </label>
-              {emailError && (
-                <p role="alert" className="text-sm text-v2-red">
-                  {emailError}
-                </p>
-              )}
-
-              <button
-                type="button"
-                onClick={() => void handleResponseSubmit()}
-                disabled={
-                  !!emailError || isSubmitting || isPersistenceSubmitting
-                }
-                className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.9849 10.6445L19.5327 12L17.9849 13.3545L8.38525 21.7539L6.01416 19.0449L14.0659 11.999L6.01416 4.9541L8.38525 2.24512L17.9849 10.6445Z"
-                    fill="#E82D04"
                   />
-                </svg>
-                {t("badgeQuestions.button")}
-              </button>
+                  <span>{t("badgeQuestions.omega3Consent")}</span>
+                </label>
+                <label className="flex flex-col gap-3 p-lead">
+                  <span className="text-pretty">
+                    {t("badgeQuestions.emailCaption")}
+                  </span>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    aria-label={t("badgeQuestions.email")}
+                    value={email}
+                    onChange={(event) => onEmailChange(event.target.value)}
+                    onBlur={() => validateEmail(emailErrorMessage)}
+                    placeholder={t("badgeQuestions.emailPlaceholder")}
+                    disabled={isPersistenceSubmitting}
+                    className="inline-block h-10 w-full border-0 rounded-xl bg-white px-4 py-2 text-xs text-v2-blue placeholder:text-gray-400 placeholder:text-xs lg:placeholder:text-sm focus:ring focus:ring-v2-magenta"
+                    suppressHydrationWarning
+                  />
+                </label>
+                {emailError && (
+                  <p role="alert" className="text-sm text-v2-red">
+                    {emailError}
+                  </p>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => void handleResponseSubmit()}
+                  disabled={
+                    !!emailError || isSubmitting || isPersistenceSubmitting
+                  }
+                  className="inline-flex items-center gap-4 cta border-2 rounded-xl bg-v2-pink border-v2-pink hover:bg-v2-pink text-v2-blue px-8 py-2 text-sm w-fit self-center cursor-pointer disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.9849 10.6445L19.5327 12L17.9849 13.3545L8.38525 21.7539L6.01416 19.0449L14.0659 11.999L6.01416 4.9541L8.38525 2.24512L17.9849 10.6445Z"
+                      fill="#E82D04"
+                    />
+                  </svg>
+                  {t("badgeQuestions.button")}
+                </button>
+              </div>
+              <Image
+                loading="lazy"
+                src="/site/images/calculator/badges/fishes-right-block.svg"
+                width={566}
+                height={707}
+                alt=""
+                aria-hidden
+                className="pointer-events-none absolute right-0 top-1/2 hidden h-auto w-[26%] max-w-[566px] -translate-y-1/2 xl:translate-y-0 xl:block"
+              />
             </div>
-            <Image
-              loading="lazy"
-              src="/site/images/calculator/badges/fishes-right-block.svg"
-              width={566}
-              height={707}
-              alt=""
-              aria-hidden
-              className="pointer-events-none absolute right-0 top-1/2 hidden h-auto w-[26%] max-w-[566px] -translate-y-1/2 xl:translate-y-0 xl:block"
-            />
           </div>
           {badgeVisible && badgeImpact && (
             <div
               ref={badgeRef}
-              className="flex flex-col lg:bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16"
+              className="flex flex-col bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16"
             >
               <h2 className="h2 text-center text-v2-blue">
                 {t("badgeQuestions.unlockedBadge")}

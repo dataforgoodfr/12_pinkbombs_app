@@ -3,6 +3,7 @@ import { describe, expect, it, jest } from "@jest/globals";
 import {
   buildPersistedSubmission,
   createPersistedSubmissionClient,
+  persistedSubmissionSchema,
   type SubmissionOptions,
 } from "../persistedSubmission";
 import type { UserProductConsumption } from "../types";
@@ -61,6 +62,7 @@ const products: UserProductConsumption[] = [
 ];
 
 const submissionInput = {
+  mode: "engagement" as const,
   email: "person@example.org",
   impactInitial: "low",
   impactAfterCommitment: "neutral",
@@ -82,6 +84,73 @@ const jsonResponse = (body: unknown, status = 200) =>
 const optionsResponse = () => jsonResponse(options);
 
 describe("buildPersistedSubmission", () => {
+  it.each([true, false])(
+    "builds no-consumption responses with consent %s",
+    (consentOmega3) => {
+      const payload = buildPersistedSubmission(
+        {
+          mode: "noConsumption",
+          email: " person@example.org ",
+          impactInitial: "neutral",
+          consentOmega3,
+          products: [{ name: "none", label: "No salmon", variants: [] }],
+        },
+        {
+          options: {
+            ...options.options,
+            scenarios: [],
+            alternatives: [],
+            supplements: [],
+          },
+        },
+      );
+
+      expect(payload).toEqual({
+        response: {
+          email: "person@example.org",
+          impact_initial: "neutral",
+          consentement_omega3: consentOmega3,
+        },
+        consommations: [],
+      });
+    },
+  );
+
+  it.each([
+    { products: [] },
+    { products },
+    { products: [{ name: "none", label: "None", variants: [] }, ...products] },
+  ])(
+    "rejects products inconsistent with no consumption: %j",
+    ({ products: invalidProducts }) => {
+      expect(() =>
+        buildPersistedSubmission(
+          {
+            mode: "noConsumption",
+            email: "",
+            impactInitial: "neutral",
+            consentOmega3: false,
+            products: invalidProducts,
+          },
+          options,
+        ),
+      ).toThrow("No-consumption submission requires only the none product");
+    },
+  );
+
+  it.each([
+    {},
+    { impact_initial: "low" },
+    { impact_initial: "neutral", impact_apres_engagement: "neutral" },
+    { impact_initial: "neutral", alternative_choisie: "algae" },
+    { impact_initial: "neutral", supplement_choisi: "chiaSeeds" },
+  ])("rejects empty consumption with response %j", (response) => {
+    expect(
+      persistedSubmissionSchema.safeParse({ response, consommations: [] })
+        .success,
+    ).toBe(false);
+  });
+
   it("builds strict code-based rows using calculated annual weights", () => {
     const payload = buildPersistedSubmission(submissionInput, options);
 
@@ -179,6 +248,44 @@ describe("buildPersistedSubmission", () => {
 });
 
 describe("persisted submission client", () => {
+  it("posts no consumption and reuses the retry key and successful result", async () => {
+    const fetcher = jest
+      .fn<typeof fetch>()
+      .mockResolvedValueOnce(optionsResponse())
+      .mockResolvedValueOnce(jsonResponse({}, 503))
+      .mockResolvedValueOnce(jsonResponse({ id: 123 }, 201));
+    const createUuid = jest.fn(() => "792d7f05-9bc1-4f7e-a801-9f1b1ef44e10");
+    const client = createPersistedSubmissionClient(fetcher, createUuid);
+    const input = {
+      mode: "noConsumption" as const,
+      email: "person@example.org",
+      impactInitial: "neutral",
+      consentOmega3: true,
+      products: [{ name: "none", label: "No salmon", variants: [] }],
+    };
+
+    expect(await client.submit(input)).toEqual({
+      success: false,
+      error: "unavailable",
+    });
+    const success = { success: true, id: 123, replayed: false };
+    expect(await client.submit(input)).toEqual(success);
+    expect(await client.submit(input)).toEqual(success);
+    expect(fetcher).toHaveBeenCalledTimes(3);
+    expect(createUuid).toHaveBeenCalledTimes(1);
+    expect(fetcher.mock.calls[2]?.[1]?.headers).toEqual(
+      fetcher.mock.calls[1]?.[1]?.headers,
+    );
+    expect(JSON.parse(String(fetcher.mock.calls[2]?.[1]?.body))).toEqual({
+      response: {
+        email: "person@example.org",
+        impact_initial: "neutral",
+        consentement_omega3: true,
+      },
+      consommations: [],
+    });
+  });
+
   it("sends the payload and reuses its idempotency key after a network failure", async () => {
     const fetcher = jest
       .fn<typeof fetch>()

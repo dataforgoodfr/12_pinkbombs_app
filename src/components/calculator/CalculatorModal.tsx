@@ -153,6 +153,7 @@ export const CalculatorModal = ({
   };
 
   const back = () => {
+    if (state.reduceImpact.engagementsConfirmed) return;
     setScreenTransition({
       axis: state.step === CalculatorStep.Variant ? "y" : "x",
       direction: -1,
@@ -195,28 +196,29 @@ export const CalculatorModal = ({
             className="relative flex flex-col h-dvh max-h-dvh w-full pt-[calc(1.5rem_+_env(safe-area-inset-top))] gap-10 transform bg-v2-blue text-left transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
             <div className="flex justify-between items-center px-4 py-2">
-              {state.step !== CalculatorStep.Selection && (
-                <div className="flex flex-col items-start gap-4">
-                  <button
-                    type="button"
-                    role="backbutton"
-                    aria-label={t("modal.back")}
-                    onClick={back}
-                    className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta text-sm"
-                  >
-                    {t("modal.back")}
-                  </button>
-                  {showProgress && (
-                    <CalculatorProgress
-                      completedProducts={completedProducts}
-                      totalProducts={state.products.length}
-                    />
-                  )}
-                </div>
-              )}
+              {state.step !== CalculatorStep.Selection &&
+                !state.reduceImpact.engagementsConfirmed && (
+                  <div className="flex flex-col items-start gap-4">
+                    <button
+                      type="button"
+                      role="backbutton"
+                      aria-label={t("modal.back")}
+                      onClick={back}
+                      className="col-start-1 row-start-1 justify-self-start cursor-pointer text-v2-pink hover:text-v2-magenta text-end cta text-sm"
+                    >
+                      {t("modal.back")}
+                    </button>
+                    {showProgress && (
+                      <CalculatorProgress
+                        completedProducts={completedProducts}
+                        totalProducts={state.products.length}
+                      />
+                    )}
+                  </div>
+                )}
               <CloseButton
                 onClick={reset}
-                className="col-start-2 row-start-1 mb-auto justify-self-end text-v2-pink hover:text-v2-magenta tracking-wider text-md cta text-sm sm:col-start-3"
+                className="col-start-2 row-start-1 mb-auto ml-auto justify-self-end text-v2-pink hover:text-v2-magenta tracking-wider text-md cta text-sm sm:col-start-3"
               >
                 {t("modal.quit")}
               </CloseButton>
@@ -262,6 +264,9 @@ export const CalculatorModal = ({
                           products={state.products}
                           submissionService={submissionService}
                           reduceImpact={state.reduceImpact}
+                          onConfirmEngagements={() =>
+                            dispatch({ type: "confirmEngagements" })
+                          }
                           onSelectProduct={(productKey) =>
                             dispatch({
                               type: "selectReplacementProduct",

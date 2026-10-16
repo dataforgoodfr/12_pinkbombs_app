@@ -138,6 +138,63 @@ describe("Pinkbombs API routes", () => {
     },
   );
 
+  it.each([200, 201])(
+    "forwards a no-consumption response and HTTP %i",
+    async (status) => {
+      process.env.PINKBOMBS_API_BASE_URL = "http://localhost:8000";
+      const fetchMock = installFetchMock().mockResolvedValue(
+        upstreamResponse({ id: 123 }, status),
+      );
+      const payload = {
+        response: {
+          email: "person@example.org",
+          impact_initial: "neutral",
+          consentement_omega3: true,
+        },
+        consommations: [],
+      };
+      const idempotencyKey = "792d7f05-9bc1-4f7e-a801-9f1b1ef44e10";
+
+      const response = await postSubmission(
+        createRequest(payload, idempotencyKey),
+      );
+
+      expect(response.status).toBe(status);
+      expect(await response.json()).toEqual({ id: 123 });
+      expect(fetchMock).toHaveBeenCalledWith(
+        new URL("http://localhost:8000/api/v1/submissions"),
+        expect.objectContaining({
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json",
+            "Idempotency-Key": idempotencyKey,
+          },
+        }),
+      );
+    },
+  );
+
+  it.each([
+    {},
+    { impact_initial: "low" },
+    { impact_initial: "neutral", impact_apres_engagement: "neutral" },
+    { impact_initial: "neutral", alternative_choisie: "algae" },
+    { impact_initial: "neutral", supplement_choisi: "chiaSeeds" },
+  ])(
+    "rejects invalid empty-consumption response %j before forwarding",
+    async (response) => {
+      const fetchMock = installFetchMock();
+      const result = await postSubmission(
+        createRequest(
+          { response, consommations: [] },
+          "792d7f05-9bc1-4f7e-a801-9f1b1ef44e10",
+        ),
+      );
+      expect(result.status).toBe(422);
+      expect(fetchMock).not.toHaveBeenCalled();
+    },
+  );
+
   it("rejects unknown request fields before calling the upstream API", async () => {
     process.env.PINKBOMBS_API_BASE_URL = "http://localhost:8000";
     const fetchMock = installFetchMock();

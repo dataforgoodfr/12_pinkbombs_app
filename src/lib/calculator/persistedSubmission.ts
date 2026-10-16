@@ -59,23 +59,50 @@ const consumptionSchema = z
 export const persistedSubmissionSchema = z
   .object({
     response: responseSchema,
-    consommations: z.array(consumptionSchema).min(1).max(100),
+    consommations: z.array(consumptionSchema).max(100),
   })
-  .strict();
+  .strict()
+  .refine(
+    ({ response, consommations }) =>
+      consommations.length > 0 ||
+      (response.impact_initial === "neutral" &&
+        response.impact_apres_engagement === undefined &&
+        response.alternative_choisie === undefined &&
+        response.supplement_choisi === undefined),
+    {
+      message:
+        "Empty consumption requires a neutral response without engagements",
+    },
+  );
 
 export type PersistedSubmission = z.infer<typeof persistedSubmissionSchema>;
 
-export interface PersistedSubmissionInput {
+interface PersistedSubmissionBase {
   email: string;
   impactInitial: string;
-  impactAfterCommitment: string;
-  alternative: string;
-  supplement: string;
   consentOmega3: boolean;
   products: UserProductConsumption[];
-  selectedProductKey: string;
-  replacementFrequencyPerYear: number;
 }
+
+export type PersistedSubmissionInput = PersistedSubmissionBase &
+  (
+    | {
+        mode: "noConsumption";
+        impactAfterCommitment?: never;
+        alternative?: never;
+        supplement?: never;
+        selectedProductKey?: never;
+        replacementFrequencyPerYear?: never;
+      }
+    | {
+        mode: "engagement";
+        impactAfterCommitment: string;
+        alternative: string;
+        supplement: string;
+        selectedProductKey: string;
+        replacementFrequencyPerYear: number;
+      }
+  );
 
 const roundedApiNumber = (value: number) => Number(value.toFixed(10));
 
@@ -145,20 +172,44 @@ export const buildPersistedSubmission = (
   input: PersistedSubmissionInput,
   options: SubmissionOptions,
 ): PersistedSubmission => {
+  const email = input.email.trim();
+  if (input.mode === "noConsumption") {
+    if (input.products.length !== 1 || input.products[0]?.name !== "none") {
+      throw new Error(
+        "No-consumption submission requires only the none product",
+      );
+    }
+
+    return persistedSubmissionSchema.parse({
+      response: {
+        ...(email ? { email } : {}),
+        impact_initial: requireOptionCode(
+          options,
+          "impacts",
+          input.impactInitial,
+        ),
+        consentement_omega3: input.consentOmega3,
+      },
+      consommations: [],
+    });
+  }
+
   const selectedProduct = input.products.find((product) =>
-    product.variants.length > 0
-      ? product.variants.some(
-          (variant) => variant.type === input.selectedProductKey,
-        )
-      : product.name === input.selectedProductKey,
+    product.name === "none"
+      ? false
+      : getProductWeightEntries(product).some(
+          (entry) => entry.key === input.selectedProductKey,
+        ),
   );
 
   if (!selectedProduct) {
     throw new Error("Selected product is unavailable");
   }
 
+  const selectedWeightEntries = getProductWeightEntries(selectedProduct);
   const selectedVariants = selectedProduct.variants.filter(
-    (variant) => variant.type === input.selectedProductKey,
+    (_, index) =>
+      selectedWeightEntries[index]?.key === input.selectedProductKey,
   );
   const afterCommitmentProduct: UserProductConsumption = {
     ...selectedProduct,
@@ -172,8 +223,6 @@ export const buildPersistedSubmission = (
     "scenarios",
     "afterCommitment",
   );
-  const email = input.email.trim();
-
   return persistedSubmissionSchema.parse({
     response: {
       ...(email ? { email } : {}),

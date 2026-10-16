@@ -16,6 +16,7 @@ interface DesktopImpactPanelProps {
   selectedAlternative: string | null;
   selectedSupplement: string | null;
   onConfirmEngagements: () => void;
+  canConfirmEngagements: boolean;
 }
 
 export const DesktopImpactPanel = ({
@@ -27,6 +28,7 @@ export const DesktopImpactPanel = ({
   selectedAlternative,
   selectedSupplement,
   onConfirmEngagements,
+  canConfirmEngagements,
 }: DesktopImpactPanelProps) => {
   const t = useTranslations("site.calculator");
   const tComponents = useTranslations("site.components.calculator");
@@ -104,8 +106,8 @@ export const DesktopImpactPanel = ({
           <button
             type="button"
             onClick={onConfirmEngagements}
-            disabled={!selectedAlternative || !selectedSupplement}
-            className={`${!selectedAlternative || !selectedSupplement ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:bg-black"} inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink px-8 py-2 text-sm w-fit self-center `}
+            disabled={!canConfirmEngagements}
+            className={`${!canConfirmEngagements ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:bg-black"} inline-flex cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink px-8 py-2 text-sm w-fit self-center `}
           >
             {t("engagements.confirm")}
           </button>

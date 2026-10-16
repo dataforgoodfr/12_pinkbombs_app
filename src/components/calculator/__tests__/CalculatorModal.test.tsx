@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, jest } from "@jest/globals";
+import { afterEach, beforeAll, describe, it, jest } from "@jest/globals";
 import {
   act,
   fireEvent,
@@ -9,6 +9,15 @@ import {
 } from "@testing-library/react";
 
 import type { CalculatorSubmissionService } from "@/lib/calculator/submission";
+
+beforeAll(() => {
+  Object.defineProperty(HTMLElement.prototype, "scrollIntoView", {
+    configurable: true,
+    value: jest.fn(),
+  });
+});
+
+jest.mock("@/hooks/useIsMobile", () => ({ useIsMobile: () => false }));
 
 jest.mock("next/image", () => ({
   __esModule: true,
@@ -90,6 +99,78 @@ const noneQuestions = [
 describe("CalculatorModal", () => {
   afterEach(() => {
     jest.useRealTimers();
+  });
+
+  it("removes Back after confirmation and restores editing after quitting", async () => {
+    const submissionService = jest
+      .fn<CalculatorSubmissionService>()
+      .mockResolvedValueOnce({
+        totalConsoInKg: 1,
+        consoPerProduct: {
+          freshSalmon: { weightInKg: 1, occurrencePerYear: 52 },
+        },
+        impact: "low",
+      })
+      .mockResolvedValue({
+        totalConsoInKg: 0,
+        consoPerProduct: {},
+        impact: "neutral",
+      });
+    const onClose = jest.fn();
+    render(
+      <CalculatorModal
+        open
+        questions={questions}
+        onClose={onClose}
+        submissionService={submissionService}
+      />,
+    );
+    fireEvent.click(screen.getAllByRole("checkbox")[1]);
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    fireEvent.click(await screen.findByRole("radio"));
+    fireEvent.click(screen.getByRole("button", { name: "modal.next" }));
+    await screen.findByText("sumUp.title");
+    jest.useFakeTimers();
+    fireEvent.click(screen.getByRole("button", { name: "sumUp.button" }));
+    await act(() => jest.advanceTimersByTimeAsync(4000));
+    jest.useRealTimers();
+    await screen.findByRole("button", { name: "reduceImpact.step2.title" });
+    expect(screen.getByRole("backbutton")).toBeInTheDocument();
+    fireEvent.click(
+      screen.getByRole("button", { name: "reduceImpact.step2.title" }),
+    );
+    fireEvent.change(screen.getByRole("spinbutton"), {
+      target: { value: "4" },
+    });
+    jest.useFakeTimers();
+    fireEvent.click(
+      screen.getByRole("button", { name: "reduceImpact.step2.confirm" }),
+    );
+    await act(() => jest.advanceTimersByTimeAsync(1000));
+    fireEvent.click(document.getElementById("alternative-algae")!);
+    await act(() => jest.advanceTimersByTimeAsync(1500));
+    fireEvent.click(document.getElementById("supplement-chiaSeeds")!);
+    await act(() => jest.advanceTimersByTimeAsync(1500));
+    jest.useRealTimers();
+    const confirmButtons = screen.getAllByRole("button", {
+      name: "engagements.confirm",
+    });
+    expect(confirmButtons[1]).toBeEnabled();
+    fireEvent.click(confirmButtons[1]);
+    expect(screen.queryByRole("backbutton")).toBeNull();
+    confirmButtons.forEach((button) => expect(button).toBeDisabled());
+    expect(
+      screen.getByRole("button", { name: "badgeQuestions.button" }),
+    ).toBeEnabled();
+
+    fireEvent.click(screen.getByRole("button", { name: "modal.quit" }));
+    expect(onClose).toHaveBeenCalled();
+    await screen.findByText(questions[0].title);
+    const checkboxes = screen.getAllByRole("checkbox");
+    expect(checkboxes).toHaveLength(2);
+    expect(screen.queryByRole("backbutton")).toBeNull();
+    fireEvent.click(checkboxes[1]);
+    expect(screen.getByRole("button", { name: "modal.next" })).toBeEnabled();
   });
 
   it("tracks completed products from frequency through summary", async () => {

@@ -6,6 +6,7 @@ import type * as React from "react";
 interface AccordionItemProps {
   title: string;
   isActive: boolean;
+  disabled?: boolean;
   onClick: () => void;
   children: React.ReactNode;
 }
@@ -13,15 +14,17 @@ interface AccordionItemProps {
 export const AccordionItem = ({
   title,
   isActive,
+  disabled = false,
   onClick,
   children,
 }: AccordionItemProps) => (
   <div className="rounded-2xl border border-v2-pink">
     <button
+      disabled={disabled}
       onClick={onClick}
       type="button"
       aria-expanded={isActive}
-      className={`flex w-full items-center justify-between p-4 lg:p-6 text-left rounded-2xl focus:outline-hidden ${isActive ? "" : "hover:bg-v2-pink/10"}`}
+      className={`flex w-full items-center justify-between p-4 lg:p-6 text-left rounded-2xl focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 ${isActive || disabled ? "" : "hover:bg-v2-pink/10"}`}
     >
       <h4 className="h4 text-pretty text-v2-pink">{title}</h4>
       <ChevronDown
