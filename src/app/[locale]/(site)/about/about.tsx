@@ -6,8 +6,8 @@ import * as React from "react";
 import "@/lib/env";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
-import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 interface TeamMember {
   name: string;

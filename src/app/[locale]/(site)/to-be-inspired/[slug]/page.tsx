@@ -12,6 +12,7 @@ import type {
 } from "@/lib/articles/types";
 
 import ArticleCard from "@/components/v2/cards/ArticleCard";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 type ArticlePageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -121,7 +122,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </p>
         )}
 
-        <div className="mx-auto max-w-3xl px-5 md:px-8 md:py-16">
+        <div className="max-w-3xl px-8 lg:px-32 md:py-16">
           {article.article.blocks.map((block, index) => (
             <ArticleBlockView key={`${block.type}-${index}`} block={block} />
           ))}
@@ -133,7 +134,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <h2 className="h2 px-5 text-center">
             {article.article.relatedSection.title}
           </h2>
-          <div className="mx-auto max-w-3xl px-5 py-3 md:px-8 text-center">
+          <div className="mx-auto max-w-3xl py-3 px-8 lg:px-32 text-center">
             {article.article.relatedSection.paragraphs.map(
               (segments, index) => (
                 <ArticleParagraphView
@@ -144,7 +145,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             )}
           </div>
           {relatedArticle && (
-            <div className="flex justify-center px-5 pb-8">
+            <div className="flex justify-center px-8 lg:px-32 pb-8">
               <ArticleCard
                 key={relatedArticle.id}
                 id={relatedArticle.id}
@@ -158,13 +159,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               />
             </div>
           )}
-          <Image
+          <ResponsiveSvgDivider
             src="/site/images/to-be-inspired/more-articles-divider.svg"
             width={1512}
             height={53}
-            alt=""
-            aria-hidden="true"
-            className="w-full"
           />
         </section>
       )}

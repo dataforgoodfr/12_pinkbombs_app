@@ -50,7 +50,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl({
-  ...nextConfig,
-  allowedDevOrigins: ['192.168.1.90'],
-});
+module.exports = withNextIntl(nextConfig);

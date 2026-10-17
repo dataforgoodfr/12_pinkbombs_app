@@ -11,8 +11,8 @@ import IllustratedDebunkBlock, {
   IllustratedDebunkProps,
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
-import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const ToUnderstand = () => {
   return (
@@ -147,7 +147,7 @@ const DebunkSection = () => {
         />
       </section>
       <section id="block2" className="bg-white  text-v2-blue">
-        <div className="px-14 py-16 xl:max-w-[1279px] mx-auto">
+        <div className="px-8 lg:px-32 py-16 xl:max-w-[1279px] mx-auto">
           <SectionButtons
             sectionDisplayed="block2"
             activeSection={activeSection}
@@ -178,7 +178,7 @@ const DebunkSection = () => {
         />
       </section>
       <section id="block3" className="bg-v2-blue text-v2-blue">
-        <div className="px-14 pt-16 lg:py-16 xl:max-w-[1279px] mx-auto">
+        <div className="px-8 lg:px-32 pt-16 lg:py-16 xl:max-w-[1279px] mx-auto">
           <SectionButtons
             sectionDisplayed="block3"
             activeSection={activeSection}
@@ -228,7 +228,7 @@ const SectionButtons = ({
     sectionDisplayed === "block3" ? "border-v2-pink" : "border-v2-blue";
   return (
     <div
-      className={`flex gap-4 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
+      className={`flex flex-wrap gap-2 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
     >
       <button
         className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg font-black tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}

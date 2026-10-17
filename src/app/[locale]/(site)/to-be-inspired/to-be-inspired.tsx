@@ -10,8 +10,8 @@ import type { ArticleCardContent } from "@/lib/articles/types";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ArticleCard from "@/components/v2/cards/ArticleCard";
-import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const ToBeInspired = () => {
   return (
@@ -43,7 +43,7 @@ const IntroSection = () => {
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative lg:top-[48px] ml-auto h-auto w-full object-contain object-right scale-[120%]"
+            className="relative top-[60px] lg:top-[48px] ml-auto h-auto w-full object-contain object-right scale-[120%]"
           />
         </div>
       </div>
