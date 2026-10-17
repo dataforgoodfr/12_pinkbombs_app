@@ -2,20 +2,29 @@
 
 ## Getting Started
 
-### 2. Install dependencies
+### 2. Install and update dependencies
 
-It is encouraged to use **yarn** so the husky hooks can work properly.
+Use npm to install the dependencies recorded in `package-lock.json`:
 
 ```bash
-yarn install
+npm install
 ```
+
+To update dependencies within the version ranges declared in `package.json`, run:
+
+```bash
+npm update
+```
+
+Use `npm outdated` to check for newer versions. To add a dependency, use
+`npm install <package>`; add `--save-dev` for a development dependency.
 
 ### 3. Run the development server
 
 You can start the server using this command:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `src/pages/index.tsx`.
@@ -24,18 +33,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Run the followed command:
 
-- Build the project: `yarn build`
-- Launch linter: `yarn lint:strict`
-- Launch Typecheck: `yarn typecheck`
-- Launch Prettier: `yarn format:check`
-- Launch Jest: `yarn test`
+- Build the project: `npm run build`
+- Launch linter: `npm run lint:strict`
+- Launch Typecheck: `npm run typecheck`
+- Launch Prettier: `npm run format:check`
+- Launch Jest: `npm test`
 
 The calculator (Pinkometer) has focused reducer tests and a rendered modal-flow regression
 test covering product selection, frequency selection, summary, and loading.
 Run them with:
 
 ```bash
-pnpm test -- src/components/calculator/__tests__
+npm test -- src/components/calculator/__tests__
 ```
 
 The calculator sends its initial answers and selected reduced-impact
@@ -72,6 +81,39 @@ vercel env pull .env.local --environment=development
 
 The API treats an existing contact as a successful subscription and does not
 expose Brevo credentials or provider error details to the browser.
+
+### Deploy to Vercel
+
+Before deploying, log in to the Vercel account linked to this project:
+
+```bash
+vercel login
+```
+
+Vercel requires the latest commit's author email to match the email linked to
+the Vercel account. Set the Git email and create an empty commit so Vercel can
+accept the deployment:
+
+```bash
+git config --global user.email "pinkbombs.dev@gmail.com"
+git commit -m "fix config user email for vercel" --allow-empty
+```
+
+Run the deployment command from the project directory. Use the Preview target
+for staging:
+
+```bash
+vercel --target preview
+```
+
+Use the Production target for the live site:
+
+```bash
+vercel --target production
+```
+
+Make sure the required environment variables are configured for the matching
+Preview or Production environment in Vercel before deploying.
 
 ### 5. Commit Message Convention
 
