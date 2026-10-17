@@ -10,7 +10,10 @@ import enMessages from "../../../../../../../messages/en/(site)/pages/to-be-insp
 import frMessages from "../../../../../../../messages/fr/(site)/pages/to-be-inspired-articles.json";
 
 jest.mock("next-intl/server", () => ({ getTranslations: jest.fn() }));
-jest.mock("next/image", () => ({ __esModule: true, default: jest.fn(() => null) }));
+jest.mock("next/image", () => ({
+  __esModule: true,
+  default: jest.fn(() => null),
+}));
 jest.mock("@/components/v2/cards/ArticleCard", () => ({
   __esModule: true,
   default: () => null,
@@ -31,9 +34,11 @@ async function renderArticle(overrides: Partial<ArticleContent> = {}) {
   const translate = Object.assign(() => "Articles - ", {
     raw: () => [article],
   });
-  jest.mocked(getTranslations).mockResolvedValue(
-    translate as unknown as Awaited<ReturnType<typeof getTranslations>>,
-  );
+  jest
+    .mocked(getTranslations)
+    .mockResolvedValue(
+      translate as unknown as Awaited<ReturnType<typeof getTranslations>>,
+    );
   return render(
     await ArticlePage({
       params: Promise.resolve({
@@ -107,15 +112,18 @@ describe("article hero", () => {
   it.each([
     ["en", enMessages.toBeInspiredArticle.articles],
     ["fr", frMessages.toBeInspiredArticle.articles],
-  ] as const)("provides matching image dimensions for %s", (_locale, articles) => {
-    articles.forEach((article) => {
-      expect(article.heroImageSize.width).toBeGreaterThan(0);
-      expect(article.heroImageSize.height).toBeGreaterThan(0);
-      expect(article.heroImageSize).toEqual(
-        enMessages.toBeInspiredArticle.articles.find(
-          (item) => item.heroImage === article.heroImage,
-        )?.heroImageSize,
-      );
-    });
-  });
+  ] as const)(
+    "provides matching image dimensions for %s",
+    (_locale, articles) => {
+      articles.forEach((article) => {
+        expect(article.heroImageSize.width).toBeGreaterThan(0);
+        expect(article.heroImageSize.height).toBeGreaterThan(0);
+        expect(article.heroImageSize).toEqual(
+          enMessages.toBeInspiredArticle.articles.find(
+            (item) => item.heroImage === article.heroImage,
+          )?.heroImageSize,
+        );
+      });
+    },
+  );
 });

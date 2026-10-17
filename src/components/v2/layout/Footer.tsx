@@ -102,7 +102,7 @@ const Footer = () => {
             <h4 className="h4">{t("footer.sections.stayInformed.title")}</h4>
             <p className="p-body">{t("footer.sections.stayInformed.text")}</p>
             <NewsletterForm />
-          </div> 
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">

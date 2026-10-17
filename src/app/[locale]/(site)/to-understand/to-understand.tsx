@@ -43,7 +43,8 @@ const IntroSection = () => {
             width={1796}
             height={415}
             alt={t("intro.imageAlt")}
-            className="relative lg:top-[78px] right-[24%] object-contain scale-[160%] lg:scale-[150%]"          />
+            className="relative lg:top-[78px] right-[24%] object-contain scale-[160%] lg:scale-[150%]"
+          />
         </div>
       </div>
       <div className="z-2 relative">

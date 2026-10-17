@@ -1,5 +1,5 @@
 import { act, render } from "@testing-library/react";
-import { createElement, type ComponentProps } from "react";
+import { type ComponentProps, createElement } from "react";
 
 import Navbar from "../Navbar";
 

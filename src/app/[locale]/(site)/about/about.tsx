@@ -8,8 +8,6 @@ import "@/lib/env";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
-import { Link } from "@/navigation";
-
 interface TeamMember {
   name: string;
   role: string;
@@ -48,15 +46,15 @@ const IntroSection = () => {
         </div>
       </div>
       <div className="min-w-0 lg:col-start-1 lg:row-start-1 lg:-ml-32 2xl:ml-0">
-          <Image
-            loading="lazy"
-            src="/site/images/about/surfing-fishes.svg"
-            width={1512}
-            height={431}
-            alt={t("intro.imageAlt")}
-            className="relative lg:-mt-[260px] xl:-mt-[360px] 2xl:-mt-[420px] h-auto w-full object-cover"
-          />
-        </div>
+        <Image
+          loading="lazy"
+          src="/site/images/about/surfing-fishes.svg"
+          width={1512}
+          height={431}
+          alt={t("intro.imageAlt")}
+          className="relative lg:-mt-[260px] xl:-mt-[360px] 2xl:-mt-[420px] h-auto w-full object-cover"
+        />
+      </div>
     </section>
   );
 };
