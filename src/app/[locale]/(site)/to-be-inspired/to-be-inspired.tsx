@@ -11,6 +11,7 @@ import type { ArticleCardContent } from "@/lib/articles/types";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ArticleCard from "@/components/v2/cards/ArticleCard";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const ToBeInspired = () => {
   return (
@@ -42,7 +43,7 @@ const IntroSection = () => {
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative lg:top-[48px] ml-auto h-auto w-full object-contain object-right scale-[120%]"
+            className="relative top-[60px] lg:top-[48px] ml-auto h-auto w-full object-contain object-right scale-[120%]"
           />
         </div>
       </div>
@@ -56,13 +57,10 @@ const ArticleSection = () => {
   return (
     <section className="bg-v2-magenta">
       <div className="bg-v2-yellow">
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-be-inspired/intro-divider.svg"
           width={1512}
           height={103}
-          alt=""
-          className="block h-auto w-full"
         />
       </div>
       <div className="mx-auto grid max-w-[1596px] grid-cols-1 justify-items-center gap-6 px-8 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-32 2xl:py-24">

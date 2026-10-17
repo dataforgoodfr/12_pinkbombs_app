@@ -53,14 +53,23 @@ const CalculatorBlock = () => {
           </p>
         </div>
       </div>
-      <Image
-        loading="lazy"
-        src="/site/images/components/calculator-block/calculator-block-divider.svg"
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        className="relative top-px block w-full h-auto overflow-hidden"
+        preserveAspectRatio="none"
         width={1512}
         height={53}
-        alt={t("calculatorBlock.imageAlt")}
-        className="object-cover w-full"
-      />
+        viewBox="0 0 1512 53"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width={1512} height={53} fill="#13176E" />
+        <path
+          d="M-0.5 21.9809C-0.5 21.9809 108.206 -3.40926 242.838 6.69336C375.925 16.6828 506.201 81.6094 787.788 39.8903C929.538 18.8926 1086.56 -24.8915 1268.95 16.6782C1427.5 52.814 1511.5 26.1469 1511.5 26.1469H1514V170.391H-0.5V21.9763V21.9809Z"
+          fill="white"
+        />
+      </svg>
     </section>
   );
 };

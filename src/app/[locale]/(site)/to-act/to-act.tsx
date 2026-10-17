@@ -11,6 +11,7 @@ import AccordionCard, {
   RecommendationProps,
 } from "@/components/v2/cards/AccordionCard";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const ToAct = () => {
   return (
@@ -42,18 +43,16 @@ const IntroSection = () => {
             width={841}
             height={461}
             alt={t("intro.imageAlt")}
-            className="relative z-10 -bottom-[52px] lg:-bottom-[98px] xl:-bottom-[96px] lg:right-10 2xl:-right-40 ml-auto h-auto w-full object-contain object-right scale-[120%]"
+            className="relative z-10 -bottom-[62px] lg:-bottom-[98px] xl:-bottom-[96px] lg:right-10 2xl:-right-40 ml-auto h-auto w-full object-contain object-right scale-[120%]"
           />
         </div>
       </div>
       <div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-act/intro-divider.svg"
           width={1512}
           height={103}
-          alt=""
-          className="relative block h-auto w-full z-20"
+          className="relative top-px z-20 block h-auto w-full"
         />
       </div>
     </section>
@@ -138,7 +137,7 @@ const RecommendationsSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-white text-v2-blue">
+    <section className="relative z-20 bg-white text-v2-blue">
       <div
         id="individual-section"
         ref={individualSectionRef}
@@ -173,13 +172,10 @@ const RecommendationsSection = () => {
           ))}
         </div>
       </div>
-      <Image
-        loading="lazy"
+      <ResponsiveSvgDivider
         src="/site/images/to-act/divider.svg"
         width={1512}
         height={63}
-        alt=""
-        className="block w-full h-auto"
       />
       <div
         id="company-section"
@@ -218,13 +214,10 @@ const RecommendationsSection = () => {
           ))}
         </div>
       </div>
-      <Image
-        loading="lazy"
+      <ResponsiveSvgDivider
         src="/site/images/about/calculator-block-divider.svg"
         width={1512}
         height={53}
-        alt="Divider"
-        className="block w-full h-auto"
       />
     </section>
   );

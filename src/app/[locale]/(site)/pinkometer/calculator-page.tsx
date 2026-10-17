@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as React from "react";
 import "@/lib/env";
@@ -9,6 +8,7 @@ import type { Question } from "@/lib/calculator/types";
 
 import { CalculatorModal } from "@/components/calculator/CalculatorModal";
 import Calculator from "@/components/v2/Calculator";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const CalculatorPage = () => {
   const t = useTranslations("site.calculator");
@@ -34,13 +34,10 @@ const CalculatorPage = () => {
             {t("intro.button")}
           </button>
         </div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/calculator/divider-footer.svg"
           width={1512}
           height={74}
-          alt=""
-          className="object-contain w-full"
         />
       </section>
       <CalculatorModal

@@ -12,6 +12,7 @@ import IllustratedDebunkBlock, {
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 
 const ToUnderstand = () => {
   return (
@@ -48,13 +49,11 @@ const IntroSection = () => {
         </div>
       </div>
       <div className="z-2 relative">
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/intro-divider.svg"
           width={1512}
           height={103}
-          alt={t("intro.imageAlt")}
-          className="object-cover w-full"
+          className="relative top-px z-20 block h-auto w-full"
         />
       </div>
     </section>
@@ -141,17 +140,14 @@ const DebunkSection = () => {
             ))}
           </div>
         </div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/block2-divider.svg"
           width={1510}
           height={48}
-          alt=""
-          className="object-cover w-full"
         />
       </section>
       <section id="block2" className="bg-white  text-v2-blue">
-        <div className="px-14 py-16 xl:max-w-[1279px] mx-auto">
+        <div className="px-8 lg:px-32 py-16 xl:max-w-[1279px] mx-auto">
           <SectionButtons
             sectionDisplayed="block2"
             activeSection={activeSection}
@@ -175,17 +171,14 @@ const DebunkSection = () => {
             ))}
           </div>
         </div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/block3-divider.svg"
           width={1510}
           height={48}
-          alt=""
-          className="object-cover w-full"
         />
       </section>
       <section id="block3" className="bg-v2-blue text-v2-blue">
-        <div className="px-14 pt-16 lg:py-16 xl:max-w-[1279px] mx-auto">
+        <div className="px-8 lg:px-32 pt-16 lg:py-16 xl:max-w-[1279px] mx-auto">
           <SectionButtons
             sectionDisplayed="block3"
             activeSection={activeSection}
@@ -235,7 +228,7 @@ const SectionButtons = ({
     sectionDisplayed === "block3" ? "border-v2-pink" : "border-v2-blue";
   return (
     <div
-      className={`flex gap-4 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
+      className={`flex flex-wrap gap-2 mb-6 ${sectionDisplayed === "block1" || sectionDisplayed === "block2" ? "justify-start" : "justify-center"}`}
     >
       <button
         className={`${activeSection === "block1" ? "border-none" : "border border-2"} ${borderColor}  rounded-xl py-1 px-3 cta text-xs lg:text-lg font-black tracking-wider hover:scale-105 ${activeSection === "block1" ? activeTagColor : inactiveTagColor}`}
