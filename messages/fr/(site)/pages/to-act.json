@@ -51,12 +51,7 @@
               "type": "download"
             },
             {
-              "cta": "Les chef·fes qui réinventent la mer dans nos assiettes",
-              "id": 7,
-              "type": "internalArticle"
-            },
-            {
-              "cta": "Manger la mer sans la vider\u00a0: le potentiel (méconnu) des algues",
+              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
               "id": 5,
               "type": "internalArticle"
             }
@@ -93,8 +88,8 @@
               "type": "internalArticle"
             },
             {
-              "cta": "Oméga 3\u00a0: faut-il vraiment manger du poisson pour être en bonne santé\u00a0?",
-              "id": 2,
+              "cta": "Les saumons, symbole d’une industrie",
+              "id": 1,
               "type": "internalArticle"
             },
             {
@@ -123,8 +118,8 @@
               "type": "download"
             },
             {
-              "cta": "Demandez-nous de l'aide pour convaincre en interne",
-              "url": "mailto:contact@seastemik.com",
+              "cta": "Demandez-nous de l'aide pour convaincre en interne. Écrivez à charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]
@@ -145,8 +140,8 @@
           "description": "Chaque entreprise peut engager des transformations puissantes. Seastemik peut vous accompagner pour enclencher ce changement avec vos équipes.\n\nIl est urgent, possible (et joyeux) de dépoissonner l’alimentation dans la restauration pour aller vers une offre alignée avec les 10kg de consommation de poissons par an et par habitants en France.",
           "actions": [
             {
-              "cta": "Prendre RDV avec Seastemik",
-              "url": "mailto:contact@seastemik.com",
+              "cta": "Prendre RDV avec Seastemik. Écrivez à charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]

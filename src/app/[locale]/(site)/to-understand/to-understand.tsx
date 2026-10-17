@@ -31,23 +31,23 @@ const IntroSection = () => {
 
   return (
     <section className="bg-v2-blue text-v2-pink">
-      <div className="flex flex-col lg:flex-row px-12 pt-12 pb-10 md:pb-14 lg:pb-36 xl:pb-24 lg:pt-20 lg:pl-24 gap-12 lg:gap-0 justify-center mx-auto">
-        <div className="flex flex-col gap-4 z-10 lg:w-[40%] xl:w-[50%] 2xl:pl-48">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-[400px] py-10 lg:gap-10 justify-center items-center mx-auto 2xl:max-w-[1596px]">
+        <div className="flex flex-col gap-4 pl-8 lg:pl-32 mb-32 lg:mb-0 z-10">
           <h4 className="h4 text-pretty">{t("intro.caption")}</h4>
           <h1 className="h1 text-pretty">{t("intro.title")}</h1>
         </div>
-        <div className="flex flex-col lg:w-[60%]">
+        <div className="flex flex-col">
           <Image
             loading="lazy"
             src="/site/images/to-understand/intro.svg"
             width={1796}
             height={415}
             alt={t("intro.imageAlt")}
-            className="relative right-14 md:right-0 md:left-2 lg:-left-16 lg:top-44 xl:top-0 xl:-left-32 2xl:top-2 z-0 object-contain scale-[150%] md:scale-[110%] lg:scale-[150%] xl:scale-[150%] 2xl:scale-[130%]"
+            className="relative lg:top-[78px] right-[24%] object-contain scale-[160%] lg:scale-[150%]"
           />
         </div>
       </div>
-      <div className="z-2 relative -mt-8 md:-mt-20 lg:-mt-20 xl:-mt-28 2xl:-mt-32">
+      <div className="z-2 relative">
         <Image
           loading="lazy"
           src="/site/images/to-understand/intro-divider.svg"
@@ -117,7 +117,7 @@ const DebunkSection = () => {
   return (
     <>
       <section id="block1" className="bg-white text-v2-blue">
-        <div className="px-8 py-12 xl:max-w-[1279px] mx-auto">
+        <div className="px-8 lg:px-32 py-12 2xl:py-24 2xl:max-w-[1596px] mx-auto">
           <SectionButtons
             sectionDisplayed="block1"
             activeSection={activeSection}

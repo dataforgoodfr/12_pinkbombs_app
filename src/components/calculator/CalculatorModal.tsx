@@ -299,7 +299,7 @@ export const CalculatorModal = ({
                     {state.step === CalculatorStep.Selection && (
                       <div className="flex flex-col justify-center items-center gap-8">
                         <div className="flex flex-col h-full items-center px-6 gap-10 w-full">
-                          <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
+                          <DialogTitle className="h2 lg:h1 text-center text-pretty text-v2-pink">
                             {questions[0]?.title}
                           </DialogTitle>
                           <ProductSelectionQuestion
@@ -323,7 +323,7 @@ export const CalculatorModal = ({
                       currentProduct && (
                         <div className="flex flex-col justify-center items-center gap-8">
                           <div className="flex flex-col items-center px-6 gap-10 w-full">
-                            <DialogTitle className="h4 lg:h2 text-center text-pretty text-v2-pink">
+                            <DialogTitle className="h2 lg:h1 text-center text-pretty text-v2-pink">
                               {state.step === CalculatorStep.Variant
                                 ? currentVariantQuestion?.title
                                 : t("modal.questions.1.title", {

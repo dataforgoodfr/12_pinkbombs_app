@@ -26,7 +26,7 @@ const ShareLink = ({
   }
   return (
     <a
-      className={clsx("text-base underline group", className)}
+      className={clsx("text-base group", className)}
       href={href}
       target="_blank"
       rel="noopener noreferrer"

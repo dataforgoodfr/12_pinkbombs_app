@@ -28,7 +28,7 @@ export default HomePage;
 const HeroSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="flex lg:py-40 p-10 lg:px-20 xl:pt-28 min-h-[600px] text-v2-blue bg-v2-pink">
+    <section className="relative flex px-8 py-10 lg:py-0 lg:px-32 lg:h-screen text-v2-blue bg-v2-pink">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-[1596px] items-center mx-auto">
         <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-magenta">
           {t("hero.title")}{" "}
@@ -64,7 +64,7 @@ const ExplodeSection = () => {
               loading="lazy"
               src="/site/images/homepage/red-line.svg"
               width={437}
-              height={0}
+              height={14}
               alt={t("bomb.imageAlt")}
               className="pt-2 object-contain h-auto max-w-[70%] lg:max-w-full"
             />
@@ -81,10 +81,10 @@ const ExplodeSection = () => {
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-bomb.svg"
-          width={1420}
-          height={870}
+          width={1126}
+          height={760}
           alt={t("bomb.imageAlt")}
-          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto h-full"
+          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto w-auto h-full"
         />
       </div>
     </section>
@@ -97,12 +97,12 @@ const ImpactSection = () => {
     <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto">
       <div className="max-w-[1512px] mx-auto">
         <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
             <Image
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
               width={611}
-              height={179}
+              height={239}
               alt={t("impact.imageAltTitle")}
               className="block flex-1 object-contain lg:max-w-[611px] mx-auto h-auto"
             />
@@ -226,9 +226,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="Divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -252,9 +252,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="Divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -278,9 +278,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -303,10 +303,10 @@ const AdditionSection = () => {
             <Image
               loading="lazy"
               src="/site/images/homepage/addition-heavy-divider.svg"
-              width={725}
-              height={0}
+              width={676}
+              height={35}
               alt="Divider"
-              className="-rotate-[2.2deg] mt-6"
+              className="w-[725px] h-auto -rotate-[2.2deg] mt-6"
             />
           </div>
         </div>
@@ -376,10 +376,10 @@ const AdditionSection = () => {
             <Image
               loading="lazy"
               src="/site/images/homepage/addition-heavy-divider.svg"
-              width={725}
-              height={0}
+              width={676}
+              height={35}
               alt="Divider"
-              className="object-contain -rotate-[2.2deg]"
+              className="w-[725px] h-auto object-contain -rotate-[2.2deg]"
             />
           </div>
         </div>

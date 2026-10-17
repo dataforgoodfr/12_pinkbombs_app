@@ -36,7 +36,7 @@ const Button = ({
         backgroundColor,
         textColor === "text-v2-blue" && "hover:text-v2-pink hover:bg-v2-blue",
         type === "small" && "px-4 py-2 text-sm lg:text-base w-fit",
-        type === "regular" && "px-4 lg:px-8 py-3 gap-5 text-xs lg:text-base",
+        type === "regular" && "px-4 lg:px-8 py-3 gap-5 text-xs md:text-sm",
       )}
       href={href}
     >

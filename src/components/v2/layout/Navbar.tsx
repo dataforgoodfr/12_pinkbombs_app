@@ -39,6 +39,27 @@ const Navbar = () => {
       ? Number(slug?.match(/-(\d+)$/)?.[1])
       : undefined;
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const headerRef = React.useRef<HTMLElement>(null);
+
+  React.useLayoutEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+
+    const updateHeight = () => {
+      document.documentElement.style.setProperty(
+        "--site-navbar-height",
+        `${header.getBoundingClientRect().height}px`,
+      );
+    };
+    updateHeight();
+    const observer = new ResizeObserver(updateHeight);
+    observer.observe(header);
+
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.removeProperty("--site-navbar-height");
+    };
+  }, []);
 
   const getLocaleHref = (targetLocale: (typeof locales)[number]) => {
     const localizedSlug = articleId
@@ -82,18 +103,19 @@ const Navbar = () => {
 
   return (
     <header
+      ref={headerRef}
       className={clsx(
         "fixed left-0 top-0 z-50 w-full",
         `bg-v2-${getBackgroundColor()}`,
       )}
     >
-      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 lg:py-6 max-w-[1596px] mx-auto">
+      <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 max-w-[1596px] mx-auto">
         <Link href="/">
           <Image
             src={`/site/images/pinkbombs-${getColor()}.svg`}
             alt="PinkBombs"
             width={192}
-            height={58}
+            height={getColor() === "blue" ? 58 : 57}
             className="w-full h-auto object-contain"
           />
         </Link>

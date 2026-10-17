@@ -68,15 +68,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const heroTextSideClass =
     heroTextSide === "right" ? "lg:ml-auto lg:mr-[8%]" : "lg:ml-[8%]";
   const isStackedHero = article.article.heroLayout === "stacked";
-
   return (
     <>
       <article className="bg-white text-v2-blue">
         <header
+          data-viewport-article-hero={isStackedHero ? undefined : true}
           className={
             isStackedHero
               ? "bg-white"
-              : "relative isolate bg-white lg:flex lg:min-h-[600px] lg:items-end lg:overflow-hidden"
+              : "relative isolate grid grid-cols-1 bg-white"
           }
         >
           {isStackedHero ? (
@@ -90,23 +90,21 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               className="mx-auto block h-auto max-h-[80vh] w-full object-contain"
             />
           ) : (
-            <div className="relative h-[360px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto lg:overflow-visible">
-              <Image
-                src={article.article.heroImage}
-                alt={article.article.heroImageAlt}
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-v2-blue/20" />
-            </div>
+            <Image
+              src={article.article.heroImage}
+              alt={article.article.heroImageAlt}
+              width={article.article.heroImageSize?.width ?? 1440}
+              height={article.article.heroImageSize?.height ?? 960}
+              priority
+              sizes="100vw"
+              className="viewport-article-hero-image col-start-1 row-start-1 block h-auto w-full self-start object-cover object-center"
+            />
           )}
           <div
             className={
               isStackedHero
                 ? "mx-auto max-w-3xl px-5 py-8 md:px-8 lg:py-12"
-                : `relative z-10 mx-4 -translate-y-[10%] max-w-2xl bg-white p-5 lg:mb-12 lg:translate-y-0 lg:p-8 ${heroTextSideClass}`
+                : `relative z-10 col-start-1 row-start-2 mx-4 mb-5 -translate-y-[5%] max-w-2xl bg-v2-yellow p-5 lg:row-start-1 lg:my-12 lg:self-end lg:translate-y-0 lg:p-8 ${heroTextSideClass}`
             }
           >
             <h1 className="h1 text-pretty">{article.article.title}</h1>
@@ -132,10 +130,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {article.article.relatedSection && (
         <section className="bg-v2-magenta pt-12 text-black md:pt-16">
-          <h2 className="h3 px-5 text-center">
+          <h2 className="h2 px-5 text-center">
             {article.article.relatedSection.title}
           </h2>
-          <div className="mx-auto max-w-3xl px-5 py-8 md:px-8">
+          <div className="mx-auto max-w-3xl px-5 py-3 md:px-8 text-center">
             {article.article.relatedSection.paragraphs.map(
               (segments, index) => (
                 <ArticleParagraphView
@@ -247,7 +245,7 @@ function ArticleParagraphView({
   segments: ArticleTextSegment[];
 }) {
   return (
-    <p className="my-5 text-base leading-relaxed md:text-lg">
+    <p className="my-5 text-base leading-relaxed md:text-lg text-pretty">
       {segments.map((segment, index) =>
         segment.type === "link" && segment.href ? (
           <a

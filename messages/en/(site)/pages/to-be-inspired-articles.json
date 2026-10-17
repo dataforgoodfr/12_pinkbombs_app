@@ -7,6 +7,7 @@
         "title": "Salmon, a symbol of an industry",
         "summary": "Once reserved for celebratory meals, salmon has become the most consumed fish in France in just a few decades. Behind this troubling consumption lies the story of an industry that turned salmon into a mass-market product.",
         "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageSize": { "width": 2481, "height": 3508 },
         "heroImageAlt": "Salmon farming pens in a coastal bay",
         "blocks": [
           {
@@ -188,6 +189,7 @@
         "title": "How can we replace fish on our plates?",
         "summary": "An interview with Marie Laforêt, a leading voice in plant-based cooking",
         "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
+        "heroImageSize": { "width": 492, "height": 633 },
         "heroImageAlt": "Marie Laforêt, author of Seafood Vegan",
         "blocks": [
           {
@@ -361,6 +363,7 @@
         "title": "SALMO, the incredible story of a wild salmon",
         "summary": "A river, a forest, an estuary, the ocean, and then glaciers. Salmon spend their lives connecting worlds we think of as separate. Selected for many festivals, the animated short film SALMO tells the incredible journey of wild salmon and shows how fragile the ecosystems they cross are.",
         "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageSize": { "width": 1607, "height": 903 },
         "heroImageAlt": "Artwork from the animated short film SALMO",
         "blocks": [
           {
@@ -480,6 +483,7 @@
         "title": "5 misconceptions about fish (and why they are false)",
         "summary": "Being as silent as a carp, cursing someone with a fishy insult, or having a goldfish memory… These expressions reveal how little we value and know about fish. Let’s take a closer look at common misconceptions and learn to see these marine animals differently.",
         "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageSize": { "width": 3860, "height": 2571 },
         "heroImageAlt": "Illustration of fish for the article about common misconceptions",
         "blocks": [
           {
@@ -687,6 +691,7 @@
         "title": "5 salmon alternatives that are already changing the game",
         "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageSize": { "width": 800, "height": 1000 },
         "heroImageAlt": "Smoked carrot on toast, a plant-based alternative to smoked salmon",
         "blocks": [
           {
@@ -1361,6 +1366,7 @@
         "title": "George Ka, salmon and ghosts",
         "summary": "At the Théâtre de la Ville in Paris, artist George Ka presented Salmo Salar in 2026: an expanded concert that uses migratory fish as a starting point for reflecting on identity and our relationship with the living world.",
         "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
         "heroImageAlt": "George Ka on stage during Salmo Salar",
         "heroImageCredit": "Hugo Meunier",
         "heroTextSide": "left",
@@ -1438,6 +1444,7 @@
         "title": "13 organizations working to bring life back to the ocean",
         "summary": "The ocean does not just need to be “saved.” It needs life to return. Around the world, groups, scientists, and citizens are working to transform our relationship with the ocean. Here is a look at organizations making a difference in their own ways.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
         "heroImageAlt": "The ocean and organizations working to protect it",
         "heroTextSide": "left",
         "blocks": [

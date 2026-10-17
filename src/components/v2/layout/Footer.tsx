@@ -18,16 +18,16 @@ const Footer = () => {
   return (
     <footer className="p-6 lg:p-12 text-white bg-darkblue1">
       <div className="max-w-[1500px] mx-auto">
-        <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-6 lg:gap-4 lg:pt-12">
+        <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-12 lg:gap-4 lg:pt-12">
           <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
             <h4 className="h4">{t("footer.sections.projectBy.title")}</h4>
             <Image
               loading="lazy"
               src="/site/images/seastemik-x-dataforgood.svg"
-              width={170}
-              height={100}
+              width={213}
+              height={50}
               alt="Seastemik"
-              className="object-contain"
+              className="w-[170px] h-auto object-contain"
             />
             <ShareLink
               href="https://seastemik.org/"
@@ -40,28 +40,28 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-full max-w-72">
             <h4 className="h4">{t("footer.sections.projectBy.site")}</h4>
             <Link
-              className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
               href="/"
               locale={locale}
             >
               {t("nav.home")}
             </Link>
             <Link
-              className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
               href="/to-understand"
               locale={locale}
             >
               {t("nav.toUnderstand")}
             </Link>
             <Link
-              className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
               href="/to-act"
               locale={locale}
             >
               {t("nav.toAct")}
             </Link>
             <Link
-              className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
               href="/to-be-inspired"
               locale={locale}
             >
@@ -72,7 +72,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-full max-w-72">
             <h4 className="h4">{t("footer.sections.more.title")}</h4>
             <Link
-              className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+              className="text-base text-white hover:text-v2-yellow"
               href="/about"
               locale={locale}
             >
@@ -105,7 +105,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-6 lg:mt-12">
+        <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">
           <p className="text-base">Seastemik - © {currentYear}</p>
           <br />
           <div className="flex gap-1 md:items-center md:justify-center">
