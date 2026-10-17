@@ -119,7 +119,7 @@
             },
             {
               "cta": "Demandez-nous de l'aide pour convaincre en interne. Écrivez à charlotte@seastemik.com.",
-              "url": "mailto:contact@seastemik.com",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]
@@ -141,7 +141,7 @@
           "actions": [
             {
               "cta": "Prendre RDV avec Seastemik. Écrivez à charlotte@seastemik.com.",
-              "url": "mailto:contact@seastemik.com",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]

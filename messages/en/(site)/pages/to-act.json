@@ -51,7 +51,7 @@
               "type": "download"
             },
             {
-              "cta": "When a French bakery chain removes salmon from its menu",
+              "cta": "How can we replace fish on our plates?",
               "id": 2,
               "type": "internalArticle"
             },
@@ -124,7 +124,7 @@
             },
             {
               "cta": "Ask us for help to convince internally. Write to charlotte@seastemik.com.",
-              "url": "mailto:contact@seastemik.com",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]
@@ -146,7 +146,7 @@
           "actions": [
             {
               "cta": "Book an appointment with Seastemik. Write to charlotte@seastemik.com.",
-              "url": "mailto:contact@seastemik.com",
+              "url": "mailto:charlotte@seastemik.com",
               "type": "externalRedirect"
             }
           ]

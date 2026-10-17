@@ -21,7 +21,7 @@ const SectionBackground = () => {
       />
       <div
         aria-hidden="true"
-        className="fixed inset-x-0 bottom-0 h-30 lg:h-0 -z-20 bg-v2-blue"
+        className="fixed inset-x-0 bottom-0 h-32 lg:h-0 -z-20 bg-v2-blue"
       />
     </>
   );
