@@ -11,6 +11,7 @@ import IllustratedDebunkBlock, {
   IllustratedDebunkProps,
 } from "@/components/v2/blocks/IllustratedDebunkBlock";
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 const ToUnderstand = () => {
@@ -48,13 +49,11 @@ const IntroSection = () => {
         </div>
       </div>
       <div className="z-2 relative">
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/intro-divider.svg"
           width={1512}
           height={103}
-          alt={t("intro.imageAlt")}
-          className="object-cover w-full"
+          className="relative top-px z-20 block h-auto w-full"
         />
       </div>
     </section>
@@ -141,13 +140,10 @@ const DebunkSection = () => {
             ))}
           </div>
         </div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/block2-divider.svg"
           width={1510}
           height={48}
-          alt=""
-          className="object-cover w-full"
         />
       </section>
       <section id="block2" className="bg-white  text-v2-blue">
@@ -175,13 +171,10 @@ const DebunkSection = () => {
             ))}
           </div>
         </div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-understand/block3-divider.svg"
           width={1510}
           height={48}
-          alt=""
-          className="object-cover w-full"
         />
       </section>
       <section id="block3" className="bg-v2-blue text-v2-blue">

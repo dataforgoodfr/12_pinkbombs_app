@@ -35,7 +35,7 @@ const HeroSection = () => {
           <span className="text-v2-blue">{t("hero.title2")}</span>
         </h1>
         <Image
-          loading="lazy"
+          loading="eager"
           src="/site/images/homepage/fish-plate.svg"
           width={569}
           height={424}
@@ -141,7 +141,7 @@ const MenuSection = () => {
   const menuCardItems = t.raw("menu.menuCards") as MenuCardProps[];
   return (
     <section className="relative flex flex-col bg-white mx-auto ">
-      <div className="bg-[url(/site/images/homepage/divider-menu-section.svg)] bg-center bg-repeat w-full h-[48px]" />
+      <div className="bg-v2-blue bg-[url(/site/images/homepage/divider-menu-section.svg)] bg-top bg-repeat-x w-full h-[49px] -mt-px" />
       <div className="max-w-[1512px] mx-auto">
         <div className="flex flex-col px-4 py-20 lg:px-0 space-between gap-6 lg:gap-12 max-w-[658px] mx-auto">
           <p className="h2 text-center mt-4 text-pretty">
@@ -395,14 +395,17 @@ const AdditionSection = () => {
           />
         </div>
       </div>
-      <Image
-        loading="lazy"
-        src="/site/images/homepage/calculator-divider.svg"
-        width={1512}
-        height={53}
-        alt="divider"
-        className="absolute bottom-0 object-cover"
-      />
+      <svg className="absolute -bottom-px left-0 block w-full h-auto" preserveAspectRatio="none" width="1512" height="53" viewBox="0 0 1512 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_1544_8468)">
+      <rect width="1512" height="53" fill="#FF5029"/>
+      <path d="M-0.5 21.9809C-0.5 21.9809 108.206 -3.40926 242.838 6.69336C375.925 16.6828 506.201 81.6094 787.788 39.8903C929.538 18.8926 1086.56 -24.8915 1268.95 16.6782C1427.5 52.814 1511.5 26.1469 1511.5 26.1469V170.391H-0.5V21.9763V21.9809Z" fill="#13176E"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_1544_8468" clipPathUnits="userSpaceOnUse">
+      <rect width="1512" height="53" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>
     </section>
   );
 };

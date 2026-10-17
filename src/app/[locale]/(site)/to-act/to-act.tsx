@@ -7,6 +7,7 @@ import { useState } from "react";
 import "@/lib/env";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import AccordionCard, {
   RecommendationProps,
 } from "@/components/v2/cards/AccordionCard";
@@ -47,13 +48,11 @@ const IntroSection = () => {
         </div>
       </div>
       <div>
-        <Image
-          loading="lazy"
+        <ResponsiveSvgDivider
           src="/site/images/to-act/intro-divider.svg"
           width={1512}
           height={103}
-          alt=""
-          className="relative block h-auto w-full z-20"
+          className="relative top-px z-20 block h-auto w-full"
         />
       </div>
     </section>
@@ -173,13 +172,10 @@ const RecommendationsSection = () => {
           ))}
         </div>
       </div>
-      <Image
-        loading="lazy"
+      <ResponsiveSvgDivider
         src="/site/images/to-act/divider.svg"
         width={1512}
         height={63}
-        alt=""
-        className="block w-full h-auto"
       />
       <div
         id="company-section"
@@ -218,13 +214,10 @@ const RecommendationsSection = () => {
           ))}
         </div>
       </div>
-      <Image
-        loading="lazy"
+      <ResponsiveSvgDivider
         src="/site/images/about/calculator-block-divider.svg"
         width={1512}
         height={53}
-        alt="Divider"
-        className="block w-full h-auto"
       />
     </section>
   );

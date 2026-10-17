@@ -6,6 +6,7 @@ import * as React from "react";
 import "@/lib/env";
 
 import CalculatorBlock from "@/components/v2/CalculatorBlock";
+import ResponsiveSvgDivider from "@/components/v2/ResponsiveSvgDivider";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
 
 interface TeamMember {
@@ -470,13 +471,10 @@ const ApproachAndMethodSection = () => {
           </div>
         </div>
       </div>
-      <Image
-        loading="lazy"
+      <ResponsiveSvgDivider
         src="/site/images/about/calculator-block-divider.svg"
         width={1512}
         height={53}
-        alt="Divider"
-        className="block w-full h-auto"
       />
     </section>
   );
