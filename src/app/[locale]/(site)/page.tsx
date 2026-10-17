@@ -401,7 +401,7 @@ const AdditionSection = () => {
         width={1512}
         height={53}
         alt="divider"
-        className="absolute bottom-0 object-contain xl:w-[2000px] mx-auto"
+        className="absolute bottom-0 object-cover"
       />
     </section>
   );
