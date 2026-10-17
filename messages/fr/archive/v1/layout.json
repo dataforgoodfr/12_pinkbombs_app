@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "top": "Haut de page",
+    "nav": {
+      "archiveHeadline": "Cette page est conservée à titre d'archive. Son contenu fait partie de la V1 de PinkBombs et peut être obsolète. Consultez la",
+      "archiveCTA": "version actuelle du site",
+      "title": "principale",
+      "story": "Story",
+      "dashboard": "Dashboard",
+      "act": "Agir",
+      "about": "À propos"
+    },
+    "footer": {
+      "allRight": "Tous droits réservés",
+      "and": "et",
+      "donation": "Faire un don",
+      "legalNotice": "Mentions légales"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analyser l'impact du saumon sur l'environnement, l'écosystème, la santé et les communautés.",
+    "url": "https://pinkbombs-app.vercel.app"
+  }
+}

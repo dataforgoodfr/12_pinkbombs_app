@@ -1,0 +1,260 @@
+{
+  "calculator": {
+    "meta": {
+      "title": "Pinkometer"
+    },
+    "intro": {
+      "title": "Calculate your impact",
+      "caption": "You have just read the bill for a single salmon.\nNow let's find out how many you ordered.",
+      "button": "Start"
+    },
+    "modal": {
+      "back": "Back",
+      "progress": "Completion status of pinkometer questions",
+      "progressLabel": "{completedProducts} questions out of {totalProducts} have been completed for the selected products",
+      "quit": "Quit the pinkometer",
+      "next": "Next",
+      "questions": [
+        {
+          "title": "What types of salmon do you consume?",
+          "type": "checkbox",
+          "options": [
+            { "name": "none", "label": "I do not consume salmon" },
+            { "name": "fillet", "label": "fillet or steak", "prefix": "some" },
+            {
+              "name": "sushi",
+              "label": "sushi (maki, nigiri, sashimi)",
+              "prefix": "some"
+            },
+            { "name": "pokeBowl", "label": "poke bowls", "prefix": "some" },
+            { "name": "appetizer", "label": "appetizers", "prefix": "some" },
+            { "name": "pasta", "label": "salmon pasta", "prefix": "some" },
+            {
+              "name": "smokedSalmon",
+              "label": "sliced smoked salmon",
+              "prefix": "some"
+            },
+            {
+              "name": "quicheSandwich",
+              "label": "quiche, sandwich, croque-monsieur"
+            }
+          ]
+        },
+        {
+          "title": "How often do you consume {prefix} {label}?",
+          "type": "radio",
+          "options": [
+            { "name": "semiWeekly", "label": "Twice a week" },
+            { "name": "weekly", "label": "Once a week" },
+            { "name": "semiMonthly", "label": "Twice a month" },
+            { "name": "biMonthly", "label": "Once every two months" },
+            { "name": "monthly", "label": "Once a month" },
+            { "name": "quarterly", "label": "Once a quarter" },
+            { "name": "semiAnnually", "label": "Twice a year" },
+            {
+              "name": "otherFrequency",
+              "label": "Custom frequency",
+              "options": [
+                { "name": "otherWeekly", "label": "times a week" },
+                { "name": "otherYearly", "label": "times a year" }
+              ]
+            }
+          ],
+          "subQuestions": [
+            {
+              "name": "smokedSalmon",
+              "title": "How many slices do you consume each time?",
+              "options": [
+                { "defaultValue": 1, "name": "tranche", "label": "slice" }
+              ]
+            },
+            {
+              "name": "sushi",
+              "title": "How many pieces of sushi do you consume each time?",
+              "options": [
+                {
+                  "defaultValue": 12,
+                  "name": "maki",
+                  "label": "maki",
+                  "prefix": "some"
+                },
+                {
+                  "defaultValue": 6,
+                  "name": "nigiri",
+                  "label": "nigiri",
+                  "prefix": "some"
+                },
+                {
+                  "defaultValue": 0,
+                  "name": "sashimi",
+                  "label": "sashimi",
+                  "prefix": "some"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sumUp": {
+      "title": "Your salmon consumption",
+      "caption": "If needed, click the back button to update your answers.",
+      "button": "Calculate my impact",
+      "around": "Around:"
+    },
+    "loading": {
+      "title": "Diving into your data",
+      "caption": "Calculating your salmon footprint...",
+      "info": "A farmed salmon travels on average 8,000 km before reaching your plate."
+    },
+    "result": {
+      "title": "Impact ",
+      "title2": " {impact}",
+      "caption": "You consume about {totalConsoInKg} kg of salmon per year.",
+      "productListTitle": "Your consumption in detail",
+      "paragraphs": {
+        "neutral": "You do not consume salmon. We can only congratulate you and encourage you to spread this message around you.",
+        "low": "You consume about {totalConsoInKg}kg of salmon per year. You are already on the right track. Next step: zero goal!",
+        "medium": "You consume about {totalConsoInKg}kg of salmon per year. By replacing a part of your consumption with one of the proposed alternatives, you are already significantly reducing your impact.",
+        "high": "You consume about {totalConsoInKg}kg of salmon per year. Salmon is part of your habits, and this is exactly where each replaced meal counts the most to reduce your impact.",
+        "veryHigh": "You consume about {totalConsoInKg}kg of salmon per year. Your room for improvement is the greatest, and cutting your consumption in half would already have a real impact on the ocean."
+      }
+    },
+    "reduceImpact": {
+      "title": "Reduce my impact",
+      "step1": {
+        "title": "Choose a dish currently consumed",
+        "caption": "No need to change everything at once, every step counts. How about we start by replacing or reducing a first dish?"
+      },
+      "step2": {
+        "title": "Reduce its frequency",
+        "suffix": "times a year",
+        "caption": "Today it's {frequency} x a year. Tomorrow? ",
+        "confirm": "Find an alternative"
+      },
+      "step3": {
+        "title": "Find an alternative",
+        "falseFriend": "False friend",
+        "alternatives": {
+          "algae": "Algae",
+          "plantBasedSmokedSalmon": "Plant-based Smoked Salmon (organic)",
+          "shellfish": "Shellfish (French origin)",
+          "plantBasedProtein": "Plant-based Proteins (organic)",
+          "trout": "Trout",
+          "tuna": "Tuna"
+        },
+        "info": {
+          "algae": "Algae are cultivated without fishmeal, fertilizer, or freshwater. And the omega-3s we look for in salmon are originally produced by microalgae. An industry to grow on our coasts.",
+          "plantBasedSmokedSalmon": "The pleasure of smoked salmon, without intensive farming. Plant-based alternatives are multiplying and improving fast. The right reflex: turn the package around and choose a short ingredient list.",
+          "shellfish": "Mussels and oysters feed by filtering seawater, thus without fishmeal or fish oil. They also provide iron, zinc, and B12. Their health depends on that of our coastal waters.",
+          "plantBasedProtein": "Lentils, chickpeas, and beans are rich in protein and fiber, inexpensive, and easy to store. Nutritional recommendations suggest eating them at least twice a week.",
+          "trout": "Replacing salmon with trout is a false good idea. Salmon and trout are cousins: two carnivores intensively farmed and fed with meal and oil from wild fish.",
+          "tuna": "Replacing with tuna is a false good idea. It is an apex predator that concentrates mercury. Industrial tuna fishing leads to the bycatch of sharks, turtles, and dolphins."
+        }
+      },
+      "step4": {
+        "title": "Choose an omega-3 supplement",
+        "falseFriend": "False friend",
+        "alternatives": {
+          "flaxSeedOil": "Flaxseed oil",
+          "chiaSeeds": "Chia seeds",
+          "walnutOil": "Walnut oil",
+          "rapeSeedOil": "Rapeseed oil",
+          "nut": "Walnuts",
+          "algae": "Algae",
+          "fishOil": "Fish oil"
+        },
+        "info": {
+          "fishOil": "False good idea: fish oil comes from the same anchovy and sardine fisheries that feed farmed salmon. And the omega-3s it contains were initially produced by microalgae. Try the other ingredients!"
+        }
+      },
+      "recalculate": {
+        "button": "Calculate my new impact",
+        "loading": "Calculating your new impact...",
+        "error": "Unable to recalculate your impact. Please try again."
+      }
+    },
+    "newImpact": {
+      "title": "New impact"
+    },
+    "engagements": {
+      "title": "My commitment list:",
+      "dish": "Dish",
+      "perYear": "per year",
+      "timesPerYear": "times a year",
+      "alternative": "Alternative",
+      "supplement": "Supplementation",
+      "confirm": "Confirm my commitments",
+      "alternatives": {
+        "algae": "algae",
+        "plantBasedSmokedSalmon": "plant-based smoked salmon",
+        "shellfish": "shellfish",
+        "plantBasedProtein": "plant-based proteins",
+        "trout": "trout",
+        "tuna": "tuna"
+      },
+      "supplements": {
+        "flaxSeedOil": "flaxseed oil",
+        "chiaSeeds": "chia seeds",
+        "walnutOil": "walnut oil",
+        "rapeSeedOil": "rapeseed oil",
+        "nut": "walnuts",
+        "algae": "algae",
+        "fishOil": "fish oil"
+      },
+      "impactChanged": "I will consume {newFrequency, plural, =1 {1 dish} other {# dishes}} of {dish} instead of {oldFrequency, plural, =1 {1 dish} other {# dishes}} a year. I alternate with {alternative} whenever possible and supplement with {supplement}.",
+      "impactEqual": "I continue to consume {oldFrequency, plural, =1 {1 dish} other {# dishes}} of {dish} a year. I alternate as much as possible with {alternative} and supplement with {supplement}."
+    },
+    "badgeQuestions": {
+      "title": "Just two more clicks before accessing your badge...",
+      "omega3Consent": "I want the government to fortify everyday products with omega-3.",
+      "emailCaption": "Stay informed about the collective impact of this campaign and all the new means of action implemented to advance towards a fairer Ocean for all living beings.",
+      "email": "Your email address",
+      "emailPlaceholder": "Enter your email",
+      "emailError": "Please enter a valid email address.",
+      "subscriptionSuccess": "You are subscribed to the newsletter.",
+      "subscriptionError": "Oops, we couldn't subscribe you to the newsletter. Please try again later, but in the meantime discover your badge.",
+      "button": "Confirm and see my badge",
+      "unlockedBadge": "Badge unlocked",
+      "share": "Share"
+    },
+    "badges": {
+      "engagement": "I aim for a frequency of {newFrequency} a year of {dish} instead of {oldFrequency} a year. I replace with {alternative} whenever possible. I supplement with omega-3 using {supplement}.",
+      "neutral": {
+        "title": "Super salmon",
+        "caption": "Wow, well done! You are right at the beginning of becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!",
+        "width": 212,
+        "height": 361
+      },
+      "low": {
+        "title": "Great salmon",
+        "caption": "Congratulations, you are on your way to becoming quite strong, probably, if ambition accompanies you in this little transformation: a very large Atlantic salmon!",
+        "width": 564,
+        "height": 158
+      },
+      "medium": {
+        "title": "Teen Salmon (smolt)",
+        "caption": "Well done! You are well on your way, a smolt as scientists say, and probably, if ambition accompanies you in this little transformation: a very large salmon!",
+        "width": 422,
+        "height": 135
+      },
+      "high": {
+        "title": "Baby salmon",
+        "caption": "You are a salmon alevin, you successfully hatched. Not bad at all! Now you will have to be brave to hold on until the end. Hang in there, we need salmon like you.",
+        "width": 193,
+        "height": 128
+      },
+      "veryHigh": {
+        "title": "Salmon seed",
+        "caption": "Like a salmon egg on the gravel of a mountain river, you can become a beautiful salmon, but for that, the road will be long, you will have to double your efforts to reach the next level!",
+        "width": 304,
+        "height": 101
+      }
+    },
+    "error": {
+      "title": "An error occurred",
+      "caption": "Unable to calculate your impact. Please try again.",
+      "retry": "Back to summary"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "layout": {
+    "top": "Haut de page",
+    "analyticsConsent": {
+      "title": "Aidez-nous à améliorer Pinkbombs ?",
+      "description": "Avec votre accord, nous utilisons Matomo pour comprendre comment ce site est utilisé. Vous pouvez modifier votre choix à tout moment depuis le pied de page.",
+      "accept": "Autoriser les statistiques",
+      "reject": "Refuser les statistiques",
+      "preferences": "Paramètres des statistiques"
+    },
+    "nav": {
+      "title": "principale",
+      "home": "Accueil",
+      "ariaLabel": "Navigation principale du site",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu",
+      "toUnderstand": "Comprendre",
+      "toAct": "Agir",
+      "toBeInspired": "S'inspirer",
+      "calculator": "Pinkomètre",
+      "about": "À propos"
+    },
+    "shareLink": {
+      "blank": "nouvel onglet",
+      "site": "Site internet",
+      "sources": "Sources et méthodologies",
+      "legalNotices": "Mentions légales",
+      "contactUs": "Contactez-nous",
+      "design": "coucou.design"
+    },
+    "footer": {
+      "sections": {
+        "projectBy": {
+          "title": "Un projet par",
+          "site": "Pinkbombs"
+        },
+        "more": {
+          "title": "Plus d'informations",
+          "sourceId": "sources-et-methodologies"
+        },
+        "stayInformed": {
+          "title": "Restez informé·e",
+          "text": "Recevez toutes nos informations.",
+          "newsletter": {
+            "placeholder": "Entrez votre e-mail",
+            "button": "S'abonner",
+            "emailLabel": "Adresse e-mail",
+            "loading": "Inscription...",
+            "success": "Vous êtes inscrit.e à la newsletter.",
+            "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+            "error": "Nous n'avons pas réussi à vous inscrire à la newsletter. Veuillez réessayer plus tard."
+          }
+        }
+      },
+      "allRight": "Tous droits réservés",
+      "and": "et",
+      "donation": "Faire un don",
+      "legalNotice": "Mentions légales"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analyser l'impact du saumon sur l'environnement, l'écosystème, la santé et les communautés.",
+    "url": "https://pinkbombs-app.vercel.app"
+  }
+}

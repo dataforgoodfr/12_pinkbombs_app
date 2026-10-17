@@ -1,0 +1,157 @@
+{
+  "toAct": {
+    "meta": {
+      "title": "Act"
+    },
+    "intro": {
+      "caption": "Reduce your impact",
+      "title": "Discover simple actions and collective levers.",
+      "imageAlt": "Illustrative image representing solutions to reduce your impact."
+    },
+    "tags": {
+      "individual": "Individual",
+      "company": "Company"
+    },
+    "howToAct": "Yes, but how\u00a0?",
+    "iAct": "I act",
+    "individualSection": {
+      "title": {
+        "part1": "At our scale,",
+        "part2": "we all have the power to act on our salmon consumption."
+      },
+      "recommendations": [
+        {
+          "title": "Reduce your salmon consumption",
+          "description": "The first step to reducing your impact is to decrease your consumption.\n\nDividing our national consumption by 3 would already severely limit the pressures exerted on the Ocean, animals, and humans.\n\nWhile this can be done gradually, the most effective choice remains to stop consuming salmon altogether.\n\nWhy\u00a0? Because it has an immediate positive impact on animals and the Ocean. Our food choices have real power\u00a0: when demand changes, supply chains adapt. By choosing to no longer buy salmon from problematic production methods, we send a strong signal to the industry and encourage the development of more respectful alternatives.",
+          "actions": [
+            {
+              "cta": "Calculate your salmon footprint with the Pinkometer",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Replacing salmon: 5 alternatives that are already game-changers",
+              "id": 5,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Repopulating the Ocean: the associations making a difference",
+              "id": 10,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Continue eating iodine-rich foods (without fish)",
+          "description": "The pleasure of an iodine-rich cuisine <strong>does not rely solely on fish.</strong>\n\n<strong>Algae, shellfish</strong>, and new ways of cooking allow you to rediscover marine flavors while diversifying your diet.\n\nTry our fish-free marine menus now, with 100% ocean-inspired and plant-based recipes, to make your taste buds dance without emptying the Ocean\u00a0!",
+          "actions": [
+            {
+              "cta": "Download our recipe book",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "How can we replace fish on our plates?",
+              "id": 2,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Replacing salmon: 5 alternatives that are already game-changers",
+              "id": 5,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Introduce plant-based alternatives into your diet",
+          "description": "Today, there <strong>are many plant-based alternatives to continue enjoying the recipes we love\u00a0:</strong> plant-based smoked salmon, steaks, spreads, or preparations inspired by seafood.\n\nThese alternatives allow you to rediscover familiar textures, uses, and pleasures, <strong>while reducing the impact linked to salmon consumption.</strong>",
+          "actions": [
+            {
+              "cta": "Calculate your salmon footprint with the Pinkometer and explore alternatives",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Download our recipe book",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Replacing salmon: 5 alternatives that are already game-changers",
+              "id": 5,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Raise awareness around you",
+          "description": "<strong>Most people are still unaware of the real impacts linked to salmon consumption.</strong>\n\n<strong>Sharing this information around you</strong>, opening up the discussion, and introducing other ways to consume are also forms of action. The more of us who understand the issues, <strong>the more we can change practices.</strong>",
+          "actions": [
+            {
+              "cta": "Salmon, symbol of an industry: the story of a fish like no other",
+              "id": 1,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Salmon, symbol of an industry",
+              "id": 1,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "5 misconceptions about fish (and why they are wrong)",
+              "id": 4,
+              "type": "internalArticle"
+            }
+          ]
+        }
+      ]
+    },
+    "companySection": {
+      "title": {
+        "part1": "The large-scale transition will happen",
+        "part2": "with companies.",
+        "part3": "It is urgent to get them on board."
+      },
+      "recommendations": [
+        {
+          "title": "I ask to reduce or remove salmon-based dishes from the cafeteria",
+          "description": "Changing a corporate restaurant menu can have a strong impact.\n\nBy bringing this topic to your company, you are concretely shifting the lines.",
+          "actions": [
+            {
+              "cta": "Download our iodine-rich recipes",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Ask us for help to convince internally. Write to charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "I propose 100% plant-based event catering",
+          "description": "Meetings, seminars, cocktails, corporate events… all opportunities to introduce another way to enjoy food.\n\nGeneral or plant-based specialized caterers today offer creative, gourmet, and inclusive alternatives that more easily meet different dietary habits while limiting environmental impact.",
+          "actions": [
+            {
+              "cta": "Discover https://touslestraiteursvegan.com/",
+              "url": "https://touslestraiteursvegan.com/",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "I request support from Seastemik",
+          "description": "Every company can engage in powerful transformations. Seastemik can support you in initiating this change with your teams.\n\nIt is urgent, possible (and joyful) to remove fish from catering food to move towards an offer aligned with the 10kg of fish consumption per year and per inhabitant in France.",
+          "actions": [
+            {
+              "cta": "Book an appointment with Seastemik. Write to charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
+              "type": "externalRedirect"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

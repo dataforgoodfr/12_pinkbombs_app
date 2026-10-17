@@ -1,0 +1,66 @@
+{
+  "layout": {
+    "top": "Back to top",
+    "analyticsConsent": {
+      "title": "Help improve Pinkbombs?",
+      "description": "With your permission, we use Matomo analytics to understand how this site is used. You can change your choice at any time in the footer.",
+      "accept": "Allow analytics",
+      "reject": "Reject analytics",
+      "preferences": "Analytics settings"
+    },
+    "nav": {
+      "title": "main",
+      "home": "Home",
+      "ariaLabel": "Main site navigation",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "toUnderstand": "Understand",
+      "toAct": "Take action",
+      "toBeInspired": "Get inspired",
+      "calculator": "Pinkometer",
+      "about": "About"
+    },
+    "shareLink": {
+      "blank": "new tab",
+      "site": "Website",
+      "sources": "Sources and methodologies",
+      "legalNotices": "Legal notices",
+      "contactUs": "Contact us",
+      "design": "coucou.design"
+    },
+    "footer": {
+      "sections": {
+        "projectBy": {
+          "title": "A project by",
+          "site": "Pinkbombs"
+        },
+        "more": {
+          "title": "More information",
+          "sourceId": "sources-et-methodologies"
+        },
+        "stayInformed": {
+          "title": "Stay informed",
+          "text": "Receive all our updates.",
+          "newsletter": {
+            "placeholder": "Enter your email",
+            "button": "Subscribe",
+            "emailLabel": "Email address",
+            "loading": "Subscribing...",
+            "success": "You have successfully subscribed to the newsletter.",
+            "invalidEmail": "Please enter a valid email address.",
+            "error": "We were unable to subscribe you to the newsletter. Please try again later."
+          }
+        }
+      },
+      "allRight": "All rights reserved",
+      "and": "and",
+      "donation": "Make a donation",
+      "legalNotice": "Legal notice"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analyzing the impact of salmon on the environment, ecosystems, health and communities.",
+    "url": "https://pinkbombs-app.vercel.app"
+  }
+}

@@ -1,10 +1,14 @@
 import clsx from "clsx";
 import { Barlow_Condensed, Montserrat } from "next/font/google";
-import Image from "next/image";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import * as React from "react";
+import { Toaster } from "sonner";
+
+import ScrollToTop from "@/components/v2/layout/ScrollToTop";
+
+import { getClientMessages } from "@/i18n/clientMessages";
 
 const barlow = Barlow_Condensed({
   weight: ["700", "800", "900"],
@@ -14,24 +18,20 @@ const barlow = Barlow_Condensed({
 });
 
 const montserrat = Montserrat({
-  weight: ["500", "700"],
+  weight: ["500", "700", "900"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-montserrat",
 });
 
-import "@/styles/globals.css";
-
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-
-import { locales } from "@/navigation";
+import "@/styles/archive/v1/styles.css";
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: typeof locales };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "siteConfig" });
 
   return {
@@ -66,44 +66,32 @@ export async function generateMetadata({
   };
 }
 
-export default async function LocaleLayout({
+export default async function GlobalLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const messages = await getMessages();
-  const t = await getTranslations({ locale, namespace: "layout" });
+  const { locale } = await params;
+  const messages = await getMessages({ locale });
   return (
     <html
       lang={locale}
+      data-scroll-behavior="smooth"
       className={clsx(
         barlow.variable,
         montserrat.variable,
-        "scroll-smooth overflow-x-hidden",
+        "scroll-smooth overflow-x-hidden scroll-pt-[calc(88px+env(safe-area-inset-top))] lg:scroll-pt-[calc(104px+env(safe-area-inset-top))]",
       )}
+      suppressHydrationWarning
     >
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main>
-            {children}
-            <a
-              href="#"
-              className="hidden md:flex items-center justify-center bg-white hover:bg-darkblue1 w-14 h-14 rounded-tl-md fixed bottom-0 right-0 transition-all ease-in duration-75"
-            >
-              <Image
-                src="/images/bottom.svg"
-                alt={t("top")}
-                width="40"
-                height="20"
-                className="w-8 aspect-square rotate-180"
-              />
-            </a>
-          </main>
-          <Footer />
+      <body suppressHydrationWarning>
+        <NextIntlClientProvider messages={getClientMessages(messages)}>
+          {children}
         </NextIntlClientProvider>
+        <Toaster />
+        <ScrollToTop />
       </body>
     </html>
   );

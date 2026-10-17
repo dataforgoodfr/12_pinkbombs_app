@@ -1,0 +1,1590 @@
+{
+  "toBeInspiredArticle": {
+    "page": "To Be Inspired - ",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Salmon, a symbol of an industry",
+        "summary": "Once reserved for celebratory meals, salmon has become the most consumed fish in France in just a few decades. Behind this troubling consumption lies the story of an industry that turned salmon into a mass-market product.",
+        "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageSize": { "width": 2481, "height": 3508 },
+        "heroImageAlt": "Salmon farming pens in a coastal bay",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The story of farmed salmon begins with an ocean that has changed beyond recognition. In a century, global fish consumption has increased ninefold, according to the "
+              },
+              {
+                "type": "link",
+                "text": "Food and Agriculture Organization of the United Nations (FAO)",
+                "href": "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/en/en_atlanticsalmon.htm"
+              },
+              {
+                "type": "text",
+                "text": ". This transformation did not happen by chance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "After the Second World War, fishing capacity grew dramatically. Large industrial fishing fleets from countries such as France, China, and Russia set out to sea. On land, fresh-fish and canned-food markets expanded, and eating habits changed."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A Norwegian invention"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Frozen ready meals and aquaculture, the farming of fish, particularly salmon, grew in their wake. Industrial fish farms began in Norway in the 1960s. Gradually, the model spread to the few countries with natural conditions suited to salmon farming."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/1.jpg",
+            "alt": "Packaged salmon fillets displayed in a supermarket case",
+            "caption": "Farmed salmon has become a mass-market product."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In 2021, four countries produced 90% of the world's farmed salmon, "
+              },
+              {
+                "type": "link",
+                "text": "according to the FAO",
+                "href": "https://www.fao.org/fishery/en/collection/aquaculture"
+              },
+              {
+                "type": "text",
+                "text": ". Norway accounted for more than half, Chile for a quarter, followed at a distance by the United Kingdom and Canada."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A rosy marketing story"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Among all fish, the industry established Atlantic salmon, Salmo salar, as the farmed species of choice. Several reasons explain that decision. Wild salmon was already a festive luxury at the table. Aquaculture made it widely available within a few years. For producers, it had one decisive advantage: it could be raised in large numbers in cages. In short, fish farming borrowed the methods of industrial agriculture."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/2.jpg",
+            "alt": "Fresh salmon steaks displayed on ice",
+            "caption": "Salmon is often marketed for its color and boneless flesh."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In their advertising, salmon producers promote the rosy color and boneless flesh of their fish. They also highlight their fat content and omega-3s, leaving the toxic substances in fish flesh out of view. Over time, their marketing campaigns won over the public."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Unrestrained growth"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Since the 1980s, farmed salmon production has grown at an extraordinary pace worldwide, and the trend shows no sign of stopping. Norway, the world's leading producer, aims to triple its annual output by 2050. To achieve this, it is betting on new, highly energy-intensive and damaging technologies: land-based and offshore farming."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/3.png",
+            "alt": "Salmon farming pens installed off a coastline",
+            "caption": "Salmon farming is expanding from fjords to offshore facilities."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The salmon industry is an ecological, social, and public-health time bomb. Intensive farms have disastrous consequences: greenhouse-gas emissions, animal cruelty, deforestation, worsening overfishing, and the plundering of other communities' resources, not to mention the effects on our health."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "The French paradox"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "France plays a leading role in this story. It is Europe's largest salmon consumer and the world's fourth largest, making it a major player in the sector. It therefore bears particular responsibility for how these practices evolve."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The paradox is striking. Depending on the omega-3 type considered (DHA/EPA or ALA), 89% to 99% of the French population has insufficient levels. Despite high salmon consumption, the needs of most people in France are not being met."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "From luxury food to intensive farming, salmon tells the story of an industry that has reshaped our eating habits. But its nutritional promises do not hold up against the figures. This calls for us to stop overconsuming farmed salmon, and highlights the urgent need to transform our food system."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "To learn more about the inner workings and harms of the salmon industry, read our report: "
+              },
+              {
+                "type": "link",
+                "text": "Salmon: the pink bomb of a food system running out of steam",
+                "href": "https://seastemik.org/nos-enquetes"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "How can we replace fish on our plates?",
+        "summary": "An interview with Marie Laforêt, a leading voice in plant-based cooking",
+        "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
+        "heroImageSize": { "width": 492, "height": 633 },
+        "heroImageAlt": "Marie Laforêt, author of Seafood Vegan",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Where should you start? What can you cook when you want a dish with a taste of the sea? To answer these questions, Marie Laforêt published Seafood Vegan with Solar, a recipe book that is as beautiful as it is informative. She spoke with Seastemik about it."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Marie, you are a leading figure in plant-based cooking in France. You have published more than 20 recipe books in 15 years. Why did you decide to focus on the world of the sea this time?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> Among all the vegan cookbooks published in France, many explain how to replace land animals in our diets, but very few offer alternatives to marine animals. Also, people who decide to eat less meat, or stop eating it altogether, often turn to fish. That was true for me when I was younger! I think this is a real problem, especially since we often forget that far more marine animals are killed for food than land animals. For all these reasons, it was important to me to write a book devoted to this subject. It is a project I have been working on for a long time. Several of my books already include sections devoted entirely to it, but I felt it deserved a book of its own."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "You mentioned that you used to eat fish. How much were marine animals part of your diet? When and why did you stop eating them?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I grew up in a Breton family where marine animals were regularly served at the table, especially during the holiday season. As a teenager, and later when I stopped eating land animals, I started eating even more fish, particularly salmon! Then, in 2008, I realized that fish were sentient beings too. From an ethical point of view, it did not make sense to me to eat some animals but not others. That year, I became vegetarian."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "What would you say to someone questioning their diet and thinking about eating less fish or stopping altogether?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I would start by saying that it is important to question what we put on our plates. We do not all eat fish for the same reasons. Sometimes it is habit. Sometimes it is pleasure. Sometimes it is because we believe fish is essential to good health. The ways to cut down or stop will differ depending on what motivates us."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Could you talk us through those different approaches?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> If you eat fish for protein, you can simply choose a plant-based source of protein, in whatever flavor or form you like. If you eat fish for omega-3s, oils, nuts and seeds, and supplements can meet your needs. And if it is about taste, plant-based recipes like the ones in my book will do the trick. For example, if you want to keep a family recipe made with fish and passed down through generations, such as bouillabaisse, you can absolutely create a plant-based version. Giving up fish does not mean abandoning our traditions, but letting them evolve. And if you need inspiration, my book is there for you."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/2/1.png",
+            "alt": "A plant-based recipe inspired by seafood",
+            "caption": "Seafood Vegan offers plant-based alternatives to seafood dishes."
+          },
+          {
+            "type": "heading",
+            "text": "Who is your new book, Seafood Vegan, for? Is it accessible to people who do not cook much, or is it aimed at experienced plant-based cooks?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I really wrote this book for everyone. It includes very simple recipes with easy-to-find ingredients. I also chose to include more creative and technical recipes for people who enjoy trying new dishes, making convincing alternatives, or creating plant-based versions of family favorites. Some of the recipes I created for this book are alternatives to dishes I had not eaten for 15 years!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "To create convincing alternatives, you researched how marine animals are prepared and cooked. How did you go about it?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I did a great deal of research into these processes, especially for salmon. You might think smoked salmon, gravlax, and nova lox are the same thing, but they are not. Gravlax is salmon cured in salt. As its name suggests, smoked salmon is smoked over beechwood rather than cured. Nova lox falls between the two: it is both cured and smoked. This research helped me develop precise plant-based recipes with subtle flavors and textures."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Beyond this technical research, what inspired the book?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I drew inspiration from French classics, of course, such as bouillabaisse, sole meunière, and moules marinières, as well as my family recipes. I also looked to recipes from many other countries, coastal specialties, and street food. One cuisine particularly inspired me: the Japanese techniques of imitation known as modoki ryōri, rooted in Buddhist traditions. People may think that imitating the flesh of land or marine animals is a recent idea from Western vegans. In fact, vegan eating has been a tradition for hundreds or even thousands of years in some Asian countries."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/2/2.png",
+            "alt": "Marie Laforêt with her plant-based cookbook",
+            "caption": "Marie Laforêt draws on a range of culinary traditions for her recipes."
+          },
+          {
+            "type": "heading",
+            "text": "Your book includes several plant-based alternatives to salmon. Which would you recommend to someone who has never cooked one?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> I would suggest starting with a recipe where the animal flesh is not raw, so not an alternative to a salmon fillet. Salmon-style rillettes are among my favorite recipes, and they are easy to make. I make them myself every Christmas, and my family always loves them. The recipe is truly impressive in its color, texture, and flavor."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Plant-based alternatives to salmon, such as smoked salmon substitutes, are sometimes available in shops. Have you tried any? What did you think?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> One Christmas, I bought a smoked salmon alternative and felt as if I were eating a kind of sausage rather than smoked salmon! I was really disappointed, but I understood then that smoky flavor is not just one thing: there are several very different kinds. I talk about this in my book. A successful smoked salmon alternative uses a beechwood-smoked condiment, the wood traditionally used to smoke salmon."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Anything else you would like to share?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Marie Laforêt:</strong> Yes. If you are hesitating to reduce or stop eating marine animals, I know that your loved ones' potential reactions can hold you back. In my view, the best thing to do is cook delicious recipes for them. Sometimes a delicious dish is worth more than a thousand words. Plant-based tarama, for example, is just as good as, or even better than, the cheap industrial version. Recipe by recipe, it is easier to convince people through taste than through ideas or arguments. Some of my recipes have become holiday classics in my family, even though I can tell you it was not a sure thing at first!"
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a fish? Explore five misconceptions and learn to consider marine animals more thoughtfully."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
+      },
+      {
+        "id": 3,
+        "title": "SALMO, the incredible story of a wild salmon",
+        "summary": "A river, a forest, an estuary, the ocean, and then glaciers. Salmon spend their lives connecting worlds we think of as separate. Selected for many festivals, the animated short film SALMO tells the incredible journey of wild salmon and shows how fragile the ecosystems they cross are.",
+        "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageSize": { "width": 1607, "height": 903 },
+        "heroImageAlt": "Artwork from the animated short film SALMO",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "It is the story of a wild salmon leaving its home river to reach the ocean. In SALMO, we follow a young salmon on a journey spanning thousands of kilometers: eight minutes of poetry and adventurous twists. Eight minutes, too, in which we confront a sobering reality: Atlantic salmon populations are in alarming decline, and the ecosystems they travel through are being severely degraded by human activity."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Directed by Paul Pajot and produced by La Méridienne, the short invites us to pause our human perspective. We experience everything from a salmon’s point of view."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This deliberate perspective reveals, among other things, the invisible connections between the different environments salmon pass through during their lives. Contrary to what we might think, these spaces are far from isolated."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/1.jpg",
+            "alt": "A scene from the animated short film SALMO",
+            "caption": "SALMO reveals ecosystems from a salmon’s point of view."
+          },
+          {
+            "type": "heading",
+            "text": "A journey seen through salmon’s eyes"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This film is not only the story of a salmon. It is also the story of a living world that we are part of. The animation’s vivid painting creates a sense of symbiosis and reveals the ecological continuity between river, estuary, and ocean."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "SALMO lets us see biological phenomena that are invisible to the naked eye and often little known, such as smoltification. During their journey, salmon move from fresh water to salt water. To adapt, their gills change so they can expel salt."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/2.jpg",
+            "alt": "A scene from the salmon’s journey in SALMO",
+            "caption": "The film follows the different stages of a salmon’s journey."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In this short film, Paul Pajot chose to bring a sensitive dimension to serious issues. He drew on extensive scientific research to write it. Through this thoughtful approach, he helps us understand that protecting salmon is not only about protecting a species: it is also about protecting the environments all life depends on, including us."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Connecting with the living world, one story at a time"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Born during the 2020 lockdown, SALMO became a collective adventure bringing together artists, animators, musicians, and salmon specialists. The film has since been selected for around twenty festivals and continues to be shown both as a work of art and as an educational tool."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This sensitive way of telling stories about ecological issues is part of a broader movement supported by Seastemik. Connecting with the living world, one story at a time, helps us learn about our environment and care for the world we move through."
+              }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "wR759GYF1MU",
+            "title": "SALMO, an animated short film by Paul Pajot"
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a carp? Explore five misconceptions and learn to consider these marine animals more thoughtfully."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
+      },
+      {
+        "id": 4,
+        "title": "5 misconceptions about fish (and why they are false)",
+        "summary": "Being as silent as a carp, cursing someone with a fishy insult, or having a goldfish memory… These expressions reveal how little we value and know about fish. Let’s take a closer look at common misconceptions and learn to see these marine animals differently.",
+        "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageSize": { "width": 3860, "height": 2571 },
+        "heroImageAlt": "Illustration of fish for the article about common misconceptions",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "From childhood, we build our relationship with the living world. Shaped by scientific, cultural, and religious histories, this process tends to distinguish species and rank them, wherever we live."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In Europe, for example, we learn early to distinguish animals we love, such as kittens, from animals we eat, such as salmon. In other words, we treat some animals as individuals and others as resources. Fish on our plates are clearly among the animals we respect the least."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Yet fish, like us and like kittens, are sentient beings. They have a subjective experience of the world: they can perceive their surroundings, learn, remember, and feel pleasure, fear, and pain. Fish are living beings, and challenging certain clichés can help us recognize them as such."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. “Fish only have a three-second memory”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/1.png",
+            "alt": "Illustration accompanying the section about fish memory"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marine animals’ abilities have long been underestimated. The claim that fish have a “three-second memory” is one of the first myths to challenge. Fish can learn from experience and remember it long enough to change their behavior."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "For example, they can recognize their environment, remember where to find food, avoid dangerous areas, or associate certain signals with a reward or a threat. In some species, memory also plays a role in navigation and social interactions."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. “Fish don’t feel pain”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/2.jpg",
+            "alt": "Illustration accompanying the section about fish sensitivity"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "A fish’s inability to cry out does not mean it cannot suffer. Like us, fish have a nervous system. They can detect stimuli that may harm their bodies, such as extreme heat."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Studies show that fish change their behavior and physiological responses when faced with potentially painful situations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "We cannot ask fish to tell us what they feel (though we might like to), but they really do experience pleasure, fear, stress, and pain."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. “Fish don’t communicate”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/3.jpg",
+            "alt": "Illustration accompanying the section about fish communication"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "It is easy to imagine fish living in a silent world without interaction. Yet fish do communicate. Their language and signals are simply different from ours."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Depending on the species, they use visual, chemical, acoustic, or physical signals to share information with one another. Some species live in structured societies with complex interactions. In short, an animal does not have to resemble us to have a social life."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. “Fish are consumer products”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/4.jpg",
+            "alt": "Illustration accompanying the section about fish consumption"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "We say “a dog,” “a cat,” or “an elephant,” but talk about “salmon,” “tuna,” or “trout.” Our own language makes invisible the sensitivity and intelligence of the marine animals we eat. Describing them in kilos, portions, and fillets helps rationalize their exploitation and ease our consciences."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "But a salmon is not a fillet. A trout is not a portion. A fish is not a product. Before it became “salmon” on a plate, that salmon was a living, sentient animal."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. “Eating fish is natural”",
+            "strikethrough": true
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/5.jpg",
+            "alt": "Illustration accompanying the section about fishing and fish farming"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The image of a lone fisher with a line and a small boat has fueled the idea that eating fish is an ancient, even “natural,” practice. Yet, depending on the era and region, our diets have most often been plant-based."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This image of a lone fisher is far removed from today’s food system. Fish sold in shops are either caught by gigantic trawlers that sweep the seabed for miles or intensively farmed in marine and even land-based facilities. This is not small-scale fishing; it is an industry."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "One logic drives this industry: produce more, faster, and at lower cost to supply a global market. Fish become volumes, tons, yields, and margins. Even aquaculture’s vocabulary says a lot: “biomass,” “growth,” “feed conversion ratio,” and “yield.” But a ton of fish is not a ton of biomass; it is countless individual animals."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Salmon are surprising living beings. Learning more about their bodies and lives helps us see that they, like us, are sentient animals. Discover five things you probably do not know about salmon."
+              }
+            ]
+          ],
+          "articleId": 6
+        }
+      },
+      {
+        "id": 5,
+        "title": "5 salmon alternatives that are already changing the game",
+        "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
+        "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageSize": { "width": 800, "height": 1000 },
+        "heroImageAlt": "Smoked carrot on toast, a plant-based alternative to smoked salmon",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Smoked carrot, a modern classic"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/hero.jpg",
+            "alt": "Smoked carrot on toast with dill"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In just a few years, it has become one of the best-known alternatives to smoked salmon. Why? Its color, of course, its tender texture when cooked, and above all its ability to absorb marinades. Delicious."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Start by slicing carrots into very thin ribbons. Soak them in a generous bath of soy sauce with lemon, dill, and either beechwood-smoked salt or seaweed. Refrigerate for at least 24 hours, then enjoy the ribbons on toast, in a bagel, or on blinis. Delicious!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Watermelon, a fruit for sushi and poke"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/2.jpg",
+            "alt": "A roasted plant-based alternative served with vegetables"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Yes, you read that right: watermelon. Cut into thick slices, marinated, then roasted or smoked, it can be surprisingly convincing. Depending on how it is prepared, it can replace salmon and even tuna. It works especially well in sushi, maki, sashimi, chirashi, poke bowls, or tartare. Japanese restaurants are getting in on it, too."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Cut the watermelon into small rectangles. Make a marinade with soy sauce, sesame oil, rice vinegar, and crumbled nori. Add the watermelon and leave it to marinate in the refrigerator for at least two hours. Drain the pieces and preheat the oven to 180°C. Bake on a tray for 30 to 45 minutes. Let them cool completely, then place these little gems on seasoned sushi rice. Your plant-based sushi is ready!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Fauxmon, a convincing fake salmon"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/1.png",
+            "alt": "Close-up of a plant-based salmon alternative"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "You may have seen it in stores. Fauxmon, a blend of “fake” and “salmon,” is a plant-based product designed to mimic salmon’s appearance, texture, and flavor as closely as possible. It comes as fillets, cubes, and smoked slices. Results vary by brand. It is aimed at people who want to eat less fish without giving up familiar foods."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Worth remembering:</strong> For a good smoked fauxmon, Marie Laforêt, a leading voice in plant-based cooking in France and author of Seafood Vegan (Solar, 2026), recommends choosing versions flavored with beechwood smoke."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Seaweed, the ocean’s superfood"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/3.jpg",
+            "alt": "Seaweed spreads and toast prepared for sharing"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "If what we want from salmon is an ocean flavor and omega-3s, why not go straight to the source? Nori, dulse, wakame, and sea lettuce add a marine touch to all kinds of dishes. As flakes or sheets, they work especially well with neutral ingredients such as tofu, white beans, or rice."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Crumble tofu into a large bowl, add white beans, and mash them with a fork. Sprinkle with seaweed flakes, add a little olive oil and lemon juice, then season with salt and pepper. Mix well and chill for at least two hours before serving the rillettes on toasted bread."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. What if the best alternative were a whole new recipe?"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/4.png",
+            "alt": "An assortment of plant-based dishes inspired by seafood"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This may be the most interesting alternative of all. Instead of searching at all costs for a plant-based equivalent to salmon, we can use this transition to discover new ingredients and combinations. Plant-based cooking is not just about replacing one ingredient with another. It can open up new culinary horizons and help us reinvent familiar classics."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Try this:</strong> Explore cookbooks such as Cuisine vegan petit budget by Marie Laforêt (Solar), Plats veggie du monde by Stéphanie de Turckheim (Hachette), and Ma cuisine vegan pour tous les jours by Stéphanie Tresch Medici (La Plage)."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan (Solar, 2026), she shares her story and tips for leaving salmon off our plates."
+              }
+            ]
+          ],
+          "articleId": 2
+        }
+      },
+      {
+        "id": 6,
+        "title": "5 things to know about salmon (instead of eating them)",
+        "summary": "Salmon are surprising living beings. Learning more about their habits, bodies, and lives helps us see that they, like us, are sentient animals.",
+        "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
+        "heroImageAlt": "Illustration about salmon and their lives",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "1. Baby salmon feed themselves"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/1.jpg",
+            "alt": "A young salmon at an early stage of development"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "When it hatches, a baby salmon, or alevin, has a small sac attached to its belly. It contains all the nutrients the fish needs to grow without having to find food. For its first few months, it stays warm in the bed of its home river alongside all its brothers and sisters."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Salmon run marathons without GPS"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/2.jpg",
+            "alt": "A salmon migrating through the ocean"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmon live in rivers and at sea. At least once in their lives, they join a collective migration across the ocean over colossal distances. To give you an idea, some populations leave Spain and migrate as far as Greenland. But how do they know where to go and which routes to take? Depending on where they are, salmon navigate by the stars, the sun, Earth’s magnetic field, or visual and olfactory cues. Their remarkable sense of smell, for example, helps them find their home river on the return journey by recognizing a unique chemical imprint they memorized during the first years of life."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Salmon transform themselves"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/3.jpg",
+            "alt": "Salmon at different stages of transformation"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Before setting out on their great journey, salmon change. To survive in the ocean’s salt water, their bodies, which were adapted to fresh river water, transform. Their gills, for example, change so they can expel salt. This process, called smoltification, involves physical as well as behavioral changes. Young salmon tend to be solitary in rivers, but before heading out to sea they develop collective intelligence and gather in schools."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Salmon do not have penetrative sex"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/4.jpg",
+            "alt": "Salmon gathering to spawn in a river"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "When they return to the river, female salmon dig nests in the gravel. A female can lay thousands of eggs in a single day. Once they are done, they open their mouths. This signals the males to release milt and fertilize the eggs. Sometimes the males are chosen by the females; sometimes they appear without the females’ knowledge. Scientists call the latter “sneaker males” because they bypass courtship and do not take part in the great migration."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Salmon can also become depressed"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/5.png",
+            "alt": "Salmon in an intensive fish farm"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In intensive farms, where aggressive interactions are constant and escape is impossible, some individuals develop a state of complete inhibition. They stop eating, become immobile, and show physiological and hormonal disruptions comparable to depression in humans."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This information comes from the video “"
+              },
+              {
+                "type": "link",
+                "text": "Who are salmon?",
+                "href": "https://www.youtube.com/watch?v=UKsljob-upk"
+              },
+              {
+                "type": "text",
+                "text": "”, published in 2024 on the Cervelle d’oiseau YouTube channel, hosted by science communicator Sébastien Moro."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "right",
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Salmon spend their lives connecting worlds we think of as separate. The animated short film SALMO, directed by Paul Pajot, tells the incredible epic journey of wild salmon and the fragility of the ecosystems they travel through."
+              }
+            ]
+          ],
+          "articleId": 3
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 5760,
+          "height": 3840
+        }
+      },
+      {
+        "id": 7,
+        "title": "When a French bakery chain takes salmon off its menu",
+        "summary": "In partnership with Seastemik, Boulangerie Landemaine became the first bakery chain in 2025 to remove salmon from its shops to protect the ocean and everyone who depends on it. So, how has this sea-change worked out a year later?",
+        "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
+        "heroImageAlt": "Boulangerie Landemaine's decision to remove salmon from its menu",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "“Our teams were quite reluctant at first, but today no one questions this decision,” Emma Bonvento, communications manager at Boulangerie Landemaine, told us. The well-known chain has 19 locations in France and Japan."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "At Seastemik, we understand what fueled those initial reservations. Among bakery-pastry shops that offer snacks (96% of them), smoked salmon sandwiches are often bestsellers, as are salmon canapés in catering."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Boulangerie Landemaine also caters for businesses. Until 2025, salmon canapés were among its most requested products. Needless to say, giving up salmon was a major challenge for the bakery."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A smart choice"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Deciding what goes on a menu is no small thing. Adding a food to the menu encourages its consumption and production. It also means taking responsibility toward customers. In 2026, offering salmon in a sandwich, quiche, or fillet means serving customers fish packed with medication and microplastics."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In France, 98% of the salmon we eat comes from farms, where fish are raised in disastrous conditions. The fishing used to feed salmon deprives communities of food and empties the ocean, not to mention the pollution and deforestation caused by these farms."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "These are some of the reasons that convinced Boulangerie Landemaine to take the leap, while the overwhelming majority of businesses continue to treat salmon as a menu staple."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A bold choice"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Removing salmon is one thing. But you also need to offer something else in its place. The bakery did not do things by halves: every salmon-based option it removed was replaced by a new vegetarian or vegan one. A roasted vegetable sandwich replaced the salmon sandwich, and a vegetable-and-goat-cheese quiche took the place of the salmon quiche."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/1.jpg",
+            "alt": "A plant-based snack option from Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Today, vegetarian and vegan items make up 40% of the chain’s snack range, in summer and winter, and more than a third of sales. The roasted vegetable sandwich, on the summer menu, has found an audience and sells just as well as some meat options. A big win for salmon, the ocean, and everyone who depends on it!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A choice that pays off"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The catering results are even more impressive. Vegetarian options account for more than half of sales, showing that some businesses are beginning to contribute to the food transition at their events."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Another win: Boulangerie Landemaine reports around a 30% reduction in production costs when switching from a conventional to a plant-based offering, for example by replacing salmon-and-spinach quiche with leek quiche. It is a good way to reassure skeptics, both internally and among competitors."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/2.jpg",
+            "alt": "Vegetarian products offered by Boulangerie Landemaine"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "And what about the customers? At Seastemik, we support food-service businesses through their transition and help make sure customers come along with them."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The Seastemik x Boulangerie Landemaine partnership was announced on social media, among other places. A video featuring our co-founder Esther Dufaure and the bakery’s founder, Rodolphe Landemaine, reached nearly 15,000 views. A second post shared a few weeks later had similar results. Most surprisingly, negative reactions were rare."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "A winning bet"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Almost a year and a half later, what seemed like an economic risk has proved to be a winning bet. There has been no turning back, plant-based options have found their place, and the commitment has even become a source of pride for the bakery."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This example shows us that another path is possible: businesses can go against industry habits and succeed when the choice is thoughtfully planned. So what are we waiting for? Let’s tell our restaurants, caterers, and bakeries it is time to leave salmon off the menu!"
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan, she shares her story and tips for leaving salmon off our plates. "
+              }
+            ]
+          ],
+          "articleId": 2
+        },
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1534,
+          "height": 1416
+        }
+      },
+      {
+        "id": 8,
+        "title": "Does the Seastemik team still eat salmon?",
+        "summary": "Spoiler: no. Each in our own way and at our own pace, we have realized that our greatest power to build a desirable world and future lies on our plates.",
+        "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
+        "heroImageAlt": "The Seastemik team together",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "We’ll tell you when, how, and why each of us took salmon off our plates."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Six people on the team, six different journeys to stop eating salmon. Some stopped twenty years ago, others more recently. Some had a moment of realization; others needed time."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esther, co-founder and co-director, had a long way to go. She grew up in a fishing family and learned from an early age to think of fish as food. But one scene changed everything. In 2013, she was in Morocco with friends. They bought live fish for lunch. A few minutes later, she felt “the taste of death” in her mouth. That day, she realized she would rather see fish alive than on her plate."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "What sparked the change?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "For Maxime, co-founder and co-director, the realization came during a mission with Sea Shepherd. In 2020, he was off the coast of West Africa and witnessed industrial fishing. “It was a shock to see these sea creatures hauled up in nets, many of them then thrown back into the sea, dead for nothing.” When he returned, he stopped eating fish altogether."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Charlotte, the corporate partnerships lead, gradually rethought her relationship with animals. Then one day, while looking at a sole fillet, it clicked. “I no longer saw the fillet. I saw the animal, its body, the life that had been taken from it.”"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "For Fleur, communications director, the transition to eating no animals also happened gradually, with the invaluable support of her wife, who has been vegan for nearly 15 years. Meeting her helped Fleur discover a different way to cook, but above all, to gradually bring her habits in line with her values."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/1.jpg",
+            "alt": "Members of the Seastemik team"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marie, a campaign lead, began by cutting down on meat after hearing friends describe how intensive farming harms animals and the world we share with them. After doing some research, she came across investigations into fish farming, fishing, and the state of the ocean. Since then, fish have been off the menu for her. A few years after stopping, she was tempted by a piece of gravlax salmon and finally tried it. The verdict? “It felt like having the Old Port of Marseille at 7 a.m. in my mouth.” That was the end of that."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Diane, digital communications lead, did not have a sudden realization. She grew up in a family where salmon simply disappeared from the table after her father watched a documentary about the harmful impacts of fish farming. As an adult, she watched Ali Tabrizi’s hard-hitting documentary Seaspiracy. No more doubts: salmon was off the menu."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "So what do we eat instead?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "It is often the first question people ask when we talk about giving up salmon: what do I actually eat instead? Our answer is unanimous: far more than you might think!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Some of us wanted to keep familiar foods. Marie, for example, tried plant-based salmon alternatives designed to recreate its texture and flavor. “These products can be a good stepping stone,” she says, while emphasizing the importance of giving yourself time."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/2.jpg",
+            "alt": "A meal shared by Seastemik team members"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "For others, it was a chance to explore new food. Charlotte turned to plant-based recipes inspired by dishes she already liked. For Fleur, the biggest challenge was sushi. But when she stopped ordering “the salmon set,” she discovered dishes and flavors she probably would never have chosen before."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The same was true for Esther, who still loves ocean flavors. She began exploring new ways to find them, including cuisines and ingredients that were less familiar to her."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "What about holiday meals?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Let’s be honest: salmon has a habit of reappearing on plates whenever there is a holiday meal with family or friends."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Several team members had to find a way to navigate this. Marie found hers. She did not want to ask her loved ones to cook something different for her, so she started cooking for the holidays. “I always make dishes that get everyone at the table excited.”"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Diane prefers to talk things through in advance with family, friends, or partners and find a solution that works for everyone."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Charlotte also reminds us that it is important to set boundaries. We can explain our choices, but we do not have to become the food-transition ambassador at every family meal."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "So how do you get started?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "There is no single method. Some people may prefer to start with one day, then a week or a month without salmon. Others may need a moment of realization and stop all at once. The most important thing is to find an approach you can sustain. Here are a few tips from Seastemik:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Get informed.</strong> Pink Bombs is here for that. There are also reports such as Le saumon, nouvel avatar de l’élevage industriel (Arte, 2026), documentaries such as Seaspiracy (Netflix, 2021), and books such as Un poison nommé saumon by Maxime Carsel (Broché, 2025).",
+              "<strong>Start by understanding what is holding you back.</strong> Is it taste, texture, habits, family meals, or nutrition questions? Every obstacle has a solution.",
+              "<strong>Find support.</strong> Talking with loved ones, cooking together, sharing recipes, or taking on small challenges as a group can make the transition much easier. As Esther puts it: “Learn, talk about your questions with the people around you,” and perhaps “set challenges with friends to spend periods without salmon.”",
+              "<strong>Above all, focus on enjoyment.</strong> Try new recipes, discover new ingredients, find ocean flavors in other ways, and share your dishes with others. For Charlotte, it means “opening up to new dishes and broadening your culinary repertoire,” rather than seeing the change as a constraint."
+            ]
+          }
+        ],
+        "heroLayout": "stacked",
+        "heroImageSize": {
+          "width": 1500,
+          "height": 1003
+        }
+      },
+      {
+        "id": 9,
+        "title": "George Ka, salmon and ghosts",
+        "summary": "At the Théâtre de la Ville in Paris, artist George Ka presented Salmo Salar in 2026: an expanded concert that uses migratory fish as a starting point for reflecting on identity and our relationship with the living world.",
+        "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
+        "heroImageAlt": "George Ka on stage during Salmo Salar",
+        "heroImageCredit": "Hugo Meunier",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "What do a salmon and a ghost have in common? Look closely, there is a connection. Salmon cross the ocean and then return to their home river. In other words, fish, like spirits, tend to return to the places where they grew up. Two journeys shaped by return and belonging."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "This parallel is the thread running through Salmo Salar, a show written and directed by George Ka, a celebrated author and singer known for her poetic, socially engaged lyrics. Through rhythm, Salmo Salar explores our identities, our stories, the ones we pass on and the ones we forget, and above all our connections with other living beings."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Connecting with the living world, connecting with salmon"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "What if salmon, most often reduced to food, were also individuals with their own histories, behaviors, environments, and journeys? For more than an hour, music, dialogue, and poetry intertwine to question our human perceptions and consumption systems with humor and tenderness."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/9/1.jpg",
+            "alt": "George Ka performing Salmo Salar"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "In other words, George Ka asks: what does our relationship with salmon say about us? By creating this show, she challenges that relationship. Giving salmon space and time on stage is already a way to see them as more than something on our forks."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmo Salar is one of those works that questions how we coexist with other animals, whether they live on land or in the sea. When we leave the show, our perspective has shifted: we no longer see salmon only as food, but as sentient, living beings."
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "Read more",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu. "
+              }
+            ]
+          ],
+          "articleId": 5
+        }
+      },
+      {
+        "id": 10,
+        "title": "13 organizations working to bring life back to the ocean",
+        "summary": "The ocean does not just need to be “saved.” It needs life to return. Around the world, groups, scientists, and citizens are working to transform our relationship with the ocean. Here is a look at organizations making a difference in their own ways.",
+        "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageSize": { "width": 6000, "height": 4000 },
+        "heroImageAlt": "The ocean and organizations working to protect it",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Around the world, organizations work to protect marine ecosystems. Some take direct action in the field. Others document, investigate, engage the public, or call on decision-makers. Some focus on a particular species or ecosystem; others take a broader view of the ocean. This list is far from exhaustive."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Seastemik</strong> started with a simple idea: an ocean full of life requires us to rethink the place we give marine animals on our plates. Through campaigns such as our mobilization against the <strong>Pure Salmon</strong> mega-farm in Gironde, and investigations such as the PinkBombs project you are reading now, we make the devastating consequences of our food choices visible and help individuals and businesses change how they eat, without guilt and with pleasure."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Bloom</strong> takes on destructive fishing practices and conducts investigations, advocacy, and public mobilization to defend marine ecosystems and the communities that depend on them."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Ethic Océan</strong> works hand in hand with seafood professionals, including chefs, fishmongers, distributors, and institutional caterers, to change purchasing practices. Drawing on scientific expertise, it helps them consider stock health and the impacts of fishing and farming methods, reducing pressure on the most threatened species."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>L214</strong> works on animal welfare, including the welfare of fish. Its work helps bring little-known realities of aquatic farming to light and prompts questions about the place of fish in our food system."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Longitude 181</strong> believes ocean protection begins with knowing and respecting the life within it. Founded by divers and scientists, the organization promotes a respectful relationship with marine wildlife, notably through its International Charter for Responsible Diving. It also raises awareness and advocates for sharks, cetaceans, and large marine animals, often targeted by prejudice and fishing."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Planète Mer</strong> works to restore a lasting balance between marine life and human activity. Its field projects focus on three areas: protecting marine biodiversity with citizens, supporting sustainable fisheries management with fishers, and restoring damaged ecosystems with local communities."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "The <strong>Plateforme Océan et Climat</strong> brings together NGOs, research institutes, local authorities, and businesses around one goal: recognizing the ocean’s central role in regulating the climate. Founded ahead of COP21, it produces accessible scientific resources and brings the ocean’s voice to international climate negotiations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Pleine Mer</strong> defends small-scale artisanal fishing against the industrialization of the sector. It supports small fishers, denounces destructive practices such as industrial trawling, and advocates for fairer access to marine resources in France and across Europe."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Surfrider</strong> works on several fronts to protect the ocean and coastlines: tackling pollution, especially plastic pollution; protecting water quality; preserving coastal areas; and adapting to climate change. It draws on scientific expertise, education, public engagement, and advocacy to change practices and public policy."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Under The Pole</strong> explores some of the ocean’s least-known areas, from polar waters to so-called mesophotic depths between 30 and 200 meters. Through long-term expeditions combining diving, scientific research, and innovation, the organization studies deep-water corals and their role as refuges from warming. It shares its discoveries with the public and schools to introduce these largely overlooked ecosystems."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Welfarm</strong> works to protect farm animals, including fish. Its campaigns call for fish welfare to be considered, especially in aquaculture, from farming conditions to transport and slaughter. Its work reminds us that fish are sentient beings, too often overlooked by regulations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "To discover more, explore the 185 NGOs and movements in the "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Coalition Océans</strong>",
+                "href": "https://www.oceancoalition.org/coalition"
+              },
+              {
+                "type": "text",
+                "text": ", or the 115 member organizations of the "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/nos-membres/"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

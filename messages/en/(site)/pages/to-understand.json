@@ -1,0 +1,98 @@
+{
+  "toUnderstand": {
+    "meta": {
+      "title": "Understand"
+    },
+    "intro": {
+      "caption": "The salmon debunk",
+      "title": "Sort through pink marketing, dark reality, and false solutions",
+      "imageAlt": "Illustrative image representing the industry, trawlers, and farmed fish."
+    },
+    "tags": {
+      "block1": "Decoding",
+      "block2": "Impacts",
+      "block3": "Misconceptions"
+    },
+    "debunk": {
+      "block1": {
+        "title": "What the salmon industry wants us to believe",
+        "items": [
+          {
+            "falseBelief": "“Salmon is a classic in our cuisine.”",
+            "reality": "The industry has done everything possible to make salmon our favorite fish.",
+            "paragraph": "<strong>Barely forty years ago, eating salmon was rare and expensive.</strong> Its mainstreaming is the result of industrial and commercial efforts: flooding the market with large volumes, adjusted prices, communication around smoked salmon outside the holidays, etc.\n\n<strong>Our appetite for this fish was built step by step.</strong>",
+            "imageAlt": "Graphic chart illustrating the exponential production of salmon in several countries around the world.",
+            "imageExtension": "png",
+            "catchPhrase": "Farmed salmon production is exponential"
+          },
+          {
+            "falseBelief": "“We need to eat fish for omega-3s.”",
+            "reality": "Omega-3s do not come from fish. They come from algae.",
+            "paragraph": "<strong>Originally, omega-3s are produced by marine microalgae.</strong> Zooplankton accumulates them, small fish eat it, salmon eat the small fish. It doesn't make them: it transports them. Since replacing fishmeal (which has high costs) with vegetable oils, salmon flesh contains significantly less omega-3, to the point <strong>that part of the industry now adds algae oil to salmon feed pellets.</strong>",
+            "imageAlt": "Illustration of a human eating a salmon which itself eats algae.",
+            "catchPhrase": "Omega-3s don't come from fish. They come from algae."
+          },
+          {
+            "falseBelief": "“SALMON IS GOOD FOR YOUR HEALTH.”",
+            "reality": "Many pollutants are present in salmon flesh.",
+            "paragraph": "The fish used for fishmeal and fish oil concentrate many pollutants, notably substances banned for decades. They then transmit them to the salmon which accumulate them in their flesh. <strong>For dioxins, seafood is our main source of exposure.</strong> Since the industry has been shifting towards a more plant-based diet, this accumulation is reduced for certain pollutants, and new contaminants specific to the plant ingredients used (rapeseed or sunflower oil, soy protein, corn, wheat gluten...), <strong>mainly pesticides</strong>, are making an appearance in salmon flesh.",
+            "imageAlt": "Illustration of fish with price tags and safety badge",
+            "catchPhrase": "Pollutants whose traces can be found in salmon flesh: Dioxins, furans, PCBs, DDT, aldrin, chlordane, dieldrin, endrin, heptachlor, hexachlorobenzene, mirex, and toxaphene."
+          }
+        ]
+      },
+      "block2": {
+        "title": "Real impacts downplayed",
+        "items": [
+          {
+            "falseBelief": "“WE ARE FORCED TO CROWD THEM TO MEET DEMAND”",
+            "reality": "Density is not a flaw in the model. It is the model.",
+            "paragraph": "To produce ever more salmon at a lower cost, <strong>industrial farming concentrates them in limited spaces</strong>. This high density promotes stress, injuries, parasites, and the spread of diseases, which can lead to massive mortality rates.\n\n<strong>The problem doesn't stop at the cages:</strong> in open-sea farms, parasites and certain pathogens can spread into the environment and affect wild salmon, especially the young passing nearby.",
+            "imageAlt": "Illustration of 3 salmon in a bathtub",
+            "catchPhrase": "3 salmon in the equivalent of a bathtub of water. That is the density required for farms to be profitable."
+          },
+          {
+            "falseBelief": "“FARMING LIMITS THE FISHING OF WILD FISH”",
+            "reality": "We don't relieve the ocean by fishing in it more.",
+            "paragraph": "<strong>We chose to farm a predator.</strong> So we must get its food from the sea: anchovies, sardinellas, blue whiting, whole fish caught specifically and ground into meal and oil.\nFarming doesn't replace fishing: it depends on it, and the more it grows, the more we fish.\n\nAbout 10% of fishing is used for fishmeal production, feeding the aquaculture sector. The impacts on coastal populations in West Africa are major.",
+            "imageAlt": "",
+            "catchPhrase": "Around 10% of fishing is used for fishmeal production"
+          },
+          {
+            "falseBelief": "“MAKING SALMON FEED PLANT-BASED IS MORE ECOLOGICAL”",
+            "reality": "Replacing the exploitation of the sea with the exploitation of fields doesn't reduce the footprint. It displaces it.",
+            "paragraph": "To optimize their costs, industrial farmers also feed salmon with soy, wheat, and rapeseed. The sector has therefore replaced a large part of the ration: 95 g of soy for 100 g of salmon.\n\nThe experiment has already taken place, and its outcome is known: deforestation on one hand; on the other, land that could have remained wild and let ecosystems regenerate, or directly feed humans with vegetables and legumes, while France lacks them and imports most of its plant proteins.",
+            "imageAlt": "",
+            "catchPhrase": "95 g of soy for 100 g of salmon"
+          }
+        ]
+      },
+      "block3": {
+        "title": "Misguided solutions",
+        "items": [
+          {
+            "falseBelief": "“What if I ate wild salmon?”",
+            "reality": "Shifting consumption would only displace the pressure onto ecosystems that are already exhausted.",
+            "paragraph": "Wild salmon populations are already weakened by dams, pollution, global warming, and overfishing. A large part of \"wild\" Pacific salmon actually comes from the release of young salmon born and raised in hatcheries that compete with natural fish."
+          },
+          {
+            "falseBelief": "“What about trout?”",
+            "reality": "Changing the species doesn't mean changing the model.",
+            "paragraph": "Trout is the cousin of salmon: they are different species, but from the same family (Salmonidae). The trout farming model is similar to salmon's, with the same dependence on plant crops (soy, wheat) as well as fishmeal and fish oils."
+          },
+          {
+            "falseBelief": "“What about land-based farming?”",
+            "reality": "Opting for land-farmed salmon is encouraging the same model.",
+            "paragraph": "The new industry of land-based factories increases and displaces pressures. It changes neither the density, nor the duration of confinement, nor the diet. It increases energy consumption, and does not stop the risks of marine pollution. Find more information on ",
+            "url": "https://www.usinesdesaumonsnonmerci.fr"
+          },
+          {
+            "falseBelief": "“What if I switched to chicken?”",
+            "reality": "Replacing salmon consumption with chicken is changing the animal, not the model.",
+            "paragraph": "In France, over 80% of chickens are raised in intensive systems: closed buildings, high densities, accelerated growth. As with salmon and trout, their diet relies heavily on imported crops, particularly soy, the cultivation of which is one of the main drivers of deforestation in South America. Therefore, we do not escape the industrial logic by changing species: we displace it."
+          }
+        ]
+      }
+    }
+  }
+}

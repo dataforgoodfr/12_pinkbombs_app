@@ -1,0 +1,118 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "The salmon we",
+      "title2": "produce, sell and eat",
+      "imageAlt": "Salmon on a plate"
+    },
+    "bomb": {
+      "title": "are",
+      "title2": "ticking",
+      "title3": "ecological, social and health bombs",
+      "imageAlt": "Exploding salmon"
+    },
+    "impact": {
+      "title": "Every year in France,",
+      "titleHighlight": "We consume 62 million salmon",
+      "impact": "(equivalent in weight to 31 Eiffel Towers)",
+      "imageAltTitle": "Eiffel Tower on a plate",
+      "title2": "of these millions of salmon,",
+      "title2Highlight": "98% are farmed",
+      "description": "Almost all the salmon we eat in France comes from fish farms. They are not caught in the wild. They are fed every day for two years in cages.",
+      "imageAltDescription": "Salmon"
+    },
+    "menu": {
+      "title": {
+        "part1": "Here's what lies",
+        "part2": "behind the consumption",
+        "part3": "of farmed salmon"
+      },
+      "menuCards": [
+        {
+          "title": "Wild fish turned into fishmeal and fish oil",
+          "content": "<strong>Salmon are carnivorous fish</strong>. In fish farming, 440 small wild fish are caught and processed into fishmeal and fish oil to feed just 1 salmon. <strong>This fishing causes \"accidental\" catches of sharks, turtles, whales…</strong>",
+          "imageAlt": "Salmon and small fish"
+        },
+        {
+          "title": "Soy, wheat and rapeseed",
+          "content": "Salmon are carnivorous fish, yes... <strong>but they are also fed soy, wheat and rapeseed.</strong>\n\nDemand for soy for farmed animals is a driver of both legal and illegal <strong>deforestation</strong> in Brazil.",
+          "imageAlt": "Grain"
+        },
+        {
+          "title": "Krill caught in Antarctica",
+          "content": "To <strong>enhance its pink color</strong>, salmon are also fed krill, tiny shrimp that serve as food for many animals in the Antarctic ecosystem.",
+          "imageAlt": "Krill, tiny shrimp"
+        },
+        {
+          "title": "Antiparasitic treatments",
+          "content": "Cages encourage infections. Industrial fish farmers administer <strong>antiparasitic treatments</strong>, mainly <strong>against sea lice</strong>, a type of marine tick that attaches itself to salmon skin.",
+          "imageAlt": "Sprayer"
+        },
+        {
+          "title": "Microplastics",
+          "content": "Farmed salmon <strong>can ingest microplastics</strong> present in their environment or feed.",
+          "imageAlt": "Deteriorating plastic bottle"
+        },
+        {
+          "title": "Forever chemicals",
+          "content": "Feed used in aquaculture can expose fish to <strong>PFAS, PCBs and dioxins</strong>.",
+          "imageAlt": "Molecule"
+        }
+      ],
+      "detail": "Sources and calculation details can be found in the",
+      "methodology": "methodology"
+    },
+    "addition": {
+      "title": {
+        "part1": "In France, each person consumes an average of 4.5 kg of farmed salmon per year,",
+        "part2": "and the cost is steep:"
+      },
+      "results": {
+        "intro": "The total (for the entire French population) comes to:",
+        "resultItems": {
+          "item1": {
+            "title": "62 million salmon",
+            "description": "killed every year, each spending 2 years confined and crammed together, fed on pellets",
+            "imageAlt": "Farmed salmon in cages"
+          },
+          "item2": {
+            "title": "27 billion small fish ",
+            "description": "killed every year, caught specifically to produce the fishmeal and fish oil used to feed salmon, affecting local populations in West Africa",
+            "imageAlt": "Salmon and small fish"
+          },
+          "item3": {
+            "title": "128,000 tonnes of nitrogen and phosphorus discharged",
+            "description": "by fish farms through salmon waste, uneaten feed, treatment residues, etc.",
+            "imageAlt": "Pipe discharging wastewater"
+          },
+          "item4": {
+            "title": "1.9 million tonnes of CO2",
+            "description": "generated every year, equivalent to the annual emissions of 235,000 people in France",
+            "imageAlt": "CO2 cloud"
+          }
+        }
+      },
+      "addOns": {
+        "intro": "On top of that:",
+        "addOnItems": {
+          "item1": {
+            "title": "987 km2 of land are used",
+            "description": "to produce plant-based feed for salmon. That's more than the combined area of Seine-Saint-Denis, Hauts-de-Seine and Paris.",
+            "imageAlt": "Grain"
+          },
+          "item2": {
+            "title": "12 persistent organic pollutants (POPs)",
+            "description": "found in salmon. Of the dozen pollutants listed under the Stockholm Convention, all twelve are found in salmon.",
+            "imageAlt": "Salmon and small fish"
+          },
+          "item3": {
+            "title": "Less omega-3",
+            "description": "Today, salmon flesh contains significantly less omega-3 than it used to. This is a consequence of changes in the feed given to salmon.",
+            "imageAlt": "Seaweed and a prohibition sign"
+          }
+        }
+      },
+      "total": "Total:"
+    }
+  }
+}

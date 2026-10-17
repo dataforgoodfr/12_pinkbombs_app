@@ -1,0 +1,127 @@
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
+import ShareLink from "@/components/v2/links/shareLink";
+
+import { Link } from "@/navigation";
+
+import { MatomoPreferencesButton } from "./MatomoConsent";
+import NewsletterForm from "./NewsletterForm";
+
+const currentYear = new Date().getFullYear();
+
+const Footer = () => {
+  const t = useTranslations("site.layout");
+  const locale = useLocale();
+
+  return (
+    <footer className="p-6 lg:p-12 text-white bg-darkblue1">
+      <div className="max-w-[1500px] mx-auto">
+        <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-12 lg:gap-4 lg:pt-12">
+          <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
+            <h4 className="h4">{t("footer.sections.projectBy.title")}</h4>
+            <Image
+              loading="lazy"
+              src="/site/images/seastemik-x-dataforgood.svg"
+              width={213}
+              height={50}
+              alt="Seastemik"
+              className="w-[170px] h-auto object-contain"
+            />
+            <ShareLink
+              href="https://seastemik.org/"
+              name="Seastemik"
+              type="site"
+              className="text-white hover:text-v2-yellow"
+            />
+          </div>
+
+          <div className="flex flex-col gap-4 w-full max-w-72">
+            <h4 className="h4">{t("footer.sections.projectBy.site")}</h4>
+            <Link
+              className="text-base text-white hover:text-v2-yellow"
+              href="/"
+              locale={locale}
+            >
+              {t("nav.home")}
+            </Link>
+            <Link
+              className="text-base text-white hover:text-v2-yellow"
+              href="/to-understand"
+              locale={locale}
+            >
+              {t("nav.toUnderstand")}
+            </Link>
+            <Link
+              className="text-base text-white hover:text-v2-yellow"
+              href="/to-act"
+              locale={locale}
+            >
+              {t("nav.toAct")}
+            </Link>
+            <Link
+              className="text-base text-white hover:text-v2-yellow"
+              href="/to-be-inspired"
+              locale={locale}
+            >
+              {t("nav.toBeInspired")}
+            </Link>
+          </div>
+
+          <div className="flex flex-col gap-4 w-full max-w-72">
+            <h4 className="h4">{t("footer.sections.more.title")}</h4>
+            <Link
+              className="text-base text-white hover:text-v2-yellow"
+              href="/about"
+              locale={locale}
+            >
+              {t("nav.about")}
+            </Link>
+            <ShareLink
+              href={`/about#${t("footer.sections.more.sourceId")}`}
+              type="sources"
+              name={t("shareLink.sources")}
+              className="text-white hover:text-v2-yellow"
+            />
+            <ShareLink
+              href="https://seastemik.org/"
+              type="legalNotices"
+              name={t("shareLink.legalNotices")}
+              className="text-white hover:text-v2-yellow"
+            />
+            <ShareLink
+              href="mailto:info@seastemik.org"
+              type="contactUs"
+              name={t("shareLink.contactUs")}
+              className="text-white hover:text-v2-yellow"
+            />
+          </div>
+
+          <div className="flex flex-col col-span-3 gap-4 self-top lg:ml-auto w-full md:w-auto">
+            <h4 className="h4">{t("footer.sections.stayInformed.title")}</h4>
+            <p className="p-body">{t("footer.sections.stayInformed.text")}</p>
+            <NewsletterForm />
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">
+          <p className="text-base">Seastemik - © {currentYear}</p>
+          <br />
+          <div className="flex gap-1 md:items-center md:justify-center">
+            <p className="text-base">design:</p>
+            <ShareLink
+              href="https://coucou.design/"
+              type="design"
+              name={t("shareLink.design")}
+              className="text-base text-white hover:text-v2-yellow"
+            />
+          </div>
+        </div>
+        <MatomoPreferencesButton />
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

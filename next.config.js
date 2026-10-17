@@ -4,16 +4,11 @@ const createNextIntlPlugin = require("next-intl/plugin");
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
-  eslint: {
-    dirs: ["src"],
-  },
-
   images: {
     formats: ["image/webp"],
   },
 
   reactStrictMode: true,
-  swcMinify: true,
 
   // Uncoment to add domain whitelist
   // images: {

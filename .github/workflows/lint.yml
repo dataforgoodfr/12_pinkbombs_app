@@ -20,7 +20,7 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 24
 
       - name: 📥 Download deps
         uses: u0reo/npm-install@fix/restore-failure
@@ -28,13 +28,13 @@ jobs:
           useRollingCache: true
 
       - name: 🔬 Lint
-        run: yarn lint:strict
+        run: npm run lint:strict
 
       - name: 🔎 Type check
-        run: yarn typecheck
+        run: npm run typecheck
 
       - name: 💅 Prettier check
-        run: yarn format:check
+        run: npm run format:check
 
       - name: 🃏 Run jest
-        run: yarn test
+        run: npm run test

@@ -1,0 +1,152 @@
+{
+  "toAct": {
+    "meta": {
+      "title": "Agir"
+    },
+    "intro": {
+      "caption": "Réduire son impact",
+      "title": "Découvrez des actions simples et des leviers collectifs.",
+      "imageAlt": "Image illustrative représentant des solutions pour réduire son impact."
+    },
+    "tags": {
+      "individual": "Individu",
+      "company": "Entreprise"
+    },
+    "howToAct": "Oui, mais comment\u00a0?",
+    "iAct": "J’agis",
+    "individualSection": {
+      "title": {
+        "part1": "À notre échelle,",
+        "part2": "nous avons toutes et tous le pouvoir d’agir sur notre consommation de saumons."
+      },
+      "recommendations": [
+        {
+          "title": "Réduire sa consommation de saumons",
+          "description": "La première étape pour réduire son impact est de diminuer sa consommation.\n\nDiviser par 3 notre consommation nationale permettrait déjà de limiter fortement les pressions exercées sur l'Océan, les animaux et les humains.\n\nSi cela peut se faire de manière graduelle, le choix le plus efficace reste de ne plus consommer de saumons, du tout.\n\nPourquoi\u00a0? Parce que cela a un impact positif immédiat sur les animaux et l’Océan. Nos choix alimentaires ont un véritable pouvoir\u00a0: lorsque la demande évolue, les filières s’adaptent. En choisissant de ne plus acheter de saumons issus de modes de production qui posent problème, nous envoyons un signal fort aux industriels et encourageons le développement d’alternatives plus respectueuses.",
+          "actions": [
+            {
+              "cta": "Calculez votre empreinte saumons avec le Pinkomètre",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
+              "id": 5,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Repeupler l’Océan\u00a0: ces associations qui font bouger les lignes",
+              "id": 10,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Continuer à manger iodé (sans poisson)",
+          "description": "Le plaisir d’une cuisine iodée <strong>ne repose pas uniquement sur les poissons.</strong>\n\n<strong>Algues, coquillages</strong> et nouvelles façons de cuisiner permettent de retrouver des saveurs marines tout en diversifiant son alimentation.\n\nTestez dès maintenant nos menus marins sans poissons, avec des recettes 100% océanes et végétales, pour faire danser les papilles, sans vider l'Océan\u00a0!",
+          "actions": [
+            {
+              "cta": "Télécharger notre livre de recette",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
+              "id": 5,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Introduire des alternatives végétales dans son alimentation",
+          "description": "Aujourd’hui, il <strong>existe de nombreuses alternatives végétales pour continuer à profiter des recettes que l’on aime\u00a0:</strong> saumon fumé végétal, pavés, tartinables ou encore préparations inspirées des produits de la mer.\n\nCes alternatives permettent de retrouver des textures, des usages et des plaisirs familiers, <strong>tout en réduisant l’impact lié à la consommation de saumons.</strong>",
+          "actions": [
+            {
+              "cta": "Calculez votre empreinte saumons avec le Pinkomètre et explorer les alternatives",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Télécharger notre livre de recette",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
+              "id": 5,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Sensibiliser autour de soi",
+          "description": "<strong>La plupart des personnes ignorent encore les impacts réels liés à la consommation de saumons.</strong>\n\n<strong>Partager ces informations autour de soi</strong>, ouvrir la discussion et faire découvrir d’autres façons de consommer sont aussi des formes d’action. Plus nous sommes nombreux à comprendre les enjeux, <strong>plus nous pouvons faire évoluer les pratiques.</strong>",
+          "actions": [
+            {
+              "cta": "Le saumon, symbole d’une industrie\u00a0: récit d’un poisson pas comme les autres",
+              "id": 1,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Les saumons, symbole d’une industrie",
+              "id": 1,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "5 idées reçues sur le poisson (et pourquoi elles sont fausses)",
+              "id": 4,
+              "type": "internalArticle"
+            }
+          ]
+        }
+      ]
+    },
+    "companySection": {
+      "title": {
+        "part1": "La transition à grande échelle se fera",
+        "part2": "avec les entreprises.",
+        "part3": "Il est urgent de les embarquer."
+      },
+      "recommendations": [
+        {
+          "title": "Je demande de réduire ou retirer les plats à base de saumons de la cantine",
+          "description": "Faire évoluer une carte de restaurant d'entreprise peut avoir un fort impact.\n\nEn portant ce sujet auprès de votre entreprise, vous faites concrètement bouger les lignes.",
+          "actions": [
+            {
+              "cta": "Téléchargez nos recettes iodées",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Demandez-nous de l'aide pour convaincre en interne. Écrivez à charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Je propose une restauration événementielle 100% végétale",
+          "description": "Réunions, séminaires, cocktails, événements d’entreprise… autant d’occasions de faire découvrir une autre façon de se régaler.\n\nLes traiteur·es généralistes ou spécialisé·es en végétal proposent aujourd’hui des alternatives créatives, gourmandes et inclusives, qui répondent plus facilement aux différentes habitudes alimentaires tout en limitant l’impact environnemental.",
+          "actions": [
+            {
+              "cta": "Découvrez https://touslestraiteursvegan.com/",
+              "url": "https://touslestraiteursvegan.com/",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Je demande un accompagnement de Seastemik",
+          "description": "Chaque entreprise peut engager des transformations puissantes. Seastemik peut vous accompagner pour enclencher ce changement avec vos équipes.\n\nIl est urgent, possible (et joyeux) de dépoissonner l’alimentation dans la restauration pour aller vers une offre alignée avec les 10kg de consommation de poissons par an et par habitants en France.",
+          "actions": [
+            {
+              "cta": "Prendre RDV avec Seastemik. Écrivez à charlotte@seastemik.com.",
+              "url": "mailto:charlotte@seastemik.com",
+              "type": "externalRedirect"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
