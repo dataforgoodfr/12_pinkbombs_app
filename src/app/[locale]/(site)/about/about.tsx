@@ -418,8 +418,9 @@ const ApproachAndMethodSection = () => {
               ))}
             </div>
             <p className="p-lead">{t("method.missingInfo")}</p>
-            <Link
-              href="/"
+            <a
+              href="https://drive.google.com/file/d/1dukCe7fENweOSypv9Ohq2h_9m9N7L7Cg/view?usp=sharing"
+              target="_blank"
               className="flex gap-2 cta font-primary font-black text-sm uppercase tracking-wide hover:text-v2-magenta"
             >
               {t("method.downloadCta")}
@@ -444,7 +445,7 @@ const ApproachAndMethodSection = () => {
                   fill="#13176E"
                 />
               </svg>
-            </Link>
+            </a>
           </div>
           <h2 className="h2 mt-12">{t("contact.title")}</h2>
           <div className="flex flex-col gap-8 mt-8">
