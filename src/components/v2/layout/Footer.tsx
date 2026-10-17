@@ -24,10 +24,10 @@ const Footer = () => {
             <Image
               loading="lazy"
               src="/site/images/seastemik-x-dataforgood.svg"
-              width={170}
-              height={100}
+              width={213}
+              height={50}
               alt="Seastemik"
-              className="object-contain"
+              className="w-[170px] h-auto object-contain"
             />
             <ShareLink
               href="https://seastemik.org/"

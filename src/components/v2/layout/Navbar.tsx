@@ -115,7 +115,7 @@ const Navbar = () => {
             src={`/site/images/pinkbombs-${getColor()}.svg`}
             alt="PinkBombs"
             width={192}
-            height={58}
+            height={getColor() === "blue" ? 58 : 57}
             className="w-full h-auto object-contain"
           />
         </Link>

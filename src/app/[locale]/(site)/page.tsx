@@ -64,7 +64,7 @@ const ExplodeSection = () => {
               loading="lazy"
               src="/site/images/homepage/red-line.svg"
               width={437}
-              height={0}
+              height={14}
               alt={t("bomb.imageAlt")}
               className="pt-2 object-contain h-auto max-w-[70%] lg:max-w-full"
             />
@@ -81,10 +81,10 @@ const ExplodeSection = () => {
         <Image
           loading="lazy"
           src="/site/images/homepage/fish-bomb.svg"
-          width={1420}
-          height={870}
+          width={1126}
+          height={760}
           alt={t("bomb.imageAlt")}
-          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto h-full"
+          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto w-auto h-full"
         />
       </div>
     </section>
@@ -102,7 +102,7 @@ const ImpactSection = () => {
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
               width={611}
-              height={179}
+              height={239}
               alt={t("impact.imageAltTitle")}
               className="block flex-1 object-contain lg:max-w-[611px] mx-auto h-auto"
             />
@@ -226,9 +226,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="Divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -252,9 +252,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="Divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -278,9 +278,9 @@ const AdditionSection = () => {
               loading="lazy"
               src="/site/images/homepage/addition-thin-divider.svg"
               width={725}
-              height={0}
+              height={32}
               alt="divider"
-              className="-rotate-[2.2deg] my-4"
+              className="-rotate-[2.2deg] my-4 h-auto"
             />
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2">
               <Image
@@ -303,10 +303,10 @@ const AdditionSection = () => {
             <Image
               loading="lazy"
               src="/site/images/homepage/addition-heavy-divider.svg"
-              width={725}
-              height={0}
+              width={676}
+              height={35}
               alt="Divider"
-              className="-rotate-[2.2deg] mt-6"
+              className="w-[725px] h-auto -rotate-[2.2deg] mt-6"
             />
           </div>
         </div>
@@ -376,10 +376,10 @@ const AdditionSection = () => {
             <Image
               loading="lazy"
               src="/site/images/homepage/addition-heavy-divider.svg"
-              width={725}
-              height={0}
+              width={676}
+              height={35}
               alt="Divider"
-              className="object-contain -rotate-[2.2deg]"
+              className="w-[725px] h-auto object-contain -rotate-[2.2deg]"
             />
           </div>
         </div>

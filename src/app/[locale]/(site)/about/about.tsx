@@ -92,9 +92,9 @@ const ExplanationSection = () => {
                 loading="lazy"
                 src="/site/images/about/sinking-fish.svg"
                 width={98}
-                height={90}
+                height={98}
                 alt={t("why.situation.imageAlt")}
-                className="object-contain"
+                className="object-contain h-auto"
               />
               <h2 className="h2 text-pretty text-v2-red">
                 {t("why.situation.title")}
@@ -259,8 +259,8 @@ const PartnerSection = () => {
           <Image
             loading="lazy"
             src="/site/images/about/kresk-4-oceans.png"
-            width={297}
-            height={178}
+            width={594}
+            height={358}
             alt={t("partner.imageAlt")}
             className="h-auto w-full md:w-2/5 md:max-w-[297px] md:shrink-0 rounded-t-lg md:rounded-l-lg md:rounded lg:rounded-tr-none object-cover"
           />
@@ -310,13 +310,13 @@ const StorySection = () => {
       imgSrc: "/site/images/about/media-logos/brut.png",
       alt: t("mediaLogosAlt.brut"),
       width: 89,
-      height: 31,
+      height: 32,
     },
     {
       imgSrc: "/site/images/about/media-logos/france-inter.png",
       alt: t("mediaLogosAlt.franceInter"),
       width: 61,
-      height: 62,
+      height: 61,
     },
     {
       imgSrc: "/site/images/about/media-logos/le-monde.png",
@@ -356,8 +356,8 @@ const StorySection = () => {
           <Image
             loading="lazy"
             src="/site/images/about/phone-medias.png"
-            width={494}
-            height={474}
+            width={989}
+            height={880}
             alt={t("story.imageAlt")}
             className="mx-auto h-auto w-full max-w-[494px] rounded-t-lg lg:w-1/2 lg:shrink-0"
           />
@@ -374,7 +374,7 @@ const StorySection = () => {
                 width={item.width}
                 height={item.height}
                 alt={item.alt}
-                className="object-contain"
+                className="object-contain h-auto"
               />
             </div>
           ))}
