@@ -39,6 +39,7 @@ const Navbar = () => {
       ? Number(slug?.match(/-(\d+)$/)?.[1])
       : undefined;
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const [homeBlue, setHomeBlue] = React.useState(false);
   const headerRef = React.useRef<HTMLElement>(null);
 
   React.useLayoutEffect(() => {
@@ -60,6 +61,49 @@ const Navbar = () => {
       document.documentElement.style.removeProperty("--site-navbar-height");
     };
   }, []);
+
+  React.useEffect(() => {
+    if (pathname !== "/") return;
+    let frame = 0;
+    let previous: boolean | undefined;
+    const update = () => {
+      frame = 0;
+      const marker = document.querySelector("[data-home-explode]");
+      const header = headerRef.current;
+      const blue =
+        !!marker &&
+        !!header &&
+        marker.getBoundingClientRect().top <=
+          header.getBoundingClientRect().bottom + 1;
+      if (blue !== previous) {
+        previous = blue;
+        setHomeBlue(blue);
+        document.documentElement.style.setProperty(
+          "--homepage-top-background",
+          blue ? "#13176E" : "#FFD4D4",
+        );
+      }
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    const observer = new ResizeObserver(schedule);
+    observer.observe(document.documentElement);
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    window.addEventListener("pageshow", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      window.removeEventListener("pageshow", schedule);
+      document.documentElement.style.removeProperty(
+        "--homepage-top-background",
+      );
+    };
+  }, [pathname]);
 
   const getLocaleHref = (targetLocale: (typeof locales)[number]) => {
     const localizedSlug = articleId
@@ -96,8 +140,10 @@ const Navbar = () => {
       text: t("nav.calculator"),
     },
   ];
-  const getBackgroundColor = () => getSectionBackgroundClass(pathname);
-  const getColor = () => getSectionColor(pathname);
+  const getBackgroundColor = () =>
+    pathname === "/" && homeBlue ? "blue" : getSectionBackgroundClass(pathname);
+  const getColor = () =>
+    pathname === "/" && homeBlue ? "pink" : getSectionColor(pathname);
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
@@ -110,7 +156,7 @@ const Navbar = () => {
       )}
     >
       <div className="flex flex-wrap items-center justify-between gap-6 px-6 lg:px-12 py-3 max-w-[1596px] mx-auto">
-        <Link href="/">
+        <Link href="/" className="flex h-[58px] items-center">
           <Image
             src={`/site/images/pinkbombs-${getColor()}.svg`}
             alt="PinkBombs"

@@ -1,9 +1,14 @@
 {
   "homepage": {
+    "navigation": {
+      "explode": "Découvrir les impacts du saumon d'élevage",
+      "impact": "Voir les chiffres de la consommation de saumon"
+    },
     "hero": {
       "title": "Les saumons que nous",
       "title2": "produisons, vendons et mangeons",
-      "imageAlt": "Saumon sur une assiette"
+      "imageAlt": "Saumon sur une assiette",
+      "progress": "Progression de la page d'accueil"
     },
     "bomb": {
       "title": "sont des",

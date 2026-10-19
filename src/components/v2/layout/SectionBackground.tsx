@@ -18,6 +18,11 @@ const SectionBackground = () => {
           "fixed inset-x-0 top-0 h-30 lg:h-0 -z-20",
           `bg-v2-${getSectionBackgroundClass(pathname)}`,
         )}
+        style={
+          pathname === "/"
+            ? { backgroundColor: "var(--homepage-top-background, #FFD4D4)" }
+            : undefined
+        }
       />
       <div
         aria-hidden="true"

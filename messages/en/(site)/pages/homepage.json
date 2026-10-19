@@ -1,9 +1,14 @@
 {
   "homepage": {
+    "navigation": {
+      "explode": "Discover the impacts of farmed salmon",
+      "impact": "See salmon consumption figures"
+    },
     "hero": {
       "title": "The salmon we",
       "title2": "produce, sell and eat",
-      "imageAlt": "Salmon on a plate"
+      "imageAlt": "Salmon on a plate",
+      "progress": "Homepage progress"
     },
     "bomb": {
       "title": "are",
