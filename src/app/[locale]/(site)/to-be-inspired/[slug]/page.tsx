@@ -122,7 +122,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </p>
         )}
 
-        <div className="max-w-3xl px-8 lg:px-32 md:py-16">
+        <div className="max-w-3xl px-8 md:py-16 mx-auto">
           {article.article.blocks.map((block, index) => (
             <ArticleBlockView key={`${block.type}-${index}`} block={block} />
           ))}
@@ -134,7 +134,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <h2 className="h2 px-5 text-center">
             {article.article.relatedSection.title}
           </h2>
-          <div className="mx-auto max-w-3xl py-3 px-8 lg:px-32 text-center">
+          <div className="mx-auto max-w-3xl py-3 px-8 text-center">
             {article.article.relatedSection.paragraphs.map(
               (segments, index) => (
                 <ArticleParagraphView
