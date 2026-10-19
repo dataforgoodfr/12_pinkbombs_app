@@ -106,22 +106,22 @@ const ImpactSection = () => {
               alt={t("impact.imageAltTitle")}
               className="block flex-1 object-contain lg:max-w-[611px] mx-auto h-auto"
             />
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[50%]">
+            <div className="flex flex-col flex-1 text-v2-pink md:px-10 lg:px-16 lg:max-w-[50%] mr-auto">
               <p className="h2">{t("impact.title")}</p>
               <p className="h2 text-v2-red">{t("impact.titleHighlight")}</p>
               <p className="p-lead pt-2 text-pretty">{t("impact.impact")}</p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center justify-between">
             <Image
               loading="lazy"
               src="/site/images/homepage/salmons.svg"
               width={596}
               height={59}
               alt={t("impact.imageAltDescription")}
-              className="block flex-1 object-contain lg:max-w-[460px] lg:max-w-full mx-auto h-auto"
+              className="block flex-1 object-contain md:w-[48%] lg:max-w-[460px] lg:max-w-full mx-auto h-auto"
             />
-            <div className="flex flex-col flex-1 text-v2-pink lg:max-w-[80%] xl:max-w-[50%]">
+            <div className="flex flex-col flex-1 text-v2-pink md:px-10 lg:px-16 lg:max-w-[80%] xl:max-w-[50%]">
               <p className="h2 text-pretty">{t("impact.title2")}</p>
               <p className="h2 text-v2-red">{t("impact.title2Highlight")}</p>
               <p className="p-lead pt-2 text-pretty">
