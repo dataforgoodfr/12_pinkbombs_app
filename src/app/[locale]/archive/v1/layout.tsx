@@ -22,7 +22,7 @@ export async function generateMetadata({
       template: `%s | ${t("title")}`,
     },
     description: t("description"),
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
     icons: {
       icon: "/favicon/favicon.ico",
       shortcut: "/favicon/favicon.ico",
