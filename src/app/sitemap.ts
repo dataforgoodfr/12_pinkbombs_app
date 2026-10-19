@@ -15,6 +15,7 @@ const pagePaths = [
   "/to-be-inspired",
   "/pinkometer",
   "/about",
+  "/legal-notices",
 ] as const;
 
 const articlesByLocale = {
