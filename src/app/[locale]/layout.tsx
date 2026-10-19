@@ -38,7 +38,7 @@ export async function generateMetadata({
     metadataBase: new URL(t("url")),
     title: {
       default: t("title"),
-      template: `%s | ${t("title")}`,
+      template: `%s`,
     },
     description: t("description"),
     robots: { index: true, follow: true },

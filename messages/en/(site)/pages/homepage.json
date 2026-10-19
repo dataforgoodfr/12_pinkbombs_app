@@ -14,7 +14,7 @@
     "impact": {
       "title": "Every year in France,",
       "titleHighlight": "We consume 62 million salmon",
-      "impact": "(equivalent in weight to 31 Eiffel Towers)",
+      "impact": "(equivalent in weight to 31 Eiffel towers)",
       "imageAltTitle": "Eiffel Tower on a plate",
       "title2": "of these millions of salmon,",
       "title2Highlight": "98% are farmed",
@@ -96,7 +96,7 @@
         "intro": "On top of that:",
         "addOnItems": {
           "item1": {
-            "title": "987 km2 of land are used",
+            "title": "987 km² of land are used",
             "description": "to produce plant-based feed for salmon. That's more than the combined area of Seine-Saint-Denis, Hauts-de-Seine and Paris.",
             "imageAlt": "Grain"
           },

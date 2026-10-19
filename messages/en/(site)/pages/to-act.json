@@ -31,12 +31,12 @@
             },
             {
               "cta": "Replacing salmon: 5 alternatives that are already game-changers",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             },
             {
               "cta": "Repopulating the Ocean: the associations making a difference",
-              "id": 10,
+              "id": 9,
               "type": "internalArticle"
             }
           ]
@@ -51,13 +51,8 @@
               "type": "download"
             },
             {
-              "cta": "How can we replace fish on our plates?",
-              "id": 2,
-              "type": "internalArticle"
-            },
-            {
               "cta": "Replacing salmon: 5 alternatives that are already game-changers",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -78,7 +73,7 @@
             },
             {
               "cta": "Replacing salmon: 5 alternatives that are already game-changers",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -93,13 +88,8 @@
               "type": "internalArticle"
             },
             {
-              "cta": "Salmon, symbol of an industry",
-              "id": 1,
-              "type": "internalArticle"
-            },
-            {
               "cta": "5 misconceptions about fish (and why they are wrong)",
-              "id": 4,
+              "id": 3,
               "type": "internalArticle"
             }
           ]
@@ -123,8 +113,8 @@
               "type": "download"
             },
             {
-              "cta": "Ask us for help to convince internally. Write to charlotte@seastemik.com.",
-              "url": "mailto:charlotte@seastemik.com",
+              "cta": "Ask us for help to convince internally. Write to charlotte@seastemik.org.",
+              "url": "mailto:charlotte@seastemik.org",
               "type": "externalRedirect"
             }
           ]
@@ -134,7 +124,7 @@
           "description": "Meetings, seminars, cocktails, corporate events… all opportunities to introduce another way to enjoy food.\n\nGeneral or plant-based specialized caterers today offer creative, gourmet, and inclusive alternatives that more easily meet different dietary habits while limiting environmental impact.",
           "actions": [
             {
-              "cta": "Discover https://touslestraiteursvegan.com/",
+              "cta": "Discover 'Tous les traiteurs vegan' website",
               "url": "https://touslestraiteursvegan.com/",
               "type": "externalRedirect"
             }
@@ -145,8 +135,8 @@
           "description": "Every company can engage in powerful transformations. Seastemik can support you in initiating this change with your teams.\n\nIt is urgent, possible (and joyful) to remove fish from catering food to move towards an offer aligned with the 10kg of fish consumption per year and per inhabitant in France.",
           "actions": [
             {
-              "cta": "Book an appointment with Seastemik. Write to charlotte@seastemik.com.",
-              "url": "mailto:charlotte@seastemik.com",
+              "cta": "Book an appointment with Seastemik. Write to charlotte@seastemik.org.",
+              "url": "mailto:charlotte@seastemik.org",
               "type": "externalRedirect"
             }
           ]

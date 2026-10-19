@@ -186,180 +186,6 @@
       },
       {
         "id": 2,
-        "title": "How can we replace fish on our plates?",
-        "summary": "An interview with Marie Laforêt, a leading voice in plant-based cooking",
-        "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
-        "heroImageSize": { "width": 492, "height": 633 },
-        "heroImageAlt": "Marie Laforêt, author of Seafood Vegan",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Where should you start? What can you cook when you want a dish with a taste of the sea? To answer these questions, Marie Laforêt published Seafood Vegan with Solar, a recipe book that is as beautiful as it is informative. She spoke with Seastemik about it."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Marie, you are a leading figure in plant-based cooking in France. You have published more than 20 recipe books in 15 years. Why did you decide to focus on the world of the sea this time?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> Among all the vegan cookbooks published in France, many explain how to replace land animals in our diets, but very few offer alternatives to marine animals. Also, people who decide to eat less meat, or stop eating it altogether, often turn to fish. That was true for me when I was younger! I think this is a real problem, especially since we often forget that far more marine animals are killed for food than land animals. For all these reasons, it was important to me to write a book devoted to this subject. It is a project I have been working on for a long time. Several of my books already include sections devoted entirely to it, but I felt it deserved a book of its own."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "You mentioned that you used to eat fish. How much were marine animals part of your diet? When and why did you stop eating them?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I grew up in a Breton family where marine animals were regularly served at the table, especially during the holiday season. As a teenager, and later when I stopped eating land animals, I started eating even more fish, particularly salmon! Then, in 2008, I realized that fish were sentient beings too. From an ethical point of view, it did not make sense to me to eat some animals but not others. That year, I became vegetarian."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "What would you say to someone questioning their diet and thinking about eating less fish or stopping altogether?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I would start by saying that it is important to question what we put on our plates. We do not all eat fish for the same reasons. Sometimes it is habit. Sometimes it is pleasure. Sometimes it is because we believe fish is essential to good health. The ways to cut down or stop will differ depending on what motivates us."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Could you talk us through those different approaches?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> If you eat fish for protein, you can simply choose a plant-based source of protein, in whatever flavor or form you like. If you eat fish for omega-3s, oils, nuts and seeds, and supplements can meet your needs. And if it is about taste, plant-based recipes like the ones in my book will do the trick. For example, if you want to keep a family recipe made with fish and passed down through generations, such as bouillabaisse, you can absolutely create a plant-based version. Giving up fish does not mean abandoning our traditions, but letting them evolve. And if you need inspiration, my book is there for you."
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "src": "/site/images/to-be-inspired/articles/2/1.png",
-            "alt": "A plant-based recipe inspired by seafood",
-            "caption": "Seafood Vegan offers plant-based alternatives to seafood dishes."
-          },
-          {
-            "type": "heading",
-            "text": "Who is your new book, Seafood Vegan, for? Is it accessible to people who do not cook much, or is it aimed at experienced plant-based cooks?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I really wrote this book for everyone. It includes very simple recipes with easy-to-find ingredients. I also chose to include more creative and technical recipes for people who enjoy trying new dishes, making convincing alternatives, or creating plant-based versions of family favorites. Some of the recipes I created for this book are alternatives to dishes I had not eaten for 15 years!"
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "To create convincing alternatives, you researched how marine animals are prepared and cooked. How did you go about it?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I did a great deal of research into these processes, especially for salmon. You might think smoked salmon, gravlax, and nova lox are the same thing, but they are not. Gravlax is salmon cured in salt. As its name suggests, smoked salmon is smoked over beechwood rather than cured. Nova lox falls between the two: it is both cured and smoked. This research helped me develop precise plant-based recipes with subtle flavors and textures."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Beyond this technical research, what inspired the book?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I drew inspiration from French classics, of course, such as bouillabaisse, sole meunière, and moules marinières, as well as my family recipes. I also looked to recipes from many other countries, coastal specialties, and street food. One cuisine particularly inspired me: the Japanese techniques of imitation known as modoki ryōri, rooted in Buddhist traditions. People may think that imitating the flesh of land or marine animals is a recent idea from Western vegans. In fact, vegan eating has been a tradition for hundreds or even thousands of years in some Asian countries."
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "src": "/site/images/to-be-inspired/articles/2/2.png",
-            "alt": "Marie Laforêt with her plant-based cookbook",
-            "caption": "Marie Laforêt draws on a range of culinary traditions for her recipes."
-          },
-          {
-            "type": "heading",
-            "text": "Your book includes several plant-based alternatives to salmon. Which would you recommend to someone who has never cooked one?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> I would suggest starting with a recipe where the animal flesh is not raw, so not an alternative to a salmon fillet. Salmon-style rillettes are among my favorite recipes, and they are easy to make. I make them myself every Christmas, and my family always loves them. The recipe is truly impressive in its color, texture, and flavor."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Plant-based alternatives to salmon, such as smoked salmon substitutes, are sometimes available in shops. Have you tried any? What did you think?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> One Christmas, I bought a smoked salmon alternative and felt as if I were eating a kind of sausage rather than smoked salmon! I was really disappointed, but I understood then that smoky flavor is not just one thing: there are several very different kinds. I talk about this in my book. A successful smoked salmon alternative uses a beechwood-smoked condiment, the wood traditionally used to smoke salmon."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Anything else you would like to share?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt:</strong> Yes. If you are hesitating to reduce or stop eating marine animals, I know that your loved ones' potential reactions can hold you back. In my view, the best thing to do is cook delicious recipes for them. Sometimes a delicious dish is worth more than a thousand words. Plant-based tarama, for example, is just as good as, or even better than, the cheap industrial version. Recipe by recipe, it is easier to convince people through taste than through ideas or arguments. Some of my recipes have become holiday classics in my family, even though I can tell you it was not a sure thing at first!"
-              }
-            ]
-          }
-        ],
-        "heroTextSide": "left",
-        "relatedSection": {
-          "title": "Read more",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Do fish really have short memories? Can they feel pain and pleasure? Are they really as silent as a fish? Explore five misconceptions and learn to consider marine animals more thoughtfully."
-              }
-            ]
-          ],
-          "articleId": 4
-        }
-      },
-      {
-        "id": 3,
         "title": "SALMO, the incredible story of a wild salmon",
         "summary": "A river, a forest, an estuary, the ocean, and then glaciers. Salmon spend their lives connecting worlds we think of as separate. Selected for many festivals, the animated short film SALMO tells the incredible journey of wild salmon and shows how fragile the ecosystems they cross are.",
         "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
@@ -475,11 +301,11 @@
               }
             ]
           ],
-          "articleId": 4
+          "articleId": 3
         }
       },
       {
-        "id": 4,
+        "id": 3,
         "title": "5 misconceptions about fish (and why they are false)",
         "summary": "Being as silent as a carp, cursing someone with a fishy insult, or having a goldfish memory… These expressions reveal how little we value and know about fish. Let’s take a closer look at common misconceptions and learn to see these marine animals differently.",
         "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
@@ -683,11 +509,11 @@
               }
             ]
           ],
-          "articleId": 6
+          "articleId": 5
         }
       },
       {
-        "id": 5,
+        "id": 4,
         "title": "5 salmon alternatives that are already changing the game",
         "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
@@ -830,22 +656,10 @@
             ]
           }
         ],
-        "heroTextSide": "left",
-        "relatedSection": {
-          "title": "Read more",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan (Solar, 2026), she shares her story and tips for leaving salmon off our plates."
-              }
-            ]
-          ],
-          "articleId": 2
-        }
+        "heroTextSide": "left"
       },
       {
-        "id": 6,
+        "id": 5,
         "title": "5 things to know about salmon (instead of eating them)",
         "summary": "Salmon are surprising living beings. Learning more about their habits, bodies, and lives helps us see that they, like us, are sentient animals.",
         "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
@@ -971,7 +785,7 @@
               }
             ]
           ],
-          "articleId": 3
+          "articleId": 2
         },
         "heroLayout": "stacked",
         "heroImageSize": {
@@ -980,7 +794,7 @@
         }
       },
       {
-        "id": 7,
+        "id": 6,
         "title": "When a French bakery chain takes salmon off its menu",
         "summary": "In partnership with Seastemik, Boulangerie Landemaine became the first bakery chain in 2025 to remove salmon from its shops to protect the ocean and everyone who depends on it. So, how has this sea-change worked out a year later?",
         "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
@@ -1140,18 +954,6 @@
             ]
           }
         ],
-        "relatedSection": {
-          "title": "Read more",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Seastemik spoke with Marie Laforêt, a leading voice in plant-based cooking. To mark the release of her new cookbook, Seafood Vegan, she shares her story and tips for leaving salmon off our plates. "
-              }
-            ]
-          ],
-          "articleId": 2
-        },
         "heroLayout": "stacked",
         "heroImageSize": {
           "width": 1534,
@@ -1159,7 +961,7 @@
         }
       },
       {
-        "id": 8,
+        "id": 7,
         "title": "Does the Seastemik team still eat salmon?",
         "summary": "Spoiler: no. Each in our own way and at our own pace, we have realized that our greatest power to build a desirable world and future lies on our plates.",
         "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
@@ -1362,7 +1164,7 @@
         }
       },
       {
-        "id": 9,
+        "id": 8,
         "title": "George Ka, salmon and ghosts",
         "summary": "At the Théâtre de la Ville in Paris, artist George Ka presented Salmo Salar in 2026: an expanded concert that uses migratory fish as a starting point for reflecting on identity and our relationship with the living world.",
         "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
@@ -1436,12 +1238,12 @@
               }
             ]
           ],
-          "articleId": 5
+          "articleId": 4
         }
       },
       {
-        "id": 10,
-        "title": "13 organizations working to bring life back to the ocean",
+        "id": 9,
+        "title": "11 organizations working to bring life back to the ocean",
         "summary": "The ocean does not just need to be “saved.” It needs life to return. Around the world, groups, scientists, and citizens are working to transform our relationship with the ocean. Here is a look at organizations making a difference in their own ways.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
         "heroImageSize": { "width": 6000, "height": 4000 },
