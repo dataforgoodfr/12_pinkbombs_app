@@ -98,7 +98,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Dans leurs publicités, les industriels des saumons vantent la couleur rosée et la chair sans arête de leurs poissons. Ils évoquent aussi leur richesse en matières grasses et en oméga 3, en laissant dans l'ombre les éléments toxiques que contient la chair des poissons. Et à force, leurs opérations de séduction ont fini par séduire le grand public."
+                "text": "Dans leurs publicités, les industriels des saumons vantent la couleur rosée et la chair sans arête de leurs poissons. Ils évoquent aussi leur richesse en matières grasses et en oméga-3, en laissant dans l'ombre les éléments toxiques que contient la chair des poissons. Et à force, leurs opérations de séduction ont fini par séduire le grand public."
               }
             ]
           },
@@ -148,7 +148,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "Le paradoxe est frappant. Selon le type d'oméga 3 considéré (DHA/EPA ou ALA), 89 % à 99 % de la population française présentent des insuffisances. Malgré une forte consommation de saumons, les besoins d'une large majorité des Français ne sont donc pas couverts."
+                "text": "Le paradoxe est frappant. Selon le type d'oméga-3 considéré (DHA/EPA ou ALA), 89 % à 99 % de la population française présentent des insuffisances. Malgré une forte consommation de saumons, les besoins d'une large majorité des Français ne sont donc pas couverts."
               }
             ]
           },
@@ -186,180 +186,6 @@
       },
       {
         "id": 2,
-        "title": "Comment remplacer les poissons dans son assiette ?",
-        "summary": "Rencontre avec Marie Laforêt, star de la cuisine végétale",
-        "heroImage": "/site/images/to-be-inspired/articles/2/hero.png",
-        "heroImageSize": { "width": 492, "height": 633 },
-        "heroImageAlt": "Marie Laforêt, autrice de Seafood Vegan",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "Par où commencer ? Que cuisiner quand on veut déguster un plat au goût iodé ? Pour répondre à ces questions, Marie Laforêt a publié « Seafood Vegan » aux éditions Solar, un livre de recettes aussi beau que didactique. À cette occasion, elle répond aux questions de Seastemik."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Marie, tu es une référence de la cuisine végétale en France. Tu as publié plus de 20 livres de recettes en quinze ans. Pourquoi avoir choisi cette fois-ci de te concentrer sur l’univers marin ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Parmi tous les livres de cuisine vegan publiés en France, beaucoup expliquent comment remplacer les animaux terrestres dans nos assiettes, mais très peu proposent des alternatives aux animaux marins. Par ailleurs, les personnes qui décident de manger moins, voire plus du tout de viande, ont souvent tendance à se tourner vers les poissons. Ça a d’ailleurs été mon cas quand j’étais plus jeune ! Et c’est un vrai problème selon moi, d’autant qu’on oublie souvent que pour se nourrir, on tue beaucoup plus d’animaux marins que de terrestres. Pour toutes ces raisons, c’était important pour moi de proposer un livre dédié à ce sujet. C’est un projet que je prépare depuis longtemps. Plusieurs de mes ouvrages ont d’ailleurs des parties entièrement dédiées au sujet, mais il méritait selon moi un livre complet."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Tu nous dis que, plus jeune, tu mangeais des poissons. À quel point les animaux marins ont-ils fait partie de ton alimentation ? Quand et pourquoi as-tu arrêté de les manger ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> J'ai grandi dans une famille bretonne où on servait régulièrement des animaux marins à table, en particulier au moment des fêtes de fin d’année. Adolescente, puis plus tard, quand j’ai arrêté de manger des animaux terrestres, je me suis mise à manger encore plus de poissons, notamment des saumons ! Puis en 2008, j’ai réalisé que les poissons étaient aussi des êtres sensibles. D’un point de vue éthique, ça ne faisait pas sens pour moi de manger certains animaux et pas d’autres. Alors, cette année-là, je suis devenue végétarienne."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Que conseillerais-tu à une personne qui s'interroge sur son alimentation et qui envisage de diminuer, voire d’arrêter les poissons dans son assiette ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Je commencerais par dire qu’il est important de questionner ce que l’on met dans nos assiettes. Ensuite, on ne mange pas toutes et tous des poissons pour les mêmes raisons. Parfois, c’est par habitude. Parfois, c’est par plaisir. Parfois, c’est parce qu’on est persuadé·e que c’est un indispensable pour être en bonne santé. Selon les raisons qui nous animent, les pistes pour diminuer et arrêter seront différentes."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Peux-tu nous détailler ces différentes pistes ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Si on mange des poissons pour les protéines, on peut tout simplement opter pour une source de protéines végétales, quel que soit son goût ou sa forme. Si on mange des poissons pour les oméga-3, il existe des huiles, des oléagineux et des compléments qui répondent parfaitement à nos besoins. Enfin, si c’est une question de goût, des recettes végétales – comme celles que vous trouverez dans mon livre – feront parfaitement l’affaire. Par exemple, si vous tenez à une recette familiale cuisinée avec des poissons et transmise de génération en génération, comme la bouillabaisse, il est tout à fait possible d’en créer une version végétale. Arrêter les poissons ne signifie pas abandonner nos traditions, mais plutôt les faire évoluer. Et si vous manquez d’inspiration, mon livre est là pour ça."
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "src": "/site/images/to-be-inspired/articles/2/1.png",
-            "alt": "Recette végétale inspirée de l'univers marin",
-            "caption": "Seafood Vegan propose des alternatives végétales aux recettes marines."
-          },
-          {
-            "type": "heading",
-            "text": "À qui s’adresse ton nouveau livre Seafood Vegan ? Est-il accessible aux personnes qui cuisinent peu, ou destiné aux fins connaisseur·euses de la cuisine végétale ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> J'ai vraiment pensé ce livre pour tout le monde. On y trouve des recettes très simples avec des ingrédients faciles à trouver. J’ai aussi choisi d’y intégrer des recettes plus créatives et plus techniques à destination des personnes qui aiment tester de nouveaux plats, cuisiner des alternatives bluffantes ou des versions végétales de plats familiaux. Certaines des recettes que j'ai créées pour ce livre sont des alternatives à des plats que je n'avais pas mangés depuis quinze ans !"
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Pour proposer des alternatives crédibles dans ton livre, tu t’es familiarisée avec les méthodes de préparation et de cuisson des animaux marins. Comment t’y es-tu prise ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> J’ai effectué énormément de recherches sur tous ces procédés, en particulier sur les saumons. On peut penser que le saumon fumé, le gravlax ou le nova lox, c'est la même chose, alors que pas du tout. Le gravlax, c'est un saumon mariné au sel. Le saumon fumé est, comme son nom l'indique, non pas mariné mais fumé au bois de hêtre. Le nova lox, c’est un intermédiaire entre les deux, à la fois mariné et fumé. Ces recherches m'ont permis de proposer des recettes végétales précises et subtiles, aussi bien dans les arômes que dans les textures."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Outre ces recherches techniques, quelles ont été tes inspirations pour ce livre ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Je me suis inspirée des grands classiques français, bien sûr, comme la bouillabaisse, les filets à la meunière ou les moules marinières, sans oublier mes recettes familiales. Je me suis aussi inspirée des recettes de nombreux autres pays et des spécialités de régions côtières comme de la street food. Une cuisine m’a particulièrement inspirée : les techniques japonaises d’imitation modoki ryōri, issues de traditions bouddhistes. On pense qu’imiter la chair des animaux terrestres ou marins, c’est une lubie récente de vegans occidentaux. En réalité, manger vegan est une tradition vieille de plusieurs centaines, voire milliers d'années dans certains pays d'Asie."
-              }
-            ]
-          },
-          {
-            "type": "image",
-            "src": "/site/images/to-be-inspired/articles/2/2.png",
-            "alt": "Marie Laforêt et son livre de cuisine végétale",
-            "caption": "Marie Laforêt a imaginé des recettes inspirées de traditions culinaires variées."
-          },
-          {
-            "type": "heading",
-            "text": "Dans ton livre, tu proposes plusieurs recettes alternatives au saumon. Laquelle conseillerais-tu à quelqu’un qui n’en a jamais cuisiné ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Je commencerais par conseiller une recette où la chair animale n’est pas brute, donc typiquement pas une recette d’alternative au pavé de saumon. Les rillettes saumonées font partie des recettes que j’adore et qui sont faciles à réaliser. Je les prépare moi-même à Noël chaque année et elles ont toujours un franc succès auprès de ma famille. Cette recette est vraiment bluffante, tant en termes de couleur que de texture et de goût."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "En magasin, on trouve parfois des alternatives végétales au saumon, comme des similis de saumon fumé. En as-tu testé ? Qu’en as-tu pensé ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Une fois à Noël, j'ai acheté une alternative au saumon fumé et j'ai eu l'impression de manger une sorte de saucisson plutôt que du saumon fumé ! J’ai vraiment été déçue, mais j'ai compris à ce moment-là que la saveur fumée n'est pas unique : il en existe plusieurs, très différentes. J’en parle d’ailleurs dans mon livre. Une alternative réussie au saumon fumé est composée d’un condiment fumé au bois de hêtre, le bois avec lequel les saumons sont traditionnellement fumés."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "text": "Une dernière chose à nous partager ?"
-          },
-          {
-            "type": "paragraph",
-            "segments": [
-              {
-                "type": "text",
-                "text": "<strong>Marie Laforêt :</strong> Oui, si vous hésitez à réduire ou à arrêter de manger des animaux marins, je sais que les réactions potentielles de votre entourage peuvent vous freiner. La meilleure chose à faire, selon moi, c’est de cuisiner des recettes gourmandes à vos proches. Car oui, parfois, un plat délicieux vaut mieux que mille mots. Le tarama, par exemple, en version végétale est aussi bon, voire meilleur, que la version industrielle pas chère. Recette après recette, c’est par le goût plutôt que par les idées qu’on arrive le mieux à convaincre. Dans ma famille, certaines de mes recettes sont devenues des classiques de nos repas de fête alors que, je vous le dis, ce n'était franchement pas gagné au départ !"
-              }
-            ]
-          }
-        ],
-        "heroTextSide": "left",
-        "relatedSection": {
-          "title": "Pour aller plus loin",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Les poissons ont-ils vraiment la mémoire courte ? Ressentent-ils la douleur et le plaisir ? Sont-ils vraiment muets comme des carpes ? Découvrez cinq idées reçues pour mieux considérer ces animaux marins."
-              }
-            ]
-          ],
-          "articleId": 4
-        }
-      },
-      {
-        "id": 3,
         "title": "SALMO, l’histoire incroyable d’un saumon sauvage",
         "summary": "Une rivière, une forêt, un estuaire, l’Océan et puis des glaciers. Les saumons passent leur vie à relier des mondes que nous pensons séparés. Le court-métrage d’animation SALMO, sélectionné dans de nombreux festivals, raconte l’incroyable voyage des saumons sauvages et la fragilité des écosystèmes qu’ils traversent.",
         "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
@@ -475,11 +301,11 @@
               }
             ]
           ],
-          "articleId": 4
+          "articleId": 3
         }
       },
       {
-        "id": 4,
+        "id": 3,
         "title": "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
         "summary": "Être muet·e comme une carpe, engueuler quelqu'un comme du poisson pourri ou avoir une mémoire de poisson rouge… Ces expressions racontent à quel point nous estimons peu et connaissons mal les poissons. Petit plongeon dans les idées reçues les plus courantes pour mieux considérer ces animaux marins.",
         "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
@@ -683,11 +509,11 @@
               }
             ]
           ],
-          "articleId": 6
+          "articleId": 5
         }
       },
       {
-        "id": 5,
+        "id": 4,
         "title": "5 alternatives aux saumons qui changent (déjà) la donne",
         "summary": "Vous êtes accros à la texture et aux parfums des salmonidés ? Pas de panique ! Seastemik vous a concocté une liste de cinq options végétales où vous n’y verrez que du feu. Et promis, cette liste ne contient pas de tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
@@ -830,22 +656,10 @@
             ]
           }
         ],
-        "heroTextSide": "left",
-        "relatedSection": {
-          "title": "Pour aller plus loin",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Seastemik a rencontré Marie Laforêt, star de la cuisine végétale. À l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan » (Solar, 2026), elle nous raconte son parcours et partage ses astuces pour se passer des saumons dans nos assiettes."
-              }
-            ]
-          ],
-          "articleId": 2
-        }
+        "heroTextSide": "left"
       },
       {
-        "id": 6,
+        "id": 5,
         "title": "5 choses à savoir sur les saumons (au lieu de les manger)",
         "summary": "Les saumons sont des êtres vivants surprenants. Mieux connaître leurs habitudes, leurs corps et leurs vies permet de se rendre compte à quel point ils sont, comme nous, des animaux sensibles.",
         "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
@@ -971,7 +785,7 @@
               }
             ]
           ],
-          "articleId": 3
+          "articleId": 2
         },
         "heroLayout": "stacked",
         "heroImageSize": {
@@ -980,7 +794,7 @@
         }
       },
       {
-        "id": 7,
+        "id": 6,
         "title": "Quand une enseigne de boulangerie française retire les saumons de son menu",
         "summary": "En collaboration avec Seastemik, Boulangerie Landemaine est devenue en 2025 la première enseigne de boulangerie à retirer les saumons de ses boutiques pour protéger l’Océan et toutes celles et ceux qui en dépendent. Alors, quel bilan un an après avoir lancé cette révolution iodée ?",
         "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
@@ -1140,18 +954,6 @@
             ]
           }
         ],
-        "relatedSection": {
-          "title": "Pour aller plus loin",
-          "paragraphs": [
-            [
-              {
-                "type": "text",
-                "text": "Seastemik a rencontré Marie Laforêt, une star de la cuisine végétale, qui, à l’occasion de la sortie de son nouveau livre de recettes « Seafood Vegan », nous raconte son parcours et ses astuces pour se passer des saumons dans nos assiettes. "
-              }
-            ]
-          ],
-          "articleId": 2
-        },
         "heroLayout": "stacked",
         "heroImageSize": {
           "width": 1534,
@@ -1159,7 +961,7 @@
         }
       },
       {
-        "id": 8,
+        "id": 7,
         "title": "L’équipe Seastemik mange-t-elle encore des saumons ?",
         "summary": "Spoiler : non. Chacun·e à sa manière, chacun·e à son rythme, nous avons toustes réalisé que notre plus grand pouvoir pour construire un monde et un futur désirables résidait dans nos assiettes.",
         "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
@@ -1362,7 +1164,7 @@
         }
       },
       {
-        "id": 9,
+        "id": 8,
         "title": "George Ka, les saumons et les fantômes",
         "summary": "Au Théâtre de la Ville à Paris, l’artiste a présenté en 2026 « Salmo Salar », un concert augmenté où les poissons migrateurs servent de point de départ à une réflexion sur nos identités et notre rapport au vivant.",
         "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
@@ -1436,12 +1238,12 @@
               }
             ]
           ],
-          "articleId": 5
+          "articleId": 4
         }
       },
       {
-        "id": 10,
-        "title": "13 associations qui œuvrent pour repeupler l’Océan",
+        "id": 9,
+        "title": "11 associations qui œuvrent pour repeupler l’Océan",
         "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
         "heroImageSize": { "width": 6000, "height": 4000 },

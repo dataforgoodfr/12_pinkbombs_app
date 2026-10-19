@@ -88,9 +88,9 @@
         },
         {
           "name": "Paul Pajot",
-          "role": "Lead Designer",
+          "role": "Artistic Direction and Digital Design",
           "pictureUrl": "/site/images/about/team/paul.png",
-          "pictureAlt": "Paul, Lead Designer"
+          "pictureAlt": "Paul, Artistic Direction and Digital Design"
         },
         {
           "name": "Aurélie Anglio",
@@ -127,7 +127,7 @@
     },
     "method": {
       "title": "Approach and methodology",
-      "sectionId": "sources-et-methodologies",
+      "sectionId": "approach-and-methodology",
       "caption": "PinkBombs was created to analyze and transform public data into tools accessible to everyone.",
       "values": {
         "title": "Our approach is based on two values:",
@@ -144,7 +144,9 @@
           "<strong>Peer-reviewed data:</strong>\nIn the interest of data quality, all information was verified internally. Expert support provided the final validation."
         ]
       },
-      "missingInfo": "Did we miss key information? Do you have a question? Please contact us.",
+      "missingInfo": "Did we miss key information? Do you have a question? Please contact us at the following address:",
+      "missingInfoCta": "contact@seastemik.org",
+      "missingInfoUrl": "mailto:contact@seastemik.org",
       "downloadCta": "Download the methodology (PDF)"
     },
     "contact": {

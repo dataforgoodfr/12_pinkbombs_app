@@ -13,6 +13,7 @@ export type basePathType =
   | "/to-be-inspired"
   | "/pinkometer"
   | "/about"
+  | "/legal-notices"
   | "/archive/v1"
   | "/archive/v1/dashboard"
   | "/archive/v1/to-act"
@@ -43,6 +44,10 @@ export const pathnames = {
   "/about": {
     fr: "/a-propos",
     en: "/about",
+  },
+  "/legal-notices": {
+    fr: "/mentions-legales",
+    en: "/legal-notices",
   },
   "/archive/v1": "/archive/v1",
   "/archive/v1/dashboard": "/archive/v1/dashboard",

@@ -84,12 +84,13 @@ const Footer = () => {
               name={t("shareLink.sources")}
               className="text-white hover:text-v2-yellow"
             />
-            <ShareLink
-              href="https://seastemik.org/"
-              type="legalNotices"
-              name={t("shareLink.legalNotices")}
-              className="text-white hover:text-v2-yellow"
-            />
+            <Link
+              href="/legal-notices"
+              locale={locale}
+              className="text-base text-white hover:text-v2-yellow"
+            >
+              {t("shareLink.legalNotices")}
+            </Link>
             <ShareLink
               href="mailto:info@seastemik.org"
               type="contactUs"

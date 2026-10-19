@@ -63,6 +63,16 @@ FastAPI CORS allowlist with the deployed frontend's exact origin (never `*`);
 CORS is not an authentication mechanism. Do not expose API credentials through
 `NEXT_PUBLIC_` variables.
 
+### Sitemap
+
+Next.js generates `/sitemap.xml` at build time from `src/app/sitemap.ts`.
+It includes the current pages and articles in French and English, using the localized routes and article titles. Archive pages are excluded and retain their `noindex` metadata.
+
+After `npm run build`, run `npm start` and open
+[http://localhost:3000/sitemap.xml](http://localhost:3000/sitemap.xml).
+There is no generated sitemap file in `public/`. Submit the production
+`/sitemap.xml` URL in Google Search Console after deploying.
+
 ### Newsletter subscription
 
 The footer and calculator badge form can subscribe an email address to the

@@ -19,16 +19,16 @@
         "items": [
           {
             "falseBelief": "«\u00a0Le saumon, c'est un classique de notre cuisine.\u00a0»",
-            "reality": "Les industriels ont tout mis en oeuvre pour que le saumon devienne notre poisson préféré.",
+            "reality": "Les industriels ont tout mis en œuvre pour que le saumon devienne notre poisson préféré.",
             "paragraph": "<strong>Il y a à peine quarante ans, consommer du saumon était rare et cher.</strong> Sa banalisation est le résultat d'un travail industriel et commercial\u00a0: inondation du marché avec des volumes importants, prix ajustés, communication autour du saumon fumé en dehors des fêtes, etc.\n\n<strong>Notre appétence pour ce poisson a été construite pas à pas.</strong>",
-            "imageAlt": "Charte graphique illustrant la production  exponentielle de saumon dans plusieurs pays du monde.",
+            "imageAlt": "Charte Graphique illustrant la production exponentielle de saumon dans plusieurs pays du monde.",
             "imageExtension": "png",
             "catchPhrase": "La production de saumon d’élevage est exponentielle"
           },
           {
             "falseBelief": "«\u00a0Il faut manger des poissons pour les oméga-3.\u00a0»",
             "reality": "Les oméga-3 ne viennent pas du poisson. Ils viennent des algues.",
-            "paragraph": "<strong>A l'origine, les oméga-3 sont produits par des micro-algues marines.</strong> Le zooplancton les accumule, les petits poissons le mangent, le saumon mange les petits poissons. Il ne les fabrique pas\u00a0: il les transporte. Depuis qu'on remplace les farines de poisson (dont les coûts sont élevés) par des huiles végétales, la chair des saumons contient nettement moins d'oméga-3, au point <strong>qu'une partie de la filière ajoute désormais de l'huile d'algues dans les granulés d’alimentation pour saumons.</strong>",
+            "paragraph": "<strong>À l'origine, les oméga-3 sont produits par des micro-algues marines.</strong> Le zooplancton les accumule, les petits poissons le mangent, le saumon mange les petits poissons. Il ne les fabrique pas\u00a0: il les transporte. Depuis qu'on remplace les farines de poisson (dont les coûts sont élevés) par des huiles végétales, la chair des saumons contient nettement moins d'oméga-3, au point <strong>qu'une partie de la filière ajoute désormais de l'huile d'algues dans les granulés d’alimentation pour saumons.</strong>",
             "imageAlt": "Illustration d'un humain qui consomme un saumon qui lui-même mange des algues.",
             "catchPhrase": "Les oméga-3 ne viennent pas du poisson. Ils viennent des algues."
           },
@@ -36,8 +36,8 @@
             "falseBelief": "«\u00a0LE SAUMON, C’EST BON POUR LA SANTÉ.\u00a0»",
             "reality": "De nombreux polluants sont présents dans la chair des saumons.",
             "paragraph": "Les poissons utilisés pour la farine et l’huile de poisson concentrent de nombreux polluants, notamment des substances interdites depuis des décennies. Ils les transmettent ensuite aux saumons qui les accumulent dans leur chair. <strong>Pour les dioxines, les produits de la mer sont notre principale source d’exposition.</strong> Depuis que l’industrie s’oriente vers une alimentation plus végétale, cette accumulation est réduite pour certains polluants, et de nouveaux contaminants spécifiques aux ingrédients végétaux utilisés (huile de colza ou de tournesol, protéine de soja, de maïs, gluten de blé…), <strong>principalement des pesticides</strong>, font leur apparition dans la chair des saumons.",
-            "imageAlt": "Illustration de poissons avec des étiquettes de prix et badge de sûreté",
-            "catchPhrase": "Polluants dont des traces peuvent être retrouvées dans la chaire des saumons\u00a0: Dioxines, furanes, PCB, DDT, aldrine, chlordane, dieldrine, endrine, heptachlore, hexachlorobenzène, mirex et toxaphène."
+            "imageAlt": "Illustration d'un poisson ayant ingéré des polluants.",
+            "catchPhrase": "Polluants dont des traces peuvent être retrouvées dans la chair des saumons\u00a0: Dioxines, furanes, PCB, DDT, aldrine, chlordane, dieldrine, endrine, heptachlore, hexachlorobenzène, mirex et toxaphène."
           }
         ]
       },
@@ -54,15 +54,15 @@
           {
             "falseBelief": "«\u00a0FAIRE DE L’ÉLEVAGE C’EST LIMITER LA PÊCHE DES POISSONS SAUVAGES\u00a0»",
             "reality": "On ne soulage pas l'océan en y pêchant davantage.",
-            "paragraph": "<strong>On a choisi d'élever un prédateur.</strong> Il faut donc aller chercher sa nourriture en mer\u00a0: anchois, sardinelles, merlans bleus, des poissons entiers pêchés exprès et broyés en farine et en huile.\nL'élevage ne remplace pas la pêche\u00a0: il en dépend, et plus il grandit, plus on pêche.\n\nEnviron 10% de la pêche est utilisée pour la production de farine de poissons, alimentant le secteur de l'aquaculture. Les impacts sur des populations côtières d’Afrique de l’Ouest sont majeures. ",
-            "imageAlt": "",
+            "paragraph": "<strong>On a choisi d'élever un prédateur.</strong> Il faut donc aller chercher sa nourriture en mer\u00a0: anchois, sardinelles, merlans bleus, des poissons entiers pêchés exprès et broyés en farine et en huile.\nL'élevage ne remplace pas la pêche\u00a0: il en dépend, et plus il grandit, plus on pêche.\n\nEnviron 10% de la pêche est utilisée pour la production de farine de poissons, alimentant le secteur de l'aquaculture. Les impacts sur des populations côtières d’Afrique de l’Ouest sont majeurs. ",
+            "imageAlt": "Illustration de saumons pris dans un filet de pêche mettant en évidence la représentation des 10%.",
             "catchPhrase": "Environ 10% de la pêche est utilisée pour la production de farine de poissons."
           },
           {
             "falseBelief": "«\u00a0VÉGÉTALISER L’ALIMENTATION DES SAUMONS, C’EST PLUS ÉCOLOGIQUE\u00a0»",
             "reality": "Remplacer l'exploitation de la mer par l'exploitation des champs, ce n'est pas réduire l'empreinte. C'est la déplacer.",
             "paragraph": "Pour optimiser leurs coûts, les éleveurs industriels nourrissent aussi les saumons de soja, de blé et de colza. La filière a donc remplacé une grande partie de la ration\u00a0: 95 g de soja pour 100 g de saumon.\n\nL'expérience a déjà eu lieu, et son bilan est connu\u00a0: de la déforestation d'un côté\u00a0; de l'autre, des terres qui auraient pu rester sauvages et laisser les écosystèmes se régénérer, ou nourrir directement des humain·es en légumes et légumineuses, alors que la France en manque et importe l'essentiel de ses protéines végétales.",
-            "imageAlt": "",
+            "imageAlt": "Illustration de graines de soja représentant l'alimentation végétale des saumons.",
             "catchPhrase": "95 g de soja pour 100 g de saumon"
           }
         ]
@@ -72,7 +72,7 @@
         "items": [
           {
             "falseBelief": "«\u00a0Et si je mangeais du saumon sauvage\u00a0?\u00a0»",
-            "reality": "Reporter la consommation ne ferait que déplacer la pression sur des écosystèmes déjà à bout.",
+            "reality": "Reporter la consommation sur le saumon sauvage ne ferait que déplacer la pression sur des écosystèmes déjà à bout.",
             "paragraph": "Les populations de saumons sauvages sont déjà fragilisées par les barrages, la pollution, le réchauffement et la surpêche. Une grande part des saumons du Pacifique «\u00a0sauvage\u00a0» vient en réalité de lâchers de jeunes saumons nés puis élevés en écloseries qui concurrencent les poissons naturels."
           },
           {

@@ -10,7 +10,7 @@
     },
     "ambition": {
       "origin": "PinkBombs est né d'une ambition simple\u00a0: faire la lumière sur l'impact systémique de l'aquaculture intensive, et plus particulièrement sur la consommation de saumon.",
-      "paragraph": "<strong>Porté par Seastemik en collaboration avec DataForGood, PinkBombs offre une vision transparente et documentée des enjeux écologiques, sanitaires et éthiques liés à la production et à la consommation des poissons.</strong>\n\nPlus qu'une plateforme d'alerte, c'est un véritable outil d'aide à la décision conçu pour les citoyens·nes, les entreprises et les décideurs·euses publics·ques. Notre mission est claire\u00a0: accompagner la transition vers une alimentation respectueuse de l'Océan. Parce que «\u00a0dépoissonner\u00a0» nos assiettes, c'est repeupler l'Océan et nourrir le futur."
+      "paragraph": "<strong>Porté par Seastemik en collaboration avec DataForGood, PinkBombs offre une vision transparente et documentée des enjeux écologiques, sanitaires et éthiques liés à la production et à la consommation des poissons.</strong>\n\nPlus qu'une plateforme d'alerte, c'est un véritable outil d'aide à la décision conçu pour les citoyen·nes, les entreprises et les décideur·euses public·ques. Notre mission est claire\u00a0: accompagner la transition vers une alimentation respectueuse de l'Océan. Parce que «\u00a0dépoissonner\u00a0» nos assiettes, c'est repeupler l'Océan et nourrir le futur."
     },
     "why": {
       "title": "Pourquoi PinkBombs\u00a0?",
@@ -22,12 +22,12 @@
       "reaction": {
         "title": "Réaction",
         "imageAlt": "Poisson heureux qui regarde l'avenir",
-        "paragraph": "<strong>PinkBombs est là pour\u00a0:</strong><ul>\n<li>Alerter sur l'une des plus grandes menaces pour l'Océan aujourd'hui\u00a0: <strong>l'élevage de saumons.</strong></li>\n<li><strong>Déconstruire la perception populaire</strong> autour de la consommation de saumons.</li>\n<li>Orienter les entreprises, les États et les consommateur·ices, les entreprises et l'État <strong>vers des solutions positives.</strong></li>\n</ul>"
+        "paragraph": "<strong>PinkBombs est là pour\u00a0:</strong><ul>\n<li>Alerter sur l'une des plus grandes menaces pour l'Océan aujourd'hui\u00a0: <strong>l'élevage de saumons.</strong></li>\n<li><strong>Déconstruire la perception populaire</strong> autour de la consommation de saumons.</li>\n<li>Orienter les entreprises, les États et les consommateur·ices, les entreprises <strong>vers des solutions positives.</strong></li>\n</ul>"
       }
     },
     "seastemik": {
       "title": "Seastemik",
-      "paragraph": "Seastemik (un jeu de mot entre la mer et le système) est une ONG fondée en 2023 qui donne à la protection de l'Océan une réponse systémique, en intégrant les enjeux environnementaux, économiques, sociaux, éthiques et sanitaires.\n\n<strong>Notre vision\u00a0:</strong> Un Océan qui déborde de vie, préservé par une alimentation végétale, qui garantit l’habitabilité de notre planète, la stabilité climatique, la santé humaine, la justice alimentaire et le bien-être animal. Le problème est systémique, la réponse doit l’être aussi.\n\n<strong>Notre mission\u00a0:</strong> Dépoissonner notre alimentation pour repeupler l'Océan. Guider vers la sortie de l’élevage intensif de poissons (pisciculture intensive), en tête le saumon, et vers le développement d’une alimentation végétale qui fait danser les papilles sans vider l’Océan. Pour passer de la restauration océane... à la restauration de l’Océan.",
+      "paragraph": "Seastemik (un jeu de mots entre la mer et le système) est une ONG fondée en 2023 qui donne à la protection de l'Océan une réponse systémique, en intégrant les enjeux environnementaux, économiques, sociaux, éthiques et sanitaires.\n\n<strong>Notre vision\u00a0:</strong> Un Océan qui déborde de vie, préservé par une alimentation végétale, qui garantit l’habitabilité de notre planète, la stabilité climatique, la santé humaine, la justice alimentaire et le bien-être animal. Le problème est systémique, la réponse doit l’être aussi.\n\n<strong>Notre mission\u00a0:</strong> Dépoissonner notre alimentation pour repeupler l'Océan. Guider vers la sortie de l’élevage intensif de poissons (pisciculture intensive), en tête le saumon, et vers le développement d’une alimentation végétale qui fait danser les papilles sans vider l’Océan. Pour passer de la restauration océane... à la restauration de l’Océan.",
       "cta": "Voir le site de Seastemik"
     },
     "dataforgood": {
@@ -88,9 +88,9 @@
         },
         {
           "name": "Paul Pajot",
-          "role": "Lead Designer",
+          "role": "Direction artistique et design digital",
           "pictureUrl": "/site/images/about/team/paul.png",
-          "pictureAlt": "Paul, Lead Designer"
+          "pictureAlt": "Paul, Direction artistique et design digital"
         },
         {
           "name": "Aurélie Anglio",
@@ -112,7 +112,7 @@
       "paragraphFirstPart": "<strong>En 2024, nous avons lancé la première version de Pinkbombs, qui a eu de grandes retombées médiatiques et fait avancer la cause.</strong>\n\nNos données ont été utilisées en exclusivité par le journal Le Monde pour publier un article des Décodeurs sur l’impact de l’élevage de saumons.",
       "paragraphUrl": "https://www.lemonde.fr/les-decodeurs/article/2024/10/14/l-elevage-intensif-de-saumon-une-bombe-ecologique-et-sociale-en-huit-chiffres_6351402_4355770.html",
       "paragraphLinkText": "Lire l'article",
-      "paragraphLastPart": "Depuis les données ont été relayées par nombre de médias comme Bon Pote, Brut, France Inter, BFM ou le JT de 13h de TF1 élevant ainsi la conscience collective à propos des impacts de l'industrie du saumon.",
+      "paragraphLastPart": "Depuis, les données ont été relayées par nombre de médias comme Bon Pote, Brut, France Inter, BFM ou le JT de 13h de TF1 élevant ainsi la conscience collective à propos des impacts de l'industrie du saumon.",
       "imageAlt": "Image d'un téléphone avec des applications de médias"
     },
     "mediaLogosAlt": {
@@ -127,7 +127,7 @@
     },
     "method": {
       "title": "Approche et méthodologie",
-      "sectionId": "sources-et-methodologies",
+      "sectionId": "approche-et-methodologie",
       "caption": "PinkBombs a été créé pour analyser et transformer les données publiques en outils accessibles à tous·tes.",
       "values": {
         "title": "Notre approche repose sur deux valeurs\u00a0:",
@@ -140,11 +140,13 @@
         "title": "Notre démarche a suivi trois étapes\u00a0:",
         "items": [
           "<strong>Identification des sujets prioritaires\u00a0:</strong>\nL'objectif du site étant d'offrir une compilation des informations les plus frappantes sur le sujet, l'organisation a commencé par prioriser les sujets à aborder.",
-          "<strong>Recherche approfondie\u00a0:</strong>\nUne recherche documentaire a été menée sur Internet et en contactant des expert·e·s, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
-          "<strong>Données évaluées par des pairs\u00a0:</strong>\nDans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’expert·e·s a permis la validation finale."
+          "<strong>Recherche approfondie\u00a0:</strong>\nUne recherche documentaire a été menée sur Internet et en contactant des expert·es, en prenant soin d'utiliser uniquement des sources scientifiques ou issues d’organisations internationales renommées.",
+          "<strong>Vérification des données\u00a0:</strong>\nDans l'intérêt de la qualité des données, toutes les informations ont été vérifiées en interne. Un soutien d’expert·es a permis la validation finale."
         ]
       },
-      "missingInfo": "Nous avons oublié des informations clés\u00a0? Vous avez une question\u00a0? Veuillez nous contacter.",
+      "missingInfo": "Nous avons oublié des informations clés\u00a0? Vous avez une question\u00a0? Veuillez nous contacter à l'adresse suivante\u00a0:",
+      "missingInfoCta": "contact@seastemik.org",
+      "missingInfoUrl": "mailto:contact@seastemik.org",
       "downloadCta": "Télécharger la méthodologie (PDF)"
     },
     "contact": {

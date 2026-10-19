@@ -3,7 +3,7 @@
     "calculatorBlock": {
       "title": {
         "part1": "Heureusement",
-        "part2": ", Il est encore temps de désamorcer la bombe!"
+        "part2": ", Il est encore temps de désamorcer la bombe\u00a0!"
       },
       "caption": "Calculez votre empreinte saumon avec le Pinkomètre et découvrez comment la réduire.",
       "imageAlt": "Joyeux poisson qui saute de l'eau et passe devant un soleil brillant",
@@ -55,7 +55,7 @@
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
             "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
-            "title": "Le debunk des lobbys industriels",
+            "title": "Le debunk du saumon",
             "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Comprendre"
@@ -64,7 +64,7 @@
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
             "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
             "title": "S’inspirer d’initiatives",
-            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour être égal.",
+            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "S’inspirer"
           }
@@ -82,7 +82,7 @@
             "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
             "imageAlt": "Image illustrative représentant un sourire et de joyeux poissons.",
             "title": "S’inspirer d’initiatives",
-            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement. Troisième ligne pour être égal.",
+            "description": "Des alternatives qui émergent. Des récits et des idées qui donnent envie de faire autrement.",
             "buttonUrl": "/to-be-inspired",
             "buttonCta": "S’inspirer"
           }
@@ -99,7 +99,7 @@
           {
             "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
             "imageAlt": "Image illustrative représentant l'industrie, les chalutiers et les poissons en ferme.",
-            "title": "Le debunk des lobbys industriels",
+            "title": "Le debunk du saumon",
             "description": "Découvrez qui sont les saumons, comment ils sont produits et les impacts de leur consommation.",
             "buttonUrl": "/to-understand",
             "buttonCta": "Comprendre"
