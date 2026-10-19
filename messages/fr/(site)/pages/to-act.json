@@ -31,12 +31,12 @@
             },
             {
               "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             },
             {
               "cta": "Repeupler l’Océan\u00a0: ces associations qui font bouger les lignes",
-              "id": 10,
+              "id": 9,
               "type": "internalArticle"
             }
           ]
@@ -46,13 +46,13 @@
           "description": "Le plaisir d’une cuisine iodée <strong>ne repose pas uniquement sur les poissons.</strong>\n\n<strong>Algues, coquillages</strong> et nouvelles façons de cuisiner permettent de retrouver des saveurs marines tout en diversifiant son alimentation.\n\nTestez dès maintenant nos menus marins sans poissons, avec des recettes 100% océanes et végétales, pour faire danser les papilles, sans vider l'Océan\u00a0!",
           "actions": [
             {
-              "cta": "Télécharger notre livre de recette",
+              "cta": "Télécharger notre livre de recettes",
               "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
               "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -62,18 +62,18 @@
           "description": "Aujourd’hui, il <strong>existe de nombreuses alternatives végétales pour continuer à profiter des recettes que l’on aime\u00a0:</strong> saumon fumé végétal, pavés, tartinables ou encore préparations inspirées des produits de la mer.\n\nCes alternatives permettent de retrouver des textures, des usages et des plaisirs familiers, <strong>tout en réduisant l’impact lié à la consommation de saumons.</strong>",
           "actions": [
             {
-              "cta": "Calculez votre empreinte saumons avec le Pinkomètre et explorer les alternatives",
+              "cta": "Calculez votre empreinte saumons avec le Pinkomètre et explorez les alternatives",
               "url": "/pinkometer",
               "type": "internalRedirect"
             },
             {
-              "cta": "Télécharger notre livre de recette",
+              "cta": "Télécharger notre livre de recettes",
               "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
               "type": "download"
             },
             {
               "cta": "Remplacer le saumon\u00a0: 5 alternatives qui changent déjà la donne",
-              "id": 5,
+              "id": 4,
               "type": "internalArticle"
             }
           ]
@@ -88,13 +88,8 @@
               "type": "internalArticle"
             },
             {
-              "cta": "Les saumons, symbole d’une industrie",
-              "id": 1,
-              "type": "internalArticle"
-            },
-            {
-              "cta": "5 idées reçues sur le poisson (et pourquoi elles sont fausses)",
-              "id": 4,
+              "cta": "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
+              "id": 3,
               "type": "internalArticle"
             }
           ]
@@ -118,8 +113,8 @@
               "type": "download"
             },
             {
-              "cta": "Demandez-nous de l'aide pour convaincre en interne. Écrivez à charlotte@seastemik.com.",
-              "url": "mailto:charlotte@seastemik.com",
+              "cta": "Demandez-nous de l'aide pour convaincre en interne. Écrivez à charlotte@seastemik.org.",
+              "url": "mailto:charlotte@seastemik.org",
               "type": "externalRedirect"
             }
           ]
@@ -129,7 +124,7 @@
           "description": "Réunions, séminaires, cocktails, événements d’entreprise… autant d’occasions de faire découvrir une autre façon de se régaler.\n\nLes traiteur·es généralistes ou spécialisé·es en végétal proposent aujourd’hui des alternatives créatives, gourmandes et inclusives, qui répondent plus facilement aux différentes habitudes alimentaires tout en limitant l’impact environnemental.",
           "actions": [
             {
-              "cta": "Découvrez https://touslestraiteursvegan.com/",
+              "cta": "Découvrez le site Tous les traiteurs vegan",
               "url": "https://touslestraiteursvegan.com/",
               "type": "externalRedirect"
             }
@@ -137,11 +132,11 @@
         },
         {
           "title": "Je demande un accompagnement de Seastemik",
-          "description": "Chaque entreprise peut engager des transformations puissantes. Seastemik peut vous accompagner pour enclencher ce changement avec vos équipes.\n\nIl est urgent, possible (et joyeux) de dépoissonner l’alimentation dans la restauration pour aller vers une offre alignée avec les 10kg de consommation de poissons par an et par habitants en France.",
+          "description": "Chaque entreprise peut engager des transformations puissantes. Seastemik peut vous accompagner pour enclencher ce changement avec vos équipes.\n\nIl est urgent, possible (et joyeux) de dépoissonner l’alimentation dans la restauration pour aller vers une offre alignée avec les 10 kg de consommation de poissons par an et par habitant en France.",
           "actions": [
             {
-              "cta": "Prendre RDV avec Seastemik. Écrivez à charlotte@seastemik.com.",
-              "url": "mailto:charlotte@seastemik.com",
+              "cta": "Prendre RDV avec Seastemik. Écrivez à charlotte@seastemik.org.",
+              "url": "mailto:charlotte@seastemik.org",
               "type": "externalRedirect"
             }
           ]

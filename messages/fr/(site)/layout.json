@@ -23,7 +23,7 @@
     "shareLink": {
       "blank": "nouvel onglet",
       "site": "Site internet",
-      "sources": "Sources et méthodologies",
+      "sources": "Approche et méthodologie",
       "legalNotices": "Mentions légales",
       "contactUs": "Contactez-nous",
       "design": "coucou.design"
@@ -36,7 +36,7 @@
         },
         "more": {
           "title": "Plus d'informations",
-          "sourceId": "sources-et-methodologies"
+          "sourceId": "approche-et-methodologie"
         },
         "stayInformed": {
           "title": "Restez informé·e",

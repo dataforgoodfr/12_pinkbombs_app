@@ -14,7 +14,7 @@
     "impact": {
       "title": "Chaque année en France,",
       "titleHighlight": "Nous consommons 62 millions de saumons",
-      "impact": "(soit l’équivalent en tonnes de 31 Tour Eiffel)",
+      "impact": "(soit l’équivalent en tonnes de 31 tours Eiffel)",
       "imageAltTitle": "Tour eiffel sur une assiette",
       "title2": "de ces millions de saumons,",
       "title2Highlight": "98% sont issus d’élevage",
@@ -35,7 +35,7 @@
         },
         {
           "title": "Du soja, du blé, du colza",
-          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourri au soja, blé et colza.</strong>\n\nLa demande en soja pour les animaux d’élevage est à l’origine de la <strong>déforestation</strong> légale et illégale au Brésil.",
+          "content": "Les saumons sont des poissons carnivores, oui... <strong>mais également nourris au soja, blé et colza.</strong>\n\nLa demande en soja pour les animaux d’élevage est à l’origine de la <strong>déforestation</strong> légale et illégale au Brésil.",
           "imageAlt": "Céréale"
         },
         {
@@ -64,8 +64,8 @@
     },
     "addition": {
       "title": {
-        "part1": "En France, chaque habitant consomme en moyenne 4,5 kg de saumons d’élevage par an,",
-        "part2": "l’addition est salée:"
+        "part1": "En France, chaque habitant·e consomme en moyenne 4,5 kg de saumons d’élevage par an,",
+        "part2": "l’addition est salée\u00a0:"
       },
       "results": {
         "intro": "Ça fera (pour l’ensemble des français·es)\u00a0:",
@@ -86,8 +86,8 @@
             "imageAlt": "Tuyau rejetant des eaux usées"
           },
           "item4": {
-            "title": "1,9 millions tonnes de CO2",
-            "description": "générées par an, soit l’équivalent de 235 000 personnes par an en France",
+            "title": "1,9 millions de tonnes de CO2",
+            "description": "générées par an, soit l’empreinte carbone annuelle de 235 000 personnes par an en France",
             "imageAlt": "Nuage de C02"
           }
         }
@@ -96,8 +96,8 @@
         "intro": "En supplément\u00a0:",
         "addOnItems": {
           "item1": {
-            "title": "987 km2 de terre sont utilisés",
-            "description": "pour produire l’alimentation végétale des saumons. C’est plus grand que la surface de la Seine Saint Denis + Hauts-de-Seine + Paris additionnés.",
+            "title": "987 km² de terre sont utilisés",
+            "description": "pour produire l’alimentation végétale des saumons. C’est plus grand que la surface de la Seine-Saint-Denis + Hauts-de-Seine + Paris additionnés.",
             "imageAlt": "Céréale"
           },
           "item2": {
@@ -106,7 +106,7 @@
             "imageAlt": "Saumon et petits poissons"
           },
           "item3": {
-            "title": "Moins d’oméga 3",
+            "title": "Moins d’oméga-3",
             "description": "Aujourd'hui, la chair des saumons contient nettement moins d'omega-3 qu’avant. C’est la conséquence du changement d’alimentation donnée aux saumons.",
             "imageAlt": "Algues et panneau de signalisation indiquant une interdiction"
           }

@@ -416,7 +416,16 @@ const ApproachAndMethodSection = () => {
                 </p>
               ))}
             </div>
-            <p className="p-lead">{t("method.missingInfo")}</p>
+            <p className="p-lead">
+              {t("method.missingInfo")}{" "}
+              <a
+                href={t("method.missingInfoUrl")}
+                className="text-v2-magenta underline"
+              >
+                {t("method.missingInfoCta")}
+              </a>
+              .
+            </p>
             <a
               href="https://drive.google.com/file/d/1dukCe7fENweOSypv9Ohq2h_9m9N7L7Cg/view?usp=sharing"
               target="_blank"
