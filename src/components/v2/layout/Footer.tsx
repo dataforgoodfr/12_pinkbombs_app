@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer className="p-6 lg:p-12 text-white bg-darkblue1">
-      <div className="max-w-[1500px] mx-auto">
+      <div className="flex flex-col gap-12 max-w-[1500px] mx-auto">
         <div className="flex md:grid md:grid-cols-3 lg:flex flex-wrap gap-12 lg:gap-4 lg:pt-12">
           <div className="flex flex-col gap-2 lg:gap-6 w-full max-w-72">
             <h4 className="h4">{t("footer.sections.projectBy.title")}</h4>
@@ -107,16 +107,27 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">
-          <p className="text-base">Seastemik - © {currentYear}</p>
+          <p className="p-caption">Seastemik - © {currentYear}</p>
           <br />
           <div className="flex gap-1 md:items-center md:justify-center">
-            <p className="text-base">design:</p>
-            <ShareLink
+            <p className="p-caption">design:</p>
+            <a
               href="https://coucou.design/"
-              type="design"
-              name={t("shareLink.design")}
-              className="text-base text-white hover:text-v2-yellow"
-            />
+              className="group p-caption text-white hover:text-v2-yellow"
+            >
+              {t("shareLink.design")}
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                className={`inline-block ml-2 align-middle fill-white group-hover:fill-v2-yellow`}
+                viewBox="0 -960 960 960"
+                width="16"
+              >
+          <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+        </svg>
+            </a>
           </div>
         </div>
         <MatomoPreferencesButton />

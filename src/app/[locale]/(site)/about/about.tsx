@@ -48,7 +48,7 @@ const IntroSection = () => {
       </div>
       <div className="min-w-0 lg:col-start-1 lg:row-start-1 lg:-ml-32 2xl:ml-0">
         <Image
-          loading="lazy"
+          loading="eager"
           src="/site/images/about/surfing-fishes.svg"
           width={1512}
           height={431}
