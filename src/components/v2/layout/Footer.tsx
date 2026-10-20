@@ -113,6 +113,7 @@ const Footer = () => {
             <p className="p-caption">design:</p>
             <a
               href="https://coucou.design/"
+              target="_blank"
               className="group p-caption text-white hover:text-v2-yellow"
             >
               {t("shareLink.design")}
