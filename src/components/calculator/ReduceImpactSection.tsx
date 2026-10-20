@@ -976,7 +976,7 @@ export const ReduceImpactSection = ({
                 <a
                   href={badgeDownload.href}
                   download={badgeDownload.filename}
-                  className="inline-flex mx-auto justify-center mt-4 cta border-2 rounded-xl border-v2-blue bg-v2-yellow text-v2-blue hover:bg-v2-magenta px-8 md:px-16 py-2 text-sm self-center cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-v2-yellow"
+                  className="inline-flex mx-auto justify-center text-center mt-4 cta border-2 rounded-xl border-v2-blue bg-v2-yellow text-v2-blue hover:bg-v2-magenta px-8 md:px-16 py-2 text-sm self-center cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-v2-yellow"
                 >
                   {t("badgeQuestions.share")}
                 </a>
