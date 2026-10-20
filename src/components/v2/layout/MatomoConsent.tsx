@@ -156,7 +156,7 @@ export function MatomoPreferencesButton() {
   const context = React.useContext(matomoConsentContext);
   const t = useTranslations("site.layout.analyticsConsent");
 
-  // if (!context?.isProduction) return null;
+  if (!context?.isProduction) return null;
 
   return (
     <button
