@@ -231,7 +231,7 @@ const TeamSection = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto flex w-full max-w-[911px] flex-col gap-8">
+        <div className="mx-auto mt-14 flex w-full max-w-[911px] flex-col gap-8">
           <p className="p-body">
             {t.rich("teamSection.greetings", {
               strong: (chunks) => <strong>{chunks}</strong>,
