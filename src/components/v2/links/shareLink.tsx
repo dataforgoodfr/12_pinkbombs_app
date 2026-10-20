@@ -55,7 +55,6 @@ const ShareLink = ({
       )}
     </>
   );
-  console.log({className});
   const linkClassName = clsx("text-base group", className);
 
   if (isExternal || isMailto) {

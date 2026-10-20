@@ -3,9 +3,10 @@
 /* eslint-disable no-console */
 import { Info } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 
+import { getBadgeDownload } from "@/lib/calculator/badgeDownload";
 import { createDisplayLabelLookup } from "@/lib/calculator/getDisplayLabel";
 import {
   persistCalculatorSubmission,
@@ -99,6 +100,7 @@ export const ReduceImpactSection = ({
   onNewsletterError,
 }: ReduceImpactSectionProps) => {
   const t = useTranslations("site.calculator");
+  const locale = useLocale();
   const isMobile = useIsMobile();
   const [openInfoKey, setOpenInfoKey] = React.useState<string | null>(null);
   const infoRegionRef = React.useRef<HTMLDivElement>(null);
@@ -222,6 +224,9 @@ export const ReduceImpactSection = ({
     ? t(`engagements.supplements.${selectedSupplement}`)
     : "";
   const badgeImpact = isNoConsumption ? response.impact : newResponse?.impact;
+  const badgeDownload = badgeImpact
+    ? getBadgeDownload(badgeImpact, locale)
+    : null;
   const getBadgeDimension = (dimension: "width" | "height") => {
     if (!badgeImpact) return 640;
 
@@ -920,15 +925,15 @@ export const ReduceImpactSection = ({
               />
             </div>
           </div>
-          {badgeVisible && badgeImpact && (
+          {badgeVisible && badgeImpact && badgeDownload && (
             <div
               ref={badgeRef}
-              className="flex flex-col bg-v2-magenta py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16"
+              className="flex flex-col bg-v2-yellow py-10 xl:py-20 2xl:py-32 gap-8 xl:mt-10 2xl:mt-16 xl:min-w-[800px]"
             >
               <h2 className="h2 text-center text-v2-blue">
                 {t("badgeQuestions.unlockedBadge")}
               </h2>
-              <div className="flex flex-col items-center gap-5 bg-white p-6 text-v2-blue rounded-xl mx-10 mb-10 py-20 px-6 md:px-12 lg:mx-auto lg:w-full lg:max-w-2xl">
+              <div className="flex flex-col items-center gap-5 bg-v2-blue p-6 text-v2-pink rounded-xl mx-10 mb-10 py-20 px-6 md:px-12 lg:mx-auto lg:w-full lg:max-w-2xl xl:max-w-4xl">
                 <Image
                   src={`/site/images/calculator/badges/${badgeImpact}.svg`}
                   alt={t(`badges.${badgeImpact}.title`)}
@@ -936,7 +941,7 @@ export const ReduceImpactSection = ({
                   height={getBadgeDimension("height")}
                   className="h-auto w-full max-w-sm"
                 />
-                <h3 className="h3 text-center">
+                <h3 className="h3 text-v2-magenta text-center">
                   {t(`badges.${badgeImpact}.title`)}
                 </h3>
                 <p className="p-lead text-center">
@@ -952,7 +957,7 @@ export const ReduceImpactSection = ({
                       alt="Divider"
                       className="object-cover w-[50%] mx-auto"
                     />
-                    <h4 className="h4 text-center">
+                    <h4 className="h4 text-center text-v2-green text-pretty">
                       "
                       {t(
                         `engagements.${oldFrequency === frequency ? "impactEqual" : "impactChanged"}`,
@@ -968,13 +973,13 @@ export const ReduceImpactSection = ({
                     </h4>
                   </>
                 )}
-                <button
-                  type="button"
-                  onClick={() => {}}
-                  className="inline-flex w-full md:w-0 justify-center mt-4 cta border-2 rounded-xl border-v2-blue bg-v2-blue text-v2-pink hover:bg-black hover:text-v2-pink px-8 md:px-16 py-2 text-sm w-fit  self-center cursor-pointer"
+                <a
+                  href={badgeDownload.href}
+                  download={badgeDownload.filename}
+                  className="inline-flex mx-auto justify-center mt-4 cta border-2 rounded-xl border-v2-blue bg-v2-yellow text-v2-blue hover:bg-v2-magenta px-8 md:px-16 py-2 text-sm self-center cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-v2-yellow"
                 >
                   {t("badgeQuestions.share")}
-                </button>
+                </a>
               </div>
             </div>
           )}
