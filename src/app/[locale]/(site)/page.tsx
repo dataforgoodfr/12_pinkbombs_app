@@ -8,12 +8,12 @@ import CalculatorBlock from "@/components/v2/CalculatorBlock";
 import type { MenuCardProps } from "@/components/v2/cards/MenuCard";
 import MenuCard from "@/components/v2/cards/MenuCard";
 import ExplorationBlock from "@/components/v2/ExplorationBlock";
+import HomepageIntro from "@/components/v2/HomepageIntro";
 
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
-      <ExplodeSection />
+      <HomepageIntro />
       <ImpactSection />
       <MenuSection />
       <AdditionSection />
@@ -25,79 +25,17 @@ const HomePage = () => {
 
 export default HomePage;
 
-const HeroSection = () => {
-  const t = useTranslations("site.homepage");
-  return (
-    <section className="relative flex px-8 py-10 lg:py-0 lg:px-32 lg:h-screen text-v2-blue bg-v2-pink">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full max-w-[1596px] items-center mx-auto">
-        <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-magenta">
-          {t("hero.title")}{" "}
-          <span className="text-v2-blue">{t("hero.title2")}</span>
-        </h1>
-        <Image
-          loading="eager"
-          src="/site/images/homepage/fish-plate.svg"
-          width={569}
-          height={424}
-          alt={t("hero.imageAlt")}
-          className="object-contain h-auto mx-auto"
-        />
-      </div>
-    </section>
-  );
-};
-
-const ExplodeSection = () => {
-  const t = useTranslations("site.homepage");
-
-  return (
-    <section className="bg-v2-blue">
-      <div className="relative w-full max-w-[1596px] mx-auto">
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[1596px] mx-auto">
-          <div className="p-10 lg:px-20 lg:py-40 2xl:px-0">
-            <h1 className="h1 inline-block text-[50px] lg:text-[80px] text-v2-pink">
-              {t("bomb.title")}{" "}
-              <span className="text-v2-red2">{t("bomb.title2")} </span>
-              {t("bomb.title3")}
-            </h1>
-            <Image
-              loading="lazy"
-              src="/site/images/homepage/red-line.svg"
-              width={437}
-              height={14}
-              alt={t("bomb.imageAlt")}
-              className="pt-2 object-contain h-auto max-w-[70%] lg:max-w-full"
-            />
-          </div>
-        </div>
-        <Image
-          loading="lazy"
-          src="/site/images/homepage/fish-bomb-mobile.svg"
-          width={1024}
-          height={870}
-          alt={t("bomb.imageAlt")}
-          className="relative z-2 bottom-6 object-contain mx-auto w-full h-auto lg:hidden"
-        />
-        <Image
-          loading="lazy"
-          src="/site/images/homepage/fish-bomb.svg"
-          width={1126}
-          height={760}
-          alt={t("bomb.imageAlt")}
-          className="hidden lg:block relative z-2 lg:absolute right-0 lg:-right-72 bottom-6 xl:bottom-0 object-contain mx-auto w-auto h-full"
-        />
-      </div>
-    </section>
-  );
-};
-
 const ImpactSection = () => {
   const t = useTranslations("site.homepage");
   return (
-    <section className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto">
+    <section
+      id="homepage-impact"
+      tabIndex={-1}
+      className="relative flex flex-col px-10 lg:px-16 text-black bg-v2-blue mx-auto"
+    >
       <div className="max-w-[1512px] mx-auto">
         <div className="flex flex-col py-20 space-between gap-20 lg:gap-12">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
+          <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between max-w-[1512px]">
             <Image
               loading="lazy"
               src="/site/images/homepage/eiffel-towers.svg"
@@ -112,7 +50,7 @@ const ImpactSection = () => {
               <p className="p-lead pt-2 text-pretty">{t("impact.impact")}</p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 items-center justify-between">
+          <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-8 lg:gap-4 items-center justify-between">
             <Image
               loading="lazy"
               src="/site/images/homepage/salmons.svg"

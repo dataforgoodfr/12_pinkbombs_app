@@ -1,9 +1,14 @@
 {
   "homepage": {
+    "navigation": {
+      "explode": "Découvrir les impacts du saumon d'élevage",
+      "impact": "Voir les chiffres de la consommation de saumon"
+    },
     "hero": {
       "title": "Les saumons que nous",
       "title2": "produisons, vendons et mangeons",
-      "imageAlt": "Saumon sur une assiette"
+      "imageAlt": "Saumon sur une assiette",
+      "progress": "Progression de la page d'accueil"
     },
     "bomb": {
       "title": "sont des",
@@ -77,7 +82,7 @@
           },
           "item2": {
             "title": "27 milliards de petits poissons ",
-            "description": "tués par an, pêchés spécialement pour produire la farine et l’huile qui nourrissent les saumons, impactant les populations locales d’Afrique de l’Ouest",
+            "description": "tués par an, pêchés spécialement pour produire la farine et l’huile qui nourrissent les saumons, impactant les populations côtières d’Afrique de l’Ouest",
             "imageAlt": "Saumon et petits poissons"
           },
           "item3": {

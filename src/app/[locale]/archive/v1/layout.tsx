@@ -34,7 +34,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       siteName: t("title"),
-      images: [`${t("url")}/images/og.jpg`],
+      images: [`${t("url")}/images/og.png`],
       type: "website",
       locale: "fr",
     },
@@ -42,7 +42,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [`${t("url")}/images/og.jpg`],
+      images: [`${t("url")}/images/og.png`],
     },
   };
 }
