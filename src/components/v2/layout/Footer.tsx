@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">
+        <div className="flex flex-col items-start md:flex-row md:gap-4 md:items-center mt-12 lg:mt-12">
           <p className="p-caption">Seastemik - © {currentYear}</p>
           <br />
           <div className="flex gap-1 md:items-center md:justify-center">
@@ -129,8 +129,9 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <br />
+          <MatomoPreferencesButton />
         </div>
-        <MatomoPreferencesButton />
       </div>
     </footer>
   );

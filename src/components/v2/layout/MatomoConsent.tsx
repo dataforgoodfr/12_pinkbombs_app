@@ -160,7 +160,7 @@ export function MatomoPreferencesButton() {
 
   return (
     <button
-      className="text-base text-white underline underline-offset-2 hover:text-v2-yellow"
+      className="p-caption text-white underline underline-offset-2 hover:text-v2-yellow"
       onClick={context.openPreferences}
       type="button"
     >
