@@ -76,7 +76,7 @@
           },
           {
             "type": "heading",
-            "text": "A rosy marketing story"
+            "text": "A pinky marketing story"
           },
           {
             "type": "paragraph",
@@ -98,7 +98,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "In their advertising, salmon producers promote the rosy color and boneless flesh of their fish. They also highlight their fat content and omega-3s, leaving the toxic substances in fish flesh out of view. Over time, their marketing campaigns won over the public."
+                "text": "In their advertising, salmon producers promote the pinky color and boneless flesh of their fish. They also highlight their fat content and omega-3s, leaving the toxic substances in fish flesh out of view. Over time, their marketing campaigns won over the public."
               }
             ]
           },
@@ -173,7 +173,7 @@
               },
               {
                 "type": "link",
-                "text": "Salmon: the pink bomb of a food system running out of steam",
+                "text": "Salmon: the pink bomb of an exhausted food system",
                 "href": "https://seastemik.org/nos-enquetes"
               },
               {
@@ -514,7 +514,7 @@
       },
       {
         "id": 4,
-        "title": "5 salmon alternatives that are already changing the game",
+        "title": "5 salmon alternatives that are game-changer",
         "summary": "Love the texture and flavors of salmonids? No need to panic! Seastemik has put together five plant-based options that are so convincing you might not spot the difference. And we promise, this list contains no tofu.",
         "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
         "heroImageSize": { "width": 800, "height": 1000 },
@@ -576,7 +576,7 @@
           },
           {
             "type": "heading",
-            "text": "3. Fauxmon, a convincing fake salmon"
+            "text": "3. Fakemon, a convincing fake salmon"
           },
           {
             "type": "image",
@@ -588,7 +588,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "You may have seen it in stores. Fauxmon, a blend of “fake” and “salmon,” is a plant-based product designed to mimic salmon’s appearance, texture, and flavor as closely as possible. It comes as fillets, cubes, and smoked slices. Results vary by brand. It is aimed at people who want to eat less fish without giving up familiar foods."
+                "text": "You may have seen it in stores. Fakemon, a blend of “fake” and “salmon,” is a plant-based product designed to mimic salmon’s appearance, texture, and flavor as closely as possible. It comes as fillets, cubes, and smoked slices. Results vary by brand. It is aimed at people who want to eat less fish without giving up familiar foods."
               }
             ]
           },
@@ -597,7 +597,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Worth remembering:</strong> For a good smoked fauxmon, Marie Laforêt, a leading voice in plant-based cooking in France and author of Seafood Vegan (Solar, 2026), recommends choosing versions flavored with beechwood smoke."
+                "text": "<strong>Worth remembering:</strong> For a good smoked fakemon, Marie Laforêt, a leading voice in plant-based cooking in France and author of Seafood Vegan (Solar, 2026), recommends choosing versions flavored with beechwood smoke."
               }
             ]
           },
@@ -1264,7 +1264,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "<strong>Seastemik</strong> started with a simple idea: an ocean full of life requires us to rethink the place we give marine animals on our plates. Through campaigns such as our mobilization against the <strong>Pure Salmon</strong> mega-farm in Gironde, and investigations such as the PinkBombs project you are reading now, we make the devastating consequences of our food choices visible and help individuals and businesses change how they eat, without guilt and with pleasure."
+                "text": "<strong>Seastemik</strong> started with a simple idea: an ocean full of life requires us to rethink the place we give marine animals on our plates. Through campaigns such as our mobilization against the <strong>Pure Salmon</strong> mega-farm located near Bordeaux in France, and investigations such as the PinkBombs project you are reading now, we make the devastating consequences of our food choices visible and help individuals and businesses change how they eat, without guilt and with pleasure."
               }
             ]
           },
@@ -1367,7 +1367,7 @@
               },
               {
                 "type": "link",
-                "text": "<strong>Coalition Océans</strong>",
+                "text": "<strong>Ocean coalition</strong>",
                 "href": "https://www.oceancoalition.org/coalition"
               },
               {
@@ -1376,7 +1376,7 @@
               },
               {
                 "type": "link",
-                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "text": "<strong>Ocean and Climate Platform</strong>",
                 "href": "https://ocean-climate.org/nos-membres/"
               },
               {
