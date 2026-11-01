@@ -12,7 +12,7 @@ const localizedArticleTitles: Record<number, Record<"en" | "fr", string>> = {
     fr: "5 idées reçues sur les poissons (et pourquoi elles sont fausses)",
   },
   4: {
-    en: "5 salmon alternatives that are already changing the game",
+    en: "5 salmon alternatives that are game-changer",
     fr: "5 alternatives aux saumons qui changent (déjà) la donne",
   },
   5: {
