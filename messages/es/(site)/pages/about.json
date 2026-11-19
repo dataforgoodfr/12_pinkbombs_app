@@ -1,43 +1,157 @@
 {
   "about": {
     "meta": {
-      "title": "[TODO: Spanish translation]"
+      "title": "Sobre nosotros"
     },
     "intro": {
-      "title": "[TODO: Spanish translation]",
-      "caption": "[TODO: Spanish translation]",
-      "imageAlt": "[TODO: Spanish translation]"
+      "title": "REPOBLAR EL OCÉANO, ALIMENTAR EL FUTURO",
+      "caption": "Visibilizar el impacto sistémico de la acuicultura intensiva, y en particular de la producción y el consumo de salmones.",
+      "imageAlt": "Cardumen de peces surfeando una ola"
     },
     "ambition": {
-      "origin": "[TODO: Spanish translation]",
-      "paragraph": "[TODO: Spanish translation]"
+      "origin": "PinkBombs nació de una ambición sencilla: poner en evidencia el impacto sistémico de la acuicultura intensiva y, en particular, del consumo de salmones.",
+      "paragraph": "<strong>Impulsado por Seastemik en colaboración con DataForGood, PinkBombs ofrece información transparente y basada en evidencia sobre los desafíos ecológicos, sanitarios y éticos asociados a la producción y el consumo de pescado.</strong>\n\nMás que una plataforma de sensibilización, es una herramienta concreta para orientar la toma de decisiones, dirigida a la ciudadanía, las empresas y quienes diseñan e impulsan las políticas públicas. Nuestra misión es clara: acompañar la transición hacia una alimentación que respete el Océano. Porque dejar de consumir peces también es una forma de devolverles su lugar en el Océano y contribuir a un futuro con más vida."
     },
     "why": {
-      "title": "[TODO: Spanish translation]",
+      "title": "¿Por qué PinkBombs?",
       "situation": {
-        "title": "[TODO: Spanish translation]",
-        "imageAlt": "[TODO: Spanish translation]",
-        "paragraph": "[TODO: Spanish translation]"
+        "title": "El contexto",
+        "imageAlt": "Peces cayendo",
+        "paragraph": "<strong>Nos enfrentamos a una crisis oceánica. El Océano, fuente esencial de vida en la Tierra, está cada vez más amenazado por las actividades humanas.</strong>\n\n<strong>La pesca y el consumo de productos del mar ejercen una enorme presión sobre la biodiversidad marina.</strong> La industria salmonera, uno de los ejemplos más representativos de la acuicultura intensiva, genera múltiples impactos ambientales y ecológicos a escala global.\n\nPor eso, es urgente transformar nuestro sistema alimentario para proteger la salud de las personas, el bienestar de los animales y el equilibrio de los ecosistemas."
       },
       "reaction": {
-        "title": "[TODO: Spanish translation]",
-        "imageAlt": "[TODO: Spanish translation]",
-        "paragraph": "[TODO: Spanish translation]"
+        "title": "Nuestra respuesta",
+        "imageAlt": "Peces felices mirando hacia el futuro",
+        "paragraph": "<strong>PinkBombs está aquí para:</strong><ul>\n<li>Alertar sobre una de las grandes amenazas para el Océano: <strong>la salmonicultura intensiva.</strong></li>\n<li><strong>Cuestionar la percepción que tenemos de los salmones</strong> y nuestros hábitos de consumo.</li>\n<li>Impulsar a las empresas, los Estados y las personas consumidoras a avanzar hacia <strong>alternativas positivas.</strong></li>\n</ul>"
       }
     },
     "seastemik": {
-      "title": "[TODO: Spanish translation]",
-      "paragraph": "[TODO: Spanish translation]",
-      "cta": "[TODO: Spanish translation]"
+      "title": "Seastemik",
+      "paragraph": "Seastemik —un juego de palabras que combina \"sea\" (mar) y \"sistémico\"— es una ONG fundada en 2023 que promueve un enfoque sistémico para proteger el Océano, integrando las dimensiones ambientales, económicas, sociales, éticas y sanitarias.\n\n<strong>Nuestra visión:</strong> Un Océano lleno de vida, protegido a través de una alimentación basada en plantas que contribuya a preservar las condiciones necesarias para la vida en nuestro planeta, la estabilidad climática, la salud humana, la justicia alimentaria y el bienestar animal. El problema es sistémico. Por eso, la respuesta también debe serlo.\n\n<strong>Nuestra misión:</strong> Reducir el consumo de pescado en nuestra alimentación para contribuir a repoblar el Océano. Acompañar la transición hacia el abandono de la piscicultura intensiva, especialmente de la salmonicultura, y demostrar que podemos disfrutar de una alimentación deliciosa sin poner en riesgo la vida en el Océano. Porque queremos pasar de la restauración de los ecosistemas oceánicos a la recuperación de un océano lleno de vida.",
+      "cta": "Ver el sitio web de Seastemik."
     },
     "dataforgood": {
-      "title": "[TODO: Spanish translation]",
-      "paragraph": "[TODO: Spanish translation]",
-      "cta": "[TODO: Spanish translation]"
+      "title": "Data for good",
+      "paragraph": "Data For Good es una asociación sin fines de lucro fundada en 2014, que reúne a una comunidad de más de 7.000 personas voluntarias del sector tecnológico: especialistas en ciencia, análisis e ingeniería de datos, desarrolladores, diseñadores UX/UI y profesionales de gestión de productos y proyectos. Todas comparten el deseo de poner sus conocimientos y habilidades al servicio de iniciativas de interés público.\n\nCada año colaboramos con alrededor de 15 organizaciones para desarrollar proyectos que contribuyan a la justicia social, la democracia y la protección del medioambiente. A lo largo de los últimos diez años, hemos acompañado, impulsado y co-creado más de 100 proyectos.\n\nTambién cuestionamos activamente los riesgos y los posibles usos perjudiciales de la tecnología. Formar parte de nuestra comunidad implica apostar por una tecnología responsable, sostenible y consciente de sus impactos sociales y ambientales. También significa reconocer que la tecnología, por sí sola, no puede resolver todos los problemas.",
+      "cta": "Ver el sitio web de Data For Good."
     },
     "teamSection": {
-      "title": "[TODO: Spanish translation]",
-      "members": []
+      "title": "El equipo del proyecto",
+      "members": [
+        {
+          "name": "Esther Dufaure",
+          "role": "Cofundadora y codirectora general de Seastemik",
+          "pictureUrl": "/site/images/about/team/esther.png",
+          "pictureAlt": "Esther, cofundadora y codirectora del proyecto PinkBombs"
+        },
+        {
+          "name": "Maxime de Lisle",
+          "role": "Cofundador y codirector general de Seastemik",
+          "pictureUrl": "/site/images/about/team/maxime.png",
+          "pictureAlt": "Maxime, cofundador de Seastemik"
+        },
+        {
+          "name": "Fleur Marques Bosio",
+          "role": "Directora de Comunicación de Seastemik",
+          "pictureUrl": "/site/images/about/team/fleur.png",
+          "pictureAlt": "Fleur, Directora de Comunicación de Seastemik"
+        },
+        {
+          "name": "Diane Jean",
+          "role": "Responsable de Comunicación Digital de Seastemik",
+          "pictureUrl": "/site/images/about/team/Diane.png",
+          "pictureAlt": "Diane, Responsable de Comunicación Digital de Seastemik"
+        },
+        {
+          "name": "Gaëlle Nordström-Schüler",
+          "role": "Responsable voluntaria de producto",
+          "pictureUrl": "/site/images/about/team/gaelle.png",
+          "pictureAlt": "Gaëlle, Responsable voluntaria de producto"
+        },
+        {
+          "name": "Brigitte Wear",
+          "role": "Responsable de Análisis de Datos e Investigación",
+          "pictureUrl": "/site/images/about/team/brigitte.png",
+          "pictureAlt": "Brigitte, Responsable de Análisis de Datos e Investigación"
+        },
+        {
+          "name": "Azra Hamidovic",
+          "role": "Analista voluntaria de Datos e Investigación",
+          "pictureUrl": "/site/images/about/team/Azra.png",
+          "pictureAlt": "Azra, Analista voluntaria de Datos e Investigación"
+        },
+        {
+          "name": "Pierre Moneyron",
+          "role": "Analista voluntario de Datos e Investigación",
+          "pictureUrl": "/site/images/about/team/Pierre.png",
+          "pictureAlt": "Pierre, Analista voluntario de Datos e Investigación"
+        },
+        {
+          "name": "Paul Pajot",
+          "role": "Dirección de Arte y Diseño Digital",
+          "pictureUrl": "/site/images/about/team/paul.png",
+          "pictureAlt": "Paul, Dirección de Arte y Diseño Digital"
+        },
+        {
+          "name": "Aurélie Anglio",
+          "role": "Desarrolladora web full stack voluntaria",
+          "pictureUrl": "/site/images/about/team/aurelie.png",
+          "pictureAlt": "Aurélie, Desarrolladora web full stack voluntaria"
+        }
+      ],
+      "greetings": "<strong>Un agradecimiento enorme a todas las personas voluntarias que se sumaron a esta aventura e hicieron posible esta nueva versión:</strong> Juliette Ribot (analista de datos e investigación voluntaria), Alberto Roman (analista de datos e investigación voluntario), Lenï Le Ravallec (analista de datos e investigación voluntario), Anne-Laure Silvestre (comunicación y estrategia voluntaria).",
+      "greetingsv1": "<strong>Ellas y ellos sentaron las bases de PinkBombs en su primera versión, en 2024:</strong> Adrien Brogniet, Agathe Arnould, Antoine Rogeau, Béatrice Chetard, Charlotte Eckstein, Charlotte Martinez, Erin Pacquetet, Giuseppe Guarino, Jade Fath, Julie Lasserre, Malena Guallar, Marie Courraud, Maud Ges, Maxime Schroder, Mélanie Beraud, Nadezda Berzina, Nelson Carvalho, Nicolas Berthozat, Oumeima El Isbihani, Paul Tenaillon, Quentin Deltour, Salomé Tordjman Martinez, Sandrine Dimitriadis, Sarah Rieubland, Solène Richard, Thomas Catinaud Taris, Vincent Martin"
+    },
+    "partner": {
+      "title": "CON EL APOYO DE",
+      "paragraph": "Este proyecto fue posible gracias al apoyo de KRESK 4 OCEANS.\n\nKRESK 4 OCEANS es un fondo de dotación creado por el Grupo KRESK y sus marcas (SVR y Lazartigue), que impulsa proyectos y apoya a organizaciones sin fines de lucro comprometidas con la lucha contra la contaminación marina.",
+      "imageAlt": "Logo de KRESK 4 OCEANS"
+    },
+    "story": {
+      "title": "NUESTRA HISTORIA",
+      "paragraphFirstPart": "<strong>En 2024 lanzamos la primera versión de PinkBombs, que tuvo una amplia repercusión en los medios de comunicación y contribuyó a dar visibilidad a esta causa.</strong>\n\nNuestros datos fueron utilizados en exclusiva por el diario francés Le Monde para elaborar un artículo de su sección de verificación y análisis de datos, Les Décodeurs, sobre el impacto de la salmonicultura intensiva.",
+      "paragraphLastPart": "Desde entonces, numerosos medios de comunicación han retomado y difundido nuestros datos, entre ellos Bon Pote, Brut, France Inter, BFM y el noticiero de las 13:00 de TF1. Su cobertura ha contribuido a generar una mayor conciencia pública sobre los impactos de la industria salmonera.",
+      "paragraphUrl": "https://www.lemonde.fr/les-decodeurs/article/2024/10/14/l-elevage-intensif-de-saumon-une-bombe-ecologique-et-sociale-en-huit-chiffres_6351402_4355770.html",
+      "paragraphLinkText": "Leer el artículo",
+      "imageAlt": "Imagen de un teléfono con aplicaciones de medios"
+    },
+    "mediaLogosAlt": {
+      "tf1": "Logo de TF1",
+      "brut": "Logo de Brut",
+      "franceInter": "Logo de France Inter",
+      "franceInfo": "Logo de France Info",
+      "leMonde": "Logo de Le Monde",
+      "leBonPote": "Logo de Bon Pote",
+      "laCroix": "Logo de La Croix",
+      "radioFrance": "Logo de Radio France"
+    },
+    "method": {
+      "title": "ENFOQUE Y METODOLOGÍA",
+      "sectionId": "enfoque-y-metodologia",
+      "caption": "PinkBombs nació con el objetivo de transformar datos públicos en herramientas accesibles y útiles para todas las personas.",
+      "values": {
+        "title": "NUESTRO ENFOQUE SE BASA EN DOS PRINCIPIOS FUNDAMENTALES:",
+        "items": [
+          "<strong>Código abierto:</strong>\nPonemos los datos a disposición de todas las personas a través de nuestra plataforma.",
+          "<strong>Colaboración:</strong>\n¿Quieres contribuir al proyecto o proponer mejoras? ¡Ponte en contacto con nosotros!"
+        ]
+      },
+      "steps": {
+        "title": "NUESTRO PROCESO SE DESARROLLÓ EN TRES ETAPAS:",
+        "items": [
+          "<strong>Identificación de los temas prioritarios:</strong>\nComo el objetivo de PinkBombs es reunir y poner al alcance del público la información más relevante y reveladora sobre esta problemática, comenzamos por definir las prioridades y seleccionar los temas que se abordarán.",
+          "<strong>Investigación en profundidad:</strong>\nRealizamos una investigación documental a partir de fuentes disponibles en Internet y de consultas a personas expertas. Priorizamos las fuentes científicas y las publicaciones de organismos internacionales de reconocida trayectoria.",
+          "<strong>Verificación de los datos:</strong>\nPara garantizar la calidad y fiabilidad de la información, todos los datos fueron sometidos a una revisión interna. Además, contamos con el apoyo de personas expertas para su validación final."
+        ]
+      },
+      "missingInfo": "¿Crees que nos falta información importante? ¿Tienes alguna pregunta o sugerencia?",
+      "missingInfoCta": "contact@seastemik.org",
+      "missingInfoUrl": "mailto:contact@seastemik.org",
+      "downloadCta": "Descargar la metodología completa (PDF)"
+    },
+    "contact": {
+      "title": "¡PONTE EN CONTACTO CON NOSOTROS!",
+      "paragraph": "En Seastemik soñamos con un Océano lleno de vida, protegido a través de una alimentación basada en plantas que contribuya a preservar las condiciones necesarias para la vida en nuestro planeta. ¿Tienes alguna pregunta, una idea, un proyecto que te gustaría impulsar o simplemente cada vez más ganas de pasar a la acción? <strong>¡Nos encantará saber de ti!</strong> Ya seas parte de la ciudadanía, del mundo profesional, de la investigación, del periodismo o de alguna organización, o simplemente sientas curiosidad por lo que hacemos, hay mil maneras de sumarse a la revolución yodada."
     }
   }
 }
