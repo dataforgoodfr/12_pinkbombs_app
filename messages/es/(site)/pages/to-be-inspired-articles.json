@@ -1,6 +1,1435 @@
 {
   "toBeInspiredArticle": {
-    "page": "[TODO: Spanish translation]",
-    "articles": []
+    "page": "Descubrir alternativas - ",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Los salmones, símbolo de toda una industria",
+        "summary": "Durante mucho tiempo, el salmón fue un pescado reservado para las grandes ocasiones. Sin embargo, en apenas unas décadas, pasó a convertirse en uno de los pescados más consumidos en Francia. Detrás de este preocupante aumento del consumo está el crecimiento de una industria que transformó a un animal silvestre en un producto de consumo masivo.",
+        "heroImage": "/site/images/to-be-inspired/articles/1/hero.jpg",
+        "heroImageSize": {
+          "width": 2481,
+          "height": 3508
+        },
+        "heroImageAlt": "Jaulas de crianza de salmón en una bahía costera",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La historia de la salmonicultura comienza con la transformación de nuestros océanos. En apenas un siglo, el consumo mundial de pescado se multiplicó por nueve, según la "
+              },
+              {
+                "type": "link",
+                "text": "Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO)",
+                "href": "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/es/es_atlanticsalmon.htm"
+              },
+              {
+                "type": "text",
+                "text": ". Y este cambio no ocurrió por casualidad."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Después de la Segunda Guerra Mundial, la capacidad de pesca creció a un ritmo vertiginoso. Las grandes flotas pesqueras industriales de países como Francia, China y Rusia comenzaron a recorrer los océanos. En tierra firme, se expandieron los mercados de pescado fresco y en conserva, mientras los hábitos alimentarios también iban cambiando."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una industria que nació en Noruega"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En este contexto, comenzaron a expandirse tanto la comercialización de alimentos preparados congelados como la acuicultura, es decir, la cría de peces, especialmente de salmones. Las primeras granjas industriales de salmones surgieron en Noruega durante la década de 1960. Poco a poco, este modelo de producción se extendió a otros países que cuentan con las condiciones naturales adecuadas para desarrollar esta actividad."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/1.jpg",
+            "alt": "Filetes de salmón empaquetados exhibidos en una vitrina de supermercado",
+            "caption": "El salmón de cultivo se convirtió en un producto de consumo masivo."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En 2021, apenas cuatro países concentraban el 90% de la producción mundial de salmones de cultivo, según "
+              },
+              {
+                "type": "link",
+                "text": "datos de la FAO",
+                "href": "https://www.fao.org/fishery/en/collection/aquaculture"
+              },
+              {
+                "type": "text",
+                "text": ". Noruega representaba más de la mitad del total, mientras que Chile concentraba cerca de una cuarta parte. Muy por detrás se situaban el Reino Unido y Canadá."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una estrategia de marketing muy rosada"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De todas las especies de peces, la industria eligió al salmón del Atlántico (Salmo salar) para desarrollar su cría a escala industrial. Y no fue una elección casual: varias razones explican esta decisión. El salmón silvestre ya tenía un lugar privilegiado en nuestras mesas. Se asociaba con ocasiones especiales y se consideraba un producto de lujo. En apenas unas décadas, la acuicultura transformó este alimento exclusivo en un producto de consumo masivo, al alcance de un público mucho más amplio. Para los productores, el salmón también tenía una ventaja decisiva: podía criarse a gran escala en jaulas instaladas en el mar. En otras palabras, la industria acuícola llevó al océano el modelo de producción intensiva característico de la ganadería industrial."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/2.jpg",
+            "alt": "Filetes frescos de salmón exhibidos sobre hielo",
+            "caption": "El salmón se vende, sobre todo, por su característico color rosado y las cualidades de su carne."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En sus campañas publicitarias, las empresas salmoneras ponen el foco en el atractivo color rosado del salmón y en su carne sin espinas. También destacan su contenido de grasas y omega-3, pero dejan convenientemente en segundo plano la presencia de sustancias tóxicas en su carne. A través de campañas publicitarias cuidadosamente diseñadas, lograron construir una imagen atractiva del producto y conquistar a un público cada vez más amplio."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Un crecimiento sin límites"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Desde la década de 1980, la producción mundial de salmones de cultivo creció a un ritmo vertiginoso. Y todo indica que esta expansión continuará en los próximos años. Noruega, el principal productor de salmón de cultivo del mundo, aspira a triplicar su producción anual para 2050. Para alcanzar este objetivo, apuesta por nuevas tecnologías que requieren enormes cantidades de energía y generan un fuerte impacto ambiental, como la cría de salmones en instalaciones terrestres y la acuicultura en mar abierto (offshore)."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/1/3.png",
+            "alt": "Jaulas de crianza de salmón instaladas frente a una costa",
+            "caption": "La cría de salmones se expande de los fiordos a las instalaciones de acuicultura en mar abierto."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "No olvidemos que la industria salmonera es una verdadera bomba ecológica, social y sanitaria. La cría intensiva de salmones tiene consecuencias devastadoras: contribuye a las emisiones de gases de efecto invernadero (GEI), provoca sufrimiento animal, impulsa la deforestación, agrava la sobrepesca y saquea los recursos pesqueros de comunidades de otros países. Y eso sin siquiera mencionar las consecuencias que tiene para nuestra salud."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "La paradoja francesa"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Francia ocupa un lugar central en esta historia. Es el mayor consumidor de salmón de Europa y el cuarto a nivel mundial, lo que la convierte en un actor clave de esta industria. Esto también implica una responsabilidad particular en la transformación de estas prácticas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La paradoja es evidente. Según el tipo de omega-3 que se tenga en cuenta (DHA/EPA o ALA), entre el 89% y el 99% de la población francesa presenta niveles insuficientes. Es decir, a pesar del elevado consumo de salmón, una gran parte de la población sigue sin cubrir sus necesidades nutricionales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "De producto de lujo a alimento producido mediante la cría intensiva, el salmón refleja la transformación de nuestros hábitos alimentarios y el auge de toda una industria. Sin embargo, las promesas nutricionales que acompañan su comercialización no parecen corresponderse con la realidad que muestran los datos. Esta contradicción nos invita a cuestionar el consumo excesivo de salmón procedente de la acuicultura industrial. Pero, sobre todo, pone de manifiesto la urgente necesidad de transformar nuestro sistema alimentario."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "¿Quieres conocer mejor cómo funciona la industria salmonera y cuáles son sus impactos? Lee nuestro informe: "
+              },
+              {
+                "type": "link",
+                "text": "El salmón, la bomba rosa de un sistema alimentario agotado",
+                "href": "https://seastemik.org/en/reports"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "SALMO, la increíble historia de un salmón silvestre",
+        "summary": "Un río, un bosque, un estuario, el océano y, finalmente, los glaciares. A lo largo de su vida, los salmones conectan mundos que creemos separados. El cortometraje animado SALMO, seleccionado en numerosos festivales, nos invita a seguir el extraordinario viaje de los salmones silvestres y a descubrir la fragilidad de los ecosistemas que recorren.",
+        "heroImage": "/site/images/to-be-inspired/articles/3/hero.jpg",
+        "heroImageSize": {
+          "width": 1607,
+          "height": 903
+        },
+        "heroImageAlt": "Fotograma del cortometraje animado SALMO",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esta es la historia de un salmón silvestre que abandona su río natal para emprender un largo viaje hacia el océano. En SALMO, seguimos a un joven salmón a lo largo de miles de kilómetros. Ocho minutos de poesía y aventuras extraordinarias. Pero también ocho minutos que nos enfrentan a una realidad preocupante: el alarmante declive de las poblaciones de salmón del Atlántico y el grave deterioro de los ecosistemas que habita y recorre, como consecuencia de las actividades humanas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Dirigido por Paul Pajot y producido por La Méridienne, este cortometraje nos invita a dejar de lado, por un momento, nuestra mirada humana para descubrir el mundo desde la perspectiva de los salmones."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esta elección narrativa permite revelar, entre otras cosas, los vínculos invisibles que conectan los distintos ecosistemas que forman parte del ciclo de vida de los salmones. Porque, aunque a veces no seamos conscientes de ello, todos estos entornos están profundamente interconectados."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/1.jpg",
+            "alt": "Escena del cortometraje animado SALMO",
+            "caption": "SALMO nos invita a descubrir los ecosistemas desde la perspectiva de los salmones."
+          },
+          {
+            "type": "heading",
+            "text": "Un viaje desde la perspectiva de los salmones"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esta película no cuenta únicamente la historia de un salmón: también nos acerca a un mundo vivo del que nosotros mismos formamos parte. La fuerza expresiva de la animación y sus colores vibrantes crean una sensación de conexión entre los distintos entornos naturales y nos ayudan a comprender cómo se articulan los ecosistemas del río, el estuario y el océano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "SALMO también nos permite descubrir fenómenos biológicos que pasan inadvertidos a simple vista y que muchas veces desconocemos, como la esmoltificación (smoltification). A lo largo de su ciclo de vida, los salmones pasan del agua dulce al agua salada. Para adaptarse a este cambio, sus branquias experimentan transformaciones fisiológicas que les permiten regular el equilibrio de sales y eliminar el exceso de sal."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/3/2.jpg",
+            "alt": "Escena del viaje del salmón en SALMO",
+            "caption": "La película nos muestra las distintas etapas del viaje del salmón."
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En este cortometraje, Paul Pajot aborda temas fundamentales desde una mirada sensible y emotiva. Para dar vida a su película, se inspiró, entre otras fuentes, en numerosas investigaciones científicas. A través de esta propuesta, nos invita a comprender que proteger a los salmones no significa únicamente preservar una especie: significa también proteger los ecosistemas de los que depende toda forma de vida, incluida la nuestra."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Reconectar con la naturaleza, una historia a la vez"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Nacido durante el confinamiento de 2020, SALMO se transformó en una aventura colectiva que reunió a artistas, animadores, músicos y especialistas en salmones. Desde entonces, ha sido seleccionado en cerca de veinte festivales y sigue proyectándose como obra artística, pero también como una herramienta de sensibilización ambiental."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esta manera de abordar los desafíos ecológicos desde una perspectiva sensible y emotiva forma parte de un movimiento más amplio que Seastemik apoya y promueve. Reconectar con la naturaleza, una historia a la vez, nos permite comprender mejor el mundo que nos rodea y a cuidar el entorno del que todos formamos parte."
+              }
+            ]
+          },
+          {
+            "type": "youtube",
+            "videoId": "wR759GYF1MU",
+            "title": "SALMO, un cortometraje animado de Paul Pajot"
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "¿Es verdad que los peces tienen mala memoria? ¿Pueden sentir dolor y placer? ¿Son realmente tan silenciosos como se suele creer? Descubre cinco mitos sobre los peces y las evidencias que los desmienten. Una oportunidad para conocerlos mejor y reconocerlos como seres vivos capaces de sentir."
+              }
+            ]
+          ],
+          "articleId": 3
+        }
+      },
+      {
+        "id": 3,
+        "title": "5 mitos sobre los peces (y por qué no son ciertos)",
+        "summary": "Quedarse callado como un pez, tener memoria de pez… Estas expresiones reflejan hasta qué punto subestimamos a los peces y lo poco que sabemos sobre ellos. Adentrémonos en algunas de las ideas preconcebidas más extendidas para conocerlos mejor, y, sobre todo, aprender a respetarlos.",
+        "heroImage": "/site/images/to-be-inspired/articles/4/hero.jpg",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Ilustración de peces en su hábitat natural",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Desde la infancia, vamos construyendo nuestra relación con el mundo animal. Esta relación está marcada por nuestra historia científica, cultural y religiosa. En distintas sociedades y culturas, esto nos lleva a establecer diferencias entre las especies y a clasificarlas en una especie de jerarquía."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En Europa, por ejemplo, desde muy pequeños aprendemos a distinguir entre los animales a los que queremos —como un gatito— y aquellos que comemos, como el salmón. En otras palabras, consideramos a algunos animales como individuos y a otros como simples recursos. Y lo cierto es que los peces que llegan a nuestros platos se encuentran entre los animales hacia los que mostramos menos empatía y consideración."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Sin embargo, los peces, al igual que nosotros y que los gatitos, son seres sintientes. Esto significa que tienen una experiencia propia y subjetiva del mundo: pueden percibir lo que sucede a su alrededor, aprender, recordar y experimentar placer, miedo y dolor. En definitiva, los peces son seres vivos capaces de sentir. Para aprender a reconocerlos y respetarlos como tales, primero debemos cuestionar y dejar atrás muchos de los prejuicios que tenemos sobre ellos."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. \"Los peces solo tienen tres segundos de memoria\""
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/4/1.png",
+            "alt": "Pez en agua clara",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Durante mucho tiempo, hemos subestimado las capacidades cognitivas de los peces. El mito de que solo tienen \"tres segundos de memoria\" es uno de los primeros que debemos desmontar. Los peces son capaces de aprender de sus experiencias y conservar recuerdos durante períodos prolongados, hasta el punto de modificar su comportamiento en función de lo que han aprendido."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Por ejemplo, pueden reconocer su entorno, recordar dónde encontrar alimento, evitar lugares peligrosos y asociar determinadas señales con una recompensa o una amenaza. En algunas especies, la memoria también desempeña un papel fundamental en la orientación y en las relaciones sociales."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. \"Los peces no sienten dolor\""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Que un pez no pueda gritar no significa que no pueda sufrir. Al igual que nosotros, los peces tienen un sistema nervioso y son capaces de detectar estímulos potencialmente dañinos, como las temperaturas extremas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Numerosos estudios demuestran que, ante situaciones dolorosas, los peces modifican tanto su comportamiento como sus respuestas fisiológicas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "No podemos pedirles que nos cuenten lo que sienten (¡aunque nos encantaría!), pero las evidencias científicas muestran que pueden experimentar dolor, miedo, estrés y también placer."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. \"Los peces no comunican\""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Es fácil imaginar que los peces viven en un mundo silencioso, con pocas interacciones entre ellos. Sin embargo, también se comunican. Simplemente utilizan formas de comunicación y códigos diferentes a los nuestros."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Según la especie, pueden recurrir a señales visuales, químicas, acústicas e incluso físicas para transmitir información a otros individuos. Algunas especies, además, viven en grupos con estructuras sociales complejas y establecen relaciones e interacciones muy elaboradas. En definitiva, un animal no necesita parecerse a nosotros para tener una vida social."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. \"Los peces son productos de consumo\""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Decimos \"un perro\", \"un gato\", \"un elefante\", pero hablamos de \"salmón\", \"atún\" o \"trucha\". La forma en que nos referimos a los animales acuáticos que comemos contribuye a invisibilizar su sensibilidad y sus capacidades cognitivas. Hablar de ellos en términos de kilos, porciones o filetes ayuda a normalizar su explotación y a tranquilizar nuestras conciencias."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pero un salmón no es un filete. Una trucha no es una porción. Un pez no es un producto. Antes de terminar en nuestro plato, ese salmón era un ser vivo, un animal sintiente."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. \"Comer pescado es algo natural\""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La imagen del pescador solitario, con su caña y su pequeña embarcación, ha contribuido a instalar la idea de que comer pescado es una práctica ancestral y hasta \"natural\". Sin embargo, vale la pena recordar que, a lo largo de la historia y en distintas regiones del mundo, la alimentación humana ha sido predominantemente vegetal."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esa imagen del pescador solitario poco tiene que ver con la realidad de nuestro sistema alimentario actual. El pescado que encontramos en los comercios proviene, en su gran mayoría, de dos fuentes: o bien lo capturan enormes barcos pesqueros industriales, que arrasan los fondos marinos a lo largo de kilómetros, o bien proviene de sistemas de cría intensiva, tanto en instalaciones acuícolas en el mar como en tierra firme. No estamos hablando, entonces, de pesca artesanal, sino de una verdadera industria."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Detrás de esta industria opera una misma lógica: producir cada vez más, en menos tiempo y al menor costo posible, para abastecer un mercado global. En este modelo, los peces dejan de ser reconocidos como animales y pasan a reducirse a cifras: volúmenes, toneladas, índices de productividad y márgenes de ganancia. Incluso en la acuicultura, el vocabulario que se utiliza dice mucho sobre esta forma de ver a los animales: se habla de \"biomasa\", \"crecimiento\", \"tasa de conversión alimenticia\" y \"rendimiento\". Pero una tonelada de peces no es simplemente una tonelada de biomasa: son cientos o miles de animales, cada uno con su propia capacidad de sentir y experimentar el mundo."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Los salmones son animales fascinantes. Conocer mejor su biología y su forma de vida nos permite comprender que, al igual que nosotros, son seres sintientes, capaces de sentir y experimentar el mundo que los rodea. Descubre 5 cosas que probablemente no sabías sobre los salmones."
+              }
+            ]
+          ],
+          "articleId": 5
+        }
+      },
+      {
+        "id": 4,
+        "title": "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia",
+        "summary": "¿Te encanta la textura y el sabor del salmón? ¡No tienes por qué renunciar a ellos! Seastemik seleccionó cinco alternativas de origen vegetal que no tienen nada que envidiarle al salmón. Y te lo aseguramos: ¡no encontrarás tofu en esta lista!",
+        "heroImage": "/site/images/to-be-inspired/articles/5/hero.jpg",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Alternativas vegetales al salmón",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Te encanta la textura y el sabor del salmón? ¡No tienes por qué renunciar a ellos! Seastemik seleccionó cinco alternativas de origen vegetal que no tienen nada que envidiarle al salmón. Y te lo aseguramos: ¡no encontrarás tofu en esta lista!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. La zanahoria ahumada: un clásico que nunca falla"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/hero.png",
+            "alt": "Zanahorias ahumadas",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En pocos años, la zanahoria ahumada se convirtió en una de las alternativas vegetales más populares al salmón ahumado. ¿La razón? Su color, por supuesto; su textura suave y tierna después de la cocción y, sobre todo, su capacidad a absorber los sabores de los marinados. ¡Una verdadera delicia!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para prepararla: Empieza cortando las zanahorias en láminas muy finas. Luego, déjalas marinar en una mezcla generosa de salsa de soya, jugo de limón, eneldo y sal ahumada con madera de haya o algas. Lleva las zanahorias al refrigerador y déjalas reposar durante al menos 24 horas. A la hora de servir, coloca las láminas sobre una tostada, en un bagel o sobre unos blinis. ¡Te van a encantar!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. La sandía: una fruta perfecta para preparar sushis y poké"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/1.png",
+            "alt": "Sandía marinada",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Sí, sí, ¡leíste bien: sandía! Cortada en rodajas gruesas, marinada y luego asada o ahumada, puede convertirse en un sorprendente sustituto del pescado. Según cómo se prepare, puede reemplazar tanto al salmón como al atún. Queda especialmente bien en sushi, makis, sashimi, chirashi, bowls de poké o tartares. De hecho, ¡hasta algunos restaurantes japoneses ya se están sumando a esta tendencia!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para prepararla: Corta la sandía en pequeños rectángulos. Prepara un marinado con salsa de soya, aceite de sésamo, vinagre de arroz y trocitos de alga nori. Coloca los trozos de sandía en la mezcla y déjalos marinar en el refrigerador durante al menos dos horas. Luego, escúrrelos y colócalos en una bandeja para horno. Hornéalos a 180 °C durante 30 a 45 minutos. Déjalos enfriar por completo y sírvelos sobre arroz con vinagre. ¡Tus sushis vegetales están listos!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. El salmón vegetal, una alternativa muy convincente"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/2.jpg",
+            "alt": "Salmón vegetal",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quizás ya lo hayas visto en algunas tiendas. El salmón vegetal es una alternativa que busca imitar lo más fielmente posible la apariencia, la textura y el sabor del salmón. Se comercializa en distintos formatos: en filetes, en cubos e incluso ahumado. El resultado puede variar bastante de una marca a otra. Es una opción ideal para quienes quieren reducir su consumo de pescado sin dejar de disfrutar de los sabores y las preparaciones que tanto disfrutan."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Un consejo: Si buscas un buen salmón vegetal ahumado, Marie Laforêt, referente de la gastronomía vegetal en Francia y autora del libro Seafood Vegan (Solar, 2026), recomienda elegir las versiones ahumadas con aroma a madera de haya."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Las algas, los superalimentos del océano"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/3.jpg",
+            "alt": "Algas marinas",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Si lo que buscamos en el salmón es ese sabor a mar y su aporte de omega-3, ¿por qué no ir directamente a la fuente? Nori, dulse, wakame, lechuga de mar… Las algas aportan un delicioso toque marino a todo tipo de preparaciones. Ya sea en hojuelas o en láminas, combinan especialmente bien con ingredientes de sabor suave, como el tofu, los frijoles blancos o el arroz."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para prepararla: Desmenuza el tofu en un recipiente grande. Añade los frijoles blancos y aplástalos con un tenedor hasta obtener una mezcla homogénea. Incorpora las algas en hojuelas, un chorrito de aceite de oliva y el jugo de un limón. Agrega una pizca de sal y pimienta, y mezcla bien todos los ingredientes. Lleva la preparación al refrigerador y déjala reposar durante al menos dos horas. Después, solo queda untarla sobre una buena rebanada de pan tostado y ¡a disfrutar!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. ¿Y si la mejor alternativa fuera animarse a descubrir nuevas recetas?"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/5/4.png",
+            "alt": "Platos vegetales diversos",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Quizás esta sea la alternativa más interesante de todas. En lugar de empeñarnos en encontrar un equivalente vegetal del salmón, podemos aprovechar este cambio de hábitos para descubrir nuevos ingredientes y explorar otras combinaciones de sabores. Porque la cocina vegetal no consiste simplemente en sustituir un ingrediente por otro. También nos invita a ampliar nuestros horizontes culinarios, probar nuevos sabores y reinventar nuestros platos favoritos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para inspirarte: Anímate a descubrir nuevas recetas en libros como Cuisine vegan petit budget, de Marie Laforêt (editorial Solar); Plats veggie du monde, de Stéphanie de Turckheim (editorial Hachette); y Ma cuisine vegan pour tous les jours, de Stéphanie Tresch Medici (editorial La Plage)."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": ""
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "title": "5 cosas que debes saber sobre los salmones (en vez de comértelos)",
+        "summary": "Los salmones son animales fascinantes. Conocer mejor sus hábitos, su biología y su forma de vida nos permite entender que, al igual que nosotros, son seres sintientes.",
+        "heroImage": "/site/images/to-be-inspired/articles/6/hero.jpg",
+        "heroImageSize": {
+          "width": 5760,
+          "height": 3840
+        },
+        "heroImageAlt": "Salmón en su hábitat natural",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Los salmones son animales fascinantes. Conocer mejor sus hábitos, su biología y su forma de vida nos permite entender que, al igual que nosotros, son seres sintientes."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "1. Las crías de salmón se alimentan por sí solas"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/1.jpg",
+            "alt": "Alevines de salmón",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Al nacer, las crías de salmón (conocidas como alevines) tienen un pequeño saco vitelino adherido al vientre. Este contiene todos los nutrientes que necesitan para crecer durante sus primeras etapas de vida, sin tener que buscar alimento por su cuenta. Así pasan sus primeros meses: protegidas y tranquilas en el lecho de su río natal, junto a sus hermanos y hermanas."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "2. Los salmones recorren maratones sin GPS"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/2.jpg",
+            "alt": "Salmón nadando en el océano",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Los salmones son peces que pasan una parte de su vida en los ríos y otra en el mar. Al menos una vez en su vida, emprenden una migración extraordinaria que los lleva a recorrer enormes distancias a través del océano. Para que te hagas una idea, algunas poblaciones de salmón viajan desde las costas de España hasta Groenlandia. Pero ¿cómo saben adónde ir? ¿Cómo consiguen orientarse en medio de tanta inmensidad? A lo largo de su recorrido, los salmones utilizan distintas señales para orientarse: las estrellas, el sol, el campo magnético terrestre y diferentes referencias visuales y olfativas. Su extraordinario sentido del olfato, por ejemplo, les permite reconocer y encontrar el río donde nacieron cuando llega el momento de regresar. Para conseguirlo, se guían por una especie de huella química propia de cada río, que aprenden a reconocer durante sus primeras etapas de vida."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "3. Los salmones se transforman"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/6/3.jpg",
+            "alt": "Transformación del salmón",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Antes de emprender su gran viaje hacia el océano, los salmones experimentan una transformación extraordinaria. Para adaptarse al agua salada, su organismo, hasta entonces acostumbrados al agua dulce de los ríos, atraviesa importantes cambios fisiológicos. Por ejemplo, sus branquias desarrollan la capacidad de eliminar el exceso de sal. Este proceso, conocido como esmoltificación, implica cambios tanto físicos como de comportamiento. Mientras viven en los ríos, los salmones jóvenes suelen llevar una vida más bien solitaria. Sin embargo, a medida que se preparan para adentrarse en el mar, comienzan a agruparse y a desplazarse en bancos, mostrando nuevas formas de comportamiento colectivo."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "4. Los salmones no practican la penetración"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cuando regresan al río, algunas hembras de salmón excavan nidos entre las piedras del lecho del río. Cada una puede poner miles de huevos en un solo día. Una vez que los han depositado, abren la boca: esta es la señal para que los machos se acerquen y liberen su esperma sobre los huevos para fecundarlos. En algunos casos, se trata de machos que las hembras han elegido durante el cortejo. En otros, aparecen machos que aprovechan la ocasión sin haber participado en el cortejo ni en la larga migración de regreso al río. Los científicos los llaman sneaker males (o \"machos oportunistas\"). Se acercan en el momento de la fecundación y liberan su esperma sobre los huevos, aprovechando la oportunidad de reproducirse."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "5. Los salmones también pueden experimentar estados similares a la depresión"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En las instalaciones de cría intensiva, donde las interacciones agresivas son frecuentes y escapar resulta prácticamente imposible, algunos salmones pueden desarrollar un estado de profunda inhibición. Dejan de alimentarse, permanecen inmóviles y presentan alteraciones fisiológicas y hormonales asociadas al estrés crónico y a estados depresivos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esta información se basa en el video \"¿Quiénes son los salmones?\" (Qui sont les saumons), publicado en 2024 en el canal de YouTube Cervelle d'oiseau y presentado por Sébastien Moro, divulgador científico."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Los salmones pasan su vida conectando mundos que muchas veces creemos separados. El cortometraje de animación SALMO, dirigido por Paul Pajot, nos invita a descubrir el extraordinario viaje de los salmones salvajes y la fragilidad de los ecosistemas por los que transitan."
+              }
+            ]
+          ],
+          "articleId": 2
+        },
+        "heroLayout": "stacked"
+      },
+      {
+        "id": 6,
+        "title": "Cuando una cadena francesa de panaderías decide retirar el salmón de su menú",
+        "summary": "En colaboración con Seastemik, Boulangerie Landemaine se convirtió en 2025 en la primera cadena de panaderías en eliminar el salmón de todos sus establecimientos. Una decisión con la que busca contribuir a la protección de los océanos y de todos los seres vivos que dependen de ellos.",
+        "heroImage": "/site/images/to-be-inspired/articles/7/hero.jpg",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Panadería con opciones vegetales",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "\"Al principio, nuestros equipos se mostraban bastante reticentes, pero hoy nadie cuestiona esta decisión\", nos cuenta Emma Bonvento, responsable de comunicación de Boulangerie Landemaine, una reconocida cadena con 19 establecimientos en Francia y Japón."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En Seastemik, entendemos perfectamente de dónde venían esas primeras reticencias. En las cadenas de panaderías y pastelerías que ofrecen comida para llevar (el 96% de ellas), los sándwiches de salmón ahumado suelen estar entre los productos más vendidos. Lo mismo ocurre con los canapés de salmón en los servicios de catering."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Boulangerie Landemaine también ofrece servicios de catering para empresas. Hasta 2025, los canapés de salmón figuraban entre los productos más solicitados. Por eso, dejar de ofrecer salmón suponía todo un desafío para la cadena."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una decisión acertada"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Diseñar un menú no es cualquier cosa. Incluir un alimento en la oferta de un establecimiento significa promover su consumo y, por lo tanto, contribuir a su producción. También implica asumir una responsabilidad frente a quienes confían en nosotros y eligen nuestros productos. Sin embargo, en 2026, ofrecer salmón en un sándwich, una quiche o cualquier otro plato significa poner al alcance de los clientes un producto que puede contener residuos de medicamentos y microplásticos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Y es que el 98% del salmón que se consume en Francia proviene de la acuicultura. Estos peces suelen criarse en condiciones que comprometen gravemente su bienestar. Además, la pesca de pequeños peces para alimentar a los salmones reduce la disponibilidad de alimento para numerosas comunidades y ejerce una fuerte presión sobre los ecosistemas marinos. A esto se suman otros impactos ambientales de la salmonicultura industrial, como la contaminación y la deforestación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Frente a todas estas consecuencias, Boulangerie Landemaine decidió dar el paso y dejar de ofrecer salmón en sus establecimientos. Mientras tanto, gran parte del sector sigue apostando, día tras día, por mantenerlo como un ingrediente habitual en sus menús."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una decisión audaz"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Eliminar el salmón es un primer paso, pero también es fundamental ofrecer alternativas. Y en eso, Boulangerie Landemaine fue mucho más allá: por cada producto con salmón que retiró de su menú, incorporó una nueva opción vegetariana o vegana. Así, el sándwich de salmón dio paso a uno de verduras asadas, mientras que la quiche de salmón fue reemplazada por una versión con verduras y queso de cabra."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/1.jpg",
+            "alt": "Opciones vegetales en la panadería",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Hoy, las opciones vegetarianas y veganas representan el 40% de la oferta de comida para llevar de la cadena, tanto en verano como en invierno, y generan más de un tercio de sus ventas. El sándwich de verduras asadas, incorporado al menú de verano, ha tenido una excelente acogida y se vende tan bien como algunas de las opciones con carne. ¡Una gran victoria para los salmones, el océano y todos los seres vivos que dependen de él!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una decisión que dio sus frutos"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En el servicio de catering, los resultados son aún más sorprendentes. Las opciones vegetarianas representan más de la mitad de las ventas. Una señal de que las empresas pueden contribuir cada vez más a la transición alimentaria a través de los eventos que organizan."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Y hay otra buena noticia: Boulangerie Landemaine ha logrado reducir sus costos de producción en aproximadamente un 30% al pasar de una oferta tradicional a una oferta vegetal. Un ejemplo concreto es la quiche de puerros, cuyo costo de producción es inferior al de la antigua quiche de salmón y espinacas, que ya no forma parte del menú. Un argumento de peso para convencer a quienes todavía tienen dudas sobre esta iniciativa, tanto dentro de la propia empresa como entre otros actores del sector."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/7/2.jpg",
+            "alt": "Equipo de la panadería",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Y qué pasa con los clientes? En Seastemik, acompañamos a los actores del sector gastronómico en su transición y trabajamos para que sus clientes también se sumen al cambio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La alianza entre Seastemik y Boulangerie Landemaine se dio a conocer, entre otros canales, a través de las redes sociales. El video publicado junto a Esther Dufaure, cofundadora de Seastemik, y Rodolphe Landemaine, fundador de la cadena, alcanzó cerca de 15.000 reproducciones. Una segunda publicación, compartida unas semanas más tarde, tuvo una acogida similar. Y lo más sorprendente: ¡las reacciones negativas fueron muy pocas!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Una apuesta ganadora"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Casi un año y medio después, queda claro que lo que al principio parecía un riesgo económico terminó convirtiéndose en una apuesta ganadora. No hubo vuelta atrás: las opciones vegetales se hicieron un lugar en el menú y este compromiso incluso se convirtió en un motivo de orgullo para la cadena."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Este ejemplo demuestra que existe otro camino posible: el de los establecimientos que se atreven a romper con las prácticas habituales del sector y que, gracias a decisiones bien pensadas, consiguen resultados extraordinarios. Entonces, ¿qué estamos esperando para pedirles a nuestros restaurantes, servicios de catering y panaderías que den el paso y dejen de ofrecer salmón?"
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "heroLayout": "stacked"
+      },
+      {
+        "id": 7,
+        "title": "¿El equipo de Seastemik sigue comiendo salmón?",
+        "summary": "Spoiler: no. Cada uno, a su manera y a su propio ritmo, descubrió que uno de los mayores poderes que tenemos para construir un mundo y un futuro mejores está en nuestro plato.",
+        "heroImage": "/site/images/to-be-inspired/articles/8/hero.png",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Equipo de Seastemik",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Spoiler: no. Cada uno, a su manera y a su propio ritmo, descubrió que uno de los mayores poderes que tenemos para construir un mundo y un futuro mejores está en nuestro plato."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Te contamos cuándo, cómo y por qué cada integrante del equipo decidió dejar de comer salmón."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Seis personas en el equipo, seis historias diferentes. Algunas dejaron de comer salmón hace veinte años; otras, hace apenas unos meses. Algunas tuvieron una revelación que lo cambió todo; otras necesitaron más tiempo para llegar a esa decisión."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Esther, cofundadora y codirectora de Seastemik, tenía una relación muy diferente con los peces. Viene de una familia de pescadores y, desde muy pequeña, creció considerando a los peces como alimento. Pero hubo una experiencia que lo cambiaría todo. En 2013, estaba de viaje en Marruecos con unas amistades. Compraron peces que todavía estaban vivos para preparar el almuerzo. Unos minutos después, Esther sintió \"el sabor de la muerte\" en su boca. Ese día comprendió que prefería ver a los peces nadando libres antes que servidos en su plato."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "¿Cuál fue el momento que lo cambió todo?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para Maxime, cofundador y codirector, la toma de conciencia llegó durante una misión con Sea Shepherd. En 2020, se encontraba en alta mar, frente a las costas de África Occidental, cuando presenció una operación de pesca industrial. \"Fue impactante ver cómo sacaban del mar a los animales atrapados en las redes. Muchos de ellos terminaban siendo arrojados de nuevo al agua, ya muertos y sin ninguna posibilidad de sobrevivir\". Al regresar de aquella misión, decidió dejar de comer pescado por completo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Charlotte, responsable de alianzas corporativas, por su parte, fue cambiando poco a poco su manera de relacionarse con los animales. Hasta que un día, frente a un filete de lenguado, tuvo una revelación. \"Ya no veía un filete, veía al animal, su cuerpo, la vida que le habían arrebatado\"."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para Fleur, directora de comunicación, la transición hacia una alimentación sin productos de origen animal también fue progresiva. En este proceso, el apoyo de su esposa, vegana desde hace casi quince años, fue fundamental. Conocerla le permitió descubrir otra forma de cocinar, pero, sobre todo, empezar a vivir cada vez más en coherencia con sus valores."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/1.jpg",
+            "alt": "Equipo de Seastemik compartiendo comida",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Marie, responsable de campañas, empezó por reducir su consumo de carne, después de escuchar una y otra vez a sus amigas contarle como la ganadería intensiva destruye a los animales y al mundo que compartimos. Después de investigar un poco, descubrió reportajes y documentales sobre la ganadería, la pesca y el estado de los océanos. Desde entonces, los peces quedaron definitivamente fuera del menú. Unos años después de haber dejado de comer pescado, volvió a sentir antojo de salmón curado al estilo gravlax. Finalmente, decidió darse el gusto y probar un poco. ¿El veredicto? \"Sentí como si tuviera el Puerto Viejo de Marsella a las siete de la mañana dentro de la boca\". Desde entonces, no volvió a probarlo. ¡Y esta vez, para siempre!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Diane, responsable de comunicación digital, tuvo una experiencia muy diferente: no hubo ningún momento revelador. Creció en una familia donde el salmón simplemente desapareció de la mesa después de que su padre viera un documental sobre los impactos negativos de la acuicultura. Ya de adulta, vio Seaspiracy, el contundente documental de Ali Tabrizi. A partir de ahí, no le quedaron dudas: ¡se acabó el salmón!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "¿Y entonces, qué comemos?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Es una de las primeras preguntas que surgen cuando hablamos de dejar de comer salmón: pero, en la práctica, ¿qué comemos en su lugar? Nuestra respuesta es unánime: ¡mucho más de lo que imaginamos!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Algunas personas del equipo quisieron encontrar alternativas que les permitieran mantener sus hábitos alimentarios. Es el caso de Marie, que probó distintas alternativas vegetales al salmón, productos que buscan imitar su sabor y textura. \"Las alternativas vegetales pueden ser una buena forma de hacer la transición y dejar de comer pescado\", explica, aunque insiste que es importante darse tiempo."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/8/2.jpg",
+            "alt": "Platos vegetales diversos",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para otras personas, fue una oportunidad para ampliar sus horizontes culinarios. Charlotte empezó a explorar recetas vegetales que recuperaban los sabores y las combinaciones de algunos de sus platos favoritos. Para Fleur, el mayor desafío eran los sushis. Pero, al dejar de pedir siempre \"el menú de salmón\", descubrió nuevos platos y sabores que probablemente nunca habría probado de otra manera."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Algo parecido le pasó a Esther, que sigue disfrutando de los sabores del mar. Empezó a explorar otras formas de disfrutarlos, especialmente a través de ingredientes y tradiciones gastronómicas que hasta entonces conocía poco."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "¿Y qué pasa con las comidas de celebración?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Seamos sinceros: el salmón tiene la mala costumbre de volver a aparecer en la mesa cada vez que hay una celebración con familiares o amistades."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Varias personas del equipo tuvieron que encontrar su propia manera de adaptarse a estas situaciones. Marie, por ejemplo, desarrolló su propia estrategia. No quería ni pensar en pedirles a sus seres queridos que prepararan algo diferente para ella, así que decidió tomar las riendas y empezar a cocinar para las ocasiones especiales. \"Siempre me las ingenio para preparar platos que les haga agua la boca a todos\"."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Cuando se trata de compartir la mesa con familiares, amistades o sus parejas, Diane prefiere hablar del tema con anticipación para encontrar una solución que funcione para todas las personas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Charlotte, por su parte, recuerda que también es importante saber poner límites: podemos explicar nuestras decisiones, pero no tenemos por qué convertirnos en portavoces de la transición alimentaria cada vez que nos sentamos a la mesa con nuestra familia."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Entonces, ¿cómo dar el primer paso?"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "No existe una única manera de hacerlo. Algunas personas preferirán empezar dejando de comer salmón durante un día, luego una semana o incluso un mes. Otras tendrán una revelación y decidirán dejar de comerlo de un día para otro. Lo más importante es encontrar una manera de hacerlo que puedan mantener a largo plazo, sin presionar. Desde Seastemik, compartimos algunos consejos para dar el primer paso:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "<strong>Informarse.</strong> Para eso existe PinkBombs. También pueden consultar reportajes como El salmón, nuevo rostro de la ganadería industrial (Arte, 2026), documentales como Seaspiracy (Netflix, 2021) y libros como Un veneno llamado salmón, de Maxime Carsel (edición de tapa blanda, 2025).",
+              "<strong>Identificar qué nos cuesta dejar atrás.</strong> ¿El sabor? ¿La textura? ¿Los hábitos? ¿Las comidas familiares? ¿Las cuestiones nutricionales? Para cada obstáculo, existe una solución.",
+              "<strong>Buscar apoyo.</strong> Hablar del tema con personas cercanas, cocinar en compañía, intercambiar recetas o proponer pequeños desafíos en grupo puede hacer que la transición sea mucho más fácil. Como resume Esther: \"Informarse, compartir las inquietudes con las personas de nuestro entorno\" y, por qué no, \"proponernos desafíos con amistades para pasar ciertos períodos sin comer salmón\".",
+              "<strong>Y, sobre todo, apostar por el placer.</strong> Probar nuevas recetas, descubrir ingredientes diferentes, seguir disfrutando de los sabores del mar de otras maneras y compartir nuestros platos con quienes nos rodean... Para Charlotte, se trata de \"abrirse a nuevos platos y ampliar nuestro repertorio culinario\", en lugar de vivir el cambio como una limitación."
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "heroLayout": "stacked"
+      },
+      {
+        "id": 8,
+        "title": "George Ka, los salmones y los fantasmas",
+        "summary": "En el Théâtre de la Ville de París, el artista presentó en 2026 Salmo Salar, un concierto expandido que toma a los peces migratorios como punto de partida para explorar nuestras identidades y reflexionar sobre nuestra relación con el mundo vivo.",
+        "heroImage": "/site/images/to-be-inspired/articles/9/hero.jpg",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Concierto Salmo Salar",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Qué tienen en común un salmón y un fantasma? Sí, piénsenlo bien: tienen algo en común. El salmón cruza el océano y luego regresa al río donde nació. Dicho de otro modo, tanto los peces como los espíritus parecen tener cierta inclinación a volver a los lugares de sus orígenes. Dos trayectorias marcadas por el regreso y el sentido de pertenencia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Este paralelismo es el hilo conductor de Salmo Salar, un espectáculo escrito y dirigido por George Ka, escritora y cantante reconocida por sus textos poéticos y comprometidos. A través de la música, Salmo Salar nos invita a reflexionar sobre nuestras identidades, nuestras historias —las que transmitimos y las que olvidamos— y, sobre todo, sobre los vínculos que nos unen a los demás seres vivos."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Conectar con la vida, conectar con los salmones"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Y si los salmones, que solemos ver únicamente como alimento, fueran también seres vivos con una historia propia, comportamientos, un entorno y un recorrido vital? A lo largo de más de una hora, la música, los diálogos y la poesía se entrelazan para invitarnos, con humor y ternura, a cuestionar nuestra mirada sobre el mundo vivo y nuestros hábitos de consumo."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/9/1.jpg",
+            "alt": "Escena del concierto Salmo Salar",
+            "caption": ""
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pero ¿qué dice de nosotros nuestra relación con los salmones? Esa es una de las preguntas que George Ka pone sobre la mesa. Al llevar a estos peces al escenario y dedicarles un espacio y un tiempo propios, la artista también nos invita a mirarlos de otra manera: más allá de nuestros platos y tenedores, como seres que existen por sí mismos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Salmo Salar es una de esas obras que nos invitan a cuestionar nuestra manera de convivir con los demás animales, tanto terrestres como marinos. Después de verla, algo cambia en nuestra mirada: los salmones dejan de ser simples alimentos para revelarse como lo que son, seres vivos y sintientes."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left",
+        "relatedSection": {
+          "title": "Para profundizar",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "¿Te encanta la textura y el sabor del salmón? ¡No tienes por qué renunciar a ellos! Seastemik seleccionó cinco alternativas de origen vegetal que no tienen nada que envidiarle al salmón. Y te lo aseguramos: ¡no encontrarás tofu en esta lista!"
+              }
+            ]
+          ],
+          "articleId": 4
+        }
+      },
+      {
+        "id": 9,
+        "title": "11 organizaciones que trabajan para devolverle la vida al océano",
+        "summary": "El océano no necesita solamente que lo \"salvemos\": necesita recuperar su vitalidad. En todo el mundo, colectivos, científicos y ciudadanos trabajan para transformar nuestra relación con el océano y construir otras formas de protegerlo.",
+        "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
+        "heroImageSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "heroImageAlt": "Océano saludable",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "El océano no necesita solamente que lo \"salvemos\": necesita recuperar su vitalidad. En todo el mundo, colectivos, científicos y ciudadanos trabajan para transformar nuestra relación con el océano y construir otras formas de protegerlo. Un recorrido por 11 organizaciones que, cada una a su manera, están impulsando este cambio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En todo el mundo, numerosas organizaciones trabajan para proteger los ecosistemas marinos. Algunas actúan directamente sobre el terreno; otras investigan, documentan, sensibilizan a la opinión pública o interpelan a quienes toman las decisiones. Algunas centran sus esfuerzos en una especie o un ecosistema en particular, mientras que otras defienden una visión más amplia e integral del océano. Esta selección, por supuesto, está lejos de ser exhaustiva."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Seastemik</strong> nació de una convicción sencilla: para tener un océano lleno de vida, también necesitamos cuestionar el lugar que les damos a los animales marinos en nuestros platos. A través de nuestras campañas —como la movilización contra el megaproyecto de cría intensiva de salmones <strong>Pure Salmon</strong> en Gironda, Francia— y de nuestras investigaciones —como el proyecto PinkBombs que estás leyendo en este momento—, buscamos visibilizar el impacto devastador de nuestro sistema alimentario en los ecosistemas marinos. También queremos acompañar a personas y empresas en la transformación de sus hábitos alimentarios, sin culpas y sin renunciar al placer de comer."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Bloom</strong> lucha, entre otras causas, contra las prácticas de pesca destructivas. También desarrolla una importante labor de investigación, incidencia política y movilización ciudadana para proteger los ecosistemas marinos y a las comunidades que dependen de ellos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Ethic Océan</strong> trabaja en estrecha colaboración con profesionales del sector pesquero y de los productos del mar —chefs, pescaderos, distribuidores y empresas de alimentación colectiva— para transformar sus prácticas de compra. A partir del conocimiento científico, les ayuda a tener en cuenta el estado de las poblaciones de peces y el impacto de los métodos de pesca y de cría, con el objetivo de reducir la presión sobre las especies más amenazadas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>L214</strong> defiende el bienestar animal, incluidos los peces. A través de su trabajo, contribuye a visibilizar aspectos de la cría de animales acuáticos que siguen siendo poco conocidos y a cuestionar el lugar que ocupan los peces en nuestro sistema alimentario."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Longitude 181</strong> defiende una idea fundamental: proteger el océano empieza por conocer mejor y respetar a quienes lo habitan. Fundada por buceadores y científicos, la organización promueve una relación más respetuosa con la vida marina, especialmente a través de su Carta Internacional del Buceador Responsable. También impulsa acciones de sensibilización e incidencia para proteger a los tiburones, los cetáceos y otros grandes animales marinos, que con demasiada frecuencia son víctimas de prejuicios y de la pesca."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Planète Mer</strong> trabaja para recuperar un equilibrio duradero entre los ecosistemas marinos y las actividades humanas. Para ello, desarrolla proyectos concretos sobre el terreno en torno a tres grandes ejes: proteger la biodiversidad marina junto con la ciudadanía, promover una gestión sostenible de los recursos pesqueros junto con las comunidades pesqueras y restaurar los ecosistemas degradados en colaboración con las poblaciones locales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/en/our-members-2/"
+              },
+              {
+                "type": "text",
+                "text": " reúne a ONG, institutos de investigación, gobiernos locales y actores económicos en torno a un objetivo común: lograr que se reconozca el papel fundamental del océano en la regulación del clima. Creada antes de la COP21, la plataforma elabora recursos científicos accesibles y lleva la voz del océano a las negociaciones climáticas internacionales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Pleine Mer</strong> defiende la pesca artesanal y de pequeña escala frente a la creciente industrialización del sector. La organización apoya a quienes viven de la pesca artesanal, denuncia las prácticas más destructivas, como la pesca de arrastre industrial, y reclama un acceso más justo a los recursos marinos, tanto en Francia como a escala europea."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Surfrider</strong> trabaja en distintos frentes para proteger el océano y las zonas costeras. Sus principales líneas de acción incluyen combatir la contaminación, especialmente por plásticos; proteger la calidad del agua; preservar los ecosistemas costeros y promover la adaptación al cambio climático. Para impulsar cambios tanto en las prácticas como en las políticas públicas, la organización se apoya en distintas herramientas: el conocimiento científico, la educación, la movilización ciudadana y la incidencia política."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Under The Pole</strong> explora algunas de las zonas menos conocidas del océano, desde las aguas polares hasta las llamadas zonas mesofóticas, situadas entre los 30 y los 200 metros de profundidad. A través de expediciones de larga duración que combinan buceo, investigación científica e innovación tecnológica, la organización estudia, entre otras cosas, los corales de aguas profundas y su papel como refugio frente al calentamiento global. Luego comparte sus descubrimientos con el público en general y las comunidades educativas para dar a conocer estos ecosistemas, que siguen siendo en gran medida desconocidos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Welfarm trabaja por la protección de los animales de granja, y los peces también forman parte de ellos. La asociación impulsa campañas para que su bienestar sea por fin tomado en cuenta, especialmente en la acuicultura, tanto en las condiciones de cría como durante el transporte y el sacrificio. Su labor contribuye a recordar que los peces son seres sintientes, demasiado a menudo ignorados por la normativa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Para descubrir muchas otras organizaciones, consulta las 185 ONG y movimientos de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Coalition Océans</strong>",
+                "href": "https://www.oceancoalition.org/en"
+              },
+              {
+                "type": "text",
+                "text": ", o las 115 organizaciones miembros de la "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Plateforme Océan et Climat</strong>",
+                "href": "https://ocean-climate.org/en/our-members-2/"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "heroTextSide": "left"
+      }
+    ]
   }
 }
