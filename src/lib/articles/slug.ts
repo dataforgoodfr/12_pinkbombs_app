@@ -17,7 +17,7 @@ const localizedArticleTitles: Record<number, Record<"en" | "fr" | "es", string>>
   4: {
     en: "5 salmon alternatives that are game-changer",
     fr: "5 alternatives aux saumons qui changent (déjà) la donne",
-    es: "5 alternativas al salmón que ya están haciendo la diferencia",
+    es: "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia",
   },
   5: {
     en: "5 things to know about salmon (instead of eating them)",
@@ -27,7 +27,7 @@ const localizedArticleTitles: Record<number, Record<"en" | "fr" | "es", string>>
   6: {
     en: "When a French bakery chain takes salmon off its menu",
     fr: "Quand une enseigne de boulangerie française retire les saumons de son menu",
-    es: "Cuando una cadena francesa de panaderías decide sacar el salmón de su menú",
+    es: "Cuando una cadena francesa de panaderías decide retirar el salmón de su menú",
   },
   7: {
     en: "Does the Seastemik team still eat salmon?",
