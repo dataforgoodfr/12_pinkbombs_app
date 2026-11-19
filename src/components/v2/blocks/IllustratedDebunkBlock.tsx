@@ -8,6 +8,7 @@ export interface IllustratedDebunkProps {
   imageAlt: string;
   catchPhrase: string;
   imageExtension?: string;
+  imagePath?: string;
 }
 
 export interface IllustratedDebunkBlockProps extends IllustratedDebunkProps {
@@ -20,11 +21,13 @@ const IllustratedDebunkBlock = ({
   reality,
   imageAlt,
   imageExtension,
+  imagePath,
   catchPhrase,
   actNumber,
   index,
 }: IllustratedDebunkBlockProps) => {
   const t = useTranslations("site.toUnderstand");
+  const imageSrc = imagePath || `/site/images/to-understand/block${actNumber}-${index + 1}.${imageExtension || "svg"}`;
 
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 md:gap-16 text-black">
@@ -44,7 +47,7 @@ const IllustratedDebunkBlock = ({
       <div className="flex flex-col gap-5">
         <Image
           loading="lazy"
-          src={`/site/images/to-understand/block${actNumber}-${index + 1}.${imageExtension || "svg"}`}
+          src={imageSrc}
           width={606}
           height={387}
           alt={imageAlt}

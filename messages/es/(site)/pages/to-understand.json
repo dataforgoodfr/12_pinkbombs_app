@@ -1,26 +1,97 @@
 {
   "toUnderstand": {
     "meta": {
-      "title": "[TODO: Spanish translation]"
+      "title": "Informarse"
     },
     "intro": {
-      "caption": "[TODO: Spanish translation]",
-      "title": "[TODO: Spanish translation]",
-      "imageAlt": "[TODO: Spanish translation]"
+      "caption": "Desmontando los mitos del salmón",
+      "title": "Detrás del marketing rosa se esconden una cruda realidad y falsas soluciones",
+      "imageAlt": "Imagen ilustrativa que representa la industria, arrastreros y peces criados en piscifactorías."
     },
     "tags": {
-      "block1": "[TODO: Spanish translation]",
-      "block2": "[TODO: Spanish translation]",
-      "block3": "[TODO: Spanish translation]"
+      "block1": "Análisis",
+      "block2": "Impactos",
+      "block3": "Ideas preconcebidas"
     },
     "debunk": {
       "block1": {
-        "title": "[TODO: Spanish translation]",
-        "items": []
+        "title": "Los mitos que la industria salmonera quiere que creamos",
+        "items": [
+          {
+            "falseBelief": "\"El salmón es un clásico de nuestra gastronomía.\"",
+            "reality": "La industria ha hecho todo lo posible para convertir al salmón en uno de los pescados favoritos de nuestra mesa.",
+            "paragraph": "<strong>Hace apenas cuarenta años, comer salmón era algo poco habitual y bastante caro.</strong> Su popularización es el resultado de una estrategia industrial y comercial cuidadosamente diseñada para inundar el mercado con grandes volúmenes, reducir los precios y promover el consumo de salmón ahumado durante todo el año, y no solo en las fiestas de fin de año.\n\n<strong>Nuestro gusto por el salmón se ha construido poco a poco, al ritmo de esta estrategia comercial.</strong>",
+            "imageAlt": "Gráfico que muestra la producción exponencial de salmón de piscifactoría en varios países del mundo.",
+            "imageExtension": "png",
+            "catchPhrase": "La producción de salmón de piscifactoría no deja de crecer."
+          },
+          {
+            "falseBelief": "\"Hay que comer pescado para obtener omega-3.\"",
+            "reality": "Los omega-3 no se originan en los peces: provienen de las algas.",
+            "paragraph": "<strong>En realidad, los omega-3 son producidos originalmente por microalgas marinas.</strong> El zooplancton los incorpora al alimentarse de ellas, los peces pequeños los acumulan al comer zooplancton y, finalmente, el salmón los obtiene al alimentarse de esos peces. El salmón no produce omega-3: simplemente los acumula a través de su alimentación. Desde que las harinas de pescado —ingredientes costosos— han sido sustituidos en parte por aceites vegetales en los alimentos para salmones, el contenido de omega-3 de su carne ha disminuido considerablemente. <strong>Hoy, algunas empresas del sector incluso incorporan aceite de algas en los alimentos para salmones para recuperar parte de esos valiosos omega-3.</strong>",
+            "imageAlt": "Ilustración que muestra a una persona comiendo salmón que a su vez se alimenta de algas.",
+            "catchPhrase": "Los omega-3 no se originan en los peces: provienen de las algas."
+          },
+          {
+            "falseBelief": "\"El salmón es bueno para la salud.\"",
+            "reality": "La carne del salmón contiene numerosos contaminantes.",
+            "paragraph": "Los peces que se utilizan para producir harina y aceite de pescado acumulan una gran variedad de contaminantes, entre ellos sustancias cuyo uso está prohibido desde hace décadas. A través de su alimentación, los salmones incorporan estos contaminantes y los acumulan en su carne. <strong>En el caso de las dioxinas, los productos del mar representan una de las principales fuentes de exposición para las personas.</strong> Con la sustitución progresiva de los ingredientes de origen marino por otros de origen vegetal, la presencia de algunos contaminantes ha disminuido. Sin embargo, han aparecido otros residuos en la carne del salmón, procedentes de los ingredientes vegetales utilizados en los alimentos para salmones: aceite de colza o de girasol, proteínas de soja y maíz, gluten de trigo, entre otros. <strong>Entre estos contaminantes se encuentran principalmente residuos de pesticidas.</strong>",
+            "imageAlt": "Ilustración de peces que han ingerido contaminantes.",
+            "catchPhrase": "Entre los contaminantes que pueden encontrarse en la carne del salmón figuran: dioxinas, furanos, PCB, DDT, aldrina, clordano, dieldrina, endrina, heptacloro, hexaclorobenceno, mirex y toxafeno."
+          }
+        ]
       },
       "block2": {
-        "title": "[TODO: Spanish translation]",
-        "items": []
+        "title": "Impactos reales que se minimizan",
+        "items": [
+          {
+            "falseBelief": "\"Nos vemos obligados a hacinarlos para responder a la demanda.\"",
+            "reality": "La alta densidad no es un defecto del modelo. Es el modelo.",
+            "paragraph": "Para producir cada vez más salmones al menor costo posible, la acuicultura industrial los concentra en espacios reducidos. Estas condiciones de hacinamiento provocan estrés, lesiones y una mayor proliferación de parásitos y enfermedades, lo que puede desencadenar episodios de mortalidad masiva.\n\n<strong>Pero el problema no termina en las jaulas:</strong> En las granjas salmoneras instaladas en mar abierto, los parásitos y determinados agentes patógenos pueden propagarse al entorno natural y afectar a las poblaciones de salmones silvestres. Los juveniles, en particular, son especialmente vulnerables cuando atraviesan zonas cercanas a estas instalaciones.",
+            "imageAlt": "Ilustración de tres salmones en un volumen de agua equivalente al de una bañera.",
+            "catchPhrase": "Tres salmones en un volumen de agua equivalente al de una bañera. Esta es la densidad a la que se crían para que el negocio sea rentable."
+          },
+          {
+            "falseBelief": "\"Criar peces en piscifactorías permite reducir la pesca de peces silvestres.\"",
+            "reality": "No se protege el océano pescando aún más en él.",
+            "paragraph": "<strong>Hemos elegido criar un depredador.</strong> Y para alimentarlo, tenemos que ir a buscar su comida al mar: anchoas, sardinellas, bacaladillas… Peces que se capturan expresamente para triturarlos y transformarlos en harina y aceite de pescado destinados a la alimentación de los salmones. La acuicultura no sustituye a la pesca: depende de ella. Y cuanto más crece la industria, más peces se extraen del océano.\n\nAlrededor del 10% de las capturas pesqueras mundiales se destina a producir harina y aceite de pescado, utilizados para alimentar a los animales de acuicultura. Esta presión sobre los recursos marinos tiene consecuencias especialmente graves para las comunidades costeras de África occidental.",
+            "imageAlt": "Ilustración de salmones atrapados en una red de pesca que destaca la representación del 10%.",
+            "catchPhrase": "Alrededor del 10% de las capturas pesqueras mundiales se destina a producir harina y aceite de pescado."
+          },
+          {
+            "falseBelief": "\"Hacer más vegetal la alimentación de los salmones es más ecológico.\"",
+            "reality": "Sustituir la explotación del mar por la explotación de los campos no reduce la huella ecológica. Simplemente la desplaza.",
+            "paragraph": "Para reducir costos, la industria salmonera también alimenta a los salmones con ingredientes vegetales como soja, trigo y colza. Así, una parte importante de los ingredientes de origen marino ha sido reemplazada por cultivos agrícolas. <strong>Por cada 100 g de salmón producido, se utilizan 95 g de soja en su alimentación.</strong>\n\nLas consecuencias de este modelo ya son bien conocidas: por un lado, la expansión de los cultivos contribuye a la deforestación; por otro, ocupa tierras que podrían conservarse como ecosistemas naturales, permitiendo la regeneración de la biodiversidad, o destinarse a producir alimentos vegetales para el consumo humano, como verduras y legumbres. Esto plantea una contradicción aún mayor: mientras la industria utiliza enormes cantidades de cultivos para alimentar a los salmones, esos mismos recursos agrícolas podrían contribuir directamente a alimentar a las personas.",
+            "imageAlt": "Ilustración de granos de soja que representan el alimento de origen vegetal para salmones.",
+            "catchPhrase": "Por cada 100 g de salmón producido, se utilizan 95 g de soja en su alimentación."
+          }
+        ]
+      },
+      "block3": {
+        "title": "Mitos y falsas soluciones",
+        "items": [
+          {
+            "falseBelief": "\"¿Y si comiera salmón salvaje?\"",
+            "reality": "Consumir salmón salvaje en lugar de salmón de criadero simplemente traslada la presión a unos ecosistemas que ya están al límite.",
+            "paragraph": "Las poblaciones de salmones silvestres ya se encuentran amenazadas por múltiples factores: las represas, la contaminación, el calentamiento global y la sobrepesca. Además, una parte importante del salmón del Pacífico que se comercializa como \"salvaje\" procede en realidad de programas de repoblamiento: salmones jóvenes nacidos y criados en criaderos que luego son liberados en el medio natural y que pueden competir con los salmones nacidos naturalmente en los ríos."
+          },
+          {
+            "falseBelief": "\"¿Y si comiera trucha?\"",
+            "reality": "Cambiar de especie no significa cambiar de modelo.",
+            "paragraph": "La trucha es pariente cercana del salmón: aunque son peces diferentes, ambos pertenecen a la misma familia, la de los salmónidos. Su modelo de cría es muy similar al de la salmonicultura industrial y también depende de ingredientes vegetales, como la soja y el trigo, así como de harina y aceite de pescado para su alimentación."
+          },
+          {
+            "falseBelief": "\"¿Y si criamos salmones en tierra firme?\"",
+            "reality": "Elegir salmones criados en tierra firme es apostar por el mismo modelo industrial.",
+            "paragraph": "La industria de la salmonicultura en tierra firme está creciendo y, con ella, también se desplazan los impactos ambientales. Criar salmones en instalaciones terrestres no cambia la lógica del modelo: los animales siguen sometidos a altas densidades, permanecen confinados durante todo su ciclo de vida y reciben una alimentación basada en los mismos ingredientes, tanto marinos como vegetales. Además, estos sistemas requieren enormes cantidades de energía y no eliminan los riesgos de contaminación del medio marino. Para conocer más sobre los impactos de este modelo, visita: ",
+            "url": "https://www.usinesdesaumonsnonmerci.fr"
+          },
+          {
+            "falseBelief": "\"¿Y si me pasara al pollo?\"",
+            "reality": "Cambiar el salmón por pollo es cambiar de animal, no de modelo.",
+            "paragraph": "En Francia, más del 80% de los pollos se crían en sistemas de producción intensiva: galpones cerrados, altas densidades de animales y un crecimiento acelerado. Al igual que en la salmonicultura y la cría intensiva de truchas, su alimentación depende en gran medida de cultivos agrícolas, especialmente de soja importada. El cultivo de soja es uno de los principales factores que impulsan la deforestación en América del Sur. En definitiva, cambiar de especie no significa abandonar el modelo industrial: simplemente significa trasladarlo a otro animal."
+          }
+        ]
       }
     }
   }
