@@ -49,7 +49,7 @@ export function getArticleSlug(title: string, id: number) {
   return `${normalizedTitle}-${id}`;
 }
 
-export function getLocalizedArticleSlug(id: number, locale: "en" | "fr") {
+export function getLocalizedArticleSlug(id: number, locale: "en" | "fr" | "es") {
   const title = localizedArticleTitles[id]?.[locale];
   return title ? getArticleSlug(title, id) : undefined;
 }

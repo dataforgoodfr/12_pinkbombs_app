@@ -1,0 +1,111 @@
+{
+  "components": {
+    "calculatorBlock": {
+      "title": {
+        "part1": "¡Por suerte",
+        "part2": ", todavía estamos a tiempo de desactivar la bomba!"
+      },
+      "caption": "Calcula tu huella salmonera con el Pinkómetro y descubre cómo reducirla.",
+      "imageAlt": "Peces felices saltando del agua frente a un sol brillante",
+      "buttonCta": "Calcula tu impacto",
+      "buttonUrl": "/pinkometer",
+      "companyHelp": "También acompañamos a las empresas que quieren reducir su impacto.",
+      "contactLink": "¡Contáctanos aquí para saber cómo podemos ayudarles!"
+    },
+    "calculator": {
+      "labels": [
+        { "label": "neutral", "text": "Neutro", "color": "green" },
+        { "label": "low", "text": "Leve", "color": "yellow" },
+        { "label": "medium", "text": "Moderado", "color": "magenta" },
+        { "label": "high", "text": "Alto", "color": "red" },
+        { "label": "veryHigh", "text": "Muy alto", "color": "black" }
+      ]
+    },
+    "articlesBlock": {
+      "title": "¡Para ir más allá!",
+      "imageAlt": "Pez buceador",
+      "articles": {
+        "homepage": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Ilustración que muestra la industria, arrastreros y peces criados en piscifactorías.",
+            "title": "Desmontando los mitos del salmón",
+            "description": "Ideas preconcebidas, falsas soluciones, discursos cuidadosamente elaborados… Ponemos las cartas sobre la mesa para revelar qué se esconde realmente detrás del salmón que producimos y consumimos.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Informarse"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Ilustración que muestra formas de reducir tu impacto.",
+            "title": "Reduce tu impacto desde hoy",
+            "description": "En tu vida cotidiana y en el trabajo, descubre acciones sencillas y formas de impulsar el cambio colectivo.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Pasar a la acción"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Ilustración que muestra una sonrisa y peces felices.",
+            "title": "Inspírate en iniciativas",
+            "description": "Están surgiendo alternativas. Descubre experiencias e ideas inspiradoras que demuestran que es posible hacer las cosas de otra manera.",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "Descubrir alternativas"
+          }
+        ],
+        "toAct": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Ilustración que muestra la industria, arrastreros y peces criados en piscifactorías.",
+            "title": "Desmontando los mitos de la industria",
+            "description": "Descubre qué son los salmones, cómo se producen y los impactos de consumirlos.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Informarse"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Ilustración que muestra una sonrisa y peces felices.",
+            "title": "Inspírate en iniciativas",
+            "description": "Alternativas emergentes. Historias e ideas que te inspiran a hacer las cosas de otra manera",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "Descubrir alternativas"
+          }
+        ],
+        "toUnderstand": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Ilustración que muestra formas de reducir tu impacto.",
+            "title": "Reduce tu impacto desde hoy",
+            "description": "Descubre acciones sencillas y soluciones colectivas que puedes aplicar en tu vida cotidiana y en el trabajo.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Pasar a la acción"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-be-inspired.svg",
+            "imageAlt": "Ilustración que muestra una sonrisa y peces felices.",
+            "title": "Inspírate en iniciativas",
+            "description": "Alternativas emergentes. Historias e ideas que te inspiran a hacer las cosas de otra manera",
+            "buttonUrl": "/to-be-inspired",
+            "buttonCta": "Descubrir alternativas"
+          }
+        ],
+        "toBeInspired": [
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-act.svg",
+            "imageAlt": "Ilustración que muestra formas de reducir tu impacto.",
+            "title": "Reduce tu impacto desde hoy",
+            "description": "Descubre acciones sencillas y soluciones colectivas que puedes aplicar en tu vida cotidiana y en el trabajo.",
+            "buttonUrl": "/to-act",
+            "buttonCta": "Pasar a la acción"
+          },
+          {
+            "imageSrc": "/site/images/components/articles-block/homepage/to-understand.svg",
+            "imageAlt": "Ilustración que muestra la industria, arrastreros y peces criados en piscifactorías.",
+            "title": "Desmontando los mitos de la industria",
+            "description": "Descubre qué son los salmones, cómo se producen y los impactos de consumirlos.",
+            "buttonUrl": "/to-understand",
+            "buttonCta": "Informarse"
+          }
+        ]
+      }
+    }
+  }
+}

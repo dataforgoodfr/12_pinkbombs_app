@@ -1,0 +1,43 @@
+{
+  "about": {
+    "meta": {
+      "title": "[TODO: Spanish translation]"
+    },
+    "intro": {
+      "title": "[TODO: Spanish translation]",
+      "caption": "[TODO: Spanish translation]",
+      "imageAlt": "[TODO: Spanish translation]"
+    },
+    "ambition": {
+      "origin": "[TODO: Spanish translation]",
+      "paragraph": "[TODO: Spanish translation]"
+    },
+    "why": {
+      "title": "[TODO: Spanish translation]",
+      "situation": {
+        "title": "[TODO: Spanish translation]",
+        "imageAlt": "[TODO: Spanish translation]",
+        "paragraph": "[TODO: Spanish translation]"
+      },
+      "reaction": {
+        "title": "[TODO: Spanish translation]",
+        "imageAlt": "[TODO: Spanish translation]",
+        "paragraph": "[TODO: Spanish translation]"
+      }
+    },
+    "seastemik": {
+      "title": "[TODO: Spanish translation]",
+      "paragraph": "[TODO: Spanish translation]",
+      "cta": "[TODO: Spanish translation]"
+    },
+    "dataforgood": {
+      "title": "[TODO: Spanish translation]",
+      "paragraph": "[TODO: Spanish translation]",
+      "cta": "[TODO: Spanish translation]"
+    },
+    "teamSection": {
+      "title": "[TODO: Spanish translation]",
+      "members": []
+    }
+  }
+}

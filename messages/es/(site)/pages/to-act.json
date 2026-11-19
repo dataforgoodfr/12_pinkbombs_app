@@ -1,0 +1,25 @@
+{
+  "toAct": {
+    "meta": {
+      "title": "[TODO: Spanish translation]"
+    },
+    "intro": {
+      "caption": "[TODO: Spanish translation]",
+      "title": "[TODO: Spanish translation]",
+      "imageAlt": "[TODO: Spanish translation]"
+    },
+    "tags": {
+      "individual": "[TODO: Spanish translation]",
+      "company": "[TODO: Spanish translation]"
+    },
+    "howToAct": "[TODO: Spanish translation]",
+    "iAct": "[TODO: Spanish translation]",
+    "individualSection": {
+      "title": {
+        "part1": "[TODO: Spanish translation]",
+        "part2": "[TODO: Spanish translation]"
+      },
+      "recommendations": []
+    }
+  }
+}
