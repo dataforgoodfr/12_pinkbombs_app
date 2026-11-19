@@ -1,25 +1,147 @@
 {
   "toAct": {
     "meta": {
-      "title": "[TODO: Spanish translation]"
+      "title": "Pasar a la acción"
     },
     "intro": {
-      "caption": "[TODO: Spanish translation]",
-      "title": "[TODO: Spanish translation]",
-      "imageAlt": "[TODO: Spanish translation]"
+      "caption": "Reduce tu impacto",
+      "title": "Descubre acciones sencillas y formas de impulsar el cambio colectivo.",
+      "imageAlt": "Imagen ilustrativa que representa soluciones para reducir tu impacto."
     },
     "tags": {
-      "individual": "[TODO: Spanish translation]",
-      "company": "[TODO: Spanish translation]"
+      "individual": "Particular",
+      "company": "Empresa"
     },
-    "howToAct": "[TODO: Spanish translation]",
-    "iAct": "[TODO: Spanish translation]",
+    "howToAct": "Sí, pero ¿cómo?",
+    "iAct": "Paso a la acción",
     "individualSection": {
       "title": {
-        "part1": "[TODO: Spanish translation]",
-        "part2": "[TODO: Spanish translation]"
+        "part1": "Cada persona puede actuar",
+        "part2": "a través de sus decisiones de consumo de salmón."
       },
-      "recommendations": []
+      "recommendations": [
+        {
+          "title": "Reducir el consumo de salmón",
+          "description": "El primer paso para reducir nuestro impacto es consumir menos.\n\nEn Francia, reducir a un tercio el consumo actual de salmón permitiría disminuir considerablemente la presión que ejercemos sobre los océanos, los animales y las comunidades humanas.\n\nPodemos hacerlo de manera progresiva, pero la medida más eficaz sigue siendo dejar de consumir salmón por completo.\n\n¿Por qué? Porque cada decisión cuenta y puede tener un impacto positivo directo en los animales y en el océano. Nuestras elecciones alimentarias tienen un verdadero poder: cuando cambia la demanda, la industria termina adaptándose. Al dejar de comprar salmón procedente de sistemas de producción intensiva, enviamos una señal clara a la industria y contribuimos a impulsar alternativas más respetuosas con los animales, las personas y el medio ambiente.",
+          "actions": [
+            {
+              "cta": "Calcula tu huella salmonera con el Pinkómetro",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia",
+              "id": 4,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "Recuperar la vida del océano: las organizaciones que están impulsando el cambio",
+              "id": 9,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Seguir disfrutando de los sabores del mar (sin comer pescado)",
+          "description": "Disfrutar de los sabores del mar no significa necesariamente comer pescado.\n\n<strong>Las algas, los moluscos</strong> y nuevas formas de cocinar nos permiten redescubrir los sabores marinos y, al mismo tiempo, diversificar nuestra alimentación.\n\n¡Descubre nuestros menús inspirados en el mar, con recetas 100% vegetales, para deleitar tu paladar sin vaciar el océano!",
+          "actions": [
+            {
+              "cta": "Descargar nuestro recetario",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia",
+              "id": 4,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Incorporar alternativas vegetales a nuestra alimentación",
+          "description": "Hoy existen <strong>numerosas alternativas vegetales que nos permiten seguir disfrutando de nuestros platos favoritos:</strong> salmón ahumado vegetal, filetes vegetales, untables y otras preparaciones inspiradas en los productos del mar.\n\nEstas alternativas permiten recrear sabores, texturas y formas de disfrutar la comida que ya conocemos, <strong>al mismo tiempo que reducen el impacto ambiental asociado al consumo de salmón.</strong>",
+          "actions": [
+            {
+              "cta": "Calcula tu huella salmonera con el Pinkómetro y descubre las alternativas",
+              "url": "/pinkometer",
+              "type": "internalRedirect"
+            },
+            {
+              "cta": "Descargar nuestro recetario",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia",
+              "id": 4,
+              "type": "internalArticle"
+            }
+          ]
+        },
+        {
+          "title": "Sensibilizar a quienes nos rodean",
+          "description": "<strong>La mayoría de las personas aún desconoce el verdadero impacto del consumo de salmón.</strong>\n\n<strong>Compartir esta información con quienes nos rodean</strong>, generar conversaciones y dar a conocer otras formas de alimentarnos también son maneras de actuar. Cuantas más personas conozcamos lo que está en juego, <strong>más fuerza tendremos para impulsar un cambio en las prácticas de consumo y producción.</strong>",
+          "actions": [
+            {
+              "cta": "El salmón, símbolo de toda una industria: la historia de un pez extraordinario",
+              "id": 1,
+              "type": "internalArticle"
+            },
+            {
+              "cta": "5 mitos sobre los peces (y por qué no son ciertos)",
+              "id": 3,
+              "type": "internalArticle"
+            }
+          ]
+        }
+      ]
+    },
+    "companySection": {
+      "title": {
+        "part1": "Las empresas tienen un papel fundamental",
+        "part2": "en impulsar una transición a gran escala.",
+        "part3": "Es urgente que asuman su responsabilidad y se comprometan con el cambio."
+      },
+      "recommendations": [
+        {
+          "title": "Pedir que se reduzcan o eliminen los platos con salmón del comedor de tu empresa",
+          "description": "Cambiar el menú del comedor de una empresa puede tener un impacto considerable.\n\nAl plantear esta cuestión en tu lugar de trabajo, contribuimos de forma concreta a impulsar el cambio.",
+          "actions": [
+            {
+              "cta": "Descargar nuestro recetario",
+              "url": "https://drive.google.com/file/d/1tZobbfx27PUlGrat0HgzZDCbrqmqIiFn/view",
+              "type": "download"
+            },
+            {
+              "cta": "¿Necesitas ayuda para convencer a tu empresa? Escríbenos a charlotte@seastemik.org",
+              "url": "mailto:charlotte@seastemik.org",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Proponer un servicio de catering 100% vegetal para eventos",
+          "description": "Reuniones, seminarios, cócteles, eventos de empresa… Hay muchas oportunidades para descubrir nuevas formas de disfrutar de la buena comida.\n\nLas empresas de catering, tanto generalistas como especializadas en cocina vegetal, ofrecen cada vez más opciones creativas, sabrosas e inclusivas. Estas propuestas se adaptan mejor a las distintas preferencias y necesidades alimentarias y, al mismo tiempo, ayudan a reducir el impacto ambiental de los eventos.",
+          "actions": [
+            {
+              "cta": "Descubre la web \"Todos los caterings veganos\"",
+              "url": "https://touslestraiteursvegan.com/",
+              "type": "externalRedirect"
+            }
+          ]
+        },
+        {
+          "title": "Solicitar el acompañamiento de Seastemik",
+          "description": "Cada empresa puede impulsar cambios profundos. Seastemik puede acompañar a tu organización y a sus equipos para poner en marcha esta transformación.\n\nReducir la presencia del pescado en la oferta gastronómica de una empresa es urgente, pero también posible y, ¡por qué no!, ilusionante. Se trata de avanzar hacia una alimentación más sostenible y coherente con el consumo actual de pescado en Francia, que alcanza los 10 kg por persona al año.",
+          "actions": [
+            {
+              "cta": "¡Solicita una reunión con Seastemik! Escríbenos a charlotte@seastemik.org",
+              "url": "mailto:charlotte@seastemik.org",
+              "type": "externalRedirect"
+            }
+          ]
+        }
+      ]
     }
   }
 }
