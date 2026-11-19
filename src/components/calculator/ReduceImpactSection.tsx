@@ -759,8 +759,8 @@ export const ReduceImpactSection = ({
                   <p className="p-lead">{t("engagements.dish")}</p>
                   <h4 className="h4 text-v2-blue">{selectedProductLabel}</h4>
                   <p className="p-caption md:pt-2">
-                    {oldFrequency} {t("engagements.timesPerYear")} → {frequency}{" "}
-                    {t("engagements.timesPerYear")}
+                    {oldFrequency} {t("engagements.timesPerYear", { count: oldFrequency })} → {frequency}{" "}
+                    {t("engagements.timesPerYear", { count: frequency })}
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-4 text-v2-blue">

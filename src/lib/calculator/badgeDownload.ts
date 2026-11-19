@@ -15,10 +15,18 @@ const badgeFilenames = {
     high: "Baby_Salmon.jpg",
     veryHigh: "Salmon_seed.jpg",
   },
-} satisfies Record<"fr" | "en", Record<ImpactLevel, string>>;
+  es: {
+    neutral: "Super_Salmon.png",
+    low: "Gran_salmon.png",
+    medium: "Joven_salmon.png",
+    high: "Bebe_salmon.png",
+    veryHigh: "Huevo_de_salmon.png",
+  },
+} satisfies Record<"fr" | "en" | "es", Record<ImpactLevel, string>>;
 
 export const getBadgeDownload = (impact: ImpactLevel, locale: string) => {
-  const language = locale === "en" ? "en" : "fr";
+  console.log(`Getting badge download for impact: ${impact}, locale: ${locale}`);
+  const language = locale === "en" ? "en" : locale === "es" ? "es" : "fr";
   const filename = badgeFilenames[language][impact];
 
   return {

@@ -55,8 +55,8 @@
               "name": "otherFrequency",
               "label": "Frecuencia personalizada",
               "options": [
-                { "name": "otherWeekly", "label": "vez/veces por semana" },
-                { "name": "otherYearly", "label": "vez/veces por año" }
+                { "name": "otherWeekly", "label": "veces por semana" },
+                { "name": "otherYearly", "label": "veces por año" }
               ]
             }
           ],
@@ -128,8 +128,8 @@
       },
       "step2": {
         "title": "Reducir la frecuencia de consumo",
-        "suffix": "veces al año",
-        "caption": "Hoy consumes este plato {frequency} veces al año. ¿Y mañana?",
+        "suffix": "al año",
+        "caption": "Hoy consumes este plato {frequency, plural, =1 {1 vez} other {# veces}} al año. ¿Y mañana?",
         "confirm": "Encontrar una alternativa"
       },
       "step3": {
@@ -181,7 +181,7 @@
       "title": "Mi lista de compromisos:",
       "dish": "Plato",
       "perYear": "al año",
-      "timesPerYear": "veces al año",
+      "timesPerYear": "{count, plural, =1 {vez} other {veces}} al año",
       "alternative": "Alternativa",
       "supplement": "Complemento",
       "confirm": "Confirmar mis compromisos",
@@ -219,7 +219,7 @@
       "share": "Descargar mi insignia"
     },
     "badges": {
-      "engagement": "Mi objetivo es consumir {newFrequency} vez/veces al año {dish} en lugar de {oldFrequency}. Alternaré con {alternative} siempre que sea posible. Complementaré con omega-3 usando {supplement}.",
+      "engagement": "Mi objetivo es consumir {newFrequency, plural, =1 {1 vez} other {# veces}} al año {dish} en lugar de {oldFrequency, plural, =1 {1 vez} other {# veces}}. Alternaré con {alternative} siempre que sea posible. Complementaré con omega-3 usando {supplement}.",
       "neutral": {
         "title": "Súper salmón",
         "caption": "¡Felicidades y gracias! No consumes salmón o ya no lo haces, y el Océano te lo agradece. Tu impacto neutro es el ejemplo perfecto de dónde puede llevarte el compromiso. Ahora solo falta conseguir que más gente se sume a ti.",
