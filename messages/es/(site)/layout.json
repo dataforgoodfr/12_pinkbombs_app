@@ -1,0 +1,66 @@
+{
+  "layout": {
+    "top": "Volver arriba",
+    "analyticsConsent": {
+      "title": "¿Ayúdanos a mejorar Pinkbombs?",
+      "description": "Con tu permiso, utilizamos Matomo para entender cómo se utiliza este sitio. Puedes cambiar tu elección en cualquier momento desde el pie de página.",
+      "accept": "Permitir estadísticas",
+      "reject": "Rechazar estadísticas",
+      "preferences": "Configuración de estadísticas"
+    },
+    "nav": {
+      "title": "principal",
+      "home": "Inicio",
+      "ariaLabel": "Navegación principal del sitio",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "toUnderstand": "Informarse",
+      "toAct": "Pasar a la acción",
+      "toBeInspired": "Descubrir alternativas",
+      "calculator": "Pinkómetro",
+      "about": "Sobre nosotros"
+    },
+    "shareLink": {
+      "blank": "nueva pestaña",
+      "site": "Sitio web",
+      "sources": "Enfoque y metodología",
+      "legalNotices": "Aviso legal",
+      "contactUs": "Contáctanos",
+      "design": "coucou.design"
+    },
+    "footer": {
+      "sections": {
+        "projectBy": {
+          "title": "Un proyecto de",
+          "site": "Pinkbombs"
+        },
+        "more": {
+          "title": "Más información",
+          "sourceId": "enfoque-y-metodologia"
+        },
+        "stayInformed": {
+          "title": "Mantente al día",
+          "text": "Recibe todas nuestras novedades.",
+          "newsletter": {
+            "placeholder": "Introduce tu correo electrónico",
+            "button": "Suscribirse",
+            "emailLabel": "Dirección de correo electrónico",
+            "loading": "Suscribiendo...",
+            "success": "Te has suscrito exitosamente a la newsletter.",
+            "invalidEmail": "Por favor, introduce una dirección de correo válida.",
+            "error": "No hemos podido suscribirte a la newsletter. Por favor, inténtalo más tarde."
+          }
+        }
+      },
+      "allRight": "Todos los derechos reservados",
+      "and": "y",
+      "donation": "Hacer una donación",
+      "legalNotice": "Aviso legal"
+    }
+  },
+  "siteConfig": {
+    "title": "Pinkbombs",
+    "description": "Analizar el impacto del salmón en el medio ambiente, los ecosistemas, la salud y las comunidades.",
+    "url": "https://pinkbombs.org"
+  }
+}

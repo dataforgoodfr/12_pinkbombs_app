@@ -1,0 +1,27 @@
+{
+  "toUnderstand": {
+    "meta": {
+      "title": "[TODO: Spanish translation]"
+    },
+    "intro": {
+      "caption": "[TODO: Spanish translation]",
+      "title": "[TODO: Spanish translation]",
+      "imageAlt": "[TODO: Spanish translation]"
+    },
+    "tags": {
+      "block1": "[TODO: Spanish translation]",
+      "block2": "[TODO: Spanish translation]",
+      "block3": "[TODO: Spanish translation]"
+    },
+    "debunk": {
+      "block1": {
+        "title": "[TODO: Spanish translation]",
+        "items": []
+      },
+      "block2": {
+        "title": "[TODO: Spanish translation]",
+        "items": []
+      }
+    }
+  }
+}

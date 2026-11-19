@@ -1,0 +1,260 @@
+{
+  "calculator": {
+    "meta": {
+      "title": "Pinkómetro"
+    },
+    "intro": {
+      "title": "Calcula tu huella salmonera",
+      "caption": "Acabas de conocer el costo que representa un solo salmón. Ahora queda por saber cuántos has pedido.",
+      "button": "Comenzar"
+    },
+    "modal": {
+      "back": "Volver",
+      "progress": "Estado de finalización de las preguntas del pinkómetro",
+      "progressLabel": "{completedProducts} preguntas de {totalProducts} han sido completadas para los productos seleccionados",
+      "quit": "Salir del pinkómetro",
+      "next": "Siguiente",
+      "questions": [
+        {
+          "title": "¿De qué formas consumes salmón?",
+          "type": "checkbox",
+          "options": [
+            { "name": "none", "label": "No consumo salmón" },
+            { "name": "fillet", "label": "Filete o medallón de salmón", "prefix": "algún" },
+            {
+              "name": "sushi",
+              "label": "Sushi (makis, onigiris, sashimis)",
+              "prefix": "algún"
+            },
+            { "name": "pokeBowl", "label": "Poke bowls", "prefix": "algún" },
+            { "name": "appetizer", "label": "Aperitivos y bocaditos", "prefix": "algún" },
+            { "name": "pasta", "label": "Pasta con salmón", "prefix": "algún" },
+            {
+              "name": "smokedSalmon",
+              "label": "Salmón ahumado en lonchas",
+              "prefix": "algún"
+            },
+            {
+              "name": "quicheSandwich",
+              "label": "Quiche, sándwich o sándwich tostado"
+            }
+          ]
+        },
+        {
+          "title": "¿Con qué frecuencia consumes {prefix} {label}?",
+          "type": "radio",
+          "options": [
+            { "name": "semiWeekly", "label": "2 veces por semana" },
+            { "name": "weekly", "label": "1 vez por semana" },
+            { "name": "semiMonthly", "label": "2 veces al mes" },
+            { "name": "biMonthly", "label": "1 vez cada dos meses" },
+            { "name": "monthly", "label": "1 vez al mes" },
+            { "name": "quarterly", "label": "1 vez cada tres meses" },
+            { "name": "semiAnnually", "label": "2 veces al año" },
+            {
+              "name": "otherFrequency",
+              "label": "Frecuencia personalizada",
+              "options": [
+                { "name": "otherWeekly", "label": "vez/veces por semana" },
+                { "name": "otherYearly", "label": "vez/veces por año" }
+              ]
+            }
+          ],
+          "subQuestions": [
+            {
+              "name": "smokedSalmon",
+              "title": "¿Cuántas lonchas consumes cada vez?",
+              "options": [
+                { "defaultValue": 1, "name": "tranche", "label": "loncha" }
+              ]
+            },
+            {
+              "name": "sushi",
+              "title": "¿Cuántas piezas de sushi consumes cada vez?",
+              "options": [
+                {
+                  "defaultValue": 12,
+                  "name": "maki",
+                  "label": "maki",
+                  "prefix": "algún"
+                },
+                {
+                  "defaultValue": 6,
+                  "name": "nigiri",
+                  "label": "nigiri",
+                  "prefix": "algún"
+                },
+                {
+                  "defaultValue": 0,
+                  "name": "sashimi",
+                  "label": "sashimi",
+                  "prefix": "algún"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sumUp": {
+      "title": "Tu consumo de salmón",
+      "caption": "Si es necesario, haz clic en el botón \"Volver\" para modificar tus respuestas.",
+      "button": "Calcular mi impacto",
+      "around": "Aproximadamente:"
+    },
+    "loading": {
+      "title": "Sumérgete en tus datos",
+      "caption": "Calculando tu huella de consumo de salmón...",
+      "info": "Un salmón de criadero recorre, en promedio, 8.000 km antes de llegar a tu plato."
+    },
+    "result": {
+      "title": "Impacto ",
+      "title2": " {impact}",
+      "caption": "Consumes aproximadamente {totalConsoInKg} kg de salmón al año.",
+      "productListTitle": "Tu consumo en detalle",
+      "paragraphs": {
+        "neutral": "No consumes salmón. Solo nos queda felicitarte e invitarte a compartir este mensaje con quienes te rodean.",
+        "low": "Consumes aproximadamente {totalConsoInKg} kg de salmón al año. Ya vas por buen camino. ¡El siguiente paso es llegar a cero!",
+        "medium": "Consumes aproximadamente {totalConsoInKg} kg de salmón al año. Si sustituyes parte de tu consumo por alguna de las alternativas que te proponemos, estarás reduciendo considerablemente tu impacto.",
+        "high": "Consumes aproximadamente {totalConsoInKg} kg de salmón al año. El salmón forma parte de tus hábitos alimenticios, y es precisamente ahí donde puedes marcar la diferencia: cada vez que lo sustituyes por una alternativa, contribuyes a reducir tu impacto.",
+        "veryHigh": "Consumes aproximadamente {totalConsoInKg} kg de salmón al año. Tienes un amplio margen para disminuir tu consumo, y reducirlo a la mitad ya tendría un impacto significativo en la salud de los océanos."
+      }
+    },
+    "reduceImpact": {
+      "title": "Reducir mi impacto",
+      "step1": {
+        "title": "Elige un plato que consumas actualmente",
+        "caption": "No hace falta cambiarlo todo de golpe, cada pequeño paso cuenta. ¿Qué te parece si empezamos por sustituir o reducir el consumo de alguno de los platos que sueles comer?"
+      },
+      "step2": {
+        "title": "Reducir la frecuencia de consumo",
+        "suffix": "veces al año",
+        "caption": "Hoy consumes este plato {frequency} veces al año. ¿Y mañana?",
+        "confirm": "Encontrar una alternativa"
+      },
+      "step3": {
+        "title": "Encontrar una alternativa",
+        "falseFriend": "Falsa alternativa",
+        "alternatives": {
+          "algae": "Algas",
+          "plantBasedSmokedSalmon": "Alternativa vegetal al salmón ahumado (orgánica)",
+          "shellfish": "Moluscos (de origen francés)",
+          "plantBasedProtein": "Proteínas vegetales (orgánicas)",
+          "trout": "Trucha",
+          "tuna": "Atún"
+        },
+        "info": {
+          "algae": "Las algas se cultivan sin necesidad de harina de pescado, fertilizantes ni agua dulce. Además, los omega-3 que buscamos en el salmón se producen originalmente en las microalgas. Es una actividad que merece impulsarse y desarrollarse en nuestras costas.",
+          "plantBasedSmokedSalmon": "Todo el sabor y el placer de disfrutar del salmón ahumado, sin recurrir a la acuicultura intensiva. Las alternativas de origen vegetal son cada vez más numerosas y evolucionan rápidamente. Un buen consejo: dale la vuelta al envase y elige productos que tengan una lista breve de ingredientes.",
+          "shellfish": "Los mejillones y las ostras se alimentan filtrando el agua de mar, por lo que no necesitan harina ni aceite de pescado. Además, son una fuente de hierro, zinc y vitamina B12. Su bienestar también depende de la salud de nuestras aguas costeras.",
+          "plantBasedProtein": "Las lentejas, los garbanzos y los frijoles son ricos en proteínas y fibra, además de ser económicos y fáciles de conservar. Las recomendaciones nutricionales aconsejan consumirlos al menos 2 veces por semana.",
+          "trout": "Reemplazar el salmón por trucha puede parecer una buena idea, pero no lo es. El salmón y la trucha son parientes cercanos: ambos son peces carnívoros que se crían de forma intensiva y se alimentan con harinas y aceites elaborados a partir de peces silvestres.",
+          "tuna": "Reemplazar el salmón por atún también puede parecer una buena idea, pero no lo es. El atún es un depredador que ocupa un lugar alto en la cadena alimentaria y acumula mercurio. Además, su pesca industrial provoca la captura accidental de tiburones, tortugas y delfines."
+        }
+      },
+      "step4": {
+        "title": "Elige una fuente de omega-3 para complementar tu alimentación",
+        "falseFriend": "Falsa alternativa",
+        "alternatives": {
+          "flaxSeedOil": "Aceite de linaza",
+          "chiaSeeds": "Semillas de chía",
+          "walnutOil": "Aceite de nuez",
+          "rapeSeedOil": "Aceite de canola",
+          "nut": "Nueces",
+          "algae": "Algas",
+          "fishOil": "Aceite de pescado"
+        },
+        "info": {
+          "fishOil": "¡No es una alternativa tan buena como parece! El aceite de pescado proviene de las mismas pesquerías de anchoas y sardinas que abastecen de alimento a los salmones de criadero. Además, los omega-3 que contiene tienen su origen en las microalgas. ¡Prueba las otras alternativas!"
+        }
+      },
+      "recalculate": {
+        "button": "Calcular mi nuevo impacto",
+        "loading": "Calculando tu nuevo impacto...",
+        "error": "No se pudo recalcular tu impacto. Por favor, inténtalo de nuevo."
+      }
+    },
+    "newImpact": {
+      "title": "Nuevo impacto"
+    },
+    "engagements": {
+      "title": "Mi lista de compromisos:",
+      "dish": "Plato",
+      "perYear": "al año",
+      "timesPerYear": "veces al año",
+      "alternative": "Alternativa",
+      "supplement": "Complemento",
+      "confirm": "Confirmar mis compromisos",
+      "alternatives": {
+        "algae": "algas",
+        "plantBasedSmokedSalmon": "salmón ahumado vegetal",
+        "shellfish": "moluscos",
+        "plantBasedProtein": "proteínas vegetales",
+        "trout": "trucha",
+        "tuna": "atún"
+      },
+      "supplements": {
+        "flaxSeedOil": "aceite de linaza",
+        "chiaSeeds": "semillas de chía",
+        "walnutOil": "aceite de nuez",
+        "rapeSeedOil": "aceite de canola",
+        "nut": "nueces",
+        "algae": "algas",
+        "fishOil": "aceite de pescado"
+      },
+      "impactChanged": "Consumiré {newFrequency, plural, =1 {1 plato} other {# platos}} de {dish} en lugar de {oldFrequency, plural, =1 {1 plato} other {# platos}} al año. Alternaré con {alternative} siempre que sea posible y complementaré con {supplement}.",
+      "impactEqual": "Continuaré consumiendo {oldFrequency, plural, =1 {1 plato} other {# platos}} de {dish} al año. Alternaré lo máximo posible con {alternative} y complementaré con {supplement}."
+    },
+    "badgeQuestions": {
+      "title": "¡Estás a solo dos clics de conseguir tu insignia…!",
+      "omega3Consent": "Me gustaría que el Estado enriqueciera algunos productos de consumo habitual con omega-3.",
+      "emailCaption": "Sigue de cerca el impacto colectivo de esta campaña y descubre las nuevas iniciativas que impulsamos para avanzar hacia un océano más justo para todos los seres vivos.",
+      "email": "Tu dirección de correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "emailError": "Por favor, introduce una dirección de correo válida.",
+      "subscriptionSuccess": "Te has suscrito a la newsletter.",
+      "subscriptionError": "Oops, no pudimos suscribirte a la newsletter. Por favor, inténtalo más tarde, pero mientras tanto descubre tu insignia.",
+      "button": "Confirmar y ver mi insignia",
+      "unlockedBadge": "Insignia desbloqueada",
+      "share": "Descargar mi insignia"
+    },
+    "badges": {
+      "engagement": "Mi objetivo es consumir {newFrequency} vez/veces al año {dish} en lugar de {oldFrequency}. Alternaré con {alternative} siempre que sea posible. Complementaré con omega-3 usando {supplement}.",
+      "neutral": {
+        "title": "Súper salmón",
+        "caption": "¡Felicidades y gracias! No consumes salmón o ya no lo haces, y el Océano te lo agradece. Tu impacto neutro es el ejemplo perfecto de dónde puede llevarte el compromiso. Ahora solo falta conseguir que más gente se sume a ti.",
+        "width": 212,
+        "height": 361
+      },
+      "low": {
+        "title": "Gran salmón",
+        "caption": "¡Felicidades, ya eres un salmón atlántico de gran tamaño! Estás allanando el camino hacia una alimentación que protege el Océano. Habla de esto a tu alrededor.",
+        "width": 571,
+        "height": 165
+      },
+      "medium": {
+        "title": "Salmón adolescente (esguín)",
+        "caption": "¡Felicidades, estás en camino, un esguín como dicen los científicos. El salmón adolescente que eres está a punto de convertirse en un súper salmón que, gracias a su compromiso, hace el Océano más vivo!",
+        "width": 508,
+        "height": 171
+      },
+      "high": {
+        "title": "Crías de salmón (tacon)",
+        "caption": "Eres un alevin de salmón, conseguiste eclosionar. ¡Nada mal! Ahora tendrás que continuar tus esfuerzos para reducir el impacto de tu alimentación en el Océano. Aguanta, necesitamos futuros salmones como tú.",
+        "width": 290,
+        "height": 194
+      },
+      "veryHigh": {
+        "title": "Hueva de salmón",
+        "caption": "Como un huevo de salmón en la grava de un río de montaña, estás a punto de embarcarte en un viaje hacia nuevos horizontes, más hermosos y respetuosos de tu salud, del medio ambiente y de los animales. ¿Listo?",
+        "width": 389,
+        "height": 247
+      }
+    },
+    "error": {
+      "title": "Ocurrió un error",
+      "caption": "No se pudo calcular tu impacto. Por favor, inténtalo de nuevo.",
+      "retry": "Volver al resumen"
+    }
+  }
+}
