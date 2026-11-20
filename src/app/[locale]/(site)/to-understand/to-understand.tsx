@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
@@ -62,6 +62,7 @@ const IntroSection = () => {
 
 const DebunkSection = () => {
   const t = useTranslations("site.toUnderstand");
+  const locale = useLocale();
   const [activeSection, setActiveSection] = useState<
     "block1" | "block2" | "block3"
   >("block1");
@@ -72,6 +73,25 @@ const DebunkSection = () => {
     "debunk.block2.items",
   ) as IllustratedDebunkProps[];
   const thirdActItems = t.raw("debunk.block3.items") as DebunkProps[];
+
+  // Apply locale-specific image paths for block1 items
+  const getLocalizedFirstActItems = () => {
+    return firstActItems.map((item, index) => {
+      const localizedItem = { ...item };
+
+      if (index === 0 && locale === "es") {
+        // block1-1: Spanish uses -es.png
+        localizedItem.imagePath = "/site/images/to-understand/block1-1-es.png";
+      } else if (index === 1 && (locale === "es" || locale === "en")) {
+        // block1-2: Spanish and English use -en.png
+        localizedItem.imagePath = "/site/images/to-understand/block1-2-en.png";
+      }
+
+      return localizedItem;
+    });
+  };
+
+  const localizedFirstActItems = getLocalizedFirstActItems();
 
   const handleSectionToggle = (section: "block1" | "block2" | "block3") => {
     const sectionElement = document.getElementById(`${section}`);
@@ -126,7 +146,7 @@ const DebunkSection = () => {
             {t("debunk.block1.title")}
           </h1>
           <div className="flex flex-col py-10 gap-12">
-            {firstActItems.map((item, index) => (
+            {localizedFirstActItems.map((item, index) => (
               <IllustratedDebunkBlock
                 key={`block1-item-${index}`}
                 {...item}

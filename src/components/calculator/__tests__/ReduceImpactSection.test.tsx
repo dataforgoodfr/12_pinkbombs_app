@@ -156,12 +156,42 @@ describe("ReduceImpactSection Step 4 info", () => {
 });
 
 describe("ReduceImpactSection no-consumption result", () => {
-  const badgeCases: { impact: ImpactLevel; fr: string; en: string }[] = [
-    { impact: "neutral", fr: "Super_saumon.e.jpg", en: "Super_Salmon.jpg" },
-    { impact: "low", fr: "Grand.e_saumon.e.jpg", en: "Great_Salmon.jpg" },
-    { impact: "medium", fr: "Saumon.e_Ado.jpg", en: "Teen_Salmon.jpg" },
-    { impact: "high", fr: "B\u00e9b\u00e9_saumon.jpg", en: "Baby_Salmon.jpg" },
-    { impact: "veryHigh", fr: "Graine_de_saumon.jpg", en: "Salmon_seed.jpg" },
+  const badgeCases: {
+    impact: ImpactLevel;
+    fr: string;
+    en: string;
+    es: string;
+  }[] = [
+    {
+      impact: "neutral",
+      fr: "Super_saumon.e.jpg",
+      en: "Super_Salmon.jpg",
+      es: "Super_salmon.png",
+    },
+    {
+      impact: "low",
+      fr: "Grand.e_saumon.e.jpg",
+      en: "Great_Salmon.jpg",
+      es: "Gran_salmon.png",
+    },
+    {
+      impact: "medium",
+      fr: "Saumon.e_Ado.jpg",
+      en: "Teen_Salmon.jpg",
+      es: "Joven_salmon.png",
+    },
+    {
+      impact: "high",
+      fr: "Bébé_saumon.jpg",
+      en: "Baby_Salmon.jpg",
+      es: "Bebe_salmon.png",
+    },
+    {
+      impact: "veryHigh",
+      fr: "Graine_de_saumon.jpg",
+      en: "Salmon_seed.jpg",
+      es: "Huevo_de_salmon.png",
+    },
   ];
 
   afterEach(() => {
@@ -169,9 +199,10 @@ describe("ReduceImpactSection no-consumption result", () => {
   });
 
   it.each(
-    badgeCases.flatMap(({ impact, fr, en }) => [
+    badgeCases.flatMap(({ impact, fr, en, es }) => [
       { impact, locale: "fr", filename: fr },
       { impact, locale: "en", filename: en },
+      { impact, locale: "es", filename: es },
     ]),
   )(
     "unlocks the $impact badge and its $locale download without engagement content",
@@ -259,6 +290,7 @@ describe("ReduceImpactSection engagement badge download", () => {
   it.each([
     { locale: "fr", filename: "Grand.e_saumon.e.jpg" },
     { locale: "en", filename: "Great_Salmon.jpg" },
+    { locale: "es", filename: "Gran_salmon.png" },
   ])(
     "downloads the recalculated badge in $locale rather than the initial badge",
     async ({ locale, filename }) => {

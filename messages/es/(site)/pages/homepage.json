@@ -1,0 +1,123 @@
+{
+  "homepage": {
+    "navigation": {
+      "explode": "Descubrir los impactos del salmón de piscifactoría",
+      "impact": "Ver las cifras de consumo de salmón"
+    },
+    "hero": {
+      "title": "Los salmones que",
+      "title2": "producimos, comercializamos y consumimos",
+      "imageAlt": "Salmón en un plato",
+      "progress": "Progreso de la página de inicio"
+    },
+    "bomb": {
+      "title": "son",
+      "title2": "auténticas",
+      "title3": "bombas ecológicas, sociales y sanitarias",
+      "imageAlt": "Salmón que explota"
+    },
+    "impact": {
+      "title": "Cada año, en Francia,",
+      "titleHighlight": "consumimos 62 millones de salmones",
+      "impact": "(¡el equivalente, en peso, a 31 torres Eiffel!)",
+      "imageAltTitle": "Torre Eiffel en un plato",
+      "title2": "de todos esos millones de salmones que consumimos,",
+      "title2Highlight": "el 98% procede de la acuicultura",
+      "description": "Casi todos los salmones que consumimos en Francia no son capturados en el mar: se crían en piscifactorías, dentro de jaulas, donde pasan dos años siendo alimentados a diario.",
+      "imageAltDescription": "Salmones"
+    },
+    "menu": {
+      "title": {
+        "part1": "La realidad detrás",
+        "part2": "del consumo de salmón",
+        "part3": "de piscifactoría"
+      },
+      "menuCards": [
+        {
+          "title": "Peces salvajes transformados en alimento para salmones",
+          "content": "<strong>El salmón es un pez carnívoro</strong>. Para alimentar a un solo salmón de piscifactoría, se capturan 440 pequeños peces salvajes que luego se transforman en harina y aceite de pescado. <strong>Esta actividad pesquera también provoca la captura incidental de tiburones, tortugas marinas, ballenas y muchas otras especies…</strong>",
+          "imageAlt": "Salmón y peces pequeños"
+        },
+        {
+          "title": "Soja, trigo y colza",
+          "content": "Sí, el salmón es un pez carnívoro… pero también se alimenta de soja, trigo y colza.\n\nLa creciente demanda de soja para producir alimentos destinados a animales de cría está impulsando la <strong>deforestación</strong> en Brasil, tanto legal como ilegal.",
+          "imageAlt": "Cereal"
+        },
+        {
+          "title": "Kril, pescado en la Antártica",
+          "content": "Para intensificar su color rosado, los salmones de piscifactoría también son alimentados con kril: pequeños crustáceos parecidos a los camarones que constituyen una fuente esencial de alimento para numerosas especies del ecosistema antártico.",
+          "imageAlt": "Kril, pequeños crustáceos"
+        },
+        {
+          "title": "Tratamientos antiparasitarios",
+          "content": "Las jaulas de cultivo favorecen la propagación de enfermedades y parásitos. Para combatirlos, los productores industriales recurren a <strong>tratamientos antiparasitarios</strong>, principalmente <strong>contra los piojos de mar</strong>, unos parásitos similares a las garrapatas que se adhieren a la piel de los salmones.",
+          "imageAlt": "Pulverizador"
+        },
+        {
+          "title": "Microplásticos",
+          "content": "Los salmones de piscifactoría también <strong>pueden ingerir microplásticos</strong> presentes en el agua que los rodea o en los alimentos que consumen.",
+          "imageAlt": "Botella de plástico deteriorándose"
+        },
+        {
+          "title": "Contaminantes eternos",
+          "content": "Los alimentos utilizados en la acuicultura pueden exponer a los peces a sustancias contaminantes como los <strong>PFAS, los PCB y las dioxinas</strong>.",
+          "imageAlt": "Molécula"
+        }
+      ],
+      "detail": "Las fuentes consultadas y los cálculos detallados están disponibles en nuestra",
+      "methodology": "metodología"
+    },
+    "addition": {
+      "title": {
+        "part1": "En Francia, cada persona consume una media de 4,5 kg de salmón de piscifactoría al año,",
+        "part2": "y la cuenta sale muy cara:"
+      },
+      "results": {
+        "intro": "Esto representa, para el conjunto de la población francesa:",
+        "resultItems": {
+          "item1": {
+            "title": "62 millones de salmones",
+            "description": "sacrificados cada año, después de haber pasado dos años encerrados y hacinados en jaulas, alimentados diariamente con pienso",
+            "imageAlt": "Salmones criados en jaulas"
+          },
+          "item2": {
+            "title": "27.000 millones de pequeños peces",
+            "description": "sacrificados cada año, capturados específicamente para producir la harina y el aceite de pescado utilizados para alimentar a los salmones. Esta actividad afecta también a las comunidades pesqueras de África occidental",
+            "imageAlt": "Salmón y peces pequeños"
+          },
+          "item3": {
+            "title": "128.000 toneladas de nitrógeno y fósforo vertidas",
+            "description": "al medioambiente por las piscifactorías, procedentes de los excrementos de los salmones, los restos de pienso no consumido, los residuos de los tratamientos, entre otras fuentes",
+            "imageAlt": "Tubería descargando aguas residuales"
+          },
+          "item4": {
+            "title": "1,9 millones de toneladas de CO₂",
+            "description": "emitidas cada año, lo que equivale a la huella de carbono anual de 235.000 personas en Francia",
+            "imageAlt": "Nube de CO₂"
+          }
+        }
+      },
+      "addOns": {
+        "intro": "Y además…",
+        "addOnItems": {
+          "item1": {
+            "title": "987 km² de tierras utilizadas",
+            "description": "Es la superficie necesaria para producir los alimentos de origen vegetal destinados a alimentar a los salmones. ¡Una extensión que representa casi 5 veces la superficie de Buenos Aires!",
+            "imageAlt": "Cereal"
+          },
+          "item2": {
+            "title": "12 contaminantes orgánicos persistentes (COP)",
+            "description": "Los doce contaminantes incluidos en el Convenio de Estocolmo están presentes en el salmón. ¡Sí, los doce!",
+            "imageAlt": "Salmón y peces pequeños"
+          },
+          "item3": {
+            "title": "Menos omega-3",
+            "description": "Hoy en día, la carne del salmón contiene mucho menos omega-3 que antes. Esto se debe, en gran medida, a los cambios en su alimentación.",
+            "imageAlt": "Algas y señal de prohibición"
+          }
+        }
+      },
+      "total": "TOTAL:"
+    }
+  }
+}

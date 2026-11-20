@@ -1,0 +1,129 @@
+{
+  "legal": {
+    "meta": {
+      "title": "Aviso legal",
+      "description": "Aviso legal y política de privacidad de PinkBombs, un sitio web publicado por Seastemik."
+    },
+    "title": "Aviso legal",
+    "subtitle": "Aviso legal y política de privacidad – PinkBombs",
+    "effectiveDate": "Vigente desde el 20/10/2026",
+    "intro": "De conformidad con lo dispuesto en el artículo 6 de la Ley francesa n.º 2004-575, del 21 de junio de 2004, relativa a la confianza en la economía digital, se facilita a continuación la información correspondiente al sitio web <website>www.pinkbombs.org</website> (en adelante, el \"Sitio web\").",
+    "sections": [
+      {
+        "title": "1. Editor del sitio web",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El Sitio web es gestionado por Seastemik, una asociación constituida de conformidad con la Ley francesa del 1 de julio de 1901."
+          },
+          {
+            "type": "paragraph",
+            "text": "Domicilio social: 266, avenue Daumesnil, 75012 París, Francia"
+          },
+          { "type": "paragraph", "text": "Número SIRET: 924 492 986 00014" },
+          {
+            "type": "paragraph",
+            "text": "Correo electrónico: <email>info@seastemik.org</email>"
+          }
+        ]
+      },
+      {
+        "title": "2. Responsable de la publicación",
+        "blocks": [{ "type": "paragraph", "text": "Seastemik." }]
+      },
+      {
+        "title": "3. Proveedor de alojamiento web",
+        "blocks": [
+          { "type": "paragraph", "text": "Vercel Inc." },
+          {
+            "type": "paragraph",
+            "text": "440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos"
+          },
+          { "type": "paragraph", "text": "Teléfono: +1 951-383-6898" },
+          {
+            "type": "paragraph",
+            "text": "Sitio web: <vercel>vercel.com</vercel>"
+          }
+        ]
+      },
+      {
+        "title": "4. Propiedad intelectual y licencia",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Salvo que se indique expresamente lo contrario, los contenidos del Sitio web (textos, datos, gráficos y elementos visuales creados por Seastemik) se distribuyen bajo la licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0): <license>https://creativecommons.org/licenses/by/4.0/deed.fr</license>"
+          },
+          {
+            "type": "paragraph",
+            "text": "Puede compartir y adaptar dichos contenidos, incluso con fines comerciales, siempre que:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "cite la fuente de la siguiente manera: \"PinkBombs – Seastemik, <website>www.pinkbombs.org</website>\";",
+              "indique si ha realizado modificaciones;",
+              "no dé a entender que Seastemik respalda el uso que usted haga de los contenidos ni las opiniones que exprese."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Quedan excluidos del ámbito de esta licencia los nombres, logotipos y marcas \"PinkBombs\" y \"Seastemik\", así como los contenidos de terceros (fotografías, ilustraciones y fragmentos de texto) identificados como tales, que siguen siendo propiedad de sus respectivos titulares."
+          }
+        ]
+      },
+      {
+        "title": "5. Datos personales",
+        "blocks": [
+          { "type": "heading", "text": "Responsable del tratamiento" },
+          {
+            "type": "paragraph",
+            "text": "Seastemik, 266, avenue Daumesnil, 75012 París – <email>info@seastemik.org</email>"
+          },
+          {
+            "type": "heading",
+            "text": "Datos recopilados y finalidades del tratamiento"
+          },
+          {
+            "type": "paragraph",
+            "text": "Calculadora: cuando utiliza la calculadora, recopilamos los datos que introduce sobre su consumo de pescado, así como su dirección de correo electrónico, si decide facilitarnosla. Estos datos se utilizan para calcular sus resultados. Asimismo, se emplean para elaborar estadísticas anónimas sobre el consumo de pescado, que sirven de base para nuestros trabajos y publicaciones. Base jurídica: su consentimiento, otorgado al utilizar la calculadora."
+          },
+          {
+            "type": "paragraph",
+            "text": "Boletín informativo: si se suscribe a nuestro boletín informativo (newsletter), recopilamos su dirección de correo electrónico para enviarle información sobre nuestras campañas y actividades. Base jurídica: su consentimiento. Puede darse de baja en cualquier momento a través del enlace incluido en cada correo electrónico."
+          },
+          { "type": "heading", "text": "Destinatarios" },
+          {
+            "type": "paragraph",
+            "text": "Sus datos personales están destinados exclusivamente a Seastemik. No se venden ni se ceden a terceros para sus propios fines. No obstante, nuestros proveedores de servicios técnicos pueden alojarlos y tratarlos por cuenta nuestra:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Vercel Inc. (alojamiento del sitio web);",
+              "Brevo (envío del boletín informativo);",
+              "Hostinger (almacenamiento de los datos de la calculadora)."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Algunos de estos proveedores están establecidos en Estados Unidos. Las transferencias internacionales de datos personales se realizan de conformidad con las garantías previstas en el Reglamento General de Protección de Datos (RGPD)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Como ocurre con cualquier sitio web, el proveedor de alojamiento también puede registrar datos técnicos de conexión, incluida la dirección IP, con el fin de garantizar el funcionamiento y la seguridad del sitio web."
+          },
+          { "type": "heading", "text": "Cookies" },
+          {
+            "type": "paragraph",
+            "text": "El sitio web no instala cookies publicitarias ni de seguimiento."
+          },
+          { "type": "heading", "text": "Sus derechos" },
+          {
+            "type": "paragraph",
+            "text": "De conformidad con el Reglamento General de Protección de Datos (RGPD) y con la Ley francesa de Protección de Datos Personales (\"Informatique et Libertés\"), del 6 de enero de 1978, en su versión modificada, dispone de los siguientes derechos en relación con sus datos personales: derecho de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad. Puede retirar su consentimiento en cualquier momento. Para ejercer sus derechos, puede ponerse en contacto con nosotros a través de la dirección de correo electrónico <email>info@seastemik.org</email>. También puede presentar una reclamación ante la CNIL (Comisión Nacional de Informática y Libertades), autoridad francesa de protección de datos personales: <cnil>www.cnil.fr</cnil>."
+          }
+        ]
+      }
+    ]
+  }
+}

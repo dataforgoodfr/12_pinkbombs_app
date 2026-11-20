@@ -351,9 +351,8 @@ describe("persisted submission client", () => {
       "792d7f05-9bc1-4f7e-a801-9f1b1ef44e10",
       "5f31091c-885f-4217-a805-a7756e25eaca",
     ];
-    const client = createPersistedSubmissionClient(
-      fetcher,
-      () => keys.shift()!,
+    const client = createPersistedSubmissionClient(fetcher, () =>
+      keys.shift()!,
     );
 
     await client.submit(submissionInput);
@@ -376,7 +375,7 @@ describe("persisted submission client", () => {
     [409, "conflict"],
     [429, "rate_limited"],
     [503, "unavailable"],
-  ] as const)("maps HTTP %i to %s", async (status, error) => {
+  ])("maps HTTP %i to %s", async (status, error) => {
     const fetcher = jest
       .fn<typeof fetch>()
       .mockResolvedValueOnce(optionsResponse())

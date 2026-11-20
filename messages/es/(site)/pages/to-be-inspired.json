@@ -1,0 +1,60 @@
+{
+  "toBeInspired": {
+    "meta": {
+      "title": "Descubrir alternativas"
+    },
+    "intro": {
+      "title": "Descubrir iniciativas",
+      "caption": "Historias e ideas que inspiran y nos demuestran que otra forma de hacer las cosas es posible.",
+      "imageAlt": "Descubrir iniciativas"
+    },
+    "stories": [
+      {
+        "category": "El salmón, símbolo de toda una industria",
+        "title": "SALMO, la increíble historia de un salmón silvestre"
+      },
+      {
+        "title": "5 mitos sobre los peces (y por qué no son ciertos)"
+      },
+      {
+        "title": "Alternativas al salmón: 5 opciones que ya están haciendo la diferencia"
+      },
+      {
+        "title": "5 cosas que debes saber sobre los salmones (en vez de comértelos)"
+      },
+      {
+        "title": "Cuando una cadena francesa de panaderías decide retirar el salmón de su menú"
+      },
+      {
+        "title": "¿El equipo de Seastemik sigue comiendo salmón?"
+      },
+      {
+        "title": "George Ka, los salmones y los fantasmas"
+      },
+      {
+        "title": "11 organizaciones que trabajan para devolverle la vida al océano"
+      }
+    ],
+    "impactSection": {
+      "title": "¡Por suerte, todavía estamos a tiempo de desactivar la bomba!",
+      "caption": "Calcula tu huella salmonera con el Pinkómetro y descubre cómo reducirla.",
+      "button": "Calcula tu impacto",
+      "impactLevels": ["Neutro", "Bajo", "Moderado", "Alto", "Muy alto"]
+    },
+    "companySection": {
+      "text": "También acompañamos a las empresas que quieren reducir su impacto. ¡Contáctanos aquí para saber cómo podemos ayudarles!"
+    },
+    "furtherSections": [
+      {
+        "title": "Reduce tu impacto desde hoy",
+        "caption": "En tu vida cotidiana y en el trabajo, descubre acciones sencillas y formas de impulsar el cambio colectivo.",
+        "button": "PASAR A LA ACCIÓN"
+      },
+      {
+        "title": "Desmontando los mitos del salmón",
+        "caption": "Ideas preconcebidas, falsas soluciones, discursos cuidadosamente elaborados… Ponemos las cartas sobre la mesa para revelar qué se esconde realmente detrás del salmón que producimos y consumimos.",
+        "button": "INFORMARSE"
+      }
+    ]
+  }
+}

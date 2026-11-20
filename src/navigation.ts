@@ -1,8 +1,8 @@
 import { createNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 
-export const locales = ["fr", "en"] as const;
-export const localesValues = ["fr", "en"];
+export const locales = ["fr", "en", "es"] as const;
+export const localesValues = ["fr", "en", "es"];
 
 export const localePrefix = "as-needed" as const;
 
@@ -24,30 +24,37 @@ export const pathnames = {
   "/to-understand": {
     fr: "/comprendre",
     en: "/to-understand",
+    es: "/informarse",
   },
   "/to-act": {
     fr: "/agir",
     en: "/to-act",
+    es: "/pasar-a-la-accion",
   },
   "/to-be-inspired": {
     fr: "/s-inspirer",
     en: "/to-be-inspired",
+    es: "/descubrir-alternativas",
   },
   "/to-be-inspired/[slug]": {
     fr: "/s-inspirer/[slug]",
     en: "/to-be-inspired/[slug]",
+    es: "/descubrir-alternativas/[slug]",
   },
   "/pinkometer": {
     fr: "/pinkometre",
     en: "/pinkometer",
+    es: "/pinkometro",
   },
   "/about": {
     fr: "/a-propos",
     en: "/about",
+    es: "/sobre-nosotros",
   },
   "/legal-notices": {
     fr: "/mentions-legales",
     en: "/legal-notices",
+    es: "/aviso-legal",
   },
   "/archive/v1": "/archive/v1",
   "/archive/v1/dashboard": "/archive/v1/dashboard",
