@@ -1,4 +1,7 @@
-const localizedArticleTitles: Record<number, Record<"en" | "fr" | "es", string>> = {
+const localizedArticleTitles: Record<
+  number,
+  Record<"en" | "fr" | "es", string>
+> = {
   1: {
     en: "Salmon, a symbol of an industry",
     fr: "Les saumons, symbole d'une industrie",
@@ -58,7 +61,10 @@ export function getArticleSlug(title: string, id: number) {
   return `${normalizedTitle}-${id}`;
 }
 
-export function getLocalizedArticleSlug(id: number, locale: "en" | "fr" | "es") {
+export function getLocalizedArticleSlug(
+  id: number,
+  locale: "en" | "fr" | "es",
+) {
   const title = localizedArticleTitles[id]?.[locale];
   return title ? getArticleSlug(title, id) : undefined;
 }

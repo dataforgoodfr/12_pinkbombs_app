@@ -79,7 +79,10 @@
             "type": "paragraph",
             "text": "Seastemik, 266, avenue Daumesnil, 75012 París – <email>info@seastemik.org</email>"
           },
-          { "type": "heading", "text": "Datos recopilados y finalidades del tratamiento" },
+          {
+            "type": "heading",
+            "text": "Datos recopilados y finalidades del tratamiento"
+          },
           {
             "type": "paragraph",
             "text": "Calculadora: cuando utiliza la calculadora, recopilamos los datos que introduce sobre su consumo de pescado, así como su dirección de correo electrónico, si decide facilitarnosla. Estos datos se utilizan para calcular sus resultados. Asimismo, se emplean para elaborar estadísticas anónimas sobre el consumo de pescado, que sirven de base para nuestros trabajos y publicaciones. Base jurídica: su consentimiento, otorgado al utilizar la calculadora."

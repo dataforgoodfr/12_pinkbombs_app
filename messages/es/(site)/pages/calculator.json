@@ -20,14 +20,22 @@
           "type": "checkbox",
           "options": [
             { "name": "none", "label": "No consumo salmón" },
-            { "name": "fillet", "label": "Filete o medallón de salmón", "prefix": "algún" },
+            {
+              "name": "fillet",
+              "label": "Filete o medallón de salmón",
+              "prefix": "algún"
+            },
             {
               "name": "sushi",
               "label": "Sushi (makis, onigiris, sashimis)",
               "prefix": "algún"
             },
             { "name": "pokeBowl", "label": "Poke bowls", "prefix": "algún" },
-            { "name": "appetizer", "label": "Aperitivos y bocaditos", "prefix": "algún" },
+            {
+              "name": "appetizer",
+              "label": "Aperitivos y bocaditos",
+              "prefix": "algún"
+            },
             { "name": "pasta", "label": "Pasta con salmón", "prefix": "algún" },
             {
               "name": "smokedSalmon",

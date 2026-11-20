@@ -156,12 +156,42 @@ describe("ReduceImpactSection Step 4 info", () => {
 });
 
 describe("ReduceImpactSection no-consumption result", () => {
-  const badgeCases: { impact: ImpactLevel; fr: string; en: string }[] = [
-    { impact: "neutral", fr: "Super_saumon.e.jpg", en: "Super_Salmon.jpg", es: "Super_Salmon.png" },
-    { impact: "low", fr: "Grand.e_saumon.e.jpg", en: "Great_Salmon.jpg", es: "Gran_salmon.png" },
-    { impact: "medium", fr: "Saumon.e_Ado.jpg", en: "Teen_Salmon.jpg", es: "Joven_salmon.png" },
-    { impact: "high", fr: "Bébé_saumon.jpg", en: "Baby_Salmon.jpg", es: "Bebe_salmon.png" },
-    { impact: "veryHigh", fr: "Graine_de_saumon.jpg", en: "Salmon_seed.jpg", es: "Huevo_de_salmon.png" },
+  const badgeCases: {
+    impact: ImpactLevel;
+    fr: string;
+    en: string;
+    es: string;
+  }[] = [
+    {
+      impact: "neutral",
+      fr: "Super_saumon.e.jpg",
+      en: "Super_Salmon.jpg",
+      es: "Super_salmon.png",
+    },
+    {
+      impact: "low",
+      fr: "Grand.e_saumon.e.jpg",
+      en: "Great_Salmon.jpg",
+      es: "Gran_salmon.png",
+    },
+    {
+      impact: "medium",
+      fr: "Saumon.e_Ado.jpg",
+      en: "Teen_Salmon.jpg",
+      es: "Joven_salmon.png",
+    },
+    {
+      impact: "high",
+      fr: "Bébé_saumon.jpg",
+      en: "Baby_Salmon.jpg",
+      es: "Bebe_salmon.png",
+    },
+    {
+      impact: "veryHigh",
+      fr: "Graine_de_saumon.jpg",
+      en: "Salmon_seed.jpg",
+      es: "Huevo_de_salmon.png",
+    },
   ];
 
   afterEach(() => {

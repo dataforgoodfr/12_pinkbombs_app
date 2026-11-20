@@ -4,6 +4,7 @@ import { siteConfig } from "@/constant/config";
 
 import sitemap from "../sitemap";
 import enMessages from "../../../messages/en/(site)/pages/to-be-inspired-articles.json";
+import esMessages from "../../../messages/es/(site)/pages/to-be-inspired-articles.json";
 import frMessages from "../../../messages/fr/(site)/pages/to-be-inspired-articles.json";
 
 describe("sitemap", () => {
@@ -24,11 +25,22 @@ describe("sitemap", () => {
       "/en/pinkometer",
       "/en/about",
       "/en/legal-notices",
+      "/es",
+      "/es/informarse",
+      "/es/pasar-a-la-accion",
+      "/es/descubrir-alternativas",
+      "/es/pinkometro",
+      "/es/sobre-nosotros",
+      "/es/aviso-legal",
       ...frMessages.toBeInspiredArticle.articles.map(
         ({ id, title }) => `/s-inspirer/${getArticleSlug(title, id)}`,
       ),
       ...enMessages.toBeInspiredArticle.articles.map(
         ({ id, title }) => `/en/to-be-inspired/${getArticleSlug(title, id)}`,
+      ),
+      ...esMessages.toBeInspiredArticle.articles.map(
+        ({ id, title }) =>
+          `/es/descubrir-alternativas/${getArticleSlug(title, id)}`,
       ),
     ];
 

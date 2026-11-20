@@ -82,7 +82,9 @@ export const DesktopImpactPanel = ({
               <p className="p-caption">{t("engagements.dish")}</p>
               <p className="h4">{selectedProductLabel}</p>
               <p className="p-caption pt-1">
-                {oldFrequency} {t("engagements.timesPerYear", { count: oldFrequency })} → {newFrequency}{" "}
+                {oldFrequency}{" "}
+                {t("engagements.timesPerYear", { count: oldFrequency })} →{" "}
+                {newFrequency}{" "}
                 {t("engagements.timesPerYear", { count: newFrequency })}
               </p>
             </div>

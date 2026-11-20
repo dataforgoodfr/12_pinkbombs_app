@@ -13,10 +13,7 @@ const Button = ({
 }: {
   textColor?: "text-v2-blue" | "text-v2-pink";
   borderColor?:
-    | "border-white"
-    | "border-black"
-    | "border-v2-blue"
-    | "border-v2-pink";
+    "border-white" | "border-black" | "border-v2-blue" | "border-v2-pink";
   backgroundColor?: "bg-white" | "bg-black" | "bg-v2-blue" | "bg-v2-pink";
   className?: string;
   href?: string;

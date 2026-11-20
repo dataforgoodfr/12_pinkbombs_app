@@ -27,7 +27,9 @@ const IllustratedDebunkBlock = ({
   index,
 }: IllustratedDebunkBlockProps) => {
   const t = useTranslations("site.toUnderstand");
-  const imageSrc = imagePath || `/site/images/to-understand/block${actNumber}-${index + 1}.${imageExtension || "svg"}`;
+  const imageSrc =
+    imagePath ||
+    `/site/images/to-understand/block${actNumber}-${index + 1}.${imageExtension || "svg"}`;
 
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 md:gap-16 text-black">

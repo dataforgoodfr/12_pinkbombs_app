@@ -6,6 +6,7 @@ import { siteConfig } from "@/constant/config";
 import { getPathname, locales } from "@/navigation";
 
 import enMessages from "../../messages/en/(site)/pages/to-be-inspired-articles.json";
+import esMessages from "../../messages/es/(site)/pages/to-be-inspired-articles.json";
 import frMessages from "../../messages/fr/(site)/pages/to-be-inspired-articles.json";
 
 const pagePaths = [
@@ -20,6 +21,7 @@ const pagePaths = [
 
 const articlesByLocale = {
   en: enMessages.toBeInspiredArticle.articles,
+  es: esMessages.toBeInspiredArticle.articles,
   fr: frMessages.toBeInspiredArticle.articles,
 };
 
