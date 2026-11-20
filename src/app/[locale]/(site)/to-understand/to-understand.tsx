@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as React from "react";
 import { useState } from "react";
 import "@/lib/env";
@@ -78,7 +78,7 @@ const DebunkSection = () => {
   const getLocalizedFirstActItems = () => {
     return firstActItems.map((item, index) => {
       const localizedItem = { ...item };
-      
+
       if (index === 0 && locale === "es") {
         // block1-1: Spanish uses -es.png
         localizedItem.imagePath = "/site/images/to-understand/block1-1-es.png";
@@ -86,7 +86,7 @@ const DebunkSection = () => {
         // block1-2: Spanish and English use -en.png
         localizedItem.imagePath = "/site/images/to-understand/block1-2-en.png";
       }
-      
+
       return localizedItem;
     });
   };

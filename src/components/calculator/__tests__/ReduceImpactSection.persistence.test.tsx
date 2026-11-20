@@ -475,8 +475,7 @@ describe("ReduceImpactSection persistence", () => {
 
   it("shows the badge immediately and preserves email when persistence fails", async () => {
     let resolvePersistence:
-      | ((value: { success: false; error: "unavailable" }) => void)
-      | undefined;
+      ((value: { success: false; error: "unavailable" }) => void) | undefined;
     const pendingPersistence = new Promise<{
       success: false;
       error: "unavailable";

@@ -30,13 +30,16 @@ const frequencyInputClassName = `
   focus:text-v2-pink
 `;
 
-const getFrequencyLabel = (label: string | undefined, occurrence: number | undefined): string => {
+const getFrequencyLabel = (
+  label: string | undefined,
+  occurrence: number | undefined,
+): string => {
   if (!label) return "";
   // Handle Spanish pluralization: "veces" → "vez" for singular (occurrence = 1 only)
   if (occurrence === 1) {
     // Replace "veces" with "vez" explicitly for Spanish
-    return label.startsWith("veces ") 
-      ? "vez " + label.slice(6) 
+    return label.startsWith("veces ")
+      ? "vez " + label.slice(6)
       : label.replace(/veces/g, "vez");
   }
   return label;
@@ -59,20 +62,12 @@ export const FrequencyQuestion = ({
         ? "weekly"
         : null,
   );
-  const [customWeeklyValue, setCustomWeeklyValue] = React.useState<number | undefined>(
-    product.frequency === "otherWeekly" ? product.occurrence : undefined
-  );
-  const [customYearlyValue, setCustomYearlyValue] = React.useState<number | undefined>(
-    product.frequency === "otherYearly" ? product.occurrence : undefined
-  );
-
-  React.useEffect(() => {
-    if (product.frequency === "otherWeekly") {
-      setCustomWeeklyValue(product.occurrence);
-    } else if (product.frequency === "otherYearly") {
-      setCustomYearlyValue(product.occurrence);
-    }
-  }, [product.occurrence, product.frequency]);
+  const [customWeeklyValue, setCustomWeeklyValue] = React.useState<
+    number | undefined
+  >(product.frequency === "otherWeekly" ? product.occurrence : undefined);
+  const [customYearlyValue, setCustomYearlyValue] = React.useState<
+    number | undefined
+  >(product.frequency === "otherYearly" ? product.occurrence : undefined);
 
   const selectFrequency = (option: QuestionOption) => {
     setCustomFrequency(null);
@@ -105,7 +100,7 @@ export const FrequencyQuestion = ({
                         placeholder="0"
                         value={
                           customFrequency === "weekly"
-                            ? customWeeklyValue ?? ""
+                            ? (customWeeklyValue ?? "")
                             : ""
                         }
                         onFocus={() => {
@@ -113,7 +108,9 @@ export const FrequencyQuestion = ({
                           onFrequencyChange(undefined);
                         }}
                         onChange={(event) => {
-                          const normalized = normalizeOccurrence(event.target.value);
+                          const normalized = normalizeOccurrence(
+                            event.target.value,
+                          );
                           setCustomWeeklyValue(normalized);
                           onFrequencyChange(
                             customChoices[0]?.name,
@@ -126,7 +123,12 @@ export const FrequencyQuestion = ({
                       <span
                         className={`${customFrequency === "yearly" ? "hidden" : "block"} p-lead text-v2-pink`}
                       >
-                        {getFrequencyLabel(customChoices[0]?.label, customFrequency === "weekly" ? customWeeklyValue : undefined)}
+                        {getFrequencyLabel(
+                          customChoices[0]?.label,
+                          customFrequency === "weekly"
+                            ? customWeeklyValue
+                            : undefined,
+                        )}
                       </span>
                     </div>
                     <div className="flex flex-row gap-2 items-end">
@@ -139,7 +141,7 @@ export const FrequencyQuestion = ({
                         placeholder="0"
                         value={
                           customFrequency === "yearly"
-                            ? customYearlyValue ?? ""
+                            ? (customYearlyValue ?? "")
                             : ""
                         }
                         onFocus={() => {
@@ -147,7 +149,9 @@ export const FrequencyQuestion = ({
                           onFrequencyChange(undefined);
                         }}
                         onChange={(event) => {
-                          const normalized = normalizeOccurrence(event.target.value);
+                          const normalized = normalizeOccurrence(
+                            event.target.value,
+                          );
                           setCustomYearlyValue(normalized);
                           onFrequencyChange(
                             customChoices[1]?.name,
@@ -160,7 +164,12 @@ export const FrequencyQuestion = ({
                       <span
                         className={`${customFrequency === "weekly" ? "hidden" : "block"} p-lead text-v2-pink`}
                       >
-                        {getFrequencyLabel(customChoices[1]?.label, customFrequency === "yearly" ? customYearlyValue : undefined)}
+                        {getFrequencyLabel(
+                          customChoices[1]?.label,
+                          customFrequency === "yearly"
+                            ? customYearlyValue
+                            : undefined,
+                        )}
                       </span>
                     </div>
                   </div>

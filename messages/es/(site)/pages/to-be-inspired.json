@@ -39,13 +39,7 @@
       "title": "¡Por suerte, todavía estamos a tiempo de desactivar la bomba!",
       "caption": "Calcula tu huella salmonera con el Pinkómetro y descubre cómo reducirla.",
       "button": "Calcula tu impacto",
-      "impactLevels": [
-        "Neutro",
-        "Bajo",
-        "Moderado",
-        "Alto",
-        "Muy alto"
-      ]
+      "impactLevels": ["Neutro", "Bajo", "Moderado", "Alto", "Muy alto"]
     },
     "companySection": {
       "text": "También acompañamos a las empresas que quieren reducir su impacto. ¡Contáctanos aquí para saber cómo podemos ayudarles!"

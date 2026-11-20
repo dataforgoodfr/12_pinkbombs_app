@@ -59,7 +59,7 @@ export const getYearlyOccurrences = (
 
   const periodicity = PERIODICITY_TABLE[frequency];
   const occurrence = CUSTOM_FREQUENCIES.includes(frequency)
-    ? product.occurrence ?? 0
+    ? (product.occurrence ?? 0)
     : periodicity.occurrence;
 
   return occurrence * periodicity.yearPeriodicity;

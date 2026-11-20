@@ -157,9 +157,9 @@ export const ReduceImpactSection = ({
   const { subscribe, isSubmitting } = useNewsletterSubscription();
   const canCalculate = Boolean(
     reduceImpact.selectedProductKey &&
-      reduceImpact.replacementFrequencyPerYear !== null &&
-      selectedAlternative &&
-      selectedSupplement,
+    reduceImpact.replacementFrequencyPerYear !== null &&
+    selectedAlternative &&
+    selectedSupplement,
   );
   const emailErrorMessage = t("badgeQuestions.emailError");
   const {
@@ -240,12 +240,12 @@ export const ReduceImpactSection = ({
   const oldFrequency = selectedEntry?.occurrencePerYear ?? 0;
   const canConfirmEngagements = Boolean(
     !engagementsConfirmed &&
-      canCalculate &&
-      newResponse &&
-      !isCalculating &&
-      pendingProductKey === null &&
-      pendingAlternative === null &&
-      pendingSupplement === null,
+    canCalculate &&
+    newResponse &&
+    !isCalculating &&
+    pendingProductKey === null &&
+    pendingAlternative === null &&
+    pendingSupplement === null,
   );
   const confirmEngagements = () => {
     if (canConfirmEngagements) onConfirmEngagements();
@@ -759,7 +759,9 @@ export const ReduceImpactSection = ({
                   <p className="p-lead">{t("engagements.dish")}</p>
                   <h4 className="h4 text-v2-blue">{selectedProductLabel}</h4>
                   <p className="p-caption md:pt-2">
-                    {oldFrequency} {t("engagements.timesPerYear", { count: oldFrequency })} → {frequency}{" "}
+                    {oldFrequency}{" "}
+                    {t("engagements.timesPerYear", { count: oldFrequency })} →{" "}
+                    {frequency}{" "}
                     {t("engagements.timesPerYear", { count: frequency })}
                   </p>
                 </div>

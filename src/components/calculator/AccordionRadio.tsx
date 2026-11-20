@@ -8,8 +8,10 @@ const radioInputClassName = `
   focus:bg-v2-magenta focus:text-v2-magenta
   disabled:cursor-not-allowed disabled:hover:bg-v2-pink`;
 
-interface AccordionRadioProps
-  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "type"> {
+interface AccordionRadioProps extends Omit<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  "type"
+> {
   checked: boolean;
 }
 
