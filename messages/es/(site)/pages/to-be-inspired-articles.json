@@ -1265,7 +1265,7 @@
       },
       {
         "id": 9,
-        "title": "11 organizaciones que trabajan para devolverle la vida al océano",
+        "title": "12 organizaciones que trabajan para devolverle la vida al océano",
         "summary": "El océano no necesita solamente que lo \"salvemos\": necesita recuperar su vitalidad. En todo el mundo, colectivos, científicos y ciudadanos trabajan para transformar nuestra relación con el océano y construir otras formas de protegerlo.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
         "heroImageSize": {
@@ -1279,7 +1279,7 @@
             "segments": [
               {
                 "type": "text",
-                "text": "El océano no necesita solamente que lo \"salvemos\": necesita recuperar su vitalidad. En todo el mundo, colectivos, científicos y ciudadanos trabajan para transformar nuestra relación con el océano y construir otras formas de protegerlo. Un recorrido por 11 organizaciones que, cada una a su manera, están impulsando este cambio."
+                "text": "El océano no necesita solamente que lo \"salvemos\": necesita recuperar su vitalidad. En todo el mundo, colectivos, científicos y ciudadanos trabajan para transformar nuestra relación con el océano y construir otras formas de protegerlo. Un recorrido por 12 organizaciones que, cada una a su manera, están impulsando este cambio."
               }
             ]
           },
@@ -1307,6 +1307,15 @@
               {
                 "type": "text",
                 "text": "<strong>Bloom</strong> lucha, entre otras causas, contra las prácticas de pesca destructivas. También desarrolla una importante labor de investigación, incidencia política y movilización ciudadana para proteger los ecosistemas marinos y a las comunidades que dependen de ellos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Blutopia</strong> comparte una misión muy similar a la de Seastemik: reinventar nuestra alimentación para proteger el océano. La asociación sueña con un futuro en el que el \"tofu frito con algas sea más popular que el fish & chips\". Blutopia produce documentales como <em>De l'assiette à l'océan</em> y <em>Les bonnes vivantes</em>, este último dedicado al mundo de las algas. Además, organiza actividades de sensibilización dirigidas al público en general, las empresas, los gobiernos locales y los centros educativos."
               }
             ]
           },
@@ -1429,6 +1438,226 @@
           }
         ],
         "heroTextSide": "left"
+      },
+      {
+        "id": 10,
+        "title": "5 razones para comer algas (en lugar de salmón)",
+        "summary": "La asociación Blutopia, que al igual que Seastemik promueve una alimentación más respetuosa con el océano y, por ende, con las condiciones de vida en nuestro planeta, nos cuenta por qué las algas son una excelente alternativa al salmón de cultivo.",
+        "heroImage": "/site/images/to-be-inspired/articles/11/hero.jpg",
+        "heroImageSize": {
+          "width": 1440,
+          "height": 900
+        },
+        "heroImageAlt": "Recolección de algas",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Comer algas es la nueva tendencia? Estas verduras del mar tienen un enorme potencial gastronómico y nutricional que todavía no hemos sabido aprovechar. Malaury Morin, cofundadora de la asociación <strong>Blutopia</strong>, nos comparte cinco razones para elegir las algas en lugar del salmón."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "DARLE UN TOQUE VEGETAL A SUS PLATOS, SIN RENUNCIAR AL SABOR A MAR"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/11/2.jpg",
+            "alt": "Una persona que muerde un tostada vegetal",
+            "caption": null
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Incorporar más alimentos de origen vegetal a nuestra alimentación es una de las mejores maneras de reducir la presión que ejercemos sobre el océano. Al igual que sucede con la carne de origen terrestre, reducir o incluso dejar de consumir productos del mar implica buscar alternativas vegetales. Y las algas son una de ellas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Cualquier tipo de alga? ¡Claro que no! No se trata, por ejemplo, de cocinar las algas verdes tóxicas que llegan a las costas de Bretaña. Las algas comestibles se recolectan directamente del agua cuando aún están vivas y, sobre todo, se consumen frescas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Un plus: gracias a las algas, podemos seguir disfrutando de ese inconfundible sabor a mar que tanto gusta a quienes consumen pescado."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "CUIDAR (DE VERDAD) NUESTRA SALUD"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Ricos en omega-3, proteínas, vitamina D y minerales… ¡Ya perdimos la cuenta de los anuncios que destacan los supuestos beneficios nutricionales del salmón y convenientemente omiten mencionar que el salmón que consumimos también puede contener sustancias tóxicas! De hecho, Seastemik publicará en diciembre de 2026 una investigación sobre este tema."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Si de verdad queremos cuidar nuestra salud, las algas son una excelente alternativa. Dependiendo de la especie —¡y existen miles!—, cada una puede aportar nutrientes específicos. Por ejemplo, el fucus y el wakame son ricos en fibra, el nori aporta proteínas y el frijol de mar es una buena fuente de vitamina C."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "¿Todavía tienes dudas? ¡Visita la plataforma "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Les Bonnes Vivantes</strong>",
+                "href": "https://lesbonnesvivantes.blutopia.org/sante/"
+              },
+              {
+                "type": "text",
+                "text": ", creada en 2026 por Blutopia y DataForGood, y descubre en detalle los beneficios nutricionales de las algas en comparación con otros alimentos!"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "RECONECTAR CON NUESTRA HISTORIA CULINARIA"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Comer algas no es una moda pasajera. Llevamos miles de años consumiéndolas. ¿Sabías, por ejemplo, que los vikingos también las comían? Hasta ahora, las evidencias más antiguas del consumo de algas por parte de los seres humanos se remontan al año 14.000 a. C., en Chile (puedes encontrar más información "
+              },
+              {
+                "type": "link",
+                "text": "aquí",
+                "href": "https://lesbonnesvivantes.blutopia.org/histoire/"
+              },
+              {
+                "type": "text",
+                "text": ")."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Aunque a menudo lo olvidemos, a lo largo de la historia y en distintas partes del mundo, la alimentación humana ha sido principalmente de origen vegetal. El consumo de carne, tanto terrestre como marina, por persona no se disparó hasta el siglo XX, con la expansión de la ganadería y la producción industrial de alimentos en los países industrializados. Comer algas es, por lo tanto, una forma de reconectar con nuestras raíces culinarias y, al mismo tiempo, apostar por la alimentación del futuro."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "DESCUBRIR NUEVOS SABORES Y TEXTURAS"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Según Blutopia, hasta la fecha se han identificado unas 12.000 especies de algas. Rojas, pardas o verdes, (casi) todas son comestibles. Sin embargo, en Francia, actualmente sólo 22 especies de macroalgas están autorizadas para el consumo humano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Estas son las ocho variedades que Blutopia recomienda especialmente: aonori, nori, wakame, kombu real, frijol de mar, dulse, lechuga de mar y fucus. ¿Dónde puedes conseguirlas? Blutopia "
+              },
+              {
+                "type": "link",
+                "text": "elaboró un mapa",
+                "href": "https://lesbonnesvivantes.blutopia.org/ou-acheter-des-algues/"
+              },
+              {
+                "type": "text",
+                "text": " con los puntos de venta identificados en Francia continental."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "APOYAR UNA RECOLECCIÓN DE BAJO IMPACTO AMBIENTAL"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/11/3.jpg",
+            "alt": "Una persona en el agua recolectando algas",
+            "caption": null
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La mayoría de las algas que se consumen en Francia son silvestres y se recolectan directamente en el mar, a mano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "El cultivo de algas sigue siendo, por ahora, una práctica poco extendida. Para quienes tengan curiosidad, el proceso comienza en un laboratorio, donde se cultivan las algas en sus primeras etapas de crecimiento. Luego, se trasladan al mar y se sujetan a cuerdas para que sigan creciendo. Este método requiere poco espacio y permite aplicar diversas buenas prácticas para minimizar el impacto sobre los ecosistemas y los recursos naturales del entorno. Además, la cosecha se realiza siempre a mano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En definitiva, comer algas es una forma de alimentarse de manera saludable, descubrir nuevos sabores y hacerlo de forma responsable. ¿Te animas a dar el primer paso? Malaury te recomienda empezar por las rillettes de mar, una especie de paté para untar elaborado a base de productos del mar. ¡Puedes encontrar la receta "
+              },
+              {
+                "type": "link",
+                "text": "aquí",
+                "href": "https://lesbonnesvivantes.blutopia.org/recette/rillettes-de-la-mer/"
+              },
+              {
+                "type": "text",
+                "text": "!"
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "¡PARA IR MÁS ALLÁ!",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Las algas no son la única alternativa al salmón. Seastemik seleccionó cinco alternativas de origen vegetal que no tienen nada que envidiarle al salmón. Y te lo aseguramos: ¡no encontrarás tofu en esta lista!"
+              }
+            ]
+          ],
+          "articleId": 4
+        }
       }
     ]
   }

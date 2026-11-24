@@ -1243,7 +1243,7 @@
       },
       {
         "id": 9,
-        "title": "11 associations qui œuvrent pour repeupler l’Océan",
+        "title": "12 associations qui œuvrent pour repeupler l’Océan",
         "summary": "L’Océan n’a pas seulement besoin d’être « sauvé ». Il a besoin de retrouver de la vie. Partout, des collectifs, des scientifiques et des citoyen·nes cherchent à transformer notre rapport à l’Océan. Tour d’horizon des associations qui, chacune à leur manière, font bouger les lignes.",
         "heroImage": "/site/images/to-be-inspired/articles/10/hero.jpg",
         "heroImageSize": { "width": 6000, "height": 4000 },
@@ -1274,6 +1274,15 @@
               {
                 "type": "text",
                 "text": "<strong>Bloom</strong> s’attaque notamment aux pratiques de pêche destructrices et mène un important travail d’enquête, de plaidoyer et de mobilisation citoyenne pour défendre les écosystèmes marins et les communautés qui en dépendent."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "<strong>Blutopia</strong> a une mission très proche de celle de Seastemik : réinventer notre alimentation pour préserver l'Océan. L'association rêve que le \"tofu frit aux algues soit plus populaire que le fish & chips\". Blutopia produit des documentaires, comme <em>De l'assiette à l'océan</em> ou <em>Les bonnes vivantes</em> consacré aux algues et sensibilise lors d'interventions auprès du grand public, des entreprises, des collectivités et des écoles."
               }
             ]
           },
@@ -1386,6 +1395,226 @@
             ]
           }
         ]
+      },
+      {
+        "id": 10,
+        "title": "5 raisons de manger des algues (à la place des saumons)",
+        "summary": "L'association Blutopia qui, comme Seastemik, travaille à une alimentation plus respectueuse de l'Océan – et donc, de nos conditions de vie – nous explique pourquoi les algues font partie des meilleures alternatives aux saumons d'élevage.",
+        "heroImage": "/site/images/to-be-inspired/articles/11/hero.jpg",
+        "heroImageSize": {
+          "width": 1440,
+          "height": 900
+        },
+        "heroImageAlt": "Récolte d'algues",
+        "heroTextSide": "left",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Manger des algues is the new sexy ? Les légumes de mer sont d'une richesse gustative et nutritionnelle largement sous-cotée. Malaury Morin, co-fondatrice de l'association <strong>Blutopia</strong> nous partage 5 raisons de manger des algues à la place des saumons."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "VÉGÉTALISER SON ASSIETTE AVEC UN GOÛT IODÉ"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/11/2.jpg",
+            "alt": "Une personne qui croque dans un toast végétal",
+            "caption": null
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Végétaliser son assiette est la meilleure option pour relâcher la pression que nous mettons sur l'Océan. Tout comme pour la viande terrestre, réduire voire arrêter de manger de la viande marine implique d'explorer des options végétales. Les algues en font partie."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Toutes les algues ? Non ! Il n'est pas question de cuisiner les algues vertes et toxiques échouées sur le littoral breton, par exemple. Les algues comestibles se récoltent directement dans l'eau lorsqu'elles sont encore vivantes. Et surtout, on les mange fraîches."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Point bonus : grâce aux algues, on garde en bouche ce goût iodé cher aux mangeur·euses de poissons."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "PRENDRE (VRAIMENT) SOIN DE SA SANTÉ"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Riche en oméga-3, en protéines, en vitamine D ou en minéraux… on ne compte plus les publicités qui vantent les soi-disant bienfaits nutritionnels des saumons et qui oublient de mentionner que les saumons que nous mangeons contiennent aussi des polluants toxiques. Seastemik publie d'ailleurs en décembre 2026 une enquête à ce sujet."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Pour (vraiment) prendre soin de sa santé, les algues sont toutes trouvées. Selon l'espèce — et il en existe des milliers, une algue peut répondre à un besoin particulier. Par exemple, le fucus et le wakamé sont riches en fibres ; le nori est riche en protéines et le haricot de mer est riche en vitamine C."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Vous restez sceptiques ? Consultez la plateforme "
+              },
+              {
+                "type": "link",
+                "text": "<strong>Les Bonnes Vivantes</strong>",
+                "href": "https://lesbonnesvivantes.blutopia.org/sante/"
+              },
+              {
+                "type": "text",
+                "text": " créée en 2026 par Blutopia et DataForGood pour connaître en détail les bienfaits des algues comparés à d'autres aliments !"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "RENOUER AVEC NOTRE HISTOIRE CULINAIRE"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Manger des algues n'a rien d'une nouvelle lubie. On en consomme depuis des milliers d'années. Saviez-vous, par exemple, que les Vikings en mangeaient ? À ce jour, les plus anciennes traces de consommation d'algues par des humains remontent à l'an -14 000, au Chili (plus de détails "
+              },
+              {
+                "type": "link",
+                "text": "ici",
+                "href": "https://lesbonnesvivantes.blutopia.org/histoire/"
+              },
+              {
+                "type": "text",
+                "text": ")."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "On l'oublie souvent mais d'un point de vue historique, et à l'échelle mondiale, l'alimentation humaine a majoritairement été végétale. Ce n'est que depuis le XXème siècle – et les débuts de l'élevage industriel, que la part de viande terrestre et marine par habitant explose dans les pays dits industrialisés. Manger des algues, c'est donc à la fois renouer avec notre passé culinaire et faire le choix d'une alimentation d'avenir."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "DÉCOUVRIR DES NOUVEAUX GOÛTS ET DE NOUVELLES TEXTURES"
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "D'après Blutopia, on a référence à ce jour 12 000 espèces d'algues différentes. Qu'elles soient rouges, brunes, ou vertes, elles sont (presque) toutes comestibles. En France, seules 22 espèces de macro-algues sont pour l'instant autorisées à la consommation."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "Voici les huit espèces d'algues chaudement recommandées par Blutopia : ao-nori ; nori ; wakamé ; kombu royal ; haricot de mer ; dulse ; laitue de mer et fucus. Où les trouver ? L'association "
+              },
+              {
+                "type": "link",
+                "text": "a répertorié sur une carte",
+                "href": "https://lesbonnesvivantes.blutopia.org/ou-acheter-des-algues/"
+              },
+              {
+                "type": "text",
+                "text": " les points de vente connus en France hexagonale."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "SOUTENIR UNE RÉCOLTE À FAIBLE IMPACT"
+          },
+          {
+            "type": "image",
+            "src": "/site/images/to-be-inspired/articles/11/3.jpg",
+            "alt": "Une personne les pieds dans l'eau, qui récolte une algue",
+            "caption": null
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La majorité des algues consommées en France sont des algues sauvages. Il suffit donc de les cueillir à la main."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "La culture d'algues reste, à ce stade, très minoritaire. Pour les curieux·ses, sachez que le début de la pousse se passe en laboratoire et que les algues sont ensuite transférées sur une corde en mer. La culture prend donc peu de place et de nombreuses bonnes pratiques existent pour ne pas endommager les ressources alentour. Et la récolte se fait toujours à la main."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "segments": [
+              {
+                "type": "text",
+                "text": "En résumé, manger des algues, c'est manger sain, original et responsable. Vous voulez sauter le pas ? Malaury vous conseille de commencer par les rillettes de la mer, vous retrouverez la recette "
+              },
+              {
+                "type": "link",
+                "text": "ici",
+                "href": "https://lesbonnesvivantes.blutopia.org/recette/rillettes-de-la-mer/"
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "relatedSection": {
+          "title": "POUR ALLER PLUS LOIN",
+          "paragraphs": [
+            [
+              {
+                "type": "text",
+                "text": "Les algues ne sont pas les seules alternatives aux saumons. Seastemik vous a concocté une liste de cinq options végétales où vous n'y verrez que du feu. Et promis, cette liste ne contient pas de tofu."
+              }
+            ]
+          ],
+          "articleId": 4
+        }
       }
     ]
   }

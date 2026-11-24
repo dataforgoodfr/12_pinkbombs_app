@@ -43,9 +43,14 @@ const localizedArticleTitles: Record<
     es: "George Ka, los salmones y los fantasmas",
   },
   9: {
-    en: "11 organizations working to bring life back to the ocean",
-    fr: "11 associations qui œuvrent pour repeupler l'Océan",
-    es: "11 organizaciones que trabajan para devolverle la vida al océano",
+    en: "12 organizations working to bring life back to the ocean",
+    fr: "12 associations qui œuvrent pour repeupler l'Océan",
+    es: "12 organizaciones que trabajan para devolverle la vida al océano",
+  },
+  10: {
+    en: "5 reasons to eat seaweed instead of salmon",
+    fr: "5 raisons de manger des algues (à la place des saumons)",
+    es: "5 razones para comer algas (en lugar de salmón)",
   },
 };
 
