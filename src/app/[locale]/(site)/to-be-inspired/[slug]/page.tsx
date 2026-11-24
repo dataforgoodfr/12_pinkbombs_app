@@ -266,13 +266,18 @@ function ArticleParagraphView({
 }
 
 function renderInlineText(text: string): ReactNode[] {
-  return text.split(/(<strong>[\s\S]*?<\/strong>)/g).map((part, index) => {
-    const strongText = part.match(/^<strong>([\s\S]*?)<\/strong>$/)?.[1];
+  return text
+    .split(/(<strong>[\s\S]*?<\/strong>|<em>[\s\S]*?<\/em>)/g)
+    .map((part, index) => {
+      const strongText = part.match(/^<strong>([\s\S]*?)<\/strong>$/)?.[1];
+      const emText = part.match(/^<em>([\s\S]*?)<\/em>$/)?.[1];
 
-    return strongText === undefined ? (
-      part
-    ) : (
-      <strong key={`strong-${index}`}>{strongText}</strong>
-    );
-  });
+      if (strongText !== undefined) {
+        return <strong key={`strong-${index}`}>{strongText}</strong>;
+      }
+      if (emText !== undefined) {
+        return <em key={`em-${index}`}>{emText}</em>;
+      }
+      return part;
+    });
 }
